@@ -1,0 +1,1073 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       16/Aug/2016  13:15:58
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\common\src\pinmux_utility_common.c
+#    Command line =  
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\common\src\pinmux_utility_common.c"
+#        -D DEBUG -D NDEBUG -D USB_STACK_BM -D CPU_MK22FN256VDC12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D BL_TARGET_RAM -lC
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\obj"
+#        --no_unroll --debug --endian=little --cpu=Cortex-M4 -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform/devices/MK22F25612\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/autobaud\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/osa\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/device\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/device/class\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/bm_usb\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform/devices\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform/CMSIS/Include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/drivers\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/drivers/common\"
+#        -Ohz --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\list\pinmux_utility_common.lst
+#    Object file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\obj\pinmux_utility_common.o
+#
+###############################################################################
+
+C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\common\src\pinmux_utility_common.c
+      1          /*
+      2           * Copyright (c) 2014-2016, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          
+     31          ////////////////////////////////////////////////////////////////////////////////
+     32          // Variables
+     33          ////////////////////////////////////////////////////////////////////////////////
+     34          #include "bootloader_common.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void NVIC_SetPriority(IRQn_Type, uint32_t)
+   \                     NVIC_SetPriority: (+1)
+   \   00000000   0x0109             LSLS     R1,R1,#+4
+   \   00000002   0x2800             CMP      R0,#+0
+   \   00000004   0xD506             BPL.N    ??NVIC_SetPriority_0
+   \   00000006   0x....             LDR.N    R2,??DataTable7  ;; 0xe000ed18
+   \   00000008   0xF000 0x000F      AND      R0,R0,#0xF
+   \   0000000C   0x4410             ADD      R0,R2,R0
+   \   0000000E   0xF800 0x1C04      STRB     R1,[R0, #-4]
+   \   00000012   0x4770             BX       LR
+   \                     ??NVIC_SetPriority_0: (+1)
+   \   00000014   0x....             LDR.N    R2,??DataTable7_1  ;; 0xe000e400
+   \   00000016   0x5411             STRB     R1,[R2, R0]
+   \   00000018   0x4770             BX       LR               ;; return
+     35          #include "bootloader/bl_context.h"
+     36          #include "fsl_device_registers.h"
+     37          #include "port/fsl_port.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void PORT_SetPinInterruptConfig(PORT_Type *, uint32_t, port_interrupt_t const)
+   \                     PORT_SetPinInterruptConfig: (+1)
+   \   00000000   0xF850 0x3021      LDR      R3,[R0, R1, LSL #+2]
+   \   00000004   0x0412             LSLS     R2,R2,#+16
+   \   00000006   0xF423 0x2370      BIC      R3,R3,#0xF0000
+   \   0000000A   0xF402 0x2270      AND      R2,R2,#0xF0000
+   \   0000000E   0x431A             ORRS     R2,R2,R3
+   \   00000010   0x....             B.N      ??Subroutine0_0
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \   00000000   0x0212             LSLS     R2,R2,#+8
+   \   00000002   0xF402 0x62E0      AND      R2,R2,#0x700
+   \                     ??Subroutine0_0: (+1)
+   \   00000006   0xF840 0x2021      STR      R2,[R0, R1, LSL #+2]
+   \   0000000A   0x4770             BX       LR               ;; return
+     38          #include "gpio/fsl_gpio.h"
+     39          #include "peripherals_pinmux.h"
+     40          
+     41          #if (BL_CONFIG_LPUART || BL_CONFIG_SCUART || BL_CONFIG_UART)
+     42          
+     43          #if BL_ENABLE_PINMUX_UART4
+     44          #define BL_ENABLED_MAX_UART_INSTANCE (4)
+     45          #elif BL_ENABLE_PINMUX_UART3
+     46          #define BL_ENABLED_MAX_UART_INSTANCE (3)
+     47          #elif BL_ENABLE_PINMUX_UART2
+     48          #define BL_ENABLED_MAX_UART_INSTANCE (2)
+     49          #elif BL_ENABLE_PINMUX_UART1
+     50          #define BL_ENABLED_MAX_UART_INSTANCE (1)
+     51          #elif BL_ENABLE_PINMUX_UART0
+     52          #define BL_ENABLED_MAX_UART_INSTANCE (0)
+     53          #endif
+     54          
+     55          //! UART autobaud port irq configurations
+     56          #define PORT_IRQC_INTERRUPT_ENABLED_PRIORITY 1
+     57          #define PORT_IRQC_INTERRUPT_RESTORED_PRIORITY 0
+     58          
+     59          #define PORT_IRQC_INTERRUPT_FALLING_EDGE 0xA
+     60          #define PORT_IRQC_INTERRUPT_DISABLE 0
+     61          
+     62          //! this is to store the function pointer for calling back to the function that wants
+     63          //! the UART RX instance pin that triggered the interrupt. This only supports 1 pin
+     64          //! for UART0 because UART1 is on PORTC which does not support interrupts :(
+     65          
+
+   \                                 In section .bss, align 4
+     66          static pin_irq_callback_t s_pin_irq_func[BL_ENABLED_MAX_UART_INSTANCE + 1] = { 0 };
+   \                     s_pin_irq_func:
+   \   00000000                      DS8 8
+     67          
+     68          #endif // BL_CONFIG_LPUART
+     69          
+     70          ////////////////////////////////////////////////////////////////////////////////
+     71          // Code
+     72          ////////////////////////////////////////////////////////////////////////////////
+
+   \                                 In section .text, align 2, keep-with-next
+     73          uint32_t PORT_GetPinIsf(PORT_Type *base, uint32_t pin)
+     74          {
+     75              return (base->PCR[pin] & PORT_PCR_ISF_MASK) >> PORT_PCR_ISF_SHIFT;
+   \                     PORT_GetPinIsf: (+1)
+   \   00000000   0xF850 0x0021      LDR      R0,[R0, R1, LSL #+2]
+   \   00000004   0xF3C0 0x6000      UBFX     R0,R0,#+24,#+1
+   \   00000008   0x4770             BX       LR               ;; return
+     76          }
+     77          
+     78          static inline void PORT_RestoreDefault(PORT_Type *base, uint32_t pin)
+     79          {
+     80              base->PCR[pin] = 0;
+     81          }
+     82          
+     83          #if (BL_CONFIG_LPUART || BL_CONFIG_SCUART || BL_CONFIG_UART)
+     84          //! @brief Configure the GPIO mode for auto baud detection.
+     85          static inline void PORT_SetUartAutoBaudPinMode(PORT_Type *portBase, GPIO_Type *gpioBase, uint32_t pin)
+     86          {
+     87          #if BL_FEATURE_UART_RX_PULLUP
+     88              // Configure the UART RX pin to GPIO mode, with pull-up resistor enabled.
+     89              portBase->PCR[pin] = PORT_PCR_MUX(1) | PORT_PCR_PE_MASK | PORT_PCR_PS_MASK;
+     90          #else
+     91              // Configure the UART RX pin to GPIO mode
+     92              portBase->PCR[pin] = PORT_PCR_MUX(1);
+     93          #endif // BL_FEATURE_UART_RX_PULLUP
+     94          
+     95              // Configure UART RX pin to digital input mode.
+     96              gpioBase->PDDR &= (uint32_t) ~(1 << pin);
+     97          }
+     98          
+
+   \                                 In section .text, align 2, keep-with-next
+     99          static inline void PORT_SetUartPinMode(PORT_Type *base, uint32_t pin, uint32_t mux)
+    100          {
+    101              base->PCR[pin] = PORT_PCR_MUX(mux);
+   \                     PORT_SetUartPinMode: (+1)
+   \   00000000   0x....             B.N      ?Subroutine0
+    102          }
+    103          #endif
+    104          
+    105          #if (BL_CONFIG_I2C || BL_CONFIG_LPI2C)
+
+   \                                 In section .text, align 2, keep-with-next
+    106          static inline void PORT_SetI2cPinMode(PORT_Type *base, uint32_t pin, uint32_t mux)
+    107          {
+    108          #if defined(FSL_FEATURE_PORT_HAS_OPEN_DRAIN) && (FSL_FEATURE_PORT_HAS_OPEN_DRAIN > 0)
+    109              base->PCR[pin] = PORT_PCR_MUX(mux) | PORT_PCR_ODE(1);
+   \                     PORT_SetI2cPinMode: (+1)
+   \   00000000   0x0212             LSLS     R2,R2,#+8
+   \   00000002   0xF402 0x62E0      AND      R2,R2,#0x700
+   \   00000006   0xF042 0x0220      ORR      R2,R2,#0x20
+   \   0000000A   0x....             B.N      ??Subroutine0_0
+    110          #else
+    111              base->PCR[pin] = PORT_PCR_MUX(mux);
+    112          #endif // //#if defined(FSL_FEATURE_PORT_HAS_OPEN_DRAIN) && (FSL_FEATURE_PORT_HAS_OPEN_DRAIN > 0)
+    113          }
+    114          #endif
+    115          
+    116          #if (BL_CONFIG_DSPI || BL_CONFIG_SPI || BL_CONFIG_LPSPI)
+
+   \                                 In section .text, align 2, keep-with-next
+    117          static inline void PORT_SetSpiPinMode(PORT_Type *base, uint32_t pin, uint32_t mux)
+   \                     PORT_SetSpiPinMode: (+1)
+   \   00000000   0xBF00             Nop      
+    118          {
+    119              base->PCR[pin] = PORT_PCR_MUX(mux);
+   \   00000002                      REQUIRE ?Subroutine0
+   \   00000002                      ;; // Fall through to label ?Subroutine0
+    120          }
+    121          #endif
+    122          
+    123          #if BL_CONFIG_CAN
+    124          static inline void PORT_SetCanPinMode(PORT_Type *base, uint32_t pin, uint32_t mux)
+    125          {
+    126              base->PCR[pin] = PORT_PCR_MUX(mux);
+    127          }
+    128          #endif
+    129          
+    130          /*!
+    131           * @brief Configure pinmux for uart module.
+    132           *
+    133           * This function only support switching default or gpio or fixed-ALTx mode on fixed pins
+    134           * (Although there are many ALTx-pinmux configuration choices on various pins for the same
+    135           * peripheral module)
+    136           */
+
+   \                                 In section .text, align 2, keep-with-next
+    137          void uart_pinmux_config(uint32_t instance, pinmux_type_t pinmux)
+    138          {
+    139              switch (instance)
+   \                     uart_pinmux_config: (+1)
+   \   00000000   0x2801             CMP      R0,#+1
+   \   00000002   0xD000             BEQ.N    ??uart_pinmux_config_0
+   \   00000004   0x4770             BX       LR
+    140              {
+    141          #if BL_ENABLE_PINMUX_UART0
+    142                  case 0:
+    143                      switch (pinmux)
+    144                      {
+    145                          case kPinmuxType_Default:
+    146                              PORT_RestoreDefault(UART0_RX_PORT_BASE, UART0_RX_GPIO_PIN_NUM);
+    147                              PORT_RestoreDefault(UART0_TX_PORT_BASE, UART0_TX_GPIO_PIN_NUM);
+    148                              break;
+    149                          case kPinmuxType_GPIO:
+    150                              PORT_SetUartAutoBaudPinMode(UART0_RX_PORT_BASE, UART0_RX_GPIO_BASE, UART0_RX_GPIO_PIN_NUM);
+    151                              break;
+    152                          case kPinmuxType_Peripheral:
+    153                              // Enable pins for UART0.
+    154                              PORT_SetUartPinMode(UART0_RX_PORT_BASE, UART0_RX_GPIO_PIN_NUM,
+    155                                                  UART0_RX_FUNC_ALT_MODE); // Set UART0_RX pin to UART0_RX functionality
+    156                              PORT_SetUartPinMode(UART0_TX_PORT_BASE, UART0_TX_GPIO_PIN_NUM,
+    157                                                  UART0_TX_FUNC_ALT_MODE); // Set UART0_TX pin to UART0_TX functionality
+    158                              break;
+    159                          default:
+    160                              break;
+    161                      }
+    162                      break;
+    163          #endif // #if BL_ENABLE_PINMUX_UART0
+    164          
+    165          #if BL_ENABLE_PINMUX_UART1
+    166                  case 1:
+    167                      switch (pinmux)
+   \                     ??uart_pinmux_config_0: (+1)
+   \   00000006   0xB510             PUSH     {R4,LR}
+   \   00000008   0x....             LDR.N    R4,??DataTable7_2  ;; 0x4004d000
+   \   0000000A   0xB119             CBZ.N    R1,??uart_pinmux_config_1
+   \   0000000C   0x2902             CMP      R1,#+2
+   \   0000000E   0xD00F             BEQ.N    ??uart_pinmux_config_2
+   \   00000010   0xD304             BCC.N    ??uart_pinmux_config_3
+   \   00000012   0xBD10             POP      {R4,PC}
+    168                      {
+    169                          case kPinmuxType_Default:
+    170                              PORT_RestoreDefault(UART1_RX_PORT_BASE, UART1_RX_GPIO_PIN_NUM);
+   \                     ??uart_pinmux_config_1: (+1)
+   \   00000014   0x2000             MOVS     R0,#+0
+   \   00000016   0x6060             STR      R0,[R4, #+4]
+    171                              PORT_RestoreDefault(UART1_TX_PORT_BASE, UART1_TX_GPIO_PIN_NUM);
+   \   00000018   0x6020             STR      R0,[R4, #+0]
+    172                              break;
+   \   0000001A   0xBD10             POP      {R4,PC}
+    173                          case kPinmuxType_GPIO:
+    174                              PORT_SetUartAutoBaudPinMode(UART1_RX_PORT_BASE, UART1_RX_GPIO_BASE, UART1_RX_GPIO_PIN_NUM);
+   \                     ??uart_pinmux_config_3: (+1)
+   \   0000001C   0xF44F 0x7080      MOV      R0,#+256
+   \   00000020   0x6060             STR      R0,[R4, #+4]
+   \   00000022   0xF06F 0x0202      MVN      R2,#+2
+   \   00000026   0x....             LDR.N    R0,??DataTable7_3  ;; 0x400ff114
+   \   00000028   0x6801             LDR      R1,[R0, #+0]
+   \   0000002A   0x4011             ANDS     R1,R2,R1
+   \   0000002C   0x6001             STR      R1,[R0, #+0]
+    175                              break;
+   \   0000002E   0xBD10             POP      {R4,PC}
+    176                          case kPinmuxType_Peripheral:
+    177                              // Enable pins for UART1.
+    178                              PORT_SetUartPinMode(UART1_RX_PORT_BASE, UART1_RX_GPIO_PIN_NUM,
+    179                                                  UART1_RX_FUNC_ALT_MODE); // Set UART1_RX pin to UART1_RX functionality
+   \                     ??uart_pinmux_config_2: (+1)
+   \   00000030   0x2203             MOVS     R2,#+3
+   \   00000032   0x2101             MOVS     R1,#+1
+   \   00000034   0x4620             MOV      R0,R4
+   \   00000036   0x.... 0x....      BL       PORT_SetUartPinMode
+    180                              PORT_SetUartPinMode(UART1_TX_PORT_BASE, UART1_TX_GPIO_PIN_NUM,
+    181                                                  UART1_TX_FUNC_ALT_MODE); // Set UART1_TX pin to UART1_TX functionality
+   \   0000003A   0x4620             MOV      R0,R4
+   \   0000003C   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000040   0x2203             MOVS     R2,#+3
+   \   00000042   0x2100             MOVS     R1,#+0
+   \   00000044   0x....             B.N      PORT_SetUartPinMode
+    182                              break;
+    183                          default:
+    184                              break;
+    185                      }
+    186                      break;
+    187          #endif // #if BL_ENABLE_PINMUX_UART1
+    188          
+    189          #if BL_ENABLE_PINMUX_UART2
+    190                  case 2:
+    191                      switch (pinmux)
+    192                      {
+    193                          case kPinmuxType_Default:
+    194                              PORT_RestoreDefault(UART2_RX_PORT_BASE, UART2_RX_GPIO_PIN_NUM);
+    195                              PORT_RestoreDefault(UART2_TX_PORT_BASE, UART2_TX_GPIO_PIN_NUM);
+    196                              break;
+    197                          case kPinmuxType_GPIO:
+    198                              PORT_SetUartAutoBaudPinMode(UART2_RX_PORT_BASE, UART2_RX_GPIO_BASE, UART2_RX_GPIO_PIN_NUM);
+    199                              break;
+    200                          case kPinmuxType_Peripheral:
+    201                              // Enable pins for UART2.
+    202                              PORT_SetUartPinMode(UART2_RX_PORT_BASE, UART2_RX_GPIO_PIN_NUM,
+    203                                                  UART2_RX_FUNC_ALT_MODE); // Set UART2_RX pin to UART2_RX functionality
+    204                              PORT_SetUartPinMode(UART2_TX_PORT_BASE, UART2_TX_GPIO_PIN_NUM,
+    205                                                  UART2_TX_FUNC_ALT_MODE); // Set UART2_TX pin to UART2_TX functionality
+    206                              break;
+    207                          default:
+    208                              break;
+    209                      }
+    210                      break;
+    211          #endif // #if BL_ENABLE_PINMUX_UART2
+    212          
+    213          #if BL_ENABLE_PINMUX_UART3
+    214                  case 3:
+    215                      switch (pinmux)
+    216                      {
+    217                          case kPinmuxType_Default:
+    218                              PORT_RestoreDefault(UART3_RX_PORT_BASE, UART3_RX_GPIO_PIN_NUM);
+    219                              PORT_RestoreDefault(UART3_TX_PORT_BASE, UART3_TX_GPIO_PIN_NUM);
+    220                              break;
+    221                          case kPinmuxType_GPIO:
+    222                              PORT_SetUartAutoBaudPinMode(UART3_RX_PORT_BASE, UART3_RX_GPIO_BASE, UART3_RX_GPIO_PIN_NUM);
+    223                              break;
+    224                          case kPinmuxType_Peripheral:
+    225                              // Enable pins for UART3.
+    226                              PORT_SetUartPinMode(UART3_RX_PORT_BASE, UART3_RX_GPIO_PIN_NUM,
+    227                                                  UART3_RX_FUNC_ALT_MODE); // Set UART3_RX pin to UART3_RX functionality
+    228                              PORT_SetUartPinMode(UART3_TX_PORT_BASE, UART3_TX_GPIO_PIN_NUM,
+    229                                                  UART3_TX_FUNC_ALT_MODE); // Set UART3_TX pin to UART3_TX functionality
+    230                              break;
+    231                          default:
+    232                              break;
+    233                      }
+    234                      break;
+    235          #endif // #if BL_ENABLE_PINMUX_UART3
+    236          
+    237          #if BL_ENABLE_PINMUX_UART4
+    238                  case 4:
+    239                      switch (pinmux)
+    240                      {
+    241                          case kPinmuxType_Default:
+    242                              PORT_RestoreDefault(UART4_RX_PORT_BASE, UART4_RX_GPIO_PIN_NUM);
+    243                              PORT_RestoreDefault(UART4_TX_PORT_BASE, UART4_TX_GPIO_PIN_NUM);
+    244                              break;
+    245                          case kPinmuxType_GPIO:
+    246                              PORT_SetUartAutoBaudPinMode(UART4_RX_PORT_BASE, UART4_RX_GPIO_BASE, UART4_RX_GPIO_PIN_NUM);
+    247                              break;
+    248                          case kPinmuxType_Peripheral:
+    249                              // Enable pins for UART4.
+    250                              PORT_SetUartPinMode(UART4_RX_PORT_BASE, UART4_RX_GPIO_PIN_NUM,
+    251                                                  UART4_RX_FUNC_ALT_MODE); // Set UART4_RX pin to UART4_RX functionality
+    252                              PORT_SetUartPinMode(UART4_TX_PORT_BASE, UART4_TX_GPIO_PIN_NUM,
+    253                                                  UART4_TX_FUNC_ALT_MODE); // Set UART4_TX pin to UART4_TX functionality
+    254                              break;
+    255                          default:
+    256                              break;
+    257                      }
+    258                      break;
+    259          #endif // #if BL_ENABLE_PINMUX_UART4
+    260          
+    261                  default:
+    262                      break;
+    263              }
+    264          }
+    265          
+    266          /*!
+    267           * @brief Configure pinmux for i2c module.
+    268           *
+    269           * This function only support switching default or gpio or fixed-ALTx mode on fixed pins
+    270           * (Although there are many ALTx-pinmux configuration choices on various pins for the same
+    271           * peripheral module)
+    272           */
+
+   \                                 In section .text, align 2, keep-with-next
+    273          void i2c_pinmux_config(uint32_t instance, pinmux_type_t pinmux)
+    274          {
+    275              switch (instance)
+   \                     i2c_pinmux_config: (+1)
+   \   00000000   0x2801             CMP      R0,#+1
+   \   00000002   0xD000             BEQ.N    ??i2c_pinmux_config_0
+   \   00000004   0x4770             BX       LR
+    276              {
+    277          #if BL_ENABLE_PINMUX_I2C0
+    278                  case 0:
+    279                      switch (pinmux)
+    280                      {
+    281                          case kPinmuxType_Default:
+    282                              PORT_RestoreDefault(I2C0_SCL_PORT_BASE, I2C0_SCL_GPIO_PIN_NUM);
+    283                              PORT_RestoreDefault(I2C0_SDA_PORT_BASE, I2C0_SDA_GPIO_PIN_NUM);
+    284                              break;
+    285                          case kPinmuxType_Peripheral:
+    286                              // Enable pins for I2C0.
+    287                              PORT_SetI2cPinMode(I2C0_SDA_PORT_BASE, I2C0_SDA_GPIO_PIN_NUM,
+    288                                                 I2C0_SDA_FUNC_ALT_MODE); // Set I2C0_SDA pin to I2C0_SDA functionality
+    289                              PORT_SetI2cPinMode(I2C0_SCL_PORT_BASE, I2C0_SCL_GPIO_PIN_NUM,
+    290                                                 I2C0_SCL_FUNC_ALT_MODE); // Set I2C0_SCL pin to I2C0_SCL functionality
+    291                              break;
+    292                          default:
+    293                              break;
+    294                      }
+    295                      break;
+    296          #endif // #if BL_ENABLE_PINMUX_I2C0
+    297          
+    298          #if BL_ENABLE_PINMUX_I2C1
+    299                  case 1:
+    300                      switch (pinmux)
+   \                     ??i2c_pinmux_config_0: (+1)
+   \   00000006   0xB510             PUSH     {R4,LR}
+   \   00000008   0x....             LDR.N    R4,??DataTable7_4  ;; 0x4004b000
+   \   0000000A   0xB111             CBZ.N    R1,??i2c_pinmux_config_1
+   \   0000000C   0x2902             CMP      R1,#+2
+   \   0000000E   0xD004             BEQ.N    ??i2c_pinmux_config_2
+   \   00000010   0xBD10             POP      {R4,PC}
+    301                      {
+    302                          case kPinmuxType_Default:
+    303                              PORT_RestoreDefault(I2C1_SCL_PORT_BASE, I2C1_SCL_GPIO_PIN_NUM);
+   \                     ??i2c_pinmux_config_1: (+1)
+   \   00000012   0x2000             MOVS     R0,#+0
+   \   00000014   0x62A0             STR      R0,[R4, #+40]
+    304                              PORT_RestoreDefault(I2C1_SDA_PORT_BASE, I2C1_SDA_GPIO_PIN_NUM);
+   \   00000016   0x62E0             STR      R0,[R4, #+44]
+    305                              break;
+   \   00000018   0xBD10             POP      {R4,PC}
+    306                          case kPinmuxType_Peripheral:
+    307                              // Enable pins for I2C1.
+    308                              PORT_SetI2cPinMode(I2C1_SDA_PORT_BASE, I2C1_SDA_GPIO_PIN_NUM,
+    309                                                 I2C1_SDA_FUNC_ALT_MODE); // Set I2C1_SDA pin to I2C1_SDA functionality
+   \                     ??i2c_pinmux_config_2: (+1)
+   \   0000001A   0x2202             MOVS     R2,#+2
+   \   0000001C   0x210B             MOVS     R1,#+11
+   \   0000001E   0x4620             MOV      R0,R4
+   \   00000020   0x.... 0x....      BL       PORT_SetI2cPinMode
+    310                              PORT_SetI2cPinMode(I2C1_SCL_PORT_BASE, I2C1_SCL_GPIO_PIN_NUM,
+    311                                                 I2C1_SCL_FUNC_ALT_MODE); // Set I2C1_SCL pin to I2C1_SCL functionality
+   \   00000024   0x4620             MOV      R0,R4
+   \   00000026   0xE8BD 0x4010      POP      {R4,LR}
+   \   0000002A   0x2202             MOVS     R2,#+2
+   \   0000002C   0x210A             MOVS     R1,#+10
+   \   0000002E   0x....             B.N      PORT_SetI2cPinMode
+    312                              break;
+    313                          default:
+    314                              break;
+    315                      }
+    316                      break;
+    317          #endif // #if BL_ENABLE_PINMUX_I2C1
+    318          
+    319          #if BL_ENABLE_PINMUX_I2C2
+    320                  case 2:
+    321                      switch (pinmux)
+    322                      {
+    323                          case kPinmuxType_Default:
+    324                              PORT_RestoreDefault(I2C2_SCL_PORT_BASE, I2C2_SCL_GPIO_PIN_NUM);
+    325                              PORT_RestoreDefault(I2C2_SDA_PORT_BASE, I2C2_SDA_GPIO_PIN_NUM);
+    326                              break;
+    327                          case kPinmuxType_Peripheral:
+    328                              // Enable pins for I2C2.
+    329                              PORT_SetI2cPinMode(I2C2_SDA_PORT_BASE, I2C2_SDA_GPIO_PIN_NUM,
+    330                                                 I2C2_SDA_FUNC_ALT_MODE); // Set I2C2_SDA pin to I2C2_SDA functionality
+    331                              PORT_SetI2cPinMode(I2C2_SCL_PORT_BASE, I2C2_SCL_GPIO_PIN_NUM,
+    332                                                 I2C2_SCL_FUNC_ALT_MODE); // Set I2C2_SCL pin to I2C2_SCL functionality
+    333                              break;
+    334                          default:
+    335                              break;
+    336                      }
+    337          #endif // #if BL_ENABLE_PINMUX_I2C2
+    338          
+    339                  default:
+    340                      break;
+    341              }
+    342          }
+    343          
+    344          /*!
+    345           * @brief Configure pinmux for SPI module.
+    346           *
+    347           * This function only support switching default or gpio or fixed-ALTx mode on fixed pins
+    348           * (Although there are many ALTx-pinmux configuration choices on various pins for the same
+    349           * peripheral module)
+    350           */
+
+   \                                 In section .text, align 2, keep-with-next
+    351          void spi_pinmux_config(uint32_t instance, pinmux_type_t pinmux)
+    352          {
+    353              switch (instance)
+   \                     spi_pinmux_config: (+1)
+   \   00000000   0x2801             CMP      R0,#+1
+   \   00000002   0xD000             BEQ.N    ??spi_pinmux_config_0
+   \   00000004   0x4770             BX       LR
+    354              {
+    355          #if BL_ENABLE_PINMUX_SPI0
+    356                  case 0:
+    357                      switch (pinmux)
+    358                      {
+    359                          case kPinmuxType_Default:
+    360                              PORT_RestoreDefault(SPI0_PCS_PORT_BASE, SPI0_PCS_GPIO_PIN_NUM);
+    361                              PORT_RestoreDefault(SPI0_SCK_PORT_BASE, SPI0_SCK_GPIO_PIN_NUM);
+    362                              PORT_RestoreDefault(SPI0_SOUT_PORT_BASE, SPI0_SOUT_GPIO_PIN_NUM);
+    363                              PORT_RestoreDefault(SPI0_SIN_PORT_BASE, SPI0_SIN_GPIO_PIN_NUM);
+    364                              break;
+    365                          case kPinmuxType_Peripheral:
+    366                              // Enable pins for SPI0
+    367                              PORT_SetSpiPinMode(SPI0_PCS_PORT_BASE, SPI0_PCS_GPIO_PIN_NUM,
+    368                                                 SPI0_PCS_FUNC_ALT_MODE); // Set SPI0_PCS pin to SPI0_PCS functionality
+    369                              PORT_SetSpiPinMode(SPI0_SCK_PORT_BASE, SPI0_SCK_GPIO_PIN_NUM,
+    370                                                 SPI0_SCK_FUNC_ALT_MODE); // Set SPI0_SCK pin to SPI0_SCK functionality
+    371                              PORT_SetSpiPinMode(SPI0_SOUT_PORT_BASE, SPI0_SOUT_GPIO_PIN_NUM,
+    372                                                 SPI0_SOUT_FUNC_ALT_MODE); // Set SPI0_SOUT pin to SPI0_SOUT functionality
+    373                              PORT_SetSpiPinMode(SPI0_SIN_PORT_BASE, SPI0_SIN_GPIO_PIN_NUM,
+    374                                                 SPI0_SIN_FUNC_ALT_MODE); // Set SPI0_SIN pin to SPI0_SIN functionality
+    375                              break;
+    376                          default:
+    377                              break;
+    378                      }
+    379                      break;
+    380          #endif // #if BL_ENABLE_PINMUX_SPI0
+    381          
+    382          #if BL_ENABLE_PINMUX_SPI1
+    383                  case 1:
+    384                      switch (pinmux)
+   \                     ??spi_pinmux_config_0: (+1)
+   \   00000006   0xB510             PUSH     {R4,LR}
+   \   00000008   0x....             LDR.N    R4,??DataTable7_5  ;; 0x4004c000
+   \   0000000A   0xB111             CBZ.N    R1,??spi_pinmux_config_1
+   \   0000000C   0x2902             CMP      R1,#+2
+   \   0000000E   0xD006             BEQ.N    ??spi_pinmux_config_2
+   \   00000010   0xBD10             POP      {R4,PC}
+    385                      {
+    386                          case kPinmuxType_Default:
+    387                              PORT_RestoreDefault(SPI1_PCS_PORT_BASE, SPI1_PCS_GPIO_PIN_NUM);
+   \                     ??spi_pinmux_config_1: (+1)
+   \   00000012   0x2000             MOVS     R0,#+0
+   \   00000014   0x6120             STR      R0,[R4, #+16]
+    388                              PORT_RestoreDefault(SPI1_SCK_PORT_BASE, SPI1_SCK_GPIO_PIN_NUM);
+   \   00000016   0x6160             STR      R0,[R4, #+20]
+    389                              PORT_RestoreDefault(SPI1_SOUT_PORT_BASE, SPI1_SOUT_GPIO_PIN_NUM);
+   \   00000018   0x61A0             STR      R0,[R4, #+24]
+    390                              PORT_RestoreDefault(SPI1_SIN_PORT_BASE, SPI1_SIN_GPIO_PIN_NUM);
+   \   0000001A   0x61E0             STR      R0,[R4, #+28]
+    391                              break;
+   \   0000001C   0xBD10             POP      {R4,PC}
+    392                          case kPinmuxType_Peripheral:
+    393                              // Enable pins for SPI1
+    394                              PORT_SetSpiPinMode(SPI1_PCS_PORT_BASE, SPI1_PCS_GPIO_PIN_NUM,
+    395                                                 SPI1_PCS_FUNC_ALT_MODE); // Set SPI1_PCS pin to SPI1_PCS functionality
+   \                     ??spi_pinmux_config_2: (+1)
+   \   0000001E   0x2207             MOVS     R2,#+7
+   \   00000020   0x2104             MOVS     R1,#+4
+   \   00000022   0x4620             MOV      R0,R4
+   \   00000024   0x.... 0x....      BL       PORT_SetSpiPinMode
+    396                              PORT_SetSpiPinMode(SPI1_SCK_PORT_BASE, SPI1_SCK_GPIO_PIN_NUM,
+    397                                                 SPI1_SCK_FUNC_ALT_MODE); // Set SPI1_SCK pin to SPI1_SCK functionality
+   \   00000028   0x2207             MOVS     R2,#+7
+   \   0000002A   0x2105             MOVS     R1,#+5
+   \   0000002C   0x4620             MOV      R0,R4
+   \   0000002E   0x.... 0x....      BL       PORT_SetSpiPinMode
+    398                              PORT_SetSpiPinMode(SPI1_SOUT_PORT_BASE, SPI1_SOUT_GPIO_PIN_NUM,
+    399                                                 SPI1_SOUT_FUNC_ALT_MODE); // Set SPI1_SOUT pin to SPI1_SOUT functionality
+   \   00000032   0x2207             MOVS     R2,#+7
+   \   00000034   0x2106             MOVS     R1,#+6
+   \   00000036   0x4620             MOV      R0,R4
+   \   00000038   0x.... 0x....      BL       PORT_SetSpiPinMode
+    400                              PORT_SetSpiPinMode(SPI1_SIN_PORT_BASE, SPI1_SIN_GPIO_PIN_NUM,
+    401                                                 SPI1_SIN_FUNC_ALT_MODE); // Set SPI1_SIN pin to SPI1_SIN functionality
+   \   0000003C   0x4620             MOV      R0,R4
+   \   0000003E   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000042   0x2207             MOVS     R2,#+7
+   \   00000044   0x2107             MOVS     R1,#+7
+   \   00000046   0x....             B.N      PORT_SetSpiPinMode
+    402                              break;
+    403                          default:
+    404                              break;
+    405                      }
+    406                      break;
+    407          #endif // #if BL_ENABLE_PINMUX_SPI1
+    408          
+    409          #if BL_ENABLE_PINMUX_SPI2
+    410                  case 2:
+    411                      switch (pinmux)
+    412                      {
+    413                          case kPinmuxType_Default:
+    414                              PORT_RestoreDefault(SPI2_PCS_PORT_BASE, SPI2_PCS_GPIO_PIN_NUM);
+    415                              PORT_RestoreDefault(SPI2_SCK_PORT_BASE, SPI2_SCK_GPIO_PIN_NUM);
+    416                              PORT_RestoreDefault(SPI2_SOUT_PORT_BASE, SPI2_SOUT_GPIO_PIN_NUM);
+    417                              PORT_RestoreDefault(SPI2_SIN_PORT_BASE, SPI2_SIN_GPIO_PIN_NUM);
+    418                              break;
+    419                          case kPinmuxType_Peripheral:
+    420                              // Enable pins for SPI1
+    421                              PORT_SetSpiPinMode(SPI2_PCS_PORT_BASE, SPI2_PCS_GPIO_PIN_NUM,
+    422                                                 SPI2_PCS_FUNC_ALT_MODE); // Set SPI1_PCS pin to SPI1_PCS functionality
+    423                              PORT_SetSpiPinMode(SPI2_SCK_PORT_BASE, SPI2_SCK_GPIO_PIN_NUM,
+    424                                                 SPI2_SCK_FUNC_ALT_MODE); // Set SPI1_SCK pin to SPI1_SCK functionality
+    425                              PORT_SetSpiPinMode(SPI2_SOUT_PORT_BASE, SPI2_SOUT_GPIO_PIN_NUM,
+    426                                                 SPI2_SOUT_FUNC_ALT_MODE); // Set SPI1_SOUT pin to SPI1_SOUT functionality
+    427                              PORT_SetSpiPinMode(SPI2_SIN_PORT_BASE, SPI2_SIN_GPIO_PIN_NUM,
+    428                                                 SPI2_SIN_FUNC_ALT_MODE); // Set SPI1_SIN pin to SPI1_SIN functionality
+    429                              break;
+    430                          default:
+    431                              break;
+    432                      }
+    433                      break;
+    434          #endif // #if BL_ENABLE_PINMUX_SPI2
+    435          
+    436                  default:
+    437                      break;
+    438              }
+    439          }
+    440          
+    441          /*!
+    442           * @brief Configure pinmux for CAN module.
+    443           *
+    444           * This function only support switching default or gpio or fixed-ALTx mode on fixed pins
+    445           * (Although there are many ALTx-pinmux configuration choices on various pins for the same
+    446           * peripheral module)
+    447           */
+
+   \                                 In section .text, align 2, keep-with-next
+    448          void can_pinmux_config(uint32_t instance, pinmux_type_t pinmux)
+    449          {
+    450              switch (instance)
+    451              {
+    452          #if BL_ENABLE_PINMUX_CAN0
+    453                  case 0:
+    454                      switch (pinmux)
+    455                      {
+    456                          case kPinmuxType_Default:
+    457                              PORT_RestoreDefault(CAN0_RX_PORT_BASE, CAN0_RX_GPIO_PIN_NUM);
+    458                              PORT_RestoreDefault(CAN0_TX_PORT_BASE, CAN0_TX_GPIO_PIN_NUM);
+    459                              break;
+    460                          case kPinmuxType_Peripheral:
+    461                              // Enable pins for CAN0
+    462                              PORT_SetCanPinMode(CAN0_RX_PORT_BASE, CAN0_RX_GPIO_PIN_NUM,
+    463                                                 CAN0_RX_FUNC_ALT_MODE); // Set CAN0_RX pin to CAN0_RX functionality
+    464                              PORT_SetCanPinMode(CAN0_TX_PORT_BASE, CAN0_TX_GPIO_PIN_NUM,
+    465                                                 CAN0_TX_FUNC_ALT_MODE); // Set CAN0_TX pin to CAN0_TX functionality
+    466                              break;
+    467                          default:
+    468                              break;
+    469                      }
+    470                      break;
+    471          #endif // #if BL_ENABLE_PINMUX_CAN0
+    472          
+    473                  default:
+    474                      break;
+    475              }
+    476          }
+   \                     can_pinmux_config: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    477          
+    478          //! @brief this is going to be used for autobaud IRQ handling for UART0
+    479          #if BL_ENABLE_PINMUX_UART0
+    480          void UART0_RX_GPIO_IRQHandler(void)
+    481          {
+    482              // Check if the pin for UART0 is what triggered the RX PORT interrupt
+    483              if (PORT_GetPinIsf(UART0_RX_PORT_BASE, UART0_RX_GPIO_PIN_NUM) && s_pin_irq_func[0])
+    484              {
+    485                  s_pin_irq_func[0](0);
+    486                  PORT_ClearPinsInterruptFlags(UART0_RX_PORT_BASE, ~0U);
+    487              }
+    488          }
+    489          #endif // #if BL_ENABLE_PINMUX_UART0
+    490          
+    491          //! @brief this is going to be used for autobaud IRQ handling for UART1
+    492          #if BL_ENABLE_PINMUX_UART1
+
+   \                                 In section .text, align 2, keep-with-next
+    493          void UART1_RX_GPIO_IRQHandler(void)
+    494          {
+   \                     PORTE_IRQHandler: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    495              // Check if the pin for UART1 is what triggered the RX PORT interrupt
+    496              if (PORT_GetPinIsf(UART1_RX_PORT_BASE, UART1_RX_GPIO_PIN_NUM) && s_pin_irq_func[1])
+   \   00000002   0x2101             MOVS     R1,#+1
+   \   00000004   0x....             LDR.N    R0,??DataTable7_2  ;; 0x4004d000
+   \   00000006   0x.... 0x....      BL       PORT_GetPinIsf
+   \   0000000A   0xB148             CBZ.N    R0,??PORTE_IRQHandler_0
+   \   0000000C   0x....             LDR.N    R0,??DataTable7_6
+   \   0000000E   0x6841             LDR      R1,[R0, #+4]
+   \   00000010   0x0008             MOVS     R0,R1
+   \   00000012   0xD005             BEQ.N    ??PORTE_IRQHandler_0
+    497              {
+    498                  s_pin_irq_func[1](1);
+   \   00000014   0x2001             MOVS     R0,#+1
+   \   00000016   0x4788             BLX      R1
+    499                  PORT_ClearPinsInterruptFlags(UART1_RX_PORT_BASE, ~0U);
+   \   00000018   0x....             LDR.N    R1,??DataTable7_7  ;; 0x4004d0a0
+   \   0000001A   0xF04F 0x30FF      MOV      R0,#-1
+   \   0000001E   0x6008             STR      R0,[R1, #+0]
+    500              }
+    501          }
+   \                     ??PORTE_IRQHandler_0: (+1)
+   \   00000020   0xBD01             POP      {R0,PC}          ;; return
+    502          #endif // #if BL_ENABLE_PINMUX_UART1
+    503          
+    504          //! @brief this is going to be used for autobaud IRQ handling for UART2
+    505          #if BL_ENABLE_PINMUX_UART2
+    506          void UART2_RX_GPIO_IRQHandler(void)
+    507          {
+    508              // Check if the pin for UART2 is what triggered the RX PORT interrupt
+    509              if (PORT_GetPinIsf(UART2_RX_PORT_BASE, UART2_RX_GPIO_PIN_NUM) && s_pin_irq_func[2])
+    510              {
+    511                  s_pin_irq_func[2](2);
+    512                  PORT_ClearPinsInterruptFlags(UART2_RX_PORT_BASE, ~0U);
+    513              }
+    514          }
+    515          #endif // #if BL_ENABLE_PINMUX_UART2
+    516          
+    517          //! @brief this is going to be used for autobaud IRQ handling for UART3
+    518          #if BL_ENABLE_PINMUX_UART3
+    519          void UART3_RX_GPIO_IRQHandler(void)
+    520          {
+    521              // Check if the pin for UART3 is what triggered the RX PORT interrupt
+    522              if (PORT_GetPinIsf(UART3_RX_PORT_BASE, UART3_RX_GPIO_PIN_NUM) && s_pin_irq_func[3])
+    523              {
+    524                  s_pin_irq_func[3](3);
+    525                  PORT_ClearPinsInterruptFlags(UART3_RX_PORT_BASE, ~0U);
+    526              }
+    527          }
+    528          #endif // #if BL_ENABLE_PINMUX_UART3
+    529          
+    530          //! @brief this is going to be used for autobaud IRQ handling for UART4
+    531          #if BL_ENABLE_PINMUX_UART4
+    532          void UART4_RX_GPIO_IRQHandler(void)
+    533          {
+    534              // Check if the pin for UART4 is what triggered the RX PORT interrupt
+    535              if (PORT_GetPinIsf(UART4_RX_PORT_BASE, UART4_RX_GPIO_PIN_NUM) && s_pin_irq_func[4])
+    536              {
+    537                  s_pin_irq_func[4](4);
+    538                  PORT_ClearPinsInterruptFlags(UART4_RX_PORT_BASE, ~0U);
+    539              }
+    540          }
+    541          #endif // #if BL_ENABLE_PINMUX_UART4
+    542          
+
+   \                                 In section .text, align 2, keep-with-next
+    543          void enable_autobaud_pin_irq(uint32_t instance, pin_irq_callback_t func)
+    544          {
+   \                     enable_autobaud_pin_irq: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    545              switch (instance)
+   \   00000002   0x2801             CMP      R0,#+1
+   \   00000004   0x460C             MOV      R4,R1
+   \   00000006   0xD10C             BNE.N    ??enable_autobaud_pin_irq_0
+    546              {
+    547          #if BL_ENABLE_PINMUX_UART0
+    548                  case 0:
+    549                      NVIC_SetPriority(UART0_RX_GPIO_IRQn, PORT_IRQC_INTERRUPT_ENABLED_PRIORITY);
+    550                      NVIC_EnableIRQ(UART0_RX_GPIO_IRQn);
+    551                      // Only look for a falling edge for our interrupts
+    552                      PORT_SetPinInterruptConfig(UART0_RX_PORT_BASE, UART0_RX_GPIO_PIN_NUM, kPORT_InterruptFallingEdge);
+    553                      s_pin_irq_func[0] = func;
+    554                      break;
+    555          #endif // #if BL_ENABLE_PINMUX_UART0
+    556          
+    557          #if BL_ENABLE_PINMUX_UART1
+    558                  case 1:
+    559                      NVIC_SetPriority(UART1_RX_GPIO_IRQn, PORT_IRQC_INTERRUPT_ENABLED_PRIORITY);
+   \   00000008   0x2101             MOVS     R1,#+1
+   \   0000000A   0x203F             MOVS     R0,#+63
+   \   0000000C   0x.... 0x....      BL       NVIC_SetPriority
+    560                      NVIC_EnableIRQ(UART1_RX_GPIO_IRQn);
+   \   00000010   0x....             LDR.N    R1,??DataTable7_8  ;; 0xe000e104
+   \   00000012   0xF04F 0x4000      MOV      R0,#-2147483648
+   \   00000016   0x6008             STR      R0,[R1, #+0]
+    561                      // Only look for a falling edge for our interrupts
+    562                      PORT_SetPinInterruptConfig(UART1_RX_PORT_BASE, UART1_RX_GPIO_PIN_NUM, kPORT_InterruptFallingEdge);
+   \   00000018   0x220A             MOVS     R2,#+10
+   \   0000001A   0x.... 0x....      BL       ?Subroutine1
+    563                      s_pin_irq_func[1] = func;
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \   0000001E   0x....             LDR.N    R0,??DataTable7_6
+   \   00000020   0x6044             STR      R4,[R0, #+4]
+    564                      break;
+    565          #endif // #if BL_ENABLE_PINMUX_UART1
+    566          
+    567          #if BL_ENABLE_PINMUX_UART2
+    568                  case 2:
+    569                      NVIC_SetPriority(UART2_RX_GPIO_IRQn, PORT_IRQC_INTERRUPT_ENABLED_PRIORITY);
+    570                      NVIC_EnableIRQ(UART2_RX_GPIO_IRQn);
+    571                      // Only look for a falling edge for our interrupts
+    572                      PORT_SetPinInterruptConfig(UART2_RX_PORT_BASE, UART2_RX_GPIO_PIN_NUM, kPORT_InterruptFallingEdge);
+    573                      s_pin_irq_func[2] = func;
+    574                      break;
+    575          #endif // #if BL_ENABLE_PINMUX_UART2
+    576          
+    577          #if BL_ENABLE_PINMUX_UART3
+    578                  case 3:
+    579                      NVIC_SetPriority(UART3_RX_GPIO_IRQn, PORT_IRQC_INTERRUPT_ENABLED_PRIORITY);
+    580                      NVIC_EnableIRQ(UART3_RX_GPIO_IRQn);
+    581                      // Only look for a falling edge for our interrupts
+    582                      PORT_SetPinInterruptConfig(UART3_RX_PORT_BASE, UART3_RX_GPIO_PIN_NUM, kPORT_InterruptFallingEdge);
+    583                      s_pin_irq_func[3] = func;
+    584                      break;
+    585          #endif // #if BL_ENABLE_PINMUX_UART3
+    586          
+    587          #if BL_ENABLE_PINMUX_UART4
+    588                  case 4:
+    589                      NVIC_SetPriority(UART4_RX_GPIO_IRQn, PORT_IRQC_INTERRUPT_ENABLED_PRIORITY);
+    590                      NVIC_EnableIRQ(UART4_RX_GPIO_IRQn);
+    591                      // Only look for a falling edge for our interrupts
+    592                      PORT_SetPinInterruptConfig(UART4_RX_PORT_BASE, UART4_RX_GPIO_PIN_NUM, kPORT_InterruptFallingEdge);
+    593                      s_pin_irq_func[4] = func;
+    594                      break;
+    595          #endif // #if BL_ENABLE_PINMUX_UART4
+    596          
+    597                  default:
+    598                      break;
+    599              }
+    600          }
+   \                     ??enable_autobaud_pin_irq_0: (+1)
+   \   00000022   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \   00000000   0x2101             MOVS     R1,#+1
+   \   00000002   0x....             LDR.N    R0,??DataTable7_2  ;; 0x4004d000
+   \   00000004   0x....             B.N      PORT_SetPinInterruptConfig
+    601          
+
+   \                                 In section .text, align 2, keep-with-next
+    602          void disable_autobaud_pin_irq(uint32_t instance)
+    603          {
+    604              switch (instance)
+   \                     disable_autobaud_pin_irq: (+1)
+   \   00000000   0x2801             CMP      R0,#+1
+   \   00000002   0xD000             BEQ.N    ??disable_autobaud_pin_irq_0
+   \   00000004   0x4770             BX       LR
+    605              {
+    606          #if BL_ENABLE_PINMUX_UART0
+    607                  case 0:
+    608                      NVIC_DisableIRQ(UART0_RX_GPIO_IRQn);
+    609                      NVIC_SetPriority(UART0_RX_GPIO_IRQn, PORT_IRQC_INTERRUPT_RESTORED_PRIORITY);
+    610                      PORT_SetPinInterruptConfig(UART0_RX_PORT_BASE, UART0_RX_GPIO_PIN_NUM, kPORT_InterruptOrDMADisabled);
+    611                      s_pin_irq_func[0] = 0;
+    612                      break;
+    613          #endif // #if BL_ENABLE_PINMUX_UART0
+    614          
+    615          #if BL_ENABLE_PINMUX_UART1
+    616                  case 1:
+    617                      NVIC_DisableIRQ(UART1_RX_GPIO_IRQn);
+   \                     ??disable_autobaud_pin_irq_0: (+1)
+   \   00000006   0xB580             PUSH     {R7,LR}
+   \   00000008   0x....             LDR.N    R1,??DataTable7_9  ;; 0xe000e184
+   \   0000000A   0xF04F 0x4000      MOV      R0,#-2147483648
+   \   0000000E   0x6008             STR      R0,[R1, #+0]
+    618                      NVIC_SetPriority(UART1_RX_GPIO_IRQn, PORT_IRQC_INTERRUPT_RESTORED_PRIORITY);
+   \   00000010   0x2100             MOVS     R1,#+0
+   \   00000012   0x203F             MOVS     R0,#+63
+   \   00000014   0x.... 0x....      BL       NVIC_SetPriority
+    619                      PORT_SetPinInterruptConfig(UART1_RX_PORT_BASE, UART1_RX_GPIO_PIN_NUM, kPORT_InterruptOrDMADisabled);
+   \   00000018   0x2200             MOVS     R2,#+0
+   \   0000001A   0x.... 0x....      BL       ?Subroutine1
+    620                      s_pin_irq_func[1] = 0;
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \   0000001E   0x....             LDR.N    R1,??DataTable7_6
+   \   00000020   0x2000             MOVS     R0,#+0
+   \   00000022   0x6048             STR      R0,[R1, #+4]
+    621                      break;
+    622          #endif // #if BL_ENABLE_PINMUX_UART1
+    623          
+    624          #if BL_ENABLE_PINMUX_UART2
+    625                  case 2:
+    626                      NVIC_DisableIRQ(UART2_RX_GPIO_IRQn);
+    627                      NVIC_SetPriority(UART2_RX_GPIO_IRQn, PORT_IRQC_INTERRUPT_RESTORED_PRIORITY);
+    628                      PORT_SetPinInterruptConfig(UART2_RX_PORT_BASE, UART2_RX_GPIO_PIN_NUM, kPORT_InterruptOrDMADisabled);
+    629                      s_pin_irq_func[2] = 0;
+    630                      break;
+    631          #endif // #if BL_ENABLE_PINMUX_UART2
+    632          
+    633          #if BL_ENABLE_PINMUX_UART3
+    634                  case 3:
+    635                      NVIC_DisableIRQ(UART3_RX_GPIO_IRQn);
+    636                      NVIC_SetPriority(UART3_RX_GPIO_IRQn, PORT_IRQC_INTERRUPT_RESTORED_PRIORITY);
+    637                      PORT_SetPinInterruptConfig(UART3_RX_PORT_BASE, UART3_RX_GPIO_PIN_NUM, kPORT_InterruptOrDMADisabled);
+    638                      s_pin_irq_func[3] = 0;
+    639                      break;
+    640          #endif // #if BL_ENABLE_PINMUX_UART3
+    641          
+    642          #if BL_ENABLE_PINMUX_UART4
+    643                  case 4:
+    644                      NVIC_DisableIRQ(UART4_RX_GPIO_IRQn);
+    645                      NVIC_SetPriority(UART4_RX_GPIO_IRQn, PORT_IRQC_INTERRUPT_RESTORED_PRIORITY);
+    646                      PORT_SetPinInterruptConfig(UART4_RX_PORT_BASE, UART4_RX_GPIO_PIN_NUM, kPORT_InterruptOrDMADisabled);
+    647                      s_pin_irq_func[4] = 0;
+    648                      break;
+    649          #endif // #if BL_ENABLE_PINMUX_UART4
+    650          
+    651                  default:
+    652                      break;
+    653              }
+    654          }
+   \   00000024   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \   00000000   0xE000ED18         DC32     0xe000ed18
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_1:
+   \   00000000   0xE000E400         DC32     0xe000e400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_2:
+   \   00000000   0x4004D000         DC32     0x4004d000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_3:
+   \   00000000   0x400FF114         DC32     0x400ff114
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_4:
+   \   00000000   0x4004B000         DC32     0x4004b000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_5:
+   \   00000000   0x4004C000         DC32     0x4004c000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_6:
+   \   00000000   0x........         DC32     s_pin_irq_func
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_7:
+   \   00000000   0x4004D0A0         DC32     0x4004d0a0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_8:
+   \   00000000   0xE000E104         DC32     0xe000e104
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_9:
+   \   00000000   0xE000E184         DC32     0xe000e184
+    655          
+    656          ////////////////////////////////////////////////////////////////////////////////
+    657          // EOF
+    658          ////////////////////////////////////////////////////////////////////////////////
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   NVIC_SetPriority
+       8   PORTE_IRQHandler
+         8   -- Indirect call
+         8   -> PORT_GetPinIsf
+       0   PORT_GetPinIsf
+       0   PORT_SetI2cPinMode
+       0   PORT_SetPinInterruptConfig
+       0   PORT_SetSpiPinMode
+       0   PORT_SetUartPinMode
+       0   can_pinmux_config
+       8   disable_autobaud_pin_irq
+         8   -> NVIC_SetPriority
+         8   -> PORT_SetPinInterruptConfig
+       8   enable_autobaud_pin_irq
+         8   -> NVIC_SetPriority
+         8   -> PORT_SetPinInterruptConfig
+       8   i2c_pinmux_config
+         0   -> PORT_SetI2cPinMode
+         8   -> PORT_SetI2cPinMode
+       8   spi_pinmux_config
+         0   -> PORT_SetSpiPinMode
+         8   -> PORT_SetSpiPinMode
+       8   uart_pinmux_config
+         0   -> PORT_SetUartPinMode
+         8   -> PORT_SetUartPinMode
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_2
+       4  ??DataTable7_3
+       4  ??DataTable7_4
+       4  ??DataTable7_5
+       4  ??DataTable7_6
+       4  ??DataTable7_7
+       4  ??DataTable7_8
+       4  ??DataTable7_9
+      12  ?Subroutine0
+       6  ?Subroutine1
+      26  NVIC_SetPriority
+      34  PORTE_IRQHandler
+      10  PORT_GetPinIsf
+      12  PORT_SetI2cPinMode
+      18  PORT_SetPinInterruptConfig
+       2  PORT_SetSpiPinMode
+       2  PORT_SetUartPinMode
+       2  can_pinmux_config
+      38  disable_autobaud_pin_irq
+      36  enable_autobaud_pin_irq
+      48  i2c_pinmux_config
+       8  s_pin_irq_func
+      72  spi_pinmux_config
+      70  uart_pinmux_config
+
+ 
+   8 bytes in section .bss
+ 428 bytes in section .text
+ 
+ 428 bytes of CODE memory
+   8 bytes of DATA memory
+
+Errors: none
+Warnings: none

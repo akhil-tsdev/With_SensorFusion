@@ -1,0 +1,165 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       02/Sep/2016  11:55:11
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\src\memory_map_MK64F12.c
+#    Command line =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\src\memory_map_MK64F12.c
+#        -D DEBUG -D NDEBUG -D USB_STACK_BM -D CPU_MK64FN1M0VMD12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D FREEDOM -D BL_TARGET_FLASH -lC
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader\debug\list
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader\debug\obj
+#        --no_unroll --debug --endian=little --cpu=Cortex-M4 -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/platform/devices/MK64F12\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/autobaud\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/usb/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/usb/osa\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/usb/device\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/usb/device/class\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/bm_usb\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/platform\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/platform/devices\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/platform/CMSIS/Include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/drivers\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/drivers/common\
+#        -Ohz --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader\debug\list\memory_map_MK64F12.lst
+#    Object file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader\debug\obj\memory_map_MK64F12.o
+#
+###############################################################################
+
+C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\src\memory_map_MK64F12.c
+      1          /*
+      2           * Copyright (c) 2013, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          
+     31          #include "bootloader/bl_context.h"
+     32          #include "memory/memory.h"
+     33          
+     34          ////////////////////////////////////////////////////////////////////////////////
+     35          // Variables
+     36          ////////////////////////////////////////////////////////////////////////////////
+     37          
+     38          //! @brief Memory map for K64F12.
+     39          //!
+     40          //! This map is not const because it is updated at runtime with the actual sizes of
+     41          //! flash and RAM for the chip we're running on.
+
+   \                                 In section .data, align 4
+     42          memory_map_entry_t g_memoryMap[] = {
+   \                     g_memoryMap:
+   \   00000000   0x00000000         DC32 0, 1048575
+   \              0x000FFFFF   
+   \   00000008   0x01 0x00          DC8 1, 0, 0, 0
+   \              0x00 0x00    
+   \   0000000C   0x........         DC32 g_flashMemoryInterface, 536805376, 537067519
+   \              0x1FFF0000   
+   \              0x2002FFFF   
+   \   00000018   0x01 0x00          DC8 1, 0, 0, 0
+   \              0x00 0x00    
+   \   0000001C   0x........         DC32 g_normalMemoryInterface, 1073741824, 1074266111
+   \              0x40000000   
+   \              0x4007FFFF   
+   \   00000028   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \   0000002C   0x........         DC32 g_deviceMemoryInterface, 1074786304, 1074790399
+   \              0x400FF000   
+   \              0x400FFFFF   
+   \   00000038   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \   0000003C   0x........         DC32 g_deviceMemoryInterface, 3758096384, 3759144959
+   \              0xE0000000   
+   \              0xE00FFFFF   
+   \   00000048   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \   0000004C   0x........         DC32 g_deviceMemoryInterface, 0
+   \              0x00000000   
+   \   00000054   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+     43              { 0x00000000, 0x000fffff, kMemoryIsExecutable, &g_flashMemoryInterface },   // Flash array (1024KB)
+     44              { 0x1fff0000, 0x2002ffff, kMemoryIsExecutable, &g_normalMemoryInterface },  // SRAM (256KB)
+     45              { 0x40000000, 0x4007ffff, kMemoryNotExecutable, &g_deviceMemoryInterface }, // AIPS peripherals
+     46              { 0x400ff000, 0x400fffff, kMemoryNotExecutable, &g_deviceMemoryInterface }, // GPIO
+     47              { 0xe0000000, 0xe00fffff, kMemoryNotExecutable, &g_deviceMemoryInterface }, // M4 private peripherals
+     48              { 0 }                                                                       // Terminator
+     49          };
+     50          
+     51          ////////////////////////////////////////////////////////////////////////////////
+     52          // EOF
+     53          ////////////////////////////////////////////////////////////////////////////////
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      96  g_memoryMap
+
+ 
+ 96 bytes in section .data
+ 
+ 96 bytes of DATA memory
+
+Errors: none
+Warnings: none

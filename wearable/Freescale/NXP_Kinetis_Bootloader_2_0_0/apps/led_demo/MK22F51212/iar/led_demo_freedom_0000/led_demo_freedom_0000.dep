@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>2090948487</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\..\..\..\targets\common\linker\iar\MK22F51212\K22FN512xxx12_application_0x0000.icf</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\startup\crt0.s</file>
+      <file>$PROJ_DIR$\..\..\..\src\milliseconds_delay.c</file>
+      <file>$PROJ_DIR$\..\..\src\main.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\targets\MK22F51212\src\startup\iar\startup_MK22F51212.s</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\targets\MK22F51212\src\startup\system_MK22F51212.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\startup\startup.c</file>
+      <file>$PROJ_DIR$\output\Debug\led_demo_freedom_0000.bin</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$PROJ_DIR$\debug\list\led_demo_freedom_0000.map</file>
+      <file>$PROJ_DIR$\debug\list\led_demo_freedom_0000.log</file>
+      <file>$PROJ_DIR$\debug\list\startup.lst</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\targets\MK22F51212\src\target_config.h</file>
+      <file>$PROJ_DIR$\debug\list\system_MK22F51212.lst</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\include\bootloader_core.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\targets\MK22F51212\src\startup\system_MK22F51212.h</file>
+      <file>$PROJ_DIR$\output\Debug\led_demo_freedom_0000.elf</file>
+      <file>$PROJ_DIR$\debug\obj\main.o</file>
+      <file>$PROJ_DIR$\debug\obj\startup.o</file>
+      <file>$PROJ_DIR$\debug\obj\system_MK22F51212.o</file>
+      <file>$PROJ_DIR$\debug\obj\crt0.o</file>
+      <file>$PROJ_DIR$\debug\obj\milliseconds_delay.o</file>
+      <file>$PROJ_DIR$\debug\obj\startup_MK22F51212.o</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\platform\CMSIS\Include\core_cm4.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\platform\devices\MK22F51212\MK22F51212.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\platform\devices\MK22F51212\fsl_device_registers.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\platform\CMSIS\Include\core_cmFunc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\..\..\..\src\milliseconds_delay.h</file>
+      <file>$PROJ_DIR$\debug\list\milliseconds_delay.lst</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\platform\devices\MK22F51212\system_MK22F51212.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\platform\devices\MK22F51212\MK22F51212_features.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\platform\CMSIS\Include\core_cmInstr.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\platform\CMSIS\Include\core_cmSimd.h</file>
+      <file>$PROJ_DIR$\debug\list\main.lst</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\src\startup\crt0.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 22</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\src\milliseconds_delay.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35 23</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 30 29 25 26 27 28 40 32 33 42 38 39 41 43 31 44 36 37 34</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 45 19</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 30 29 25 26 27 28 40 32 33 42 38 39 41 43 31 44 36 37 34</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\targets\MK22F51212\src\startup\iar\startup_MK22F51212.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 24</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\targets\MK22F51212\src\startup\system_MK22F51212.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15 21</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26 27 28 40 32 33 42 38 17 30 29 25 39 41 43 31 44 36 37 14</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\src\startup\startup.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 13 20</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26 27 28 40 32 33 42 38 30 29 25 39 41 43 31 44 36 37 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 18 11 12</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\output\Debug\led_demo_freedom_0000.elf</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 11 12</file>
+        </tool>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 7</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 0 22 19 23 20 24 21 8 9 10</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

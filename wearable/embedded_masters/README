@@ -1,0 +1,6 @@
+﻿https://github.com/TuringSense/embedded-masters.git
+
+Shared code for collaboration between TuringSense and Embedded Masters.
+
+This directory contains code from Embedded Masters that have been modified
+for Turingsense's setup (wiring, etc).

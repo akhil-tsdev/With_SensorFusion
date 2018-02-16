@@ -1,0 +1,240 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       16/Sep/2016  13:23:57
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\common\src\bl_uart_irq_config_common.c
+#    Command line =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\common\src\bl_uart_irq_config_common.c
+#        -D NDEBUG -D USB_STACK_BM -D CPU_MK22FN1M0AVMC12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D FREEDOM -D BL_TARGET_FLASH -D
+#        TURINGSENSE=1 -lC
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\list
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\..\..\..\..\src\platform\devices\MK22FA12_MK64\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/autobaud\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/osa\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/device\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/device/class\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/bm_usb\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform/devices\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform/CMSIS/Include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/drivers\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/drivers/common\
+#        -On --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\list\bl_uart_irq_config_common.lst
+#    Object file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\obj\bl_uart_irq_config_common.o
+#
+###############################################################################
+
+C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\common\src\bl_uart_irq_config_common.c
+      1          /*
+      2          * Copyright (c) 2014, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * Redistribution and use in source and binary forms, with or without modification,
+      6          * are permitted provided that the following conditions are met:
+      7          *
+      8          * o Redistributions of source code must retain the above copyright notice, this list
+      9          *   of conditions and the following disclaimer.
+     10          *
+     11          * o Redistributions in binary form must reproduce the above copyright notice, this
+     12          *   list of conditions and the following disclaimer in the documentation and/or
+     13          *   other materials provided with the distribution.
+     14          *
+     15          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16          *   contributors may be used to endorse or promote products derived from this
+     17          *   software without specific prior written permission.
+     18          *
+     19          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29          */
+     30          
+     31          #include "bootloader/bl_context.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void NVIC_EnableIRQ(IRQn_Type)
+   \                     NVIC_EnableIRQ: (+1)
+   \   00000000   0x2101             MOVS     R1,#+1
+   \   00000002   0xF010 0x021F      ANDS     R2,R0,#0x1F
+   \   00000006   0x4091             LSLS     R1,R1,R2
+   \   00000008   0x....             LDR.N    R2,??DataTable2  ;; 0xe000e100
+   \   0000000A   0xB240             SXTB     R0,R0            ;; SignExt  R0,R0,#+24,#+24
+   \   0000000C   0x0943             LSRS     R3,R0,#+5
+   \   0000000E   0xF842 0x1023      STR      R1,[R2, R3, LSL #+2]
+   \   00000012   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void NVIC_DisableIRQ(IRQn_Type)
+   \                     NVIC_DisableIRQ: (+1)
+   \   00000000   0x2101             MOVS     R1,#+1
+   \   00000002   0xF010 0x021F      ANDS     R2,R0,#0x1F
+   \   00000006   0x4091             LSLS     R1,R1,R2
+   \   00000008   0x....             LDR.N    R2,??DataTable2_1  ;; 0xe000e180
+   \   0000000A   0xB240             SXTB     R0,R0            ;; SignExt  R0,R0,#+24,#+24
+   \   0000000C   0x0943             LSRS     R3,R0,#+5
+   \   0000000E   0xF842 0x1023      STR      R1,[R2, R3, LSL #+2]
+   \   00000012   0x4770             BX       LR               ;; return
+     32          #include "bootloader_common.h"
+     33          #include "bootloader_config.h"
+     34          #include "bootloader/bl_irq_common.h"
+     35          #include "autobaud/autobaud.h"
+     36          #include "packet/serial_packet.h"
+     37          #include "fsl_device_registers.h"
+     38          #include "uart/fsl_uart.h"
+     39          #include "utilities/fsl_assert.h"
+     40          
+
+   \                                 In section .rodata, align 4
+     41          static const IRQn_Type uart_irqs[] = UART_RX_TX_IRQS;
+   \                     uart_irqs:
+   \   00000000   0x1F 0x21          DC8 31, 33, 35, 37, 66, 68, 0, 0
+   \              0x23 0x25    
+   \              0x42 0x44    
+   \              0x00 0x00    
+     42          
+
+   \                                 In section .text, align 2, keep-with-next
+     43          void UART_SetSystemIRQ(uint32_t instance, PeripheralSystemIRQSetting set)
+     44          {
+   \                     UART_SetSystemIRQ: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+     45              switch (instance)
+   \   00000006   0x0020             MOVS     R0,R4
+   \   00000008   0x2800             CMP      R0,#+0
+   \   0000000A   0x2804             CMP      R0,#+4
+   \   0000000C   0xD80B             BHI.N    ??UART_SetSystemIRQ_0
+     46              {
+     47                  case 0:
+     48          #if (FSL_FEATURE_SOC_UART_COUNT > 1)
+     49                  case 1:
+     50          #endif // #if (FSL_FEATURE_SOC_UART_COUNT > 1)
+     51          #if (FSL_FEATURE_SOC_UART_COUNT > 2)
+     52                  case 2:
+     53          #endif // #if (FSL_FEATURE_SOC_UART_COUNT > 2)
+     54          #if (FSL_FEATURE_SOC_UART_COUNT > 3)
+     55                  case 3:
+     56          #endif // #if (FSL_FEATURE_SOC_UART_COUNT > 3)
+     57          #if (FSL_FEATURE_SOC_UART_COUNT > 4)
+     58                  case 4:
+     59          #endif // #if (FSL_FEATURE_SOC_UART_COUNT > 4)
+     60                      if (set == kPeripheralEnableIRQ)
+   \                     ??UART_SetSystemIRQ_1: (+1)
+   \   0000000E   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000010   0x2D01             CMP      R5,#+1
+   \   00000012   0xD104             BNE.N    ??UART_SetSystemIRQ_2
+     61                      {
+     62                          NVIC_EnableIRQ(uart_irqs[instance]);
+   \   00000014   0x....             LDR.N    R0,??DataTable2_2
+   \   00000016   0x5700             LDRSB    R0,[R0, R4]
+   \   00000018   0x.... 0x....      BL       NVIC_EnableIRQ
+   \   0000001C   0xE003             B.N      ??UART_SetSystemIRQ_3
+     63                      }
+     64                      else
+     65                      {
+     66                          NVIC_DisableIRQ(uart_irqs[instance]);
+   \                     ??UART_SetSystemIRQ_2: (+1)
+   \   0000001E   0x....             LDR.N    R0,??DataTable2_2
+   \   00000020   0x5700             LDRSB    R0,[R0, R4]
+   \   00000022   0x.... 0x....      BL       NVIC_DisableIRQ
+     67                      }
+     68                      break;
+     69              }
+     70          }
+   \                     ??UART_SetSystemIRQ_3: (+1)
+   \                     ??UART_SetSystemIRQ_0: (+1)
+   \   00000026   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \   00000000   0xE000E100         DC32     0xe000e100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \   00000000   0xE000E180         DC32     0xe000e180
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \   00000000   0x........         DC32     uart_irqs
+     71          
+     72          ////////////////////////////////////////////////////////////////////////////////
+     73          // EOF
+     74          ////////////////////////////////////////////////////////////////////////////////
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   NVIC_DisableIRQ
+       0   NVIC_EnableIRQ
+      16   UART_SetSystemIRQ
+        16   -> NVIC_DisableIRQ
+        16   -> NVIC_EnableIRQ
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+      20  NVIC_DisableIRQ
+      20  NVIC_EnableIRQ
+      40  UART_SetSystemIRQ
+       8  uart_irqs
+
+ 
+  8 bytes in section .rodata
+ 92 bytes in section .text
+ 
+ 92 bytes of CODE  memory
+  8 bytes of CONST memory
+
+Errors: none
+Warnings: none

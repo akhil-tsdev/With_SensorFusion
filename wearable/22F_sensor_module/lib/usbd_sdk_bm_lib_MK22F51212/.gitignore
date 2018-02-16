@@ -1,0 +1,5 @@
+/debug/
+/release/
+!debug/libusbd_bm.a
+!release/libusbd_bm.a
+.settings/

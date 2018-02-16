@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1000202534</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\src\bootloader_config.h</file>
+      <file>$PROJ_DIR$\..\..\src\hardware_init_K22F128R.c</file>
+      <file>$PROJ_DIR$\..\..\src\peripherals_K22F128R.c</file>
+      <file>$PROJ_DIR$\..\..\..\common\src\bl_i2c_irq_config_common.c</file>
+      <file>$PROJ_DIR$\..\..\src\memory_map_K22F128R.c</file>
+      <file>$PROJ_DIR$\..\..\src\clock_config_K22F128R.c</file>
+      <file>$PROJ_DIR$\..\..\..\common\src\bl_dspi_irq_config_common.c</file>
+    </outputs>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

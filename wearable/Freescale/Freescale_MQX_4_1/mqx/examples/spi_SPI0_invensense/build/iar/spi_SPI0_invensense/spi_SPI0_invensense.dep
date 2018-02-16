@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>2230734414</fileChecksum>
+  <configuration>
+    <name>Int Flash Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\bsp.a</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\psp.a</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$PROJ_DIR$\Int Flash Debug\list\spi.map</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\intflash.icf</file>
+      <file>$PROJ_DIR$\..\..\..\main.c</file>
+      <file>$PROJ_DIR$\..\..\..\spi_memory.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\serial.h</file>
+      <file>$PROJ_DIR$\Int Flash Debug\obj\spi_SPI0_invensense.pbd</file>
+      <file>$PROJ_DIR$\Int Flash Debug\obj\spi_memory.o</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\spi.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\psptypes.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\psp_math.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\psp.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\frdmk22f120m.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\lwtimer.h</file>
+      <file>$PROJ_DIR$\..\..\..\spi_memory.c</file>
+      <file>$PROJ_DIR$\Int Flash Debug\obj\main.pbi</file>
+      <file>$PROJ_DIR$\Int Flash Debug\obj\main.o</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\adc_kadc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\spi_dspi_dma.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\queue.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\io_rev.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\usb_bsp.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\psp_comp.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\hwtimer_lpt.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\mqx.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\Generated_Code\PE_Types.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\i2c.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\psp_time.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\fio.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\lwgpio_kgpio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\lpm.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\cm.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\flashx.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\flash_mk22.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\small_ram_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\spi_dspi.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\mqx.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\mqx_macros.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\lwgpio.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\psp_cpu.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\lwmem.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\bsp.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\hwtimer_pit.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\user_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\sai_audio.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\rtc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\if_host_ehci.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\timer_qpit.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\kinetis.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\kinetis_mpu.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\i2c_ki2c.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\io_null.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\serl_kuart.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\Generated_Code\PE_LDD.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\qpit.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\MK22F51212.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\mqx_cnfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\sai.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\io_gpio.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\io_mem.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\mqx_cpudef.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\adc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\if_dev_khci.h</file>
+      <file>$PROJ_DIR$\Int Flash Debug\spi.out</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$PROJ_DIR$\Int Flash Debug\obj\spi_memory.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\io.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\rnga.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\flash_ftfa.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\verif_enabled_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\psp_supp.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\sai_ksai.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\krtc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\sdcard.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\dma.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\adc_mk22f.h</file>
+      <file>$PROJ_DIR$\Int Flash Debug\spi_SPI0_invensense.srec</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\nvic.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\ioctl.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\lwadc_kadc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\hwtimer.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\init_lpm.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\bsp_rev.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\iodebug.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\cm_kinetis.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\mqx_ioc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\bsp_cm.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\lwsem.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\sdcard_spi.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\psp_cpudef.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\cortex.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\lpm_kinetis.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\io_gpio_kgpio.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\if_host_khci.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\hwtimer_systick.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\bsp\if_dev_ehci.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\comp.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\lib\frdmk22f120m.iar\debug\psp\lwevent.h</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 74 6</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 21</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 67 26 46 81 30 104 31 38 50 105 60 16 45 9 29 71 25 96 91 83 35 52 101 110 97 100 75 51 32 66 36 107 42 63 69 28 49 114 22 57 13 98 43 106 103 14 82 47 24 54 44 79 113 59 89 94 70 40 92 41 72 56 61 37 95 85 86 90 18 112 64 17 77 62 99 93 39 53 111 80 87 84 10 34 23 48 108 68 55 102 58 78 15 33 27 109 73 65</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 75 50 29 38 106 103 101 110 98 43 46 67 54 44 81 14 26 79 30 104 71 113 25 82 97 47 24 100 32 49 59 66 89 60 105 51 52 16 35 15 64 33 94 17 36 77 27 90 70 62 96 99 40 93 107 39 92 53 31 111 41 80 42 87 72 114 22 91 84 56 10 63 18 86 34 61 13 45 23 37 48 69 108 95 68 83 55 85 102 28 109 57 73 112 58 65 78 9</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\spi_memory.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 76</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 12</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 67 51 46 31 59 89 16 45 82 100 75 101 110 29 50 96 91 83 35 9 14 47 81 26 38 113 36 107 42 63 69 28 49 114 22 57 52 30 97 24 54 44 79 106 103 104 71 25 32 105 66 60 94 70 40 92 41 72 56 61 37 95 85 86 90 18 112 98 43 64 17 77 62 99 93 39 53 111 80 87 84 10 34 13 23 48 108 68 55 102 58 78 15 33 27 109 73 65</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 46 67 54 44 81 14 26 50 29 38 106 103 101 110 79 30 104 71 113 25 82 97 47 24 100 32 49 59 66 89 60 105 75 98 43 51 52 16 35 15 64 33 94 17 36 77 27 90 70 62 96 99 40 93 107 39 92 53 31 111 41 80 42 87 72 114 22 91 84 56 10 63 18 86 34 61 13 45 23 37 48 69 108 95 68 83 55 85 102 28 109 57 73 112 58 65 78 9</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Int Flash Debug\spi.out</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 6</file>
+        </tool>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 88</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 7 21 12 0 2 5 3 1 4</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Int Flash Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

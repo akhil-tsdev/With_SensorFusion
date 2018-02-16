@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\..\..\..\..\..\..\..\..\..\Freescale\Freescale_MQX_4_1\mqx\build\iar\bsp_twrk21f120m\bsp_twrk21f120m.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\hub_prod_2_tasks.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>
+
+

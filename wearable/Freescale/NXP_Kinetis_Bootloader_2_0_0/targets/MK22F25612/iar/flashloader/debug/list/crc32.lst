@@ -1,0 +1,603 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       16/Aug/2016  13:15:52
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\crc\src\crc32.c
+#    Command line =  
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\crc\src\crc32.c"
+#        -D DEBUG -D NDEBUG -D USB_STACK_BM -D CPU_MK22FN256VDC12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D BL_TARGET_RAM -lC
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\obj"
+#        --no_unroll --debug --endian=little --cpu=Cortex-M4 -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform/devices/MK22F25612\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/autobaud\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/osa\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/device\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/device/class\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/bm_usb\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform/devices\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform/CMSIS/Include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/drivers\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/drivers/common\"
+#        -Ohz --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\list\crc32.lst
+#    Object file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\obj\crc32.o
+#
+###############################################################################
+
+C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\crc\src\crc32.c
+      1          /*
+      2           * Copyright (c) 2013 - 2014, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          #include "bootloader_common.h"
+     31          #include "crc/crc32.h"
+     32          #include "utilities/fsl_assert.h"
+     33          
+     34          #if !defined(BOOTLOADER_HOST)
+     35          #include "fsl_device_registers.h"
+     36          #include "utilities/fsl_rtos_abstraction.h"
+     37          #endif // !BOOTLOADER_HOST
+     38          
+     39          #if !defined(BOOTLOADER_HOST) && FSL_FEATURE_SOC_CRC_COUNT && !defined(BL_TARGET_RAM)
+     40          #include "crc/fsl_crc.h"
+     41          
+     42          /* Table of base addresses for crc instances. */
+     43          static CRC_Type *const g_crcBase[1] = CRC_BASE_PTRS;
+     44          
+     45          // initialize the members of the allocated crc32_data_t struct
+     46          void crc32_init(crc32_data_t *crc32Config)
+     47          {
+     48              assert(crc32Config);
+     49          
+     50              crc32Config->currentCrc = 0xffffffffU;
+     51              crc32Config->byteCountCrc = 0;
+     52          }
+     53          
+     54          // "running" crc32 calculation
+     55          void crc32_update(crc32_data_t *crc32Config, const uint8_t *src, uint32_t lengthInBytes)
+     56          {
+     57              assert(crc32Config);
+     58              assert(src);
+     59          
+     60              crc_config_t crcUserConfigPtr;
+     61          
+     62              CRC_GetDefaultConfig(&crcUserConfigPtr);
+     63          
+     64              crcUserConfigPtr.crcBits = kCrcBits32;
+     65              crcUserConfigPtr.seed = crc32Config->currentCrc;
+     66              crcUserConfigPtr.polynomial = 0x04c11db7U;
+     67              crcUserConfigPtr.complementChecksum = false;
+     68              crcUserConfigPtr.reflectIn = false;
+     69              crcUserConfigPtr.reflectOut = false;
+     70          
+     71              // Init CRC module and then run it
+     72              //! Note: We must init CRC module here, As we may seperate one crc calculation into several times
+     73              //! Note: It is better to use lock to ensure the integrity of current updating operation of crc calculation
+     74              //        in case crc module is shared by multiple crc updating requests at the same time
+     75              if (lengthInBytes)
+     76              {
+     77                  lock_acquire();
+     78                  CRC_Init(g_crcBase[0], &crcUserConfigPtr);
+     79                  CRC_WriteData(g_crcBase[0], src, lengthInBytes);
+     80                  crcUserConfigPtr.seed = CRC_Get32bitResult(g_crcBase[0]);
+     81                  lock_release();
+     82              }
+     83          
+     84              crc32Config->currentCrc = crcUserConfigPtr.seed;
+     85              crc32Config->byteCountCrc += lengthInBytes;
+     86          }
+     87          
+     88          // finalize the crc32 calculation for non-word-aligned counts
+     89          void crc32_finalize(crc32_data_t *crc32Config, uint32_t *hash)
+     90          {
+     91              assert(crc32Config);
+     92              assert(hash);
+     93          
+     94              uint32_t extraBytes = crc32Config->byteCountCrc % 4;
+     95          
+     96              // pad with zeroes
+     97              if (extraBytes)
+     98              {
+     99                  uint8_t temp[3] = { 0, 0, 0 };
+    100                  crc32_update(crc32Config, temp, 4 - extraBytes);
+    101              }
+    102          
+    103              *hash = crc32Config->currentCrc;
+    104          
+    105              // De-init CRC module when we complete a full crc calculation
+    106              CRC_Deinit(g_crcBase[0]);
+    107          }
+    108          #else
+    109          
+    110          ////////////////////////////////////////////////////////////////////////////////
+    111          // Variables
+    112          ////////////////////////////////////////////////////////////////////////////////
+    113          
+    114          //! Table of CRC-32's of all single byte values. The values in
+    115          //! this table are those used in the Ethernet CRC algorithm.
+
+   \                                 In section .text, align 4, keep-with-next
+    116          static const uint32_t s_crc32Table[] = {
+   \                     s_crc32Table:
+   \   00000000   0x00000000         DC32 0, 79764919, 159529838, 222504665, 319059676, 398814059, 445009330
+   \              0x04C11DB7   
+   \              0x09823B6E   
+   \              0x0D4326D9   
+   \              0x130476DC   
+   \              0x17C56B6B   
+   \              0x1A864DB2   
+   \   0000001C   0x1E475005         DC32 507990021, 638119352, 583659535, 797628118, 726387553, 890018660
+   \              0x2608EDB8   
+   \              0x22C9F00F   
+   \              0x2F8AD6D6   
+   \              0x2B4BCB61   
+   \              0x350C9B64   
+   \   00000034   0x31CD86D3         DC32 835552979, 1015980042, 944750013, 1276238704, 1221641927
+   \              0x3C8EA00A   
+   \              0x384FBDBD   
+   \              0x4C11DB70   
+   \              0x48D0C6C7   
+   \   00000048   0x4593E01E         DC32 1167319070, 1095957929, 1595256236, 1540665371, 1452775106
+   \              0x4152FDA9   
+   \              0x5F15ADAC   
+   \              0x5BD4B01B   
+   \              0x569796C2   
+   \   0000005C   0x52568B75         DC32 1381403509, 1780037320, 1859660671, 1671105958, 1733955601
+   \              0x6A1936C8   
+   \              0x6ED82B7F   
+   \              0x639B0DA6   
+   \              0x675A1011   
+   \   00000070   0x791D4014         DC32 2031960084, 2111593891, 1889500026, 1952343757, 2552477408
+   \              0x7DDC5DA3   
+   \              0x709F7B7A   
+   \              0x745E66CD   
+   \              0x9823B6E0   
+   \   00000084   0x9CE2AB57         DC32 2632100695, 2443283854, 2506133561, 2334638140, 2414271883
+   \              0x91A18D8E   
+   \              0x95609039   
+   \              0x8B27C03C   
+   \              0x8FE6DD8B   
+   \   00000098   0x82A5FB52         DC32 2191915858, 2254759653, 3190512472, 3135915759, 3081330742
+   \              0x8664E6E5   
+   \              0xBE2B5B58   
+   \              0xBAEA46EF   
+   \              0xB7A96036   
+   \   000000AC   0xB3687D81         DC32 3009969537, 2905550212, 2850959411, 2762807018, 2691435357
+   \              0xAD2F2D84   
+   \              0xA9EE3033   
+   \              0xA4AD16EA   
+   \              0xA06C0B5D   
+   \   000000C0   0xD4326D90         DC32 3560074640, 3505614887, 3719321342, 3648080713, 3342211916
+   \              0xD0F37027   
+   \              0xDDB056FE   
+   \              0xD9714B49   
+   \              0xC7361B4C   
+   \   000000D4   0xC3F706FB         DC32 3287746299, 3467911202, 3396681109, 4063920168, 4143685023
+   \              0xCEB42022   
+   \              0xCA753D95   
+   \              0xF23A8028   
+   \              0xF6FB9D9F   
+   \   000000E8   0xFBB8BB46         DC32 4223187782, 4286162673, 3779000052, 3858754371, 3904687514
+   \              0xFF79A6F1   
+   \              0xE13EF6F4   
+   \              0xE5FFEB43   
+   \              0xE8BCCD9A   
+   \   000000FC   0xEC7DD02D         DC32 3967668269, 881225847, 809987520, 1023691545, 969234094, 662832811
+   \              0x34867077   
+   \              0x30476DC0   
+   \              0x3D044B19   
+   \              0x39C556AE   
+   \              0x278206AB   
+   \   00000114   0x23431B1C         DC32 591600412, 771767749, 717299826, 311336399, 374308984, 453813921
+   \              0x2E003DC5   
+   \              0x2AC12072   
+   \              0x128E9DCF   
+   \              0x164F8078   
+   \              0x1B0CA6A1   
+   \   0000012C   0x1FCDBB16         DC32 533576470, 25881363, 88864420, 134795389, 214552010, 2023205639
+   \              0x018AEB13   
+   \              0x054BF6A4   
+   \              0x0808D07D   
+   \              0x0CC9CDCA   
+   \              0x7897AB07   
+   \   00000144   0x7C56B6B0         DC32 2086057648, 1897238633, 1976864222, 1804852699, 1867694188
+   \              0x71159069   
+   \              0x75D48DDE   
+   \              0x6B93DDDB   
+   \              0x6F52C06C   
+   \   00000158   0x6211E6B5         DC32 1645340341, 1724971778, 1587496639, 1516133128, 1461550545
+   \              0x66D0FB02   
+   \              0x5E9F46BF   
+   \              0x5A5E5B08   
+   \              0x571D7DD1   
+   \   0000016C   0x53DC6066         DC32 1406951526, 1302016099, 1230646740, 1142491917, 1087903418
+   \              0x4D9B3063   
+   \              0x495A2DD4   
+   \              0x44190B0D   
+   \              0x40D816BA   
+   \   00000180   0xACA5C697         DC32 2896545431, 2825181984, 2770861561, 2716262478, 3215044683
+   \              0xA864DB20   
+   \              0xA527FDF9   
+   \              0xA1E6E04E   
+   \              0xBFA1B04B   
+   \   00000194   0xBB60ADFC         DC32 3143675388, 3055782693, 3001194130, 2326604591, 2389456536
+   \              0xB6238B25   
+   \              0xB2E29692   
+   \              0x8AAD2B2F   
+   \              0x8E6C3698   
+   \   000001A8   0x832F1041         DC32 2200899649, 2280525302, 2578013683, 2640855108, 2418763421
+   \              0x87EE0DF6   
+   \              0x99A95DF3   
+   \              0x9D684044   
+   \              0x902B669D   
+   \   000001BC   0x94EA7B2A         DC32 2498394922, 3769900519, 3832873040, 3912640137, 3992402750
+   \              0xE0B41DE7   
+   \              0xE4750050   
+   \              0xE9362689   
+   \              0xEDF73B3E   
+   \   000001D0   0xF3B06B3B         DC32 4088425275, 4151408268, 4197601365, 4277358050, 3334271071
+   \              0xF771768C   
+   \              0xFA325055   
+   \              0xFEF34DE2   
+   \              0xC6BCF05F   
+   \   000001E4   0xC27DEDE8         DC32 3263032808, 3476998961, 3422541446, 3585640067, 3514407732
+   \              0xCF3ECB31   
+   \              0xCBFFD686   
+   \              0xD5B88683   
+   \              0xD1799B34   
+   \   000001F8   0xDC3ABDED         DC32 3694837229, 3640369242, 1762451694, 1842216281, 1619975040
+   \              0xD8FBA05A   
+   \              0x690CE0EE   
+   \              0x6DCDFD59   
+   \              0x608EDB80   
+   \   0000020C   0x644FC637         DC32 1682949687, 2047383090, 2127137669, 1938468188, 2001449195
+   \              0x7A089632   
+   \              0x7EC98B85   
+   \              0x738AAD5C   
+   \              0x774BB0EB   
+   \   00000220   0x4F040D56         DC32 1325665622, 1271206113, 1183200824, 1111960463, 1543535498
+   \              0x4BC510E1   
+   \              0x46863638   
+   \              0x42472B8F   
+   \              0x5C007B8A   
+   \   00000234   0x58C1663D         DC32 1489069629, 1434599652, 1363369299, 622672798, 568075817
+   \              0x558240E4   
+   \              0x51435D53   
+   \              0x251D3B9E   
+   \              0x21DC2629   
+   \   00000248   0x2C9F00F0         DC32 748617968, 677256519, 907627842, 853037301, 1067152940, 995781531
+   \              0x285E1D47   
+   \              0x36194D42   
+   \              0x32D850F5   
+   \              0x3F9B762C   
+   \              0x3B5A6B9B   
+   \   00000260   0x0315D626         DC32 51762726, 131386257, 177728840, 240578815, 269590778, 349224269
+   \              0x07D4CB91   
+   \              0x0A97ED48   
+   \              0x0E56F0FF   
+   \              0x1011A0FA   
+   \              0x14D0BD4D   
+   \   00000278   0x19939B94         DC32 429104020, 491947555, 4046411278, 4126034873, 4172115296
+   \              0x1D528623   
+   \              0xF12F560E   
+   \              0xF5EE4BB9   
+   \              0xF8AD6D60   
+   \   0000028C   0xFC6C70D7         DC32 4234965207, 3794477266, 3874110821, 3953728444, 4016571915
+   \              0xE22B20D2   
+   \              0xE6EA3D65   
+   \              0xEBA91BBC   
+   \              0xEF68060B   
+   \   000002A0   0xD727BBB6         DC32 3609705398, 3555108353, 3735388376, 3664026991, 3290680682
+   \              0xD3E6A601   
+   \              0xDEA580D8   
+   \              0xDA649D6F   
+   \              0xC423CD6A   
+   \   000002B4   0xC0E2D0DD         DC32 3236090077, 3449943556, 3378572211, 3174993278, 3120533705
+   \              0xCDA1F604   
+   \              0xC960EBB3   
+   \              0xBD3E8D7E   
+   \              0xB9FF90C9   
+   \   000002C8   0xB4BCB610         DC32 3032266256, 2961025959, 2923101090, 2868635157, 2813903052
+   \              0xB07DABA7   
+   \              0xAE3AFBA2   
+   \              0xAAFBE615   
+   \              0xA7B8C0CC   
+   \   000002DC   0xA379DD7B         DC32 2742672763, 2604032198, 2683796849, 2461293480, 2524268063
+   \              0x9B3660C6   
+   \              0x9FF77D71   
+   \              0x92B45BA8   
+   \              0x9675461F   
+   \   000002F0   0x8832161A         DC32 2284983834, 2364738477, 2175806836, 2238787779, 1569362073
+   \              0x8CF30BAD   
+   \              0x81B02D74   
+   \              0x857130C3   
+   \              0x5D8A9099   
+   \   00000304   0x594B8D2E         DC32 1498123566, 1409854455, 1355396672, 1317987909, 1246755826
+   \              0x5408ABF7   
+   \              0x50C9B640   
+   \              0x4E8EE645   
+   \              0x4A4FFBF2   
+   \   00000318   0x470CDD2B         DC32 1192025387, 1137557660, 2072149281, 2135122070, 1912620623
+   \              0x43CDC09C   
+   \              0x7B827D21   
+   \              0x7F436096   
+   \              0x7200464F   
+   \   0000032C   0x76C15BF8         DC32 1992383480, 1753615357, 1816598090, 1627664531, 1707420964
+   \              0x68860BFD   
+   \              0x6C47164A   
+   \              0x61043093   
+   \              0x65C52D24   
+   \   00000340   0x119B4BE9         DC32 295390185, 358241886, 404320391, 483945776, 43990325, 106832002
+   \              0x155A565E   
+   \              0x18197087   
+   \              0x1CD86D30   
+   \              0x029F3D35   
+   \              0x065E2082   
+   \   00000358   0x0B1D065B         DC32 186451547, 266083308, 932423249, 861060070, 1041341759, 986742920
+   \              0x0FDC1BEC   
+   \              0x3793A651   
+   \              0x3352BBE6   
+   \              0x3E119D3F   
+   \              0x3AD08088   
+   \   00000370   0x2497D08D         DC32 613929101, 542559546, 756411363, 701822548, 3316196985, 3244833742
+   \              0x2056CD3A   
+   \              0x2D15EBE3   
+   \              0x29D4F654   
+   \              0xC5A92679   
+   \              0xC1683BCE   
+   \   00000388   0xCC2B1D17         DC32 3425377559, 3370778784, 3601682597, 3530312978, 3744426955
+   \              0xC8EA00A0   
+   \              0xD6AD50A5   
+   \              0xD26C4D12   
+   \              0xDF2F6BCB   
+   \   0000039C   0xDBEE767C         DC32 3689838204, 3819031489, 3881883254, 3928223919, 4007849240
+   \              0xE3A1CBC1   
+   \              0xE760D676   
+   \              0xEA23F0AF   
+   \              0xEEE2ED18   
+   \   000003B0   0xF0A5BD1D         DC32 4037393693, 4100235434, 4180117107, 4259748804, 2310601993
+   \              0xF464A0AA   
+   \              0xF9278673   
+   \              0xFDE69BC4   
+   \              0x89B8FD09   
+   \   000003C4   0x8D79E0BE         DC32 2373574846, 2151335527, 2231098320, 2596047829, 2659030626
+   \              0x803AC667   
+   \              0x84FBDBD0   
+   \              0x9ABC8BD5   
+   \              0x9E7D9662   
+   \   000003D8   0x933EB0BB         DC32 2470359227, 2550115596, 2947551409, 2876312838, 2788305887
+   \              0x97FFAD0C   
+   \              0xAFB010B1   
+   \              0xAB710D06   
+   \              0xA6322BDF   
+   \   000003EC   0xA2F33668         DC32 2733848168, 3165939309, 3094707162, 3040238851, 2985771188
+   \              0xBCB4666D   
+   \              0xB8757BDA   
+   \              0xB5365D03   
+   \              0xB1F740B4   
+    117              0x00000000, 0x04c11db7, 0x09823b6e, 0x0d4326d9, 0x130476dc, 0x17c56b6b, 0x1a864db2, 0x1e475005, 0x2608edb8,
+    118              0x22c9f00f, 0x2f8ad6d6, 0x2b4bcb61, 0x350c9b64, 0x31cd86d3, 0x3c8ea00a, 0x384fbdbd, 0x4c11db70, 0x48d0c6c7,
+    119              0x4593e01e, 0x4152fda9, 0x5f15adac, 0x5bd4b01b, 0x569796c2, 0x52568b75, 0x6a1936c8, 0x6ed82b7f, 0x639b0da6,
+    120              0x675a1011, 0x791d4014, 0x7ddc5da3, 0x709f7b7a, 0x745e66cd, 0x9823b6e0, 0x9ce2ab57, 0x91a18d8e, 0x95609039,
+    121              0x8b27c03c, 0x8fe6dd8b, 0x82a5fb52, 0x8664e6e5, 0xbe2b5b58, 0xbaea46ef, 0xb7a96036, 0xb3687d81, 0xad2f2d84,
+    122              0xa9ee3033, 0xa4ad16ea, 0xa06c0b5d, 0xd4326d90, 0xd0f37027, 0xddb056fe, 0xd9714b49, 0xc7361b4c, 0xc3f706fb,
+    123              0xceb42022, 0xca753d95, 0xf23a8028, 0xf6fb9d9f, 0xfbb8bb46, 0xff79a6f1, 0xe13ef6f4, 0xe5ffeb43, 0xe8bccd9a,
+    124              0xec7dd02d, 0x34867077, 0x30476dc0, 0x3d044b19, 0x39c556ae, 0x278206ab, 0x23431b1c, 0x2e003dc5, 0x2ac12072,
+    125              0x128e9dcf, 0x164f8078, 0x1b0ca6a1, 0x1fcdbb16, 0x018aeb13, 0x054bf6a4, 0x0808d07d, 0x0cc9cdca, 0x7897ab07,
+    126              0x7c56b6b0, 0x71159069, 0x75d48dde, 0x6b93dddb, 0x6f52c06c, 0x6211e6b5, 0x66d0fb02, 0x5e9f46bf, 0x5a5e5b08,
+    127              0x571d7dd1, 0x53dc6066, 0x4d9b3063, 0x495a2dd4, 0x44190b0d, 0x40d816ba, 0xaca5c697, 0xa864db20, 0xa527fdf9,
+    128              0xa1e6e04e, 0xbfa1b04b, 0xbb60adfc, 0xb6238b25, 0xb2e29692, 0x8aad2b2f, 0x8e6c3698, 0x832f1041, 0x87ee0df6,
+    129              0x99a95df3, 0x9d684044, 0x902b669d, 0x94ea7b2a, 0xe0b41de7, 0xe4750050, 0xe9362689, 0xedf73b3e, 0xf3b06b3b,
+    130              0xf771768c, 0xfa325055, 0xfef34de2, 0xc6bcf05f, 0xc27dede8, 0xcf3ecb31, 0xcbffd686, 0xd5b88683, 0xd1799b34,
+    131              0xdc3abded, 0xd8fba05a, 0x690ce0ee, 0x6dcdfd59, 0x608edb80, 0x644fc637, 0x7a089632, 0x7ec98b85, 0x738aad5c,
+    132              0x774bb0eb, 0x4f040d56, 0x4bc510e1, 0x46863638, 0x42472b8f, 0x5c007b8a, 0x58c1663d, 0x558240e4, 0x51435d53,
+    133              0x251d3b9e, 0x21dc2629, 0x2c9f00f0, 0x285e1d47, 0x36194d42, 0x32d850f5, 0x3f9b762c, 0x3b5a6b9b, 0x0315d626,
+    134              0x07d4cb91, 0x0a97ed48, 0x0e56f0ff, 0x1011a0fa, 0x14d0bd4d, 0x19939b94, 0x1d528623, 0xf12f560e, 0xf5ee4bb9,
+    135              0xf8ad6d60, 0xfc6c70d7, 0xe22b20d2, 0xe6ea3d65, 0xeba91bbc, 0xef68060b, 0xd727bbb6, 0xd3e6a601, 0xdea580d8,
+    136              0xda649d6f, 0xc423cd6a, 0xc0e2d0dd, 0xcda1f604, 0xc960ebb3, 0xbd3e8d7e, 0xb9ff90c9, 0xb4bcb610, 0xb07daba7,
+    137              0xae3afba2, 0xaafbe615, 0xa7b8c0cc, 0xa379dd7b, 0x9b3660c6, 0x9ff77d71, 0x92b45ba8, 0x9675461f, 0x8832161a,
+    138              0x8cf30bad, 0x81b02d74, 0x857130c3, 0x5d8a9099, 0x594b8d2e, 0x5408abf7, 0x50c9b640, 0x4e8ee645, 0x4a4ffbf2,
+    139              0x470cdd2b, 0x43cdc09c, 0x7b827d21, 0x7f436096, 0x7200464f, 0x76c15bf8, 0x68860bfd, 0x6c47164a, 0x61043093,
+    140              0x65c52d24, 0x119b4be9, 0x155a565e, 0x18197087, 0x1cd86d30, 0x029f3d35, 0x065e2082, 0x0b1d065b, 0x0fdc1bec,
+    141              0x3793a651, 0x3352bbe6, 0x3e119d3f, 0x3ad08088, 0x2497d08d, 0x2056cd3a, 0x2d15ebe3, 0x29d4f654, 0xc5a92679,
+    142              0xc1683bce, 0xcc2b1d17, 0xc8ea00a0, 0xd6ad50a5, 0xd26c4d12, 0xdf2f6bcb, 0xdbee767c, 0xe3a1cbc1, 0xe760d676,
+    143              0xea23f0af, 0xeee2ed18, 0xf0a5bd1d, 0xf464a0aa, 0xf9278673, 0xfde69bc4, 0x89b8fd09, 0x8d79e0be, 0x803ac667,
+    144              0x84fbdbd0, 0x9abc8bd5, 0x9e7d9662, 0x933eb0bb, 0x97ffad0c, 0xafb010b1, 0xab710d06, 0xa6322bdf, 0xa2f33668,
+    145              0xbcb4666d, 0xb8757bda, 0xb5365d03, 0xb1f740b4
+    146          };
+    147          
+    148          ////////////////////////////////////////////////////////////////////////////////
+    149          // Code
+    150          ////////////////////////////////////////////////////////////////////////////////
+    151          
+    152          // initialize the members of the allocated crc32_data_t struct
+
+   \                                 In section .text, align 2, keep-with-next
+    153          void crc32_init(crc32_data_t *crc32Config)
+    154          {
+    155              // initialize running crc and byte count
+    156              crc32Config->currentCrc = 0xFFFFFFFF;
+   \                     crc32_init: (+1)
+   \   00000000   0xF04F 0x31FF      MOV      R1,#-1
+   \   00000004   0x6001             STR      R1,[R0, #+0]
+    157              crc32Config->byteCountCrc = 0;
+   \   00000006   0x2100             MOVS     R1,#+0
+   \   00000008   0x6041             STR      R1,[R0, #+4]
+    158          }
+   \   0000000A   0x4770             BX       LR               ;; return
+    159          
+    160          // "running" crc32 calculation
+
+   \                                 In section .text, align 2, keep-with-next
+    161          void crc32_update(crc32_data_t *crc32Config, const uint8_t *src, uint32_t lengthInBytes)
+    162          {
+   \                     crc32_update: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+    163              assert(src);
+    164              uint32_t crc = crc32Config->currentCrc;
+    165              crc32Config->byteCountCrc += lengthInBytes;
+   \   00000002   0x6844             LDR      R4,[R0, #+4]
+   \   00000004   0x6803             LDR      R3,[R0, #+0]
+   \   00000006   0x1914             ADDS     R4,R2,R4
+   \   00000008   0x6044             STR      R4,[R0, #+4]
+   \   0000000A   0x.... 0x....      ADR.W    R4,s_crc32Table
+   \   0000000E   0xE007             B.N      ??crc32_update_0
+    166          
+    167              while (lengthInBytes--)
+    168              {
+    169                  uint8_t c = *src++ & 0xff;
+   \                     ??crc32_update_1: (+1)
+   \   00000010   0xF811 0x5B01      LDRB     R5,[R1], #+1
+    170                  crc = (crc << 8) ^ s_crc32Table[(crc >> 24) ^ c];
+   \   00000014   0xEA85 0x6513      EOR      R5,R5,R3, LSR #+24
+   \   00000018   0xF854 0x5025      LDR      R5,[R4, R5, LSL #+2]
+   \   0000001C   0xEA85 0x2303      EOR      R3,R5,R3, LSL #+8
+    171              }
+   \                     ??crc32_update_0: (+1)
+   \   00000020   0x4615             MOV      R5,R2
+   \   00000022   0x1E6A             SUBS     R2,R5,#+1
+   \   00000024   0x2D00             CMP      R5,#+0
+   \   00000026   0xD1F3             BNE.N    ??crc32_update_1
+    172          
+    173              crc32Config->currentCrc = crc;
+   \   00000028   0x6003             STR      R3,[R0, #+0]
+    174          }
+   \   0000002A   0xBD30             POP      {R4,R5,PC}       ;; return
+    175          
+    176          // finalize the crc32 calculation for non-word-aligned counts
+
+   \                                 In section .text, align 2, keep-with-next
+    177          void crc32_finalize(crc32_data_t *crc32Config, uint32_t *hash)
+    178          {
+   \                     crc32_finalize: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+    179              uint32_t crc = crc32Config->currentCrc;
+    180              uint32_t byteCount = crc32Config->byteCountCrc;
+   \   00000002   0x6843             LDR      R3,[R0, #+4]
+   \   00000004   0x6802             LDR      R2,[R0, #+0]
+    181          
+    182              // pad with zeroes
+    183              if (byteCount % 4)
+   \   00000006   0xF013 0x0F03      TST      R3,#0x3
+   \   0000000A   0xD00C             BEQ.N    ??crc32_finalize_0
+    184              {
+    185                  uint32_t i;
+    186                  for (i = byteCount % 4; i < 4; i++)
+   \   0000000C   0xF003 0x0303      AND      R3,R3,#0x3
+   \   00000010   0xF1C3 0x0304      RSB      R3,R3,#+4
+   \   00000014   0x.... 0x....      ADR.W    R4,s_crc32Table
+    187                  {
+    188                      crc = (crc << 8) ^ s_crc32Table[(crc >> 24) ^ 0];
+   \                     ??crc32_finalize_1: (+1)
+   \   00000018   0x0E15             LSRS     R5,R2,#+24
+   \   0000001A   0xF854 0x5025      LDR      R5,[R4, R5, LSL #+2]
+    189                  }
+   \   0000001E   0x1E5B             SUBS     R3,R3,#+1
+   \   00000020   0xEA85 0x2202      EOR      R2,R5,R2, LSL #+8
+   \   00000024   0xD1F8             BNE.N    ??crc32_finalize_1
+    190              }
+    191          
+    192              crc32Config->currentCrc = crc;
+   \                     ??crc32_finalize_0: (+1)
+   \   00000026   0x6002             STR      R2,[R0, #+0]
+    193          
+    194              *hash = crc32Config->currentCrc;
+   \   00000028   0x600A             STR      R2,[R1, #+0]
+    195          }
+   \   0000002A   0xBD30             POP      {R4,R5,PC}       ;; return
+    196          #endif
+    197          ////////////////////////////////////////////////////////////////////////////////
+    198          // EOF
+    199          ////////////////////////////////////////////////////////////////////////////////
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      12   crc32_finalize
+       0   crc32_init
+      12   crc32_update
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      44  crc32_finalize
+      12  crc32_init
+      44  crc32_update
+    1024  s_crc32Table
+
+ 
+ 1 124 bytes in section .text
+ 
+ 1 124 bytes of CODE memory
+
+Errors: none
+Warnings: none

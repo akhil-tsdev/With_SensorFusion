@@ -1,0 +1,119 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="spi_pca10056" target="8" version="2">
+  <project Name="spi_pca10056">
+    <configuration
+      Name="Common"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_simulator_memory_simulation_parameter="RX 00000000,00100000,FFFFFFFF;RWX 20000000,00040000,CDCDCDCD"
+      arm_target_device_name="nRF52840_xxAA"
+      arm_target_interface_type="SWD"
+      debug_start_from_entry_point_symbol="No"
+      debug_target_connection="J-Link"
+      linker_section_placement_file="$(StudioDir)/targets/Cortex_M/flash_placement.xml"
+      linker_section_placements_segments="FLASH RX 0x00000000 0x00100000;SRAM RWX 0x20000000 0x00040000"
+      project_directory=""
+      project_type="Externally Built Executable" />
+    <configuration
+      Name="External Keil"
+      c_additional_options="--reduce_paths"
+      linker_additional_options="--diag_suppress;6330" />
+    <configuration
+      Name="nrf52840_xxaa"
+      build_intermediate_directory="./_build"
+      build_output_directory="./_build"
+      build_output_file_name="$(OutDir)/nrf52840_xxaa.axf"
+      c_preprocessor_definitions="BOARD_PCA10056;CONFIG_GPIO_AS_PINRESET;FLOAT_ABI_HARD;NRF52840_XXAA;SWI_DISABLE0"
+      c_user_include_directories="$(PackagesDir)/CMSIS_4/CMSIS/Include;../../../config;../../../../../../components;../../../../../../components/boards;../../../../../../components/drivers_nrf/common;../../../../../../components/drivers_nrf/delay;../../../../../../components/drivers_nrf/gpiote;../../../../../../components/drivers_nrf/hal;../../../../../../components/drivers_nrf/nrf_soc_nosd;../../../../../../components/drivers_nrf/spi_master;../../../../../../components/drivers_nrf/uart;../../../../../../components/libraries/atomic;../../../../../../components/libraries/balloc;../../../../../../components/libraries/bsp;../../../../../../components/libraries/button;../../../../../../components/libraries/experimental_log;../../../../../../components/libraries/experimental_log/src;../../../../../../components/libraries/experimental_memobj;../../../../../../components/libraries/experimental_section_vars;../../../../../../components/libraries/scheduler;../../../../../../components/libraries/strerror;../../../../../../components/libraries/timer;../../../../../../components/libraries/util;../../../../../../components/toolchain;../../..;../../../../../../external/fprintf;../../../../../../external/segger_rtt;../config;../../../../../../components/libraries/fifo;../../../../../../components/drivers_nrf/uart;../../../../../../components/libraries/uart;../../../../../../components/ossf/ts_fusion;../../../../../../components/ossf/mpu9250_ossf;../../../../../../components/ossf;../../../../../../components/drivers_mpu_lsm;../../../../../../components/libraries/serial;../../../../../../components/libraries/queue;../../../../../../components/libraries/mutex;../../../../../../components/drivers_nrf/clock;../../../../../../components/drivers_nrf/power;../../../../../../components/drivers_nrf/nrf_soc_nosd;../../../../../../components/drivers_nrf/ppi;../../../../../../components/proprietary_rf/esb"
+      linker_additional_options="FLASH_START=0x1b000 ;RAM_START=0x20001f00" />
+    <folder Name="Application">
+      <file file_name="../../../main.c" />
+      <file file_name="../config/sdk_config.h" />
+    </folder>
+    <folder Name="Board Definition">
+      <file file_name="../../../../../../components/boards/boards.c" />
+    </folder>
+    <folder Name="Board Support">
+      <file file_name="../../../../../../components/libraries/bsp/bsp.c" />
+      <file file_name="../../../../../../components/libraries/bsp/bsp_nfc.c" />
+    </folder>
+    <folder Name="nRF_Drivers">
+      <file file_name="../../../../../../components/drivers_nrf/common/nrf_drv_common.c" />
+      <file file_name="../../../../../../components/drivers_nrf/gpiote/nrf_drv_gpiote.c" />
+      <file file_name="../../../../../../components/drivers_nrf/spi_master/nrf_drv_spi.c" />
+      <file file_name="../../../../../../components/drivers_nrf/uart/nrf_drv_uart.c" />
+      <file file_name="../../../../../../components/drivers_nrf/clock/nrf_drv_clock.c" />
+      <file file_name="../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_nvic.c" />
+      <file file_name="../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_soc.c" />
+      <file file_name="../../../../../../components/drivers_nrf/power/nrf_drv_power.c" />
+      <file file_name="../../../../../../components/drivers_nrf/ppi/nrf_drv_ppi.c" />
+    </folder>
+    <folder Name="nRF_Libraries">
+      <file file_name="../../../../../../components/libraries/button/app_button.c" />
+      <file file_name="../../../../../../components/libraries/util/app_error.c" />
+      <file file_name="../../../../../../components/libraries/util/app_error_weak.c" />
+      <file file_name="../../../../../../components/libraries/scheduler/app_scheduler.c" />
+      <file file_name="../../../../../../components/libraries/util/app_util_platform.c" />
+      <file file_name="../../../../../../components/libraries/util/nrf_assert.c" />
+      <file file_name="../../../../../../components/libraries/balloc/nrf_balloc.c" />
+      <file file_name="../../../../../../external/fprintf/nrf_fprintf.c" />
+      <file file_name="../../../../../../external/fprintf/nrf_fprintf_format.c" />
+      <file file_name="../../../../../../components/libraries/experimental_memobj/nrf_memobj.c" />
+      <file file_name="../../../../../../components/libraries/strerror/nrf_strerror.c" />
+      <file file_name="../../../../../../components/libraries/fifo/app_fifo.c" />
+      <file file_name="../../../../../../components/libraries/uart/app_uart_fifo.c" />
+      <file file_name="../../../../../../components/libraries/serial/nrf_serial.c" />
+      <file file_name="../../../../../../components/libraries/queue/nrf_queue.c" />
+      <file file_name="../../../../../../components/libraries/timer/app_timer.c" />
+    </folder>
+    <folder Name="nRF_Log">
+      <file file_name="../../../../../../components/libraries/experimental_log/src/nrf_log_backend_rtt.c" />
+      <file file_name="../../../../../../components/libraries/experimental_log/src/nrf_log_backend_serial.c" />
+      <file file_name="../../../../../../components/libraries/experimental_log/src/nrf_log_backend_uart.c" />
+      <file file_name="../../../../../../components/libraries/experimental_log/src/nrf_log_default_backends.c" />
+      <file file_name="../../../../../../components/libraries/experimental_log/src/nrf_log_frontend.c" />
+      <file file_name="../../../../../../components/libraries/experimental_log/src/nrf_log_str_formatter.c" />
+    </folder>
+    <folder Name="nRF_Segger_RTT">
+      <file file_name="../../../../../../external/segger_rtt/SEGGER_RTT.c" />
+      <file file_name="../../../../../../external/segger_rtt/SEGGER_RTT_Syscalls_KEIL.c" />
+      <file file_name="../../../../../../external/segger_rtt/SEGGER_RTT_printf.c" />
+    </folder>
+    <folder Name="DevDrivers">
+      <file file_name="../../../../../../components/drivers_mpu_lsm/mpu9250.c" />
+      <file file_name="../../../../../../components/drivers_mpu_lsm/lsm6dsl_firmware.c" />
+    </folder>
+    <folder Name="OSSF">
+      <file file_name="../../../../../../components/ossf/KF.c" />
+      <file file_name="../../../../../../components/ossf/matrixComputations.c" />
+      <file file_name="../../../../../../components/ossf/orientationComputation.c" />
+      <file file_name="../../../../../../components/ossf/tasks.c" />
+      <file file_name="../../../../../../components/ossf/multiChipKF.c" />
+    </folder>
+    <folder Name="nRF_Properitary_RF">
+      <file file_name="../../../../../../components/proprietary_rf/esb/nrf_esb.c" />
+    </folder>
+    <folder Name="::CMSIS" />
+    <folder Name="::Device" />
+  </project>
+  <configuration
+    Name="External Keil"
+    asm_additional_options="--cpu;$(CoreType);--cpreproc"
+    c_additional_options="--cpu;$(CoreType);--fpu;$(FPU2);-g"
+    external_archive_command="&quot;$(KEIL_TOOLKIT_DIR)/ARMCC/bin/armar&quot; -rs &quot;$(RelTargetPath)&quot; $(Objects)"
+    external_assemble_command="&quot;$(KEIL_TOOLKIT_DIR)/ARMCC/bin/armasm&quot; $(AsmOptions) &quot;$(RelInputPath)&quot; -o &quot;$(RelTargetPath)&quot; --diag_style=gnu --brief_diagnostics"
+    external_c_compile_command="&quot;$(KEIL_TOOLKIT_DIR)/ARMCC/bin/armcc&quot; -c $(COptions) $(COnlyOptions) $(Defines) $(Includes) &quot;$(RelInputPath)&quot; --depend_single_line --depend=&quot;$(RelDependencyPath)&quot; --depend-format=unix_escaped --diag_style=gnu --brief_diagnostics -o &quot;$(RelTargetPath)&quot;"
+    external_cpp_compile_command="&quot;$(KEIL_TOOLKIT_DIR)/ARMCC/bin/armcc&quot; --cpp -c $(COptions) $(CppOnlyOptions) $(Defines) $(Includes) &quot;$(RelInputPath)&quot; --depend_single_line --depend=&quot;$(RelDependencyPath)&quot; --depend-format=unix_escaped --diag_style=gnu --brief_diagnostics -o &quot;$(RelTargetPath)&quot;"
+    external_link_command="&quot;$(KEIL_TOOLKIT_DIR)/ARMCC/bin/armlink&quot; $(LinkOptions) --scatter=&quot;$(RelLinkerScriptPath)&quot; $(Objects) -o &quot;$(RelTargetPath)&quot; --list &quot;$(RelMapPath)&quot; --map"
+    hidden="Yes"
+    linker_additional_options="--cpu;$(CoreType);--fpu;$(FPU2)"
+    linker_post_build_command="&quot;$(KEIL_TOOLKIT_DIR)/ARMCC/bin/fromelf&quot; --i32 --output=&quot;$(PostLinkOutputFilePath)&quot; &quot;$(RelTargetPath)&quot;"
+    linker_post_build_command_output_file="$(OutDir)/$(ProjectName).hex"
+    macros="KEIL_TOOLKIT_DIR=C:/Keil_v5/ARM" />
+  <configuration
+    Name="nrf52840_xxaa"
+    inherited_configurations="External Keil" />
+</solution>

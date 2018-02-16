@@ -1,0 +1,13 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\bin\armjlink2.dll" 
+
+"D:\Akhil\From_Github\Copy of Made_It_Work\trunk\wearable\nordic_yoga\turing_yoga_pant\yoga_pant_nordic\peripheral\spi\pca10056\blank\iar\_build\spi_pca10056.out" 
+
+--plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\bin\armbat.dll" 
+
+--device_macro "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\config\debugger\NordicSemi\nRF52.dmac" 
+
+
+
+

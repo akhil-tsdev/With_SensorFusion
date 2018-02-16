@@ -1,0 +1,1765 @@
+Global:
+
+  Symbol            Redirected to
+  ------            -------------
+  _Printf           _PrintfTiny
+  _Scanf            _ScanfSmallNoMb
+  __aeabi_idiv      __iar_small___aeabi_idiv
+  __aeabi_idivmod   __iar_small___aeabi_idivmod
+  __aeabi_uidiv     __iar_small___aeabi_uidiv
+  __aeabi_uidivmod  __iar_small___aeabi_uidivmod
+  __as_NullEntry    __as_NullEntryStrict
+              definition:  __VECTOR_TABLE
+              definition:  __VECTOR_RAM
+              definition:  __BOOT_STACK_ADDRESS
+              definition:  __as_table_start
+              definition:  __as_entries_start
+Loading object C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F25612\iar\led_demo_tower_a000\debug\obj\crt0.o.
+              reference :  SystemInit
+              reference :  init_data_bss
+              reference :  main
+              reference :  CSTACK$$Limit
+              reference :  init_interrupts
+              reference :  __vector_table
+              definition:  Reset_Handler
+Loading object C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F25612\iar\led_demo_tower_a000\debug\obj\main.o.
+              reference :  milliseconds_delay
+              reference :  milliseconds_delay_init
+              definition:  delay
+              definition:  main
+Loading object C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F25612\iar\led_demo_tower_a000\debug\obj\milliseconds_delay.o.
+              reference :  SystemCoreClock
+              definition:  SysTick_Handler
+              definition:  milliseconds_delay
+              definition:  milliseconds_delay_init
+              definition:  __iar_cc.IRQn.RwX4OJhyJD2
+Loading object C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F25612\iar\led_demo_tower_a000\debug\obj\startup.o.
+              reference :  __aeabi_memclr
+              reference :  __aeabi_memcpy
+              definition:  init_data_bss
+              definition:  init_interrupts
+              reference :  .intvec$$Base
+              reference :  .data_init$$Base
+              reference :  .data_init$$Limit
+              reference :  .data$$Base
+              reference :  .bss$$Base
+              reference :  .bss$$Limit
+              reference :  CodeRelocate$$Base
+              reference :  CodeRelocate$$Limit
+              reference :  CodeRelocateRam$$Base
+Loading object C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F25612\iar\led_demo_tower_a000\debug\obj\startup_MK22F25612.o.
+              reference :  __iar_program_start
+              reference :  SystemInit
+              reference :  init_data_bss
+              definition:  __vector_table
+              definition:  __vector_table_0x1c
+              definition:  __Vectors
+              definition:  __Vectors_End
+              definition:  __Vectors_Size
+              weak def  :  Reset_Handler
+              weak def  :  NMI_Handler
+              weak def  :  HardFault_Handler
+              weak def  :  MemManage_Handler
+              weak def  :  BusFault_Handler
+              weak def  :  UsageFault_Handler
+              weak def  :  SVC_Handler
+              weak def  :  DebugMon_Handler
+              weak def  :  PendSV_Handler
+              weak def  :  SysTick_Handler
+              weak def  :  DMA0_IRQHandler
+              weak def  :  DMA1_IRQHandler
+              weak def  :  DMA2_IRQHandler
+              weak def  :  DMA3_IRQHandler
+              weak def  :  DMA4_IRQHandler
+              weak def  :  DMA5_IRQHandler
+              weak def  :  DMA6_IRQHandler
+              weak def  :  DMA7_IRQHandler
+              weak def  :  DMA8_IRQHandler
+              weak def  :  DMA9_IRQHandler
+              weak def  :  DMA10_IRQHandler
+              weak def  :  DMA11_IRQHandler
+              weak def  :  DMA12_IRQHandler
+              weak def  :  DMA13_IRQHandler
+              weak def  :  DMA14_IRQHandler
+              weak def  :  DMA15_IRQHandler
+              weak def  :  DMA_Error_IRQHandler
+              weak def  :  MCM_IRQHandler
+              weak def  :  FTF_IRQHandler
+              weak def  :  Read_Collision_IRQHandler
+              weak def  :  LVD_LVW_IRQHandler
+              weak def  :  LLW_IRQHandler
+              weak def  :  Watchdog_IRQHandler
+              weak def  :  RNG_IRQHandler
+              weak def  :  I2C0_IRQHandler
+              weak def  :  I2C1_IRQHandler
+              weak def  :  SPI0_IRQHandler
+              weak def  :  SPI1_IRQHandler
+              weak def  :  I2S0_Tx_IRQHandler
+              weak def  :  I2S0_Rx_IRQHandler
+              weak def  :  LPUART0_IRQHandler
+              weak def  :  UART0_RX_TX_IRQHandler
+              weak def  :  UART0_ERR_IRQHandler
+              weak def  :  UART1_RX_TX_IRQHandler
+              weak def  :  UART1_ERR_IRQHandler
+              weak def  :  UART2_RX_TX_IRQHandler
+              weak def  :  UART2_ERR_IRQHandler
+              weak def  :  Reserved53_IRQHandler
+              weak def  :  Reserved54_IRQHandler
+              weak def  :  ADC0_IRQHandler
+              weak def  :  CMP0_IRQHandler
+              weak def  :  CMP1_IRQHandler
+              weak def  :  FTM0_IRQHandler
+              weak def  :  FTM1_IRQHandler
+              weak def  :  FTM2_IRQHandler
+              weak def  :  Reserved61_IRQHandler
+              weak def  :  RTC_IRQHandler
+              weak def  :  RTC_Seconds_IRQHandler
+              weak def  :  PIT0_IRQHandler
+              weak def  :  PIT1_IRQHandler
+              weak def  :  PIT2_IRQHandler
+              weak def  :  PIT3_IRQHandler
+              weak def  :  PDB0_IRQHandler
+              weak def  :  USB0_IRQHandler
+              weak def  :  Reserved70_IRQHandler
+              weak def  :  Reserved71_IRQHandler
+              weak def  :  DAC0_IRQHandler
+              weak def  :  MCG_IRQHandler
+              weak def  :  LPTimer_IRQHandler
+              weak def  :  PORTA_IRQHandler
+              weak def  :  PORTB_IRQHandler
+              weak def  :  PORTC_IRQHandler
+              weak def  :  PORTD_IRQHandler
+              weak def  :  PORTE_IRQHandler
+              weak def  :  SWI_IRQHandler
+              weak def  :  Reserved81_IRQHandler
+              weak def  :  Reserved82_IRQHandler
+              weak def  :  Reserved83_IRQHandler
+              weak def  :  Reserved84_IRQHandler
+              weak def  :  Reserved85_IRQHandler
+              weak def  :  Reserved86_IRQHandler
+              weak def  :  Reserved87_IRQHandler
+              weak def  :  Reserved88_IRQHandler
+              weak def  :  ADC1_IRQHandler
+              weak def  :  Reserved90_IRQHandler
+              weak def  :  Reserved91_IRQHandler
+              weak def  :  Reserved92_IRQHandler
+              weak def  :  Reserved93_IRQHandler
+              weak def  :  Reserved94_IRQHandler
+              weak def  :  Reserved95_IRQHandler
+              weak def  :  Reserved96_IRQHandler
+              weak def  :  Reserved97_IRQHandler
+              weak def  :  Reserved98_IRQHandler
+              weak def  :  Reserved99_IRQHandler
+              weak def  :  Reserved100_IRQHandler
+              weak def  :  Reserved101_IRQHandler
+              weak def  :  DefaultISR
+              reference :  CSTACK$$Limit
+Loading object C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F25612\iar\led_demo_tower_a000\debug\obj\system_MK22F25612.o.
+              definition:  SystemCoreClock
+              definition:  SystemInit
+
+Auto library: rt7M_tl.a -> C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\arm\lib\rt7M_tl.a
+Auto library: m7M_tl.a -> C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\arm\lib\m7M_tl.a
+Auto library: dl7M_tln.a -> C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\arm\lib\dl7M_tln.a
+
+Library configuration:
+
+  extra init __iar_cstart_call_ctors
+  no_inline  __DebugBreak
+  no_inline  __iar_return_from_swi
+  no_inline  __iar_semihosting
+  no_inline  __iar_sh_stdout_swo
+Selecting member ABImemclr.o(rt7M_tl.a) to define __aeabi_memclr.
+              reference :  __iar_Memset_word
+              definition:  __aeabi_memclr
+Selecting member ABImemcpy_unaligned.o(rt7M_tl.a) to define __iar_unaligned___aeabi_memcpy.
+              definition:  __iar_unaligned___aeabi_memcpy
+              definition:  __iar_unaligned___aeabi_memcpy4
+              definition:  __iar_unaligned___aeabi_memcpy8
+Selecting member cstartup_M.o(rt7M_tl.a) to define __iar_program_start.
+              reference :  __cmain
+              reference :  __vector_table
+              weak ref  :  __iar_init_core
+              weak ref  :  __iar_init_vfp
+              definition:  __iar_program_start
+Selecting member ABImemset.o(rt7M_tl.a) to define __iar_Memset_word.
+              definition:  __iar_Memset
+              definition:  __iar_Memset_word
+              definition:  __aeabi_memset
+Selecting member cmain.o(rt7M_tl.a) to define __cmain.
+              weak ref  :  __iar_data_init3
+              weak ref  :  __iar_argc_argv
+              reference :  __low_level_init
+              reference :  main
+              reference :  exit
+              definition:  __cmain
+              definition:  ?main
+              definition:  _main
+              definition:  _call_main
+Selecting member low_level_init.o(dl7M_tln.a) to define __low_level_init.
+              definition:  __low_level_init
+Selecting member exit.o(dl7M_tln.a) to define exit.
+              reference :  _exit
+              definition:  exit
+Selecting member cexit.o(rt7M_tl.a) to define _exit.
+              weak ref  :  __call_dtors
+              weak ref  :  _Close_all
+              weak ref  :  __iar_clearlocks
+              reference :  __exit
+              definition:  _exit
+              definition:  __cexit_call_dtors
+              definition:  __cexit_closeall
+              definition:  __cexit_clearlocks
+Selecting member XXexit.o(rt7M_tl.a) to define __exit.
+              definition:  __exit
+Selecting member data_init.o(rt7M_tl.a) to define __iar_data_init3 (optional).
+              definition:  __iar_data_init3
+              reference :  Region$$Table$$Base
+              reference :  Region$$Table$$Limit
+Selecting member zero_init3.o(rt7M_tl.a) to define __iar_zero_init3.
+              definition:  __iar_zero_init3
+Selecting member copy_init3.o(rt7M_tl.a) to define __iar_copy_init3.
+              definition:  __iar_copy_init3
+Selecting member rle_init_single.o(rt7M_tl.a) to define __iar_rle_init_single3.
+              definition:  __iar_rle_init_single3
+Selecting member rle_init.o(rt7M_tl.a) to define __iar_rle_init3.
+              reference :  abort
+              definition:  __iar_rle_init3
+Selecting member packbits_init_single.o(rt7M_tl.a) to define __iar_packbits_init_single3.
+              definition:  __iar_packbits_init_single3
+Selecting member packbits_init.o(rt7M_tl.a) to define __iar_packbits_init3.
+              reference :  abort
+              definition:  __iar_packbits_init3
+Selecting member lz77_init_single.o(rt7M_tl.a) to define __iar_lz77_init_single3.
+              definition:  __iar_lz77_init_single3
+Selecting member lz77_init.o(rt7M_tl.a) to define __iar_lz77_init3.
+              reference :  abort
+              definition:  __iar_lz77_init3
+Selecting member abort.o(dl7M_tln.a) to define abort (optional).
+              reference :  __exit
+              definition:  abort
+
+  Module specific redirects:
+
+    unaligned access redirects:
+
+      Symbol            Redirected to
+      ------            -------------
+      __aeabi_memcpy    __iar_unaligned___aeabi_memcpy
+      __aeabi_memcpy4   __iar_unaligned___aeabi_memcpy4
+      __aeabi_memcpy8   __iar_unaligned___aeabi_memcpy8
+      __aeabi_memmove   __iar_unaligned___aeabi_memmove
+      __aeabi_memmove4  __iar_unaligned___aeabi_memmove4
+      __aeabi_memmove8  __iar_unaligned___aeabi_memmove8
+      memcmp            __iar_unaligned_memcmp
+      strcmp            __iar_unaligned_strcmp
+      strcpy            __iar_unaligned_strcpy
+      strncpy           __iar_unaligned_strncpy
+
+      C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F25612\iar\led_demo_tower_a000\debug\obj\startup.o
+
+Resolving duplicate symbol definitions
+  Picking Reset_Handler [s6 C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F25612\iar\led_demo_tower_a000\debug\obj\crt0.o]
+    Suppressing Reset_Handler [s8 C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F25612\iar\led_demo_tower_a000\debug\obj\startup_MK22F25612.o]
+  Picking SysTick_Handler [s9 C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F25612\iar\led_demo_tower_a000\debug\obj\milliseconds_delay.o]
+    Suppressing SysTick_Handler [s17 C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F25612\iar\led_demo_tower_a000\debug\obj\startup_MK22F25612.o]
+*** Marking from roots ***
+Marking symbol Reset_Handler                    Glb (16 crt0.o) [program entry]
+  Marking fragment #3 .noinit (6 crt0.o) init:always
+Marking symbol __VECTOR_TABLE                   Glb (1 command line/config) [referenced from command line/config]
+Marking symbol __VECTOR_RAM                     Glb (2 command line/config) [referenced from command line/config]
+Marking symbol __BOOT_STACK_ADDRESS             Glb (3 command line/config) [referenced from command line/config]
+Marking symbol __iar_section$$root                  (3 crt0.o) [__root]
+Marking symbol __iar_section$$root                  (3 cstartup_M.o) [__root]
+  Marking fragment #196 .text (6 cstartup_M.o(rt7M_tl.a))
+Marking from fragment #196 .text (6 cstartup_M.o(rt7M_tl.a))
+  Marking symbol __iar_init_core                  Ext (8 cstartup_M.o)
+  Marking symbol __vector_table                   Glb (52 startup_MK22F25612.o)
+    Marking fragment #119 .intvec (7 startup_MK22F25612.o)
+  Marking symbol __iar_init_vfp                   Ext (9 cstartup_M.o)
+  Marking symbol __cmain                          Glb (14 cmain.o)
+    Marking fragment #379 .text (8 cmain.o(rt7M_tl.a))
+Marking from fragment #379 .text (8 cmain.o(rt7M_tl.a))
+  Marking symbol __low_level_init                 Glb (8 low_level_init.o)
+    Marking fragment #218 .text (6 low_level_init.o(dl7M_tln.a))
+  Marking symbol _call_main                       Glb (17 cmain.o)
+    Marking fragment #380 .text (8 cmain.o(rt7M_tl.a))
+  Marking symbol __iar_data_init3                 Glb (12 data_init.o)
+Marking from fragment #380 .text (8 cmain.o(rt7M_tl.a))
+  Marking symbol __iar_argc_argv                  Ext (10 cmain.o)
+  Marking symbol main                             Glb (37 main.o)
+    Marking fragment #350 .text (9 main.o)
+  Marking symbol exit                             Glb (11 exit.o)
+    Marking fragment #225 .text (6 exit.o(dl7M_tln.a))
+Marking from fragment #225 .text (6 exit.o(dl7M_tln.a))
+  Marking symbol _exit                            Glb (14 cexit.o)
+    Marking fragment #381 .text (6 cexit.o(rt7M_tl.a))
+Marking from fragment #381 .text (6 cexit.o(rt7M_tl.a))
+  Marking symbol                                      (9 cexit.o)
+    Marking fragment #385 .text (6 cexit.o(rt7M_tl.a))
+Marking from fragment #385 .text (6 cexit.o(rt7M_tl.a))
+  Marking symbol __exit                           Glb (5 XXexit.o)
+    Marking fragment #240 .text (6 XXexit.o(rt7M_tl.a))
+Marking from fragment #240 .text (6 XXexit.o(rt7M_tl.a))
+Marking from fragment #350 .text (9 main.o)
+  Marking symbol .text_6                              (14 main.o)
+    Marking fragment #352 .text (9 main.o)
+  Marking symbol .text_7                              (15 main.o)
+    Marking fragment #353 .text (9 main.o)
+  Marking symbol milliseconds_delay_init          Glb (44 milliseconds_delay.o)
+    Marking fragment #354 .text (9 milliseconds_delay.o)
+  Marking symbol milliseconds_delay               Glb (43 milliseconds_delay.o)
+    Marking fragment #355 .text (9 milliseconds_delay.o)
+Marking from fragment #355 .text (9 milliseconds_delay.o)
+  Marking symbol .text_9                              (16 milliseconds_delay.o)
+    Marking fragment #360 .text (9 milliseconds_delay.o)
+Marking from fragment #360 .text (9 milliseconds_delay.o)
+  Marking symbol s_milliseconds_left                  (3 milliseconds_delay.o)
+    Marking fragment #44 .bss (8 milliseconds_delay.o)
+Marking from fragment #44 .bss (8 milliseconds_delay.o)
+Marking from fragment #354 .text (9 milliseconds_delay.o)
+  Marking symbol .text_6                              (12 milliseconds_delay.o)
+    Marking fragment #357 .text (9 milliseconds_delay.o)
+  Marking symbol .text_7                              (14 milliseconds_delay.o)
+    Marking fragment #358 .text (9 milliseconds_delay.o)
+  Marking symbol .text_8                              (15 milliseconds_delay.o)
+    Marking fragment #359 .text (9 milliseconds_delay.o)
+Marking from fragment #359 .text (9 milliseconds_delay.o)
+Marking from fragment #358 .text (9 milliseconds_delay.o)
+Marking from fragment #357 .text (9 milliseconds_delay.o)
+  Marking symbol SystemCoreClock                  Glb (22 system_MK22F25612.o)
+    Marking fragment #161 .data (8 system_MK22F25612.o)
+Marking from fragment #161 .data (8 system_MK22F25612.o)
+Marking from fragment #353 .text (9 main.o)
+  Marking symbol led_offset                           (4 main.o)
+    Marking fragment #14 .data (8 main.o)
+Marking from fragment #14 .data (8 main.o)
+Marking from fragment #352 .text (9 main.o)
+Marking from fragment #218 .text (6 low_level_init.o(dl7M_tln.a))
+Marking from fragment #119 .intvec (7 startup_MK22F25612.o)
+  Marking symbol CSTACK$$Limit                    Ext (154 startup_MK22F25612.o)
+  Marking symbol Reset_Handler                    Glb (16 crt0.o)
+  Marking symbol NMI_Handler                          (58 startup_MK22F25612.o)
+    Marking fragment #121 .text (9 startup_MK22F25612.o)
+  Marking symbol HardFault_Handler                    (59 startup_MK22F25612.o)
+    Marking fragment #122 .text (10 startup_MK22F25612.o)
+  Marking symbol MemManage_Handler                    (60 startup_MK22F25612.o)
+    Marking fragment #123 .text (11 startup_MK22F25612.o)
+  Marking symbol BusFault_Handler                     (61 startup_MK22F25612.o)
+    Marking fragment #124 .text (12 startup_MK22F25612.o)
+  Marking symbol UsageFault_Handler                   (62 startup_MK22F25612.o)
+    Marking fragment #125 .text (13 startup_MK22F25612.o)
+  Marking symbol SVC_Handler                          (63 startup_MK22F25612.o)
+    Marking fragment #126 .text (14 startup_MK22F25612.o)
+  Marking symbol DebugMon_Handler                     (64 startup_MK22F25612.o)
+    Marking fragment #127 .text (15 startup_MK22F25612.o)
+  Marking symbol PendSV_Handler                       (65 startup_MK22F25612.o)
+    Marking fragment #128 .text (16 startup_MK22F25612.o)
+  Marking symbol SysTick_Handler                  Glb (42 milliseconds_delay.o)
+    Marking fragment #356 .text (9 milliseconds_delay.o)
+  Marking symbol DMA0_IRQHandler                      (67 startup_MK22F25612.o)
+    Marking fragment #130 .text (18 startup_MK22F25612.o)
+  Marking symbol DMA1_IRQHandler                      (68 startup_MK22F25612.o)
+  Marking symbol DMA2_IRQHandler                      (69 startup_MK22F25612.o)
+  Marking symbol DMA3_IRQHandler                      (70 startup_MK22F25612.o)
+  Marking symbol DMA4_IRQHandler                      (71 startup_MK22F25612.o)
+  Marking symbol DMA5_IRQHandler                      (72 startup_MK22F25612.o)
+  Marking symbol DMA6_IRQHandler                      (73 startup_MK22F25612.o)
+  Marking symbol DMA7_IRQHandler                      (74 startup_MK22F25612.o)
+  Marking symbol DMA8_IRQHandler                      (75 startup_MK22F25612.o)
+  Marking symbol DMA9_IRQHandler                      (76 startup_MK22F25612.o)
+  Marking symbol DMA10_IRQHandler                     (77 startup_MK22F25612.o)
+  Marking symbol DMA11_IRQHandler                     (78 startup_MK22F25612.o)
+  Marking symbol DMA12_IRQHandler                     (79 startup_MK22F25612.o)
+  Marking symbol DMA13_IRQHandler                     (80 startup_MK22F25612.o)
+  Marking symbol DMA14_IRQHandler                     (81 startup_MK22F25612.o)
+  Marking symbol DMA15_IRQHandler                     (82 startup_MK22F25612.o)
+  Marking symbol DMA_Error_IRQHandler                 (83 startup_MK22F25612.o)
+  Marking symbol MCM_IRQHandler                       (84 startup_MK22F25612.o)
+  Marking symbol FTF_IRQHandler                       (85 startup_MK22F25612.o)
+  Marking symbol Read_Collision_IRQHandler            (86 startup_MK22F25612.o)
+  Marking symbol LVD_LVW_IRQHandler                   (87 startup_MK22F25612.o)
+  Marking symbol LLW_IRQHandler                       (88 startup_MK22F25612.o)
+  Marking symbol Watchdog_IRQHandler                  (89 startup_MK22F25612.o)
+  Marking symbol RNG_IRQHandler                       (90 startup_MK22F25612.o)
+  Marking symbol I2C0_IRQHandler                      (91 startup_MK22F25612.o)
+  Marking symbol I2C1_IRQHandler                      (92 startup_MK22F25612.o)
+  Marking symbol SPI0_IRQHandler                      (93 startup_MK22F25612.o)
+  Marking symbol SPI1_IRQHandler                      (94 startup_MK22F25612.o)
+  Marking symbol I2S0_Tx_IRQHandler                   (95 startup_MK22F25612.o)
+  Marking symbol I2S0_Rx_IRQHandler                   (96 startup_MK22F25612.o)
+  Marking symbol LPUART0_IRQHandler                   (97 startup_MK22F25612.o)
+  Marking symbol UART0_RX_TX_IRQHandler               (98 startup_MK22F25612.o)
+  Marking symbol UART0_ERR_IRQHandler                 (99 startup_MK22F25612.o)
+  Marking symbol UART1_RX_TX_IRQHandler               (100 startup_MK22F25612.o)
+  Marking symbol UART1_ERR_IRQHandler                 (101 startup_MK22F25612.o)
+  Marking symbol UART2_RX_TX_IRQHandler               (102 startup_MK22F25612.o)
+  Marking symbol UART2_ERR_IRQHandler                 (103 startup_MK22F25612.o)
+  Marking symbol Reserved53_IRQHandler                (104 startup_MK22F25612.o)
+  Marking symbol Reserved54_IRQHandler                (105 startup_MK22F25612.o)
+  Marking symbol ADC0_IRQHandler                      (106 startup_MK22F25612.o)
+  Marking symbol CMP0_IRQHandler                      (107 startup_MK22F25612.o)
+  Marking symbol CMP1_IRQHandler                      (108 startup_MK22F25612.o)
+  Marking symbol FTM0_IRQHandler                      (109 startup_MK22F25612.o)
+  Marking symbol FTM1_IRQHandler                      (110 startup_MK22F25612.o)
+  Marking symbol FTM2_IRQHandler                      (111 startup_MK22F25612.o)
+  Marking symbol Reserved61_IRQHandler                (112 startup_MK22F25612.o)
+  Marking symbol RTC_IRQHandler                       (113 startup_MK22F25612.o)
+  Marking symbol RTC_Seconds_IRQHandler               (114 startup_MK22F25612.o)
+  Marking symbol PIT0_IRQHandler                      (115 startup_MK22F25612.o)
+  Marking symbol PIT1_IRQHandler                      (116 startup_MK22F25612.o)
+  Marking symbol PIT2_IRQHandler                      (117 startup_MK22F25612.o)
+  Marking symbol PIT3_IRQHandler                      (118 startup_MK22F25612.o)
+  Marking symbol PDB0_IRQHandler                      (119 startup_MK22F25612.o)
+  Marking symbol USB0_IRQHandler                      (120 startup_MK22F25612.o)
+  Marking symbol Reserved70_IRQHandler                (121 startup_MK22F25612.o)
+  Marking symbol Reserved71_IRQHandler                (122 startup_MK22F25612.o)
+  Marking symbol DAC0_IRQHandler                      (123 startup_MK22F25612.o)
+  Marking symbol MCG_IRQHandler                       (124 startup_MK22F25612.o)
+  Marking symbol LPTimer_IRQHandler                   (125 startup_MK22F25612.o)
+  Marking symbol PORTA_IRQHandler                     (126 startup_MK22F25612.o)
+  Marking symbol PORTB_IRQHandler                     (127 startup_MK22F25612.o)
+  Marking symbol PORTC_IRQHandler                     (128 startup_MK22F25612.o)
+  Marking symbol PORTD_IRQHandler                     (129 startup_MK22F25612.o)
+  Marking symbol PORTE_IRQHandler                     (130 startup_MK22F25612.o)
+  Marking symbol SWI_IRQHandler                       (131 startup_MK22F25612.o)
+  Marking symbol Reserved81_IRQHandler                (132 startup_MK22F25612.o)
+  Marking symbol Reserved82_IRQHandler                (133 startup_MK22F25612.o)
+  Marking symbol Reserved83_IRQHandler                (134 startup_MK22F25612.o)
+  Marking symbol Reserved84_IRQHandler                (135 startup_MK22F25612.o)
+  Marking symbol Reserved85_IRQHandler                (136 startup_MK22F25612.o)
+  Marking symbol Reserved86_IRQHandler                (137 startup_MK22F25612.o)
+  Marking symbol Reserved87_IRQHandler                (138 startup_MK22F25612.o)
+  Marking symbol Reserved88_IRQHandler                (139 startup_MK22F25612.o)
+  Marking symbol ADC1_IRQHandler                      (140 startup_MK22F25612.o)
+  Marking symbol Reserved90_IRQHandler                (141 startup_MK22F25612.o)
+  Marking symbol Reserved91_IRQHandler                (142 startup_MK22F25612.o)
+  Marking symbol Reserved92_IRQHandler                (143 startup_MK22F25612.o)
+  Marking symbol Reserved93_IRQHandler                (144 startup_MK22F25612.o)
+  Marking symbol Reserved94_IRQHandler                (145 startup_MK22F25612.o)
+  Marking symbol Reserved95_IRQHandler                (146 startup_MK22F25612.o)
+  Marking symbol Reserved96_IRQHandler                (147 startup_MK22F25612.o)
+  Marking symbol Reserved97_IRQHandler                (148 startup_MK22F25612.o)
+  Marking symbol Reserved98_IRQHandler                (149 startup_MK22F25612.o)
+  Marking symbol Reserved99_IRQHandler                (150 startup_MK22F25612.o)
+  Marking symbol Reserved100_IRQHandler               (151 startup_MK22F25612.o)
+  Marking symbol Reserved101_IRQHandler               (152 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+Marking from fragment #130 .text (18 startup_MK22F25612.o)
+Marking from fragment #356 .text (9 milliseconds_delay.o)
+  Marking symbol .text_9                              (16 milliseconds_delay.o)
+Marking from fragment #128 .text (16 startup_MK22F25612.o)
+Marking from fragment #127 .text (15 startup_MK22F25612.o)
+Marking from fragment #126 .text (14 startup_MK22F25612.o)
+Marking from fragment #125 .text (13 startup_MK22F25612.o)
+Marking from fragment #124 .text (12 startup_MK22F25612.o)
+Marking from fragment #123 .text (11 startup_MK22F25612.o)
+Marking from fragment #122 .text (10 startup_MK22F25612.o)
+Marking from fragment #121 .text (9 startup_MK22F25612.o)
+Marking from fragment #3 .noinit (6 crt0.o) init:always
+  Marking symbol __vector_table                   Glb (52 startup_MK22F25612.o)
+    Marking fragment #119 .intvec (7 startup_MK22F25612.o) init:always
+  Marking symbol __vector_table                   Glb (52 startup_MK22F25612.o)
+  Marking symbol CSTACK$$Limit                    Ext (154 startup_MK22F25612.o)
+  Marking symbol SystemInit                       Glb (23 system_MK22F25612.o)
+    Marking fragment #162 .text (9 system_MK22F25612.o) init:always
+  Marking symbol init_data_bss                    Glb (48 startup.o)
+    Marking fragment #361 .text (8 startup.o) init:always
+  Marking symbol init_interrupts                  Glb (49 startup.o)
+    Marking fragment #362 .text (8 startup.o) init:always
+  Marking symbol main                             Glb (37 main.o)
+    Marking fragment #350 .text (9 main.o) init:always
+Marking from fragment #350 .text (9 main.o) init:always
+  Marking symbol .text_6                              (14 main.o)
+    Marking fragment #352 .text (9 main.o) init:always
+  Marking symbol .text_7                              (15 main.o)
+    Marking fragment #353 .text (9 main.o) init:always
+  Marking symbol milliseconds_delay_init          Glb (44 milliseconds_delay.o)
+    Marking fragment #354 .text (9 milliseconds_delay.o) init:always
+  Marking symbol milliseconds_delay               Glb (43 milliseconds_delay.o)
+    Marking fragment #355 .text (9 milliseconds_delay.o) init:always
+Marking from fragment #355 .text (9 milliseconds_delay.o) init:always
+  Marking symbol .text_9                              (16 milliseconds_delay.o)
+    Marking fragment #360 .text (9 milliseconds_delay.o) init:always
+Marking from fragment #360 .text (9 milliseconds_delay.o) init:always
+  Marking symbol s_milliseconds_left                  (3 milliseconds_delay.o)
+    Marking fragment #44 .bss (8 milliseconds_delay.o) init:always
+Marking from fragment #44 .bss (8 milliseconds_delay.o) init:always
+Marking from fragment #354 .text (9 milliseconds_delay.o) init:always
+  Marking symbol .text_6                              (12 milliseconds_delay.o)
+    Marking fragment #357 .text (9 milliseconds_delay.o) init:always
+  Marking symbol .text_7                              (14 milliseconds_delay.o)
+    Marking fragment #358 .text (9 milliseconds_delay.o) init:always
+  Marking symbol .text_8                              (15 milliseconds_delay.o)
+    Marking fragment #359 .text (9 milliseconds_delay.o) init:always
+Marking from fragment #359 .text (9 milliseconds_delay.o) init:always
+Marking from fragment #358 .text (9 milliseconds_delay.o) init:always
+Marking from fragment #357 .text (9 milliseconds_delay.o) init:always
+  Marking symbol SystemCoreClock                  Glb (22 system_MK22F25612.o)
+    Marking fragment #161 .data (8 system_MK22F25612.o) init:always
+Marking from fragment #161 .data (8 system_MK22F25612.o) init:always
+Marking from fragment #353 .text (9 main.o) init:always
+  Marking symbol led_offset                           (4 main.o)
+    Marking fragment #14 .data (8 main.o) init:always
+Marking from fragment #14 .data (8 main.o) init:always
+Marking from fragment #352 .text (9 main.o) init:always
+Marking from fragment #362 .text (8 startup.o) init:always
+  Marking symbol .text_14                             (19 startup.o)
+    Marking fragment #373 .text (8 startup.o) init:always
+  Marking symbol .text_15                             (20 startup.o)
+    Marking fragment #374 .text (8 startup.o) init:always
+Marking from fragment #374 .text (8 startup.o) init:always
+Marking from fragment #373 .text (8 startup.o) init:always
+Marking from fragment #361 .text (8 startup.o) init:always
+  Marking symbol .text_4                              (8 startup.o)
+    Marking fragment #363 .text (8 startup.o) init:always
+  Marking symbol .text_5                              (10 startup.o)
+    Marking fragment #364 .text (8 startup.o) init:always
+  Marking symbol .text_6                              (11 startup.o)
+    Marking fragment #365 .text (8 startup.o) init:always
+  Marking symbol .text_7                              (12 startup.o)
+    Marking fragment #366 .text (8 startup.o) init:always
+  Marking symbol .text_8                              (13 startup.o)
+    Marking fragment #367 .text (8 startup.o) init:always
+  Marking symbol __iar_unaligned___aeabi_memcpy   Glb (10 ABImemcpy_unaligned.o)
+    Marking fragment #375 .text (6 ABImemcpy_unaligned.o(rt7M_tl.a)) init:always
+  Marking symbol .text_9                              (14 startup.o)
+    Marking fragment #368 .text (8 startup.o) init:always
+  Marking symbol .text_10                             (15 startup.o)
+    Marking fragment #369 .text (8 startup.o) init:always
+  Marking symbol __aeabi_memclr                   Glb (7 ABImemclr.o)
+    Marking fragment #181 .text (6 ABImemclr.o(rt7M_tl.a)) init:always
+  Marking symbol .text_11                             (16 startup.o)
+    Marking fragment #370 .text (8 startup.o) init:always
+  Marking symbol .text_12                             (17 startup.o)
+    Marking fragment #371 .text (8 startup.o) init:always
+  Marking symbol .text_13                             (18 startup.o)
+    Marking fragment #372 .text (8 startup.o) init:always
+  Marking symbol __iar_unaligned___aeabi_memcpy   Glb (10 ABImemcpy_unaligned.o)
+Marking from fragment #372 .text (8 startup.o) init:always
+  Marking symbol CodeRelocateRam$$Base            Ext (58 startup.o)
+Marking from fragment #371 .text (8 startup.o) init:always
+  Marking symbol CodeRelocate$$Limit              Ext (57 startup.o)
+Marking from fragment #370 .text (8 startup.o) init:always
+  Marking symbol CodeRelocate$$Base               Ext (56 startup.o)
+Marking from fragment #181 .text (6 ABImemclr.o(rt7M_tl.a)) init:always
+  Marking symbol __iar_Memset_word                Glb (9 ABImemset.o)
+    Marking fragment #378 .text (6 ABImemset.o(rt7M_tl.a)) init:always
+Marking from fragment #378 .text (6 ABImemset.o(rt7M_tl.a)) init:always
+Marking from fragment #369 .text (8 startup.o) init:always
+  Marking symbol .bss$$Limit                      Ext (55 startup.o)
+Marking from fragment #368 .text (8 startup.o) init:always
+  Marking symbol .bss$$Base                       Ext (54 startup.o)
+Marking from fragment #375 .text (6 ABImemcpy_unaligned.o(rt7M_tl.a)) init:always
+  Marking symbol                                      (8 ABImemcpy_unaligned.o)
+    Marking fragment #376 .text (6 ABImemcpy_unaligned.o(rt7M_tl.a)) init:always
+  Marking symbol __iar_unaligned___aeabi_memcpy4  Glb (11 ABImemcpy_unaligned.o)
+  Marking symbol                                      (8 ABImemcpy_unaligned.o)
+  Marking symbol                                      (9 ABImemcpy_unaligned.o)
+Marking from fragment #376 .text (6 ABImemcpy_unaligned.o(rt7M_tl.a)) init:always
+Marking from fragment #367 .text (8 startup.o) init:always
+  Marking symbol .data$$Base                      Ext (53 startup.o)
+Marking from fragment #366 .text (8 startup.o) init:always
+  Marking symbol .data_init$$Limit                Ext (52 startup.o)
+Marking from fragment #365 .text (8 startup.o) init:always
+  Marking symbol .data_init$$Base                 Ext (51 startup.o)
+Marking from fragment #364 .text (8 startup.o) init:always
+  Marking symbol .intvec$$Base                    Ext (50 startup.o)
+Marking from fragment #363 .text (8 startup.o) init:always
+Marking from fragment #162 .text (9 system_MK22F25612.o) init:always
+Marking from fragment #119 .intvec (7 startup_MK22F25612.o) init:always
+  Marking symbol CSTACK$$Limit                    Ext (154 startup_MK22F25612.o)
+  Marking symbol Reset_Handler                    Glb (16 crt0.o)
+  Marking symbol NMI_Handler                          (58 startup_MK22F25612.o)
+    Marking fragment #121 .text (9 startup_MK22F25612.o) init:always
+  Marking symbol HardFault_Handler                    (59 startup_MK22F25612.o)
+    Marking fragment #122 .text (10 startup_MK22F25612.o) init:always
+  Marking symbol MemManage_Handler                    (60 startup_MK22F25612.o)
+    Marking fragment #123 .text (11 startup_MK22F25612.o) init:always
+  Marking symbol BusFault_Handler                     (61 startup_MK22F25612.o)
+    Marking fragment #124 .text (12 startup_MK22F25612.o) init:always
+  Marking symbol UsageFault_Handler                   (62 startup_MK22F25612.o)
+    Marking fragment #125 .text (13 startup_MK22F25612.o) init:always
+  Marking symbol SVC_Handler                          (63 startup_MK22F25612.o)
+    Marking fragment #126 .text (14 startup_MK22F25612.o) init:always
+  Marking symbol DebugMon_Handler                     (64 startup_MK22F25612.o)
+    Marking fragment #127 .text (15 startup_MK22F25612.o) init:always
+  Marking symbol PendSV_Handler                       (65 startup_MK22F25612.o)
+    Marking fragment #128 .text (16 startup_MK22F25612.o) init:always
+  Marking symbol SysTick_Handler                  Glb (42 milliseconds_delay.o)
+    Marking fragment #356 .text (9 milliseconds_delay.o) init:always
+  Marking symbol DMA0_IRQHandler                      (67 startup_MK22F25612.o)
+    Marking fragment #130 .text (18 startup_MK22F25612.o) init:always
+  Marking symbol DMA1_IRQHandler                      (68 startup_MK22F25612.o)
+  Marking symbol DMA2_IRQHandler                      (69 startup_MK22F25612.o)
+  Marking symbol DMA3_IRQHandler                      (70 startup_MK22F25612.o)
+  Marking symbol DMA4_IRQHandler                      (71 startup_MK22F25612.o)
+  Marking symbol DMA5_IRQHandler                      (72 startup_MK22F25612.o)
+  Marking symbol DMA6_IRQHandler                      (73 startup_MK22F25612.o)
+  Marking symbol DMA7_IRQHandler                      (74 startup_MK22F25612.o)
+  Marking symbol DMA8_IRQHandler                      (75 startup_MK22F25612.o)
+  Marking symbol DMA9_IRQHandler                      (76 startup_MK22F25612.o)
+  Marking symbol DMA10_IRQHandler                     (77 startup_MK22F25612.o)
+  Marking symbol DMA11_IRQHandler                     (78 startup_MK22F25612.o)
+  Marking symbol DMA12_IRQHandler                     (79 startup_MK22F25612.o)
+  Marking symbol DMA13_IRQHandler                     (80 startup_MK22F25612.o)
+  Marking symbol DMA14_IRQHandler                     (81 startup_MK22F25612.o)
+  Marking symbol DMA15_IRQHandler                     (82 startup_MK22F25612.o)
+  Marking symbol DMA_Error_IRQHandler                 (83 startup_MK22F25612.o)
+  Marking symbol MCM_IRQHandler                       (84 startup_MK22F25612.o)
+  Marking symbol FTF_IRQHandler                       (85 startup_MK22F25612.o)
+  Marking symbol Read_Collision_IRQHandler            (86 startup_MK22F25612.o)
+  Marking symbol LVD_LVW_IRQHandler                   (87 startup_MK22F25612.o)
+  Marking symbol LLW_IRQHandler                       (88 startup_MK22F25612.o)
+  Marking symbol Watchdog_IRQHandler                  (89 startup_MK22F25612.o)
+  Marking symbol RNG_IRQHandler                       (90 startup_MK22F25612.o)
+  Marking symbol I2C0_IRQHandler                      (91 startup_MK22F25612.o)
+  Marking symbol I2C1_IRQHandler                      (92 startup_MK22F25612.o)
+  Marking symbol SPI0_IRQHandler                      (93 startup_MK22F25612.o)
+  Marking symbol SPI1_IRQHandler                      (94 startup_MK22F25612.o)
+  Marking symbol I2S0_Tx_IRQHandler                   (95 startup_MK22F25612.o)
+  Marking symbol I2S0_Rx_IRQHandler                   (96 startup_MK22F25612.o)
+  Marking symbol LPUART0_IRQHandler                   (97 startup_MK22F25612.o)
+  Marking symbol UART0_RX_TX_IRQHandler               (98 startup_MK22F25612.o)
+  Marking symbol UART0_ERR_IRQHandler                 (99 startup_MK22F25612.o)
+  Marking symbol UART1_RX_TX_IRQHandler               (100 startup_MK22F25612.o)
+  Marking symbol UART1_ERR_IRQHandler                 (101 startup_MK22F25612.o)
+  Marking symbol UART2_RX_TX_IRQHandler               (102 startup_MK22F25612.o)
+  Marking symbol UART2_ERR_IRQHandler                 (103 startup_MK22F25612.o)
+  Marking symbol Reserved53_IRQHandler                (104 startup_MK22F25612.o)
+  Marking symbol Reserved54_IRQHandler                (105 startup_MK22F25612.o)
+  Marking symbol ADC0_IRQHandler                      (106 startup_MK22F25612.o)
+  Marking symbol CMP0_IRQHandler                      (107 startup_MK22F25612.o)
+  Marking symbol CMP1_IRQHandler                      (108 startup_MK22F25612.o)
+  Marking symbol FTM0_IRQHandler                      (109 startup_MK22F25612.o)
+  Marking symbol FTM1_IRQHandler                      (110 startup_MK22F25612.o)
+  Marking symbol FTM2_IRQHandler                      (111 startup_MK22F25612.o)
+  Marking symbol Reserved61_IRQHandler                (112 startup_MK22F25612.o)
+  Marking symbol RTC_IRQHandler                       (113 startup_MK22F25612.o)
+  Marking symbol RTC_Seconds_IRQHandler               (114 startup_MK22F25612.o)
+  Marking symbol PIT0_IRQHandler                      (115 startup_MK22F25612.o)
+  Marking symbol PIT1_IRQHandler                      (116 startup_MK22F25612.o)
+  Marking symbol PIT2_IRQHandler                      (117 startup_MK22F25612.o)
+  Marking symbol PIT3_IRQHandler                      (118 startup_MK22F25612.o)
+  Marking symbol PDB0_IRQHandler                      (119 startup_MK22F25612.o)
+  Marking symbol USB0_IRQHandler                      (120 startup_MK22F25612.o)
+  Marking symbol Reserved70_IRQHandler                (121 startup_MK22F25612.o)
+  Marking symbol Reserved71_IRQHandler                (122 startup_MK22F25612.o)
+  Marking symbol DAC0_IRQHandler                      (123 startup_MK22F25612.o)
+  Marking symbol MCG_IRQHandler                       (124 startup_MK22F25612.o)
+  Marking symbol LPTimer_IRQHandler                   (125 startup_MK22F25612.o)
+  Marking symbol PORTA_IRQHandler                     (126 startup_MK22F25612.o)
+  Marking symbol PORTB_IRQHandler                     (127 startup_MK22F25612.o)
+  Marking symbol PORTC_IRQHandler                     (128 startup_MK22F25612.o)
+  Marking symbol PORTD_IRQHandler                     (129 startup_MK22F25612.o)
+  Marking symbol PORTE_IRQHandler                     (130 startup_MK22F25612.o)
+  Marking symbol SWI_IRQHandler                       (131 startup_MK22F25612.o)
+  Marking symbol Reserved81_IRQHandler                (132 startup_MK22F25612.o)
+  Marking symbol Reserved82_IRQHandler                (133 startup_MK22F25612.o)
+  Marking symbol Reserved83_IRQHandler                (134 startup_MK22F25612.o)
+  Marking symbol Reserved84_IRQHandler                (135 startup_MK22F25612.o)
+  Marking symbol Reserved85_IRQHandler                (136 startup_MK22F25612.o)
+  Marking symbol Reserved86_IRQHandler                (137 startup_MK22F25612.o)
+  Marking symbol Reserved87_IRQHandler                (138 startup_MK22F25612.o)
+  Marking symbol Reserved88_IRQHandler                (139 startup_MK22F25612.o)
+  Marking symbol ADC1_IRQHandler                      (140 startup_MK22F25612.o)
+  Marking symbol Reserved90_IRQHandler                (141 startup_MK22F25612.o)
+  Marking symbol Reserved91_IRQHandler                (142 startup_MK22F25612.o)
+  Marking symbol Reserved92_IRQHandler                (143 startup_MK22F25612.o)
+  Marking symbol Reserved93_IRQHandler                (144 startup_MK22F25612.o)
+  Marking symbol Reserved94_IRQHandler                (145 startup_MK22F25612.o)
+  Marking symbol Reserved95_IRQHandler                (146 startup_MK22F25612.o)
+  Marking symbol Reserved96_IRQHandler                (147 startup_MK22F25612.o)
+  Marking symbol Reserved97_IRQHandler                (148 startup_MK22F25612.o)
+  Marking symbol Reserved98_IRQHandler                (149 startup_MK22F25612.o)
+  Marking symbol Reserved99_IRQHandler                (150 startup_MK22F25612.o)
+  Marking symbol Reserved100_IRQHandler               (151 startup_MK22F25612.o)
+  Marking symbol Reserved101_IRQHandler               (152 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+  Marking symbol DefaultISR                           (153 startup_MK22F25612.o)
+Marking from fragment #130 .text (18 startup_MK22F25612.o) init:always
+Marking from fragment #356 .text (9 milliseconds_delay.o) init:always
+  Marking symbol .text_9                              (16 milliseconds_delay.o)
+Marking from fragment #128 .text (16 startup_MK22F25612.o) init:always
+Marking from fragment #127 .text (15 startup_MK22F25612.o) init:always
+Marking from fragment #126 .text (14 startup_MK22F25612.o) init:always
+Marking from fragment #125 .text (13 startup_MK22F25612.o) init:always
+Marking from fragment #124 .text (12 startup_MK22F25612.o) init:always
+Marking from fragment #123 .text (11 startup_MK22F25612.o) init:always
+Marking from fragment #122 .text (10 startup_MK22F25612.o) init:always
+Marking from fragment #121 .text (9 startup_MK22F25612.o) init:always
+*** Marking optional init routines ***
+Marking fragment #246 .text (6 data_init.o(rt7M_tl.a)) {__iar_data_init3} init:{__iar_data_init3}
+Marking fragment #257 .text (7 zero_init3.o(rt7M_tl.a)) {__iar_zero_init3} init:{__iar_zero_init3}
+Marking fragment #267 .text (7 copy_init3.o(rt7M_tl.a)) {__iar_copy_init3} init:{__iar_copy_init3}
+Marking fragment #277 .text (7 rle_init_single.o(rt7M_tl.a)) {__iar_rle_init_single3} init:{__iar_rle_init_single3}
+Marking fragment #387 .text (7 rle_init.o(rt7M_tl.a)) {__iar_rle_init3} init:{__iar_rle_init3}
+Marking fragment #298 .text (7 packbits_init_single.o(rt7M_tl.a)) {__iar_packbits_init_single3} init:{__iar_packbits_init_single3}
+Marking fragment #389 .text (7 packbits_init.o(rt7M_tl.a)) {__iar_packbits_init3} init:{__iar_packbits_init3}
+Marking fragment #319 .text (7 lz77_init_single.o(rt7M_tl.a)) {__iar_lz77_init_single3} init:{__iar_lz77_init_single3}
+Marking fragment #393 .text (7 lz77_init.o(rt7M_tl.a)) {__iar_lz77_init3} init:{__iar_lz77_init3}
+Marking from fragment #393 .text (7 lz77_init.o(rt7M_tl.a)) {__iar_lz77_init3} init:{__iar_lz77_init3}
+  Marking symbol __iar_SB                             (6 lz77_init.o)
+    Marking fragment #328 .rodata (6 lz77_init.o(rt7M_tl.a)) {__iar_lz77_init3} init:{__iar_lz77_init3}
+  Marking symbol InStream_StepRegion                  (4 lz77_init.o)
+    Marking fragment #390 .text (7 lz77_init.o(rt7M_tl.a)) {__iar_lz77_init3} init:{__iar_lz77_init3}
+  Marking symbol InStream_Read                        (3 lz77_init.o)
+    Marking fragment #391 .text (7 lz77_init.o(rt7M_tl.a)) {__iar_lz77_init3} init:{__iar_lz77_init3}
+  Marking symbol InStream_Read                        (3 lz77_init.o)
+  Marking symbol InStream_Read                        (3 lz77_init.o)
+  Marking symbol InStream_StepRegion                  (4 lz77_init.o)
+  Marking symbol OutStream_Write                      (5 lz77_init.o)
+    Marking fragment #392 .text (7 lz77_init.o(rt7M_tl.a)) {__iar_lz77_init3} init:{__iar_lz77_init3}
+  Marking symbol InStream_Read                        (3 lz77_init.o)
+  Marking symbol InStream_Read                        (3 lz77_init.o)
+  Marking symbol abort                            Glb (11 abort.o)
+    Marking fragment #341 .text (6 abort.o(dl7M_tln.a)) {__iar_lz77_init3} init:{__iar_lz77_init3}
+Marking from fragment #341 .text (6 abort.o(dl7M_tln.a)) {__iar_lz77_init3} init:{__iar_lz77_init3}
+  Marking symbol __exit                           Glb (5 XXexit.o)
+    Marking fragment #240 .text (6 XXexit.o(rt7M_tl.a)) {__iar_lz77_init3} init:{__iar_lz77_init3}
+Marking from fragment #240 .text (6 XXexit.o(rt7M_tl.a)) {__iar_lz77_init3} init:{__iar_lz77_init3}
+Marking from fragment #392 .text (7 lz77_init.o(rt7M_tl.a)) {__iar_lz77_init3} init:{__iar_lz77_init3}
+  Marking symbol __iar_SB                             (6 lz77_init.o)
+  Marking symbol abort                            Glb (11 abort.o)
+Marking from fragment #391 .text (7 lz77_init.o(rt7M_tl.a)) {__iar_lz77_init3} init:{__iar_lz77_init3}
+Marking from fragment #390 .text (7 lz77_init.o(rt7M_tl.a)) {__iar_lz77_init3} init:{__iar_lz77_init3}
+Marking from fragment #328 .rodata (6 lz77_init.o(rt7M_tl.a)) {__iar_lz77_init3} init:{__iar_lz77_init3}
+Marking from fragment #319 .text (7 lz77_init_single.o(rt7M_tl.a)) {__iar_lz77_init_single3} init:{__iar_lz77_init_single3}
+  Marking symbol __iar_SB                             (3 lz77_init_single.o)
+    Marking fragment #318 .rodata (6 lz77_init_single.o(rt7M_tl.a)) {__iar_lz77_init_single3} init:{__iar_lz77_init_single3}
+Marking from fragment #318 .rodata (6 lz77_init_single.o(rt7M_tl.a)) {__iar_lz77_init_single3} init:{__iar_lz77_init_single3}
+Marking from fragment #389 .text (7 packbits_init.o(rt7M_tl.a)) {__iar_packbits_init3} init:{__iar_packbits_init3}
+  Marking symbol __iar_SB                             (4 packbits_init.o)
+    Marking fragment #307 .rodata (6 packbits_init.o(rt7M_tl.a)) {__iar_packbits_init3} init:{__iar_packbits_init3}
+  Marking symbol InStream_StepRegion                  (3 packbits_init.o)
+    Marking fragment #388 .text (7 packbits_init.o(rt7M_tl.a)) {__iar_packbits_init3} init:{__iar_packbits_init3}
+  Marking symbol abort                            Glb (11 abort.o)
+    Marking fragment #341 .text (6 abort.o(dl7M_tln.a)) {__iar_packbits_init3} init:{__iar_packbits_init3}
+Marking from fragment #341 .text (6 abort.o(dl7M_tln.a)) {__iar_packbits_init3} init:{__iar_packbits_init3}
+  Marking symbol __exit                           Glb (5 XXexit.o)
+    Marking fragment #240 .text (6 XXexit.o(rt7M_tl.a)) {__iar_packbits_init3} init:{__iar_packbits_init3}
+Marking from fragment #240 .text (6 XXexit.o(rt7M_tl.a)) {__iar_packbits_init3} init:{__iar_packbits_init3}
+Marking from fragment #388 .text (7 packbits_init.o(rt7M_tl.a)) {__iar_packbits_init3} init:{__iar_packbits_init3}
+Marking from fragment #307 .rodata (6 packbits_init.o(rt7M_tl.a)) {__iar_packbits_init3} init:{__iar_packbits_init3}
+Marking from fragment #298 .text (7 packbits_init_single.o(rt7M_tl.a)) {__iar_packbits_init_single3} init:{__iar_packbits_init_single3}
+  Marking symbol __iar_SB                             (3 packbits_init_single.o)
+    Marking fragment #297 .rodata (6 packbits_init_single.o(rt7M_tl.a)) {__iar_packbits_init_single3} init:{__iar_packbits_init_single3}
+Marking from fragment #297 .rodata (6 packbits_init_single.o(rt7M_tl.a)) {__iar_packbits_init_single3} init:{__iar_packbits_init_single3}
+Marking from fragment #387 .text (7 rle_init.o(rt7M_tl.a)) {__iar_rle_init3} init:{__iar_rle_init3}
+  Marking symbol __iar_SB                             (4 rle_init.o)
+    Marking fragment #286 .rodata (6 rle_init.o(rt7M_tl.a)) {__iar_rle_init3} init:{__iar_rle_init3}
+  Marking symbol abort                            Glb (11 abort.o)
+    Marking fragment #341 .text (6 abort.o(dl7M_tln.a)) {__iar_rle_init3} init:{__iar_rle_init3}
+  Marking symbol InStream_StepRegion                  (3 rle_init.o)
+    Marking fragment #386 .text (7 rle_init.o(rt7M_tl.a)) {__iar_rle_init3} init:{__iar_rle_init3}
+Marking from fragment #386 .text (7 rle_init.o(rt7M_tl.a)) {__iar_rle_init3} init:{__iar_rle_init3}
+Marking from fragment #341 .text (6 abort.o(dl7M_tln.a)) {__iar_rle_init3} init:{__iar_rle_init3}
+  Marking symbol __exit                           Glb (5 XXexit.o)
+    Marking fragment #240 .text (6 XXexit.o(rt7M_tl.a)) {__iar_rle_init3} init:{__iar_rle_init3}
+Marking from fragment #240 .text (6 XXexit.o(rt7M_tl.a)) {__iar_rle_init3} init:{__iar_rle_init3}
+Marking from fragment #286 .rodata (6 rle_init.o(rt7M_tl.a)) {__iar_rle_init3} init:{__iar_rle_init3}
+Marking from fragment #277 .text (7 rle_init_single.o(rt7M_tl.a)) {__iar_rle_init_single3} init:{__iar_rle_init_single3}
+  Marking symbol __iar_SB                             (3 rle_init_single.o)
+    Marking fragment #276 .rodata (6 rle_init_single.o(rt7M_tl.a)) {__iar_rle_init_single3} init:{__iar_rle_init_single3}
+Marking from fragment #276 .rodata (6 rle_init_single.o(rt7M_tl.a)) {__iar_rle_init_single3} init:{__iar_rle_init_single3}
+Marking from fragment #267 .text (7 copy_init3.o(rt7M_tl.a)) {__iar_copy_init3} init:{__iar_copy_init3}
+  Marking symbol __iar_SB                             (3 copy_init3.o)
+    Marking fragment #266 .rodata (6 copy_init3.o(rt7M_tl.a)) {__iar_copy_init3} init:{__iar_copy_init3}
+Marking from fragment #266 .rodata (6 copy_init3.o(rt7M_tl.a)) {__iar_copy_init3} init:{__iar_copy_init3}
+Marking from fragment #257 .text (7 zero_init3.o(rt7M_tl.a)) {__iar_zero_init3} init:{__iar_zero_init3}
+  Marking symbol __iar_SB                             (3 zero_init3.o)
+    Marking fragment #256 .rodata (6 zero_init3.o(rt7M_tl.a)) {__iar_zero_init3} init:{__iar_zero_init3}
+Marking from fragment #256 .rodata (6 zero_init3.o(rt7M_tl.a)) {__iar_zero_init3} init:{__iar_zero_init3}
+Marking from fragment #246 .text (6 data_init.o(rt7M_tl.a)) {__iar_data_init3} init:{__iar_data_init3}
+  Marking symbol Region$$Table$$Base              Ext (13 data_init.o)
+  Marking symbol Region$$Table$$Limit             Ext (14 data_init.o)
+*** Marking debug sections ***
+----- pass 1
+References #3 .noinit (6 crt0.o)
+  Marking fragment #5 .debug_line (8 crt0.o)
+References #3 .noinit (6 crt0.o)
+  Marking fragment #8 .debug_info (12 crt0.o)
+References #14 .data (8 main.o)
+  Marking fragment #19 .debug_info (13 main.o)
+References #350 .text (9 main.o)
+  Marking fragment #25 .debug_frame (21 main.o)
+References #350 .text (9 main.o)
+  Marking fragment #26 .iar.debug_line (23 main.o)
+References #350 .text (9 main.o)
+  Marking fragment #27 .debug_line (24 main.o)
+References #350 .text (9 main.o)
+  Marking fragment #28 .debug_info (25 main.o)
+References #28 .debug_info (25 main.o)
+  Marking fragment #37 .debug_pubnames (38 main.o)
+References #350 .text (9 main.o)
+  Marking fragment #39 .iar.debug_frame (45 main.o)
+References #44 .bss (8 milliseconds_delay.o)
+  Marking fragment #49 .debug_info (13 milliseconds_delay.o)
+References #354 .text (9 milliseconds_delay.o)
+  Marking fragment #51 .debug_frame (15 milliseconds_delay.o)
+References #354 .text (9 milliseconds_delay.o)
+  Marking fragment #52 .iar.debug_line (17 milliseconds_delay.o)
+References #354 .text (9 milliseconds_delay.o)
+  Marking fragment #53 .debug_line (18 milliseconds_delay.o)
+References #354 .text (9 milliseconds_delay.o)
+  Marking fragment #54 .debug_info (19 milliseconds_delay.o)
+References #355 .text (9 milliseconds_delay.o)
+  Marking fragment #55 .debug_frame (21 milliseconds_delay.o)
+References #355 .text (9 milliseconds_delay.o)
+  Marking fragment #56 .iar.debug_line (23 milliseconds_delay.o)
+References #355 .text (9 milliseconds_delay.o)
+  Marking fragment #57 .debug_line (24 milliseconds_delay.o)
+References #355 .text (9 milliseconds_delay.o)
+  Marking fragment #58 .debug_info (25 milliseconds_delay.o)
+References #356 .text (9 milliseconds_delay.o)
+  Marking fragment #59 .debug_frame (26 milliseconds_delay.o)
+References #356 .text (9 milliseconds_delay.o)
+  Marking fragment #60 .iar.debug_line (28 milliseconds_delay.o)
+References #356 .text (9 milliseconds_delay.o)
+  Marking fragment #61 .debug_line (29 milliseconds_delay.o)
+References #356 .text (9 milliseconds_delay.o)
+  Marking fragment #62 .debug_info (30 milliseconds_delay.o)
+References #54 .debug_info (19 milliseconds_delay.o)
+  Marking fragment #75 .debug_pubnames (45 milliseconds_delay.o)
+References #58 .debug_info (25 milliseconds_delay.o)
+  Marking fragment #76 .debug_pubnames (48 milliseconds_delay.o)
+References #62 .debug_info (30 milliseconds_delay.o)
+  Marking fragment #77 .debug_pubnames (51 milliseconds_delay.o)
+References #354 .text (9 milliseconds_delay.o)
+  Marking fragment #78 .iar.debug_frame (59 milliseconds_delay.o)
+References #355 .text (9 milliseconds_delay.o)
+  Marking fragment #79 .iar.debug_frame (61 milliseconds_delay.o)
+References #356 .text (9 milliseconds_delay.o)
+  Marking fragment #80 .iar.debug_frame (63 milliseconds_delay.o)
+References #361 .text (8 startup.o)
+  Marking fragment #97 .debug_frame (20 startup.o)
+References #361 .text (8 startup.o)
+  Marking fragment #98 .iar.debug_line (22 startup.o)
+References #361 .text (8 startup.o)
+  Marking fragment #99 .debug_line (23 startup.o)
+References #361 .text (8 startup.o)
+  Marking fragment #100 .debug_info (24 startup.o)
+References #362 .text (8 startup.o)
+  Marking fragment #101 .debug_frame (26 startup.o)
+References #362 .text (8 startup.o)
+  Marking fragment #102 .iar.debug_line (28 startup.o)
+References #362 .text (8 startup.o)
+  Marking fragment #103 .debug_line (29 startup.o)
+References #362 .text (8 startup.o)
+  Marking fragment #104 .debug_info (30 startup.o)
+References #100 .debug_info (24 startup.o)
+  Marking fragment #111 .debug_pubnames (38 startup.o)
+References #104 .debug_info (30 startup.o)
+  Marking fragment #112 .debug_pubnames (41 startup.o)
+References #361 .text (8 startup.o)
+  Marking fragment #114 .iar.debug_frame (47 startup.o)
+References #362 .text (8 startup.o)
+  Marking fragment #115 .iar.debug_frame (49 startup.o)
+References #121 .text (9 startup_MK22F25612.o)
+  Marking fragment #133 .debug_line (21 startup_MK22F25612.o)
+References #122 .text (10 startup_MK22F25612.o)
+  Marking fragment #134 .debug_line (22 startup_MK22F25612.o)
+References #123 .text (11 startup_MK22F25612.o)
+  Marking fragment #135 .debug_line (23 startup_MK22F25612.o)
+References #124 .text (12 startup_MK22F25612.o)
+  Marking fragment #136 .debug_line (24 startup_MK22F25612.o)
+References #125 .text (13 startup_MK22F25612.o)
+  Marking fragment #137 .debug_line (25 startup_MK22F25612.o)
+References #126 .text (14 startup_MK22F25612.o)
+  Marking fragment #138 .debug_line (26 startup_MK22F25612.o)
+References #127 .text (15 startup_MK22F25612.o)
+  Marking fragment #139 .debug_line (27 startup_MK22F25612.o)
+References #128 .text (16 startup_MK22F25612.o)
+  Marking fragment #140 .debug_line (28 startup_MK22F25612.o)
+References #130 .text (18 startup_MK22F25612.o)
+  Marking fragment #142 .debug_line (30 startup_MK22F25612.o)
+References #121 .text (9 startup_MK22F25612.o)
+  Marking fragment #147 .debug_info (38 startup_MK22F25612.o)
+References #122 .text (10 startup_MK22F25612.o)
+  Marking fragment #148 .debug_info (41 startup_MK22F25612.o)
+References #123 .text (11 startup_MK22F25612.o)
+  Marking fragment #149 .debug_info (44 startup_MK22F25612.o)
+References #124 .text (12 startup_MK22F25612.o)
+  Marking fragment #150 .debug_info (47 startup_MK22F25612.o)
+References #125 .text (13 startup_MK22F25612.o)
+  Marking fragment #151 .debug_info (50 startup_MK22F25612.o)
+References #126 .text (14 startup_MK22F25612.o)
+  Marking fragment #152 .debug_info (53 startup_MK22F25612.o)
+References #127 .text (15 startup_MK22F25612.o)
+  Marking fragment #153 .debug_info (56 startup_MK22F25612.o)
+References #128 .text (16 startup_MK22F25612.o)
+  Marking fragment #154 .debug_info (59 startup_MK22F25612.o)
+References #130 .text (18 startup_MK22F25612.o)
+  Marking fragment #156 .debug_info (65 startup_MK22F25612.o)
+References #161 .data (8 system_MK22F25612.o)
+  Marking fragment #166 .debug_info (13 system_MK22F25612.o)
+References #162 .text (9 system_MK22F25612.o)
+  Marking fragment #168 .debug_frame (15 system_MK22F25612.o)
+References #162 .text (9 system_MK22F25612.o)
+  Marking fragment #169 .iar.debug_line (17 system_MK22F25612.o)
+References #162 .text (9 system_MK22F25612.o)
+  Marking fragment #170 .debug_line (18 system_MK22F25612.o)
+References #162 .text (9 system_MK22F25612.o)
+  Marking fragment #171 .debug_info (19 system_MK22F25612.o)
+References #166 .debug_info (13 system_MK22F25612.o)
+  Marking fragment #176 .debug_pubnames (26 system_MK22F25612.o)
+References #171 .debug_info (19 system_MK22F25612.o)
+  Marking fragment #177 .debug_pubnames (29 system_MK22F25612.o)
+References #162 .text (9 system_MK22F25612.o)
+  Marking fragment #178 .iar.debug_frame (32 system_MK22F25612.o)
+References #181 .text (6 ABImemclr.o(rt7M_tl.a))
+  Marking fragment #183 .debug_frame (8 ABImemclr.o(rt7M_tl.a))
+References #375 .text (6 ABImemcpy_unaligned.o(rt7M_tl.a))
+  Marking fragment #190 .debug_frame (8 ABImemcpy_unaligned.o(rt7M_tl.a))
+References #376 .text (6 ABImemcpy_unaligned.o(rt7M_tl.a))
+  Marking fragment #191 .debug_frame (11 ABImemcpy_unaligned.o(rt7M_tl.a))
+References #378 .text (6 ABImemset.o(rt7M_tl.a))
+  Marking fragment #205 .debug_frame (11 ABImemset.o(rt7M_tl.a))
+References #218 .text (6 low_level_init.o(dl7M_tln.a))
+  Marking fragment #221 .debug_frame (9 low_level_init.o(dl7M_tln.a))
+References #225 .text (6 exit.o(dl7M_tln.a))
+  Marking fragment #230 .debug_frame (11 exit.o(dl7M_tln.a))
+References #246 .text (6 data_init.o(rt7M_tl.a))
+  Marking fragment #252 .debug_frame (12 data_init.o(rt7M_tl.a)) {__iar_data_init3}
+References #257 .text (7 zero_init3.o(rt7M_tl.a))
+  Marking fragment #262 .debug_frame (12 zero_init3.o(rt7M_tl.a)) {__iar_zero_init3}
+References #267 .text (7 copy_init3.o(rt7M_tl.a))
+  Marking fragment #272 .debug_frame (12 copy_init3.o(rt7M_tl.a)) {__iar_copy_init3}
+References #277 .text (7 rle_init_single.o(rt7M_tl.a))
+  Marking fragment #282 .debug_frame (12 rle_init_single.o(rt7M_tl.a)) {__iar_rle_init_single3}
+References #386 .text (7 rle_init.o(rt7M_tl.a))
+  Marking fragment #292 .debug_frame (12 rle_init.o(rt7M_tl.a)) {__iar_rle_init3}
+References #387 .text (7 rle_init.o(rt7M_tl.a))
+  Marking fragment #293 .debug_frame (15 rle_init.o(rt7M_tl.a)) {__iar_rle_init3}
+References #298 .text (7 packbits_init_single.o(rt7M_tl.a))
+  Marking fragment #303 .debug_frame (12 packbits_init_single.o(rt7M_tl.a)) {__iar_packbits_init_single3}
+References #388 .text (7 packbits_init.o(rt7M_tl.a))
+  Marking fragment #313 .debug_frame (12 packbits_init.o(rt7M_tl.a)) {__iar_packbits_init3}
+References #389 .text (7 packbits_init.o(rt7M_tl.a))
+  Marking fragment #314 .debug_frame (15 packbits_init.o(rt7M_tl.a)) {__iar_packbits_init3}
+References #319 .text (7 lz77_init_single.o(rt7M_tl.a))
+  Marking fragment #324 .debug_frame (12 lz77_init_single.o(rt7M_tl.a)) {__iar_lz77_init_single3}
+References #390 .text (7 lz77_init.o(rt7M_tl.a))
+  Marking fragment #334 .debug_frame (12 lz77_init.o(rt7M_tl.a)) {__iar_lz77_init3}
+References #391 .text (7 lz77_init.o(rt7M_tl.a))
+  Marking fragment #335 .debug_frame (15 lz77_init.o(rt7M_tl.a)) {__iar_lz77_init3}
+References #392 .text (7 lz77_init.o(rt7M_tl.a))
+  Marking fragment #336 .debug_frame (17 lz77_init.o(rt7M_tl.a)) {__iar_lz77_init3}
+References #393 .text (7 lz77_init.o(rt7M_tl.a))
+  Marking fragment #337 .debug_frame (19 lz77_init.o(rt7M_tl.a)) {__iar_lz77_init3}
+References #341 .text (6 abort.o(dl7M_tln.a))
+  Marking fragment #346 .debug_frame (11 abort.o(dl7M_tln.a)) {__iar_rle_init3 __iar_packbits_init3 __iar_lz77_init3}
+----- pass 2
+----- marking from debug sections
+Marking from fragment #346 .debug_frame (11 abort.o(dl7M_tln.a)) {__iar_rle_init3 __iar_packbits_init3 __iar_lz77_init3}
+  Marking symbol .debug_frame11                       (4 abort.o)
+  Marking symbol .text6                               (3 abort.o)
+Marking from fragment #337 .debug_frame (19 lz77_init.o(rt7M_tl.a)) {__iar_lz77_init3}
+  Marking symbol .debug_frame19                       (15 lz77_init.o)
+  Marking symbol .text_6                              (14 lz77_init.o)
+Marking from fragment #336 .debug_frame (17 lz77_init.o(rt7M_tl.a)) {__iar_lz77_init3}
+  Marking symbol .debug_frame17                       (13 lz77_init.o)
+  Marking symbol .text_5                              (12 lz77_init.o)
+Marking from fragment #335 .debug_frame (15 lz77_init.o(rt7M_tl.a)) {__iar_lz77_init3}
+  Marking symbol .debug_frame15                       (11 lz77_init.o)
+  Marking symbol .text_4                              (10 lz77_init.o)
+Marking from fragment #334 .debug_frame (12 lz77_init.o(rt7M_tl.a)) {__iar_lz77_init3}
+  Marking symbol .debug_frame12                       (8 lz77_init.o)
+  Marking symbol .text7                               (7 lz77_init.o)
+Marking from fragment #324 .debug_frame (12 lz77_init_single.o(rt7M_tl.a)) {__iar_lz77_init_single3}
+  Marking symbol .debug_frame12                       (5 lz77_init_single.o)
+  Marking symbol .text7                               (4 lz77_init_single.o)
+Marking from fragment #314 .debug_frame (15 packbits_init.o(rt7M_tl.a)) {__iar_packbits_init3}
+  Marking symbol .debug_frame15                       (9 packbits_init.o)
+  Marking symbol .text_4                              (8 packbits_init.o)
+Marking from fragment #313 .debug_frame (12 packbits_init.o(rt7M_tl.a)) {__iar_packbits_init3}
+  Marking symbol .debug_frame12                       (6 packbits_init.o)
+  Marking symbol .text7                               (5 packbits_init.o)
+Marking from fragment #303 .debug_frame (12 packbits_init_single.o(rt7M_tl.a)) {__iar_packbits_init_single3}
+  Marking symbol .debug_frame12                       (5 packbits_init_single.o)
+  Marking symbol .text7                               (4 packbits_init_single.o)
+Marking from fragment #293 .debug_frame (15 rle_init.o(rt7M_tl.a)) {__iar_rle_init3}
+  Marking symbol .debug_frame15                       (9 rle_init.o)
+  Marking symbol .text_4                              (8 rle_init.o)
+Marking from fragment #292 .debug_frame (12 rle_init.o(rt7M_tl.a)) {__iar_rle_init3}
+  Marking symbol .debug_frame12                       (6 rle_init.o)
+  Marking symbol .text7                               (5 rle_init.o)
+Marking from fragment #282 .debug_frame (12 rle_init_single.o(rt7M_tl.a)) {__iar_rle_init_single3}
+  Marking symbol .debug_frame12                       (5 rle_init_single.o)
+  Marking symbol .text7                               (4 rle_init_single.o)
+Marking from fragment #272 .debug_frame (12 copy_init3.o(rt7M_tl.a)) {__iar_copy_init3}
+  Marking symbol .debug_frame12                       (5 copy_init3.o)
+  Marking symbol .text7                               (4 copy_init3.o)
+Marking from fragment #262 .debug_frame (12 zero_init3.o(rt7M_tl.a)) {__iar_zero_init3}
+  Marking symbol .debug_frame12                       (5 zero_init3.o)
+  Marking symbol .text7                               (4 zero_init3.o)
+Marking from fragment #252 .debug_frame (12 data_init.o(rt7M_tl.a)) {__iar_data_init3}
+  Marking symbol .debug_frame12                       (4 data_init.o)
+  Marking symbol .text6                               (3 data_init.o)
+Marking from fragment #230 .debug_frame (11 exit.o(dl7M_tln.a))
+  Marking symbol .debug_frame11                       (4 exit.o)
+  Marking symbol .text6                               (3 exit.o)
+Marking from fragment #221 .debug_frame (9 low_level_init.o(dl7M_tln.a))
+  Marking symbol .debug_frame9                        (4 low_level_init.o)
+  Marking symbol .text6                               (3 low_level_init.o)
+Marking from fragment #205 .debug_frame (11 ABImemset.o(rt7M_tl.a))
+  Marking symbol .debug_frame11                       (7 ABImemset.o)
+  Marking symbol .text_1                              (6 ABImemset.o)
+Marking from fragment #191 .debug_frame (11 ABImemcpy_unaligned.o(rt7M_tl.a))
+  Marking symbol .debug_frame11                       (7 ABImemcpy_unaligned.o)
+  Marking symbol .text_1                              (6 ABImemcpy_unaligned.o)
+Marking from fragment #190 .debug_frame (8 ABImemcpy_unaligned.o(rt7M_tl.a))
+  Marking symbol .debug_frame8                        (5 ABImemcpy_unaligned.o)
+  Marking symbol .text6                               (3 ABImemcpy_unaligned.o)
+Marking from fragment #183 .debug_frame (8 ABImemclr.o(rt7M_tl.a))
+  Marking symbol .debug_frame8                        (5 ABImemclr.o)
+  Marking symbol .text6                               (3 ABImemclr.o)
+Marking from fragment #178 .iar.debug_frame (32 system_MK22F25612.o)
+  Marking symbol .text9                               (5 system_MK22F25612.o)
+  Marking symbol .debug_frame15                       (6 system_MK22F25612.o)
+  Marking symbol .debug_info19                        (21 system_MK22F25612.o)
+Marking from fragment #177 .debug_pubnames (29 system_MK22F25612.o)
+  Marking symbol .debug_info19                        (21 system_MK22F25612.o)
+Marking from fragment #176 .debug_pubnames (26 system_MK22F25612.o)
+  Marking symbol .debug_info13                        (17 system_MK22F25612.o)
+Marking from fragment #171 .debug_info (19 system_MK22F25612.o)
+  Marking symbol .debug_abbrev24                      (13 system_MK22F25612.o)
+    Marking fragment #175 .debug_abbrev (24 system_MK22F25612.o)
+  Marking symbol .text9                               (5 system_MK22F25612.o)
+  Marking symbol .text9                               (5 system_MK22F25612.o)
+  Marking symbol .debug_line18                        (19 system_MK22F25612.o)
+  Marking symbol .iar.debug_line17                    (20 system_MK22F25612.o)
+  Marking symbol .debug_info7                         (14 system_MK22F25612.o)
+    Marking fragment #160 .debug_info (7 system_MK22F25612.o)
+  Marking symbol .debug_loc22                         (18 system_MK22F25612.o)
+    Marking fragment #173 .debug_loc (22 system_MK22F25612.o)
+  Marking symbol .text9                               (5 system_MK22F25612.o)
+  Marking symbol .text9                               (5 system_MK22F25612.o)
+Marking from fragment #173 .debug_loc (22 system_MK22F25612.o)
+Marking from fragment #160 .debug_info (7 system_MK22F25612.o)
+  Marking symbol .debug_abbrev24                      (13 system_MK22F25612.o)
+  Marking symbol .debug_line6                         (15 system_MK22F25612.o)
+    Marking fragment #159 .debug_line (6 system_MK22F25612.o)
+  Marking symbol .debug_macinfo23                     (16 system_MK22F25612.o)
+    Marking fragment #174 .debug_macinfo (23 system_MK22F25612.o)
+Marking from fragment #174 .debug_macinfo (23 system_MK22F25612.o)
+Marking from fragment #159 .debug_line (6 system_MK22F25612.o)
+Marking from fragment #175 .debug_abbrev (24 system_MK22F25612.o)
+Marking from fragment #170 .debug_line (18 system_MK22F25612.o)
+  Marking symbol .text9                               (5 system_MK22F25612.o)
+Marking from fragment #169 .iar.debug_line (17 system_MK22F25612.o)
+  Marking symbol .text9                               (5 system_MK22F25612.o)
+  Marking symbol .debug_info19                        (21 system_MK22F25612.o)
+Marking from fragment #168 .debug_frame (15 system_MK22F25612.o)
+  Marking symbol .debug_frame15                       (6 system_MK22F25612.o)
+  Marking symbol .text9                               (5 system_MK22F25612.o)
+Marking from fragment #166 .debug_info (13 system_MK22F25612.o)
+  Marking symbol .debug_abbrev24                      (13 system_MK22F25612.o)
+  Marking symbol .debug_line6                         (15 system_MK22F25612.o)
+  Marking symbol .debug_macinfo23                     (16 system_MK22F25612.o)
+  Marking symbol .debug_info7                         (14 system_MK22F25612.o)
+  Marking symbol .data8                               (3 system_MK22F25612.o)
+Marking from fragment #156 .debug_info (65 startup_MK22F25612.o)
+  Marking symbol .debug_abbrev35                      (37 startup_MK22F25612.o)
+    Marking fragment #146 .debug_abbrev (35 startup_MK22F25612.o)
+  Marking symbol .text18                              (35 startup_MK22F25612.o)
+  Marking symbol .text18                              (35 startup_MK22F25612.o)
+  Marking symbol .debug_line30                        (48 startup_MK22F25612.o)
+Marking from fragment #146 .debug_abbrev (35 startup_MK22F25612.o)
+Marking from fragment #154 .debug_info (59 startup_MK22F25612.o)
+  Marking symbol .debug_abbrev35                      (37 startup_MK22F25612.o)
+  Marking symbol .text16                              (31 startup_MK22F25612.o)
+  Marking symbol .text16                              (31 startup_MK22F25612.o)
+  Marking symbol .debug_line28                        (46 startup_MK22F25612.o)
+Marking from fragment #153 .debug_info (56 startup_MK22F25612.o)
+  Marking symbol .debug_abbrev35                      (37 startup_MK22F25612.o)
+  Marking symbol .text15                              (29 startup_MK22F25612.o)
+  Marking symbol .text15                              (29 startup_MK22F25612.o)
+  Marking symbol .debug_line27                        (45 startup_MK22F25612.o)
+Marking from fragment #152 .debug_info (53 startup_MK22F25612.o)
+  Marking symbol .debug_abbrev35                      (37 startup_MK22F25612.o)
+  Marking symbol .text14                              (27 startup_MK22F25612.o)
+  Marking symbol .text14                              (27 startup_MK22F25612.o)
+  Marking symbol .debug_line26                        (44 startup_MK22F25612.o)
+Marking from fragment #151 .debug_info (50 startup_MK22F25612.o)
+  Marking symbol .debug_abbrev35                      (37 startup_MK22F25612.o)
+  Marking symbol .text13                              (25 startup_MK22F25612.o)
+  Marking symbol .text13                              (25 startup_MK22F25612.o)
+  Marking symbol .debug_line25                        (43 startup_MK22F25612.o)
+Marking from fragment #150 .debug_info (47 startup_MK22F25612.o)
+  Marking symbol .debug_abbrev35                      (37 startup_MK22F25612.o)
+  Marking symbol .text12                              (23 startup_MK22F25612.o)
+  Marking symbol .text12                              (23 startup_MK22F25612.o)
+  Marking symbol .debug_line24                        (42 startup_MK22F25612.o)
+Marking from fragment #149 .debug_info (44 startup_MK22F25612.o)
+  Marking symbol .debug_abbrev35                      (37 startup_MK22F25612.o)
+  Marking symbol .text11                              (21 startup_MK22F25612.o)
+  Marking symbol .text11                              (21 startup_MK22F25612.o)
+  Marking symbol .debug_line23                        (41 startup_MK22F25612.o)
+Marking from fragment #148 .debug_info (41 startup_MK22F25612.o)
+  Marking symbol .debug_abbrev35                      (37 startup_MK22F25612.o)
+  Marking symbol .text10                              (19 startup_MK22F25612.o)
+  Marking symbol .text10                              (19 startup_MK22F25612.o)
+  Marking symbol .debug_line22                        (40 startup_MK22F25612.o)
+Marking from fragment #147 .debug_info (38 startup_MK22F25612.o)
+  Marking symbol .debug_abbrev35                      (37 startup_MK22F25612.o)
+  Marking symbol .text9                               (17 startup_MK22F25612.o)
+  Marking symbol .text9                               (17 startup_MK22F25612.o)
+  Marking symbol .debug_line21                        (39 startup_MK22F25612.o)
+Marking from fragment #142 .debug_line (30 startup_MK22F25612.o)
+  Marking symbol .text18                              (35 startup_MK22F25612.o)
+Marking from fragment #140 .debug_line (28 startup_MK22F25612.o)
+  Marking symbol .text16                              (31 startup_MK22F25612.o)
+Marking from fragment #139 .debug_line (27 startup_MK22F25612.o)
+  Marking symbol .text15                              (29 startup_MK22F25612.o)
+Marking from fragment #138 .debug_line (26 startup_MK22F25612.o)
+  Marking symbol .text14                              (27 startup_MK22F25612.o)
+Marking from fragment #137 .debug_line (25 startup_MK22F25612.o)
+  Marking symbol .text13                              (25 startup_MK22F25612.o)
+Marking from fragment #136 .debug_line (24 startup_MK22F25612.o)
+  Marking symbol .text12                              (23 startup_MK22F25612.o)
+Marking from fragment #135 .debug_line (23 startup_MK22F25612.o)
+  Marking symbol .text11                              (21 startup_MK22F25612.o)
+Marking from fragment #134 .debug_line (22 startup_MK22F25612.o)
+  Marking symbol .text10                              (19 startup_MK22F25612.o)
+Marking from fragment #133 .debug_line (21 startup_MK22F25612.o)
+  Marking symbol .text9                               (17 startup_MK22F25612.o)
+Marking from fragment #115 .iar.debug_frame (49 startup.o)
+  Marking symbol .text_3                              (6 startup.o)
+  Marking symbol .debug_frame26                       (7 startup.o)
+  Marking symbol .debug_info30                        (43 startup.o)
+Marking from fragment #114 .iar.debug_frame (47 startup.o)
+  Marking symbol .text8                               (3 startup.o)
+  Marking symbol .debug_frame20                       (4 startup.o)
+  Marking symbol .debug_info24                        (37 startup.o)
+Marking from fragment #112 .debug_pubnames (41 startup.o)
+  Marking symbol .debug_info30                        (43 startup.o)
+Marking from fragment #111 .debug_pubnames (38 startup.o)
+  Marking symbol .debug_info24                        (37 startup.o)
+Marking from fragment #104 .debug_info (30 startup.o)
+  Marking symbol .debug_abbrev36                      (32 startup.o)
+    Marking fragment #110 .debug_abbrev (36 startup.o)
+  Marking symbol .text_3                              (6 startup.o)
+  Marking symbol .text_3                              (6 startup.o)
+  Marking symbol .debug_line29                        (41 startup.o)
+  Marking symbol .iar.debug_line28                    (42 startup.o)
+  Marking symbol .debug_info7                         (34 startup.o)
+    Marking fragment #84 .debug_info (7 startup.o)
+  Marking symbol .debug_loc33                         (38 startup.o)
+    Marking fragment #107 .debug_loc (33 startup.o)
+  Marking symbol .text_3                              (6 startup.o)
+  Marking symbol .text_3                              (6 startup.o)
+  Marking symbol .debug_info34                        (39 startup.o)
+    Marking fragment #108 .debug_info (34 startup.o)
+  Marking symbol .text_3                              (6 startup.o)
+  Marking symbol .text_3                              (6 startup.o)
+  Marking symbol .debug_info35                        (40 startup.o)
+    Marking fragment #109 .debug_info (35 startup.o)
+  Marking symbol .text_3                              (6 startup.o)
+  Marking symbol .text_3                              (6 startup.o)
+Marking from fragment #109 .debug_info (35 startup.o)
+  Marking symbol .debug_abbrev36                      (32 startup.o)
+  Marking symbol .debug_line6                         (44 startup.o)
+    Marking fragment #83 .debug_line (6 startup.o)
+  Marking symbol .debug_macinfo43                     (45 startup.o)
+    Marking fragment #113 .debug_macinfo (43 startup.o)
+Marking from fragment #113 .debug_macinfo (43 startup.o)
+Marking from fragment #83 .debug_line (6 startup.o)
+Marking from fragment #108 .debug_info (34 startup.o)
+  Marking symbol .debug_abbrev36                      (32 startup.o)
+  Marking symbol .debug_line6                         (44 startup.o)
+  Marking symbol .debug_macinfo43                     (45 startup.o)
+Marking from fragment #107 .debug_loc (33 startup.o)
+Marking from fragment #84 .debug_info (7 startup.o)
+  Marking symbol .debug_abbrev36                      (32 startup.o)
+  Marking symbol .debug_line6                         (44 startup.o)
+  Marking symbol .debug_macinfo43                     (45 startup.o)
+Marking from fragment #110 .debug_abbrev (36 startup.o)
+Marking from fragment #103 .debug_line (29 startup.o)
+  Marking symbol .text_3                              (6 startup.o)
+Marking from fragment #102 .iar.debug_line (28 startup.o)
+  Marking symbol .text_3                              (6 startup.o)
+  Marking symbol .debug_info30                        (43 startup.o)
+  Marking symbol .debug_info34                        (39 startup.o)
+  Marking symbol .debug_info35                        (40 startup.o)
+Marking from fragment #101 .debug_frame (26 startup.o)
+  Marking symbol .debug_frame26                       (7 startup.o)
+  Marking symbol .text_3                              (6 startup.o)
+Marking from fragment #100 .debug_info (24 startup.o)
+  Marking symbol .debug_abbrev36                      (32 startup.o)
+  Marking symbol .text8                               (3 startup.o)
+  Marking symbol .text8                               (3 startup.o)
+  Marking symbol .debug_line23                        (35 startup.o)
+  Marking symbol .iar.debug_line22                    (36 startup.o)
+  Marking symbol .debug_info7                         (34 startup.o)
+  Marking symbol .debug_loc32                         (33 startup.o)
+    Marking fragment #106 .debug_loc (32 startup.o)
+  Marking symbol .text8                               (3 startup.o)
+  Marking symbol .text8                               (3 startup.o)
+  Marking symbol .debug_info7                         (34 startup.o)
+  Marking symbol .debug_info7                         (34 startup.o)
+  Marking symbol .debug_info7                         (34 startup.o)
+  Marking symbol .debug_info7                         (34 startup.o)
+  Marking symbol .debug_info7                         (34 startup.o)
+  Marking symbol .debug_info7                         (34 startup.o)
+  Marking symbol .debug_loc32                         (33 startup.o)
+  Marking symbol .debug_info7                         (34 startup.o)
+  Marking symbol .debug_info7                         (34 startup.o)
+  Marking symbol .debug_info7                         (34 startup.o)
+Marking from fragment #106 .debug_loc (32 startup.o)
+Marking from fragment #99 .debug_line (23 startup.o)
+  Marking symbol .text8                               (3 startup.o)
+Marking from fragment #98 .iar.debug_line (22 startup.o)
+  Marking symbol .text8                               (3 startup.o)
+  Marking symbol .debug_info24                        (37 startup.o)
+Marking from fragment #97 .debug_frame (20 startup.o)
+  Marking symbol .debug_frame20                       (4 startup.o)
+  Marking symbol .text8                               (3 startup.o)
+Marking from fragment #80 .iar.debug_frame (63 milliseconds_delay.o)
+  Marking symbol .text_5                              (10 milliseconds_delay.o)
+  Marking symbol .debug_frame26                       (11 milliseconds_delay.o)
+  Marking symbol .debug_info30                        (40 milliseconds_delay.o)
+Marking from fragment #79 .iar.debug_frame (61 milliseconds_delay.o)
+  Marking symbol .text_4                              (8 milliseconds_delay.o)
+  Marking symbol .debug_frame21                       (9 milliseconds_delay.o)
+  Marking symbol .debug_info25                        (35 milliseconds_delay.o)
+Marking from fragment #78 .iar.debug_frame (59 milliseconds_delay.o)
+  Marking symbol .text9                               (5 milliseconds_delay.o)
+  Marking symbol .debug_frame15                       (6 milliseconds_delay.o)
+  Marking symbol .debug_info19                        (30 milliseconds_delay.o)
+Marking from fragment #77 .debug_pubnames (51 milliseconds_delay.o)
+  Marking symbol .debug_info30                        (40 milliseconds_delay.o)
+Marking from fragment #76 .debug_pubnames (48 milliseconds_delay.o)
+  Marking symbol .debug_info25                        (35 milliseconds_delay.o)
+Marking from fragment #75 .debug_pubnames (45 milliseconds_delay.o)
+  Marking symbol .debug_info19                        (30 milliseconds_delay.o)
+Marking from fragment #62 .debug_info (30 milliseconds_delay.o)
+  Marking symbol .debug_abbrev42                      (21 milliseconds_delay.o)
+    Marking fragment #74 .debug_abbrev (42 milliseconds_delay.o)
+  Marking symbol .text_5                              (10 milliseconds_delay.o)
+  Marking symbol .text_5                              (10 milliseconds_delay.o)
+  Marking symbol .debug_line29                        (38 milliseconds_delay.o)
+  Marking symbol .iar.debug_line28                    (39 milliseconds_delay.o)
+  Marking symbol .debug_info7                         (22 milliseconds_delay.o)
+    Marking fragment #43 .debug_info (7 milliseconds_delay.o)
+  Marking symbol .debug_loc39                         (36 milliseconds_delay.o)
+    Marking fragment #71 .debug_loc (39 milliseconds_delay.o)
+  Marking symbol .text_5                              (10 milliseconds_delay.o)
+  Marking symbol .text_5                              (10 milliseconds_delay.o)
+  Marking symbol .debug_info40                        (37 milliseconds_delay.o)
+    Marking fragment #72 .debug_info (40 milliseconds_delay.o)
+  Marking symbol .text_5                              (10 milliseconds_delay.o)
+  Marking symbol .text_5                              (10 milliseconds_delay.o)
+Marking from fragment #72 .debug_info (40 milliseconds_delay.o)
+  Marking symbol .debug_abbrev42                      (21 milliseconds_delay.o)
+  Marking symbol .debug_line6                         (23 milliseconds_delay.o)
+    Marking fragment #42 .debug_line (6 milliseconds_delay.o)
+  Marking symbol .debug_macinfo41                     (24 milliseconds_delay.o)
+    Marking fragment #73 .debug_macinfo (41 milliseconds_delay.o)
+Marking from fragment #73 .debug_macinfo (41 milliseconds_delay.o)
+Marking from fragment #42 .debug_line (6 milliseconds_delay.o)
+Marking from fragment #71 .debug_loc (39 milliseconds_delay.o)
+Marking from fragment #43 .debug_info (7 milliseconds_delay.o)
+  Marking symbol .debug_abbrev42                      (21 milliseconds_delay.o)
+  Marking symbol .debug_line6                         (23 milliseconds_delay.o)
+  Marking symbol .debug_macinfo41                     (24 milliseconds_delay.o)
+  Marking symbol __iar_cc.IRQn.RwX4OJhyJD2        Glb (45 milliseconds_delay.o)
+    Marking fragment #65 .debug_info (33 milliseconds_delay.o)
+Marking from fragment #65 .debug_info (33 milliseconds_delay.o)
+  Marking symbol .debug_abbrev42                      (21 milliseconds_delay.o)
+  Marking symbol .debug_line6                         (23 milliseconds_delay.o)
+  Marking symbol .debug_macinfo41                     (24 milliseconds_delay.o)
+Marking from fragment #74 .debug_abbrev (42 milliseconds_delay.o)
+Marking from fragment #61 .debug_line (29 milliseconds_delay.o)
+  Marking symbol .text_5                              (10 milliseconds_delay.o)
+Marking from fragment #60 .iar.debug_line (28 milliseconds_delay.o)
+  Marking symbol .text_5                              (10 milliseconds_delay.o)
+  Marking symbol .debug_info30                        (40 milliseconds_delay.o)
+  Marking symbol .debug_info40                        (37 milliseconds_delay.o)
+Marking from fragment #59 .debug_frame (26 milliseconds_delay.o)
+  Marking symbol .debug_frame26                       (11 milliseconds_delay.o)
+  Marking symbol .text_5                              (10 milliseconds_delay.o)
+Marking from fragment #58 .debug_info (25 milliseconds_delay.o)
+  Marking symbol .debug_abbrev42                      (21 milliseconds_delay.o)
+  Marking symbol .text_4                              (8 milliseconds_delay.o)
+  Marking symbol .text_4                              (8 milliseconds_delay.o)
+  Marking symbol .debug_line24                        (33 milliseconds_delay.o)
+  Marking symbol .iar.debug_line23                    (34 milliseconds_delay.o)
+  Marking symbol .debug_info7                         (22 milliseconds_delay.o)
+  Marking symbol .debug_loc37                         (31 milliseconds_delay.o)
+    Marking fragment #69 .debug_loc (37 milliseconds_delay.o)
+  Marking symbol .text_4                              (8 milliseconds_delay.o)
+  Marking symbol .text_4                              (8 milliseconds_delay.o)
+  Marking symbol .debug_info7                         (22 milliseconds_delay.o)
+  Marking symbol .debug_loc37                         (31 milliseconds_delay.o)
+  Marking symbol .debug_info38                        (32 milliseconds_delay.o)
+    Marking fragment #70 .debug_info (38 milliseconds_delay.o)
+  Marking symbol .text_4                              (8 milliseconds_delay.o)
+  Marking symbol .text_4                              (8 milliseconds_delay.o)
+  Marking symbol .debug_info38                        (32 milliseconds_delay.o)
+Marking from fragment #70 .debug_info (38 milliseconds_delay.o)
+  Marking symbol .debug_abbrev42                      (21 milliseconds_delay.o)
+  Marking symbol .debug_line6                         (23 milliseconds_delay.o)
+  Marking symbol .debug_macinfo41                     (24 milliseconds_delay.o)
+  Marking symbol .debug_info7                         (22 milliseconds_delay.o)
+Marking from fragment #69 .debug_loc (37 milliseconds_delay.o)
+Marking from fragment #57 .debug_line (24 milliseconds_delay.o)
+  Marking symbol .text_4                              (8 milliseconds_delay.o)
+Marking from fragment #56 .iar.debug_line (23 milliseconds_delay.o)
+  Marking symbol .text_4                              (8 milliseconds_delay.o)
+  Marking symbol .debug_info25                        (35 milliseconds_delay.o)
+  Marking symbol .debug_info38                        (32 milliseconds_delay.o)
+Marking from fragment #55 .debug_frame (21 milliseconds_delay.o)
+  Marking symbol .debug_frame21                       (9 milliseconds_delay.o)
+  Marking symbol .text_4                              (8 milliseconds_delay.o)
+Marking from fragment #54 .debug_info (19 milliseconds_delay.o)
+  Marking symbol .debug_abbrev42                      (21 milliseconds_delay.o)
+  Marking symbol .text9                               (5 milliseconds_delay.o)
+  Marking symbol .text9                               (5 milliseconds_delay.o)
+  Marking symbol .debug_line18                        (28 milliseconds_delay.o)
+  Marking symbol .iar.debug_line17                    (29 milliseconds_delay.o)
+  Marking symbol .debug_info7                         (22 milliseconds_delay.o)
+  Marking symbol .debug_loc34                         (25 milliseconds_delay.o)
+    Marking fragment #66 .debug_loc (34 milliseconds_delay.o)
+  Marking symbol .text9                               (5 milliseconds_delay.o)
+  Marking symbol .text9                               (5 milliseconds_delay.o)
+  Marking symbol .debug_info35                        (26 milliseconds_delay.o)
+    Marking fragment #67 .debug_info (35 milliseconds_delay.o)
+  Marking symbol .text9                               (5 milliseconds_delay.o)
+  Marking symbol .text9                               (5 milliseconds_delay.o)
+  Marking symbol .debug_info35                        (26 milliseconds_delay.o)
+  Marking symbol .debug_loc34                         (25 milliseconds_delay.o)
+  Marking symbol .debug_info36                        (27 milliseconds_delay.o)
+    Marking fragment #68 .debug_info (36 milliseconds_delay.o)
+  Marking symbol .text9                               (5 milliseconds_delay.o)
+  Marking symbol .text9                               (5 milliseconds_delay.o)
+  Marking symbol .debug_info36                        (27 milliseconds_delay.o)
+  Marking symbol .debug_info36                        (27 milliseconds_delay.o)
+Marking from fragment #68 .debug_info (36 milliseconds_delay.o)
+  Marking symbol .debug_abbrev42                      (21 milliseconds_delay.o)
+  Marking symbol .debug_line6                         (23 milliseconds_delay.o)
+  Marking symbol .debug_macinfo41                     (24 milliseconds_delay.o)
+  Marking symbol .debug_info7                         (22 milliseconds_delay.o)
+  Marking symbol .debug_info7                         (22 milliseconds_delay.o)
+Marking from fragment #67 .debug_info (35 milliseconds_delay.o)
+  Marking symbol .debug_abbrev42                      (21 milliseconds_delay.o)
+  Marking symbol .debug_line6                         (23 milliseconds_delay.o)
+  Marking symbol .debug_macinfo41                     (24 milliseconds_delay.o)
+  Marking symbol .debug_info7                         (22 milliseconds_delay.o)
+  Marking symbol .debug_info7                         (22 milliseconds_delay.o)
+Marking from fragment #66 .debug_loc (34 milliseconds_delay.o)
+Marking from fragment #53 .debug_line (18 milliseconds_delay.o)
+  Marking symbol .text9                               (5 milliseconds_delay.o)
+Marking from fragment #52 .iar.debug_line (17 milliseconds_delay.o)
+  Marking symbol .text9                               (5 milliseconds_delay.o)
+  Marking symbol .debug_info19                        (30 milliseconds_delay.o)
+  Marking symbol .debug_info35                        (26 milliseconds_delay.o)
+  Marking symbol .debug_info36                        (27 milliseconds_delay.o)
+Marking from fragment #51 .debug_frame (15 milliseconds_delay.o)
+  Marking symbol .debug_frame15                       (6 milliseconds_delay.o)
+  Marking symbol .text9                               (5 milliseconds_delay.o)
+Marking from fragment #49 .debug_info (13 milliseconds_delay.o)
+  Marking symbol .debug_abbrev42                      (21 milliseconds_delay.o)
+  Marking symbol .debug_line6                         (23 milliseconds_delay.o)
+  Marking symbol .debug_macinfo41                     (24 milliseconds_delay.o)
+  Marking symbol .debug_info7                         (22 milliseconds_delay.o)
+  Marking symbol s_milliseconds_left                  (3 milliseconds_delay.o)
+Marking from fragment #39 .iar.debug_frame (45 main.o)
+  Marking symbol .text_4                              (10 main.o)
+  Marking symbol .debug_frame21                       (11 main.o)
+  Marking symbol .debug_info25                        (33 main.o)
+Marking from fragment #37 .debug_pubnames (38 main.o)
+  Marking symbol .debug_info25                        (33 main.o)
+Marking from fragment #28 .debug_info (25 main.o)
+  Marking symbol .debug_abbrev32                      (20 main.o)
+    Marking fragment #35 .debug_abbrev (32 main.o)
+  Marking symbol .text_4                              (10 main.o)
+  Marking symbol .text_4                              (10 main.o)
+  Marking symbol .debug_line24                        (31 main.o)
+  Marking symbol .iar.debug_line23                    (32 main.o)
+  Marking symbol .debug_info7                         (21 main.o)
+    Marking fragment #13 .debug_info (7 main.o)
+  Marking symbol .debug_info7                         (21 main.o)
+  Marking symbol .debug_loc28                         (28 main.o)
+    Marking fragment #31 .debug_loc (28 main.o)
+  Marking symbol .text_4                              (10 main.o)
+  Marking symbol .text_4                              (10 main.o)
+  Marking symbol .debug_info7                         (21 main.o)
+  Marking symbol .debug_loc28                         (28 main.o)
+  Marking symbol .debug_info29                        (29 main.o)
+    Marking fragment #32 .debug_info (29 main.o)
+  Marking symbol .text_4                              (10 main.o)
+  Marking symbol .text_4                              (10 main.o)
+  Marking symbol .debug_info29                        (29 main.o)
+  Marking symbol .debug_loc28                         (28 main.o)
+  Marking symbol .debug_info30                        (30 main.o)
+    Marking fragment #33 .debug_info (30 main.o)
+  Marking symbol .text_4                              (10 main.o)
+  Marking symbol .text_4                              (10 main.o)
+  Marking symbol .debug_info30                        (30 main.o)
+  Marking symbol .debug_info30                        (30 main.o)
+  Marking symbol .debug_loc28                         (28 main.o)
+Marking from fragment #33 .debug_info (30 main.o)
+  Marking symbol .debug_abbrev32                      (20 main.o)
+  Marking symbol .debug_line6                         (22 main.o)
+    Marking fragment #12 .debug_line (6 main.o)
+  Marking symbol .debug_macinfo31                     (23 main.o)
+    Marking fragment #34 .debug_macinfo (31 main.o)
+  Marking symbol .debug_info7                         (21 main.o)
+  Marking symbol .debug_info7                         (21 main.o)
+Marking from fragment #34 .debug_macinfo (31 main.o)
+Marking from fragment #12 .debug_line (6 main.o)
+Marking from fragment #32 .debug_info (29 main.o)
+  Marking symbol .debug_abbrev32                      (20 main.o)
+  Marking symbol .debug_line6                         (22 main.o)
+  Marking symbol .debug_macinfo31                     (23 main.o)
+  Marking symbol .debug_info7                         (21 main.o)
+Marking from fragment #31 .debug_loc (28 main.o)
+Marking from fragment #13 .debug_info (7 main.o)
+  Marking symbol .debug_abbrev32                      (20 main.o)
+  Marking symbol .debug_line6                         (22 main.o)
+  Marking symbol .debug_macinfo31                     (23 main.o)
+Marking from fragment #35 .debug_abbrev (32 main.o)
+Marking from fragment #27 .debug_line (24 main.o)
+  Marking symbol .text_4                              (10 main.o)
+Marking from fragment #26 .iar.debug_line (23 main.o)
+  Marking symbol .text_4                              (10 main.o)
+  Marking symbol .debug_info25                        (33 main.o)
+  Marking symbol .debug_info29                        (29 main.o)
+  Marking symbol milliseconds_delay_init          Glb (44 milliseconds_delay.o)
+  Marking symbol .debug_info30                        (30 main.o)
+  Marking symbol milliseconds_delay               Glb (43 milliseconds_delay.o)
+Marking from fragment #25 .debug_frame (21 main.o)
+  Marking symbol .debug_frame21                       (11 main.o)
+  Marking symbol .text_4                              (10 main.o)
+Marking from fragment #19 .debug_info (13 main.o)
+  Marking symbol .debug_abbrev32                      (20 main.o)
+  Marking symbol .debug_line6                         (22 main.o)
+  Marking symbol .debug_macinfo31                     (23 main.o)
+  Marking symbol .debug_info7                         (21 main.o)
+  Marking symbol led_gpio                             (3 main.o)
+  Marking symbol .debug_info7                         (21 main.o)
+  Marking symbol led_offset                           (4 main.o)
+  Marking symbol .debug_info7                         (21 main.o)
+  Marking symbol led_port                             (5 main.o)
+Marking from fragment #8 .debug_info (12 crt0.o)
+  Marking symbol .debug_abbrev13                      (8 crt0.o)
+    Marking fragment #9 .debug_abbrev (13 crt0.o)
+  Marking symbol .noinit6                             (5 crt0.o)
+  Marking symbol .noinit6                             (5 crt0.o)
+  Marking symbol .debug_line8                         (9 crt0.o)
+Marking from fragment #9 .debug_abbrev (13 crt0.o)
+Marking from fragment #5 .debug_line (8 crt0.o)
+  Marking symbol .noinit6                             (5 crt0.o)
+
+Unused fragments:
+  Section name     Index  Offset     Size  Object
+  ------------     -----  ------     ----  ------
+  .iar.as_table        1     0x0  0x20000  command line/config
+    __as_table_start
+  .iar.as_entries      2     0x0  0x10000
+    __as_entries_start
+  .text                9     0x0     0x18  main.o
+    delay
+  .text                9    0x98      0x4
+  .text                8     0x0     0x44  startup_MK22F25612.o
+    _irq_clear
+    _irq_clear_end
+    _done
+  .text               17     0x0      0x2
+  .text                6     0x0      0x8  ABImemset.o
+    __iar_Memset
+    __aeabi_memset
+  .text                6     0x2      0x4  cexit.o
+    __cexit_call_dtors
+  .text                6     0x6      0x4
+    __cexit_closeall
+  .text                6     0xa      0x4
+    __cexit_clearlocks
+
+Creating copy init batch C1 (Table) for .data_init -> .data, manual copy, unit
+  First match: .data (main.o #8)
+Creating initializer unit for .data_init -> .data (manual)
+
+Veneer stats:
+
+  14 definitions
+  15 references
+     10 R_ARM_THM_CALL
+      3 R_ARM_THM_JUMP24
+      2 R_ARM_THM_JUMP19
+   0 veneers               0 bytes
+   0 redirected references

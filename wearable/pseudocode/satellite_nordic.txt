@@ -1,0 +1,35 @@
+sending messages to kinetis:
+	call spi library
+	if response data was received, add it to the circular buffer
+
+sending messages to an ESB channel:
+	call ESB library (do we need to wait?)
+	busywait for a response to come back or for timeout
+	set the connected channel to |channel| if successful, otherwise null.
+	populate flags based on response (active, should stop, go calibrate, hub swamped) or set RTC if appropriate
+
+forward data to hub:
+	if the hub isn't swamped, pop the front X entries from the circular buffer
+	send a DATA message to the connected channel with the popped data, if any (this doubles as a heartbeat, which is why you send even without data)
+
+look for hub:
+	for each ESB channel:
+		send CONNECT message to ESB channel with our identification
+		if we're now connected, break
+
+init:
+	while not connected:
+		call spi library to communicate HELLO
+		if response is a READY, you're connected
+main loop:
+	while disconnected:
+		look for hub
+	if our buffer is almost full:
+		send SHUT UP to kinetis
+	else if calibrate/stop/set RTC was set:
+		forward it to kinetis
+		clear the flag
+	else if sensing is active:
+		send ACTIVE to kinetis
+	forward data to hub
+	if sensing isn't active, take a nap

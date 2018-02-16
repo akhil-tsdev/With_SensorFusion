@@ -1,0 +1,255 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       16/Sep/2016  13:23:54
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\bootloader\src\bl_exception_handler.c
+#    Command line =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\bootloader\src\bl_exception_handler.c
+#        -D NDEBUG -D USB_STACK_BM -D CPU_MK22FN1M0AVMC12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D FREEDOM -D BL_TARGET_FLASH -D
+#        TURINGSENSE=1 -lC
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\list
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\..\..\..\..\src\platform\devices\MK22FA12_MK64\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/autobaud\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/osa\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/device\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/device/class\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/bm_usb\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform/devices\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform/CMSIS/Include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/drivers\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/drivers/common\
+#        -On --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\list\bl_exception_handler.lst
+#    Object file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\obj\bl_exception_handler.o
+#
+###############################################################################
+
+C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\bootloader\src\bl_exception_handler.c
+      1          /*
+      2           * Copyright (c) 2013, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          
+     31          #include "bootloader_common.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void NVIC_SystemReset(void)
+   \                     NVIC_SystemReset: (+1)
+   \   00000000   0xF3BF 0x8F4F      DSB      
+   \   00000004   0x....             LDR.N    R0,??DataTable0  ;; 0xe000ed0c
+   \   00000006   0x6800             LDR      R0,[R0, #+0]
+   \   00000008   0xF410 0x60E0      ANDS     R0,R0,#0x700
+   \   0000000C   0x....             LDR.N    R1,??DataTable0_1  ;; 0x5fa0004
+   \   0000000E   0x4308             ORRS     R0,R1,R0
+   \   00000010   0x....             LDR.N    R1,??DataTable0  ;; 0xe000ed0c
+   \   00000012   0x6008             STR      R0,[R1, #+0]
+   \   00000014   0xF3BF 0x8F4F      DSB      
+   \                     ??NVIC_SystemReset_0: (+1)
+   \   00000018   0xBF00             Nop      
+   \   0000001A   0xE7FD             B.N      ??NVIC_SystemReset_0
+     32          #include "fsl_device_registers.h"
+     33          
+     34          #if defined(DEBUG)
+     35          
+     36          typedef struct _stack_frame
+     37          {
+     38              uint32_t r0;
+     39              uint32_t r1;
+     40              uint32_t r2;
+     41              uint32_t r3;
+     42              uint32_t r12;
+     43              uint32_t lr;
+     44              uint32_t pc;
+     45              uint32_t psr;
+     46          } stack_frame_t;
+     47          
+     48          volatile stack_frame_t *s_stack_frame;
+     49          
+     50          #endif
+     51          ////////////////////////////////////////////////////////////////////////////////
+     52          // Code
+     53          ////////////////////////////////////////////////////////////////////////////////
+     54          
+     55          //! @brief HardFault_Handler
+
+   \                                 In section .text, align 2, keep-with-next
+     56          void HardFault_Handler(void)
+     57          {
+   \                     HardFault_Handler: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     58          #if defined(DEBUG)
+     59              s_stack_frame = (stack_frame_t *)__get_MSP();
+     60              __ASM("BKPT #0");
+     61              (void)s_stack_frame;
+     62          #endif
+     63          
+     64              // Reset MCU
+     65              NVIC_SystemReset();
+   \   00000002   0x.... 0x....      BL       NVIC_SystemReset
+     66          }
+   \   00000006   0xBD01             POP      {R0,PC}          ;; return
+     67          
+     68          /* Functions below only apply to mcus belonging to ARM-Cortex M4 family */
+     69          #if defined(__CORE_CM4_H_GENERIC)
+     70          //! @brief MPU Fault Handler
+
+   \                                 In section .text, align 2, keep-with-next
+     71          void MemManage_Handler(void)
+     72          {
+   \                     MemManage_Handler: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     73          #if defined(DEBUG)
+     74              __ASM("BKPT #0");
+     75          #endif // DEBUG
+     76          
+     77              // Reset MCU
+     78              NVIC_SystemReset();
+   \   00000002   0x.... 0x....      BL       NVIC_SystemReset
+     79          }
+   \   00000006   0xBD01             POP      {R0,PC}          ;; return
+     80          
+     81          //! @brief Bus Fault Handler
+
+   \                                 In section .text, align 2, keep-with-next
+     82          void BusFault_Handler(void)
+     83          {
+   \                     BusFault_Handler: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     84          #if defined(DEBUG)
+     85              __ASM("BKPT #0");
+     86          #endif // DEBUG
+     87          
+     88              // Reset MCU
+     89              NVIC_SystemReset();
+   \   00000002   0x.... 0x....      BL       NVIC_SystemReset
+     90          }
+   \   00000006   0xBD01             POP      {R0,PC}          ;; return
+     91          
+     92          //! @brief Usage Fault Handler
+
+   \                                 In section .text, align 2, keep-with-next
+     93          void UsageFault_Handler(void)
+     94          {
+   \                     UsageFault_Handler: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     95          #if defined(DEBUG)
+     96              __ASM("BKPT #0");
+     97          #endif // DEBUG
+     98          
+     99              // Reset MCU
+    100              NVIC_SystemReset();
+   \   00000002   0x.... 0x....      BL       NVIC_SystemReset
+    101          }
+   \   00000006   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0:
+   \   00000000   0xE000ED0C         DC32     0xe000ed0c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_1:
+   \   00000000   0x05FA0004         DC32     0x5fa0004
+    102          
+    103          #endif // __CORE_C4_H_GENERIC
+    104          
+    105          ////////////////////////////////////////////////////////////////////////////////
+    106          // EOF
+    107          ////////////////////////////////////////////////////////////////////////////////
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   BusFault_Handler
+         8   -> NVIC_SystemReset
+       8   HardFault_Handler
+         8   -> NVIC_SystemReset
+       8   MemManage_Handler
+         8   -> NVIC_SystemReset
+       0   NVIC_SystemReset
+       8   UsageFault_Handler
+         8   -> NVIC_SystemReset
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+       4  ??DataTable0_1
+       8  BusFault_Handler
+       8  HardFault_Handler
+       8  MemManage_Handler
+      28  NVIC_SystemReset
+       8  UsageFault_Handler
+
+ 
+ 68 bytes in section .text
+ 
+ 68 bytes of CODE memory
+
+Errors: none
+Warnings: none

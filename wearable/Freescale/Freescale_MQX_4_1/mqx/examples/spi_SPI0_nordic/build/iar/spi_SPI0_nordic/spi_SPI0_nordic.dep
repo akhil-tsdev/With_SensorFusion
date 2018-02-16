@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>2230734414</fileChecksum>
+  <configuration>
+    <name>Int Flash Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\..\spi_memory.c</file>
+      <file>$PROJ_DIR$\Int Flash Debug\obj\spi_memory.__cstat.et</file>
+      <file>$PROJ_DIR$\..\..\..\main.c</file>
+      <file>$PROJ_DIR$\Int Flash Debug\spi.out</file>
+      <file>$PROJ_DIR$\Int Flash Debug\obj\main.__cstat.et</file>
+      <file>$PROJ_DIR$\Int Flash Debug\spi_SPI0_nordic.srec</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\spi_memory.c</name>
+      <outputs>
+        <tool>
+          <name>__cstat</name>
+          <file> 1</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\main.c</name>
+      <outputs>
+        <tool>
+          <name>__cstat</name>
+          <file> 4</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Int Flash Debug\spi.out</name>
+      <outputs>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 5</file>
+        </tool>
+      </outputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Int Flash Release</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\..\spi_memory.c</file>
+      <file>$PROJ_DIR$\Int Flash Release\obj\main.o</file>
+      <file>$PROJ_DIR$\..\..\..\main.c</file>
+      <file>$PROJ_DIR$\Int Flash Release\obj\main.__cstat.et</file>
+      <file>$PROJ_DIR$\Int Flash Release\obj\spi_memory.o</file>
+      <file>$PROJ_DIR$\Int Flash Release\obj\spi_memory.__cstat.et</file>
+      <file>$PROJ_DIR$\Int Flash Release\spi.out</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 6</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\spi_memory.c</name>
+      <outputs>
+        <tool>
+          <name>__cstat</name>
+          <file> 5</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\main.c</name>
+      <outputs>
+        <tool>
+          <name>__cstat</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+    </file>
+  </configuration>
+</project>
+
+

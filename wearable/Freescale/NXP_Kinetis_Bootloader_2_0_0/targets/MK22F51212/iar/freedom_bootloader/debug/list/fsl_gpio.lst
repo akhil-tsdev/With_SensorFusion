@@ -1,0 +1,359 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       16/Aug/2016  15:48:54
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\drivers\gpio\fsl_gpio.c
+#    Command line =  
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\drivers\gpio\fsl_gpio.c"
+#        -D DEBUG -D NDEBUG -D USB_STACK_BM -D CPU_MK22FN512VDC12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D FREEDOM -D BL_TARGET_FLASH -lC
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\obj"
+#        --no_unroll --debug --endian=little --cpu=Cortex-M4 -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform/devices/MK22F51212\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/autobaud\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/osa\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/device\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/device/class\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/bm_usb\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform/devices\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform/CMSIS/Include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/drivers\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/drivers/common\"
+#        -Ohz --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\list\fsl_gpio.lst
+#    Object file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\obj\fsl_gpio.o
+#
+###############################################################################
+
+C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\drivers\gpio\fsl_gpio.c
+      1          /*
+      2           * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          
+     31          #include "fsl_gpio.h"
+     32          
+     33          /*******************************************************************************
+     34           * Variables
+     35           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+     36          static PORT_Type *const s_portBases[] = PORT_BASE_PTRS;
+   \                     s_portBases:
+   \   00000000   0x40049000         DC32 40049000H, 4004A000H, 4004B000H, 4004C000H, 4004D000H
+   \              0x4004A000   
+   \              0x4004B000   
+   \              0x4004C000   
+   \              0x4004D000   
+
+   \                                 In section .text, align 4, keep-with-next
+     37          static GPIO_Type *const s_gpioBases[] = GPIO_BASE_PTRS;
+   \                     s_gpioBases:
+   \   00000000   0x400FF000         DC32 400FF000H, 400FF040H, 400FF080H, 400FF0C0H, 400FF100H
+   \              0x400FF040   
+   \              0x400FF080   
+   \              0x400FF0C0   
+   \              0x400FF100   
+     38          
+     39          /*******************************************************************************
+     40          * Prototypes
+     41          ******************************************************************************/
+     42          
+     43          /*!
+     44          * @brief Gets the GPIO instance according to the GPIO base
+     45          *
+     46          * @param base    GPIO peripheral base pointer(PTA, PTB, PTC, etc.)
+     47          * @retval GPIO instance
+     48          */
+     49          static uint32_t GPIO_GetInstance(GPIO_Type *base);
+     50          
+     51          /*******************************************************************************
+     52           * Code
+     53           ******************************************************************************/
+     54          
+
+   \                                 In section .text, align 2, keep-with-next
+     55          static uint32_t GPIO_GetInstance(GPIO_Type *base)
+     56          {
+     57              uint32_t instance;
+     58          
+     59              /* Find the instance index from base address mappings. */
+     60              for (instance = 0; instance < FSL_FEATURE_SOC_GPIO_COUNT; instance++)
+   \                     GPIO_GetInstance: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+   \   00000002   0x.... 0x....      ADR.W    R2,s_gpioBases
+     61              {
+     62                  if (s_gpioBases[instance] == base)
+   \                     ??GPIO_GetInstance_0: (+1)
+   \   00000006   0xF852 0x3021      LDR      R3,[R2, R1, LSL #+2]
+   \   0000000A   0x4283             CMP      R3,R0
+   \   0000000C   0xD002             BEQ.N    ??GPIO_GetInstance_1
+     63                  {
+     64                      break;
+     65                  }
+     66              }
+   \   0000000E   0x1C49             ADDS     R1,R1,#+1
+   \   00000010   0x2905             CMP      R1,#+5
+   \   00000012   0xD3F8             BCC.N    ??GPIO_GetInstance_0
+     67          
+     68              assert(instance < FSL_FEATURE_SOC_GPIO_COUNT);
+     69          
+     70              return instance;
+   \                     ??GPIO_GetInstance_1: (+1)
+   \   00000014   0x4608             MOV      R0,R1
+   \   00000016   0x4770             BX       LR               ;; return
+     71          }
+     72          
+
+   \                                 In section .text, align 2, keep-with-next
+     73          void GPIO_PinInit(GPIO_Type *base, uint32_t pin, const gpio_pin_config_t *config)
+     74          {
+   \                     GPIO_PinInit: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+     75              assert(config);
+     76          
+     77              if (config->pinDirection == kGPIO_DigitalInput)
+   \   00000002   0x2301             MOVS     R3,#+1
+   \   00000004   0x7815             LDRB     R5,[R2, #+0]
+   \   00000006   0xFA03 0xF401      LSL      R4,R3,R1
+   \   0000000A   0xB915             CBNZ.N   R5,??GPIO_PinInit_0
+     78              {
+     79                  base->PDDR &= ~(1U << pin);
+   \   0000000C   0x6941             LDR      R1,[R0, #+20]
+   \   0000000E   0x43A1             BICS     R1,R1,R4
+   \   00000010   0xE008             B.N      ??GPIO_PinInit_1
+     80              }
+     81              else
+     82              {
+     83                  GPIO_WritePinOutput(base, pin, config->outputLogic);
+   \                     ??GPIO_PinInit_0: (+1)
+   \   00000012   0x7852             LDRB     R2,[R2, #+1]
+   \   00000014   0xFA03 0xF101      LSL      R1,R3,R1
+   \   00000018   0x2A00             CMP      R2,#+0
+   \   0000001A   0xBF0C             ITE      EQ 
+   \   0000001C   0x6081             STREQ    R1,[R0, #+8]
+   \   0000001E   0x6041             STRNE    R1,[R0, #+4]
+     84                  base->PDDR |= (1U << pin);
+   \   00000020   0x6941             LDR      R1,[R0, #+20]
+   \   00000022   0x4321             ORRS     R1,R4,R1
+   \                     ??GPIO_PinInit_1: (+1)
+   \   00000024   0x6141             STR      R1,[R0, #+20]
+     85              }
+     86          }
+   \   00000026   0xBD30             POP      {R4,R5,PC}       ;; return
+     87          
+
+   \                                 In section .text, align 2, keep-with-next
+     88          uint32_t GPIO_GetPinsInterruptFlags(GPIO_Type *base)
+     89          {
+   \                     GPIO_GetPinsInterruptFlags: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     90              uint8_t instance;
+     91              PORT_Type *portBase;
+     92              instance = GPIO_GetInstance(base);
+   \   00000002   0x.... 0x....      BL       GPIO_GetInstance
+     93              portBase = s_portBases[instance];
+     94              return portBase->ISFR;
+   \   00000006   0x.... 0x....      BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \   0000000A   0xF8D0 0x00A0      LDR      R0,[R0, #+160]
+   \   0000000E   0xBD02             POP      {R1,PC}          ;; return
+     95          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \   00000000   0x.... 0x....      ADR.W    R1,s_portBases
+   \   00000004   0xB2C0             UXTB     R0,R0
+   \   00000006   0xF851 0x0020      LDR      R0,[R1, R0, LSL #+2]
+   \   0000000A   0x4770             BX       LR
+     96          
+
+   \                                 In section .text, align 2, keep-with-next
+     97          void GPIO_ClearPinsInterruptFlags(GPIO_Type *base, uint32_t mask)
+     98          {
+   \                     GPIO_ClearPinsInterruptFlags: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x460C             MOV      R4,R1
+     99              uint8_t instance;
+    100              PORT_Type *portBase;
+    101              instance = GPIO_GetInstance(base);
+    102              portBase = s_portBases[instance];
+    103              portBase->ISFR = mask;
+   \   00000004   0x.... 0x....      BL       GPIO_GetInstance
+   \   00000008   0x.... 0x....      BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \   0000000C   0xF8C0 0x40A0      STR      R4,[R0, #+160]
+    104          }
+   \   00000010   0xBD10             POP      {R4,PC}          ;; return
+    105          
+    106          #if defined(FSL_FEATURE_SOC_FGPIO_COUNT) && FSL_FEATURE_SOC_FGPIO_COUNT
+    107          
+    108          /*******************************************************************************
+    109           * Variables
+    110           ******************************************************************************/
+    111          static FGPIO_Type *const s_fgpioBases[] = FGPIO_BASE_PTRS;
+    112          
+    113          /*******************************************************************************
+    114          * Prototypes
+    115          ******************************************************************************/
+    116          /*!
+    117          * @brief Gets the FGPIO instance according to the GPIO base
+    118          *
+    119          * @param base    FGPIO peripheral base pointer(PTA, PTB, PTC, etc.)
+    120          * @retval FGPIO instance
+    121          */
+    122          static uint32_t FGPIO_GetInstance(FGPIO_Type *base);
+    123          
+    124          /*******************************************************************************
+    125           * Code
+    126           ******************************************************************************/
+    127          
+    128          static uint32_t FGPIO_GetInstance(FGPIO_Type *base)
+    129          {
+    130              uint32_t instance;
+    131          
+    132              /* Find the instance index from base address mappings. */
+    133              for (instance = 0; instance < FSL_FEATURE_SOC_FGPIO_COUNT; instance++)
+    134              {
+    135                  if (s_fgpioBases[instance] == base)
+    136                  {
+    137                      break;
+    138                  }
+    139              }
+    140          
+    141              assert(instance < FSL_FEATURE_SOC_FGPIO_COUNT);
+    142          
+    143              return instance;
+    144          }
+    145          
+    146          void FGPIO_PinInit(FGPIO_Type *base, uint32_t pin, const gpio_pin_config_t *config)
+    147          {
+    148              assert(config);
+    149          
+    150              if (config->pinDirection == kGPIO_DigitalInput)
+    151              {
+    152                  base->PDDR &= ~(1U << pin);
+    153              }
+    154              else
+    155              {
+    156                  FGPIO_WritePinOutput(base, pin, config->outputLogic);
+    157                  base->PDDR |= (1U << pin);
+    158              }
+    159          }
+    160          
+    161          uint32_t FGPIO_GetPinsInterruptFlags(FGPIO_Type *base)
+    162          {
+    163              uint8_t instance;
+    164              instance = FGPIO_GetInstance(base);
+    165              PORT_Type *portBase;
+    166              portBase = s_portBases[instance];
+    167              return portBase->ISFR;
+    168          }
+    169          
+    170          void FGPIO_ClearPinsInterruptFlags(FGPIO_Type *base, uint32_t mask)
+    171          {
+    172              uint8_t instance;
+    173              instance = FGPIO_GetInstance(base);
+    174              PORT_Type *portBase;
+    175              portBase = s_portBases[instance];
+    176              portBase->ISFR = mask;
+    177          }
+    178          
+    179          #endif /* FSL_FEATURE_SOC_FGPIO_COUNT */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   GPIO_ClearPinsInterruptFlags
+         8   -> GPIO_GetInstance
+       0   GPIO_GetInstance
+       8   GPIO_GetPinsInterruptFlags
+         8   -> GPIO_GetInstance
+      12   GPIO_PinInit
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      12  ?Subroutine0
+      18  GPIO_ClearPinsInterruptFlags
+      24  GPIO_GetInstance
+      16  GPIO_GetPinsInterruptFlags
+      40  GPIO_PinInit
+      20  s_gpioBases
+      20  s_portBases
+
+ 
+ 150 bytes in section .text
+ 
+ 150 bytes of CODE memory
+
+Errors: none
+Warnings: none

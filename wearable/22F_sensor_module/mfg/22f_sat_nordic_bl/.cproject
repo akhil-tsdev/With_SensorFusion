@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.335698004">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.335698004" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<macros>
+					<stringMacro name="PROJECT_KSDK_PATH" type="VALUE_TEXT" value="${KSDK_PATH}"/>
+					<stringMacro name="KSDK_1_3_0" type="VALUE_TEXT" value="C:\Freescale\KSDK_1.3.0"/>
+					<stringMacro name="OSSF" type="VALUE_PATH_DIR" value="C:\turing\github\trunk\wearable\common_code\sat_22f\OSSF"/>
+					<stringMacro name="GITHUB_TRUNK" type="VALUE_TEXT" value="C:\turing\Github\trunk"/>
+					<stringMacro name="COMMON_LOC" type="VALUE_PATH_DIR" value="C:\turing\Github\trunk\wearable\common_code"/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.managedbuilder.core.ManagedBuildManager" point="org.eclipse.cdt.core.ScannerInfoProvider"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="${cross_rm} -rf" description="" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.335698004" name="Debug" parent="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="">
+					<folderInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.335698004." name="/" resourcePath="">
+						<toolChain errorParsers="" id="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug.1341372668" name="Cross ARM GCC" superClass="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug">
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.1920301411" name="Optimization Level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.none" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength.1973473668" name="Message length (-fmessage-length=0)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar.996544159" name="'char' is signed (-fsigned-char)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections.876645389" name="Function sections (-ffunction-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections.1264622589" name="Data sections (-fdata-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.1639494617" name="Debug level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level" value="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.max" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format.1448747378" name="Debug format" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family.281544464" name="ARM family" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.mcpu.cortex-m4" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.1618967318" name="Float ABI" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.hard" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.1185478537" name="FPU Type" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name.1493281827" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name" value="Custom" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix.573606557" name="Prefix" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix" value="arm-none-eabi-" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.c.696069592" name="C compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.c" value="gcc" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp.2126244127" name="C++ compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp" value="g++" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy.1967211126" name="Hex/Bin converter" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy" value="objcopy" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump.1605775444" name="Listing generator" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump" value="objdump" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.size.1774332245" name="Size command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.size" value="size" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.make.1086607630" name="Build command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.make" value="make" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm.570140589" name="Remove command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm" value="rm" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize.1932945463" name="Print size" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createflash.1629392079" name="Create flash image" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createflash" value="true" valueType="boolean"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform.1571533947" isAbstract="false" osList="all" superClass="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/hello_world_22F128}/Debug" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator" id="ilg.gnuarmeclipse.managedbuild.cross.builder.1357772529" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="ilg.gnuarmeclipse.managedbuild.cross.builder">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Release"/>
+								</outputEntries>
+							</builder>
+							<tool command="${cross_prefix}${cross_c}${cross_suffix}" commandLinePattern="${COMMAND} ${cross_toolchain_flags} ${FLAGS} -c ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.1061522639" name="Cross ARM GNU Assembler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor.166264971" name="Use preprocessor" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths.1277549970" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ossf"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ossf/ts_fusion"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ossf/mpu9250_ossf"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/Sources"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/cbuf"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/osa/inc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/devices"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/devices/MK22F25612/include"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/hal/inc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/devices/MK22F25612/startup"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/inc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/edma"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/gpio"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/pit"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/uart"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/system/inc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/adapter/sources"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/adapter/sources/sdk"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/include/MK22F25612"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/hal"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/host/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/composite"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/audio"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/cdc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/common"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/hid"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/include/config"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/msd"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/phdc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/video"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/controller"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/controller/khci"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/host/include/MK22F25612"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/sources/driver/khci"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/sources/driver/max3353/sdk"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/sources/otg"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/mpu9250_hw"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/board"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/cdc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/interrupt_handler"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/utilities"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/Includes"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs.817884697" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="KDS"/>
+									<listOptionValue builtIn="false" value="FREEDOM"/>
+									<listOptionValue builtIn="false" value="MPU9250"/>
+									<listOptionValue builtIn="false" value="FRDM_K22F120M"/>
+									<listOptionValue builtIn="false" value="CPU_MK22FN256VDC12"/>
+									<listOptionValue builtIn="false" value="CB_SIZE=8"/>
+									<listOptionValue builtIn="false" value="CB_TYPE=sat_cbuf_packet_t"/>
+									<listOptionValue builtIn="false" value="PRODUCTION1=1"/>
+									<listOptionValue builtIn="false" value="ENABLE_MAG=0"/>
+									<listOptionValue builtIn="false" value="DO_SELFTEST=1"/>
+									<listOptionValue builtIn="false" value="BOARD_USE_VIRTUALCOM"/>
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="PROTO_BOARD=0"/>
+									<listOptionValue builtIn="false" value="_DEBUG=1"/>
+								</option>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input.910627987" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input"/>
+							</tool>
+							<tool command="${cross_prefix}${cross_c}${cross_suffix}" commandLinePattern="${COMMAND} ${cross_toolchain_flags} ${FLAGS} -c ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.1795745055" name="Cross ARM C Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.1702194752" name="Language standard" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.c99" valueType="enumerated"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.1748907185" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="KDS"/>
+									<listOptionValue builtIn="false" value="FREEDOM"/>
+									<listOptionValue builtIn="false" value="MPU9250"/>
+									<listOptionValue builtIn="false" value="FRDM_K22F120M"/>
+									<listOptionValue builtIn="false" value="CPU_MK22FN256VDC12"/>
+									<listOptionValue builtIn="false" value="CB_SIZE=8"/>
+									<listOptionValue builtIn="false" value="CB_TYPE=sat_cbuf_packet_t"/>
+									<listOptionValue builtIn="false" value="PRODUCTION1=1"/>
+									<listOptionValue builtIn="false" value="ENABLE_MAG=1"/>
+									<listOptionValue builtIn="false" value="DO_SELFTEST=1"/>
+									<listOptionValue builtIn="false" value="BOARD_USE_VIRTUALCOM"/>
+									<listOptionValue builtIn="false" value="PROTO_BOARD=0"/>
+									<listOptionValue builtIn="false" value="FRDM_K22F"/>
+									<listOptionValue builtIn="false" value="_DEBUG=0"/>
+									<listOptionValue builtIn="false" value="DEBUG=0"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths.566626077" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ossf"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ossf/ts_fusion"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ossf/mpu9250_ossf"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/Sources"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/cbuf"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/osa/inc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/devices"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/devices/MK22F25612/include"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/hal/inc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/devices/MK22F25612/startup"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/inc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/edma"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/gpio"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/pit"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/uart"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/system/inc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/adapter/sources"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/adapter/sources/sdk"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/include/MK22F25612"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/hal"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/host/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/composite"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/audio"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/cdc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/common"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/hid"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/include/config"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/msd"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/phdc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/video"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/controller"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/controller/khci"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/host/include/MK22F25612"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/sources/driver/khci"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/sources/driver/max3353/sdk"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/sources/otg"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/mpu9250_hw"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/board"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/cdc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/interrupt_handler"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/utilities"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/Includes"/>
+									<listOptionValue builtIn="false" value="&quot;C:/turing/github/trunk/wearable/common_code/sat_22f\ksdk_1_3_0/ts_rtc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${GITHUB_TRUNK}\wearable\nordic_module\satellite\RTE\nRF_Libraries\nRF51422_xxAC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${COMMON_LOC}\sat_22f\ts_printf&quot;"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/bootloader"/>
+								</option>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.6945031" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
+							</tool>
+							<tool command="${cross_prefix}${cross_cpp}${cross_suffix}" commandLinePattern="${COMMAND} ${cross_toolchain_flags} ${FLAGS} -c ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.686315614" name="Cross ARM C++ Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.include.paths.72255590" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ossf"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ossf/ts_fusion"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ossf/mpu9250_ossf"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/Sources"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/cbuf"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/osa/inc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/devices"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/devices/MK22F25612/include"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/hal/inc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/devices/MK22F25612/startup"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/inc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/edma"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/gpio"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/pit"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/uart"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/system/inc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/adapter/sources"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/adapter/sources/sdk"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/include/MK22F25612"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/hal"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/host/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/composite"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/audio"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/cdc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/common"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/hid"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/include/config"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/msd"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/phdc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/video"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/controller"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/controller/khci"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/host/include/MK22F25612"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/sources/driver/khci"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/sources/driver/max3353/sdk"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/sources/otg"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/mpu9250_hw"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/board"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/cdc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/interrupt_handler"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/utilities"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/Includes"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs.711451111" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="KDS"/>
+									<listOptionValue builtIn="false" value="FREEDOM"/>
+									<listOptionValue builtIn="false" value="MPU9250"/>
+									<listOptionValue builtIn="false" value="FRDM_K22F120M"/>
+									<listOptionValue builtIn="false" value="CPU_MK22FN256VDC12"/>
+									<listOptionValue builtIn="false" value="CB_SIZE=8"/>
+									<listOptionValue builtIn="false" value="CB_TYPE=sat_cbuf_packet_t"/>
+									<listOptionValue builtIn="false" value="PRODUCTION1=1"/>
+									<listOptionValue builtIn="false" value="ENABLE_MAG=0"/>
+									<listOptionValue builtIn="false" value="DO_SELFTEST=1"/>
+									<listOptionValue builtIn="false" value="BOARD_USE_VIRTUALCOM"/>
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="PROTO_BOARD=0"/>
+									<listOptionValue builtIn="false" value="_DEBUG=1"/>
+								</option>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input.1358421661" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker.1950061100" name="Cross ARM C Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections.1580822839" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections" value="true" valueType="boolean"/>
+							</tool>
+							<tool command="${cross_prefix}${cross_cpp}${cross_suffix}" commandLinePattern="${COMMAND} ${cross_toolchain_flags} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="" id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.1338216264" name="Cross ARM C++ Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections.642301182" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.paths.1348806114" name="Library search path (-L)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Project_Settings/Linker_Files&quot;"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.other.1893896187" name="Other linker flags" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.other" value="-Xlinker -z  -Xlinker muldefs   -Xlinker --defsym=__ram_vector_table__=1  --specs=nano.specs          -Wall  -fno-common  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin  -mapcs  -Xlinker -static   " valueType="string"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.scriptfile.1746449543" name="Script files (-T)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.scriptfile" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Project_Settings/Linker_Files/MK22FN256xxx12_flash.ld}&quot;"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.otherobjs.1701085588" name="Other objects" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.otherobjs" valueType="userObjs">
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.3.0\lib\ksdk_platform_lib\kds\K22F25612\debug\libksdk_platform.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\turing\Github\trunk\wearable\22F_sensor_module\lib\usbd_sdk_bm_lib_MK22F51212\debug\libusbd_bm.a&quot;"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.libs.1711928835" name="Libraries (-l)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="m"/>
+									<listOptionValue builtIn="false" value="g"/>
+									<listOptionValue builtIn="false" value="gcc"/>
+									<listOptionValue builtIn="false" value="nosys"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.useprintffloat.1138103518" name="Use float with nano printf (-u _printf_float)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.useprintffloat" value="true" valueType="boolean"/>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.input.312201947" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.archiver.1036330973" name="Cross ARM GNU Archiver" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.archiver"/>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash.1784810246" name="Cross ARM GNU Create Flash Image" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createflash.choice.803242926" name="Output file format (-O)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createflash.choice" value="ilg.gnuarmeclipse.managedbuild.cross.option.createflash.choice.binary" valueType="enumerated"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.createlisting.406893386" name="Cross ARM GNU Create Listing" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.createlisting">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source.686393398" name="Display source (--source|-S)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.allheaders.2087496387" name="Display all headers (--all-headers|-x)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.allheaders" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.demangle.1147924686" name="Demangle names (--demangle|-C)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.demangle" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers.1389763550" name="Display line numbers (--line-numbers|-l)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide.878473327" name="Wide lines (--wide|-w)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide" value="true" valueType="boolean"/>
+							</tool>
+							<tool command="${cross_prefix}${cross_size}${cross_suffix}" commandLinePattern="${COMMAND} ${FLAGS}" errorParsers="" id="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize.1321395919" name="Cross ARM GNU Print Size" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format.1655340449" name="Size format" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.totals.1268010340" name="Show totals" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.totals" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.hex.31895364" name="Hex" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.hex" value="false" valueType="boolean"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.335698004.2059159162" name="nordic_bl_types.h" rcbsApplicability="disable" resourcePath="Sources/include/nordic_bl_types.h" toolsToInvoke=""/>
+					<sourceEntries>
+						<entry excluding="Sources/ossf/|Sources/mpu9250_hw/|Project_Settings/Startup_Code/startup_MK22F25612_bootloader.S" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="ilg.gnuarmeclipse.managedbuild.packs"/>
+		</cconfiguration>
+		<cconfiguration id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.1548643891">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.1548643891" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<macros>
+					<stringMacro name="PROJECT_KSDK_PATH" type="VALUE_TEXT" value="${KSDK_PATH}"/>
+					<stringMacro name="KSDK_1_3_0" type="VALUE_TEXT" value="C:\Freescale\KSDK_1.3.0"/>
+					<stringMacro name="GITHUB_TRUNK" type="VALUE_TEXT" value="C:\turing\Github\trunk"/>
+					<stringMacro name="COMMON_LOC" type="VALUE_TEXT" value="C:\turing\Github\trunk\wearable\common_code"/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.managedbuilder.core.ManagedBuildManager" point="org.eclipse.cdt.core.ScannerInfoProvider"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="${cross_rm} -rf" description="" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.1548643891" name="Release" parent="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release">
+					<folderInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.1548643891." name="/" resourcePath="">
+						<toolChain id="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.release.152122460" name="Cross ARM GCC" superClass="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.release">
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.1217573555" name="Optimization Level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.size" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength.1117317199" name="Message length (-fmessage-length=0)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar.323954919" name="'char' is signed (-fsigned-char)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections.1753468711" name="Function sections (-ffunction-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections.415683036" name="Data sections (-fdata-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.1925375493" name="Debug level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format.571983178" name="Debug format" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family.1473343148" name="ARM family" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.mcpu.cortex-m4" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.354000870" name="Float ABI" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.hard" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.1432754071" name="FPU Type" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name.246541144" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name" value="Custom" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix.1249697538" name="Prefix" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix" value="arm-none-eabi-" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.c.1635528582" name="C compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.c" value="gcc" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp.709180520" name="C++ compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp" value="g++" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy.1600991407" name="Hex/Bin converter" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy" value="objcopy" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump.144726909" name="Listing generator" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump" value="objdump" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.size.657215470" name="Size command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.size" value="size" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.make.1626172134" name="Build command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.make" value="make" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm.1746066064" name="Remove command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm" value="rm" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize.682475889" name="Print size" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize" value="true" valueType="boolean"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform.1928646695" isAbstract="false" osList="all" superClass="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/hello_world_22F128}/Release" id="ilg.gnuarmeclipse.managedbuild.cross.builder.363629025" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="ilg.gnuarmeclipse.managedbuild.cross.builder"/>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.1811183751" name="Cross ARM GNU Assembler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor.608766852" name="Use preprocessor" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths.1825749655" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs.1967275027" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs"/>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input.441681478" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.296281407" name="Cross ARM C Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.740029348" name="Language standard" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.c99" valueType="enumerated"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.1342684168" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="KDS"/>
+									<listOptionValue builtIn="false" value="FREEDOM"/>
+									<listOptionValue builtIn="false" value="MPU9250"/>
+									<listOptionValue builtIn="false" value="FRDM_K22F120M"/>
+									<listOptionValue builtIn="false" value="CPU_MK22FN256VDC12"/>
+									<listOptionValue builtIn="false" value="CB_SIZE=8"/>
+									<listOptionValue builtIn="false" value="CB_TYPE=sat_cbuf_packet_t"/>
+									<listOptionValue builtIn="false" value="PRODUCTION1=1"/>
+									<listOptionValue builtIn="false" value="ENABLE_MAG=1"/>
+									<listOptionValue builtIn="false" value="DO_SELFTEST=1"/>
+									<listOptionValue builtIn="false" value="BOARD_USE_VIRTUALCOM"/>
+									<listOptionValue builtIn="false" value="PROTO_BOARD=0"/>
+									<listOptionValue builtIn="false" value="FRDM_K22F"/>
+									<listOptionValue builtIn="false" value="_DEBUG=1"/>
+									<listOptionValue builtIn="false" value="DEBUG=1"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths.1646319998" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ossf"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ossf/ts_fusion"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ossf/mpu9250_ossf"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/Sources"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/cbuf"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/osa/inc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/devices"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/devices/MK22F25612/include"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/hal/inc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/devices/MK22F25612/startup"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/inc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/edma"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/gpio"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/pit"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/uart"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/system/inc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/adapter/sources"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/adapter/sources/sdk"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/include/MK22F25612"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/hal"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/host/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/composite"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/audio"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/cdc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/common"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/hid"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/include/config"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/msd"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/phdc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/video"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/controller"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/controller/khci"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/host/include/MK22F25612"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/sources/driver/khci"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/sources/driver/max3353/sdk"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/sources/otg"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/mpu9250_hw"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/board"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/cdc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/interrupt_handler"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/utilities"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/Includes"/>
+									<listOptionValue builtIn="false" value="&quot;C:/turing/github/trunk/wearable/common_code/sat_22f\ksdk_1_3_0/ts_rtc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${GITHUB_TRUNK}\wearable\nordic_module\satellite\RTE\nRF_Libraries\nRF51422_xxAC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${COMMON_LOC}\sat_22f\ts_printf&quot;"/>
+								</option>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1282229873" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.705923225" name="Cross ARM C++ Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.include.paths.1841641053" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.include.paths" useByScannerDiscovery="false"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs.347376603" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs" useByScannerDiscovery="false"/>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input.1415990904" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker.1366949030" name="Cross ARM C Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections.1268999431" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections" value="true" valueType="boolean"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.1587463752" name="Cross ARM C++ Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections.66375998" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.paths.1257174282" name="Library search path (-L)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Project_Settings/Linker_Files&quot;"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.other.1350492423" name="Other linker flags" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.other" value="-Xlinker -z  -Xlinker muldefs   -Xlinker --defsym=__ram_vector_table__=1 -specs=nano.specs -specs=nosys.specs  -Xlinker --defsym=__heap_size__=0x800  -Xlinker --defsym=__stack_size__=0x800" valueType="string"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.scriptfile.1730715280" name="Script files (-T)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.scriptfile" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Project_Settings/Linker_Files/MK22FN256xxx12_flash.ld}&quot;"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.otherobjs.478191622" name="Other objects" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.otherobjs" valueType="userObjs">
+									<listOptionValue builtIn="false" value="&quot;C:\turing\Github\trunk\wearable\Freescale\KSDK_1.3.0\lib\ksdk_platform_lib\kds\K22F25612\release\libksdk_platform.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\turing\github\trunk\wearable\22F_sensor_module\lib\usbd_sdk_bm_lib_MK22F51212\release\libusbd_bm.a&quot;"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.useprintffloat.751218909" name="Use float with nano printf (-u _printf_float)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.useprintffloat" value="true" valueType="boolean"/>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.input.1979827730" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.archiver.1789334780" name="Cross ARM GNU Archiver" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.archiver"/>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash.2049958092" name="Cross ARM GNU Create Flash Image" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash"/>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.createlisting.250489523" name="Cross ARM GNU Create Listing" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.createlisting">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source.1655337286" name="Display source (--source|-S)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.allheaders.2020819351" name="Display all headers (--all-headers|-x)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.allheaders" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.demangle.1666790802" name="Demangle names (--demangle|-C)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.demangle" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers.495824868" name="Display line numbers (--line-numbers|-l)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide.737989327" name="Wide lines (--wide|-w)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide" value="true" valueType="boolean"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize.1764460532" name="Cross ARM GNU Print Size" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format.649723287" name="Size format" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.hex.155127035" name="Hex" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.hex" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.totals.986867926" name="Show totals" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.totals" value="true" valueType="boolean"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="ilg.gnuarmeclipse.managedbuild.packs"/>
+		</cconfiguration>
+		<cconfiguration id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.335698004.1190127676">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.335698004.1190127676" moduleId="org.eclipse.cdt.core.settings" name="Bootloader">
+				<macros>
+					<stringMacro name="PROJECT_KSDK_PATH" type="VALUE_TEXT" value="${KSDK_PATH}"/>
+					<stringMacro name="KSDK_1_3_0" type="VALUE_TEXT" value="C:\Freescale\KSDK_1.3.0"/>
+					<stringMacro name="GITHUB_TRUNK" type="VALUE_TEXT" value="C:\turing\Github\trunk"/>
+					<stringMacro name="OSSF" type="VALUE_PATH_DIR" value="C:\turing\github\trunk\wearable\common_code\sat_22f\OSSF"/>
+					<stringMacro name="COMMON_LOC" type="VALUE_PATH_DIR" value="C:\turing\Github\trunk\wearable\common_code"/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.managedbuilder.core.ManagedBuildManager" point="org.eclipse.cdt.core.ScannerInfoProvider"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="${cross_rm} -rf" description="Build for bootloader" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.335698004.1190127676" name="Bootloader" parent="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="">
+					<folderInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.335698004.1190127676." name="/" resourcePath="">
+						<toolChain errorParsers="" id="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug.2079350066" name="Cross ARM GCC" superClass="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug">
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.1889651419" name="Optimization Level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.none" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength.1484179281" name="Message length (-fmessage-length=0)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar.680253735" name="'char' is signed (-fsigned-char)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections.1795464203" name="Function sections (-ffunction-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections.23723544" name="Data sections (-fdata-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.947369527" name="Debug level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level" value="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.max" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format.37997226" name="Debug format" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family.244802081" name="ARM family" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.mcpu.cortex-m4" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.1098184997" name="Float ABI" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.hard" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.609571828" name="FPU Type" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name.880860435" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name" value="Custom" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix.966718446" name="Prefix" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix" value="arm-none-eabi-" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.c.1637021854" name="C compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.c" value="gcc" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp.1522015069" name="C++ compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp" value="g++" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy.1203336731" name="Hex/Bin converter" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy" value="objcopy" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump.1456374058" name="Listing generator" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump" value="objdump" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.size.478811773" name="Size command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.size" value="size" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.make.1080195758" name="Build command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.make" value="make" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm.1814915335" name="Remove command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm" value="rm" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize.111671867" name="Print size" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createflash.1331843727" name="Create flash image" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createflash" value="true" valueType="boolean"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform.631864029" isAbstract="false" osList="all" superClass="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/hello_world_22F128}/Debug" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator" id="ilg.gnuarmeclipse.managedbuild.cross.builder.1122546686" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="ilg.gnuarmeclipse.managedbuild.cross.builder">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Release"/>
+								</outputEntries>
+							</builder>
+							<tool command="${cross_prefix}${cross_c}${cross_suffix}" commandLinePattern="${COMMAND} ${cross_toolchain_flags} ${FLAGS} -c ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.1821974172" name="Cross ARM GNU Assembler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor.727780906" name="Use preprocessor" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths.1407040647" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ossf"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ossf/ts_fusion"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ossf/mpu9250_ossf"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/Sources"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/cbuf"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/osa/inc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/devices"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/devices/MK22F25612/include"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/hal/inc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/devices/MK22F25612/startup"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/inc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/edma"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/gpio"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/pit"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/uart"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/system/inc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/adapter/sources"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/adapter/sources/sdk"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/include/MK22F25612"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/hal"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/host/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/composite"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/audio"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/cdc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/common"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/hid"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/include/config"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/msd"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/phdc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/video"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/controller"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/controller/khci"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/host/include/MK22F25612"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/sources/driver/khci"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/sources/driver/max3353/sdk"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/sources/otg"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/mpu9250_hw"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/board"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/cdc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/interrupt_handler"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/utilities"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/Includes"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs.1809227441" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="KDS"/>
+									<listOptionValue builtIn="false" value="FREEDOM"/>
+									<listOptionValue builtIn="false" value="MPU9250"/>
+									<listOptionValue builtIn="false" value="FRDM_K22F120M"/>
+									<listOptionValue builtIn="false" value="CPU_MK22FN256VDC12"/>
+									<listOptionValue builtIn="false" value="CB_SIZE=8"/>
+									<listOptionValue builtIn="false" value="CB_TYPE=sat_cbuf_packet_t"/>
+									<listOptionValue builtIn="false" value="PRODUCTION1=1"/>
+									<listOptionValue builtIn="false" value="ENABLE_MAG=0"/>
+									<listOptionValue builtIn="false" value="DO_SELFTEST=1"/>
+									<listOptionValue builtIn="false" value="BOARD_USE_VIRTUALCOM"/>
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="PROTO_BOARD=0"/>
+									<listOptionValue builtIn="false" value="_DEBUG=1"/>
+								</option>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input.1655364537" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input"/>
+							</tool>
+							<tool command="${cross_prefix}${cross_c}${cross_suffix}" commandLinePattern="${COMMAND} ${cross_toolchain_flags} ${FLAGS} -c ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.1301305311" name="Cross ARM C Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.122496947" name="Language standard" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.c99" valueType="enumerated"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.128148627" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="KDS"/>
+									<listOptionValue builtIn="false" value="FREEDOM"/>
+									<listOptionValue builtIn="false" value="MPU9250"/>
+									<listOptionValue builtIn="false" value="FRDM_K22F120M"/>
+									<listOptionValue builtIn="false" value="CPU_MK22FN256VDC12"/>
+									<listOptionValue builtIn="false" value="CB_SIZE=8"/>
+									<listOptionValue builtIn="false" value="CB_TYPE=sat_cbuf_packet_t"/>
+									<listOptionValue builtIn="false" value="PRODUCTION1=1"/>
+									<listOptionValue builtIn="false" value="ENABLE_MAG=1"/>
+									<listOptionValue builtIn="false" value="DO_SELFTEST=1"/>
+									<listOptionValue builtIn="false" value="BOARD_USE_VIRTUALCOM"/>
+									<listOptionValue builtIn="false" value="PROTO_BOARD=0"/>
+									<listOptionValue builtIn="false" value="FRDM_K22F"/>
+									<listOptionValue builtIn="false" value="_DEBUG=0"/>
+									<listOptionValue builtIn="false" value="DEBUG=0"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths.942306902" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ossf"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ossf/ts_fusion"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ossf/mpu9250_ossf"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/Sources"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/cbuf"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/osa/inc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/devices"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/devices/MK22F25612/include"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/hal/inc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/devices/MK22F25612/startup"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/inc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/edma"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/gpio"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/pit"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/uart"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/system/inc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/adapter/sources"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/adapter/sources/sdk"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/include/MK22F25612"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/hal"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/host/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/composite"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/audio"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/cdc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/common"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/hid"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/include/config"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/msd"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/phdc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/video"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/controller"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/controller/khci"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/host/include/MK22F25612"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/sources/driver/khci"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/sources/driver/max3353/sdk"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/sources/otg"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/mpu9250_hw"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/board"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/cdc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/interrupt_handler"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/utilities"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/Includes"/>
+									<listOptionValue builtIn="false" value="&quot;C:/turing/github/trunk/wearable/common_code/sat_22f\ksdk_1_3_0/ts_rtc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${GITHUB_TRUNK}\wearable\nordic_module\satellite\RTE\nRF_Libraries\nRF51422_xxAC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${COMMON_LOC}\sat_22f\ts_printf&quot;"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/bootloader"/>
+								</option>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1448190933" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
+							</tool>
+							<tool command="${cross_prefix}${cross_cpp}${cross_suffix}" commandLinePattern="${COMMAND} ${cross_toolchain_flags} ${FLAGS} -c ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.2096736077" name="Cross ARM C++ Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.include.paths.759574102" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ossf"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ossf/ts_fusion"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ossf/mpu9250_ossf"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/Sources"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/cbuf"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/osa/inc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/devices"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/devices/MK22F25612/include"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/hal/inc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/devices/MK22F25612/startup"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/inc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/edma"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/gpio"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/pit"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/drivers/src/uart"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.3.0/platform/system/inc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/adapter/sources"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/adapter/sources/sdk"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/include/MK22F25612"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/hal"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/host/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/composite"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/audio"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/cdc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/common"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/hid"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/include/config"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/msd"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/phdc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/classes/video"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/controller"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/device/sources/controller/khci"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/host/include/MK22F25612"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/include"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/sources/driver/khci"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/sources/driver/max3353/sdk"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/usb/usb_core/otg/sources/otg"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/mpu9250_hw"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/board"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/cdc"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/interrupt_handler"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0/utilities"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/ksdk_1_3_0"/>
+									<listOptionValue builtIn="false" value="C:/turing/github/trunk/wearable/common_code/sat_22f/Includes"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs.260093821" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="KDS"/>
+									<listOptionValue builtIn="false" value="FREEDOM"/>
+									<listOptionValue builtIn="false" value="MPU9250"/>
+									<listOptionValue builtIn="false" value="FRDM_K22F120M"/>
+									<listOptionValue builtIn="false" value="CPU_MK22FN256VDC12"/>
+									<listOptionValue builtIn="false" value="CB_SIZE=8"/>
+									<listOptionValue builtIn="false" value="CB_TYPE=sat_cbuf_packet_t"/>
+									<listOptionValue builtIn="false" value="PRODUCTION1=1"/>
+									<listOptionValue builtIn="false" value="ENABLE_MAG=0"/>
+									<listOptionValue builtIn="false" value="DO_SELFTEST=1"/>
+									<listOptionValue builtIn="false" value="BOARD_USE_VIRTUALCOM"/>
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="PROTO_BOARD=0"/>
+									<listOptionValue builtIn="false" value="_DEBUG=1"/>
+								</option>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input.1103224240" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker.546452664" name="Cross ARM C Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections.1020216715" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections" value="true" valueType="boolean"/>
+							</tool>
+							<tool command="${cross_prefix}${cross_cpp}${cross_suffix}" commandLinePattern="${COMMAND} ${cross_toolchain_flags} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="" id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.738071835" name="Cross ARM C++ Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections.1247587204" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.paths.732770521" name="Library search path (-L)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Project_Settings/Linker_Files&quot;"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.other.1727794842" name="Other linker flags" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.other" value="-Xlinker -z  -Xlinker muldefs   -Xlinker --defsym=__ram_vector_table__=1  --specs=nano.specs          -Wall  -fno-common  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin  -mapcs  -Xlinker -static   " valueType="string"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.scriptfile.185732560" name="Script files (-T)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.scriptfile" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Project_Settings/Linker_Files/MK22FN256xxx12_flash_a000.ld}&quot;"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.otherobjs.47763578" name="Other objects" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.otherobjs" valueType="userObjs">
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.3.0\lib\ksdk_platform_lib\kds\K22F25612\debug\libksdk_platform.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\turing\Github\trunk\wearable\22F_sensor_module\lib\usbd_sdk_bm_lib_MK22F51212\debug\libusbd_bm.a&quot;"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.libs.1422278089" name="Libraries (-l)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="m"/>
+									<listOptionValue builtIn="false" value="g"/>
+									<listOptionValue builtIn="false" value="gcc"/>
+									<listOptionValue builtIn="false" value="nosys"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.useprintffloat.597707760" name="Use float with nano printf (-u _printf_float)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.useprintffloat" value="true" valueType="boolean"/>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.input.300906395" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.archiver.2126035372" name="Cross ARM GNU Archiver" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.archiver"/>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash.1289278366" name="Cross ARM GNU Create Flash Image" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createflash.choice.1803588089" name="Output file format (-O)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createflash.choice" value="ilg.gnuarmeclipse.managedbuild.cross.option.createflash.choice.binary" valueType="enumerated"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.createlisting.1852973620" name="Cross ARM GNU Create Listing" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.createlisting">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source.15768351" name="Display source (--source|-S)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.allheaders.1888244218" name="Display all headers (--all-headers|-x)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.allheaders" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.demangle.2143573076" name="Demangle names (--demangle|-C)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.demangle" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers.1480273328" name="Display line numbers (--line-numbers|-l)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide.1838543109" name="Wide lines (--wide|-w)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide" value="true" valueType="boolean"/>
+							</tool>
+							<tool command="${cross_prefix}${cross_size}${cross_suffix}" commandLinePattern="${COMMAND} ${FLAGS}" errorParsers="" id="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize.51145625" name="Cross ARM GNU Print Size" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format.689481586" name="Size format" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.totals.1655362270" name="Show totals" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.totals" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.hex.606527308" name="Hex" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.hex" value="false" valueType="boolean"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.335698004.1190127676.Sources/include/nordic_bl_types.h" name="nordic_bl_types.h" rcbsApplicability="disable" resourcePath="Sources/include/nordic_bl_types.h" toolsToInvoke=""/>
+					<sourceEntries>
+						<entry excluding="Project_Settings/Startup_Code/startup_MK22F25612.S" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="ilg.gnuarmeclipse.managedbuild.packs"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="hello_world_22F128.ilg.gnuarmeclipse.managedbuild.cross.target.elf.97436992" name="Executable" projectType="ilg.gnuarmeclipse.managedbuild.cross.target.elf"/>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/22F_sensor_module_MPL"/>
+		</configuration>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/22F_sensor_module_MPL"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.1548643891;ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.1548643891.;ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.705923225;ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input.1415990904">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.335698004;ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.335698004.;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.1795745055;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.6945031">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.335698004;ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.335698004.;ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.686315614;ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input.1358421661">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.1548643891;ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.1548643891.;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.296281407;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1282229873">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\..\..\..\..\..\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\freedom_bootloader.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\hub_22f_RFtest.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>
+
+

@@ -1,0 +1,7 @@
+For Kinetis Design Studio, the following are device names to use.
+
+22F Freedom Board/Sensor eval board: MK22FN512xxx12
+
+Sensor Module: MK22FN128xxx10 
+
+65F TWR eval board/hub module: MK65FN2M0xxx18

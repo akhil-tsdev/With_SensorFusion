@@ -1,0 +1,443 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       16/Aug/2016  13:15:51
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\bootloader\src\bl_misc.c
+#    Command line =  
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\bootloader\src\bl_misc.c"
+#        -D DEBUG -D NDEBUG -D USB_STACK_BM -D CPU_MK22FN256VDC12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D BL_TARGET_RAM -lC
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\obj"
+#        --no_unroll --debug --endian=little --cpu=Cortex-M4 -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform/devices/MK22F25612\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/autobaud\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/osa\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/device\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/device/class\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/bm_usb\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform/devices\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform/CMSIS/Include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/drivers\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/drivers/common\"
+#        -Ohz --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\list\bl_misc.lst
+#    Object file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\obj\bl_misc.o
+#
+###############################################################################
+
+C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\bootloader\src\bl_misc.c
+      1          /*
+      2           * Copyright (c) 2014-2016, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          #include "bootloader_common.h"
+     31          #include "bootloader/bootloader.h"
+     32          #include "memory/memory.h"
+     33          #include "sbloader/sbloader.h"
+     34          #include "property/property.h"
+     35          #include "utilities/fsl_assert.h"
+     36          #if BL_FEATURE_QSPI_MODULE
+     37          #include "qspi/qspi.h"
+     38          #endif
+     39          #if BL_FEATURE_OTFAD_MODULE
+     40          #include "otfad/fsl_otfad_driver.h"
+     41          #endif
+     42          #include <string.h>
+     43          #include <stdint.h>
+     44          #include "fsl_device_registers.h"
+     45          #include "flash/fsl_flash.h"
+     46          
+     47          ////////////////////////////////////////////////////////////////////////////////
+     48          // Definitions
+     49          ////////////////////////////////////////////////////////////////////////////////
+     50          #define FTFx_FOPT_BOOTSRCSEL_MASK 0xC0U  //!< bit mask for FOPT[BOOTSRC_SEL]
+     51          #define FTFx_FOPT_BOOTSRCSEL_SHIFT 0x06U //!< shift bit for FOPT[BOOTSRC_SEL]
+     52          
+     53          //! @brief Get FOPT value from FTFx Module
+     54          #if defined(FTFA)
+     55          #define FTFx_FOPT FTFA->FOPT
+     56          #elif defined(FTFL)
+     57          #define FTFx_FOPT FTFL->FOPT
+     58          #elif defined(FTFE)
+     59          #define FTFx_FOPT FTFE->FOPT
+     60          #endif
+     61          
+     62          enum
+     63          {
+     64              //! @brief Boot Source indicating that code is running from rom, needn't to configure QSPI module
+     65              kBootSource_ROM = 0x03,
+     66              //! @brief Boot source indicating that code is running from rom, need to configure QSPI module
+     67              kBootSource_QSPI = 0x02,
+     68          
+     69              //! @brief OTFAD module instance number
+     70              kOtfadInstance = 0,
+     71          
+     72              //! @brief Address of key blob array on internal flash
+     73              kKeyBlobAddress = 0x410
+     74          };
+     75          
+     76          ////////////////////////////////////////////////////////////////////////////////
+     77          // Variables
+     78          ////////////////////////////////////////////////////////////////////////////////
+     79          #if BL_FEATURE_QSPI_MODULE
+     80          status_t s_qspi_otfad_init_status = kStatus_QspiNotConfigured;
+     81          #endif // #if BL_FEATURE_QSPI_MODULE
+     82          
+     83          #if BL_FEATURE_OTFAD_MODULE
+     84          static bool s_isOtfadEnabled = false;
+     85          #endif
+     86          ////////////////////////////////////////////////////////////////////////////////
+     87          // Local function prototypes
+     88          ////////////////////////////////////////////////////////////////////////////////
+     89          
+     90          #if BL_FEATURE_OTFAD_MODULE
+     91          static status_t get_otfad_key(otfad_kek_t *kek);
+     92          #endif // BL_FEATURE_OTFAD_MODULE
+     93          
+     94          ////////////////////////////////////////////////////////////////////////////////
+     95          // Code
+     96          ////////////////////////////////////////////////////////////////////////////////
+     97          
+     98          // See bootloader_common.h for documentation on this function
+
+   \                                 In section .text, align 2, keep-with-next
+     99          bool qspi_need_configure(void)
+    100          {
+    101          #if BL_FEATURE_QSPI_MODULE
+    102              return true;
+    103          #else
+    104              return false;
+   \                     qspi_need_configure: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+    105          #endif
+    106          }
+    107          
+    108          // See bootloader_common.h for documentation on this function
+    109          #if BL_FEATURE_OTFAD_MODULE
+    110          status_t otfad_init_as_needed(void)
+    111          {
+    112              uint32_t keyBlobAddress;
+    113          
+    114              // Initialize OTFAD module, if present.
+    115              if (is_otfad_present())
+    116              {
+    117                  otfad_kek_t otfadKek;
+    118                  status_t status = get_otfad_key(&otfadKek);
+    119                  if (status == kStatus_OtfadInvalidKey)
+    120                  {
+    121                      // KEK was not programmed, so must assume code is not
+    122                      // encrypted on QSPI. Bypass OTFAD.
+    123                      return kStatus_Success;
+    124                  }
+    125          
+    126                  // Reload the BCA in case the keyBlobPointer in BCA has been updated.
+    127                  g_bootloaderContext.propertyInterface->load_user_config();
+    128                  // If we have a valid key blob address in the BCA use that
+    129                  if (g_bootloaderContext.propertyInterface->store->configurationData.keyBlobPointer != ~0)
+    130                  {
+    131                      keyBlobAddress = g_bootloaderContext.propertyInterface->store->configurationData.keyBlobPointer;
+    132                  }
+    133                  // Otherwise use the default
+    134                  else
+    135                  {
+    136                      keyBlobAddress = kKeyBlobAddress;
+    137                  }
+    138          
+    139                  status = otfad_init(kOtfadInstance, (uint8_t *)keyBlobAddress, &otfadKek);
+    140          
+    141                  // Clear otfadKek memory on stack.
+    142                  memset(&otfadKek, 0, sizeof(otfadKek));
+    143          
+    144                  if (status == kStatus_Success)
+    145                  {
+    146                      s_isOtfadEnabled = true;
+    147                  }
+    148          
+    149                  return status;
+    150              }
+    151              else
+    152              {
+    153                  return kStatus_Success;
+    154              }
+    155          }
+    156          
+    157          // See bootloader_common.h for documentation on this function
+    158          status_t otfad_bypass_as_needed(void)
+    159          {
+    160              if (s_isOtfadEnabled)
+    161              {
+    162                  otfad_bypass(kOtfadInstance);
+    163              }
+    164          
+    165              return kStatus_Success;
+    166          }
+    167          
+    168          // See bootloader_common.h for documentation on this function
+    169          status_t oftfad_resume_as_needed(void)
+    170          {
+    171              if (s_isOtfadEnabled)
+    172              {
+    173                  otfad_resume(kOtfadInstance);
+    174              }
+    175          
+    176              return kStatus_Success;
+    177          }
+    178          
+    179          #endif // BL_FEATURE_OTFAD_MODULE
+    180          
+    181          // See bootloader_common.h for documentation on this function
+
+   \                                 In section .text, align 2, keep-with-next
+    182          bool is_qspi_present(void)
+    183          {
+    184          #if BL_FEATURE_QSPI_MODULE
+    185              return is_quadspi_configured();
+    186          #else
+    187              return false;
+   \                     is_qspi_present: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+    188          #endif // BL_FEATURE_QSPI_MODULE
+    189          }
+    190          
+    191          // See bootloader_common.h for documentation on this function
+
+   \                                 In section .text, align 2, keep-with-next
+    192          bool is_otfad_present(void)
+    193          {
+    194          #if defined(K80F25615_SERIES) || defined(K81F25615_SERIES) || defined(K82F25615_SERIES)
+    195              uint8_t subfamily_id = (SIM->SDID & SIM_SDID_SUBFAMID_MASK) >> SIM_SDID_SUBFAMID_SHIFT;
+    196          
+    197              // OTFAD is only available on K81 & K82 parts.
+    198              return (subfamily_id > 0);
+    199          #else
+    200              return false;
+   \                     is_otfad_present: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+    201          #endif // defined(CPU_MK80FN256VLQR15)
+    202          }
+    203          
+    204          // See bootloader_common.h for documentation on this function
+
+   \                                 In section .text, align 2, keep-with-next
+    205          bool is_ltc_present(void)
+    206          {
+    207          #ifdef BL_FEATURE_ENCRYPTION_MMCAU
+    208              return false;
+    209          #elif defined(K80F25615_SERIES) || defined(K81F25615_SERIES) || defined(K82F25615_SERIES)
+    210              uint8_t subfamily_id = (SIM->SDID & SIM_SDID_SUBFAMID_MASK) >> SIM_SDID_SUBFAMID_SHIFT;
+    211          
+    212              // LTC is only available on K81/2 and KL81/2 devices.
+    213              return ((subfamily_id == 1) || (subfamily_id == 2));
+    214          #elif FSL_FEATURE_SIM_HAS_MISCCTRL_LTCEN
+    215              return (SIM->MISCCTRL & SIM_MISCCTRL_LTCEN_MASK);
+    216          #else
+    217              return false;
+   \                     is_ltc_present: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+    218          #endif // BL_FEATURE_ENCRYPTION_MMCAU
+    219          }
+    220          
+    221          //! @brief Read OTFAD KEK from SIM module.
+    222          //!
+    223          //! OTFAD key blob decription key (KEK) was read from IFR by hardware and placed
+    224          //! in SIM_SECKEY. It is only readable by ROM. All 0xF's means invalid because not programmed.
+    225          //! All 0x0's means invalid because security violation detected.
+    226          //!
+    227          //! @param kek Pointer to returned KEK
+    228          //! @retval kStatus_Success Key is valid
+    229          //! @retval kStatus_OtfadSecurityViolation Key is all 0
+    230          //! @retval kStatus_Fail Key is all 0xF (not programmed)
+    231          #if BL_FEATURE_OTFAD_MODULE
+    232          static status_t get_otfad_key(otfad_kek_t *kek)
+    233          {
+    234          #if BL_TARGET_FLASH
+    235              assert(kek);
+    236          
+    237              const uint32_t *kekTable = (const uint32_t *)BL_FEATURE_OTFAD_KEK_ADDRESS;
+    238          
+    239              kek->keyWord0 = kekTable[0];
+    240              kek->keyWord1 = kekTable[1];
+    241              kek->keyWord2 = kekTable[2];
+    242              kek->keyWord3 = kekTable[3];
+    243          
+    244              if (!kek->keyWord0 && !kek->keyWord1 && !kek->keyWord2 && !kek->keyWord3)
+    245              {
+    246                  // Keys are all 0.
+    247                  return kStatus_OtfadSecurityViolation;
+    248              }
+    249              else if (!~kek->keyWord0 && !~kek->keyWord1 && !~kek->keyWord2 && !~kek->keyWord3)
+    250              {
+    251                  // Keys are all 0xF.
+    252                  return kStatus_OtfadInvalidKey;
+    253              }
+    254              else
+    255              {
+    256                  return kStatus_Success;
+    257              }
+    258          #else
+    259              return kStatus_Success;
+    260          #endif // BL_TARGET_FLASH
+    261          }
+    262          #endif // BL_HAS_OTFAD_MODULE
+    263          
+    264          #if BL_FEATURE_QSPI_MODULE
+    265          //! @brief Return status for intializing qspi and otfad modules
+    266          status_t get_qspi_otfad_init_status(void)
+    267          {
+    268              return s_qspi_otfad_init_status;
+    269          }
+    270          
+    271          //!@bief Update status for intializing qspi and otfad modules
+    272          void update_qspi_otfad_init_status(status_t initStatus)
+    273          {
+    274              s_qspi_otfad_init_status = initStatus;
+    275              g_bootloaderContext.propertyInterface->store->qspiInitStatus = s_qspi_otfad_init_status;
+    276          }
+    277          #endif // #if BL_FEATURE_QSPI_MODULE
+    278          
+
+   \                                 In section .text, align 2, keep-with-next
+    279          bool is_in_execute_only_region(uint32_t start, uint32_t lengthInBytes)
+    280          {
+   \                     is_in_execute_only_region: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0xB082             SUB      SP,SP,#+8
+    281          #if FSL_FEATURE_FLASH_HAS_ACCESS_CONTROL
+    282              flash_execute_only_access_state_t state = kFLASH_AccessStateUnLimited;
+   \   00000004   0x2200             MOVS     R2,#+0
+   \   00000006   0xF88D 0x2000      STRB     R2,[SP, #+0]
+    283              g_bootloaderContext.flashDriverInterface->flash_is_execute_only(&g_bootloaderContext.flashState, start,
+    284                                                                              lengthInBytes, &state);
+   \   0000000A   0x460A             MOV      R2,R1
+   \   0000000C   0x....             LDR.N    R4,??DataTable0
+   \   0000000E   0x4601             MOV      R1,R0
+   \   00000010   0xF104 0x0020      ADD      R0,R4,#+32
+   \   00000014   0x6924             LDR      R4,[R4, #+16]
+   \   00000016   0x6C64             LDR      R4,[R4, #+68]
+   \   00000018   0x466B             MOV      R3,SP
+   \   0000001A   0x47A0             BLX      R4
+    285              if (state == kFLASH_AccessStateUnLimited)
+   \   0000001C   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \   00000020   0xB100             CBZ.N    R0,??is_in_execute_only_region_0
+   \   00000022   0x2001             MOVS     R0,#+1
+    286              {
+    287                  return false;
+   \                     ??is_in_execute_only_region_0: (+1)
+   \   00000024   0xBD16             POP      {R1,R2,R4,PC}    ;; return
+    288              }
+    289              else
+    290              {
+    291                  return true;
+    292              }
+    293          #else
+    294              return false;
+    295          #endif // FSL_FEATURE_FLASH_HAS_ACCESS_CONTROL
+    296          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0:
+   \   00000000   0x........         DC32     g_bootloaderContext
+    297          
+    298          ////////////////////////////////////////////////////////////////////////////////
+    299          // EOF
+    300          ////////////////////////////////////////////////////////////////////////////////
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   is_in_execute_only_region
+        16   -- Indirect call
+       0   is_ltc_present
+       0   is_otfad_present
+       0   is_qspi_present
+       0   qspi_need_configure
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+      38  is_in_execute_only_region
+       4  is_ltc_present
+       4  is_otfad_present
+       4  is_qspi_present
+       4  qspi_need_configure
+
+ 
+ 58 bytes in section .text
+ 
+ 58 bytes of CODE memory
+
+Errors: none
+Warnings: none

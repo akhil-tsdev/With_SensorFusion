@@ -1,0 +1,815 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       16/Sep/2016  13:24:05
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\memory\src\memory.c
+#    Command line =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\memory\src\memory.c
+#        -D NDEBUG -D USB_STACK_BM -D CPU_MK22FN1M0AVMC12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D FREEDOM -D BL_TARGET_FLASH -D
+#        TURINGSENSE=1 -lC
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\list
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\..\..\..\..\src\platform\devices\MK22FA12_MK64\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/autobaud\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/osa\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/device\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/device/class\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/bm_usb\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform/devices\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform/CMSIS/Include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/drivers\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/drivers/common\
+#        -On --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\list\memory.lst
+#    Object file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\obj\memory.o
+#
+###############################################################################
+
+C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\memory\src\memory.c
+      1          /*
+      2           * Copyright (c) 2013-2016, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          
+     31          #include "bootloader_common.h"
+     32          #include "bootloader/bl_context.h"
+     33          #include "memory/memory.h"
+     34          #if !defined(BOOTLOADER_HOST)
+     35          #include "drivers/flash/fsl_flash.h"
+     36          #include "fsl_device_registers.h"
+     37          #include "flash_memory.h"
+     38          #endif // BOOTLOADER_HOST
+     39          #include "utilities/fsl_assert.h"
+     40          
+     41          //! @addtogroup memif
+     42          //! @{
+     43          
+     44          ////////////////////////////////////////////////////////////////////////////////
+     45          // Prototypes
+     46          ////////////////////////////////////////////////////////////////////////////////
+     47          
+     48          // Forward function declarations.
+     49          bool mem_is_block_reserved(uint32_t address, uint32_t length);
+     50          
+     51          ////////////////////////////////////////////////////////////////////////////////
+     52          // Variables
+     53          ////////////////////////////////////////////////////////////////////////////////
+     54          
+     55          //! @brief This variable is used to do flush operation, it is bind to write operation.
+
+   \                                 In section .bss, align 4
+     56          static const memory_region_interface_t *s_flushMemoryInterface = NULL;
+   \                     s_flushMemoryInterface:
+   \   00000000                      DS8 4
+     57          
+     58          //! @brief Interface to generic memory operations.
+
+   \                                 In section .rodata, align 4
+     59          const memory_interface_t g_memoryInterface = {
+   \                     g_memoryInterface:
+   \   00000000   0x........         DC32 mem_init, mem_read, mem_write, mem_fill, mem_flush, mem_erase
+   \              0x........   
+   \              0x........   
+   \              0x........   
+   \              0x........   
+   \              0x........   
+     60              mem_init,  mem_read,  mem_write,
+     61          #if !BL_FEATURE_MIN_PROFILE || BL_FEATURE_FILL_MEMORY
+     62              mem_fill,
+     63          #else
+     64              NULL,
+     65          #endif // !BL_FEATURE_MIN_PROFILE
+     66              mem_flush, mem_erase,
+     67          };
+     68          
+     69          ////////////////////////////////////////////////////////////////////////////////
+     70          // Code
+     71          ////////////////////////////////////////////////////////////////////////////////
+     72          
+     73          // See memory.h for documentation on this function.
+
+   \                                 In section .text, align 2, keep-with-next
+     74          status_t mem_read(uint32_t address, uint32_t length, uint8_t *buffer)
+     75          {
+   \                     mem_read: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+   \   00000006   0x0016             MOVS     R6,R2
+     76              if (length == 0)
+   \   00000008   0x2D00             CMP      R5,#+0
+   \   0000000A   0xD101             BNE.N    ??mem_read_0
+     77              {
+     78                  return kStatus_Success;
+   \   0000000C   0x2000             MOVS     R0,#+0
+   \   0000000E   0xE010             B.N      ??mem_read_1
+     79              }
+     80          
+     81              const memory_map_entry_t *mapEntry;
+     82              status_t status = find_map_entry(address, length, &mapEntry);
+   \                     ??mem_read_0: (+1)
+   \   00000010   0x466A             MOV      R2,SP
+   \   00000012   0x0029             MOVS     R1,R5
+   \   00000014   0x0020             MOVS     R0,R4
+   \   00000016   0x.... 0x....      BL       find_map_entry
+   \   0000001A   0x0007             MOVS     R7,R0
+     83              if (status == kStatus_Success)
+   \   0000001C   0x2F00             CMP      R7,#+0
+   \   0000001E   0xD107             BNE.N    ??mem_read_2
+     84              {
+     85                  status = mapEntry->memoryInterface->read(address, length, buffer);
+   \   00000020   0x0032             MOVS     R2,R6
+   \   00000022   0x0029             MOVS     R1,R5
+   \   00000024   0x0020             MOVS     R0,R4
+   \   00000026   0x9B00             LDR      R3,[SP, #+0]
+   \   00000028   0x68DB             LDR      R3,[R3, #+12]
+   \   0000002A   0x685B             LDR      R3,[R3, #+4]
+   \   0000002C   0x4798             BLX      R3
+   \   0000002E   0x0007             MOVS     R7,R0
+     86              }
+     87              return status;
+   \                     ??mem_read_2: (+1)
+   \   00000030   0x0038             MOVS     R0,R7
+   \                     ??mem_read_1: (+1)
+   \   00000032   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+     88          }
+     89          
+     90          // See memory.h for documentation on this function.
+
+   \                                 In section .text, align 2, keep-with-next
+     91          status_t mem_write(uint32_t address, uint32_t length, const uint8_t *buffer)
+     92          {
+   \                     mem_write: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+   \   00000006   0x0016             MOVS     R6,R2
+     93              if (length == 0)
+   \   00000008   0x2D00             CMP      R5,#+0
+   \   0000000A   0xD101             BNE.N    ??mem_write_0
+     94              {
+     95                  return kStatus_Success;
+   \   0000000C   0x2000             MOVS     R0,#+0
+   \   0000000E   0xE023             B.N      ??mem_write_1
+     96              }
+     97          
+     98              if (mem_is_block_reserved(address, length))
+   \                     ??mem_write_0: (+1)
+   \   00000010   0x0029             MOVS     R1,R5
+   \   00000012   0x0020             MOVS     R0,R4
+   \   00000014   0x.... 0x....      BL       mem_is_block_reserved
+   \   00000018   0x2800             CMP      R0,#+0
+   \   0000001A   0xD002             BEQ.N    ??mem_write_2
+     99              {
+    100                  return kStatusMemoryRangeInvalid;
+   \   0000001C   0xF242 0x70D8      MOVW     R0,#+10200
+   \   00000020   0xE01A             B.N      ??mem_write_1
+    101              }
+    102          
+    103              const memory_map_entry_t *mapEntry;
+    104              status_t status = find_map_entry(address, length, &mapEntry);
+   \                     ??mem_write_2: (+1)
+   \   00000022   0x466A             MOV      R2,SP
+   \   00000024   0x0029             MOVS     R1,R5
+   \   00000026   0x0020             MOVS     R0,R4
+   \   00000028   0x.... 0x....      BL       find_map_entry
+   \   0000002C   0x0007             MOVS     R7,R0
+    105              if (status == kStatus_Success)
+   \   0000002E   0x2F00             CMP      R7,#+0
+   \   00000030   0xD111             BNE.N    ??mem_write_3
+    106              {
+    107                  status = mapEntry->memoryInterface->write(address, length, buffer);
+   \   00000032   0x0032             MOVS     R2,R6
+   \   00000034   0x0029             MOVS     R1,R5
+   \   00000036   0x0020             MOVS     R0,R4
+   \   00000038   0x9B00             LDR      R3,[SP, #+0]
+   \   0000003A   0x68DB             LDR      R3,[R3, #+12]
+   \   0000003C   0x689B             LDR      R3,[R3, #+8]
+   \   0000003E   0x4798             BLX      R3
+   \   00000040   0x0007             MOVS     R7,R0
+    108          
+    109                  if (status == kStatus_Success)
+   \   00000042   0x2F00             CMP      R7,#+0
+   \   00000044   0xD104             BNE.N    ??mem_write_4
+    110                  {
+    111                      s_flushMemoryInterface = mapEntry->memoryInterface;
+   \   00000046   0x9800             LDR      R0,[SP, #+0]
+   \   00000048   0x68C0             LDR      R0,[R0, #+12]
+   \   0000004A   0x....             LDR.N    R1,??DataTable4
+   \   0000004C   0x6008             STR      R0,[R1, #+0]
+   \   0000004E   0xE002             B.N      ??mem_write_3
+    112                  }
+    113                  else
+    114                  {
+    115                      s_flushMemoryInterface = NULL;
+   \                     ??mem_write_4: (+1)
+   \   00000050   0x2000             MOVS     R0,#+0
+   \   00000052   0x....             LDR.N    R1,??DataTable4
+   \   00000054   0x6008             STR      R0,[R1, #+0]
+    116                  }
+    117              }
+    118              return status;
+   \                     ??mem_write_3: (+1)
+   \   00000056   0x0038             MOVS     R0,R7
+   \                     ??mem_write_1: (+1)
+   \   00000058   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    119          }
+    120          
+
+   \                                 In section .text, align 2, keep-with-next
+    121          status_t mem_erase(uint32_t address, uint32_t length)
+    122          {
+   \                     mem_erase: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0xB082             SUB      SP,SP,#+8
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+    123              status_t status = kStatus_Success;
+   \   00000008   0x2600             MOVS     R6,#+0
+    124          
+    125          #if !defined(BOOTLOADER_HOST)
+    126              const memory_map_entry_t *mapEntry;
+    127              status = find_map_entry(address, length, &mapEntry);
+   \   0000000A   0x466A             MOV      R2,SP
+   \   0000000C   0x0029             MOVS     R1,R5
+   \   0000000E   0x0020             MOVS     R0,R4
+   \   00000010   0x.... 0x....      BL       find_map_entry
+   \   00000014   0x0006             MOVS     R6,R0
+    128              if (status == kStatus_Success)
+   \   00000016   0x2E00             CMP      R6,#+0
+   \   00000018   0xD117             BNE.N    ??mem_erase_0
+    129              {
+    130                  // In this case, it means that bootloader tries to erase a range of memory
+    131                  // which doesn't support erase operaton
+    132                  if (mapEntry->memoryInterface->erase == NULL)
+   \   0000001A   0x9800             LDR      R0,[SP, #+0]
+   \   0000001C   0x68C0             LDR      R0,[R0, #+12]
+   \   0000001E   0x6940             LDR      R0,[R0, #+20]
+   \   00000020   0x2800             CMP      R0,#+0
+   \   00000022   0xD101             BNE.N    ??mem_erase_1
+    133                  {
+    134                      return kStatus_FLASH_AddressError;
+   \   00000024   0x2066             MOVS     R0,#+102
+   \   00000026   0xE015             B.N      ??mem_erase_2
+    135                  }
+    136          
+    137                  if (mem_is_block_reserved(address, length))
+   \                     ??mem_erase_1: (+1)
+   \   00000028   0x0029             MOVS     R1,R5
+   \   0000002A   0x0020             MOVS     R0,R4
+   \   0000002C   0x.... 0x....      BL       mem_is_block_reserved
+   \   00000030   0x2800             CMP      R0,#+0
+   \   00000032   0xD002             BEQ.N    ??mem_erase_3
+    138                  {
+    139                      return kStatusMemoryRangeInvalid;
+   \   00000034   0xF242 0x70D8      MOVW     R0,#+10200
+   \   00000038   0xE00C             B.N      ??mem_erase_2
+    140                  }
+    141          
+    142                  status = mapEntry->memoryInterface->erase(address, length);
+   \                     ??mem_erase_3: (+1)
+   \   0000003A   0x0029             MOVS     R1,R5
+   \   0000003C   0x0020             MOVS     R0,R4
+   \   0000003E   0x9A00             LDR      R2,[SP, #+0]
+   \   00000040   0x68D2             LDR      R2,[R2, #+12]
+   \   00000042   0x6952             LDR      R2,[R2, #+20]
+   \   00000044   0x4790             BLX      R2
+   \   00000046   0x0006             MOVS     R6,R0
+   \   00000048   0xE003             B.N      ??mem_erase_4
+    143              }
+    144              else if (length == 0)
+   \                     ??mem_erase_0: (+1)
+   \   0000004A   0x2D00             CMP      R5,#+0
+   \   0000004C   0xD101             BNE.N    ??mem_erase_4
+    145              {
+    146                  // if length = 0, return kStatus_Success regardless of memory address
+    147                  return kStatus_Success;
+   \   0000004E   0x2000             MOVS     R0,#+0
+   \   00000050   0xE000             B.N      ??mem_erase_2
+    148              }
+    149          #endif // BOOTLOADER_HOST
+    150          
+    151              return status;
+   \                     ??mem_erase_4: (+1)
+   \   00000052   0x0030             MOVS     R0,R6
+   \                     ??mem_erase_2: (+1)
+   \   00000054   0xBD76             POP      {R1,R2,R4-R6,PC}  ;; return
+    152          }
+    153          
+    154          // See memory.h for documentation on this function.
+
+   \                                 In section .text, align 2, keep-with-next
+    155          status_t mem_fill(uint32_t address, uint32_t length, uint32_t pattern)
+    156          {
+   \                     mem_fill: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+   \   00000006   0x0016             MOVS     R6,R2
+    157              if (length == 0)
+   \   00000008   0x2D00             CMP      R5,#+0
+   \   0000000A   0xD101             BNE.N    ??mem_fill_0
+    158              {
+    159                  return kStatus_Success;
+   \   0000000C   0x2000             MOVS     R0,#+0
+   \   0000000E   0xE019             B.N      ??mem_fill_1
+    160              }
+    161          
+    162              if (mem_is_block_reserved(address, length))
+   \                     ??mem_fill_0: (+1)
+   \   00000010   0x0029             MOVS     R1,R5
+   \   00000012   0x0020             MOVS     R0,R4
+   \   00000014   0x.... 0x....      BL       mem_is_block_reserved
+   \   00000018   0x2800             CMP      R0,#+0
+   \   0000001A   0xD002             BEQ.N    ??mem_fill_2
+    163              {
+    164                  return kStatusMemoryRangeInvalid;
+   \   0000001C   0xF242 0x70D8      MOVW     R0,#+10200
+   \   00000020   0xE010             B.N      ??mem_fill_1
+    165              }
+    166          
+    167              const memory_map_entry_t *mapEntry;
+    168              status_t status = find_map_entry(address, length, &mapEntry);
+   \                     ??mem_fill_2: (+1)
+   \   00000022   0x466A             MOV      R2,SP
+   \   00000024   0x0029             MOVS     R1,R5
+   \   00000026   0x0020             MOVS     R0,R4
+   \   00000028   0x.... 0x....      BL       find_map_entry
+   \   0000002C   0x0007             MOVS     R7,R0
+    169              if (status == kStatus_Success)
+   \   0000002E   0x2F00             CMP      R7,#+0
+   \   00000030   0xD107             BNE.N    ??mem_fill_3
+    170              {
+    171                  status = mapEntry->memoryInterface->fill(address, length, pattern);
+   \   00000032   0x0032             MOVS     R2,R6
+   \   00000034   0x0029             MOVS     R1,R5
+   \   00000036   0x0020             MOVS     R0,R4
+   \   00000038   0x9B00             LDR      R3,[SP, #+0]
+   \   0000003A   0x68DB             LDR      R3,[R3, #+12]
+   \   0000003C   0x68DB             LDR      R3,[R3, #+12]
+   \   0000003E   0x4798             BLX      R3
+   \   00000040   0x0007             MOVS     R7,R0
+    172              }
+    173              return status;
+   \                     ??mem_fill_3: (+1)
+   \   00000042   0x0038             MOVS     R0,R7
+   \                     ??mem_fill_1: (+1)
+   \   00000044   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    174          }
+    175          
+    176          //! @brief Flush buffered data into target memory
+    177          //! @note  1. This function should be called immediately after one write-memory command(either
+    178          //!        received in command packet or in sb file), only in this way, given data can be programmed
+    179          //!        at given address as expected.
+    180          //!
+    181          //!        2. So far, flush() is only implemented in qspi memory interface, for other memory
+    182          //!        interfaces, it is not available and mem_flush() just returns kStatus_Success if it is
+    183          //!        called.
+    184          //!
+    185          //!        3. This function is designed to flush buffered data into target memory, please call it
+    186          //!        only if it is required to do so. For example, write 128 bytes to qspi flash, while the
+    187          //!        page size is 256 bytes, that means data might not be written to qspi memory immediately,
+    188          //!        since the internal buffer of qspi memory interface is not full, if no data are expected
+    189          //!        to write to left area of the same page, this function can be used to force to write
+    190          //!        immediately, otherwise, keep in mind that any calls should be avoided. If users voilate
+    191          //!        this rules, it would make the left area of the same page cannot be programmed.
+    192          //!
+    193          //! @return An error code or kStatus_Success
+
+   \                                 In section .text, align 2, keep-with-next
+    194          status_t mem_flush(void)
+    195          {
+   \                     mem_flush: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    196              status_t status = kStatus_Success;
+   \   00000002   0x2400             MOVS     R4,#+0
+    197          
+    198          #if !defined(BOOTLOADER_HOST)
+    199              if (s_flushMemoryInterface && s_flushMemoryInterface->flush)
+   \   00000004   0x....             LDR.N    R0,??DataTable4
+   \   00000006   0x6800             LDR      R0,[R0, #+0]
+   \   00000008   0x2800             CMP      R0,#+0
+   \   0000000A   0xD00C             BEQ.N    ??mem_flush_0
+   \   0000000C   0x....             LDR.N    R0,??DataTable4
+   \   0000000E   0x6800             LDR      R0,[R0, #+0]
+   \   00000010   0x6900             LDR      R0,[R0, #+16]
+   \   00000012   0x2800             CMP      R0,#+0
+   \   00000014   0xD007             BEQ.N    ??mem_flush_0
+    200              {
+    201                  status = s_flushMemoryInterface->flush();
+   \   00000016   0x....             LDR.N    R0,??DataTable4
+   \   00000018   0x6800             LDR      R0,[R0, #+0]
+   \   0000001A   0x6900             LDR      R0,[R0, #+16]
+   \   0000001C   0x4780             BLX      R0
+   \   0000001E   0x0004             MOVS     R4,R0
+    202                  s_flushMemoryInterface = NULL; // Clear this variable after performing flush operation
+   \   00000020   0x2000             MOVS     R0,#+0
+   \   00000022   0x....             LDR.N    R1,??DataTable4
+   \   00000024   0x6008             STR      R0,[R1, #+0]
+    203              }
+    204          #endif // BOOTLOADER_HOST
+    205          
+    206              return status;
+   \                     ??mem_flush_0: (+1)
+   \   00000026   0x0020             MOVS     R0,R4
+   \   00000028   0xBD10             POP      {R4,PC}          ;; return
+    207          }
+    208          
+    209          //! @brief Find a map entry that matches address and length.
+    210          //!
+    211          //! @param address Start address for the memory operation.
+    212          //! @param length Number of bytes on which the operation will act.
+    213          //! @param map The matching map entry is returned through this pointer if the return status
+    214          //!     is #kStatus_Success.
+    215          //!
+    216          //! @retval #kStatus_Success A valid map entry was found and returned through @a map.
+    217          //! @retval #kStatusMemoryRangeInvalid The requested address range does not match an entry, or
+    218          //!     the length extends past the matching entry's end address.
+
+   \                                 In section .text, align 2, keep-with-next
+    219          status_t find_map_entry(uint32_t address, uint32_t length, const memory_map_entry_t **map)
+    220          {
+   \                     find_map_entry: (+1)
+   \   00000000   0xB430             PUSH     {R4,R5}
+   \   00000002   0x0003             MOVS     R3,R0
+    221              status_t status = kStatusMemoryRangeInvalid;
+   \   00000004   0xF242 0x70D8      MOVW     R0,#+10200
+    222          
+    223              // Set starting entry.
+    224              assert(map);
+    225              if (map)
+   \   00000008   0x2A00             CMP      R2,#+0
+   \   0000000A   0xD002             BEQ.N    ??find_map_entry_0
+    226              {
+    227                  *map = &g_bootloaderContext.memoryMap[0];
+   \   0000000C   0x....             LDR.N    R4,??DataTable4_1
+   \   0000000E   0x6864             LDR      R4,[R4, #+4]
+   \   00000010   0x6014             STR      R4,[R2, #+0]
+    228              }
+    229          
+    230              // Scan memory map array looking for a match.
+    231              while ((length > 0) && map && *map)
+   \                     ??find_map_entry_0: (+1)
+   \   00000012   0x2900             CMP      R1,#+0
+   \   00000014   0xD025             BEQ.N    ??find_map_entry_1
+   \   00000016   0x2A00             CMP      R2,#+0
+   \   00000018   0xD023             BEQ.N    ??find_map_entry_1
+   \   0000001A   0x6814             LDR      R4,[R2, #+0]
+   \   0000001C   0x2C00             CMP      R4,#+0
+   \   0000001E   0xD020             BEQ.N    ??find_map_entry_1
+    232              {
+    233                  if (((*map)->startAddress == 0) && ((*map)->endAddress == 0) && ((*map)->memoryInterface == NULL))
+   \   00000020   0x6814             LDR      R4,[R2, #+0]
+   \   00000022   0x6824             LDR      R4,[R4, #+0]
+   \   00000024   0x2C00             CMP      R4,#+0
+   \   00000026   0xD107             BNE.N    ??find_map_entry_2
+   \   00000028   0x6814             LDR      R4,[R2, #+0]
+   \   0000002A   0x6864             LDR      R4,[R4, #+4]
+   \   0000002C   0x2C00             CMP      R4,#+0
+   \   0000002E   0xD103             BNE.N    ??find_map_entry_2
+   \   00000030   0x6814             LDR      R4,[R2, #+0]
+   \   00000032   0x68E4             LDR      R4,[R4, #+12]
+   \   00000034   0x2C00             CMP      R4,#+0
+   \   00000036   0xD014             BEQ.N    ??find_map_entry_1
+    234                  {
+    235                      break;
+    236                  }
+    237                  // Check if the start address is within this entry's address range.
+    238                  if ((address >= (*map)->startAddress) && (address <= (*map)->endAddress))
+   \                     ??find_map_entry_2: (+1)
+   \   00000038   0x6814             LDR      R4,[R2, #+0]
+   \   0000003A   0x6824             LDR      R4,[R4, #+0]
+   \   0000003C   0x42A3             CMP      R3,R4
+   \   0000003E   0xD30C             BCC.N    ??find_map_entry_3
+   \   00000040   0x6814             LDR      R4,[R2, #+0]
+   \   00000042   0x6864             LDR      R4,[R4, #+4]
+   \   00000044   0x429C             CMP      R4,R3
+   \   00000046   0xD308             BCC.N    ??find_map_entry_3
+    239                  {
+    240                      // Check that the length fits in this entry's address range.
+    241                      if ((address + length - 1) <= (*map)->endAddress)
+   \   00000048   0x6814             LDR      R4,[R2, #+0]
+   \   0000004A   0x6864             LDR      R4,[R4, #+4]
+   \   0000004C   0x18CD             ADDS     R5,R1,R3
+   \   0000004E   0x1E6D             SUBS     R5,R5,#+1
+   \   00000050   0x42AC             CMP      R4,R5
+   \   00000052   0xD301             BCC.N    ??find_map_entry_4
+    242                      {
+    243                          status = kStatus_Success;
+   \   00000054   0x2400             MOVS     R4,#+0
+   \   00000056   0x0020             MOVS     R0,R4
+    244                      }
+    245                      break;
+   \                     ??find_map_entry_4: (+1)
+   \   00000058   0xE003             B.N      ??find_map_entry_1
+    246                  }
+    247                  ++(*map);
+   \                     ??find_map_entry_3: (+1)
+   \   0000005A   0x6814             LDR      R4,[R2, #+0]
+   \   0000005C   0x3410             ADDS     R4,R4,#+16
+   \   0000005E   0x6014             STR      R4,[R2, #+0]
+   \   00000060   0xE7D7             B.N      ??find_map_entry_0
+    248              }
+    249          
+    250              return status;
+   \                     ??find_map_entry_1: (+1)
+   \   00000062   0xBC30             POP      {R4,R5}
+   \   00000064   0x4770             BX       LR               ;; return
+    251          }
+    252          
+    253          // See memory.h for documentation on this function.
+
+   \                                 In section .text, align 2, keep-with-next
+    254          bool mem_is_block_reserved(uint32_t address, uint32_t length)
+    255          {
+   \                     mem_is_block_reserved: (+1)
+   \   00000000   0xB4F0             PUSH     {R4-R7}
+   \   00000002   0x0002             MOVS     R2,R0
+    256              uint32_t end = address + length - 1;
+   \   00000004   0x1888             ADDS     R0,R1,R2
+   \   00000006   0x1E43             SUBS     R3,R0,#+1
+    257              uint32_t start = 0;
+   \   00000008   0x2400             MOVS     R4,#+0
+    258              for (uint32_t i = 0; i < kProperty_ReservedRegionsCount; ++i)
+   \   0000000A   0x2000             MOVS     R0,#+0
+   \                     ??mem_is_block_reserved_0: (+1)
+   \   0000000C   0x2802             CMP      R0,#+2
+   \   0000000E   0xD21A             BCS.N    ??mem_is_block_reserved_1
+    259              {
+    260                  reserved_region_t *region = &g_bootloaderContext.propertyInterface->store->reservedRegions[i];
+   \   00000010   0x....             LDR.N    R5,??DataTable4_1
+   \   00000012   0x68AD             LDR      R5,[R5, #+8]
+   \   00000014   0x692D             LDR      R5,[R5, #+16]
+   \   00000016   0xEB05 0x05C0      ADD      R5,R5,R0, LSL #+3
+   \   0000001A   0x355C             ADDS     R5,R5,#+92
+    261          
+    262                  start = (&g_bootloaderContext.memoryMap[i])->startAddress;
+   \   0000001C   0x....             LDR.N    R6,??DataTable4_1
+   \   0000001E   0x6876             LDR      R6,[R6, #+4]
+   \   00000020   0x0107             LSLS     R7,R0,#+4
+   \   00000022   0x59F6             LDR      R6,[R6, R7]
+   \   00000024   0x0034             MOVS     R4,R6
+    263                  if ((region->startAddress == start) && (region->endAddress == start))
+   \   00000026   0x682E             LDR      R6,[R5, #+0]
+   \   00000028   0x42A6             CMP      R6,R4
+   \   0000002A   0xD102             BNE.N    ??mem_is_block_reserved_2
+   \   0000002C   0x686E             LDR      R6,[R5, #+4]
+   \   0000002E   0x42A6             CMP      R6,R4
+   \   00000030   0xD007             BEQ.N    ??mem_is_block_reserved_3
+    264                  {
+    265                      // Special case, empty region
+    266                      continue;
+    267                  }
+    268          
+    269                  if ((address <= region->endAddress) && (end >= region->startAddress))
+   \                     ??mem_is_block_reserved_2: (+1)
+   \   00000032   0x686E             LDR      R6,[R5, #+4]
+   \   00000034   0x4296             CMP      R6,R2
+   \   00000036   0xD304             BCC.N    ??mem_is_block_reserved_3
+   \   00000038   0x682E             LDR      R6,[R5, #+0]
+   \   0000003A   0x42B3             CMP      R3,R6
+   \   0000003C   0xD301             BCC.N    ??mem_is_block_reserved_3
+    270                  {
+    271                      return true;
+   \   0000003E   0x2001             MOVS     R0,#+1
+   \   00000040   0xE002             B.N      ??mem_is_block_reserved_4
+    272                  }
+    273              }
+   \                     ??mem_is_block_reserved_3: (+1)
+   \   00000042   0x1C40             ADDS     R0,R0,#+1
+   \   00000044   0xE7E2             B.N      ??mem_is_block_reserved_0
+    274              return false;
+   \                     ??mem_is_block_reserved_1: (+1)
+   \   00000046   0x2000             MOVS     R0,#+0
+   \                     ??mem_is_block_reserved_4: (+1)
+   \   00000048   0xBCF0             POP      {R4-R7}
+   \   0000004A   0x4770             BX       LR               ;; return
+    275          }
+    276          
+    277          // See memory.h for documentation on this function.
+
+   \                                 In section .text, align 2, keep-with-next
+    278          status_t mem_init(void)
+    279          {
+   \                     mem_init: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+    280              status_t status = kStatus_Success;
+   \   00000002   0x2400             MOVS     R4,#+0
+    281          
+    282          #if !defined(BOOTLOADER_HOST)
+    283          
+    284              const memory_map_entry_t *map = &g_bootloaderContext.memoryMap[0];
+   \   00000004   0x....             LDR.N    R0,??DataTable4_1
+   \   00000006   0x6845             LDR      R5,[R0, #+4]
+    285          
+    286              while (map->memoryInterface)
+   \                     ??mem_init_0: (+1)
+   \   00000008   0x68E8             LDR      R0,[R5, #+12]
+   \   0000000A   0x2800             CMP      R0,#+0
+   \   0000000C   0xD008             BEQ.N    ??mem_init_1
+    287              {
+    288                  if (map->memoryInterface->init)
+   \   0000000E   0x68E8             LDR      R0,[R5, #+12]
+   \   00000010   0x6800             LDR      R0,[R0, #+0]
+   \   00000012   0x2800             CMP      R0,#+0
+   \   00000014   0xD002             BEQ.N    ??mem_init_2
+    289                  {
+    290                      map->memoryInterface->init();
+   \   00000016   0x68E8             LDR      R0,[R5, #+12]
+   \   00000018   0x6800             LDR      R0,[R0, #+0]
+   \   0000001A   0x4780             BLX      R0
+    291                  }
+    292                  ++map;
+   \                     ??mem_init_2: (+1)
+   \   0000001C   0x3510             ADDS     R5,R5,#+16
+   \   0000001E   0xE7F3             B.N      ??mem_init_0
+    293              }
+    294          
+    295          #endif // BOOTLOADER_HOST
+    296          
+    297              return status;
+   \                     ??mem_init_1: (+1)
+   \   00000020   0x0020             MOVS     R0,R4
+   \   00000022   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    298          }
+    299          
+    300          // See memory.h for documentation on this function.
+
+   \                                 In section .text, align 2, keep-with-next
+    301          bool mem_is_erased(uint32_t address, uint32_t length)
+    302          {
+   \                     mem_is_erased: (+1)
+   \   00000000   0xB410             PUSH     {R4}
+   \   00000002   0x0002             MOVS     R2,R0
+    303              const uint8_t *start = (const uint8_t *)address;
+   \   00000004   0x0013             MOVS     R3,R2
+    304              bool isMemoryErased = true;
+   \   00000006   0x2001             MOVS     R0,#+1
+    305          
+    306              while (length)
+   \                     ??mem_is_erased_0: (+1)
+   \   00000008   0x2900             CMP      R1,#+0
+   \   0000000A   0xD008             BEQ.N    ??mem_is_erased_1
+    307              {
+    308                  if (*start != 0xFF)
+   \   0000000C   0x781C             LDRB     R4,[R3, #+0]
+   \   0000000E   0x2CFF             CMP      R4,#+255
+   \   00000010   0xD002             BEQ.N    ??mem_is_erased_2
+    309                  {
+    310                      isMemoryErased = false;
+   \   00000012   0x2400             MOVS     R4,#+0
+   \   00000014   0x0020             MOVS     R0,R4
+    311                      break;
+   \   00000016   0xE002             B.N      ??mem_is_erased_1
+    312                  }
+    313                  else
+    314                  {
+    315                      length--;
+   \                     ??mem_is_erased_2: (+1)
+   \   00000018   0x1E49             SUBS     R1,R1,#+1
+    316                      start++;
+   \   0000001A   0x1C5B             ADDS     R3,R3,#+1
+   \   0000001C   0xE7F4             B.N      ??mem_is_erased_0
+    317                  }
+    318              }
+    319          
+    320              return isMemoryErased;
+   \                     ??mem_is_erased_1: (+1)
+   \   0000001E   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000020   0xBC10             POP      {R4}
+   \   00000022   0x4770             BX       LR               ;; return
+    321          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \   00000000   0x........         DC32     s_flushMemoryInterface
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \   00000000   0x........         DC32     g_bootloaderContext
+    322          
+    323          //! @}
+    324          
+    325          ////////////////////////////////////////////////////////////////////////////////
+    326          // EOF
+    327          ////////////////////////////////////////////////////////////////////////////////
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   find_map_entry
+      24   mem_erase
+        24   -- Indirect call
+        24   -> find_map_entry
+        24   -> mem_is_block_reserved
+      24   mem_fill
+        24   -- Indirect call
+        24   -> find_map_entry
+        24   -> mem_is_block_reserved
+       8   mem_flush
+         8   -- Indirect call
+      16   mem_init
+        16   -- Indirect call
+      16   mem_is_block_reserved
+       4   mem_is_erased
+      24   mem_read
+        24   -- Indirect call
+        24   -> find_map_entry
+      24   mem_write
+        24   -- Indirect call
+        24   -> find_map_entry
+        24   -> mem_is_block_reserved
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+     102  find_map_entry
+      24  g_memoryInterface
+      86  mem_erase
+      70  mem_fill
+      42  mem_flush
+      36  mem_init
+      76  mem_is_block_reserved
+      36  mem_is_erased
+      52  mem_read
+      90  mem_write
+       4  s_flushMemoryInterface
+
+ 
+   4 bytes in section .bss
+  24 bytes in section .rodata
+ 598 bytes in section .text
+ 
+ 598 bytes of CODE  memory
+  24 bytes of CONST memory
+   4 bytes of DATA  memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+environment/project/iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.1352944200/GITHUB/delimiter=;
+environment/project/iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.1352944200/GITHUB/operation=append
+environment/project/iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.1352944200/GITHUB/value=C\:\\Users\\cwati\\Documents\\GitHub
+environment/project/iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.1352944200/MQX_4_1_PATH/delimiter=;
+environment/project/iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.1352944200/MQX_4_1_PATH/operation=replace
+environment/project/iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.1352944200/MQX_4_1_PATH/value=C\:\\Freescale\\Freescale_MQX_4_1
+environment/project/iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.1352944200/append=true
+environment/project/iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.1352944200/appendContributed=true
+environment/project/iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.311383268/GITHUB/delimiter=;
+environment/project/iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.311383268/GITHUB/operation=append
+environment/project/iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.311383268/GITHUB/value=C\:\\Users\\cwati\\Documents\\GitHub
+environment/project/iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.311383268/append=true
+environment/project/iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.311383268/appendContributed=true

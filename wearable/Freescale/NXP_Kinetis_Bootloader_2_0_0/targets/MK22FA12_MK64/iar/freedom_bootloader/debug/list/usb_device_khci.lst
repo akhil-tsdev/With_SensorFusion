@@ -1,0 +1,3048 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       16/Sep/2016  13:24:14
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\usb\device\usb_device_khci.c
+#    Command line =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\usb\device\usb_device_khci.c
+#        -D NDEBUG -D USB_STACK_BM -D CPU_MK22FN1M0AVMC12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D FREEDOM -D BL_TARGET_FLASH -D
+#        TURINGSENSE=1 -lC
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\list
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\..\..\..\..\src\platform\devices\MK22FA12_MK64\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/autobaud\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/osa\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/device\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/device/class\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/bm_usb\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform/devices\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform/CMSIS/Include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/drivers\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/drivers/common\
+#        -On --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\list\usb_device_khci.lst
+#    Object file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\obj\usb_device_khci.o
+#
+###############################################################################
+
+C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\usb\device\usb_device_khci.c
+      1          /*
+      2           * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          
+     31          #include "usb_device_config.h"
+     32          #include "usb.h"
+     33          
+     34          #include "usb_device.h"
+     35          
+     36          #include "fsl_device_registers.h"
+     37          
+     38          #if ((defined(USB_DEVICE_CONFIG_KHCI)) && (USB_DEVICE_CONFIG_KHCI > 0U))
+     39          
+     40          #include "usb_khci.h"
+     41          #include "usb_device_dci.h"
+     42          
+     43          #include "usb_device_khci.h"
+     44          
+     45          /*******************************************************************************
+     46           * Definitions
+     47           ******************************************************************************/
+     48          
+     49          /*******************************************************************************
+     50           * Prototypes
+     51           ******************************************************************************/
+     52          static usb_status_t USB_DeviceKhciEndpointTransfer(
+     53              usb_device_khci_state_struct_t *khciState, uint8_t endpoint, uint8_t direction, uint8_t *buffer, uint32_t length);
+     54          static void USB_DeviceKhciPrimeNextSetup(usb_device_khci_state_struct_t *khciState);
+     55          static void USB_DeviceKhciSetDefaultState(usb_device_khci_state_struct_t *khciState);
+     56          static usb_status_t USB_DeviceKhciEndpointInit(usb_device_khci_state_struct_t *khciState,
+     57                                                         usb_device_endpoint_init_struct_t *epInit);
+     58          static usb_status_t USB_DeviceKhciEndpointDeinit(usb_device_khci_state_struct_t *khciState, uint8_t ep);
+     59          static usb_status_t USB_DeviceKhciEndpointStall(usb_device_khci_state_struct_t *khciState, uint8_t ep);
+     60          static usb_status_t USB_DeviceKhciEndpointUnstall(usb_device_khci_state_struct_t *khciState, uint8_t ep);
+     61          static void USB_DeviceKhciInterruptTokenDone(usb_device_khci_state_struct_t *khciState);
+     62          static void USB_DeviceKhciInterruptReset(usb_device_khci_state_struct_t *khciState);
+     63          #if ((defined(USB_DEVICE_CONFIG_LOW_POWER_MODE) && (USB_DEVICE_CONFIG_LOW_POWER_MODE > 0U)) || \
+     64               (defined(USB_DEVICE_CONFIG_REMOTE_WAKEUP) && (USB_DEVICE_CONFIG_REMOTE_WAKEUP > 0U)))
+     65          static void USB_DeviceKhciInterruptSleep(usb_device_khci_state_struct_t *khciState);
+     66          static void USB_DeviceKhciInterruptResume(usb_device_khci_state_struct_t *khciState);
+     67          #endif /* USB_DEVICE_CONFIG_LOW_POWER_MODE || USB_DEVICE_CONFIG_REMOTE_WAKEUP */
+     68          static void USB_DeviceKhciInterruptStall(usb_device_khci_state_struct_t *khciState);
+     69          #if defined(USB_DEVICE_CONFIG_KHCI_ERROR_HANDLING) && (USB_DEVICE_CONFIG_KHCI_ERROR_HANDLING > 0U)
+     70          static void USB_DeviceKhciInterruptError(usb_device_khci_state_struct_t *khciState);
+     71          #endif /* USB_DEVICE_CONFIG_KHCI_ERROR_HANDLING */
+     72          
+     73          extern usb_status_t USB_DeviceNotificationTrigger(void *handle, void *msg);
+     74          
+     75          /*******************************************************************************
+     76           * Variables
+     77           ******************************************************************************/
+     78          
+     79          /* Apply for BDT buffer, 512-byte alignment */
+
+   \                                 In section m_usb_bdt, align 512
+     80          USB_RAM_ADDRESS_ALGINMENT_512 USB_BDT static uint8_t s_UsbDeviceKhciBdtBuffer[USB_DEVICE_CONFIG_KHCI][512U];
+   \                     s_UsbDeviceKhciBdtBuffer:
+   \   00000000                      DS8 512
+     81          
+     82          /* Apply for khci device state structure */
+
+   \                                 In section m_usb_global, align 4
+     83          USB_GLOBAL static usb_device_khci_state_struct_t s_UsbDeviceKhciState[USB_DEVICE_CONFIG_KHCI];
+   \                     s_UsbDeviceKhciState:
+   \   00000000                      DS8 292
+     84          /* Apply for KHCI DMA aligned buffer when marco USB_DEVICE_CONFIG_KHCI_DMA_ALIGN enabled */
+
+   \                                 In section m_usb_global, align 4
+     85          USB_GLOBAL static uint32_t s_UsbDeviceKhciDmaAlignBuffer
+   \                     s_UsbDeviceKhciDmaAlignBuffer:
+   \   00000000                      DS8 64
+     86              [USB_DEVICE_CONFIG_KHCI][((USB_DEVICE_CONFIG_KHCI_DMA_ALIGN_BUFFER_LENGTH - 1U) >> 2U) + 1U];
+     87          
+     88          /*******************************************************************************
+     89           * Code
+     90           ******************************************************************************/
+     91          
+     92          /*!
+     93           * @brief Write the BDT to start a transfer.
+     94           *
+     95           * The function is used to start a transfer by writing the BDT.
+     96           *
+     97           * @param khciState       Pointer of the device KHCI state structure.
+     98           * @param endpoint         Endpoint number.
+     99           * @param direction        The direction of the endpoint, 0U - USB_OUT, 1U - USB_IN.
+    100           * @param buffer           The memory address to save the received data, or the memory address to hold the data need to
+    101           * be sent.
+    102           * @param length           The length of the data.
+    103           *
+    104           * @return A USB error code or kStatus_USB_Success.
+    105           */
+
+   \                                 In section .text, align 2, keep-with-next
+    106          static usb_status_t USB_DeviceKhciEndpointTransfer(
+    107              usb_device_khci_state_struct_t *khciState, uint8_t endpoint, uint8_t direction, uint8_t *buffer, uint32_t length)
+    108          {
+   \                     USB_DeviceKhciEndpointTransfer: (+1)
+   \   00000000   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+   \   00000008   0x0016             MOVS     R6,R2
+   \   0000000A   0x001F             MOVS     R7,R3
+   \   0000000C   0xF8DD 0x8020      LDR      R8,[SP, #+32]
+    109              uint32_t index = ((uint32_t)endpoint << 1U) | (uint32_t)direction;
+   \   00000010   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000012   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   00000014   0xEA56 0x0945      ORRS     R9,R6,R5, LSL #+1
+    110              USB_OSA_SR_ALLOC();
+    111          
+    112              /* Enter critical */
+    113              USB_OSA_ENTER_CRITICAL();
+   \   00000018   0x.... 0x....      BL       USB_BmEnterCritical
+    114          
+    115              /* Flag the endpoint is busy. */
+    116              khciState->endpointState[index].stateUnion.stateBitField.transferring = 1U;
+   \   0000001C   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   00000020   0x4420             ADD      R0,R4,R0
+   \   00000022   0x6AC0             LDR      R0,[R0, #+44]
+   \   00000024   0xF450 0x4080      ORRS     R0,R0,#0x4000
+   \   00000028   0xEA5F 0x1109      LSLS     R1,R9,#+4
+   \   0000002C   0x4421             ADD      R1,R4,R1
+   \   0000002E   0x62C8             STR      R0,[R1, #+44]
+    117          
+    118              /* Add the data buffer address to the BDT. */
+    119              USB_KHCI_BDT_SET_ADDRESS((uint32_t)khciState->bdt, endpoint, direction,
+    120                                       khciState->endpointState[index].stateUnion.stateBitField.bdtOdd, (uint32_t)buffer);
+   \   00000030   0x6860             LDR      R0,[R4, #+4]
+   \   00000032   0x0A40             LSRS     R0,R0,#+9
+   \   00000034   0x0240             LSLS     R0,R0,#+9
+   \   00000036   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000038   0x0169             LSLS     R1,R5,#+5
+   \   0000003A   0xF411 0x71F0      ANDS     R1,R1,#0x1E0
+   \   0000003E   0x4308             ORRS     R0,R1,R0
+   \   00000040   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   00000042   0x0131             LSLS     R1,R6,#+4
+   \   00000044   0xF011 0x0110      ANDS     R1,R1,#0x10
+   \   00000048   0x4308             ORRS     R0,R1,R0
+   \   0000004A   0xEA5F 0x1109      LSLS     R1,R9,#+4
+   \   0000004E   0x4421             ADD      R1,R4,R1
+   \   00000050   0x6AC9             LDR      R1,[R1, #+44]
+   \   00000052   0x0A49             LSRS     R1,R1,#+9
+   \   00000054   0xF011 0x0108      ANDS     R1,R1,#0x8
+   \   00000058   0x4308             ORRS     R0,R1,R0
+   \   0000005A   0x6047             STR      R7,[R0, #+4]
+    121          
+    122              /* Change the BDT control field to start the transfer. */
+    123              USB_KHCI_BDT_SET_CONTROL(
+    124                  (uint32_t)khciState->bdt, endpoint, direction, khciState->endpointState[index].stateUnion.stateBitField.bdtOdd,
+    125                  USB_LONG_TO_LITTLE_ENDIAN(USB_KHCI_BDT_BC(length) | USB_KHCI_BDT_OWN | USB_KHCI_BDT_DTS |
+    126                                            USB_KHCI_BDT_DATA01(khciState->endpointState[index].stateUnion.stateBitField.data0)));
+   \   0000005C   0x6860             LDR      R0,[R4, #+4]
+   \   0000005E   0x0A40             LSRS     R0,R0,#+9
+   \   00000060   0x0240             LSLS     R0,R0,#+9
+   \   00000062   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000064   0x0169             LSLS     R1,R5,#+5
+   \   00000066   0xF411 0x71F0      ANDS     R1,R1,#0x1E0
+   \   0000006A   0x4308             ORRS     R0,R1,R0
+   \   0000006C   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   0000006E   0x0131             LSLS     R1,R6,#+4
+   \   00000070   0xF011 0x0110      ANDS     R1,R1,#0x10
+   \   00000074   0x4308             ORRS     R0,R1,R0
+   \   00000076   0xEA5F 0x1109      LSLS     R1,R9,#+4
+   \   0000007A   0x4421             ADD      R1,R4,R1
+   \   0000007C   0x6AC9             LDR      R1,[R1, #+44]
+   \   0000007E   0x0A49             LSRS     R1,R1,#+9
+   \   00000080   0xF011 0x0108      ANDS     R1,R1,#0x8
+   \   00000084   0x4308             ORRS     R0,R1,R0
+   \   00000086   0x.... 0x....      LDR.W    R1,??DataTable3  ;; 0x3ff0000
+   \   0000008A   0xEA11 0x4108      ANDS     R1,R1,R8, LSL #+16
+   \   0000008E   0xEA5F 0x1209      LSLS     R2,R9,#+4
+   \   00000092   0x4422             ADD      R2,R4,R2
+   \   00000094   0x6AD2             LDR      R2,[R2, #+44]
+   \   00000096   0x0952             LSRS     R2,R2,#+5
+   \   00000098   0xF012 0x0240      ANDS     R2,R2,#0x40
+   \   0000009C   0x4311             ORRS     R1,R2,R1
+   \   0000009E   0xF051 0x0188      ORRS     R1,R1,#0x88
+   \   000000A2   0x6001             STR      R1,[R0, #+0]
+    127          
+    128              /* Exit critical */
+    129              USB_OSA_EXIT_CRITICAL();
+   \   000000A4   0x.... 0x....      BL       USB_BmExitCritical
+    130          
+    131              /* Clear the token busy state */
+    132              khciState->registerBase->CTL &= ~USB_CTL_TXSUSPENDTOKENBUSY_MASK;
+   \   000000A8   0x68A0             LDR      R0,[R4, #+8]
+   \   000000AA   0xF890 0x0094      LDRB     R0,[R0, #+148]
+   \   000000AE   0xF010 0x00DF      ANDS     R0,R0,#0xDF
+   \   000000B2   0x68A1             LDR      R1,[R4, #+8]
+   \   000000B4   0xF881 0x0094      STRB     R0,[R1, #+148]
+    133              return kStatus_USB_Success;
+   \   000000B8   0x2000             MOVS     R0,#+0
+   \   000000BA   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}    ;; return
+    134          }
+    135          
+    136          /*!
+    137           * @brief Prime a next setup transfer.
+    138           *
+    139           * The function is used to prime a buffer in control out pipe to wait for receiving the host's setup packet.
+    140           *
+    141           * @param khciState       Pointer of the device KHCI state structure.
+    142           *
+    143           */
+
+   \                                 In section .text, align 2, keep-with-next
+    144          static void USB_DeviceKhciPrimeNextSetup(usb_device_khci_state_struct_t *khciState)
+    145          {
+   \                     USB_DeviceKhciPrimeNextSetup: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0xB082             SUB      SP,SP,#+8
+   \   00000004   0x0004             MOVS     R4,R0
+    146          /* Update the endpoint state */
+    147          /* Save the buffer address used to receive the setup packet. */
+    148          #if defined(FSL_FEATURE_USB_KHCI_KEEP_ALIVE_ENABLED) && (FSL_FEATURE_USB_KHCI_KEEP_ALIVE_ENABLED > 0U) \
+    149          && defined(USB_DEVICE_CONFIG_KEEP_ALIVE_MODE) &&                                         \
+    150              (USB_DEVICE_CONFIG_KEEP_ALIVE_MODE > 0U) && defined(FSL_FEATURE_USB_KHCI_USB_RAM) && \
+    151              (FSL_FEATURE_USB_KHCI_USB_RAM > 0U)
+    152              /* In case of lowpower mode enabled, it requires to put the setup packet buffer(16 bytes) into the USB RAM so
+    153               * that the setup packet would wake up the USB.
+    154               */
+    155              khciState->endpointState[(USB_CONTROL_ENDPOINT << 1U) | USB_OUT].transferBuffer =
+    156                  (uint8_t *)(khciState->bdt + 0x200U - 0x10U) +
+    157                  khciState->endpointState[(USB_CONTROL_ENDPOINT << 1U) | USB_OUT].stateUnion.stateBitField.bdtOdd *
+    158                      USB_SETUP_PACKET_SIZE;
+    159          #else
+    160              khciState->endpointState[(USB_CONTROL_ENDPOINT << 1U) | USB_OUT].transferBuffer =
+    161                  (uint8_t *)&khciState->setupPacketBuffer[0] +
+    162                  khciState->endpointState[(USB_CONTROL_ENDPOINT << 1U) | USB_OUT].stateUnion.stateBitField.bdtOdd *
+    163                      USB_SETUP_PACKET_SIZE;
+   \   00000006   0x6AE0             LDR      R0,[R4, #+44]
+   \   00000008   0xF3C0 0x3000      UBFX     R0,R0,#+12,#+1
+   \   0000000C   0xEB04 0x00C0      ADD      R0,R4,R0, LSL #+3
+   \   00000010   0x300C             ADDS     R0,R0,#+12
+   \   00000012   0x6220             STR      R0,[R4, #+32]
+    164          #endif
+    165              /* Clear the transferred length. */
+    166              khciState->endpointState[(USB_CONTROL_ENDPOINT << 1U) | USB_OUT].transferDone = 0U;
+   \   00000014   0x2000             MOVS     R0,#+0
+   \   00000016   0x62A0             STR      R0,[R4, #+40]
+    167              /* Save the data length expected to get from a host. */
+    168              khciState->endpointState[(USB_CONTROL_ENDPOINT << 1U) | USB_OUT].transferLength = USB_SETUP_PACKET_SIZE;
+   \   00000018   0x2008             MOVS     R0,#+8
+   \   0000001A   0x6260             STR      R0,[R4, #+36]
+    169              /* Save the data buffer DMA align flag. */
+    170              khciState->endpointState[(USB_CONTROL_ENDPOINT << 1U) | USB_OUT].stateUnion.stateBitField.dmaAlign = 1U;
+   \   0000001C   0x6AE0             LDR      R0,[R4, #+44]
+   \   0000001E   0xF450 0x5000      ORRS     R0,R0,#0x2000
+   \   00000022   0x62E0             STR      R0,[R4, #+44]
+    171              /* Set the DATA0/1 to DATA0. */
+    172              khciState->endpointState[(USB_CONTROL_ENDPOINT << 1U) | USB_OUT].stateUnion.stateBitField.data0 = 0U;
+   \   00000024   0x6AE0             LDR      R0,[R4, #+44]
+   \   00000026   0xF430 0x6000      BICS     R0,R0,#0x800
+   \   0000002A   0x62E0             STR      R0,[R4, #+44]
+    173          
+    174              USB_DeviceKhciEndpointTransfer(khciState, USB_CONTROL_ENDPOINT, USB_OUT,
+    175                                             khciState->endpointState[(USB_CONTROL_ENDPOINT << 1U) | USB_OUT].transferBuffer,
+    176                                             USB_SETUP_PACKET_SIZE);
+   \   0000002C   0x2008             MOVS     R0,#+8
+   \   0000002E   0x9000             STR      R0,[SP, #+0]
+   \   00000030   0x6A23             LDR      R3,[R4, #+32]
+   \   00000032   0x2200             MOVS     R2,#+0
+   \   00000034   0x2100             MOVS     R1,#+0
+   \   00000036   0x0020             MOVS     R0,R4
+   \   00000038   0x.... 0x....      BL       USB_DeviceKhciEndpointTransfer
+    177          }
+   \   0000003C   0xBD13             POP      {R0,R1,R4,PC}    ;; return
+    178          
+    179          /*!
+    180           * @brief Set device controller state to default state.
+    181           *
+    182           * The function is used to set device controller state to default state.
+    183           * The function will be called when USB_DeviceKhciInit called or the control type kUSB_DeviceControlGetEndpointStatus
+    184           * received in USB_DeviceKhciControl.
+    185           *
+    186           * @param khciState       Pointer of the device KHCI state structure.
+    187           *
+    188           */
+
+   \                                 In section .text, align 2, keep-with-next
+    189          static void USB_DeviceKhciSetDefaultState(usb_device_khci_state_struct_t *khciState)
+    190          {
+   \                     USB_DeviceKhciSetDefaultState: (+1)
+   \   00000000   0xB410             PUSH     {R4}
+    191              uint8_t interruptFlag;
+    192          
+    193              /* Clear the error state register */
+    194              khciState->registerBase->ERRSTAT = 0xFFU;
+   \   00000002   0x22FF             MOVS     R2,#+255
+   \   00000004   0x6883             LDR      R3,[R0, #+8]
+   \   00000006   0xF883 0x2088      STRB     R2,[R3, #+136]
+    195          
+    196              /* Setting this bit to 1U resets all the BDT ODD ping/pong fields to 0U, which then specifies the EVEN BDT bank. */
+    197              khciState->registerBase->CTL |= USB_CTL_ODDRST_MASK;
+   \   0000000A   0x6882             LDR      R2,[R0, #+8]
+   \   0000000C   0xF892 0x2094      LDRB     R2,[R2, #+148]
+   \   00000010   0xF052 0x0202      ORRS     R2,R2,#0x2
+   \   00000014   0x6883             LDR      R3,[R0, #+8]
+   \   00000016   0xF883 0x2094      STRB     R2,[R3, #+148]
+    198          
+    199              /* Clear the device address */
+    200              khciState->registerBase->ADDR = 0U;
+   \   0000001A   0x2200             MOVS     R2,#+0
+   \   0000001C   0x6883             LDR      R3,[R0, #+8]
+   \   0000001E   0xF883 0x2098      STRB     R2,[R3, #+152]
+    201          
+    202              /* Clear the endpoint state and disable the endpoint */
+    203              for (uint8_t count = 0U; count < USB_DEVICE_CONFIG_ENDPOINTS; count++)
+   \   00000022   0x2200             MOVS     R2,#+0
+   \                     ??USB_DeviceKhciSetDefaultState_0: (+1)
+   \   00000024   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   00000026   0x2A08             CMP      R2,#+8
+   \   00000028   0xD244             BCS.N    ??USB_DeviceKhciSetDefaultState_1
+    204              {
+    205                  USB_KHCI_BDT_SET_CONTROL((uint32_t)khciState->bdt, count, USB_OUT, 0U, 0U);
+   \   0000002A   0x6843             LDR      R3,[R0, #+4]
+   \   0000002C   0x0A5B             LSRS     R3,R3,#+9
+   \   0000002E   0x025B             LSLS     R3,R3,#+9
+   \   00000030   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   00000032   0x0154             LSLS     R4,R2,#+5
+   \   00000034   0xF414 0x74F0      ANDS     R4,R4,#0x1E0
+   \   00000038   0x4323             ORRS     R3,R4,R3
+   \   0000003A   0x2400             MOVS     R4,#+0
+   \   0000003C   0x601C             STR      R4,[R3, #+0]
+    206                  USB_KHCI_BDT_SET_CONTROL((uint32_t)khciState->bdt, count, USB_OUT, 1U, 0U);
+   \   0000003E   0x6843             LDR      R3,[R0, #+4]
+   \   00000040   0x0A5B             LSRS     R3,R3,#+9
+   \   00000042   0x025B             LSLS     R3,R3,#+9
+   \   00000044   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   00000046   0x0154             LSLS     R4,R2,#+5
+   \   00000048   0xF414 0x74F0      ANDS     R4,R4,#0x1E0
+   \   0000004C   0x4323             ORRS     R3,R4,R3
+   \   0000004E   0xF053 0x0308      ORRS     R3,R3,#0x8
+   \   00000052   0x2400             MOVS     R4,#+0
+   \   00000054   0x601C             STR      R4,[R3, #+0]
+    207                  USB_KHCI_BDT_SET_CONTROL((uint32_t)khciState->bdt, count, USB_IN, 0U, 0U);
+   \   00000056   0x6843             LDR      R3,[R0, #+4]
+   \   00000058   0x0A5B             LSRS     R3,R3,#+9
+   \   0000005A   0x025B             LSLS     R3,R3,#+9
+   \   0000005C   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   0000005E   0x0154             LSLS     R4,R2,#+5
+   \   00000060   0xF414 0x74F0      ANDS     R4,R4,#0x1E0
+   \   00000064   0x4323             ORRS     R3,R4,R3
+   \   00000066   0xF053 0x0310      ORRS     R3,R3,#0x10
+   \   0000006A   0x2400             MOVS     R4,#+0
+   \   0000006C   0x601C             STR      R4,[R3, #+0]
+    208                  USB_KHCI_BDT_SET_CONTROL((uint32_t)khciState->bdt, count, USB_IN, 1U, 0U);
+   \   0000006E   0x6843             LDR      R3,[R0, #+4]
+   \   00000070   0x0A5B             LSRS     R3,R3,#+9
+   \   00000072   0x025B             LSLS     R3,R3,#+9
+   \   00000074   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   00000076   0x0154             LSLS     R4,R2,#+5
+   \   00000078   0xF414 0x74F0      ANDS     R4,R4,#0x1E0
+   \   0000007C   0x4323             ORRS     R3,R4,R3
+   \   0000007E   0xF053 0x0318      ORRS     R3,R3,#0x18
+   \   00000082   0x2400             MOVS     R4,#+0
+   \   00000084   0x601C             STR      R4,[R3, #+0]
+    209          
+    210                  khciState->endpointState[((uint32_t)count << 1U) | USB_OUT].stateUnion.state = 0U;
+   \   00000086   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   00000088   0x0053             LSLS     R3,R2,#+1
+   \   0000008A   0x011B             LSLS     R3,R3,#+4
+   \   0000008C   0x4403             ADD      R3,R0,R3
+   \   0000008E   0x2400             MOVS     R4,#+0
+   \   00000090   0x62DC             STR      R4,[R3, #+44]
+    211                  khciState->endpointState[((uint32_t)count << 1U) | USB_IN].stateUnion.state = 0U;
+   \   00000092   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   00000094   0x0053             LSLS     R3,R2,#+1
+   \   00000096   0xF053 0x0301      ORRS     R3,R3,#0x1
+   \   0000009A   0x011B             LSLS     R3,R3,#+4
+   \   0000009C   0x4403             ADD      R3,R0,R3
+   \   0000009E   0x2400             MOVS     R4,#+0
+   \   000000A0   0x62DC             STR      R4,[R3, #+44]
+    212                  khciState->registerBase->ENDPOINT[count].ENDPT = 0x00U;
+   \   000000A2   0x6883             LDR      R3,[R0, #+8]
+   \   000000A4   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   000000A6   0xEB03 0x0382      ADD      R3,R3,R2, LSL #+2
+   \   000000AA   0x2400             MOVS     R4,#+0
+   \   000000AC   0xF883 0x40C0      STRB     R4,[R3, #+192]
+    213              }
+   \   000000B0   0x1C52             ADDS     R2,R2,#+1
+   \   000000B2   0xE7B7             B.N      ??USB_DeviceKhciSetDefaultState_0
+    214              khciState->isDmaAlignBufferInusing = 0U;
+   \                     ??USB_DeviceKhciSetDefaultState_1: (+1)
+   \   000000B4   0x2200             MOVS     R2,#+0
+   \   000000B6   0xF880 0x2120      STRB     R2,[R0, #+288]
+    215          
+    216              /* Clear the BDT odd reset flag */
+    217              khciState->registerBase->CTL &= ~USB_CTL_ODDRST_MASK;
+   \   000000BA   0x6882             LDR      R2,[R0, #+8]
+   \   000000BC   0xF892 0x2094      LDRB     R2,[R2, #+148]
+   \   000000C0   0xF012 0x02FD      ANDS     R2,R2,#0xFD
+   \   000000C4   0x6883             LDR      R3,[R0, #+8]
+   \   000000C6   0xF883 0x2094      STRB     R2,[R3, #+148]
+    218          
+    219              /* Enable all error */
+    220              khciState->registerBase->ERREN = 0xFFU;
+   \   000000CA   0x22FF             MOVS     R2,#+255
+   \   000000CC   0x6883             LDR      R3,[R0, #+8]
+   \   000000CE   0xF883 0x208C      STRB     R2,[R3, #+140]
+    221          
+    222              /* Enable reset, sof, token, stall interrupt */
+    223              interruptFlag = kUSB_KhciInterruptReset
+    224          #if 0U
+    225                              | kUSB_KhciInterruptSofToken
+    226          #endif
+    227                              | kUSB_KhciInterruptTokenDone | kUSB_KhciInterruptStall;
+   \   000000D2   0x2289             MOVS     R2,#+137
+   \   000000D4   0x0011             MOVS     R1,R2
+    228          
+    229          #if ((defined(USB_DEVICE_CONFIG_LOW_POWER_MODE) && (USB_DEVICE_CONFIG_LOW_POWER_MODE > 0U)) || \
+    230               (defined(USB_DEVICE_CONFIG_REMOTE_WAKEUP) && (USB_DEVICE_CONFIG_REMOTE_WAKEUP > 0U)))
+    231              /* Enable suspend interruprt */
+    232              interruptFlag |= kUSB_KhciInterruptSleep;
+    233          #endif /* USB_DEVICE_CONFIG_LOW_POWER_MODE || USB_DEVICE_CONFIG_REMOTE_WAKEUP */
+    234          
+    235          #if defined(USB_DEVICE_CONFIG_KHCI_ERROR_HANDLING) && (USB_DEVICE_CONFIG_KHCI_ERROR_HANDLING > 0U)
+    236              /* Enable error interruprt */
+    237              interruptFlag |= kUSB_KhciInterruptError;
+    238          #endif /* USB_DEVICE_CONFIG_KHCI_ERROR_HANDLING */
+    239              /* Write the interrupt enable register */
+    240              khciState->registerBase->INTEN = interruptFlag;
+   \   000000D6   0x6882             LDR      R2,[R0, #+8]
+   \   000000D8   0xF882 0x1084      STRB     R1,[R2, #+132]
+    241          
+    242              /* Clear reset flag */
+    243              khciState->isResetting = 0U;
+   \   000000DC   0x2200             MOVS     R2,#+0
+   \   000000DE   0xF880 0x2121      STRB     R2,[R0, #+289]
+    244          
+    245              khciState->registerBase->CTL &= ~USB_CTL_TXSUSPENDTOKENBUSY_MASK;
+   \   000000E2   0x6882             LDR      R2,[R0, #+8]
+   \   000000E4   0xF892 0x2094      LDRB     R2,[R2, #+148]
+   \   000000E8   0xF012 0x02DF      ANDS     R2,R2,#0xDF
+   \   000000EC   0x6883             LDR      R3,[R0, #+8]
+   \   000000EE   0xF883 0x2094      STRB     R2,[R3, #+148]
+    246          }
+   \   000000F2   0xBC10             POP      {R4}
+   \   000000F4   0x4770             BX       LR               ;; return
+    247          
+    248          /*!
+    249           * @brief Initialize a specified endpoint.
+    250           *
+    251           * The function is used to initialize a specified endpoint.
+    252           *
+    253           * @param khciState       Pointer of the device KHCI state structure.
+    254           * @param epInit          The endpoint initialization structure pointer.
+    255           *
+    256           * @return A USB error code or kStatus_USB_Success.
+    257           */
+
+   \                                 In section .text, align 2, keep-with-next
+    258          static usb_status_t USB_DeviceKhciEndpointInit(usb_device_khci_state_struct_t *khciState,
+    259                                                         usb_device_endpoint_init_struct_t *epInit)
+    260          {
+   \                     USB_DeviceKhciEndpointInit: (+1)
+   \   00000000   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+    261              uint16_t maxPacketSize = epInit->maxPacketSize;
+   \   00000008   0x882E             LDRH     R6,[R5, #+0]
+    262              uint8_t endpoint = (epInit->endpointAddress & USB_ENDPOINT_NUMBER_MASK);
+   \   0000000A   0x78A8             LDRB     R0,[R5, #+2]
+   \   0000000C   0xF010 0x070F      ANDS     R7,R0,#0xF
+    263              uint8_t direction = (epInit->endpointAddress & USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_MASK) >>
+    264                                  USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_SHIFT;
+   \   00000010   0x78A8             LDRB     R0,[R5, #+2]
+   \   00000012   0xEA5F 0x18D0      LSRS     R8,R0,#+7
+    265              uint8_t index = ((uint8_t)((uint32_t)endpoint << 1U)) | (uint8_t)direction;
+   \   00000016   0xEA58 0x0947      ORRS     R9,R8,R7, LSL #+1
+    266          
+    267              /* Make the endpoint max packet size align with USB Specification 2.0. */
+    268              if (USB_ENDPOINT_ISOCHRONOUS == epInit->transferType)
+   \   0000001A   0x78E8             LDRB     R0,[R5, #+3]
+   \   0000001C   0x2801             CMP      R0,#+1
+   \   0000001E   0xD107             BNE.N    ??USB_DeviceKhciEndpointInit_0
+    269              {
+    270                  if (maxPacketSize > USB_DEVICE_MAX_FS_ISO_MAX_PACKET_SIZE)
+   \   00000020   0xB2B6             UXTH     R6,R6            ;; ZeroExt  R6,R6,#+16,#+16
+   \   00000022   0xF5B6 0x6F80      CMP      R6,#+1024
+   \   00000026   0xD316             BCC.N    ??USB_DeviceKhciEndpointInit_1
+    271                  {
+    272                      maxPacketSize = USB_DEVICE_MAX_FS_ISO_MAX_PACKET_SIZE;
+   \   00000028   0xF240 0x30FF      MOVW     R0,#+1023
+   \   0000002C   0x0006             MOVS     R6,R0
+   \   0000002E   0xE012             B.N      ??USB_DeviceKhciEndpointInit_1
+    273                  }
+    274              }
+    275              else
+    276              {
+    277                  if (maxPacketSize > USB_DEVICE_MAX_FS_NONE_ISO_MAX_PACKET_SIZE)
+   \                     ??USB_DeviceKhciEndpointInit_0: (+1)
+   \   00000030   0xB2B6             UXTH     R6,R6            ;; ZeroExt  R6,R6,#+16,#+16
+   \   00000032   0x2E41             CMP      R6,#+65
+   \   00000034   0xD301             BCC.N    ??USB_DeviceKhciEndpointInit_2
+    278                  {
+    279                      maxPacketSize = USB_DEVICE_MAX_FS_NONE_ISO_MAX_PACKET_SIZE;
+   \   00000036   0x2040             MOVS     R0,#+64
+   \   00000038   0x0006             MOVS     R6,R0
+    280                  }
+    281                  /* Enable an endpoint to perform handshaking during a transaction to this endpoint. */
+    282                  khciState->registerBase->ENDPOINT[endpoint].ENDPT |= USB_ENDPT_EPHSHK_MASK;
+   \                     ??USB_DeviceKhciEndpointInit_2: (+1)
+   \   0000003A   0x68A0             LDR      R0,[R4, #+8]
+   \   0000003C   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   0000003E   0xEB00 0x0087      ADD      R0,R0,R7, LSL #+2
+   \   00000042   0x68A1             LDR      R1,[R4, #+8]
+   \   00000044   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   00000046   0xEB01 0x0187      ADD      R1,R1,R7, LSL #+2
+   \   0000004A   0xF891 0x10C0      LDRB     R1,[R1, #+192]
+   \   0000004E   0xF051 0x0101      ORRS     R1,R1,#0x1
+   \   00000052   0xF880 0x10C0      STRB     R1,[R0, #+192]
+    283              }
+    284              /* Set the endpoint idle */
+    285              khciState->endpointState[index].stateUnion.stateBitField.transferring = 0U;
+   \                     ??USB_DeviceKhciEndpointInit_1: (+1)
+   \   00000056   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   0000005A   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   0000005E   0x4420             ADD      R0,R4,R0
+   \   00000060   0x6AC0             LDR      R0,[R0, #+44]
+   \   00000062   0xF430 0x4080      BICS     R0,R0,#0x4000
+   \   00000066   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   0000006A   0xEA5F 0x1109      LSLS     R1,R9,#+4
+   \   0000006E   0x4421             ADD      R1,R4,R1
+   \   00000070   0x62C8             STR      R0,[R1, #+44]
+    286              /* Save the max packet size of the endpoint */
+    287              khciState->endpointState[index].stateUnion.stateBitField.maxPacketSize = maxPacketSize;
+   \   00000072   0xB2B6             UXTH     R6,R6            ;; ZeroExt  R6,R6,#+16,#+16
+   \   00000074   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   00000078   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   0000007C   0x4420             ADD      R0,R4,R0
+   \   0000007E   0x6AC0             LDR      R0,[R0, #+44]
+   \   00000080   0xF366 0x0009      BFI      R0,R6,#+0,#+10
+   \   00000084   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   00000088   0xEA5F 0x1109      LSLS     R1,R9,#+4
+   \   0000008C   0x4421             ADD      R1,R4,R1
+   \   0000008E   0x62C8             STR      R0,[R1, #+44]
+    288              /* Set the data toggle to DATA0 */
+    289              khciState->endpointState[index].stateUnion.stateBitField.data0 = 0U;
+   \   00000090   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   00000094   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   00000098   0x4420             ADD      R0,R4,R0
+   \   0000009A   0x6AC0             LDR      R0,[R0, #+44]
+   \   0000009C   0xF430 0x6000      BICS     R0,R0,#0x800
+   \   000000A0   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   000000A4   0xEA5F 0x1109      LSLS     R1,R9,#+4
+   \   000000A8   0x4421             ADD      R1,R4,R1
+   \   000000AA   0x62C8             STR      R0,[R1, #+44]
+    290              /* Clear the endpoint stalled state */
+    291              khciState->endpointState[index].stateUnion.stateBitField.stalled = 0U;
+   \   000000AC   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   000000B0   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   000000B4   0x4420             ADD      R0,R4,R0
+   \   000000B6   0x6AC0             LDR      R0,[R0, #+44]
+   \   000000B8   0xF430 0x6080      BICS     R0,R0,#0x400
+   \   000000BC   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   000000C0   0xEA5F 0x1109      LSLS     R1,R9,#+4
+   \   000000C4   0x4421             ADD      R1,R4,R1
+   \   000000C6   0x62C8             STR      R0,[R1, #+44]
+    292              /* Enable the endpoint. */
+    293              khciState->registerBase->ENDPOINT[endpoint].ENDPT |=
+    294                  (USB_IN == direction) ? USB_ENDPT_EPTXEN_MASK : USB_ENDPT_EPRXEN_MASK;
+   \   000000C8   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   000000CC   0xF1B8 0x0F01      CMP      R8,#+1
+   \   000000D0   0xD101             BNE.N    ??USB_DeviceKhciEndpointInit_3
+   \   000000D2   0x2004             MOVS     R0,#+4
+   \   000000D4   0xE000             B.N      ??USB_DeviceKhciEndpointInit_4
+   \                     ??USB_DeviceKhciEndpointInit_3: (+1)
+   \   000000D6   0x2008             MOVS     R0,#+8
+   \                     ??USB_DeviceKhciEndpointInit_4: (+1)
+   \   000000D8   0x68A1             LDR      R1,[R4, #+8]
+   \   000000DA   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   000000DC   0xEB01 0x0187      ADD      R1,R1,R7, LSL #+2
+   \   000000E0   0x68A2             LDR      R2,[R4, #+8]
+   \   000000E2   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   000000E4   0xEB02 0x0287      ADD      R2,R2,R7, LSL #+2
+   \   000000E8   0xF892 0x20C0      LDRB     R2,[R2, #+192]
+   \   000000EC   0x4310             ORRS     R0,R0,R2
+   \   000000EE   0xF881 0x00C0      STRB     R0,[R1, #+192]
+    295          
+    296              /* Prime a transfer to receive next setup packet when the endpoint is control out endpoint. */
+    297              if ((USB_CONTROL_ENDPOINT == endpoint) && (USB_OUT == direction))
+   \   000000F2   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   000000F4   0x2F00             CMP      R7,#+0
+   \   000000F6   0xD107             BNE.N    ??USB_DeviceKhciEndpointInit_5
+   \   000000F8   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   000000FC   0xF1B8 0x0F00      CMP      R8,#+0
+   \   00000100   0xD102             BNE.N    ??USB_DeviceKhciEndpointInit_5
+    298              {
+    299                  USB_DeviceKhciPrimeNextSetup(khciState);
+   \   00000102   0x0020             MOVS     R0,R4
+   \   00000104   0x.... 0x....      BL       USB_DeviceKhciPrimeNextSetup
+    300              }
+    301          
+    302              return kStatus_USB_Success;
+   \                     ??USB_DeviceKhciEndpointInit_5: (+1)
+   \   00000108   0x2000             MOVS     R0,#+0
+   \   0000010A   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}    ;; return
+    303          }
+    304          
+    305          /*!
+    306           * @brief De-initialize a specified endpoint.
+    307           *
+    308           * The function is used to de-initialize a specified endpoint.
+    309           * Current transfer of the endpoint will be canceled and the specified endpoint will be disabled.
+    310           *
+    311           * @param khciState       Pointer of the device KHCI state structure.
+    312           * @param ep               The endpoint address, Bit7, 0U - USB_OUT, 1U - USB_IN.
+    313           *
+    314           * @return A USB error code or kStatus_USB_Success.
+    315           */
+
+   \                                 In section .text, align 2, keep-with-next
+    316          static usb_status_t USB_DeviceKhciEndpointDeinit(usb_device_khci_state_struct_t *khciState, uint8_t ep)
+    317          {
+   \                     USB_DeviceKhciEndpointDeinit: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+    318              uint8_t endpoint = (ep & USB_ENDPOINT_NUMBER_MASK);
+   \   00000008   0xF015 0x060F      ANDS     R6,R5,#0xF
+    319              uint8_t direction =
+    320                  (ep & USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_MASK) >> USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_SHIFT;
+   \   0000000C   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000000E   0x09EF             LSRS     R7,R5,#+7
+    321              uint8_t index = ((uint8_t)((uint32_t)endpoint << 1U)) | (uint8_t)direction;
+   \   00000010   0xEA57 0x0846      ORRS     R8,R7,R6, LSL #+1
+    322          
+    323              /* Cancel the transfer of the endpoint */
+    324              USB_DeviceKhciCancel(khciState, ep);
+   \   00000014   0x0029             MOVS     R1,R5
+   \   00000016   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000018   0x0020             MOVS     R0,R4
+   \   0000001A   0x.... 0x....      BL       USB_DeviceKhciCancel
+    325          
+    326              /* Disable the endpoint */
+    327              khciState->registerBase->ENDPOINT[endpoint].ENDPT = 0x00U;
+   \   0000001E   0x68A0             LDR      R0,[R4, #+8]
+   \   00000020   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   00000022   0xEB00 0x0086      ADD      R0,R0,R6, LSL #+2
+   \   00000026   0x2100             MOVS     R1,#+0
+   \   00000028   0xF880 0x10C0      STRB     R1,[R0, #+192]
+    328              /* Clear the max packet size */
+    329              khciState->endpointState[index].stateUnion.stateBitField.maxPacketSize = 0U;
+   \   0000002C   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   00000030   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   00000034   0x4420             ADD      R0,R4,R0
+   \   00000036   0x6AC0             LDR      R0,[R0, #+44]
+   \   00000038   0x0A80             LSRS     R0,R0,#+10
+   \   0000003A   0x0280             LSLS     R0,R0,#+10
+   \   0000003C   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   00000040   0xEA5F 0x1108      LSLS     R1,R8,#+4
+   \   00000044   0x4421             ADD      R1,R4,R1
+   \   00000046   0x62C8             STR      R0,[R1, #+44]
+    330          
+    331              return kStatus_USB_Success;
+   \   00000048   0x2000             MOVS     R0,#+0
+   \   0000004A   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    332          }
+    333          
+    334          /*!
+    335           * @brief Stall a specified endpoint.
+    336           *
+    337           * The function is used to stall a specified endpoint.
+    338           * Current transfer of the endpoint will be canceled and the specified endpoint will be stalled.
+    339           *
+    340           * @param khciState       Pointer of the device KHCI state structure.
+    341           * @param ep               The endpoint address, Bit7, 0U - USB_OUT, 1U - USB_IN.
+    342           *
+    343           * @return A USB error code or kStatus_USB_Success.
+    344           */
+
+   \                                 In section .text, align 2, keep-with-next
+    345          static usb_status_t USB_DeviceKhciEndpointStall(usb_device_khci_state_struct_t *khciState, uint8_t ep)
+    346          {
+   \                     USB_DeviceKhciEndpointStall: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+    347              uint8_t endpoint = ep & USB_ENDPOINT_NUMBER_MASK;
+   \   00000008   0xF015 0x060F      ANDS     R6,R5,#0xF
+    348              uint8_t direction =
+    349                  (ep & USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_MASK) >> USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_SHIFT;
+   \   0000000C   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000000E   0x09EF             LSRS     R7,R5,#+7
+    350              uint8_t index = ((uint8_t)((uint32_t)endpoint << 1U)) | (uint8_t)direction;
+   \   00000010   0xEA57 0x0846      ORRS     R8,R7,R6, LSL #+1
+    351          
+    352              /* Cancel the transfer of the endpoint */
+    353              USB_DeviceKhciCancel(khciState, ep);
+   \   00000014   0x0029             MOVS     R1,R5
+   \   00000016   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000018   0x0020             MOVS     R0,R4
+   \   0000001A   0x.... 0x....      BL       USB_DeviceKhciCancel
+    354          
+    355              /* Set endpoint stall flag. */
+    356              khciState->endpointState[index].stateUnion.stateBitField.stalled = 1U;
+   \   0000001E   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   00000022   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   00000026   0x4420             ADD      R0,R4,R0
+   \   00000028   0x6AC0             LDR      R0,[R0, #+44]
+   \   0000002A   0xF450 0x6080      ORRS     R0,R0,#0x400
+   \   0000002E   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   00000032   0xEA5F 0x1108      LSLS     R1,R8,#+4
+   \   00000036   0x4421             ADD      R1,R4,R1
+   \   00000038   0x62C8             STR      R0,[R1, #+44]
+    357          
+    358              /* Set endpoint stall in BDT. And then if the host send a IN/OUT tanscation, the device will response a STALL state.
+    359               */
+    360              USB_KHCI_BDT_SET_CONTROL(
+    361                  (uint32_t)khciState->bdt, endpoint, direction, khciState->endpointState[index].stateUnion.stateBitField.bdtOdd,
+    362                  USB_LONG_TO_LITTLE_ENDIAN(
+    363                      (uint32_t)(USB_KHCI_BDT_BC(khciState->endpointState[index].stateUnion.stateBitField.maxPacketSize) |
+    364                                 USB_KHCI_BDT_DTS | USB_KHCI_BDT_STALL | USB_KHCI_BDT_OWN)));
+   \   0000003A   0x6860             LDR      R0,[R4, #+4]
+   \   0000003C   0x0A40             LSRS     R0,R0,#+9
+   \   0000003E   0x0240             LSLS     R0,R0,#+9
+   \   00000040   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   00000042   0x0171             LSLS     R1,R6,#+5
+   \   00000044   0xF411 0x71F0      ANDS     R1,R1,#0x1E0
+   \   00000048   0x4308             ORRS     R0,R1,R0
+   \   0000004A   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   0000004C   0x0139             LSLS     R1,R7,#+4
+   \   0000004E   0xF011 0x0110      ANDS     R1,R1,#0x10
+   \   00000052   0x4308             ORRS     R0,R1,R0
+   \   00000054   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   00000058   0xEA5F 0x1108      LSLS     R1,R8,#+4
+   \   0000005C   0x4421             ADD      R1,R4,R1
+   \   0000005E   0x6AC9             LDR      R1,[R1, #+44]
+   \   00000060   0x0A49             LSRS     R1,R1,#+9
+   \   00000062   0xF011 0x0108      ANDS     R1,R1,#0x8
+   \   00000066   0x4308             ORRS     R0,R1,R0
+   \   00000068   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   0000006C   0xEA5F 0x1108      LSLS     R1,R8,#+4
+   \   00000070   0x4421             ADD      R1,R4,R1
+   \   00000072   0x6AC9             LDR      R1,[R1, #+44]
+   \   00000074   0x.... 0x....      LDR.W    R2,??DataTable3  ;; 0x3ff0000
+   \   00000078   0xEA12 0x4101      ANDS     R1,R2,R1, LSL #+16
+   \   0000007C   0xF051 0x018C      ORRS     R1,R1,#0x8C
+   \   00000080   0x6001             STR      R1,[R0, #+0]
+    365          
+    366              khciState->registerBase->CTL &= ~USB_CTL_TXSUSPENDTOKENBUSY_MASK;
+   \   00000082   0x68A0             LDR      R0,[R4, #+8]
+   \   00000084   0xF890 0x0094      LDRB     R0,[R0, #+148]
+   \   00000088   0xF010 0x00DF      ANDS     R0,R0,#0xDF
+   \   0000008C   0x68A1             LDR      R1,[R4, #+8]
+   \   0000008E   0xF881 0x0094      STRB     R0,[R1, #+148]
+    367          
+    368              return kStatus_USB_Success;
+   \   00000092   0x2000             MOVS     R0,#+0
+   \   00000094   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    369          }
+    370          
+    371          /*!
+    372           * @brief Un-stall a specified endpoint.
+    373           *
+    374           * The function is used to un-stall a specified endpoint.
+    375           * Current transfer of the endpoint will be canceled and the specified endpoint will be un-stalled.
+    376           *
+    377           * @param khciState       Pointer of the device KHCI state structure.
+    378           * @param ep               The endpoint address, Bit7, 0U - USB_OUT, 1U - USB_IN.
+    379           *
+    380           * @return A USB error code or kStatus_USB_Success.
+    381           */
+
+   \                                 In section .text, align 2, keep-with-next
+    382          static usb_status_t USB_DeviceKhciEndpointUnstall(usb_device_khci_state_struct_t *khciState, uint8_t ep)
+    383          {
+   \                     USB_DeviceKhciEndpointUnstall: (+1)
+   \   00000000   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+    384              uint32_t control;
+    385              uint8_t endpoint = ep & USB_ENDPOINT_NUMBER_MASK;
+   \   00000008   0xF015 0x070F      ANDS     R7,R5,#0xF
+    386              uint8_t direction =
+    387                  (ep & USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_MASK) >> USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_SHIFT;
+   \   0000000C   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000000E   0xEA5F 0x18D5      LSRS     R8,R5,#+7
+    388              uint8_t index = ((uint8_t)((uint32_t)endpoint << 1U)) | (uint8_t)direction;
+   \   00000012   0xEA58 0x0947      ORRS     R9,R8,R7, LSL #+1
+    389          
+    390              /* Clear the endpoint stall state */
+    391              khciState->endpointState[index].stateUnion.stateBitField.stalled = 0U;
+   \   00000016   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   0000001A   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   0000001E   0x4420             ADD      R0,R4,R0
+   \   00000020   0x6AC0             LDR      R0,[R0, #+44]
+   \   00000022   0xF430 0x6080      BICS     R0,R0,#0x400
+   \   00000026   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   0000002A   0xEA5F 0x1109      LSLS     R1,R9,#+4
+   \   0000002E   0x4421             ADD      R1,R4,R1
+   \   00000030   0x62C8             STR      R0,[R1, #+44]
+    392              /* Reset the endpoint data toggle to DATA0 */
+    393              khciState->endpointState[index].stateUnion.stateBitField.data0 = 0U;
+   \   00000032   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   00000036   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   0000003A   0x4420             ADD      R0,R4,R0
+   \   0000003C   0x6AC0             LDR      R0,[R0, #+44]
+   \   0000003E   0xF430 0x6000      BICS     R0,R0,#0x800
+   \   00000042   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   00000046   0xEA5F 0x1109      LSLS     R1,R9,#+4
+   \   0000004A   0x4421             ADD      R1,R4,R1
+   \   0000004C   0x62C8             STR      R0,[R1, #+44]
+    394          
+    395              /* Clear stall state in BDT */
+    396              for (uint8_t i = 0U; i < 2U; i++)
+   \   0000004E   0x2000             MOVS     R0,#+0
+   \                     ??USB_DeviceKhciEndpointUnstall_0: (+1)
+   \   00000050   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000052   0x2802             CMP      R0,#+2
+   \   00000054   0xD23A             BCS.N    ??USB_DeviceKhciEndpointUnstall_1
+    397              {
+    398                  control = USB_KHCI_BDT_GET_CONTROL((uint32_t)khciState->bdt, endpoint, direction, i);
+   \   00000056   0x6861             LDR      R1,[R4, #+4]
+   \   00000058   0x0A49             LSRS     R1,R1,#+9
+   \   0000005A   0x0249             LSLS     R1,R1,#+9
+   \   0000005C   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   0000005E   0x017A             LSLS     R2,R7,#+5
+   \   00000060   0xF412 0x72F0      ANDS     R2,R2,#0x1E0
+   \   00000064   0x4311             ORRS     R1,R2,R1
+   \   00000066   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   0000006A   0xEA5F 0x1208      LSLS     R2,R8,#+4
+   \   0000006E   0xF012 0x0210      ANDS     R2,R2,#0x10
+   \   00000072   0x4311             ORRS     R1,R2,R1
+   \   00000074   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000076   0x00C2             LSLS     R2,R0,#+3
+   \   00000078   0xF012 0x0208      ANDS     R2,R2,#0x8
+   \   0000007C   0x4311             ORRS     R1,R2,R1
+   \   0000007E   0x6809             LDR      R1,[R1, #+0]
+   \   00000080   0x000E             MOVS     R6,R1
+    399                  if (control & USB_KHCI_BDT_STALL)
+   \   00000082   0x0771             LSLS     R1,R6,#+29
+   \   00000084   0xD520             BPL.N    ??USB_DeviceKhciEndpointUnstall_2
+    400                  {
+    401                      USB_KHCI_BDT_SET_CONTROL(
+    402                          (uint32_t)khciState->bdt, endpoint, direction, i,
+    403                          USB_LONG_TO_LITTLE_ENDIAN(
+    404                              (uint32_t)(USB_KHCI_BDT_BC(khciState->endpointState[index].stateUnion.stateBitField.maxPacketSize) |
+    405                                         USB_KHCI_BDT_DTS | USB_KHCI_BDT_DATA01(0U))));
+   \   00000086   0x6861             LDR      R1,[R4, #+4]
+   \   00000088   0x0A49             LSRS     R1,R1,#+9
+   \   0000008A   0x0249             LSLS     R1,R1,#+9
+   \   0000008C   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   0000008E   0x017A             LSLS     R2,R7,#+5
+   \   00000090   0xF412 0x72F0      ANDS     R2,R2,#0x1E0
+   \   00000094   0x4311             ORRS     R1,R2,R1
+   \   00000096   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   0000009A   0xEA5F 0x1208      LSLS     R2,R8,#+4
+   \   0000009E   0xF012 0x0210      ANDS     R2,R2,#0x10
+   \   000000A2   0x4311             ORRS     R1,R2,R1
+   \   000000A4   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   000000A6   0x00C2             LSLS     R2,R0,#+3
+   \   000000A8   0xF012 0x0208      ANDS     R2,R2,#0x8
+   \   000000AC   0x4311             ORRS     R1,R2,R1
+   \   000000AE   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   000000B2   0xEA5F 0x1209      LSLS     R2,R9,#+4
+   \   000000B6   0x4422             ADD      R2,R4,R2
+   \   000000B8   0x6AD2             LDR      R2,[R2, #+44]
+   \   000000BA   0x.... 0x....      LDR.W    R3,??DataTable3  ;; 0x3ff0000
+   \   000000BE   0xEA13 0x4202      ANDS     R2,R3,R2, LSL #+16
+   \   000000C2   0xF052 0x0208      ORRS     R2,R2,#0x8
+   \   000000C6   0x600A             STR      R2,[R1, #+0]
+    406                  }
+    407              }
+   \                     ??USB_DeviceKhciEndpointUnstall_2: (+1)
+   \   000000C8   0x1C40             ADDS     R0,R0,#+1
+   \   000000CA   0xE7C1             B.N      ??USB_DeviceKhciEndpointUnstall_0
+    408          
+    409              /* Clear stall state in endpoint control register */
+    410              khciState->registerBase->ENDPOINT[endpoint].ENDPT &= ~USB_ENDPT_EPSTALL_MASK;
+   \                     ??USB_DeviceKhciEndpointUnstall_1: (+1)
+   \   000000CC   0x68A0             LDR      R0,[R4, #+8]
+   \   000000CE   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   000000D0   0xEB00 0x0087      ADD      R0,R0,R7, LSL #+2
+   \   000000D4   0x68A1             LDR      R1,[R4, #+8]
+   \   000000D6   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   000000D8   0xEB01 0x0187      ADD      R1,R1,R7, LSL #+2
+   \   000000DC   0xF891 0x10C0      LDRB     R1,[R1, #+192]
+   \   000000E0   0xF011 0x01FD      ANDS     R1,R1,#0xFD
+   \   000000E4   0xF880 0x10C0      STRB     R1,[R0, #+192]
+    411          
+    412              /* Prime a transfer to receive next setup packet when the endpoint is a control out endpoint. */
+    413              if ((USB_CONTROL_ENDPOINT == endpoint) && (USB_OUT == direction))
+   \   000000E8   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   000000EA   0x2F00             CMP      R7,#+0
+   \   000000EC   0xD107             BNE.N    ??USB_DeviceKhciEndpointUnstall_3
+   \   000000EE   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   000000F2   0xF1B8 0x0F00      CMP      R8,#+0
+   \   000000F6   0xD102             BNE.N    ??USB_DeviceKhciEndpointUnstall_3
+    414              {
+    415                  USB_DeviceKhciPrimeNextSetup(khciState);
+   \   000000F8   0x0020             MOVS     R0,R4
+   \   000000FA   0x.... 0x....      BL       USB_DeviceKhciPrimeNextSetup
+    416              }
+    417          
+    418              khciState->registerBase->CTL &= ~USB_CTL_TXSUSPENDTOKENBUSY_MASK;
+   \                     ??USB_DeviceKhciEndpointUnstall_3: (+1)
+   \   000000FE   0x68A0             LDR      R0,[R4, #+8]
+   \   00000100   0xF890 0x0094      LDRB     R0,[R0, #+148]
+   \   00000104   0xF010 0x00DF      ANDS     R0,R0,#0xDF
+   \   00000108   0x68A1             LDR      R1,[R4, #+8]
+   \   0000010A   0xF881 0x0094      STRB     R0,[R1, #+148]
+    419          
+    420              return kStatus_USB_Success;
+   \   0000010E   0x2000             MOVS     R0,#+0
+   \   00000110   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}    ;; return
+    421          }
+    422          
+    423          /*!
+    424           * @brief Handle the token done interrupt.
+    425           *
+    426           * The function is used to handle the token done interrupt.
+    427           *
+    428           * @param khciState       Pointer of the device KHCI state structure.
+    429           *
+    430           */
+
+   \                                 In section .text, align 2, keep-with-next
+    431          static void USB_DeviceKhciInterruptTokenDone(usb_device_khci_state_struct_t *khciState)
+    432          {
+   \                     USB_DeviceKhciInterruptTokenDone: (+1)
+   \   00000000   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \   00000004   0xB085             SUB      SP,SP,#+20
+   \   00000006   0x0004             MOVS     R4,R0
+    433              uint32_t control;
+    434              uint32_t length;
+    435              uint32_t remainingLength;
+    436              usb_device_callback_message_struct_t message;
+    437              uint8_t endpoint;
+    438              uint8_t direction;
+    439              uint8_t bdtOdd;
+    440              uint8_t isSetup;
+    441              uint8_t index;
+    442              uint8_t stateRegister = khciState->registerBase->STAT;
+   \   00000008   0x68A0             LDR      R0,[R4, #+8]
+   \   0000000A   0xF890 0x9090      LDRB     R9,[R0, #+144]
+    443          
+    444              /* Get the endpoint number to identify which one triggers the token done interrupt. */
+    445              endpoint = (stateRegister & USB_STAT_ENDP_MASK) >> USB_STAT_ENDP_SHIFT;
+   \   0000000E   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   00000012   0xEA5F 0x1019      LSRS     R0,R9,#+4
+   \   00000016   0x0007             MOVS     R7,R0
+    446          
+    447              /* Get the direction of the endpoint number. */
+    448              direction = (stateRegister & USB_STAT_TX_MASK) >> USB_STAT_TX_SHIFT;
+   \   00000018   0xF3C9 0x00C0      UBFX     R0,R9,#+3,#+1
+   \   0000001C   0xF88D 0x0000      STRB     R0,[SP, #+0]
+    449          
+    450              /* Get the finished BDT ODD. */
+    451              bdtOdd = (stateRegister & USB_STAT_ODD_MASK) >> USB_STAT_ODD_SHIFT;
+   \   00000020   0xF3C9 0x0080      UBFX     R0,R9,#+2,#+1
+   \   00000024   0xF88D 0x0001      STRB     R0,[SP, #+1]
+    452          
+    453              /* Clear token done interrupt flag. */
+    454              khciState->registerBase->ISTAT = kUSB_KhciInterruptTokenDone;
+   \   00000028   0x2008             MOVS     R0,#+8
+   \   0000002A   0x68A1             LDR      R1,[R4, #+8]
+   \   0000002C   0xF881 0x0080      STRB     R0,[R1, #+128]
+    455          
+    456              /* Get the Control field of the BDT element according to the endpoint number, the direction and finished BDT ODD. */
+    457              control = USB_KHCI_BDT_GET_CONTROL((uint32_t)khciState->bdt, endpoint, direction, bdtOdd);
+   \   00000030   0x6860             LDR      R0,[R4, #+4]
+   \   00000032   0x0A40             LSRS     R0,R0,#+9
+   \   00000034   0x0240             LSLS     R0,R0,#+9
+   \   00000036   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   00000038   0x0179             LSLS     R1,R7,#+5
+   \   0000003A   0xF411 0x71F0      ANDS     R1,R1,#0x1E0
+   \   0000003E   0x4308             ORRS     R0,R1,R0
+   \   00000040   0xF89D 0x1000      LDRB     R1,[SP, #+0]
+   \   00000044   0x0109             LSLS     R1,R1,#+4
+   \   00000046   0xF011 0x0110      ANDS     R1,R1,#0x10
+   \   0000004A   0x4308             ORRS     R0,R1,R0
+   \   0000004C   0xF89D 0x1001      LDRB     R1,[SP, #+1]
+   \   00000050   0x00C9             LSLS     R1,R1,#+3
+   \   00000052   0xF011 0x0108      ANDS     R1,R1,#0x8
+   \   00000056   0x4308             ORRS     R0,R1,R0
+   \   00000058   0x6800             LDR      R0,[R0, #+0]
+   \   0000005A   0x9001             STR      R0,[SP, #+4]
+    458          
+    459              /* Get the transferred length. */
+    460              length = ((USB_LONG_FROM_LITTLE_ENDIAN(control)) >> 16U) & 0x3FFU;
+   \   0000005C   0x9801             LDR      R0,[SP, #+4]
+   \   0000005E   0xF3C0 0x4009      UBFX     R0,R0,#+16,#+10
+   \   00000062   0x0005             MOVS     R5,R0
+    461          
+    462              /* Get the transferred length. */
+    463              isSetup = (USB_KHCI_BDT_DEVICE_SETUP_TOKEN == ((uint8_t)(((USB_LONG_FROM_LITTLE_ENDIAN(control)) >> 2U) & 0x0FU))) ?
+    464                            1U :
+    465                            0U;
+   \   00000064   0x9801             LDR      R0,[SP, #+4]
+   \   00000066   0xF3C0 0x0083      UBFX     R0,R0,#+2,#+4
+   \   0000006A   0x280D             CMP      R0,#+13
+   \   0000006C   0xD102             BNE.N    ??USB_DeviceKhciInterruptTokenDone_0
+   \   0000006E   0xF05F 0x0A01      MOVS     R10,#+1
+   \   00000072   0xE001             B.N      ??USB_DeviceKhciInterruptTokenDone_1
+   \                     ??USB_DeviceKhciInterruptTokenDone_0: (+1)
+   \   00000074   0xF05F 0x0A00      MOVS     R10,#+0
+    466          
+    467              index = ((uint8_t)((uint32_t)endpoint << 1U)) | (uint8_t)direction;
+   \                     ??USB_DeviceKhciInterruptTokenDone_1: (+1)
+   \   00000078   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \   0000007C   0xEA50 0x0047      ORRS     R0,R0,R7, LSL #+1
+   \   00000080   0x4680             MOV      R8,R0
+    468          
+    469              if (0U == khciState->endpointState[index].stateUnion.stateBitField.transferring)
+   \   00000082   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   00000086   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   0000008A   0x4420             ADD      R0,R4,R0
+   \   0000008C   0x6AC0             LDR      R0,[R0, #+44]
+   \   0000008E   0xF3C0 0x3080      UBFX     R0,R0,#+14,#+1
+   \   00000092   0x2800             CMP      R0,#+0
+   \   00000094   0xF000 0x8183      BEQ.W    ??USB_DeviceKhciInterruptTokenDone_2
+    470              {
+    471                  return;
+    472              }
+    473          
+    474              if (isSetup)
+   \                     ??USB_DeviceKhciInterruptTokenDone_3: (+1)
+   \   00000098   0xFA5F 0xFA8A      UXTB     R10,R10          ;; ZeroExt  R10,R10,#+24,#+24
+   \   0000009C   0xF1BA 0x0F00      CMP      R10,#+0
+   \   000000A0   0xD003             BEQ.N    ??USB_DeviceKhciInterruptTokenDone_4
+    475              {
+    476                  khciState->setupBufferIndex = bdtOdd;
+   \   000000A2   0xF89D 0x0001      LDRB     R0,[SP, #+1]
+   \   000000A6   0xF884 0x0123      STRB     R0,[R4, #+291]
+    477              }
+    478          
+    479              /* USB_IN, Send completed */
+    480              if (direction == USB_IN)
+   \                     ??USB_DeviceKhciInterruptTokenDone_4: (+1)
+   \   000000AA   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \   000000AE   0x2801             CMP      R0,#+1
+   \   000000B0   0xF040 0x8095      BNE.W    ??USB_DeviceKhciInterruptTokenDone_5
+    481              {
+    482                  /* The transferred length */
+    483                  khciState->endpointState[index].transferDone += length;
+   \   000000B4   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   000000B8   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   000000BC   0x4420             ADD      R0,R4,R0
+   \   000000BE   0x6A80             LDR      R0,[R0, #+40]
+   \   000000C0   0x1828             ADDS     R0,R5,R0
+   \   000000C2   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   000000C6   0xEA5F 0x1108      LSLS     R1,R8,#+4
+   \   000000CA   0x4421             ADD      R1,R4,R1
+   \   000000CC   0x6288             STR      R0,[R1, #+40]
+    484          
+    485                  /* Remaining length */
+    486                  remainingLength = khciState->endpointState[index].transferLength - khciState->endpointState[index].transferDone;
+   \   000000CE   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   000000D2   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   000000D6   0x4420             ADD      R0,R4,R0
+   \   000000D8   0x6A40             LDR      R0,[R0, #+36]
+   \   000000DA   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   000000DE   0xEA5F 0x1108      LSLS     R1,R8,#+4
+   \   000000E2   0x4421             ADD      R1,R4,R1
+   \   000000E4   0x6A89             LDR      R1,[R1, #+40]
+   \   000000E6   0x1A40             SUBS     R0,R0,R1
+   \   000000E8   0x0006             MOVS     R6,R0
+    487          
+    488                  /* Change the data toggle flag */
+    489                  khciState->endpointState[index].stateUnion.stateBitField.data0 ^= 1U;
+   \   000000EA   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   000000EE   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   000000F2   0x4420             ADD      R0,R4,R0
+   \   000000F4   0x6AC0             LDR      R0,[R0, #+44]
+   \   000000F6   0xF490 0x6000      EORS     R0,R0,#0x800
+   \   000000FA   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   000000FE   0xEA5F 0x1108      LSLS     R1,R8,#+4
+   \   00000102   0x4421             ADD      R1,R4,R1
+   \   00000104   0x62C8             STR      R0,[R1, #+44]
+    490                  /* Change the BDT odd toggle flag */
+    491                  khciState->endpointState[index].stateUnion.stateBitField.bdtOdd ^= 1U;
+   \   00000106   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   0000010A   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   0000010E   0x4420             ADD      R0,R4,R0
+   \   00000110   0x6AC0             LDR      R0,[R0, #+44]
+   \   00000112   0xF490 0x5080      EORS     R0,R0,#0x1000
+   \   00000116   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   0000011A   0xEA5F 0x1108      LSLS     R1,R8,#+4
+   \   0000011E   0x4421             ADD      R1,R4,R1
+   \   00000120   0x62C8             STR      R0,[R1, #+44]
+    492          
+    493                  /* Whether the transfer is completed or not. */
+    494                  /*
+    495                   * The transfer is completed when one of the following conditions meet:
+    496                   * 1. The remaining length is zero.
+    497                   * 2. The length of current transcation is less than the max packet size of the current pipe.
+    498                   */
+    499                  if ((0U == remainingLength) ||
+    500                      (khciState->endpointState[index].stateUnion.stateBitField.maxPacketSize > length))
+   \   00000122   0x2E00             CMP      R6,#+0
+   \   00000124   0xD009             BEQ.N    ??USB_DeviceKhciInterruptTokenDone_6
+   \   00000126   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   0000012A   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   0000012E   0x4420             ADD      R0,R4,R0
+   \   00000130   0x6AC0             LDR      R0,[R0, #+44]
+   \   00000132   0x0580             LSLS     R0,R0,#+22       ;; ZeroExtS R0,R0,#+22,#+22
+   \   00000134   0x0D80             LSRS     R0,R0,#+22
+   \   00000136   0x4285             CMP      R5,R0
+   \   00000138   0xD243             BCS.N    ??USB_DeviceKhciInterruptTokenDone_7
+    501                  {
+    502                      message.length = khciState->endpointState[index].transferDone;
+   \                     ??USB_DeviceKhciInterruptTokenDone_6: (+1)
+   \   0000013A   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   0000013E   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   00000142   0x4420             ADD      R0,R4,R0
+   \   00000144   0x6A80             LDR      R0,[R0, #+40]
+   \   00000146   0x9003             STR      R0,[SP, #+12]
+    503                      message.buffer = khciState->endpointState[index].transferBuffer;
+   \   00000148   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   0000014C   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   00000150   0x4420             ADD      R0,R4,R0
+   \   00000152   0x6A00             LDR      R0,[R0, #+32]
+   \   00000154   0x9002             STR      R0,[SP, #+8]
+    504                      khciState->endpointState[index].stateUnion.stateBitField.transferring = 0U;
+   \   00000156   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   0000015A   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   0000015E   0x4420             ADD      R0,R4,R0
+   \   00000160   0x6AC0             LDR      R0,[R0, #+44]
+   \   00000162   0xF430 0x4080      BICS     R0,R0,#0x4000
+   \   00000166   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   0000016A   0xEA5F 0x1108      LSLS     R1,R8,#+4
+   \   0000016E   0x4421             ADD      R1,R4,R1
+   \   00000170   0x62C8             STR      R0,[R1, #+44]
+    505          
+    506                      /*
+    507                       * Whether need to send ZLT when the pipe is control in pipe and the transferred length of current
+    508                       * transaction equals to max packet size.
+    509                       */
+    510                      if ((length == khciState->endpointState[index].stateUnion.stateBitField.maxPacketSize) &&
+    511                          (USB_CONTROL_ENDPOINT == endpoint))
+   \   00000172   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   00000176   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   0000017A   0x4420             ADD      R0,R4,R0
+   \   0000017C   0x6AC0             LDR      R0,[R0, #+44]
+   \   0000017E   0x0580             LSLS     R0,R0,#+22       ;; ZeroExtS R0,R0,#+22,#+22
+   \   00000180   0x0D80             LSRS     R0,R0,#+22
+   \   00000182   0x4285             CMP      R5,R0
+   \   00000184   0xF040 0x80F7      BNE.W    ??USB_DeviceKhciInterruptTokenDone_8
+   \   00000188   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   0000018A   0x2F00             CMP      R7,#+0
+   \   0000018C   0xF040 0x80F3      BNE.W    ??USB_DeviceKhciInterruptTokenDone_8
+    512                      {
+    513                          usb_setup_struct_t *setup_packet =
+    514                              (usb_setup_struct_t
+    515                                   *)(&khciState->setupPacketBuffer[(USB_SETUP_PACKET_SIZE * khciState->setupBufferIndex)]);
+   \   00000190   0xF894 0x0123      LDRB     R0,[R4, #+291]
+   \   00000194   0xEB04 0x00C0      ADD      R0,R4,R0, LSL #+3
+   \   00000198   0xF110 0x0B0C      ADDS     R11,R0,#+12
+    516                          /*
+    517                           * Send the ZLT and terminate the token done interrupt service when the tranferred length in data phase
+    518                           * is less than the host request.
+    519                           */
+    520                          if (USB_SHORT_FROM_LITTLE_ENDIAN(setup_packet->wLength) >
+    521                              khciState->endpointState[index].transferLength)
+   \   0000019C   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   000001A0   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   000001A4   0x4420             ADD      R0,R4,R0
+   \   000001A6   0x6A40             LDR      R0,[R0, #+36]
+   \   000001A8   0xF8BB 0x1006      LDRH     R1,[R11, #+6]
+   \   000001AC   0x4288             CMP      R0,R1
+   \   000001AE   0xF080 0x80E2      BCS.W    ??USB_DeviceKhciInterruptTokenDone_8
+    522                          {
+    523                              (void)USB_DeviceSendRequest(khciState->deviceHandle, endpoint, (uint8_t *)NULL, 0U);
+   \   000001B2   0x2300             MOVS     R3,#+0
+   \   000001B4   0x2200             MOVS     R2,#+0
+   \   000001B6   0x0039             MOVS     R1,R7
+   \   000001B8   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   000001BA   0x6820             LDR      R0,[R4, #+0]
+   \   000001BC   0x.... 0x....      BL       USB_DeviceSendRequest
+    524                              return;
+   \   000001C0   0xE0ED             B.N      ??USB_DeviceKhciInterruptTokenDone_2
+    525                          }
+    526                      }
+    527                  }
+    528                  else
+    529                  {
+    530                      /* Send remaining data and terminate the token done interrupt service. */
+    531                      (void)USB_DeviceKhciSend(khciState, endpoint | (USB_IN << 0x07U),
+    532                                               khciState->endpointState[index].transferBuffer, remainingLength);
+   \                     ??USB_DeviceKhciInterruptTokenDone_7: (+1)
+   \   000001C2   0x0033             MOVS     R3,R6
+   \   000001C4   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   000001C8   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   000001CC   0x4420             ADD      R0,R4,R0
+   \   000001CE   0x6A02             LDR      R2,[R0, #+32]
+   \   000001D0   0xF057 0x0180      ORRS     R1,R7,#0x80
+   \   000001D4   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   000001D6   0x0020             MOVS     R0,R4
+   \   000001D8   0x.... 0x....      BL       USB_DeviceKhciSend
+    533                      return;
+   \   000001DC   0xE0DF             B.N      ??USB_DeviceKhciInterruptTokenDone_2
+    534                  }
+    535              }
+    536              else
+    537              {
+    538                  if ((USB_CONTROL_ENDPOINT == endpoint) && (0U == length))
+   \                     ??USB_DeviceKhciInterruptTokenDone_5: (+1)
+   \   000001DE   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   000001E0   0xEA55 0x0007      ORRS     R0,R5,R7
+   \   000001E4   0x2800             CMP      R0,#+0
+   \   000001E6   0xD104             BNE.N    ??USB_DeviceKhciInterruptTokenDone_9
+    539                  {
+    540                      message.length = 0U;
+   \   000001E8   0x2000             MOVS     R0,#+0
+   \   000001EA   0x9003             STR      R0,[SP, #+12]
+    541                      message.buffer = (uint8_t *)NULL;
+   \   000001EC   0x2000             MOVS     R0,#+0
+   \   000001EE   0x9002             STR      R0,[SP, #+8]
+   \   000001F0   0xE0C1             B.N      ??USB_DeviceKhciInterruptTokenDone_8
+    542                  }
+    543                  else
+    544                  {
+    545                      if (0U == khciState->endpointState[index].stateUnion.stateBitField.dmaAlign)
+   \                     ??USB_DeviceKhciInterruptTokenDone_9: (+1)
+   \   000001F2   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   000001F6   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   000001FA   0x4420             ADD      R0,R4,R0
+   \   000001FC   0x6AC0             LDR      R0,[R0, #+44]
+   \   000001FE   0xF3C0 0x3040      UBFX     R0,R0,#+13,#+1
+   \   00000202   0x2800             CMP      R0,#+0
+   \   00000204   0xD12B             BNE.N    ??USB_DeviceKhciInterruptTokenDone_10
+    546                      {
+    547                          uint8_t *buffer = (uint8_t *)USB_LONG_FROM_LITTLE_ENDIAN(
+    548                              USB_KHCI_BDT_GET_ADDRESS((uint32_t)khciState->bdt, endpoint, USB_OUT,
+    549                                                       khciState->endpointState[index].stateUnion.stateBitField.bdtOdd));
+   \   00000206   0x6860             LDR      R0,[R4, #+4]
+   \   00000208   0x0A40             LSRS     R0,R0,#+9
+   \   0000020A   0x0240             LSLS     R0,R0,#+9
+   \   0000020C   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   0000020E   0x0179             LSLS     R1,R7,#+5
+   \   00000210   0xF411 0x71F0      ANDS     R1,R1,#0x1E0
+   \   00000214   0x4308             ORRS     R0,R1,R0
+   \   00000216   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   0000021A   0xEA5F 0x1108      LSLS     R1,R8,#+4
+   \   0000021E   0x4421             ADD      R1,R4,R1
+   \   00000220   0x6AC9             LDR      R1,[R1, #+44]
+   \   00000222   0x0A49             LSRS     R1,R1,#+9
+   \   00000224   0xF011 0x0108      ANDS     R1,R1,#0x8
+   \   00000228   0x4308             ORRS     R0,R1,R0
+   \   0000022A   0x6840             LDR      R0,[R0, #+4]
+    550                          uint8_t *transferBuffer =
+    551                              khciState->endpointState[index].transferBuffer + khciState->endpointState[index].transferDone;
+   \   0000022C   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   00000230   0xEA5F 0x1108      LSLS     R1,R8,#+4
+   \   00000234   0x4421             ADD      R1,R4,R1
+   \   00000236   0x6A09             LDR      R1,[R1, #+32]
+   \   00000238   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   0000023C   0xEA5F 0x1208      LSLS     R2,R8,#+4
+   \   00000240   0x4422             ADD      R2,R4,R2
+   \   00000242   0x6A92             LDR      R2,[R2, #+40]
+   \   00000244   0x4411             ADD      R1,R1,R2
+    552                          if (buffer != transferBuffer)
+   \   00000246   0x4288             CMP      R0,R1
+   \   00000248   0xD006             BEQ.N    ??USB_DeviceKhciInterruptTokenDone_11
+    553                          {
+    554                              for (uint32_t i = 0U; i < length; i++)
+   \   0000024A   0x2200             MOVS     R2,#+0
+   \                     ??USB_DeviceKhciInterruptTokenDone_12: (+1)
+   \   0000024C   0x42AA             CMP      R2,R5
+   \   0000024E   0xD203             BCS.N    ??USB_DeviceKhciInterruptTokenDone_11
+    555                              {
+    556                                  transferBuffer[i] = buffer[i];
+   \   00000250   0x5C83             LDRB     R3,[R0, R2]
+   \   00000252   0x548B             STRB     R3,[R1, R2]
+    557                              }
+   \   00000254   0x1C52             ADDS     R2,R2,#+1
+   \   00000256   0xE7F9             B.N      ??USB_DeviceKhciInterruptTokenDone_12
+    558                          }
+    559                          khciState->isDmaAlignBufferInusing = 0U;
+   \                     ??USB_DeviceKhciInterruptTokenDone_11: (+1)
+   \   00000258   0x2200             MOVS     R2,#+0
+   \   0000025A   0xF884 0x2120      STRB     R2,[R4, #+288]
+    560                      }
+    561                      /* The transferred length */
+    562                      khciState->endpointState[index].transferDone += length;
+   \                     ??USB_DeviceKhciInterruptTokenDone_10: (+1)
+   \   0000025E   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   00000262   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   00000266   0x4420             ADD      R0,R4,R0
+   \   00000268   0x6A80             LDR      R0,[R0, #+40]
+   \   0000026A   0x1828             ADDS     R0,R5,R0
+   \   0000026C   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   00000270   0xEA5F 0x1108      LSLS     R1,R8,#+4
+   \   00000274   0x4421             ADD      R1,R4,R1
+   \   00000276   0x6288             STR      R0,[R1, #+40]
+    563                      /* Remaining length */
+    564                      remainingLength =
+    565                          khciState->endpointState[index].transferLength - khciState->endpointState[index].transferDone;
+   \   00000278   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   0000027C   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   00000280   0x4420             ADD      R0,R4,R0
+   \   00000282   0x6A40             LDR      R0,[R0, #+36]
+   \   00000284   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   00000288   0xEA5F 0x1108      LSLS     R1,R8,#+4
+   \   0000028C   0x4421             ADD      R1,R4,R1
+   \   0000028E   0x6A89             LDR      R1,[R1, #+40]
+   \   00000290   0x1A40             SUBS     R0,R0,R1
+   \   00000292   0x0006             MOVS     R6,R0
+    566          
+    567                      if ((USB_CONTROL_ENDPOINT == endpoint) && isSetup)
+   \   00000294   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   00000296   0x2F00             CMP      R7,#+0
+   \   00000298   0xD113             BNE.N    ??USB_DeviceKhciInterruptTokenDone_13
+   \   0000029A   0xFA5F 0xFA8A      UXTB     R10,R10          ;; ZeroExt  R10,R10,#+24,#+24
+   \   0000029E   0xF1BA 0x0F00      CMP      R10,#+0
+   \   000002A2   0xD00E             BEQ.N    ??USB_DeviceKhciInterruptTokenDone_13
+    568                      {
+    569                          USB_DeviceKhciCancel(khciState,
+    570                                               (endpoint | (USB_IN << USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_SHIFT)));
+   \   000002A4   0xF057 0x0180      ORRS     R1,R7,#0x80
+   \   000002A8   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   000002AA   0x0020             MOVS     R0,R4
+   \   000002AC   0x.... 0x....      BL       USB_DeviceKhciCancel
+    571                          khciState->endpointState[(USB_CONTROL_ENDPOINT << 1U) | USB_OUT].stateUnion.stateBitField.data0 = 1U;
+   \   000002B0   0x6AE0             LDR      R0,[R4, #+44]
+   \   000002B2   0xF450 0x6000      ORRS     R0,R0,#0x800
+   \   000002B6   0x62E0             STR      R0,[R4, #+44]
+    572                          khciState->endpointState[(USB_CONTROL_ENDPOINT << 1U) | USB_IN].stateUnion.stateBitField.data0 = 1U;
+   \   000002B8   0x6BE0             LDR      R0,[R4, #+60]
+   \   000002BA   0xF450 0x6000      ORRS     R0,R0,#0x800
+   \   000002BE   0x63E0             STR      R0,[R4, #+60]
+   \   000002C0   0xE00D             B.N      ??USB_DeviceKhciInterruptTokenDone_14
+    573                      }
+    574                      else
+    575                      {
+    576                          khciState->endpointState[index].stateUnion.stateBitField.data0 ^= 1U;
+   \                     ??USB_DeviceKhciInterruptTokenDone_13: (+1)
+   \   000002C2   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   000002C6   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   000002CA   0x4420             ADD      R0,R4,R0
+   \   000002CC   0x6AC0             LDR      R0,[R0, #+44]
+   \   000002CE   0xF490 0x6000      EORS     R0,R0,#0x800
+   \   000002D2   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   000002D6   0xEA5F 0x1108      LSLS     R1,R8,#+4
+   \   000002DA   0x4421             ADD      R1,R4,R1
+   \   000002DC   0x62C8             STR      R0,[R1, #+44]
+    577                      }
+    578                      khciState->endpointState[index].stateUnion.stateBitField.bdtOdd ^= 1U;
+   \                     ??USB_DeviceKhciInterruptTokenDone_14: (+1)
+   \   000002DE   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   000002E2   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   000002E6   0x4420             ADD      R0,R4,R0
+   \   000002E8   0x6AC0             LDR      R0,[R0, #+44]
+   \   000002EA   0xF490 0x5080      EORS     R0,R0,#0x1000
+   \   000002EE   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   000002F2   0xEA5F 0x1108      LSLS     R1,R8,#+4
+   \   000002F6   0x4421             ADD      R1,R4,R1
+   \   000002F8   0x62C8             STR      R0,[R1, #+44]
+    579                      if ((!khciState->endpointState[index].transferLength) || (!remainingLength) ||
+    580                          (khciState->endpointState[index].stateUnion.stateBitField.maxPacketSize > length))
+   \   000002FA   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   000002FE   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   00000302   0x4420             ADD      R0,R4,R0
+   \   00000304   0x6A40             LDR      R0,[R0, #+36]
+   \   00000306   0x2800             CMP      R0,#+0
+   \   00000308   0xD00B             BEQ.N    ??USB_DeviceKhciInterruptTokenDone_15
+   \   0000030A   0x2E00             CMP      R6,#+0
+   \   0000030C   0xD009             BEQ.N    ??USB_DeviceKhciInterruptTokenDone_15
+   \   0000030E   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   00000312   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   00000316   0x4420             ADD      R0,R4,R0
+   \   00000318   0x6AC0             LDR      R0,[R0, #+44]
+   \   0000031A   0x0580             LSLS     R0,R0,#+22       ;; ZeroExtS R0,R0,#+22,#+22
+   \   0000031C   0x0D80             LSRS     R0,R0,#+22
+   \   0000031E   0x4285             CMP      R5,R0
+   \   00000320   0xD21C             BCS.N    ??USB_DeviceKhciInterruptTokenDone_16
+    581                      {
+    582                          message.length = khciState->endpointState[index].transferDone;
+   \                     ??USB_DeviceKhciInterruptTokenDone_15: (+1)
+   \   00000322   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   00000326   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   0000032A   0x4420             ADD      R0,R4,R0
+   \   0000032C   0x6A80             LDR      R0,[R0, #+40]
+   \   0000032E   0x9003             STR      R0,[SP, #+12]
+    583                          message.buffer = khciState->endpointState[index].transferBuffer;
+   \   00000330   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   00000334   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   00000338   0x4420             ADD      R0,R4,R0
+   \   0000033A   0x6A00             LDR      R0,[R0, #+32]
+   \   0000033C   0x9002             STR      R0,[SP, #+8]
+    584                          khciState->endpointState[index].stateUnion.stateBitField.transferring = 0U;
+   \   0000033E   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   00000342   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   00000346   0x4420             ADD      R0,R4,R0
+   \   00000348   0x6AC0             LDR      R0,[R0, #+44]
+   \   0000034A   0xF430 0x4080      BICS     R0,R0,#0x4000
+   \   0000034E   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   00000352   0xEA5F 0x1108      LSLS     R1,R8,#+4
+   \   00000356   0x4421             ADD      R1,R4,R1
+   \   00000358   0x62C8             STR      R0,[R1, #+44]
+   \   0000035A   0xE00C             B.N      ??USB_DeviceKhciInterruptTokenDone_8
+    585                      }
+    586                      else
+    587                      {
+    588                          /* Receive remaining data and terminate the token done interrupt service. */
+    589                          USB_DeviceKhciRecv(khciState, (endpoint) | (USB_OUT << 0x07U),
+    590                                             khciState->endpointState[index].transferBuffer, remainingLength);
+   \                     ??USB_DeviceKhciInterruptTokenDone_16: (+1)
+   \   0000035C   0x0033             MOVS     R3,R6
+   \   0000035E   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   00000362   0xEA5F 0x1008      LSLS     R0,R8,#+4
+   \   00000366   0x4420             ADD      R0,R4,R0
+   \   00000368   0x6A02             LDR      R2,[R0, #+32]
+   \   0000036A   0x0039             MOVS     R1,R7
+   \   0000036C   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   0000036E   0x0020             MOVS     R0,R4
+   \   00000370   0x.... 0x....      BL       USB_DeviceKhciRecv
+    591                          return;
+   \   00000374   0xE013             B.N      ??USB_DeviceKhciInterruptTokenDone_2
+    592                      }
+    593                  }
+    594              }
+    595          
+    596              message.isSetup = isSetup;
+   \                     ??USB_DeviceKhciInterruptTokenDone_8: (+1)
+   \   00000376   0xF88D 0xA011      STRB     R10,[SP, #+17]
+    597              message.code = (endpoint) | (uint8_t)(((uint32_t)direction << 0x07U));
+   \   0000037A   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \   0000037E   0xEA57 0x10C0      ORRS     R0,R7,R0, LSL #+7
+   \   00000382   0xF88D 0x0010      STRB     R0,[SP, #+16]
+    598          
+    599              /* Notify the up layer the KHCI status changed. */
+    600              USB_DeviceNotificationTrigger(khciState->deviceHandle, &message);
+   \   00000386   0xA902             ADD      R1,SP,#+8
+   \   00000388   0x6820             LDR      R0,[R4, #+0]
+   \   0000038A   0x.... 0x....      BL       USB_DeviceNotificationTrigger
+    601          
+    602              khciState->registerBase->CTL &= ~USB_CTL_TXSUSPENDTOKENBUSY_MASK;
+   \   0000038E   0x68A0             LDR      R0,[R4, #+8]
+   \   00000390   0xF890 0x0094      LDRB     R0,[R0, #+148]
+   \   00000394   0xF010 0x00DF      ANDS     R0,R0,#0xDF
+   \   00000398   0x68A1             LDR      R1,[R4, #+8]
+   \   0000039A   0xF881 0x0094      STRB     R0,[R1, #+148]
+    603          }
+   \                     ??USB_DeviceKhciInterruptTokenDone_2: (+1)
+   \   0000039E   0xB005             ADD      SP,SP,#+20
+   \   000003A0   0xE8BD 0x8FF0      POP      {R4-R11,PC}      ;; return
+    604          
+    605          /*!
+    606           * @brief Handle the USB bus reset interrupt.
+    607           *
+    608           * The function is used to handle the USB bus reset interrupt.
+    609           *
+    610           * @param khciState       Pointer of the device KHCI state structure.
+    611           *
+    612           */
+
+   \                                 In section .text, align 2, keep-with-next
+    613          static void USB_DeviceKhciInterruptReset(usb_device_khci_state_struct_t *khciState)
+    614          {
+   \                     USB_DeviceKhciInterruptReset: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0xB084             SUB      SP,SP,#+16
+   \   00000004   0x0004             MOVS     R4,R0
+    615              usb_device_callback_message_struct_t message;
+    616          
+    617              /* Set KHCI reset flag */
+    618              khciState->isResetting = 1U;
+   \   00000006   0x2001             MOVS     R0,#+1
+   \   00000008   0xF884 0x0121      STRB     R0,[R4, #+289]
+    619          
+    620              /* Clear the reset interrupt */
+    621              khciState->registerBase->ISTAT = (kUSB_KhciInterruptReset);
+   \   0000000C   0x2001             MOVS     R0,#+1
+   \   0000000E   0x68A1             LDR      R1,[R4, #+8]
+   \   00000010   0xF881 0x0080      STRB     R0,[R1, #+128]
+    622          
+    623              message.buffer = (uint8_t *)NULL;
+   \   00000014   0x2000             MOVS     R0,#+0
+   \   00000016   0x9000             STR      R0,[SP, #+0]
+    624              message.code = kUSB_DeviceNotifyBusReset;
+   \   00000018   0x2010             MOVS     R0,#+16
+   \   0000001A   0xF88D 0x0008      STRB     R0,[SP, #+8]
+    625              message.length = 0U;
+   \   0000001E   0x2000             MOVS     R0,#+0
+   \   00000020   0x9001             STR      R0,[SP, #+4]
+    626              message.isSetup = 0U;
+   \   00000022   0x2000             MOVS     R0,#+0
+   \   00000024   0xF88D 0x0009      STRB     R0,[SP, #+9]
+    627              /* Notify up layer the USB bus reset signal detected. */
+    628              USB_DeviceNotificationTrigger(khciState->deviceHandle, &message);
+   \   00000028   0x4669             MOV      R1,SP
+   \   0000002A   0x6820             LDR      R0,[R4, #+0]
+   \   0000002C   0x.... 0x....      BL       USB_DeviceNotificationTrigger
+    629          }
+   \   00000030   0xBD1F             POP      {R0-R4,PC}       ;; return
+    630          
+    631          /* The USB suspend and resume signals need to be detected and handled when the low power or remote wakeup function
+    632           * enabled. */
+    633          #if ((defined(USB_DEVICE_CONFIG_LOW_POWER_MODE) && (USB_DEVICE_CONFIG_LOW_POWER_MODE > 0U)) || \
+    634               (defined(USB_DEVICE_CONFIG_REMOTE_WAKEUP) && (USB_DEVICE_CONFIG_REMOTE_WAKEUP > 0U)))
+    635          
+    636          /*!
+    637           * @brief Handle the suspend interrupt.
+    638           *
+    639           * The function is used to handle the suspend interrupt when the suspend signal detected.
+    640           *
+    641           * @param khciState       Pointer of the device KHCI state structure.
+    642           *
+    643           */
+    644          static void USB_DeviceKhciInterruptSleep(usb_device_khci_state_struct_t *khciState)
+    645          {
+    646              usb_device_callback_message_struct_t message;
+    647          
+    648              /* Enable the resume interrupt */
+    649              khciState->registerBase->INTEN |= kUSB_KhciInterruptResume;
+    650              /* Disable the suspend interrupt */
+    651              khciState->registerBase->INTEN &= ~kUSB_KhciInterruptSleep;
+    652          
+    653              /* Clear the suspend interrupt */
+    654              khciState->registerBase->ISTAT = (kUSB_KhciInterruptSleep);
+    655              /* Clear the resume interrupt */
+    656              khciState->registerBase->ISTAT = (kUSB_KhciInterruptResume);
+    657          
+    658              message.buffer = (uint8_t *)NULL;
+    659              message.code = kUSB_DeviceNotifySuspend;
+    660              message.length = 0U;
+    661              message.isSetup = 0U;
+    662          
+    663              /* Notify up layer the USB suspend signal detected. */
+    664              USB_DeviceNotificationTrigger(khciState->deviceHandle, &message);
+    665          }
+    666          
+    667          /*!
+    668           * @brief Handle the resume interrupt.
+    669           *
+    670           * The function is used to handle the resume interrupt when the resume signal detected.
+    671           *
+    672           * @param khciState       Pointer of the device KHCI state structure.
+    673           *
+    674           */
+    675          static void USB_DeviceKhciInterruptResume(usb_device_khci_state_struct_t *khciState)
+    676          {
+    677              usb_device_callback_message_struct_t message;
+    678          
+    679              /* Enable the suspend interrupt */
+    680              khciState->registerBase->INTEN |= kUSB_KhciInterruptSleep;
+    681              /* Disable the resume interrupt */
+    682              khciState->registerBase->INTEN &= ~kUSB_KhciInterruptResume;
+    683          
+    684              /* Clear the resume interrupt */
+    685              khciState->registerBase->ISTAT = (kUSB_KhciInterruptResume);
+    686              /* Clear the suspend interrupt */
+    687              khciState->registerBase->ISTAT = (kUSB_KhciInterruptSleep);
+    688          
+    689              message.buffer = (uint8_t *)NULL;
+    690              message.code = kUSB_DeviceNotifyResume;
+    691              message.length = 0U;
+    692              message.isSetup = 0U;
+    693          
+    694              /* Notify up layer the USB resume signal detected. */
+    695              USB_DeviceNotificationTrigger(khciState->deviceHandle, &message);
+    696          }
+    697          #endif /* USB_DEVICE_CONFIG_LOW_POWER_MODE || USB_DEVICE_CONFIG_REMOTE_WAKEUP */
+    698          
+    699          #if (defined(USB_DEVICE_CONFIG_DETACH_ENABLE) && (USB_DEVICE_CONFIG_DETACH_ENABLE > 0U)) && \
+    700              (defined(FSL_FEATURE_USB_KHCI_VBUS_DETECT_ENABLED) && (FSL_FEATURE_USB_KHCI_VBUS_DETECT_ENABLED > 0U))
+    701          /*!
+    702           * @brief Handle the VBUS rising interrupt.
+    703           *
+    704           * The function is used to handle the VBUS rising interrupt when the VBUS rising signal detected.
+    705           *
+    706           * @param khciState       Pointer of the device KHCI state structure.
+    707           *
+    708           */
+    709          static void USB_DeviceKhciInterruptVbusRising(usb_device_khci_state_struct_t *khciState)
+    710          {
+    711              usb_device_callback_message_struct_t message;
+    712          
+    713              /* Disable the VBUS rising interrupt */
+    714              khciState->registerBase->MISCCTRL &= ~USB_MISCCTRL_VREDG_EN_MASK;
+    715              /* Enable the VBUS rising interrupt */
+    716              khciState->registerBase->MISCCTRL |= USB_MISCCTRL_VREDG_EN_MASK;
+    717          
+    718              message.buffer = (uint8_t *)NULL;
+    719              message.code = kUSB_DeviceNotifyAttach;
+    720              message.length = 0U;
+    721              message.isSetup = 0U;
+    722          
+    723              /* Notify up layer the USB VBUS rising signal detected. */
+    724              USB_DeviceNotificationTrigger(khciState->deviceHandle, &message);
+    725          }
+    726          
+    727          /*!
+    728           * @brief Handle the VBUS falling interrupt.
+    729           *
+    730           * The function is used to handle the VBUS falling interrupt when the VBUS falling signal detected.
+    731           *
+    732           * @param khciState       Pointer of the device KHCI state structure.
+    733           *
+    734           */
+    735          static void USB_DeviceKhciInterruptVbusFalling(usb_device_khci_state_struct_t *khciState)
+    736          {
+    737              usb_device_callback_message_struct_t message;
+    738          
+    739              /* Disable the VBUS rising interrupt */
+    740              khciState->registerBase->MISCCTRL &= ~USB_MISCCTRL_VFEDG_EN_MASK;
+    741              /* Enable the VBUS rising interrupt */
+    742              khciState->registerBase->MISCCTRL |= USB_MISCCTRL_VFEDG_EN_MASK;
+    743          
+    744              message.buffer = (uint8_t *)NULL;
+    745              message.code = kUSB_DeviceNotifyDetach;
+    746              message.length = 0U;
+    747              message.isSetup = 0U;
+    748          
+    749              /* Notify up layer the USB VBUS falling signal detected. */
+    750              USB_DeviceNotificationTrigger(khciState->deviceHandle, &message);
+    751          }
+    752          #endif /* USB_DEVICE_CONFIG_DETACH_ENABLE || FSL_FEATURE_USB_KHCI_VBUS_DETECT_ENABLED */
+    753          
+    754          #if 0U
+    755          /*!
+    756           * @brief Handle the sof interrupt.
+    757           *
+    758           * The function is used to handle the sof interrupt.
+    759           *
+    760           * @param khciState       Pointer of the device KHCI state structure.
+    761           *
+    762           */
+    763          void USB_DeviceKhciInterruptSof(usb_device_khci_state_struct_t *khciState)
+    764          {
+    765              khciState->registerBase->ISTAT = (kUSB_KhciInterruptSofToken);
+    766          
+    767              khciState->registerBase->ISTAT = (kUSB_KhciInterruptResume);
+    768          }
+    769          #endif
+    770          
+    771          /*!
+    772           * @brief Handle endpoint stalled interrupt.
+    773           *
+    774           * The function is used to handle  endpoint stalled interrupt.
+    775           *
+    776           * @param khciState       Pointer of the device KHCI state structure.
+    777           *
+    778           */
+
+   \                                 In section .text, align 2, keep-with-next
+    779          static void USB_DeviceKhciInterruptStall(usb_device_khci_state_struct_t *khciState)
+    780          {
+   \                     USB_DeviceKhciInterruptStall: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    781              /* Clear the endpoint stalled interrupt flag */
+    782              khciState->registerBase->ISTAT = (kUSB_KhciInterruptStall);
+   \   00000004   0x2080             MOVS     R0,#+128
+   \   00000006   0x68A1             LDR      R1,[R4, #+8]
+   \   00000008   0xF881 0x0080      STRB     R0,[R1, #+128]
+    783          
+    784              /* Un-stall the control in and out pipe when the control in or out pipe stalled. */
+    785              if ((khciState->endpointState[(USB_CONTROL_ENDPOINT << 1U) | USB_IN].stateUnion.stateBitField.stalled) ||
+    786                  (khciState->endpointState[(USB_CONTROL_ENDPOINT << 1U) | USB_OUT].stateUnion.stateBitField.stalled))
+   \   0000000C   0x6BE0             LDR      R0,[R4, #+60]
+   \   0000000E   0xF3C0 0x2080      UBFX     R0,R0,#+10,#+1
+   \   00000012   0x2800             CMP      R0,#+0
+   \   00000014   0xD104             BNE.N    ??USB_DeviceKhciInterruptStall_0
+   \   00000016   0x6AE0             LDR      R0,[R4, #+44]
+   \   00000018   0xF3C0 0x2080      UBFX     R0,R0,#+10,#+1
+   \   0000001C   0x2800             CMP      R0,#+0
+   \   0000001E   0xD007             BEQ.N    ??USB_DeviceKhciInterruptStall_1
+    787              {
+    788                  USB_DeviceKhciEndpointUnstall(
+    789                      khciState, (USB_CONTROL_ENDPOINT | (USB_IN << USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_SHIFT)));
+   \                     ??USB_DeviceKhciInterruptStall_0: (+1)
+   \   00000020   0x2180             MOVS     R1,#+128
+   \   00000022   0x0020             MOVS     R0,R4
+   \   00000024   0x.... 0x....      BL       USB_DeviceKhciEndpointUnstall
+    790                  USB_DeviceKhciEndpointUnstall(
+    791                      khciState, (USB_CONTROL_ENDPOINT | (USB_OUT << USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_SHIFT)));
+   \   00000028   0x2100             MOVS     R1,#+0
+   \   0000002A   0x0020             MOVS     R0,R4
+   \   0000002C   0x.... 0x....      BL       USB_DeviceKhciEndpointUnstall
+    792              }
+    793          }
+   \                     ??USB_DeviceKhciInterruptStall_1: (+1)
+   \   00000030   0xBD10             POP      {R4,PC}          ;; return
+    794          
+    795          #if defined(USB_DEVICE_CONFIG_KHCI_ERROR_HANDLING) && (USB_DEVICE_CONFIG_KHCI_ERROR_HANDLING > 0U)
+    796          static void USB_DeviceKhciInterruptError(usb_device_khci_state_struct_t *khciState)
+    797          {
+    798              usb_device_callback_message_struct_t message;
+    799          
+    800              khciState->registerBase->ISTAT = (kUSB_KhciInterruptError);
+    801          
+    802              message.buffer = (uint8_t *)NULL;
+    803              message.code = kUSB_DeviceNotifyError;
+    804              message.length = 0U;
+    805              message.isSetup = 0U;
+    806          
+    807              /* Notify up layer the USB error detected. */
+    808              USB_DeviceNotificationTrigger(khciState->deviceHandle, &message);
+    809          }
+    810          #endif /* USB_DEVICE_CONFIG_KHCI_ERROR_HANDLING */
+    811          
+    812          /*!
+    813           * @brief Initialize the USB device KHCI instance.
+    814           *
+    815           * This function initizlizes the USB device KHCI module specified by the controllerId.
+    816           *
+    817           * @param controllerId The controller id of the USB IP. Please refer to enumeration type usb_controller_index_t.
+    818           * @param handle        Pointer of the device handle, used to identify the device object is belonged to.
+    819           * @param khciHandle   It is out parameter, is used to return pointer of the device KHCI handle to the caller.
+    820           *
+    821           * @return A USB error code or kStatus_USB_Success.
+    822           */
+
+   \                                 In section .text, align 2, keep-with-next
+    823          usb_status_t USB_DeviceKhciInit(uint8_t controllerId,
+    824                                          usb_device_handle handle,
+    825                                          usb_device_controller_handle *khciHandle)
+    826          {
+   \                     USB_DeviceKhciInit: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+   \   00000006   0x0016             MOVS     R6,R2
+    827              usb_device_khci_state_struct_t *khciState;
+    828              uint32_t khci_base[] = USB_BASE_ADDRS;
+   \   00000008   0x4668             MOV      R0,SP
+   \   0000000A   0x....             LDR.N    R1,??DataTable3_1
+   \   0000000C   0x680A             LDR      R2,[R1, #0]
+   \   0000000E   0x6002             STR      R2,[R0, #+0]
+    829          
+    830              if (((controllerId - kUSB_ControllerKhci0) >= (uint8_t)USB_DEVICE_CONFIG_KHCI) ||
+    831                  ((controllerId - kUSB_ControllerKhci0) >= (sizeof(khci_base) / sizeof(uint32_t))))
+   \   00000010   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000012   0x2C00             CMP      R4,#+0
+   \   00000014   0xD102             BNE.N    ??USB_DeviceKhciInit_0
+   \   00000016   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000018   0x2C00             CMP      R4,#+0
+   \   0000001A   0xD001             BEQ.N    ??USB_DeviceKhciInit_1
+    832              {
+    833                  return kStatus_USB_ControllerNotFound;
+   \                     ??USB_DeviceKhciInit_0: (+1)
+   \   0000001C   0x2006             MOVS     R0,#+6
+   \   0000001E   0xE03B             B.N      ??USB_DeviceKhciInit_2
+    834              }
+    835              khciState = &s_UsbDeviceKhciState[controllerId - kUSB_ControllerKhci0];
+   \                     ??USB_DeviceKhciInit_1: (+1)
+   \   00000020   0x....             LDR.N    R0,??DataTable3_2
+   \   00000022   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000024   0xF44F 0x7192      MOV      R1,#+292
+   \   00000028   0xFB01 0xF104      MUL      R1,R1,R4
+   \   0000002C   0x4408             ADD      R0,R0,R1
+   \   0000002E   0x0007             MOVS     R7,R0
+    836          
+    837              khciState->controllerId = controllerId;
+   \   00000030   0xF887 0x4122      STRB     R4,[R7, #+290]
+    838          
+    839              khciState->registerBase = (USB_Type *)khci_base[controllerId - kUSB_ControllerKhci0];
+   \   00000034   0x4668             MOV      R0,SP
+   \   00000036   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000038   0xF850 0x0024      LDR      R0,[R0, R4, LSL #+2]
+   \   0000003C   0x60B8             STR      R0,[R7, #+8]
+    840          
+    841              khciState->dmaAlignBuffer = (uint8_t *)&s_UsbDeviceKhciDmaAlignBuffer[controllerId - kUSB_ControllerKhci0][0];
+   \   0000003E   0x....             LDR.N    R0,??DataTable3_3
+   \   00000040   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000042   0x2140             MOVS     R1,#+64
+   \   00000044   0xFB01 0xF104      MUL      R1,R1,R4
+   \   00000048   0x4408             ADD      R0,R0,R1
+   \   0000004A   0x61F8             STR      R0,[R7, #+28]
+    842          
+    843              /* Clear all interrupt flags. */
+    844              khciState->registerBase->ISTAT = 0xFFU;
+   \   0000004C   0x20FF             MOVS     R0,#+255
+   \   0000004E   0x68B9             LDR      R1,[R7, #+8]
+   \   00000050   0xF881 0x0080      STRB     R0,[R1, #+128]
+    845          
+    846              /* Disable the device functionality. */
+    847              USB_DeviceKhciControl(khciState, kUSB_DeviceControlStop, NULL);
+   \   00000054   0x2200             MOVS     R2,#+0
+   \   00000056   0x2101             MOVS     R1,#+1
+   \   00000058   0x0038             MOVS     R0,R7
+   \   0000005A   0x.... 0x....      BL       USB_DeviceKhciControl
+    848          
+    849              khciState->bdt = s_UsbDeviceKhciBdtBuffer[controllerId - kUSB_ControllerKhci0];
+   \   0000005E   0x....             LDR.N    R0,??DataTable3_4
+   \   00000060   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000062   0xF44F 0x7100      MOV      R1,#+512
+   \   00000066   0xFB01 0xF104      MUL      R1,R1,R4
+   \   0000006A   0x4408             ADD      R0,R0,R1
+   \   0000006C   0x6078             STR      R0,[R7, #+4]
+    850          
+    851              /* Set BDT buffer address */
+    852              khciState->registerBase->BDTPAGE1 = (uint8_t)((((uint32_t)khciState->bdt) >> 8U) & 0xFFU);
+   \   0000006E   0x6878             LDR      R0,[R7, #+4]
+   \   00000070   0x0A00             LSRS     R0,R0,#+8
+   \   00000072   0x68B9             LDR      R1,[R7, #+8]
+   \   00000074   0xF881 0x009C      STRB     R0,[R1, #+156]
+    853              khciState->registerBase->BDTPAGE2 = (uint8_t)((((uint32_t)khciState->bdt) >> 16U) & 0xFFU);
+   \   00000078   0x6878             LDR      R0,[R7, #+4]
+   \   0000007A   0x0C00             LSRS     R0,R0,#+16
+   \   0000007C   0x68B9             LDR      R1,[R7, #+8]
+   \   0000007E   0xF881 0x00B0      STRB     R0,[R1, #+176]
+    854              khciState->registerBase->BDTPAGE3 = (uint8_t)((((uint32_t)khciState->bdt) >> 24U) & 0xFFU);
+   \   00000082   0x6878             LDR      R0,[R7, #+4]
+   \   00000084   0x0E00             LSRS     R0,R0,#+24
+   \   00000086   0x68B9             LDR      R1,[R7, #+8]
+   \   00000088   0xF881 0x00B4      STRB     R0,[R1, #+180]
+    855          
+    856          #if (defined(USB_DEVICE_CONFIG_DETACH_ENABLE) && (USB_DEVICE_CONFIG_DETACH_ENABLE > 0U)) && \
+    857              (defined(FSL_FEATURE_USB_KHCI_VBUS_DETECT_ENABLED) && (FSL_FEATURE_USB_KHCI_VBUS_DETECT_ENABLED > 0U))
+    858              khciState->registerBase->MISCCTRL |= USB_MISCCTRL_VREDG_EN_MASK | USB_MISCCTRL_VFEDG_EN_MASK;
+    859          #endif
+    860          
+    861          #if defined(FSL_FEATURE_USB_KHCI_KEEP_ALIVE_ENABLED) && (FSL_FEATURE_USB_KHCI_KEEP_ALIVE_ENABLED > 0U) \
+    862          && defined(USB_DEVICE_CONFIG_KEEP_ALIVE_MODE) &&                                         \
+    863              (USB_DEVICE_CONFIG_KEEP_ALIVE_MODE > 0U) && defined(FSL_FEATURE_USB_KHCI_USB_RAM) && \
+    864              (FSL_FEATURE_USB_KHCI_USB_RAM > 0U)
+    865              khciState->registerBase->CLK_RECOVER_CTRL |= USB_CLK_RECOVER_CTRL_CLOCK_RECOVER_EN_MASK;
+    866              khciState->registerBase->KEEP_ALIVE_CTRL =
+    867                  USB_KEEP_ALIVE_CTRL_KEEP_ALIVE_EN_MASK | USB_KEEP_ALIVE_CTRL_OWN_OVERRD_EN_MASK |
+    868                  USB_KEEP_ALIVE_CTRL_STOP_ACK_DLY_EN_MASK | USB_KEEP_ALIVE_CTRL_AHB_DLY_EN_MASK |
+    869                  USB_KEEP_ALIVE_CTRL_WAKE_INT_EN_MASK;
+    870              /* wake on out and setup transaction */
+    871              khciState->registerBase->KEEP_ALIVE_WKCTRL = 0x1U;
+    872              MCG->MC |= MCG_MC_HIRCLPEN_MASK;
+    873              PMC->REGSC |= PMC_REGSC_BGEN_MASK | PMC_REGSC_VLPO_MASK;
+    874          #endif
+    875              /* Set KHCI device state to default value. */
+    876              USB_DeviceKhciSetDefaultState(khciState);
+   \   0000008C   0x0038             MOVS     R0,R7
+   \   0000008E   0x.... 0x....      BL       USB_DeviceKhciSetDefaultState
+    877          
+    878              *khciHandle = khciState;
+   \   00000092   0x6037             STR      R7,[R6, #+0]
+    879              khciState->deviceHandle = (usb_device_struct_t *)handle;
+   \   00000094   0x603D             STR      R5,[R7, #+0]
+    880          
+    881              return kStatus_USB_Success;
+   \   00000096   0x2000             MOVS     R0,#+0
+   \                     ??USB_DeviceKhciInit_2: (+1)
+   \   00000098   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    882          }
+    883          
+    884          /*!
+    885           * @brief De-initialize the USB device KHCI instance.
+    886           *
+    887           * This function de-initizlizes the USB device KHCI module.
+    888           *
+    889           * @param khciHandle   Pointer of the device KHCI handle.
+    890           *
+    891           * @return A USB error code or kStatus_USB_Success.
+    892           */
+
+   \                                 In section .text, align 2, keep-with-next
+    893          usb_status_t USB_DeviceKhciDeinit(usb_device_controller_handle khciHandle)
+    894          {
+   \                     USB_DeviceKhciDeinit: (+1)
+   \   00000000   0x0001             MOVS     R1,R0
+    895              usb_device_khci_state_struct_t *khciState = (usb_device_khci_state_struct_t *)khciHandle;
+   \   00000002   0x000A             MOVS     R2,R1
+    896          
+    897              if (!khciHandle)
+   \   00000004   0x2900             CMP      R1,#+0
+   \   00000006   0xD101             BNE.N    ??USB_DeviceKhciDeinit_0
+    898              {
+    899                  return kStatus_USB_InvalidHandle;
+   \   00000008   0x2003             MOVS     R0,#+3
+   \   0000000A   0xE01B             B.N      ??USB_DeviceKhciDeinit_1
+    900              }
+    901              /* Clear all interrupt flags. */
+    902              khciState->registerBase->ISTAT = 0xFFU;
+   \                     ??USB_DeviceKhciDeinit_0: (+1)
+   \   0000000C   0x20FF             MOVS     R0,#+255
+   \   0000000E   0x6893             LDR      R3,[R2, #+8]
+   \   00000010   0xF883 0x0080      STRB     R0,[R3, #+128]
+    903              /* Disable all interrupts. */
+    904              khciState->registerBase->INTEN &= ~(0xFFU);
+   \   00000014   0x6890             LDR      R0,[R2, #+8]
+   \   00000016   0xF890 0x0084      LDRB     R0,[R0, #+132]
+   \   0000001A   0x2000             MOVS     R0,#+0
+   \   0000001C   0x6893             LDR      R3,[R2, #+8]
+   \   0000001E   0xF883 0x0084      STRB     R0,[R3, #+132]
+    905              /* Clear device address. */
+    906              khciState->registerBase->ADDR = (0U);
+   \   00000022   0x2000             MOVS     R0,#+0
+   \   00000024   0x6893             LDR      R3,[R2, #+8]
+   \   00000026   0xF883 0x0098      STRB     R0,[R3, #+152]
+    907          
+    908              /* Clear USB_CTL register */
+    909              khciState->registerBase->CTL = 0x00U;
+   \   0000002A   0x2000             MOVS     R0,#+0
+   \   0000002C   0x6893             LDR      R3,[R2, #+8]
+   \   0000002E   0xF883 0x0094      STRB     R0,[R3, #+148]
+    910              khciState->registerBase->USBCTRL |= USB_USBCTRL_PDE_MASK | USB_USBCTRL_SUSP_MASK;
+   \   00000032   0x6890             LDR      R0,[R2, #+8]
+   \   00000034   0xF890 0x0100      LDRB     R0,[R0, #+256]
+   \   00000038   0xF050 0x00C0      ORRS     R0,R0,#0xC0
+   \   0000003C   0x6893             LDR      R3,[R2, #+8]
+   \   0000003E   0xF883 0x0100      STRB     R0,[R3, #+256]
+    911          
+    912              return kStatus_USB_Success;
+   \   00000042   0x2000             MOVS     R0,#+0
+   \                     ??USB_DeviceKhciDeinit_1: (+1)
+   \   00000044   0x4770             BX       LR               ;; return
+    913          }
+    914          
+    915          /*!
+    916           * @brief Send data through a specified endpoint.
+    917           *
+    918           * This function sends data through a specified endpoint.
+    919           *
+    920           * @param khciHandle      Pointer of the device KHCI handle.
+    921           * @param endpointAddress Endpoint index.
+    922           * @param buffer           The memory address to hold the data need to be sent.
+    923           * @param length           The data length need to be sent.
+    924           *
+    925           * @return A USB error code or kStatus_USB_Success.
+    926           *
+    927           * @note The return value just means if the sending request is successful or not; the transfer done is notified by the
+    928           * corresponding callback function.
+    929           * Currently, only one transfer request can be supported for one specific endpoint.
+    930           * If there is a specific requirement to support multiple transfer requests for one specific endpoint, the application
+    931           * should implement a queue in the application level.
+    932           * The subsequent transfer could begin only when the previous transfer is done (get notification through the endpoint
+    933           * callback).
+    934           */
+
+   \                                 In section .text, align 2, keep-with-next
+    935          usb_status_t USB_DeviceKhciSend(usb_device_controller_handle khciHandle,
+    936                                          uint8_t endpointAddress,
+    937                                          uint8_t *buffer,
+    938                                          uint32_t length)
+    939          {
+   \                     USB_DeviceKhciSend: (+1)
+   \   00000000   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \   00000004   0xB082             SUB      SP,SP,#+8
+   \   00000006   0x0004             MOVS     R4,R0
+   \   00000008   0x000D             MOVS     R5,R1
+   \   0000000A   0x0016             MOVS     R6,R2
+   \   0000000C   0x001F             MOVS     R7,R3
+    940              usb_device_khci_state_struct_t *khciState = (usb_device_khci_state_struct_t *)khciHandle;
+   \   0000000E   0x46A0             MOV      R8,R4
+    941              uint32_t index = ((endpointAddress & USB_ENDPOINT_NUMBER_MASK) << 1U) | USB_IN;
+   \   00000010   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000012   0x0068             LSLS     R0,R5,#+1
+   \   00000014   0xF010 0x001E      ANDS     R0,R0,#0x1E
+   \   00000018   0xF050 0x0901      ORRS     R9,R0,#0x1
+    942              usb_status_t error = kStatus_USB_Error;
+   \   0000001C   0xF05F 0x0A01      MOVS     R10,#+1
+    943          
+    944              /* Save the tansfer information */
+    945              if (0U == khciState->endpointState[index].stateUnion.stateBitField.transferring)
+   \   00000020   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   00000024   0x4440             ADD      R0,R8,R0
+   \   00000026   0x6AC0             LDR      R0,[R0, #+44]
+   \   00000028   0xF3C0 0x3080      UBFX     R0,R0,#+14,#+1
+   \   0000002C   0x2800             CMP      R0,#+0
+   \   0000002E   0xD116             BNE.N    ??USB_DeviceKhciSend_0
+    946              {
+    947                  khciState->endpointState[index].transferDone = 0U;
+   \   00000030   0x2000             MOVS     R0,#+0
+   \   00000032   0xEA5F 0x1109      LSLS     R1,R9,#+4
+   \   00000036   0x4441             ADD      R1,R8,R1
+   \   00000038   0x6288             STR      R0,[R1, #+40]
+    948                  khciState->endpointState[index].transferBuffer = buffer;
+   \   0000003A   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   0000003E   0x4440             ADD      R0,R8,R0
+   \   00000040   0x6206             STR      R6,[R0, #+32]
+    949                  khciState->endpointState[index].transferLength = length;
+   \   00000042   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   00000046   0x4440             ADD      R0,R8,R0
+   \   00000048   0x6247             STR      R7,[R0, #+36]
+    950                  khciState->endpointState[index].stateUnion.stateBitField.dmaAlign = 1U;
+   \   0000004A   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   0000004E   0x4440             ADD      R0,R8,R0
+   \   00000050   0x6AC0             LDR      R0,[R0, #+44]
+   \   00000052   0xF450 0x5000      ORRS     R0,R0,#0x2000
+   \   00000056   0xEA5F 0x1109      LSLS     R1,R9,#+4
+   \   0000005A   0x4441             ADD      R1,R8,R1
+   \   0000005C   0x62C8             STR      R0,[R1, #+44]
+    951              }
+    952          
+    953              /* Data length needs to less than max packet size in each call. */
+    954              if (length > khciState->endpointState[index].stateUnion.stateBitField.maxPacketSize)
+   \                     ??USB_DeviceKhciSend_0: (+1)
+   \   0000005E   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   00000062   0x4440             ADD      R0,R8,R0
+   \   00000064   0x6AC0             LDR      R0,[R0, #+44]
+   \   00000066   0x0580             LSLS     R0,R0,#+22       ;; ZeroExtS R0,R0,#+22,#+22
+   \   00000068   0x0D80             LSRS     R0,R0,#+22
+   \   0000006A   0x42B8             CMP      R0,R7
+   \   0000006C   0xD206             BCS.N    ??USB_DeviceKhciSend_1
+    955              {
+    956                  length = khciState->endpointState[index].stateUnion.stateBitField.maxPacketSize;
+   \   0000006E   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   00000072   0x4440             ADD      R0,R8,R0
+   \   00000074   0x6AC0             LDR      R0,[R0, #+44]
+   \   00000076   0x0580             LSLS     R0,R0,#+22       ;; ZeroExtS R0,R0,#+22,#+22
+   \   00000078   0x0D80             LSRS     R0,R0,#+22
+   \   0000007A   0x0007             MOVS     R7,R0
+    957              }
+    958          
+    959              /* Send data when the device is not resetting. */
+    960              if (0U == khciState->isResetting)
+   \                     ??USB_DeviceKhciSend_1: (+1)
+   \   0000007C   0xF898 0x0121      LDRB     R0,[R8, #+289]
+   \   00000080   0x2800             CMP      R0,#+0
+   \   00000082   0xD110             BNE.N    ??USB_DeviceKhciSend_2
+    961              {
+    962                  error = USB_DeviceKhciEndpointTransfer(khciState, endpointAddress & USB_ENDPOINT_NUMBER_MASK, USB_IN,
+    963                                                         (uint8_t *)((uint32_t)khciState->endpointState[index].transferBuffer +
+    964                                                                     (uint32_t)khciState->endpointState[index].transferDone),
+    965                                                         length);
+   \   00000084   0x9700             STR      R7,[SP, #+0]
+   \   00000086   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   0000008A   0x4440             ADD      R0,R8,R0
+   \   0000008C   0x6A00             LDR      R0,[R0, #+32]
+   \   0000008E   0xEA5F 0x1109      LSLS     R1,R9,#+4
+   \   00000092   0x4441             ADD      R1,R8,R1
+   \   00000094   0x6A89             LDR      R1,[R1, #+40]
+   \   00000096   0x180B             ADDS     R3,R1,R0
+   \   00000098   0x2201             MOVS     R2,#+1
+   \   0000009A   0xF015 0x010F      ANDS     R1,R5,#0xF
+   \   0000009E   0x4640             MOV      R0,R8
+   \   000000A0   0x.... 0x....      BL       USB_DeviceKhciEndpointTransfer
+   \   000000A4   0x4682             MOV      R10,R0
+    966              }
+    967          
+    968              /* Prime a transfer to receive next setup packet if the dat length is zero in a control in endpoint. */
+    969              if ((0U == khciState->endpointState[index].transferDone) && (0U == length) &&
+    970                  (USB_CONTROL_ENDPOINT == (endpointAddress & USB_ENDPOINT_NUMBER_MASK)))
+   \                     ??USB_DeviceKhciSend_2: (+1)
+   \   000000A6   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   000000AA   0x4440             ADD      R0,R8,R0
+   \   000000AC   0x6A80             LDR      R0,[R0, #+40]
+   \   000000AE   0x4338             ORRS     R0,R7,R0
+   \   000000B0   0x2800             CMP      R0,#+0
+   \   000000B2   0xD105             BNE.N    ??USB_DeviceKhciSend_3
+   \   000000B4   0x210F             MOVS     R1,#+15
+   \   000000B6   0x420D             TST      R5,R1
+   \   000000B8   0xD102             BNE.N    ??USB_DeviceKhciSend_3
+    971              {
+    972                  USB_DeviceKhciPrimeNextSetup(khciState);
+   \   000000BA   0x4640             MOV      R0,R8
+   \   000000BC   0x.... 0x....      BL       USB_DeviceKhciPrimeNextSetup
+    973              }
+    974              return error;
+   \                     ??USB_DeviceKhciSend_3: (+1)
+   \   000000C0   0x4650             MOV      R0,R10
+   \   000000C2   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   000000C4   0xE8BD 0x87F6      POP      {R1,R2,R4-R10,PC}  ;; return
+    975          }
+    976          
+    977          /*!
+    978           * @brief Receive data through a specified endpoint.
+    979           *
+    980           * This function Receives data through a specified endpoint.
+    981           *
+    982           * @param khciHandle      Pointer of the device KHCI handle.
+    983           * @param endpointAddress Endpoint index.
+    984           * @param buffer           The memory address to save the received data.
+    985           * @param length           The data length want to be received.
+    986           *
+    987           * @return A USB error code or kStatus_USB_Success.
+    988           *
+    989           * @note The return value just means if the receiving request is successful or not; the transfer done is notified by the
+    990           * corresponding callback function.
+    991           * Currently, only one transfer request can be supported for one specific endpoint.
+    992           * If there is a specific requirement to support multiple transfer requests for one specific endpoint, the application
+    993           * should implement a queue in the application level.
+    994           * The subsequent transfer could begin only when the previous transfer is done (get notification through the endpoint
+    995           * callback).
+    996           */
+
+   \                                 In section .text, align 2, keep-with-next
+    997          usb_status_t USB_DeviceKhciRecv(usb_device_controller_handle khciHandle,
+    998                                          uint8_t endpointAddress,
+    999                                          uint8_t *buffer,
+   1000                                          uint32_t length)
+   1001          {
+   \                     USB_DeviceKhciRecv: (+1)
+   \   00000000   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \   00000004   0xB082             SUB      SP,SP,#+8
+   \   00000006   0x0004             MOVS     R4,R0
+   \   00000008   0x000D             MOVS     R5,R1
+   \   0000000A   0x0016             MOVS     R6,R2
+   \   0000000C   0x001F             MOVS     R7,R3
+   1002              usb_device_khci_state_struct_t *khciState = (usb_device_khci_state_struct_t *)khciHandle;
+   \   0000000E   0x46A0             MOV      R8,R4
+   1003              uint32_t index = ((endpointAddress & USB_ENDPOINT_NUMBER_MASK) << 1U) | USB_OUT;
+   \   00000010   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000012   0x0068             LSLS     R0,R5,#+1
+   \   00000014   0xF010 0x091E      ANDS     R9,R0,#0x1E
+   1004              usb_status_t error = kStatus_USB_Error;
+   \   00000018   0xF05F 0x0A01      MOVS     R10,#+1
+   1005          
+   1006              /* Save the tansfer information */
+   1007              if (0U == khciState->endpointState[index].stateUnion.stateBitField.transferring)
+   \   0000001C   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   00000020   0x4440             ADD      R0,R8,R0
+   \   00000022   0x6AC0             LDR      R0,[R0, #+44]
+   \   00000024   0xF3C0 0x3080      UBFX     R0,R0,#+14,#+1
+   \   00000028   0x2800             CMP      R0,#+0
+   \   0000002A   0xD10C             BNE.N    ??USB_DeviceKhciRecv_0
+   1008              {
+   1009                  khciState->endpointState[index].transferDone = 0U;
+   \   0000002C   0x2000             MOVS     R0,#+0
+   \   0000002E   0xEA5F 0x1109      LSLS     R1,R9,#+4
+   \   00000032   0x4441             ADD      R1,R8,R1
+   \   00000034   0x6288             STR      R0,[R1, #+40]
+   1010                  khciState->endpointState[index].transferBuffer = buffer;
+   \   00000036   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   0000003A   0x4440             ADD      R0,R8,R0
+   \   0000003C   0x6206             STR      R6,[R0, #+32]
+   1011                  khciState->endpointState[index].transferLength = length;
+   \   0000003E   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   00000042   0x4440             ADD      R0,R8,R0
+   \   00000044   0x6247             STR      R7,[R0, #+36]
+   1012              }
+   1013              khciState->endpointState[index].stateUnion.stateBitField.dmaAlign = 1U;
+   \                     ??USB_DeviceKhciRecv_0: (+1)
+   \   00000046   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   0000004A   0x4440             ADD      R0,R8,R0
+   \   0000004C   0x6AC0             LDR      R0,[R0, #+44]
+   \   0000004E   0xF450 0x5000      ORRS     R0,R0,#0x2000
+   \   00000052   0xEA5F 0x1109      LSLS     R1,R9,#+4
+   \   00000056   0x4441             ADD      R1,R8,R1
+   \   00000058   0x62C8             STR      R0,[R1, #+44]
+   1014          
+   1015              /* Data length needs to less than max packet size in each call. */
+   1016              if (length > khciState->endpointState[index].stateUnion.stateBitField.maxPacketSize)
+   \   0000005A   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   0000005E   0x4440             ADD      R0,R8,R0
+   \   00000060   0x6AC0             LDR      R0,[R0, #+44]
+   \   00000062   0x0580             LSLS     R0,R0,#+22       ;; ZeroExtS R0,R0,#+22,#+22
+   \   00000064   0x0D80             LSRS     R0,R0,#+22
+   \   00000066   0x42B8             CMP      R0,R7
+   \   00000068   0xD206             BCS.N    ??USB_DeviceKhciRecv_1
+   1017              {
+   1018                  length = khciState->endpointState[index].stateUnion.stateBitField.maxPacketSize;
+   \   0000006A   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   0000006E   0x4440             ADD      R0,R8,R0
+   \   00000070   0x6AC0             LDR      R0,[R0, #+44]
+   \   00000072   0x0580             LSLS     R0,R0,#+22       ;; ZeroExtS R0,R0,#+22,#+22
+   \   00000074   0x0D80             LSRS     R0,R0,#+22
+   \   00000076   0x0007             MOVS     R7,R0
+   1019              }
+   1020          
+   1021              buffer = (uint8_t *)((uint32_t)buffer + (uint32_t)khciState->endpointState[index].transferDone);
+   \                     ??USB_DeviceKhciRecv_1: (+1)
+   \   00000078   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   0000007C   0x4440             ADD      R0,R8,R0
+   \   0000007E   0x6A80             LDR      R0,[R0, #+40]
+   \   00000080   0x1986             ADDS     R6,R0,R6
+   1022          
+   1023              if ((khciState->dmaAlignBuffer) && (0U == khciState->isDmaAlignBufferInusing) &&
+   1024                  (USB_DEVICE_CONFIG_KHCI_DMA_ALIGN_BUFFER_LENGTH >= length) &&
+   1025                  ((length & 0x03U) || (((uint32_t)buffer) & 0x03U)))
+   \   00000082   0xF8D8 0x001C      LDR      R0,[R8, #+28]
+   \   00000086   0x2800             CMP      R0,#+0
+   \   00000088   0xD01C             BEQ.N    ??USB_DeviceKhciRecv_2
+   \   0000008A   0xF898 0x0120      LDRB     R0,[R8, #+288]
+   \   0000008E   0x2800             CMP      R0,#+0
+   \   00000090   0xD118             BNE.N    ??USB_DeviceKhciRecv_2
+   \   00000092   0x2F41             CMP      R7,#+65
+   \   00000094   0xD216             BCS.N    ??USB_DeviceKhciRecv_2
+   \   00000096   0xF017 0x0F03      TST      R7,#0x3
+   \   0000009A   0xD103             BNE.N    ??USB_DeviceKhciRecv_3
+   \   0000009C   0xF016 0x0003      ANDS     R0,R6,#0x3
+   \   000000A0   0x2800             CMP      R0,#+0
+   \   000000A2   0xD00F             BEQ.N    ??USB_DeviceKhciRecv_2
+   1026              {
+   1027                  khciState->endpointState[index].stateUnion.stateBitField.dmaAlign = 0U;
+   \                     ??USB_DeviceKhciRecv_3: (+1)
+   \   000000A4   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   000000A8   0x4440             ADD      R0,R8,R0
+   \   000000AA   0x6AC0             LDR      R0,[R0, #+44]
+   \   000000AC   0xF430 0x5000      BICS     R0,R0,#0x2000
+   \   000000B0   0xEA5F 0x1109      LSLS     R1,R9,#+4
+   \   000000B4   0x4441             ADD      R1,R8,R1
+   \   000000B6   0x62C8             STR      R0,[R1, #+44]
+   1028                  buffer = khciState->dmaAlignBuffer;
+   \   000000B8   0xF8D8 0x001C      LDR      R0,[R8, #+28]
+   \   000000BC   0x0006             MOVS     R6,R0
+   1029                  khciState->isDmaAlignBufferInusing = 1U;
+   \   000000BE   0x2001             MOVS     R0,#+1
+   \   000000C0   0xF888 0x0120      STRB     R0,[R8, #+288]
+   1030              }
+   1031          
+   1032              /* Receive data when the device is not resetting. */
+   1033              if (0U == khciState->isResetting)
+   \                     ??USB_DeviceKhciRecv_2: (+1)
+   \   000000C4   0xF898 0x0121      LDRB     R0,[R8, #+289]
+   \   000000C8   0x2800             CMP      R0,#+0
+   \   000000CA   0xD108             BNE.N    ??USB_DeviceKhciRecv_4
+   1034              {
+   1035                  error = USB_DeviceKhciEndpointTransfer(khciState, endpointAddress & USB_ENDPOINT_NUMBER_MASK, USB_OUT, buffer,
+   1036                                                         length);
+   \   000000CC   0x9700             STR      R7,[SP, #+0]
+   \   000000CE   0x0033             MOVS     R3,R6
+   \   000000D0   0x2200             MOVS     R2,#+0
+   \   000000D2   0xF015 0x010F      ANDS     R1,R5,#0xF
+   \   000000D6   0x4640             MOV      R0,R8
+   \   000000D8   0x.... 0x....      BL       USB_DeviceKhciEndpointTransfer
+   \   000000DC   0x4682             MOV      R10,R0
+   1037              }
+   1038          
+   1039              /* Prime a transfer to receive next setup packet if the dat length is zero in a control out endpoint. */
+   1040              if ((0U == length) && (USB_CONTROL_ENDPOINT == (endpointAddress & USB_ENDPOINT_NUMBER_MASK)))
+   \                     ??USB_DeviceKhciRecv_4: (+1)
+   \   000000DE   0x2F00             CMP      R7,#+0
+   \   000000E0   0xD119             BNE.N    ??USB_DeviceKhciRecv_5
+   \   000000E2   0x210F             MOVS     R1,#+15
+   \   000000E4   0x420D             TST      R5,R1
+   \   000000E6   0xD116             BNE.N    ??USB_DeviceKhciRecv_5
+   1041              {
+   1042                  khciState->endpointState[index].stateUnion.stateBitField.bdtOdd ^= 1U;
+   \   000000E8   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   000000EC   0x4440             ADD      R0,R8,R0
+   \   000000EE   0x6AC0             LDR      R0,[R0, #+44]
+   \   000000F0   0xF490 0x5080      EORS     R0,R0,#0x1000
+   \   000000F4   0xEA5F 0x1109      LSLS     R1,R9,#+4
+   \   000000F8   0x4441             ADD      R1,R8,R1
+   \   000000FA   0x62C8             STR      R0,[R1, #+44]
+   1043                  khciState->endpointState[index].stateUnion.stateBitField.transferring = 0U;
+   \   000000FC   0xEA5F 0x1009      LSLS     R0,R9,#+4
+   \   00000100   0x4440             ADD      R0,R8,R0
+   \   00000102   0x6AC0             LDR      R0,[R0, #+44]
+   \   00000104   0xF430 0x4080      BICS     R0,R0,#0x4000
+   \   00000108   0xEA5F 0x1109      LSLS     R1,R9,#+4
+   \   0000010C   0x4441             ADD      R1,R8,R1
+   \   0000010E   0x62C8             STR      R0,[R1, #+44]
+   1044                  USB_DeviceKhciPrimeNextSetup(khciState);
+   \   00000110   0x4640             MOV      R0,R8
+   \   00000112   0x.... 0x....      BL       USB_DeviceKhciPrimeNextSetup
+   1045              }
+   1046              return error;
+   \                     ??USB_DeviceKhciRecv_5: (+1)
+   \   00000116   0x4650             MOV      R0,R10
+   \   00000118   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000011A   0xE8BD 0x87F6      POP      {R1,R2,R4-R10,PC}  ;; return
+   1047          }
+   1048          
+   1049          /*!
+   1050           * @brief Cancel the pending transfer in a specified endpoint.
+   1051           *
+   1052           * The function is used to cancel the pending transfer in a specified endpoint.
+   1053           *
+   1054           * @param khciHandle      Pointer of the device KHCI handle.
+   1055           * @param ep               Endpoint address, bit7 is the direction of endpoint, 1U - IN, abd 0U - OUT.
+   1056           *
+   1057           * @return A USB error code or kStatus_USB_Success.
+   1058           */
+
+   \                                 In section .text, align 2, keep-with-next
+   1059          usb_status_t USB_DeviceKhciCancel(usb_device_controller_handle khciHandle, uint8_t ep)
+   1060          {
+   \                     USB_DeviceKhciCancel: (+1)
+   \   00000000   0xB5FE             PUSH     {R1-R7,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+   1061              usb_device_khci_state_struct_t *khciState = (usb_device_khci_state_struct_t *)khciHandle;
+   \   00000006   0x0026             MOVS     R6,R4
+   1062              usb_device_callback_message_struct_t message;
+   1063              uint8_t index = ((ep & USB_ENDPOINT_NUMBER_MASK) << 1U) | ((ep & USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_MASK) >>
+   1064                                                                         USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_SHIFT);
+   \   00000008   0x0068             LSLS     R0,R5,#+1
+   \   0000000A   0xF010 0x011E      ANDS     R1,R0,#0x1E
+   \   0000000E   0x0028             MOVS     R0,R5
+   \   00000010   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000012   0xEA51 0x17D0      ORRS     R7,R1,R0, LSR #+7
+   1065          
+   1066              /* Cancel the transfer and notify the up layer when the endpoint is busy. */
+   1067              if (khciState->endpointState[index].stateUnion.stateBitField.transferring)
+   \   00000016   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   00000018   0x0138             LSLS     R0,R7,#+4
+   \   0000001A   0x4430             ADD      R0,R6,R0
+   \   0000001C   0x6AC0             LDR      R0,[R0, #+44]
+   \   0000001E   0xF3C0 0x3080      UBFX     R0,R0,#+14,#+1
+   \   00000022   0x2800             CMP      R0,#+0
+   \   00000024   0xD01A             BEQ.N    ??USB_DeviceKhciCancel_0
+   1068              {
+   1069                  message.length = USB_UNINITIALIZED_VAL_32;
+   \   00000026   0xF05F 0x30FF      MOVS     R0,#-1
+   \   0000002A   0x9001             STR      R0,[SP, #+4]
+   1070                  message.buffer = khciState->endpointState[index].transferBuffer;
+   \   0000002C   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   0000002E   0x0138             LSLS     R0,R7,#+4
+   \   00000030   0x4430             ADD      R0,R6,R0
+   \   00000032   0x6A00             LDR      R0,[R0, #+32]
+   \   00000034   0x9000             STR      R0,[SP, #+0]
+   1071                  message.code = ep;
+   \   00000036   0xF88D 0x5008      STRB     R5,[SP, #+8]
+   1072                  message.isSetup = 0U;
+   \   0000003A   0x2000             MOVS     R0,#+0
+   \   0000003C   0xF88D 0x0009      STRB     R0,[SP, #+9]
+   1073                  khciState->endpointState[index].stateUnion.stateBitField.transferring = 0U;
+   \   00000040   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   00000042   0x0138             LSLS     R0,R7,#+4
+   \   00000044   0x4430             ADD      R0,R6,R0
+   \   00000046   0x6AC0             LDR      R0,[R0, #+44]
+   \   00000048   0xF430 0x4080      BICS     R0,R0,#0x4000
+   \   0000004C   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   0000004E   0x0139             LSLS     R1,R7,#+4
+   \   00000050   0x4431             ADD      R1,R6,R1
+   \   00000052   0x62C8             STR      R0,[R1, #+44]
+   1074                  USB_DeviceNotificationTrigger(khciState->deviceHandle, &message);
+   \   00000054   0x4669             MOV      R1,SP
+   \   00000056   0x6830             LDR      R0,[R6, #+0]
+   \   00000058   0x.... 0x....      BL       USB_DeviceNotificationTrigger
+   1075              }
+   1076              return kStatus_USB_Success;
+   \                     ??USB_DeviceKhciCancel_0: (+1)
+   \   0000005C   0x2000             MOVS     R0,#+0
+   \   0000005E   0xBDFE             POP      {R1-R7,PC}       ;; return
+   1077          }
+   1078          
+   1079          /*!
+   1080           * @brief Control the status of the selected item.
+   1081           *
+   1082           * The function is used to control the status of the selected item.
+   1083           *
+   1084           * @param khciHandle      Pointer of the device KHCI handle.
+   1085           * @param type             The selected item. Please refer to enumeration type usb_device_control_type_t.
+   1086           * @param param            The param type is determined by the selected item.
+   1087           *
+   1088           * @return A USB error code or kStatus_USB_Success.
+   1089           */
+
+   \                                 In section .text, align 2, keep-with-next
+   1090          usb_status_t USB_DeviceKhciControl(usb_device_controller_handle khciHandle, usb_device_control_type_t type, void *param)
+   1091          {
+   \                     USB_DeviceKhciControl: (+1)
+   \   00000000   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+   \   00000008   0x0016             MOVS     R6,R2
+   1092              usb_device_khci_state_struct_t *khciState = (usb_device_khci_state_struct_t *)khciHandle;
+   \   0000000A   0x0027             MOVS     R7,R4
+   1093              usb_status_t error = kStatus_USB_Error;
+   \   0000000C   0xF05F 0x0801      MOVS     R8,#+1
+   1094              uint16_t *temp16;
+   1095              uint8_t *temp8;
+   1096          #if defined(USB_DEVICE_CONFIG_REMOTE_WAKEUP) && (USB_DEVICE_CONFIG_REMOTE_WAKEUP > 0U)
+   1097              USB_OSA_SR_ALLOC();
+   1098          #endif /* USB_DEVICE_CONFIG_REMOTE_WAKEUP */
+   1099          
+   1100              if (!khciHandle)
+   \   00000010   0x2C00             CMP      R4,#+0
+   \   00000012   0xD101             BNE.N    ??USB_DeviceKhciControl_0
+   1101              {
+   1102                  return kStatus_USB_InvalidHandle;
+   \   00000014   0x2003             MOVS     R0,#+3
+   \   00000016   0xE0D6             B.N      ??USB_DeviceKhciControl_1
+   1103              }
+   1104          
+   1105              switch (type)
+   \                     ??USB_DeviceKhciControl_0: (+1)
+   \   00000018   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000001A   0x2D00             CMP      R5,#+0
+   \   0000001C   0xD01F             BEQ.N    ??USB_DeviceKhciControl_2
+   \   0000001E   0x2D02             CMP      R5,#+2
+   \   00000020   0xD053             BEQ.N    ??USB_DeviceKhciControl_3
+   \   00000022   0xD33D             BCC.N    ??USB_DeviceKhciControl_4
+   \   00000024   0x2D04             CMP      R5,#+4
+   \   00000026   0xD062             BEQ.N    ??USB_DeviceKhciControl_5
+   \   00000028   0xD357             BCC.N    ??USB_DeviceKhciControl_6
+   \   0000002A   0x2D06             CMP      R5,#+6
+   \   0000002C   0xD073             BEQ.N    ??USB_DeviceKhciControl_7
+   \   0000002E   0xD368             BCC.N    ??USB_DeviceKhciControl_8
+   \   00000030   0x2D08             CMP      R5,#+8
+   \   00000032   0xF000 0x8092      BEQ.W    ??USB_DeviceKhciControl_9
+   \   00000036   0xD377             BCC.N    ??USB_DeviceKhciControl_10
+   \   00000038   0x2D0A             CMP      R5,#+10
+   \   0000003A   0xF000 0x809A      BEQ.W    ??USB_DeviceKhciControl_11
+   \   0000003E   0xF0C0 0x8097      BCC.W    ??USB_DeviceKhciControl_12
+   \   00000042   0x2D0C             CMP      R5,#+12
+   \   00000044   0xF000 0x80B1      BEQ.W    ??USB_DeviceKhciControl_13
+   \   00000048   0xF0C0 0x8094      BCC.W    ??USB_DeviceKhciControl_14
+   \   0000004C   0x2D0E             CMP      R5,#+14
+   \   0000004E   0xF000 0x80B6      BEQ.W    ??USB_DeviceKhciControl_15
+   \   00000052   0xF0C0 0x80B3      BCC.W    ??USB_DeviceKhciControl_16
+   \   00000056   0x2D0F             CMP      R5,#+15
+   \   00000058   0xF000 0x80B2      BEQ.W    ??USB_DeviceKhciControl_17
+   \   0000005C   0xE0B1             B.N      ??USB_DeviceKhciControl_18
+   1106              {
+   1107                  case kUSB_DeviceControlRun:
+   1108                      khciState->registerBase->USBCTRL = 0U;
+   \                     ??USB_DeviceKhciControl_2: (+1)
+   \   0000005E   0x2000             MOVS     R0,#+0
+   \   00000060   0x68B9             LDR      R1,[R7, #+8]
+   \   00000062   0xF881 0x0100      STRB     R0,[R1, #+256]
+   1109          #if defined(FSL_FEATURE_USB_KHCI_OTG_ENABLED) && (FSL_FEATURE_USB_KHCI_OTG_ENABLED > 0U)
+   1110                      if (khciState->registerBase->OTGCTL & USB_OTGCTL_OTGEN_MASK)
+   \   00000066   0x68B8             LDR      R0,[R7, #+8]
+   \   00000068   0x7F00             LDRB     R0,[R0, #+28]
+   \   0000006A   0x0740             LSLS     R0,R0,#+29
+   \   0000006C   0xD505             BPL.N    ??USB_DeviceKhciControl_19
+   1111                      {
+   1112                          khciState->registerBase->OTGCTL |= USB_OTGCTL_DPHIGH_MASK;
+   \   0000006E   0x68B8             LDR      R0,[R7, #+8]
+   \   00000070   0x7F00             LDRB     R0,[R0, #+28]
+   \   00000072   0xF050 0x0080      ORRS     R0,R0,#0x80
+   \   00000076   0x68B9             LDR      R1,[R7, #+8]
+   \   00000078   0x7708             STRB     R0,[R1, #+28]
+   1113                      }
+   1114          #endif /* FSL_FEATURE_USB_KHCI_OTG_ENABLED */
+   1115                      khciState->registerBase->CONTROL |= USB_CONTROL_DPPULLUPNONOTG_MASK;
+   \                     ??USB_DeviceKhciControl_19: (+1)
+   \   0000007A   0x68B8             LDR      R0,[R7, #+8]
+   \   0000007C   0xF890 0x0108      LDRB     R0,[R0, #+264]
+   \   00000080   0xF050 0x0010      ORRS     R0,R0,#0x10
+   \   00000084   0x68B9             LDR      R1,[R7, #+8]
+   \   00000086   0xF881 0x0108      STRB     R0,[R1, #+264]
+   1116                      khciState->registerBase->CTL |= USB_CTL_USBENSOFEN_MASK;
+   \   0000008A   0x68B8             LDR      R0,[R7, #+8]
+   \   0000008C   0xF890 0x0094      LDRB     R0,[R0, #+148]
+   \   00000090   0xF050 0x0001      ORRS     R0,R0,#0x1
+   \   00000094   0x68B9             LDR      R1,[R7, #+8]
+   \   00000096   0xF881 0x0094      STRB     R0,[R1, #+148]
+   1117          
+   1118                      error = kStatus_USB_Success;
+   \   0000009A   0x2000             MOVS     R0,#+0
+   \   0000009C   0x4680             MOV      R8,R0
+   1119                      break;
+   \   0000009E   0xE090             B.N      ??USB_DeviceKhciControl_20
+   1120                  case kUSB_DeviceControlStop:
+   1121          #if defined(FSL_FEATURE_USB_KHCI_OTG_ENABLED) && (FSL_FEATURE_USB_KHCI_OTG_ENABLED > 0U)
+   1122                      if (khciState->registerBase->OTGCTL & USB_OTGCTL_OTGEN_MASK)
+   \                     ??USB_DeviceKhciControl_4: (+1)
+   \   000000A0   0x68B8             LDR      R0,[R7, #+8]
+   \   000000A2   0x7F00             LDRB     R0,[R0, #+28]
+   \   000000A4   0x0740             LSLS     R0,R0,#+29
+   \   000000A6   0xD505             BPL.N    ??USB_DeviceKhciControl_21
+   1123                      {
+   1124                          khciState->registerBase->OTGCTL &= ~USB_OTGCTL_DPHIGH_MASK;
+   \   000000A8   0x68B8             LDR      R0,[R7, #+8]
+   \   000000AA   0x7F00             LDRB     R0,[R0, #+28]
+   \   000000AC   0xF010 0x007F      ANDS     R0,R0,#0x7F
+   \   000000B0   0x68B9             LDR      R1,[R7, #+8]
+   \   000000B2   0x7708             STRB     R0,[R1, #+28]
+   1125                      }
+   1126          #endif /* FSL_FEATURE_USB_KHCI_OTG_ENABLED */
+   1127                      khciState->registerBase->CONTROL &= ~USB_CONTROL_DPPULLUPNONOTG_MASK;
+   \                     ??USB_DeviceKhciControl_21: (+1)
+   \   000000B4   0x68B8             LDR      R0,[R7, #+8]
+   \   000000B6   0xF890 0x0108      LDRB     R0,[R0, #+264]
+   \   000000BA   0xF010 0x00EF      ANDS     R0,R0,#0xEF
+   \   000000BE   0x68B9             LDR      R1,[R7, #+8]
+   \   000000C0   0xF881 0x0108      STRB     R0,[R1, #+264]
+   1128                      error = kStatus_USB_Success;
+   \   000000C4   0x2000             MOVS     R0,#+0
+   \   000000C6   0x4680             MOV      R8,R0
+   1129                      break;
+   \   000000C8   0xE07B             B.N      ??USB_DeviceKhciControl_20
+   1130                  case kUSB_DeviceControlEndpointInit:
+   1131                      if (param)
+   \                     ??USB_DeviceKhciControl_3: (+1)
+   \   000000CA   0x2E00             CMP      R6,#+0
+   \   000000CC   0xD004             BEQ.N    ??USB_DeviceKhciControl_22
+   1132                      {
+   1133                          error = USB_DeviceKhciEndpointInit(khciState, (usb_device_endpoint_init_struct_t *)param);
+   \   000000CE   0x0031             MOVS     R1,R6
+   \   000000D0   0x0038             MOVS     R0,R7
+   \   000000D2   0x.... 0x....      BL       USB_DeviceKhciEndpointInit
+   \   000000D6   0x4680             MOV      R8,R0
+   1134                      }
+   1135                      break;
+   \                     ??USB_DeviceKhciControl_22: (+1)
+   \   000000D8   0xE073             B.N      ??USB_DeviceKhciControl_20
+   1136                  case kUSB_DeviceControlEndpointDeinit:
+   1137                      if (param)
+   \                     ??USB_DeviceKhciControl_6: (+1)
+   \   000000DA   0x2E00             CMP      R6,#+0
+   \   000000DC   0xD006             BEQ.N    ??USB_DeviceKhciControl_23
+   1138                      {
+   1139                          temp8 = (uint8_t *)param;
+   \   000000DE   0x46B2             MOV      R10,R6
+   1140                          error = USB_DeviceKhciEndpointDeinit(khciState, *temp8);
+   \   000000E0   0xF89A 0x1000      LDRB     R1,[R10, #+0]
+   \   000000E4   0x0038             MOVS     R0,R7
+   \   000000E6   0x.... 0x....      BL       USB_DeviceKhciEndpointDeinit
+   \   000000EA   0x4680             MOV      R8,R0
+   1141                      }
+   1142                      break;
+   \                     ??USB_DeviceKhciControl_23: (+1)
+   \   000000EC   0xE069             B.N      ??USB_DeviceKhciControl_20
+   1143                  case kUSB_DeviceControlEndpointStall:
+   1144                      if (param)
+   \                     ??USB_DeviceKhciControl_5: (+1)
+   \   000000EE   0x2E00             CMP      R6,#+0
+   \   000000F0   0xD006             BEQ.N    ??USB_DeviceKhciControl_24
+   1145                      {
+   1146                          temp8 = (uint8_t *)param;
+   \   000000F2   0x46B2             MOV      R10,R6
+   1147                          error = USB_DeviceKhciEndpointStall(khciState, *temp8);
+   \   000000F4   0xF89A 0x1000      LDRB     R1,[R10, #+0]
+   \   000000F8   0x0038             MOVS     R0,R7
+   \   000000FA   0x.... 0x....      BL       USB_DeviceKhciEndpointStall
+   \   000000FE   0x4680             MOV      R8,R0
+   1148                      }
+   1149                      break;
+   \                     ??USB_DeviceKhciControl_24: (+1)
+   \   00000100   0xE05F             B.N      ??USB_DeviceKhciControl_20
+   1150                  case kUSB_DeviceControlEndpointUnstall:
+   1151                      if (param)
+   \                     ??USB_DeviceKhciControl_8: (+1)
+   \   00000102   0x2E00             CMP      R6,#+0
+   \   00000104   0xD006             BEQ.N    ??USB_DeviceKhciControl_25
+   1152                      {
+   1153                          temp8 = (uint8_t *)param;
+   \   00000106   0x46B2             MOV      R10,R6
+   1154                          error = USB_DeviceKhciEndpointUnstall(khciState, *temp8);
+   \   00000108   0xF89A 0x1000      LDRB     R1,[R10, #+0]
+   \   0000010C   0x0038             MOVS     R0,R7
+   \   0000010E   0x.... 0x....      BL       USB_DeviceKhciEndpointUnstall
+   \   00000112   0x4680             MOV      R8,R0
+   1155                      }
+   1156                      break;
+   \                     ??USB_DeviceKhciControl_25: (+1)
+   \   00000114   0xE055             B.N      ??USB_DeviceKhciControl_20
+   1157                  case kUSB_DeviceControlGetDeviceStatus:
+   1158                      if (param)
+   \                     ??USB_DeviceKhciControl_7: (+1)
+   \   00000116   0x2E00             CMP      R6,#+0
+   \   00000118   0xD005             BEQ.N    ??USB_DeviceKhciControl_26
+   1159                      {
+   1160                          temp16 = (uint16_t *)param;
+   \   0000011A   0x46B1             MOV      R9,R6
+   1161                          *temp16 =
+   1162                              (USB_DEVICE_CONFIG_SELF_POWER << (USB_REQUSET_STANDARD_GET_STATUS_DEVICE_SELF_POWERED_SHIFT)) |
+   1163                              (USB_DEVICE_CONFIG_REMOTE_WAKEUP << (USB_REQUSET_STANDARD_GET_STATUS_DEVICE_REMOTE_WARKUP_SHIFT));
+   \   0000011C   0x2001             MOVS     R0,#+1
+   \   0000011E   0xF8A9 0x0000      STRH     R0,[R9, #+0]
+   1164                          error = kStatus_USB_Success;
+   \   00000122   0x2000             MOVS     R0,#+0
+   \   00000124   0x4680             MOV      R8,R0
+   1165                      }
+   1166                      break;
+   \                     ??USB_DeviceKhciControl_26: (+1)
+   \   00000126   0xE04C             B.N      ??USB_DeviceKhciControl_20
+   1167                  case kUSB_DeviceControlGetEndpointStatus:
+   1168                      if (param)
+   \                     ??USB_DeviceKhciControl_10: (+1)
+   \   00000128   0x2E00             CMP      R6,#+0
+   \   0000012A   0xD015             BEQ.N    ??USB_DeviceKhciControl_27
+   1169                      {
+   1170                          usb_device_endpoint_status_struct_t *endpointStatus = (usb_device_endpoint_status_struct_t *)param;
+   \   0000012C   0x0030             MOVS     R0,R6
+   1171          
+   1172                          if (((endpointStatus->endpointAddress) & USB_ENDPOINT_NUMBER_MASK) < USB_DEVICE_CONFIG_ENDPOINTS)
+   \   0000012E   0x7801             LDRB     R1,[R0, #+0]
+   \   00000130   0xF011 0x010F      ANDS     R1,R1,#0xF
+   \   00000134   0x2908             CMP      R1,#+8
+   \   00000136   0xD20F             BCS.N    ??USB_DeviceKhciControl_27
+   1173                          {
+   1174                              endpointStatus->endpointStatus =
+   1175                                  (uint16_t)(
+   1176                                      khciState
+   1177                                          ->endpointState[(((endpointStatus->endpointAddress) & USB_ENDPOINT_NUMBER_MASK) << 1U) |
+   1178                                                          (((endpointStatus->endpointAddress) &
+   1179                                                            USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_MASK) >>
+   1180                                                           USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_SHIFT)]
+   1181                                          .stateUnion.stateBitField.stalled == 1U) ?
+   1182                                      kUSB_DeviceEndpointStateStalled :
+   1183                                      kUSB_DeviceEndpointStateIdle;
+   \   00000138   0x7801             LDRB     R1,[R0, #+0]
+   \   0000013A   0x0049             LSLS     R1,R1,#+1
+   \   0000013C   0xF011 0x011E      ANDS     R1,R1,#0x1E
+   \   00000140   0x7802             LDRB     R2,[R0, #+0]
+   \   00000142   0xEA51 0x11D2      ORRS     R1,R1,R2, LSR #+7
+   \   00000146   0x0109             LSLS     R1,R1,#+4
+   \   00000148   0x4439             ADD      R1,R7,R1
+   \   0000014A   0x6AC9             LDR      R1,[R1, #+44]
+   \   0000014C   0x0A89             LSRS     R1,R1,#+10
+   \   0000014E   0xF011 0x0101      ANDS     R1,R1,#0x1
+   \   00000152   0x8041             STRH     R1,[R0, #+2]
+   1184                              error = kStatus_USB_Success;
+   \   00000154   0x2100             MOVS     R1,#+0
+   \   00000156   0x4688             MOV      R8,R1
+   1185                          }
+   1186                      }
+   1187                      break;
+   \                     ??USB_DeviceKhciControl_27: (+1)
+   \   00000158   0xE033             B.N      ??USB_DeviceKhciControl_20
+   1188                  case kUSB_DeviceControlSetDeviceAddress:
+   1189                      if (param)
+   \                     ??USB_DeviceKhciControl_9: (+1)
+   \   0000015A   0x2E00             CMP      R6,#+0
+   \   0000015C   0xD007             BEQ.N    ??USB_DeviceKhciControl_28
+   1190                      {
+   1191                          temp8 = (uint8_t *)param;
+   \   0000015E   0x46B2             MOV      R10,R6
+   1192                          khciState->registerBase->ADDR = (*temp8);
+   \   00000160   0xF89A 0x0000      LDRB     R0,[R10, #+0]
+   \   00000164   0x68B9             LDR      R1,[R7, #+8]
+   \   00000166   0xF881 0x0098      STRB     R0,[R1, #+152]
+   1193                          error = kStatus_USB_Success;
+   \   0000016A   0x2000             MOVS     R0,#+0
+   \   0000016C   0x4680             MOV      R8,R0
+   1194                      }
+   1195                      break;
+   \                     ??USB_DeviceKhciControl_28: (+1)
+   \   0000016E   0xE028             B.N      ??USB_DeviceKhciControl_20
+   1196                  case kUSB_DeviceControlGetSynchFrame:
+   1197                      break;
+   \                     ??USB_DeviceKhciControl_12: (+1)
+   \   00000170   0xE027             B.N      ??USB_DeviceKhciControl_20
+   1198                  case kUSB_DeviceControlResume:
+   1199          #if defined(USB_DEVICE_CONFIG_REMOTE_WAKEUP) && (USB_DEVICE_CONFIG_REMOTE_WAKEUP > 0U)
+   1200                      USB_OSA_ENTER_CRITICAL();
+   1201                      khciState->registerBase->CTL |= USB_CTL_RESUME_MASK;
+   1202                      for (uint32_t i = 500U; i > 0U; i--)
+   1203                      {
+   1204                          __ASM("nop");
+   1205                      }
+   1206                      khciState->registerBase->CTL &= ~USB_CTL_RESUME_MASK;
+   1207                      USB_OSA_EXIT_CRITICAL();
+   1208                      error = kStatus_USB_Success;
+   1209          #endif /* USB_DEVICE_CONFIG_REMOTE_WAKEUP */
+   1210                      break;
+   \                     ??USB_DeviceKhciControl_11: (+1)
+   \   00000172   0xE026             B.N      ??USB_DeviceKhciControl_20
+   1211                  case kUSB_DeviceControlSetDefaultStatus:
+   1212                      for (uint8_t count = 0U; count < USB_DEVICE_CONFIG_ENDPOINTS; count++)
+   \                     ??USB_DeviceKhciControl_14: (+1)
+   \   00000174   0xF05F 0x0B00      MOVS     R11,#+0
+   \                     ??USB_DeviceKhciControl_29: (+1)
+   \   00000178   0xFA5F 0xFB8B      UXTB     R11,R11          ;; ZeroExt  R11,R11,#+24,#+24
+   \   0000017C   0xF1BB 0x0F08      CMP      R11,#+8
+   \   00000180   0xD20D             BCS.N    ??USB_DeviceKhciControl_30
+   1213                      {
+   1214                          USB_DeviceKhciEndpointDeinit(khciState, (count | (USB_IN << 0x07U)));
+   \   00000182   0xF05B 0x0180      ORRS     R1,R11,#0x80
+   \   00000186   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000188   0x0038             MOVS     R0,R7
+   \   0000018A   0x.... 0x....      BL       USB_DeviceKhciEndpointDeinit
+   1215                          USB_DeviceKhciEndpointDeinit(khciState, (count | (USB_OUT << 0x07U)));
+   \   0000018E   0x4659             MOV      R1,R11
+   \   00000190   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000192   0x0038             MOVS     R0,R7
+   \   00000194   0x.... 0x....      BL       USB_DeviceKhciEndpointDeinit
+   1216                      }
+   \   00000198   0xF11B 0x0B01      ADDS     R11,R11,#+1
+   \   0000019C   0xE7EC             B.N      ??USB_DeviceKhciControl_29
+   1217                      USB_DeviceKhciSetDefaultState(khciState);
+   \                     ??USB_DeviceKhciControl_30: (+1)
+   \   0000019E   0x0038             MOVS     R0,R7
+   \   000001A0   0x.... 0x....      BL       USB_DeviceKhciSetDefaultState
+   1218                      error = kStatus_USB_Success;
+   \   000001A4   0x2000             MOVS     R0,#+0
+   \   000001A6   0x4680             MOV      R8,R0
+   1219                      break;
+   \   000001A8   0xE00B             B.N      ??USB_DeviceKhciControl_20
+   1220                  case kUSB_DeviceControlGetSpeed:
+   1221                      if (param)
+   \                     ??USB_DeviceKhciControl_13: (+1)
+   \   000001AA   0x2E00             CMP      R6,#+0
+   \   000001AC   0xD005             BEQ.N    ??USB_DeviceKhciControl_31
+   1222                      {
+   1223                          temp8 = (uint8_t *)param;
+   \   000001AE   0x46B2             MOV      R10,R6
+   1224                          *temp8 = USB_SPEED_FULL;
+   \   000001B0   0x2000             MOVS     R0,#+0
+   \   000001B2   0xF88A 0x0000      STRB     R0,[R10, #+0]
+   1225                          error = kStatus_USB_Success;
+   \   000001B6   0x2000             MOVS     R0,#+0
+   \   000001B8   0x4680             MOV      R8,R0
+   1226                      }
+   1227                      break;
+   \                     ??USB_DeviceKhciControl_31: (+1)
+   \   000001BA   0xE002             B.N      ??USB_DeviceKhciControl_20
+   1228                  case kUSB_DeviceControlGetOtgStatus:
+   1229                      break;
+   \                     ??USB_DeviceKhciControl_16: (+1)
+   \   000001BC   0xE001             B.N      ??USB_DeviceKhciControl_20
+   1230                  case kUSB_DeviceControlSetOtgStatus:
+   1231                      break;
+   \                     ??USB_DeviceKhciControl_15: (+1)
+   \   000001BE   0xE000             B.N      ??USB_DeviceKhciControl_20
+   1232                  case kUSB_DeviceControlSetTestMode:
+   1233                      break;
+   \                     ??USB_DeviceKhciControl_17: (+1)
+   \   000001C0   0xE7FF             B.N      ??USB_DeviceKhciControl_20
+   1234                  default:
+   1235                      break;
+   1236              }
+   1237          
+   1238              return error;
+   \                     ??USB_DeviceKhciControl_18: (+1)
+   \                     ??USB_DeviceKhciControl_20: (+1)
+   \   000001C2   0x4640             MOV      R0,R8
+   \   000001C4   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \                     ??USB_DeviceKhciControl_1: (+1)
+   \   000001C6   0xE8BD 0x8FF2      POP      {R1,R4-R11,PC}   ;; return
+   1239          }
+   1240          
+   1241          /*!
+   1242           * @brief Handle the KHCI device interrupt.
+   1243           *
+   1244           * The function is used to handle the KHCI device interrupt.
+   1245           *
+   1246           * @param deviceHandle    The device handle got from USB_DeviceInit.
+   1247           *
+   1248           */
+
+   \                                 In section .text, align 2, keep-with-next
+   1249          void USB_DeviceKhciIsrFunction(void *deviceHandle)
+   1250          {
+   \                     USB_DeviceKhciIsrFunction: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   1251              usb_device_struct_t *handle = (usb_device_struct_t *)deviceHandle;
+   \   00000004   0x0025             MOVS     R5,R4
+   1252              usb_device_khci_state_struct_t *khciState;
+   1253              uint8_t status;
+   1254          
+   1255              if (NULL == deviceHandle)
+   \   00000006   0x2C00             CMP      R4,#+0
+   \   00000008   0xD014             BEQ.N    ??USB_DeviceKhciIsrFunction_0
+   1256              {
+   1257                  return;
+   1258              }
+   1259          
+   1260              khciState = (usb_device_khci_state_struct_t *)(handle->controllerHandle);
+   \                     ??USB_DeviceKhciIsrFunction_1: (+1)
+   \   0000000A   0x6828             LDR      R0,[R5, #+0]
+   \   0000000C   0x0006             MOVS     R6,R0
+   1261          
+   1262              status = khciState->registerBase->ISTAT;
+   \   0000000E   0x68B0             LDR      R0,[R6, #+8]
+   \   00000010   0xF890 0x0080      LDRB     R0,[R0, #+128]
+   \   00000014   0x0007             MOVS     R7,R0
+   1263          #if defined(FSL_FEATURE_USB_KHCI_KEEP_ALIVE_ENABLED) && (FSL_FEATURE_USB_KHCI_KEEP_ALIVE_ENABLED > 0U) \
+   1264          && defined(USB_DEVICE_CONFIG_KEEP_ALIVE_MODE) &&                                         \
+   1265              (USB_DEVICE_CONFIG_KEEP_ALIVE_MODE > 0U) && defined(FSL_FEATURE_USB_KHCI_USB_RAM) && \
+   1266              (FSL_FEATURE_USB_KHCI_USB_RAM > 0U)
+   1267              /* Clear EEP_ALIVE_CTRL_WAKE_INT interrupt state */
+   1268              if (khciState->registerBase->KEEP_ALIVE_CTRL & USB_KEEP_ALIVE_CTRL_WAKE_INT_STS_MASK)
+   1269              {
+   1270                  khciState->registerBase->KEEP_ALIVE_CTRL |= USB_KEEP_ALIVE_CTRL_WAKE_INT_STS_MASK;
+   1271              }
+   1272              /* Clear SOFTOK interrupt state */
+   1273              if (khciState->registerBase->ISTAT & USB_ISTAT_SOFTOK_MASK)
+   1274              {
+   1275                  khciState->registerBase->ISTAT = USB_ISTAT_SOFTOK_MASK;
+   1276              }
+   1277          #endif
+   1278          #if defined(USB_DEVICE_CONFIG_KHCI_ERROR_HANDLING) && (USB_DEVICE_CONFIG_KHCI_ERROR_HANDLING > 0U)
+   1279              /* Error interrupt */
+   1280              if (status & kUSB_KhciInterruptError)
+   1281              {
+   1282                  USB_DeviceKhciInterruptError(khciState);
+   1283              }
+   1284          #endif /* USB_DEVICE_CONFIG_KHCI_ERROR_HANDLING */
+   1285              /* Token done interrupt */
+   1286              if (status & kUSB_KhciInterruptTokenDone)
+   \   00000016   0x0738             LSLS     R0,R7,#+28
+   \   00000018   0xD502             BPL.N    ??USB_DeviceKhciIsrFunction_2
+   1287              {
+   1288                  USB_DeviceKhciInterruptTokenDone(khciState);
+   \   0000001A   0x0030             MOVS     R0,R6
+   \   0000001C   0x.... 0x....      BL       USB_DeviceKhciInterruptTokenDone
+   1289              }
+   1290          
+   1291              /* Reset interrupt */
+   1292              if (status & kUSB_KhciInterruptReset)
+   \                     ??USB_DeviceKhciIsrFunction_2: (+1)
+   \   00000020   0x07F8             LSLS     R0,R7,#+31
+   \   00000022   0xD502             BPL.N    ??USB_DeviceKhciIsrFunction_3
+   1293              {
+   1294                  USB_DeviceKhciInterruptReset(khciState);
+   \   00000024   0x0030             MOVS     R0,R6
+   \   00000026   0x.... 0x....      BL       USB_DeviceKhciInterruptReset
+   1295              }
+   1296          
+   1297          #if ((defined(USB_DEVICE_CONFIG_LOW_POWER_MODE) && (USB_DEVICE_CONFIG_LOW_POWER_MODE > 0U)) || \
+   1298               (defined(USB_DEVICE_CONFIG_REMOTE_WAKEUP) && (USB_DEVICE_CONFIG_REMOTE_WAKEUP > 0U)))
+   1299              /* Suspend interrupt */
+   1300              if (status & kUSB_KhciInterruptSleep)
+   1301              {
+   1302                  USB_DeviceKhciInterruptSleep(khciState);
+   1303              }
+   1304          
+   1305              /* Resume interrupt */
+   1306              if (status & kUSB_KhciInterruptResume)
+   1307              {
+   1308                  USB_DeviceKhciInterruptResume(khciState);
+   1309              }
+   1310          #endif /* USB_DEVICE_CONFIG_LOW_POWER_MODE || USB_DEVICE_CONFIG_REMOTE_WAKEUP */
+   1311          
+   1312              /* Endpoint stalled interrupt */
+   1313              if (status & kUSB_KhciInterruptStall)
+   \                     ??USB_DeviceKhciIsrFunction_3: (+1)
+   \   0000002A   0x0638             LSLS     R0,R7,#+24
+   \   0000002C   0xD502             BPL.N    ??USB_DeviceKhciIsrFunction_4
+   1314              {
+   1315                  USB_DeviceKhciInterruptStall(khciState);
+   \   0000002E   0x0030             MOVS     R0,R6
+   \   00000030   0x.... 0x....      BL       USB_DeviceKhciInterruptStall
+   1316              }
+   1317          
+   1318          #if (defined(USB_DEVICE_CONFIG_DETACH_ENABLE) && (USB_DEVICE_CONFIG_DETACH_ENABLE > 0U)) && \
+   1319              (defined(FSL_FEATURE_USB_KHCI_VBUS_DETECT_ENABLED) && (FSL_FEATURE_USB_KHCI_VBUS_DETECT_ENABLED > 0U))
+   1320              if (khciState->registerBase->USBTRC0 & USB_USBTRC0_VREDG_DET_MASK)
+   1321              {
+   1322                  USB_DeviceKhciInterruptVbusRising(khciState);
+   1323              }
+   1324          
+   1325              if (khciState->registerBase->USBTRC0 & USB_USBTRC0_VFEDG_DET_MASK)
+   1326              {
+   1327                  USB_DeviceKhciInterruptVbusFalling(khciState);
+   1328              }
+   1329          #endif /* USB_DEVICE_CONFIG_DETACH_ENABLE && FSL_FEATURE_USB_KHCI_VBUS_DETECT_ENABLED */
+   1330          
+   1331          #if 0U
+   1332              /* Sof token interrupt */
+   1333              if (status & kUSB_KhciInterruptSofToken)
+   1334              {
+   1335                  USB_DeviceKhciInterruptSof(khciState);
+   1336              }
+   1337          #endif
+   1338          
+   1339          #if ((defined FSL_FEATURE_USB_KHCI_IRC48M_MODULE_CLOCK_ENABLED) && \
+   1340               (FSL_FEATURE_USB_KHCI_IRC48M_MODULE_CLOCK_ENABLED > 0U))
+   1341              status = khciState->registerBase->CLK_RECOVER_INT_STATUS;
+   1342              if (status)
+   1343              {
+   1344                  /* USB RECOVER interrupt is happenned */
+   1345                  if (USB_CLK_RECOVER_INT_STATUS_OVF_ERROR_MASK & status)
+   1346                  {
+   1347                      /* Indicates that the USB clock recovery algorithm has detected that the frequency trim adjustment needed
+   1348                       * for the IRC48M output clock is outside the available TRIM_FINE adjustment range for the IRC48M
+   1349                       * module.
+   1350                       */
+   1351                  }
+   1352                  khciState->registerBase->CLK_RECOVER_INT_STATUS = status;
+   1353              }
+   1354          #endif
+   1355          }
+   \                     ??USB_DeviceKhciIsrFunction_4: (+1)
+   \                     ??USB_DeviceKhciIsrFunction_0: (+1)
+   \   00000034   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \   00000000   0x03FF0000         DC32     0x3ff0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \   00000000   0x........         DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \   00000000   0x........         DC32     s_UsbDeviceKhciState
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_3:
+   \   00000000   0x........         DC32     s_UsbDeviceKhciDmaAlignBuffer
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_4:
+   \   00000000   0x........         DC32     s_UsbDeviceKhciBdtBuffer
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \   00000000   0x40072000         DC32 1074208768
+   1356          
+   1357          #endif /* USB_DEVICE_CONFIG_KHCI */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   USB_DeviceKhciCancel
+        32   -> USB_DeviceNotificationTrigger
+      40   USB_DeviceKhciControl
+        40   -> USB_DeviceKhciEndpointDeinit
+        40   -> USB_DeviceKhciEndpointInit
+        40   -> USB_DeviceKhciEndpointStall
+        40   -> USB_DeviceKhciEndpointUnstall
+        40   -> USB_DeviceKhciSetDefaultState
+       0   USB_DeviceKhciDeinit
+      24   USB_DeviceKhciEndpointDeinit
+        24   -> USB_DeviceKhciCancel
+      32   USB_DeviceKhciEndpointInit
+        32   -> USB_DeviceKhciPrimeNextSetup
+      24   USB_DeviceKhciEndpointStall
+        24   -> USB_DeviceKhciCancel
+      32   USB_DeviceKhciEndpointTransfer
+        32   -> USB_BmEnterCritical
+        32   -> USB_BmExitCritical
+      32   USB_DeviceKhciEndpointUnstall
+        32   -> USB_DeviceKhciPrimeNextSetup
+      24   USB_DeviceKhciInit
+        24   -> USB_DeviceKhciControl
+        24   -> USB_DeviceKhciSetDefaultState
+      24   USB_DeviceKhciInterruptReset
+        24   -> USB_DeviceNotificationTrigger
+       8   USB_DeviceKhciInterruptStall
+         8   -> USB_DeviceKhciEndpointUnstall
+      56   USB_DeviceKhciInterruptTokenDone
+        56   -> USB_DeviceKhciCancel
+        56   -> USB_DeviceKhciRecv
+        56   -> USB_DeviceKhciSend
+        56   -> USB_DeviceNotificationTrigger
+        56   -> USB_DeviceSendRequest
+      24   USB_DeviceKhciIsrFunction
+        24   -> USB_DeviceKhciInterruptReset
+        24   -> USB_DeviceKhciInterruptStall
+        24   -> USB_DeviceKhciInterruptTokenDone
+      16   USB_DeviceKhciPrimeNextSetup
+        16   -> USB_DeviceKhciEndpointTransfer
+      40   USB_DeviceKhciRecv
+        40   -> USB_DeviceKhciEndpointTransfer
+        40   -> USB_DeviceKhciPrimeNextSetup
+      40   USB_DeviceKhciSend
+        40   -> USB_DeviceKhciEndpointTransfer
+        40   -> USB_DeviceKhciPrimeNextSetup
+       4   USB_DeviceKhciSetDefaultState
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+       4  ??DataTable3_4
+       4  ?_0
+      96  USB_DeviceKhciCancel
+     458  USB_DeviceKhciControl
+      70  USB_DeviceKhciDeinit
+      78  USB_DeviceKhciEndpointDeinit
+     270  USB_DeviceKhciEndpointInit
+     152  USB_DeviceKhciEndpointStall
+     190  USB_DeviceKhciEndpointTransfer
+     276  USB_DeviceKhciEndpointUnstall
+     154  USB_DeviceKhciInit
+      50  USB_DeviceKhciInterruptReset
+      50  USB_DeviceKhciInterruptStall
+     932  USB_DeviceKhciInterruptTokenDone
+      54  USB_DeviceKhciIsrFunction
+      62  USB_DeviceKhciPrimeNextSetup
+     286  USB_DeviceKhciRecv
+     200  USB_DeviceKhciSend
+     246  USB_DeviceKhciSetDefaultState
+     512  s_UsbDeviceKhciBdtBuffer
+      64  s_UsbDeviceKhciDmaAlignBuffer
+     292  s_UsbDeviceKhciState
+
+ 
+     4 bytes in section .rodata
+ 3 644 bytes in section .text
+   512 bytes in section m_usb_bdt
+   356 bytes in section m_usb_global
+ 
+ 3 644 bytes of CODE  memory
+     4 bytes of CONST memory
+   868 bytes of DATA  memory
+
+Errors: none
+Warnings: none

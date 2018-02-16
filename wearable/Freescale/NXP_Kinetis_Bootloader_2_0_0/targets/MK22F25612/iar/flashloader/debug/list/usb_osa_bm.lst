@@ -1,0 +1,1211 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       16/Aug/2016  13:16:03
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\usb\osa\usb_osa_bm.c
+#    Command line =  
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\usb\osa\usb_osa_bm.c"
+#        -D DEBUG -D NDEBUG -D USB_STACK_BM -D CPU_MK22FN256VDC12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D BL_TARGET_RAM -lC
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\obj"
+#        --no_unroll --debug --endian=little --cpu=Cortex-M4 -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform/devices/MK22F25612\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/autobaud\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/osa\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/device\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/device/class\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/bm_usb\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform/devices\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform/CMSIS/Include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/drivers\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/drivers/common\"
+#        -Ohz --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\list\usb_osa_bm.lst
+#    Object file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\obj\usb_osa_bm.o
+#
+###############################################################################
+
+C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\usb\osa\usb_osa_bm.c
+      1          /*
+      2           * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          #include "stdint.h"
+     31          #include "usb.h"
+     32          #include "usb_osa.h"
+     33          #include "stdlib.h"
+     34          #include "fsl_device_registers.h"
+     35          
+     36          /*******************************************************************************
+     37           * Definitions
+     38           ******************************************************************************/
+     39          #define USB_OSA_BM_EVENT_COUNT (2U)
+     40          #define USB_OSA_BM_SEM_COUNT (1U)
+     41          #define USB_OSA_BM_MSGQ_COUNT (1U)
+     42          #define USB_OSA_BM_MSG_COUNT (8U)
+     43          #define USB_OSA_BM_MSG_SIZE (4U)
+     44          
+     45          /* BM Event status structure */
+     46          typedef struct _usb_osa_event_struct
+     47          {
+     48              uint32_t value; /* Event mask */
+     49              uint32_t flag;  /* Event flags, includes auto clear flag */
+     50              uint8_t isUsed; /* Is used */
+     51          } usb_osa_event_struct_t;
+     52          
+     53          /* BM semaphore status structure */
+     54          typedef struct _usb_osa_sem_struct
+     55          {
+     56              uint32_t value; /* Semaphore count */
+     57              uint8_t isUsed; /* Is used */
+     58          } usb_osa_sem_struct_t;
+     59          
+     60          /* BM msg status structure */
+     61          typedef struct _usb_osa_msg_struct
+     62          {
+     63              uint32_t msg[USB_OSA_BM_MSG_SIZE]; /* Message entity pointer */
+     64          } usb_osa_msg_struct_t;
+     65          
+     66          /* BM msgq status structure */
+     67          typedef struct _usb_osa_msgq_struct
+     68          {
+     69              usb_osa_msg_struct_t msgs[USB_OSA_BM_MSG_COUNT]; /* Message entity list */
+     70              uint32_t count;                                  /* Max message entity count */
+     71              uint32_t msgSize;                                /* Size of each message */
+     72              uint32_t msgCount;                               /* Valid messages */
+     73              uint32_t index;                                  /* The first empty message entity index */
+     74              uint32_t current;                                /* The vaild message index */
+     75              uint8_t isUsed;                                  /* Is used */
+     76          } usb_osa_msgq_struct_t;
+     77          
+     78          /*******************************************************************************
+     79           * Prototypes
+     80           ******************************************************************************/
+     81          
+     82          /*******************************************************************************
+     83           * Variables
+     84           ******************************************************************************/
+     85          
+
+   \                                 In section m_usb_global, align 1
+     86          USB_GLOBAL static uint8_t s_UsbBmCriticalLevel;
+   \                     s_UsbBmCriticalLevel:
+   \   00000000                      DS8 1
+
+   \                                 In section m_usb_global, align 4
+     87          USB_GLOBAL static usb_osa_sem_struct_t s_UsbBmSemStruct[USB_OSA_BM_SEM_COUNT];
+   \                     s_UsbBmSemStruct:
+   \   00000000                      DS8 8
+
+   \                                 In section m_usb_global, align 4
+     88          USB_GLOBAL static usb_osa_event_struct_t s_UsbBmEventStruct[USB_OSA_BM_EVENT_COUNT];
+   \                     s_UsbBmEventStruct:
+   \   00000000                      DS8 24
+
+   \                                 In section m_usb_global, align 4
+     89          USB_GLOBAL static usb_osa_msgq_struct_t s_UsbBmMsgqStruct[USB_OSA_BM_MSGQ_COUNT];
+   \                     s_UsbBmMsgqStruct:
+   \   00000000                      DS8 152
+     90          
+     91          /*******************************************************************************
+     92           * Code
+     93           ******************************************************************************/
+     94          
+
+   \                                 In section .text, align 2, keep-with-next
+     95          void *USB_OsaMemoryAllocate(uint32_t length)
+     96          {
+   \                     USB_OsaMemoryAllocate: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x4604             MOV      R4,R0
+     97              void *p = (void *)malloc(length);
+   \   00000004   0x.... 0x....      BL       malloc
+   \   00000008   0x0005             MOVS     R5,R0
+     98              uint8_t *temp = (uint8_t *)p;
+     99              if (p)
+   \   0000000A   0xBF1E             ITTT     NE 
+    100              {
+    101                  for (uint32_t count = 0U; count < length; count++)
+   \   0000000C   0x2C00             CMPNE    R4,#+0
+    102                  {
+    103                      temp[count] = 0U;
+   \   0000000E   0x4621             MOVNE    R1,R4
+   \   00000010   0x.... 0x....      BLNE     __aeabi_memclr
+    104                  }
+    105              }
+    106              return p;
+   \   00000014   0x4628             MOV      R0,R5
+   \   00000016   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    107          }
+    108          
+
+   \                                 In section .text, align 2, keep-with-next
+    109          void USB_OsaMemoryFree(void *p)
+    110          {
+    111              free(p);
+   \                     USB_OsaMemoryFree: (+1)
+   \   00000000   0x.... 0x....      B.W      free
+    112          }
+    113          
+
+   \                                 In section .text, align 4, keep-with-next
+    114          void USB_BmEnterCritical(void)
+    115          {
+    116              if (0U == s_UsbBmCriticalLevel)
+   \                     USB_BmEnterCritical: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable4
+   \   00000002   0x7801             LDRB     R1,[R0, #+0]
+   \   00000004   0x2900             CMP      R1,#+0
+   \   00000006   0xD100             BNE.N    ??USB_BmEnterCritical_0
+    117              {
+    118          #ifdef __CC_ARM
+    119                  __disable_irq();
+    120          #else
+    121                  __ASM("CPSID i");
+   \   00000008   0xB672             CPSID i
+    122          #endif
+    123              }
+    124              s_UsbBmCriticalLevel++;
+   \                     ??USB_BmEnterCritical_0: (+1)
+   \   0000000A   0x7801             LDRB     R1,[R0, #+0]
+   \   0000000C   0x1C49             ADDS     R1,R1,#+1
+   \   0000000E   0x7001             STRB     R1,[R0, #+0]
+    125          }
+   \   00000010   0x4770             BX       LR               ;; return
+    126          
+
+   \                                 In section .text, align 4, keep-with-next
+    127          void USB_BmExitCritical(void)
+    128          {
+    129              if (s_UsbBmCriticalLevel)
+   \                     USB_BmExitCritical: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable4
+   \   00000002   0x7801             LDRB     R1,[R0, #+0]
+   \   00000004   0x2900             CMP      R1,#+0
+   \   00000006   0xBF1F             ITTTT    NE 
+   \   00000008   0x1E49             SUBNE    R1,R1,#+1
+   \   0000000A   0x7001             STRBNE   R1,[R0, #+0]
+   \   0000000C   0xB2C9             UXTBNE   R1,R1
+   \   0000000E   0x2900             CMPNE    R1,#+0
+    130              {
+    131                  s_UsbBmCriticalLevel--;
+    132              }
+    133              if (0U == s_UsbBmCriticalLevel)
+   \   00000010   0xD100             BNE.N    ??USB_BmExitCritical_0
+    134              {
+    135          #ifdef __CC_ARM
+    136                  __enable_irq();
+    137          #else
+    138                  __ASM("CPSIE i");
+   \   00000012   0xB662             CPSIE i
+    139          #endif
+    140              }
+    141          }
+   \                     ??USB_BmExitCritical_0: (+1)
+   \   00000014   0x4770             BX       LR               ;; return
+    142          
+
+   \                                 In section .text, align 2, keep-with-next
+    143          usb_osa_status_t USB_OsaEventCreate(usb_osa_event_handle *handle, uint32_t flag)
+    144          {
+   \                     USB_OsaEventCreate: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+    145              usb_osa_event_struct_t *event = NULL;
+    146              USB_OSA_SR_ALLOC();
+    147          
+    148              if (!handle)
+   \   00000006   0xD014             BEQ.N    ??USB_OsaEventCreate_0
+    149              {
+    150                  return kStatus_USB_OSA_Error;
+    151              }
+    152          
+    153              USB_OSA_ENTER_CRITICAL();
+   \   00000008   0x.... 0x....      BL       USB_BmEnterCritical
+    154              for (uint32_t i = 0; i < USB_OSA_BM_EVENT_COUNT; i++)
+   \   0000000C   0x2000             MOVS     R0,#+0
+    155              {
+    156                  if (0 == s_UsbBmEventStruct[i].isUsed)
+   \                     ??USB_OsaEventCreate_1: (+1)
+   \   0000000E   0x220C             MOVS     R2,#+12
+   \   00000010   0x....             LDR.N    R1,??DataTable4_1
+   \   00000012   0x4342             MULS     R2,R2,R0
+   \   00000014   0x4411             ADD      R1,R1,R2
+   \   00000016   0x7A0A             LDRB     R2,[R1, #+8]
+   \   00000018   0xB932             CBNZ.N   R2,??USB_OsaEventCreate_2
+    157                  {
+    158                      event = &s_UsbBmEventStruct[i];
+    159                      break;
+    160                  }
+    161              }
+    162          
+    163              if (NULL == event)
+    164              {
+    165                  USB_OSA_EXIT_CRITICAL();
+    166                  return kStatus_USB_OSA_Error;
+    167              }
+    168          
+    169              event->value = 0U;
+   \   0000001A   0x2000             MOVS     R0,#+0
+   \   0000001C   0x6008             STR      R0,[R1, #+0]
+    170              event->flag = flag;
+   \   0000001E   0x604D             STR      R5,[R1, #+4]
+    171              event->isUsed = 1;
+   \   00000020   0x2001             MOVS     R0,#+1
+   \   00000022   0x7208             STRB     R0,[R1, #+8]
+    172              *handle = event;
+   \   00000024   0x6021             STR      R1,[R4, #+0]
+    173              USB_OSA_EXIT_CRITICAL();
+   \   00000026   0x....             B.N      ??Subroutine0_0
+   \                     ??USB_OsaEventCreate_2: (+1)
+   \   00000028   0x1C40             ADDS     R0,R0,#+1
+   \   0000002A   0x2802             CMP      R0,#+2
+   \   0000002C   0xD3EF             BCC.N    ??USB_OsaEventCreate_1
+   \   0000002E   0x.... 0x....      BL       USB_BmExitCritical
+   \                     ??USB_OsaEventCreate_0: (+1)
+   \   00000032   0x2001             MOVS     R0,#+1
+   \   00000034   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    174              return kStatus_USB_OSA_Success;
+    175          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \   00000000   0x6020             STR      R0,[R4, #+0]
+   \                     ??Subroutine0_0: (+1)
+   \   00000002   0x.... 0x....      BL       USB_BmExitCritical
+   \   00000006   0x2000             MOVS     R0,#+0
+   \   00000008   0xBD32             POP      {R1,R4,R5,PC}
+    176          
+
+   \                                 In section .text, align 2, keep-with-next
+    177          usb_osa_status_t USB_OsaEventDestroy(usb_osa_event_handle handle)
+    178          {
+   \                     USB_OsaEventDestroy: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    179              usb_osa_event_struct_t *event = (usb_osa_event_struct_t *)handle;
+    180              USB_OSA_SR_ALLOC();
+    181          
+    182              if (handle)
+   \   00000004   0xD004             BEQ.N    ??USB_OsaEventDestroy_0
+    183              {
+    184                  USB_OSA_ENTER_CRITICAL();
+   \   00000006   0x.... 0x....      BL       USB_BmEnterCritical
+    185                  event->isUsed = 0;
+   \   0000000A   0x2000             MOVS     R0,#+0
+   \   0000000C   0x7220             STRB     R0,[R4, #+8]
+    186                  USB_OSA_EXIT_CRITICAL();
+   \   0000000E   0x....             B.N      ??Subroutine1_0
+    187                  return kStatus_USB_OSA_Success;
+    188              }
+    189              return kStatus_USB_OSA_Error;
+   \                     ??USB_OsaEventDestroy_0: (+1)
+   \   00000010   0x2001             MOVS     R0,#+1
+   \   00000012   0xBD10             POP      {R4,PC}          ;; return
+    190          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \   00000000   0x6020             STR      R0,[R4, #+0]
+   \                     ??Subroutine1_0: (+1)
+   \   00000002   0x.... 0x....      BL       USB_BmExitCritical
+   \   00000006   0x2000             MOVS     R0,#+0
+   \   00000008   0xBD10             POP      {R4,PC}          ;; return
+    191          
+
+   \                                 In section .text, align 2, keep-with-next
+    192          usb_osa_status_t USB_OsaEventSet(usb_osa_event_handle handle, uint32_t bitMask)
+    193          {
+   \                     USB_OsaEventSet: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+    194              usb_osa_event_struct_t *event = (usb_osa_event_struct_t *)handle;
+    195              USB_OSA_SR_ALLOC();
+    196          
+    197              if (handle)
+   \   00000006   0xD004             BEQ.N    ??USB_OsaEventSet_0
+    198              {
+    199                  USB_OSA_ENTER_CRITICAL();
+   \   00000008   0x.... 0x....      BL       USB_BmEnterCritical
+    200                  event->value |= bitMask;
+   \   0000000C   0x6820             LDR      R0,[R4, #+0]
+   \   0000000E   0x4328             ORRS     R0,R5,R0
+   \   00000010   0x....             B.N      ?Subroutine0
+    201                  USB_OSA_EXIT_CRITICAL();
+    202                  return kStatus_USB_OSA_Success;
+    203              }
+    204              return kStatus_USB_OSA_Error;
+   \                     ??USB_OsaEventSet_0: (+1)
+   \   00000012   0x2001             MOVS     R0,#+1
+   \   00000014   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    205          }
+    206          
+
+   \                                 In section .text, align 2, keep-with-next
+    207          usb_osa_status_t USB_OsaEventWait(
+    208              usb_osa_event_handle handle, uint32_t bitMask, uint32_t flag, uint32_t timeout, uint32_t *bitSet)
+    209          {
+   \                     USB_OsaEventWait: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+   \   00000006   0x4616             MOV      R6,R2
+    210              usb_osa_event_struct_t *event = (usb_osa_event_struct_t *)handle;
+    211              uint32_t bits;
+    212              USB_OSA_SR_ALLOC();
+    213          
+    214              if (handle)
+   \   00000008   0xD016             BEQ.N    ??USB_OsaEventWait_0
+    215              {
+    216                  USB_OSA_ENTER_CRITICAL();
+   \   0000000A   0x.... 0x....      BL       USB_BmEnterCritical
+    217                  bits = event->value & bitMask;
+   \   0000000E   0x6820             LDR      R0,[R4, #+0]
+   \   00000010   0xEA05 0x0100      AND      R1,R5,R0
+    218                  if (flag)
+   \   00000014   0xB156             CBZ.N    R6,??USB_OsaEventWait_1
+    219                  {
+    220                      if (bits != bitMask)
+   \   00000016   0x42A9             CMP      R1,R5
+   \   00000018   0xD10A             BNE.N    ??USB_OsaEventWait_2
+   \                     ??USB_OsaEventWait_3: (+1)
+   \   0000001A   0x9804             LDR      R0,[SP, #+16]
+    221                      {
+    222                          USB_OSA_EXIT_CRITICAL();
+    223                          return kStatus_USB_OSA_TimeOut;
+    224                      }
+    225                  }
+    226                  else
+    227                  {
+    228                      if (!bits)
+    229                      {
+    230                          USB_OSA_EXIT_CRITICAL();
+    231                          return kStatus_USB_OSA_TimeOut;
+    232                      }
+    233                  }
+    234                  if (bitSet)
+   \   0000001C   0xB100             CBZ.N    R0,??USB_OsaEventWait_4
+    235                  {
+    236                      *bitSet = bits;
+   \   0000001E   0x6001             STR      R1,[R0, #+0]
+    237                  }
+    238                  if (event->flag)
+   \                     ??USB_OsaEventWait_4: (+1)
+   \   00000020   0x6860             LDR      R0,[R4, #+4]
+   \   00000022   0xB110             CBZ.N    R0,??USB_OsaEventWait_5
+    239                  {
+    240                      event->value &= ~bits;
+   \   00000024   0x6820             LDR      R0,[R4, #+0]
+   \   00000026   0x4388             BICS     R0,R0,R1
+   \   00000028   0x6020             STR      R0,[R4, #+0]
+    241                  }
+    242                  USB_OSA_EXIT_CRITICAL();
+   \                     ??USB_OsaEventWait_5: (+1)
+   \   0000002A   0x....             B.N      ?Subroutine2
+   \                     ??USB_OsaEventWait_1: (+1)
+   \   0000002C   0x2900             CMP      R1,#+0
+   \   0000002E   0xD1F4             BNE.N    ??USB_OsaEventWait_3
+   \                     ??USB_OsaEventWait_2: (+1)
+   \   00000030   0x.... 0x....      BL       USB_BmExitCritical
+   \   00000034   0x2002             MOVS     R0,#+2
+   \   00000036   0xBD70             POP      {R4-R6,PC}
+    243                  return kStatus_USB_OSA_Success;
+    244              }
+    245              return kStatus_USB_OSA_Error;
+   \                     ??USB_OsaEventWait_0: (+1)
+   \   00000038   0x2001             MOVS     R0,#+1
+   \   0000003A   0xBD70             POP      {R4-R6,PC}       ;; return
+    246          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \   00000000   0x.... 0x....      BL       USB_BmExitCritical
+   \   00000004   0x2000             MOVS     R0,#+0
+   \   00000006   0xBD70             POP      {R4-R6,PC}
+    247          
+
+   \                                 In section .text, align 2, keep-with-next
+    248          usb_osa_status_t USB_OsaEventCheck(usb_osa_event_handle handle, uint32_t bitMask, uint32_t *bitSet)
+    249          {
+   \                     USB_OsaEventCheck: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+   \   00000006   0x4616             MOV      R6,R2
+    250              usb_osa_event_struct_t *event = (usb_osa_event_struct_t *)handle;
+    251              uint32_t bits;
+    252              USB_OSA_SR_ALLOC();
+    253          
+    254              if (handle)
+   \   00000008   0xD00A             BEQ.N    ??USB_OsaEventCheck_0
+    255              {
+    256                  USB_OSA_ENTER_CRITICAL();
+   \   0000000A   0x.... 0x....      BL       USB_BmEnterCritical
+    257                  bits = event->value & bitMask;
+   \   0000000E   0x6820             LDR      R0,[R4, #+0]
+   \   00000010   0x4028             ANDS     R0,R5,R0
+    258          
+    259                  if (!bits)
+   \   00000012   0xD102             BNE.N    ??USB_OsaEventCheck_1
+    260                  {
+    261                      USB_OSA_EXIT_CRITICAL();
+   \   00000014   0x.... 0x....      BL       USB_BmExitCritical
+    262                      return kStatus_USB_OSA_Error;
+   \   00000018   0xE002             B.N      ??USB_OsaEventCheck_0
+    263                  }
+    264          
+    265                  if (bitSet)
+   \                     ??USB_OsaEventCheck_1: (+1)
+   \   0000001A   0xB106             CBZ.N    R6,??USB_OsaEventCheck_2
+    266                  {
+    267                      *bitSet = bits;
+   \   0000001C   0x6030             STR      R0,[R6, #+0]
+    268                  }
+    269                  USB_OSA_EXIT_CRITICAL();
+   \                     ??USB_OsaEventCheck_2: (+1)
+   \   0000001E   0x....             B.N      ?Subroutine2
+    270                  return kStatus_USB_OSA_Success;
+    271              }
+    272              return kStatus_USB_OSA_Error;
+   \                     ??USB_OsaEventCheck_0: (+1)
+   \   00000020   0x2001             MOVS     R0,#+1
+   \   00000022   0xBD70             POP      {R4-R6,PC}       ;; return
+    273          }
+    274          
+
+   \                                 In section .text, align 2, keep-with-next
+    275          usb_osa_status_t USB_OsaEventClear(usb_osa_event_handle handle, uint32_t bitMask)
+    276          {
+   \                     USB_OsaEventClear: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+    277              usb_osa_event_struct_t *event = (usb_osa_event_struct_t *)handle;
+    278              uint32_t bits;
+    279              USB_OSA_SR_ALLOC();
+    280          
+    281              if (handle)
+   \   00000006   0xD006             BEQ.N    ??USB_OsaEventClear_0
+    282              {
+    283                  USB_OSA_ENTER_CRITICAL();
+   \   00000008   0x.... 0x....      BL       USB_BmEnterCritical
+    284                  bits = event->value & bitMask;
+    285                  event->value &= ~bits;
+   \   0000000C   0x6820             LDR      R0,[R4, #+0]
+   \   0000000E   0xEA05 0x0100      AND      R1,R5,R0
+   \   00000012   0x4388             BICS     R0,R0,R1
+   \   00000014   0x....             B.N      ?Subroutine0
+    286                  USB_OSA_EXIT_CRITICAL();
+    287                  return kStatus_USB_OSA_Success;
+    288              }
+    289              return kStatus_USB_OSA_Error;
+   \                     ??USB_OsaEventClear_0: (+1)
+   \   00000016   0x2001             MOVS     R0,#+1
+   \   00000018   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    290          }
+    291          
+
+   \                                 In section .text, align 2, keep-with-next
+    292          usb_osa_status_t USB_OsaSemCreate(usb_osa_sem_handle *handle, uint32_t count)
+    293          {
+   \                     USB_OsaSemCreate: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+    294              usb_osa_sem_struct_t *sem = NULL;
+    295              USB_OSA_SR_ALLOC();
+    296          
+    297              if (!handle)
+   \   00000006   0xD00A             BEQ.N    ??USB_OsaSemCreate_0
+    298              {
+    299                  return kStatus_USB_OSA_Error;
+    300              }
+    301          
+    302              USB_OSA_ENTER_CRITICAL();
+   \   00000008   0x.... 0x....      BL       USB_BmEnterCritical
+    303              for (uint32_t i = 0; i < USB_OSA_BM_SEM_COUNT; i++)
+   \   0000000C   0x....             LDR.N    R0,??DataTable4_2
+    304              {
+    305                  if (0 == s_UsbBmSemStruct[i].isUsed)
+   \   0000000E   0x7901             LDRB     R1,[R0, #+4]
+   \   00000010   0xB919             CBNZ.N   R1,??USB_OsaSemCreate_1
+    306                  {
+    307                      sem = &s_UsbBmSemStruct[i];
+    308                      break;
+    309                  }
+    310              }
+    311              if (NULL == sem)
+    312              {
+    313                  USB_OSA_EXIT_CRITICAL();
+    314                  return kStatus_USB_OSA_Error;
+    315              }
+    316          
+    317              sem->value = count;
+    318              sem->isUsed = 1;
+   \   00000012   0x2101             MOVS     R1,#+1
+   \   00000014   0x6005             STR      R5,[R0, #+0]
+   \   00000016   0x7101             STRB     R1,[R0, #+4]
+    319              *handle = sem;
+   \   00000018   0x....             B.N      ?Subroutine0
+   \                     ??USB_OsaSemCreate_1: (+1)
+   \   0000001A   0x.... 0x....      BL       USB_BmExitCritical
+   \                     ??USB_OsaSemCreate_0: (+1)
+   \   0000001E   0x2001             MOVS     R0,#+1
+   \   00000020   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    320              USB_OSA_EXIT_CRITICAL();
+    321              return kStatus_USB_OSA_Success;
+    322          }
+    323          
+
+   \                                 In section .text, align 2, keep-with-next
+    324          usb_osa_status_t USB_OsaSemDestroy(usb_osa_sem_handle handle)
+    325          {
+   \                     USB_OsaSemDestroy: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    326              usb_osa_sem_struct_t *sem = (usb_osa_sem_struct_t *)handle;
+    327              USB_OSA_SR_ALLOC();
+    328          
+    329              if (handle)
+   \   00000004   0xD004             BEQ.N    ??USB_OsaSemDestroy_0
+    330              {
+    331                  USB_OSA_ENTER_CRITICAL();
+   \   00000006   0x.... 0x....      BL       USB_BmEnterCritical
+    332                  sem->isUsed = 0;
+   \   0000000A   0x2000             MOVS     R0,#+0
+   \   0000000C   0x7120             STRB     R0,[R4, #+4]
+    333                  USB_OSA_EXIT_CRITICAL();
+   \   0000000E   0x....             B.N      ??Subroutine1_0
+    334                  return kStatus_USB_OSA_Success;
+    335              }
+    336              return kStatus_USB_OSA_Error;
+   \                     ??USB_OsaSemDestroy_0: (+1)
+   \   00000010   0x2001             MOVS     R0,#+1
+   \   00000012   0xBD10             POP      {R4,PC}          ;; return
+    337          }
+    338          
+
+   \                                 In section .text, align 2, keep-with-next
+    339          usb_osa_status_t USB_OsaSemPost(usb_osa_sem_handle handle)
+    340          {
+   \                     USB_OsaSemPost: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    341              usb_osa_sem_struct_t *sem = (usb_osa_sem_struct_t *)handle;
+    342              USB_OSA_SR_ALLOC();
+    343          
+    344              if (!handle)
+   \   00000004   0xD101             BNE.N    ??USB_OsaSemPost_0
+    345              {
+    346                  return kStatus_USB_OSA_Error;
+   \   00000006   0x2001             MOVS     R0,#+1
+   \   00000008   0xBD10             POP      {R4,PC}
+    347              }
+    348          
+    349              USB_OSA_ENTER_CRITICAL();
+   \                     ??USB_OsaSemPost_0: (+1)
+   \   0000000A   0x.... 0x....      BL       USB_BmEnterCritical
+    350              sem->value++;
+   \   0000000E   0x6820             LDR      R0,[R4, #+0]
+   \   00000010   0x1C40             ADDS     R0,R0,#+1
+   \   00000012                      REQUIRE ?Subroutine1
+   \   00000012                      ;; // Fall through to label ?Subroutine1
+    351              USB_OSA_EXIT_CRITICAL();
+    352              return kStatus_USB_OSA_Success;
+    353          }
+    354          
+
+   \                                 In section .text, align 2, keep-with-next
+    355          usb_osa_status_t USB_OsaSemWait(usb_osa_sem_handle handle, uint32_t timeout)
+    356          {
+   \                     USB_OsaSemWait: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    357              usb_osa_sem_struct_t *sem = (usb_osa_sem_struct_t *)handle;
+    358              USB_OSA_SR_ALLOC();
+    359          
+    360              if (!handle)
+   \   00000004   0xD101             BNE.N    ??USB_OsaSemWait_0
+    361              {
+    362                  return kStatus_USB_OSA_Error;
+   \   00000006   0x2001             MOVS     R0,#+1
+   \   00000008   0xBD10             POP      {R4,PC}
+    363              }
+    364          
+    365              USB_OSA_ENTER_CRITICAL();
+   \                     ??USB_OsaSemWait_0: (+1)
+   \   0000000A   0x.... 0x....      BL       USB_BmEnterCritical
+    366              if (sem->value)
+   \   0000000E   0x6820             LDR      R0,[R4, #+0]
+   \   00000010   0xB108             CBZ.N    R0,??USB_OsaSemWait_1
+    367              {
+    368                  sem->value--;
+   \   00000012   0x1E40             SUBS     R0,R0,#+1
+   \   00000014   0x....             B.N      ?Subroutine1
+    369              }
+    370              else
+    371              {
+    372                  USB_OSA_EXIT_CRITICAL();
+   \                     ??USB_OsaSemWait_1: (+1)
+   \   00000016   0x.... 0x....      BL       USB_BmExitCritical
+    373                  return kStatus_USB_OSA_TimeOut;
+   \   0000001A   0x2002             MOVS     R0,#+2
+   \   0000001C   0xBD10             POP      {R4,PC}          ;; return
+    374              }
+    375              USB_OSA_EXIT_CRITICAL();
+    376              return kStatus_USB_OSA_Success;
+    377          }
+    378          
+
+   \                                 In section .text, align 2, keep-with-next
+    379          usb_osa_status_t USB_OsaMutexCreate(usb_osa_mutex_handle *handle)
+    380          {
+    381              if (!handle)
+   \                     USB_OsaMutexCreate: (+1)
+   \   00000000   0x2800             CMP      R0,#+0
+   \   00000002   0xBF0F             ITEEE    EQ 
+   \   00000004   0x2001             MOVEQ    R0,#+1
+   \   00000006   0x....             LDRNE.N  R1,??DataTable4_3  ;; 0xffff0000
+   \   00000008   0x6001             STRNE    R1,[R0, #+0]
+   \   0000000A   0x2000             MOVNE    R0,#+0
+    382              {
+    383                  return kStatus_USB_OSA_Error;
+    384              }
+    385              *handle = (usb_osa_mutex_handle)0xFFFF0000U;
+    386              return kStatus_USB_OSA_Success;
+   \   0000000C   0x4770             BX       LR
+    387          }
+    388          
+
+   \                                 In section .text, align 2, keep-with-next
+    389          usb_osa_status_t USB_OsaMutexDestroy(usb_osa_mutex_handle handle)
+    390          {
+    391              return kStatus_USB_OSA_Success;
+   \                     USB_OsaMutexDestroy: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+    392          }
+
+   \                                 In section .text, align 2, keep-with-next
+    393          usb_osa_status_t USB_OsaMutexLock(usb_osa_mutex_handle handle)
+    394          {
+    395              return kStatus_USB_OSA_Success;
+   \                     USB_OsaMutexLock: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+    396          }
+
+   \                                 In section .text, align 2, keep-with-next
+    397          usb_osa_status_t USB_OsaMutexUnlock(usb_osa_mutex_handle handle)
+    398          {
+    399              return kStatus_USB_OSA_Success;
+   \                     USB_OsaMutexUnlock: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+    400          }
+    401          
+
+   \                                 In section .text, align 4, keep-with-next
+    402          usb_osa_status_t USB_OsaMsgqCreate(usb_osa_msgq_handle *handle, uint32_t count, uint32_t size)
+    403          {
+   \                     USB_OsaMsgqCreate: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+   \   00000006   0x4616             MOV      R6,R2
+    404              usb_osa_msgq_struct_t *msgq = NULL;
+    405              USB_OSA_SR_ALLOC();
+    406          
+    407              if (!handle)
+   \   00000008   0xD00C             BEQ.N    ??USB_OsaMsgqCreate_0
+    408              {
+    409                  return kStatus_USB_OSA_Error;
+    410              }
+    411              USB_OSA_ENTER_CRITICAL();
+   \   0000000A   0x.... 0x....      BL       USB_BmEnterCritical
+    412          
+    413              for (uint32_t i = 0; i < USB_OSA_BM_MSGQ_COUNT; i++)
+   \   0000000E   0x4806             LDR.N    R0,??USB_OsaMsgqCreate_1
+   \   00000010   0xF100 0x0180      ADD      R1,R0,#+128
+    414              {
+    415                  if (0 == s_UsbBmMsgqStruct[i].isUsed)
+   \   00000014   0x7D0A             LDRB     R2,[R1, #+20]
+   \   00000016   0xB91A             CBNZ.N   R2,??USB_OsaMsgqCreate_2
+    416                  {
+    417                      msgq = &s_UsbBmMsgqStruct[i];
+    418                      break;
+    419                  }
+    420              }
+    421              if ((NULL == msgq) || (count > USB_OSA_BM_MSG_COUNT) || (size > USB_OSA_BM_MSG_SIZE))
+   \   00000018   0x2D09             CMP      R5,#+9
+   \   0000001A   0xBF38             IT       CC 
+   \   0000001C   0x2E05             CMPCC    R6,#+5
+   \   0000001E   0xD305             BCC.N    ??USB_OsaMsgqCreate_3
+    422              {
+    423                  USB_OSA_EXIT_CRITICAL();
+   \                     ??USB_OsaMsgqCreate_2: (+1)
+   \   00000020   0x.... 0x....      BL       USB_BmExitCritical
+    424                  return kStatus_USB_OSA_Error;
+   \                     ??USB_OsaMsgqCreate_0: (+1)
+   \   00000024   0x2001             MOVS     R0,#+1
+   \   00000026   0xBD70             POP      {R4-R6,PC}
+   \                     ??USB_OsaMsgqCreate_1:
+   \   00000028   0x........         DC32     s_UsbBmMsgqStruct
+    425              }
+    426              msgq->count = count;
+    427              msgq->msgSize = size;
+    428              msgq->msgCount = 0U;
+   \                     ??USB_OsaMsgqCreate_3: (+1)
+   \   0000002C   0x608A             STR      R2,[R1, #+8]
+    429              msgq->index = 0U;
+   \   0000002E   0x60CA             STR      R2,[R1, #+12]
+    430              msgq->current = 0U;
+   \   00000030   0x610A             STR      R2,[R1, #+16]
+   \   00000032   0x600D             STR      R5,[R1, #+0]
+    431              msgq->isUsed = 1;
+   \   00000034   0x2201             MOVS     R2,#+1
+   \   00000036   0x604E             STR      R6,[R1, #+4]
+   \   00000038   0x750A             STRB     R2,[R1, #+20]
+    432              *handle = msgq;
+   \   0000003A   0x6020             STR      R0,[R4, #+0]
+    433              USB_OSA_EXIT_CRITICAL();
+   \   0000003C                      REQUIRE ?Subroutine2
+   \   0000003C                      ;; // Fall through to label ?Subroutine2
+    434              return kStatus_USB_OSA_Success;
+    435          }
+    436          
+
+   \                                 In section .text, align 2, keep-with-next
+    437          usb_osa_status_t USB_OsaMsgqDestroy(usb_osa_msgq_handle handle)
+    438          {
+   \                     USB_OsaMsgqDestroy: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    439              usb_osa_msgq_struct_t *msgq = (usb_osa_msgq_struct_t *)handle;
+    440              USB_OSA_SR_ALLOC();
+    441          
+    442              if (!handle)
+   \   00000004   0xD101             BNE.N    ??USB_OsaMsgqDestroy_0
+    443              {
+    444                  return kStatus_USB_OSA_Error;
+   \   00000006   0x2001             MOVS     R0,#+1
+   \   00000008   0xBD10             POP      {R4,PC}
+    445              }
+    446              USB_OSA_ENTER_CRITICAL();
+   \                     ??USB_OsaMsgqDestroy_0: (+1)
+   \   0000000A   0x.... 0x....      BL       USB_BmEnterCritical
+    447              msgq->isUsed = 0;
+   \   0000000E   0x2000             MOVS     R0,#+0
+   \   00000010   0xF884 0x0094      STRB     R0,[R4, #+148]
+    448              USB_OSA_EXIT_CRITICAL();
+   \   00000014   0x....             B.N      ??Subroutine1_0
+    449              return kStatus_USB_OSA_Success;
+    450          }
+    451          
+
+   \                                 In section .text, align 2, keep-with-next
+    452          usb_osa_status_t USB_OsaMsgqSend(usb_osa_msgq_handle handle, void *msg)
+    453          {
+   \                     USB_OsaMsgqSend: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0005             MOVS     R5,R0
+   \   00000004   0x460C             MOV      R4,R1
+    454              usb_osa_msgq_struct_t *msgq = (usb_osa_msgq_struct_t *)handle;
+    455              usb_osa_msg_struct_t *msgEntity;
+    456              uint32_t *p;
+    457              uint32_t *q;
+    458              uint32_t count;
+    459              USB_OSA_SR_ALLOC();
+    460          
+    461              if (!handle)
+   \   00000006   0xD009             BEQ.N    ??USB_OsaMsgqSend_0
+    462              {
+    463                  return kStatus_USB_OSA_Error;
+    464              }
+    465              USB_OSA_ENTER_CRITICAL();
+   \   00000008   0x.... 0x....      BL       USB_BmEnterCritical
+    466              if (msgq->msgCount >= msgq->count)
+   \   0000000C   0xF105 0x0080      ADD      R0,R5,#+128
+   \   00000010   0x6881             LDR      R1,[R0, #+8]
+   \   00000012   0x6802             LDR      R2,[R0, #+0]
+   \   00000014   0x4291             CMP      R1,R2
+   \   00000016   0xD303             BCC.N    ??USB_OsaMsgqSend_1
+    467              {
+    468                  USB_OSA_EXIT_CRITICAL();
+   \   00000018   0x.... 0x....      BL       USB_BmExitCritical
+    469                  return kStatus_USB_OSA_Error;
+   \                     ??USB_OsaMsgqSend_0: (+1)
+   \   0000001C   0x2001             MOVS     R0,#+1
+   \   0000001E   0xBD32             POP      {R1,R4,R5,PC}
+    470              }
+    471          
+    472              msgEntity = &msgq->msgs[msgq->index];
+    473              p = (uint32_t *)&msgEntity->msg[0];
+   \                     ??USB_OsaMsgqSend_1: (+1)
+   \   00000020   0x68C1             LDR      R1,[R0, #+12]
+   \   00000022   0xEB05 0x1101      ADD      R1,R5,R1, LSL #+4
+    474              q = (uint32_t *)msg;
+    475          
+    476              for (count = 0U; count < msgq->msgSize; count++)
+   \   00000026   0x2200             MOVS     R2,#+0
+   \   00000028   0xE004             B.N      ??USB_OsaMsgqSend_2
+    477              {
+    478                  p[count] = q[count];
+   \                     ??USB_OsaMsgqSend_3: (+1)
+   \   0000002A   0xF854 0x3022      LDR      R3,[R4, R2, LSL #+2]
+   \   0000002E   0xF841 0x3022      STR      R3,[R1, R2, LSL #+2]
+    479              }
+   \   00000032   0x1C52             ADDS     R2,R2,#+1
+   \                     ??USB_OsaMsgqSend_2: (+1)
+   \   00000034   0x6843             LDR      R3,[R0, #+4]
+   \   00000036   0x429A             CMP      R2,R3
+   \   00000038   0xD3F7             BCC.N    ??USB_OsaMsgqSend_3
+    480          
+    481              if (0U == msgq->msgCount)
+   \   0000003A   0x6881             LDR      R1,[R0, #+8]
+   \   0000003C   0xB909             CBNZ.N   R1,??USB_OsaMsgqSend_4
+    482              {
+    483                  msgq->current = msgq->index;
+   \   0000003E   0x68C1             LDR      R1,[R0, #+12]
+   \   00000040   0x6101             STR      R1,[R0, #+16]
+    484              }
+    485          
+    486              msgq->msgCount++;
+   \                     ??USB_OsaMsgqSend_4: (+1)
+   \   00000042   0x6881             LDR      R1,[R0, #+8]
+    487              msgq->index++;
+    488              msgq->index = msgq->index % msgq->count;
+   \   00000044   0x6802             LDR      R2,[R0, #+0]
+   \   00000046   0x1C49             ADDS     R1,R1,#+1
+   \   00000048   0x6081             STR      R1,[R0, #+8]
+   \   0000004A   0x68C1             LDR      R1,[R0, #+12]
+   \   0000004C   0x1C49             ADDS     R1,R1,#+1
+   \   0000004E   0xFBB1 0xF3F2      UDIV     R3,R1,R2
+   \   00000052   0xFB02 0x1113      MLS      R1,R2,R3,R1
+   \   00000056   0x60C1             STR      R1,[R0, #+12]
+    489          
+    490              USB_OSA_EXIT_CRITICAL();
+   \   00000058   0x....             B.N      ??Subroutine0_0
+    491          
+    492              return kStatus_USB_OSA_Success;
+    493          }
+    494          
+
+   \                                 In section .text, align 2, keep-with-next
+    495          usb_osa_status_t USB_OsaMsgqRecv(usb_osa_msgq_handle handle, void *msg, uint32_t timeout)
+    496          {
+   \                     USB_OsaMsgqRecv: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0005             MOVS     R5,R0
+   \   00000004   0x460C             MOV      R4,R1
+    497              usb_osa_msgq_struct_t *msgq = (usb_osa_msgq_struct_t *)handle;
+    498              usb_osa_msg_struct_t *msgEntity;
+    499              uint32_t *p;
+    500              uint32_t *q;
+    501              uint32_t count;
+    502              USB_OSA_SR_ALLOC();
+    503          
+    504              if (!handle)
+   \   00000006   0xD101             BNE.N    ??USB_OsaMsgqRecv_0
+    505              {
+    506                  return kStatus_USB_OSA_Error;
+   \   00000008   0x2001             MOVS     R0,#+1
+   \   0000000A   0xBD32             POP      {R1,R4,R5,PC}
+    507              }
+    508              USB_OSA_ENTER_CRITICAL();
+   \                     ??USB_OsaMsgqRecv_0: (+1)
+   \   0000000C   0x.... 0x....      BL       USB_BmEnterCritical
+    509              if (msgq->msgCount < 1U)
+   \   00000010   0xF105 0x0080      ADD      R0,R5,#+128
+   \   00000014   0x6881             LDR      R1,[R0, #+8]
+   \   00000016   0xB919             CBNZ.N   R1,??USB_OsaMsgqRecv_1
+    510              {
+    511                  USB_OSA_EXIT_CRITICAL();
+   \   00000018   0x.... 0x....      BL       USB_BmExitCritical
+    512                  return kStatus_USB_OSA_TimeOut;
+   \   0000001C   0x2002             MOVS     R0,#+2
+   \   0000001E   0xBD32             POP      {R1,R4,R5,PC}
+    513              }
+    514          
+    515              msgEntity = &msgq->msgs[msgq->current];
+    516              q = (uint32_t *)&msgEntity->msg[0];
+   \                     ??USB_OsaMsgqRecv_1: (+1)
+   \   00000020   0x6901             LDR      R1,[R0, #+16]
+   \   00000022   0xEB05 0x1101      ADD      R1,R5,R1, LSL #+4
+    517              p = (uint32_t *)msg;
+    518          
+    519              for (count = 0U; count < msgq->msgSize; count++)
+   \   00000026   0x2200             MOVS     R2,#+0
+   \   00000028   0xE004             B.N      ??USB_OsaMsgqRecv_2
+    520              {
+    521                  p[count] = q[count];
+   \                     ??USB_OsaMsgqRecv_3: (+1)
+   \   0000002A   0xF851 0x3022      LDR      R3,[R1, R2, LSL #+2]
+   \   0000002E   0xF844 0x3022      STR      R3,[R4, R2, LSL #+2]
+    522              }
+   \   00000032   0x1C52             ADDS     R2,R2,#+1
+   \                     ??USB_OsaMsgqRecv_2: (+1)
+   \   00000034   0x6843             LDR      R3,[R0, #+4]
+   \   00000036   0x429A             CMP      R2,R3
+   \   00000038   0xD3F7             BCC.N    ??USB_OsaMsgqRecv_3
+    523          
+    524              msgq->msgCount--;
+   \   0000003A   0x6881             LDR      R1,[R0, #+8]
+    525              msgq->current++;
+    526              msgq->current = msgq->current % msgq->count;
+   \   0000003C   0x6802             LDR      R2,[R0, #+0]
+   \   0000003E   0x1E49             SUBS     R1,R1,#+1
+   \   00000040   0x6081             STR      R1,[R0, #+8]
+   \   00000042   0x6901             LDR      R1,[R0, #+16]
+   \   00000044   0x1C49             ADDS     R1,R1,#+1
+   \   00000046   0x6101             STR      R1,[R0, #+16]
+   \   00000048   0xFBB1 0xF3F2      UDIV     R3,R1,R2
+   \   0000004C   0xFB02 0x1113      MLS      R1,R2,R3,R1
+   \   00000050   0x6101             STR      R1,[R0, #+16]
+    527          
+    528              USB_OSA_EXIT_CRITICAL();
+   \   00000052   0x....             B.N      ??Subroutine0_0
+    529          
+    530              return kStatus_USB_OSA_Success;
+    531          }
+    532          
+
+   \                                 In section .text, align 2, keep-with-next
+    533          usb_osa_status_t USB_OsaMsgqCheck(usb_osa_msgq_handle handle, void *msg)
+    534          {
+   \                     USB_OsaMsgqCheck: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+    535              usb_osa_msgq_struct_t *msgq = (usb_osa_msgq_struct_t *)handle;
+    536              uint32_t msgCount;
+    537              USB_OSA_SR_ALLOC();
+    538          
+    539              if (!handle)
+   \   00000006   0xD00C             BEQ.N    ??USB_OsaMsgqCheck_0
+    540              {
+    541                  return kStatus_USB_OSA_Error;
+    542              }
+    543          
+    544              USB_OSA_ENTER_CRITICAL();
+   \   00000008   0x.... 0x....      BL       USB_BmEnterCritical
+    545              msgCount = msgq->msgCount;
+   \   0000000C   0xF8D4 0x6088      LDR      R6,[R4, #+136]
+    546              USB_OSA_EXIT_CRITICAL();
+   \   00000010   0x.... 0x....      BL       USB_BmExitCritical
+    547          
+    548              if (msgCount)
+   \   00000014   0xB12E             CBZ.N    R6,??USB_OsaMsgqCheck_0
+    549              {
+    550                  if (kStatus_USB_OSA_Success == USB_OsaMsgqRecv(msgq, msg, 0U))
+   \   00000016   0x2200             MOVS     R2,#+0
+   \   00000018   0x4629             MOV      R1,R5
+   \   0000001A   0x4620             MOV      R0,R4
+   \   0000001C   0x.... 0x....      BL       USB_OsaMsgqRecv
+   \   00000020   0xB100             CBZ.N    R0,??USB_OsaMsgqCheck_1
+    551                  {
+    552                      return kStatus_USB_OSA_Success;
+    553                  }
+    554              }
+    555          
+    556              return kStatus_USB_OSA_Error;
+   \                     ??USB_OsaMsgqCheck_0: (+1)
+   \   00000022   0x2001             MOVS     R0,#+1
+   \                     ??USB_OsaMsgqCheck_1: (+1)
+   \   00000024   0xBD70             POP      {R4-R6,PC}       ;; return
+    557          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \   00000000   0x........         DC32     s_UsbBmCriticalLevel
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \   00000000   0x........         DC32     s_UsbBmEventStruct
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \   00000000   0x........         DC32     s_UsbBmSemStruct
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_3:
+   \   00000000   0xFFFF0000         DC32     0xffff0000
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   USB_BmEnterCritical
+       0   USB_BmExitCritical
+      16   USB_OsaEventCheck
+        16   -> USB_BmEnterCritical
+        16   -> USB_BmExitCritical
+      16   USB_OsaEventClear
+        16   -> USB_BmEnterCritical
+        16   -> USB_BmExitCritical
+      16   USB_OsaEventCreate
+        16   -> USB_BmEnterCritical
+        16   -> USB_BmExitCritical
+       8   USB_OsaEventDestroy
+         8   -> USB_BmEnterCritical
+         8   -> USB_BmExitCritical
+      16   USB_OsaEventSet
+        16   -> USB_BmEnterCritical
+        16   -> USB_BmExitCritical
+      16   USB_OsaEventWait
+        16   -> USB_BmEnterCritical
+        16   -> USB_BmExitCritical
+      16   USB_OsaMemoryAllocate
+        16   -> __aeabi_memclr
+        16   -> malloc
+       0   USB_OsaMemoryFree
+         0   -> free
+      16   USB_OsaMsgqCheck
+        16   -> USB_BmEnterCritical
+        16   -> USB_BmExitCritical
+        16   -> USB_OsaMsgqRecv
+      16   USB_OsaMsgqCreate
+        16   -> USB_BmEnterCritical
+        16   -> USB_BmExitCritical
+       8   USB_OsaMsgqDestroy
+         8   -> USB_BmEnterCritical
+         8   -> USB_BmExitCritical
+      16   USB_OsaMsgqRecv
+        16   -> USB_BmEnterCritical
+        16   -> USB_BmExitCritical
+      16   USB_OsaMsgqSend
+        16   -> USB_BmEnterCritical
+        16   -> USB_BmExitCritical
+       0   USB_OsaMutexCreate
+       0   USB_OsaMutexDestroy
+       0   USB_OsaMutexLock
+       0   USB_OsaMutexUnlock
+      16   USB_OsaSemCreate
+        16   -> USB_BmEnterCritical
+        16   -> USB_BmExitCritical
+       8   USB_OsaSemDestroy
+         8   -> USB_BmEnterCritical
+         8   -> USB_BmExitCritical
+       8   USB_OsaSemPost
+         8   -> USB_BmEnterCritical
+         8   -> USB_BmExitCritical
+       8   USB_OsaSemWait
+         8   -> USB_BmEnterCritical
+         8   -> USB_BmExitCritical
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+      10  ?Subroutine0
+      10  ?Subroutine1
+       8  ?Subroutine2
+      18  USB_BmEnterCritical
+      22  USB_BmExitCritical
+      36  USB_OsaEventCheck
+      26  USB_OsaEventClear
+      54  USB_OsaEventCreate
+      20  USB_OsaEventDestroy
+      22  USB_OsaEventSet
+      60  USB_OsaEventWait
+      24  USB_OsaMemoryAllocate
+       4  USB_OsaMemoryFree
+      38  USB_OsaMsgqCheck
+      60  USB_OsaMsgqCreate
+      22  USB_OsaMsgqDestroy
+      84  USB_OsaMsgqRecv
+      90  USB_OsaMsgqSend
+      14  USB_OsaMutexCreate
+       4  USB_OsaMutexDestroy
+       4  USB_OsaMutexLock
+       4  USB_OsaMutexUnlock
+      34  USB_OsaSemCreate
+      20  USB_OsaSemDestroy
+      18  USB_OsaSemPost
+      30  USB_OsaSemWait
+       1  s_UsbBmCriticalLevel
+      24  s_UsbBmEventStruct
+     152  s_UsbBmMsgqStruct
+       8  s_UsbBmSemStruct
+
+ 
+ 752 bytes in section .text
+ 185 bytes in section m_usb_global
+ 
+ 752 bytes of CODE memory
+ 185 bytes of DATA memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,323 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       16/Sep/2016  13:23:59
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\memory\src\device_memory.c
+#    Command line =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\memory\src\device_memory.c
+#        -D NDEBUG -D USB_STACK_BM -D CPU_MK22FN1M0AVMC12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D FREEDOM -D BL_TARGET_FLASH -D
+#        TURINGSENSE=1 -lC
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\list
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\..\..\..\..\src\platform\devices\MK22FA12_MK64\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/autobaud\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/osa\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/device\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/device/class\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/bm_usb\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform/devices\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform/CMSIS/Include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/drivers\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/drivers/common\
+#        -On --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\list\device_memory.lst
+#    Object file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\obj\device_memory.o
+#
+###############################################################################
+
+C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\memory\src\device_memory.c
+      1          /*
+      2           * Copyright (c) 2013, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          
+     31          #include <string.h>
+     32          #include "device_memory.h"
+     33          #include "pattern_fill.h"
+     34          
+     35          ////////////////////////////////////////////////////////////////////////////////
+     36          // Prototypes
+     37          ////////////////////////////////////////////////////////////////////////////////
+     38          
+     39          static void device_copy(uint32_t address, uint32_t length, uint32_t buffer);
+     40          
+     41          ////////////////////////////////////////////////////////////////////////////////
+     42          // Variables
+     43          ////////////////////////////////////////////////////////////////////////////////
+     44          
+     45          //! @brief Interface to simulator memory operations.
+
+   \                                 In section .rodata, align 4
+     46          const memory_region_interface_t g_deviceMemoryInterface = {.read = &device_mem_read,
+   \                     g_deviceMemoryInterface:
+   \   00000000   0x00000000         DC32 0H, device_mem_read, device_mem_write, device_mem_fill, 0H, 0H
+   \              0x........   
+   \              0x........   
+   \              0x........   
+   \              0x00000000   
+   \              0x00000000   
+     47                                                                     .write = &device_mem_write,
+     48          #if !BL_FEATURE_MIN_PROFILE || BL_FEATURE_FILL_MEMORY
+     49                                                                     .fill = &device_mem_fill,
+     50          #endif // !BL_FEATURE_MIN_PROFILE
+     51                                                                     .flush = NULL,
+     52                                                                     .erase = NULL };
+     53          
+     54          ////////////////////////////////////////////////////////////////////////////////
+     55          // Code
+     56          ////////////////////////////////////////////////////////////////////////////////
+     57          
+     58          //! @brief Device-safe memory copy.
+     59          //!
+     60          //! Performs a memory copy using aligned accesses of no more than one word
+     61          //! at a time.
+
+   \                                 In section .text, align 2, keep-with-next
+     62          void device_copy(uint32_t address, uint32_t length, uint32_t buffer)
+     63          {
+   \                     device_copy: (+1)
+   \   00000000   0xB470             PUSH     {R4-R6}
+     64              // This loop lets us reuse the byte and halfword copy code.
+     65              while (length)
+   \                     ??device_copy_0: (+1)
+   \   00000002   0x2900             CMP      R1,#+0
+   \   00000004   0xD020             BEQ.N    ??device_copy_1
+     66              {
+     67                  // Handle leading/trailing byte.
+     68                  if ((address & 1) || (length == 1))
+   \   00000006   0x07C3             LSLS     R3,R0,#+31
+   \   00000008   0xD401             BMI.N    ??device_copy_2
+   \   0000000A   0x2901             CMP      R1,#+1
+   \   0000000C   0xD105             BNE.N    ??device_copy_3
+     69                  {
+     70                      *(uint8_t *)address = *(const uint8_t *)buffer;
+   \                     ??device_copy_2: (+1)
+   \   0000000E   0x7813             LDRB     R3,[R2, #+0]
+   \   00000010   0x7003             STRB     R3,[R0, #+0]
+     71                      ++address;
+   \   00000012   0x1C40             ADDS     R0,R0,#+1
+     72                      ++buffer;
+   \   00000014   0x1C52             ADDS     R2,R2,#+1
+     73                      --length;
+   \   00000016   0x1E49             SUBS     R1,R1,#+1
+     74                      continue;
+   \   00000018   0xE7F3             B.N      ??device_copy_0
+     75                  }
+     76          
+     77                  // Handle leading/trailing halfword.
+     78                  if ((address & 2) || (length < sizeof(uint32_t)))
+   \                     ??device_copy_3: (+1)
+   \   0000001A   0x0783             LSLS     R3,R0,#+30
+   \   0000001C   0xD401             BMI.N    ??device_copy_4
+   \   0000001E   0x2904             CMP      R1,#+4
+   \   00000020   0xD204             BCS.N    ??device_copy_5
+     79                  {
+     80                      *(uint16_t *)address = *(const uint16_t *)buffer;
+   \                     ??device_copy_4: (+1)
+   \   00000022   0x8813             LDRH     R3,[R2, #+0]
+   \   00000024   0x8003             STRH     R3,[R0, #+0]
+     81                      address += sizeof(uint16_t);
+   \   00000026   0x1C80             ADDS     R0,R0,#+2
+     82                      buffer += sizeof(uint16_t);
+   \   00000028   0x1C92             ADDS     R2,R2,#+2
+     83                      length -= sizeof(uint16_t);
+   \   0000002A   0x1E89             SUBS     R1,R1,#+2
+     84                  }
+     85          
+     86                  // Copy as many whole words as remain.
+     87                  uint32_t words = length >> 2;
+   \                     ??device_copy_5: (+1)
+   \   0000002C   0x088B             LSRS     R3,R1,#+2
+     88                  if (words)
+   \   0000002E   0x2B00             CMP      R3,#+0
+   \   00000030   0xD0E7             BEQ.N    ??device_copy_0
+     89                  {
+     90                      uint32_t wordsLength = words << 2;
+   \   00000032   0x009C             LSLS     R4,R3,#+2
+     91                      uint32_t end = address + wordsLength;
+   \   00000034   0x1825             ADDS     R5,R4,R0
+     92                      while (address < end)
+   \                     ??device_copy_6: (+1)
+   \   00000036   0x42A8             CMP      R0,R5
+   \   00000038   0xD204             BCS.N    ??device_copy_7
+     93                      {
+     94                          *(uint32_t *)address = *(uint32_t *)buffer;
+   \   0000003A   0x6816             LDR      R6,[R2, #+0]
+   \   0000003C   0x6006             STR      R6,[R0, #+0]
+     95                          address += sizeof(uint32_t);
+   \   0000003E   0x1D00             ADDS     R0,R0,#+4
+     96                          buffer += sizeof(uint32_t);
+   \   00000040   0x1D12             ADDS     R2,R2,#+4
+   \   00000042   0xE7F8             B.N      ??device_copy_6
+     97                      }
+     98          
+     99                      length -= wordsLength;
+   \                     ??device_copy_7: (+1)
+   \   00000044   0x1B09             SUBS     R1,R1,R4
+   \   00000046   0xE7DC             B.N      ??device_copy_0
+    100                  }
+    101              }
+    102          }
+   \                     ??device_copy_1: (+1)
+   \   00000048   0xBC70             POP      {R4-R6}
+   \   0000004A   0x4770             BX       LR               ;; return
+    103          
+
+   \                                 In section .text, align 2, keep-with-next
+    104          status_t device_mem_read(uint32_t address, uint32_t length, uint8_t *buffer)
+    105          {
+   \                     device_mem_read: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+   \   00000006   0x0016             MOVS     R6,R2
+    106              device_copy((uint32_t)buffer, length, address);
+   \   00000008   0x0022             MOVS     R2,R4
+   \   0000000A   0x0029             MOVS     R1,R5
+   \   0000000C   0x0030             MOVS     R0,R6
+   \   0000000E   0x.... 0x....      BL       device_copy
+    107              return kStatus_Success;
+   \   00000012   0x2000             MOVS     R0,#+0
+   \   00000014   0xBD70             POP      {R4-R6,PC}       ;; return
+    108          }
+    109          
+
+   \                                 In section .text, align 2, keep-with-next
+    110          status_t device_mem_write(uint32_t address, uint32_t length, const uint8_t *buffer)
+    111          {
+   \                     device_mem_write: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+   \   00000006   0x0016             MOVS     R6,R2
+    112              device_copy(address, length, (uint32_t)buffer);
+   \   00000008   0x0032             MOVS     R2,R6
+   \   0000000A   0x0029             MOVS     R1,R5
+   \   0000000C   0x0020             MOVS     R0,R4
+   \   0000000E   0x.... 0x....      BL       device_copy
+    113              return kStatus_Success;
+   \   00000012   0x2000             MOVS     R0,#+0
+   \   00000014   0xBD70             POP      {R4-R6,PC}       ;; return
+    114          }
+    115          
+
+   \                                 In section .text, align 2, keep-with-next
+    116          status_t device_mem_fill(uint32_t address, uint32_t length, uint32_t pattern)
+    117          {
+   \                     device_mem_fill: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+   \   00000006   0x0016             MOVS     R6,R2
+    118              status_t status = kStatus_Success;
+   \   00000008   0x2700             MOVS     R7,#+0
+    119              status = pattern_fill(address, pattern, length, true);
+   \   0000000A   0x2301             MOVS     R3,#+1
+   \   0000000C   0x002A             MOVS     R2,R5
+   \   0000000E   0x0031             MOVS     R1,R6
+   \   00000010   0x0020             MOVS     R0,R4
+   \   00000012   0x.... 0x....      BL       pattern_fill
+   \   00000016   0x0007             MOVS     R7,R0
+    120              return status;
+   \   00000018   0x0038             MOVS     R0,R7
+   \   0000001A   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    121          }
+    122          
+    123          ////////////////////////////////////////////////////////////////////////////////
+    124          // EOF
+    125          ////////////////////////////////////////////////////////////////////////////////
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      12   device_copy
+      24   device_mem_fill
+        24   -> pattern_fill
+      16   device_mem_read
+        16   -> device_copy
+      16   device_mem_write
+        16   -> device_copy
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      76  device_copy
+      28  device_mem_fill
+      22  device_mem_read
+      22  device_mem_write
+      24  g_deviceMemoryInterface
+
+ 
+  24 bytes in section .rodata
+ 148 bytes in section .text
+ 
+ 148 bytes of CODE  memory
+  24 bytes of CONST memory
+
+Errors: none
+Warnings: none

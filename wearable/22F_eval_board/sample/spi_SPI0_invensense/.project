@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>spi_SPI0_invensense</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+			<triggers>clean,full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+			<triggers>full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Source/main_spi0_invensense.c</name>
+			<type>1</type>
+			<location>C:/Freescale/Freescale_MQX_4_1/mqx/examples/spi_SPI0_invensense/main_spi0_invensense.c</location>
+		</link>
+		<link>
+			<name>Source/spi_memory.c</name>
+			<type>1</type>
+			<location>C:/Freescale/Freescale_MQX_4_1/mqx/examples/spi_SPI0_invensense/spi_memory.c</location>
+		</link>
+		<link>
+			<name>Source/spi_memory.h</name>
+			<type>1</type>
+			<location>C:/Freescale/Freescale_MQX_4_1/mqx/examples/spi_SPI0_invensense/spi_memory.h</location>
+		</link>
+	</linkedResources>
+</projectDescription>

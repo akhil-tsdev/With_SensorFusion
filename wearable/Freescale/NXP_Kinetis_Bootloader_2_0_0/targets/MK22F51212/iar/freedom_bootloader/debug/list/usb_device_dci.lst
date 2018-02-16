@@ -1,0 +1,1761 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       16/Aug/2016  15:49:00
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\usb\device\usb_device_dci.c
+#    Command line =  
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\usb\device\usb_device_dci.c"
+#        -D DEBUG -D NDEBUG -D USB_STACK_BM -D CPU_MK22FN512VDC12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D FREEDOM -D BL_TARGET_FLASH -lC
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\obj"
+#        --no_unroll --debug --endian=little --cpu=Cortex-M4 -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform/devices/MK22F51212\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/autobaud\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/osa\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/device\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/device/class\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/bm_usb\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform/devices\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform/CMSIS/Include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/drivers\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/drivers/common\"
+#        -Ohz --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\list\usb_device_dci.lst
+#    Object file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\obj\usb_device_dci.o
+#
+###############################################################################
+
+C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\usb\device\usb_device_dci.c
+      1          /*
+      2           * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          
+     31          #include "usb_device_config.h"
+     32          #include "usb.h"
+     33          
+     34          #include "usb_device.h"
+     35          #include "usb_device_dci.h"
+     36          
+     37          #include "fsl_device_registers.h"
+     38          
+     39          #if ((defined(USB_DEVICE_CONFIG_NUM)) && (USB_DEVICE_CONFIG_NUM > 0U))
+     40          
+     41          #if ((defined(USB_DEVICE_CONFIG_KHCI)) && (USB_DEVICE_CONFIG_KHCI > 0U))
+     42          #include "usb_device_khci.h"
+     43          #endif
+     44          
+     45          #if ((defined(USB_DEVICE_CONFIG_EHCI)) && (USB_DEVICE_CONFIG_EHCI > 0U))
+     46          #include "usb_device_ehci.h"
+     47          #endif
+     48          
+     49          #include "usb_device_ch9.h"
+     50          
+     51          /*******************************************************************************
+     52           * Definitions
+     53           ******************************************************************************/
+     54          
+     55          /*******************************************************************************
+     56           * Prototypes
+     57           ******************************************************************************/
+     58          static usb_status_t USB_DeviceAllocateHandle(uint8_t controllerId, usb_device_struct_t **handle);
+     59          static usb_status_t USB_DeviceFreeHandle(usb_device_struct_t *handle);
+     60          static usb_status_t USB_DeviceGetControllerInterface(
+     61              uint8_t controllerId, const usb_device_controller_interface_struct_t **controllerInterface);
+     62          static usb_status_t USB_DeviceTransfer(usb_device_handle handle,
+     63                                                 uint8_t endpointAddress,
+     64                                                 uint8_t *buffer,
+     65                                                 uint32_t length);
+     66          static usb_status_t USB_DeviceControl(usb_device_handle handle, usb_device_control_type_t type, void *param);
+     67          static usb_status_t USB_DeviceResetNotification(usb_device_struct_t *handle,
+     68                                                          usb_device_callback_message_struct_t *message);
+     69          #if ((defined(USB_DEVICE_CONFIG_LOW_POWER_MODE) && (USB_DEVICE_CONFIG_LOW_POWER_MODE > 0U)) || \
+     70               (defined(USB_DEVICE_CONFIG_REMOTE_WAKEUP) && (USB_DEVICE_CONFIG_REMOTE_WAKEUP > 0U)))
+     71          static usb_status_t USB_DeviceSuspendNotification(usb_device_struct_t *handle,
+     72                                                            usb_device_callback_message_struct_t *message);
+     73          static usb_status_t USB_DeviceSuspendNotification(usb_device_struct_t *handle,
+     74                                                            usb_device_callback_message_struct_t *message);
+     75          #endif
+     76          #if (defined(USB_DEVICE_CONFIG_DETACH_ENABLE) && (USB_DEVICE_CONFIG_DETACH_ENABLE > 0U))
+     77          static usb_status_t USB_DeviceDetachNotification(usb_device_struct_t *handle,
+     78                                                           usb_device_callback_message_struct_t *message);
+     79          static usb_status_t USB_DeviceAttachNotification(usb_device_struct_t *handle,
+     80                                                           usb_device_callback_message_struct_t *message);
+     81          #endif
+     82          static usb_status_t USB_DeviceNotification(usb_device_struct_t *handle, usb_device_callback_message_struct_t *message);
+     83          
+     84          /*******************************************************************************
+     85           * Variables
+     86           ******************************************************************************/
+     87          
+
+   \                                 In section m_usb_global, align 4
+     88          USB_GLOBAL static usb_device_struct_t s_UsbDevice[USB_DEVICE_CONFIG_NUM];
+   \                     s_UsbDevice:
+   \   00000000                      DS8 144
+     89          
+     90          /*******************************************************************************
+     91           * Code
+     92           ******************************************************************************/
+     93          
+     94          /*!
+     95           * @brief Allocate a device handle.
+     96           *
+     97           * This function allocates a device handle.
+     98           *
+     99           * @param controllerId   The controller id of the USB IP. Please refer to the enumeration usb_controller_index_t.
+    100           * @param handle          It is out parameter, is used to return pointer of the device handle to the caller.
+    101           *
+    102           * @retval kStatus_USB_Success              Get a device handle successfully.
+    103           * @retval kStatus_USB_Busy                 Cannot allocate a device handle.
+    104           * @retval kStatus_USB_Error                The device has been initialized.
+    105           */
+    106          static usb_status_t USB_DeviceAllocateHandle(uint8_t controllerId, usb_device_struct_t **handle)
+    107          {
+    108              uint32_t count;
+    109              USB_OSA_SR_ALLOC();
+    110          
+    111              USB_OSA_ENTER_CRITICAL();
+    112              /* Check the controller is initialized or not. */
+    113              for (count = 0U; count < USB_DEVICE_CONFIG_NUM; count++)
+    114              {
+    115                  if ((NULL != s_UsbDevice[count].controllerHandle) && (controllerId == s_UsbDevice[count].controllerId))
+    116                  {
+    117                      USB_OSA_EXIT_CRITICAL();
+    118                      return kStatus_USB_Error;
+    119                  }
+    120              }
+    121              /* Get a free device handle. */
+    122              for (count = 0U; count < USB_DEVICE_CONFIG_NUM; count++)
+    123              {
+    124                  if (NULL == s_UsbDevice[count].controllerHandle)
+    125                  {
+    126                      s_UsbDevice[count].controllerId = controllerId;
+    127                      *handle = &s_UsbDevice[count];
+    128                      USB_OSA_EXIT_CRITICAL();
+    129                      return kStatus_USB_Success;
+    130                  }
+    131              }
+    132              USB_OSA_EXIT_CRITICAL();
+    133              return kStatus_USB_Busy;
+    134          }
+    135          
+    136          /*!
+    137           * @brief Free a device handle.
+    138           *
+    139           * This function frees a device handle.
+    140           *
+    141           * @param handle          The device handle.
+    142           *
+    143           * @retval kStatus_USB_Success              Free device handle successfully.
+    144           */
+
+   \                                 In section .text, align 2, keep-with-next
+    145          static usb_status_t USB_DeviceFreeHandle(usb_device_struct_t *handle)
+    146          {
+   \                     USB_DeviceFreeHandle: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x4604             MOV      R4,R0
+    147              USB_OSA_SR_ALLOC();
+    148          
+    149              USB_OSA_ENTER_CRITICAL();
+   \   00000004   0x.... 0x....      BL       USB_BmEnterCritical
+    150              handle->controllerHandle = NULL;
+   \   00000008   0x2000             MOVS     R0,#+0
+   \   0000000A   0x6020             STR      R0,[R4, #+0]
+    151              handle->controllerId = 0U;
+   \   0000000C   0xF884 0x008D      STRB     R0,[R4, #+141]
+    152              USB_OSA_EXIT_CRITICAL();
+   \   00000010   0x.... 0x....      BL       USB_BmExitCritical
+    153              return kStatus_USB_Success;
+   \   00000014   0x2000             MOVS     R0,#+0
+   \   00000016   0xBD10             POP      {R4,PC}          ;; return
+    154          }
+    155          
+    156          #if ((defined(USB_DEVICE_CONFIG_KHCI)) && (USB_DEVICE_CONFIG_KHCI > 0U))
+    157          /* KHCI device driver interface */
+
+   \                                 In section .text, align 4, keep-with-next
+    158          static const usb_device_controller_interface_struct_t s_UsbDeviceKhciInterface = {
+   \                     s_UsbDeviceKhciInterface:
+   \   00000000   0x........         DC32 USB_DeviceKhciInit, USB_DeviceKhciDeinit, USB_DeviceKhciSend
+   \              0x........   
+   \              0x........   
+   \   0000000C   0x........         DC32 USB_DeviceKhciRecv, USB_DeviceKhciCancel, USB_DeviceKhciControl
+   \              0x........   
+   \              0x........   
+    159              USB_DeviceKhciInit, USB_DeviceKhciDeinit, USB_DeviceKhciSend,
+    160              USB_DeviceKhciRecv, USB_DeviceKhciCancel, USB_DeviceKhciControl};
+    161          #endif
+    162          
+    163          #if ((defined(USB_DEVICE_CONFIG_EHCI)) && (USB_DEVICE_CONFIG_EHCI > 0U))
+    164          /* EHCI device driver interface */
+    165          static const usb_device_controller_interface_struct_t s_UsbDeviceEhciInterface = {
+    166              USB_DeviceEhciInit, USB_DeviceEhciDeinit, USB_DeviceEhciSend,
+    167              USB_DeviceEhciRecv, USB_DeviceEhciCancel, USB_DeviceEhciControl};
+    168          #endif
+    169          
+    170          /*!
+    171           * @brief Get the controller interface handle.
+    172           *
+    173           * This function is used to get the controller interface handle.
+    174           *
+    175           * @param controllerId          The controller id of the USB IP. Please refer to the enumeration usb_controller_index_t.
+    176           * @param controllerInterface   It is out parameter, is used to return pointer of the device controller handle to the
+    177           * caller.
+    178           *
+    179           * @retval kStatus_USB_Success              Get a device handle successfully.
+    180           * @retval kStatus_USB_ControllerNotFound   The controller id is invalided.
+    181           */
+    182          static usb_status_t USB_DeviceGetControllerInterface(
+    183              uint8_t controllerId, const usb_device_controller_interface_struct_t **controllerInterface)
+    184          {
+    185              usb_status_t error = kStatus_USB_ControllerNotFound;
+    186              switch (controllerId)
+    187              {
+    188          #if ((defined(USB_DEVICE_CONFIG_KHCI)) && (USB_DEVICE_CONFIG_KHCI > 0U))
+    189                  /* Get the KHCI controller driver interface */
+    190                  case kUSB_ControllerKhci0:
+    191                  case kUSB_ControllerKhci1:
+    192                      *controllerInterface = (const usb_device_controller_interface_struct_t *)&s_UsbDeviceKhciInterface;
+    193                      error = kStatus_USB_Success;
+    194                      break;
+    195          #endif
+    196          #if ((defined(USB_DEVICE_CONFIG_EHCI)) && (USB_DEVICE_CONFIG_EHCI > 0U))
+    197                  /* Get the EHCI controller driver interface */
+    198                  case kUSB_ControllerEhci0:
+    199                  case kUSB_ControllerEhci1:
+    200                      error = kStatus_USB_Success;
+    201                      *controllerInterface = (const usb_device_controller_interface_struct_t *)&s_UsbDeviceEhciInterface;
+    202                      break;
+    203          #endif
+    204                  default:
+    205                      break;
+    206              }
+    207              return error;
+    208          }
+    209          
+    210          /*!
+    211           * @brief Start a new transfer.
+    212           *
+    213           * This function is used to start a new transfer.
+    214           *
+    215           * @param handle                 The device handle. It equals the value returned from USB_DeviceInit.
+    216           * @param endpointAddress       Endpoint address. Bit7 is direction, 0U - USB_OUT, 1U - USB_IN.
+    217           * @param buffer                 The memory address to be transferred, or the memory address to hold the data need to be
+    218           * sent.
+    219           * @param length                 The length of the data.
+    220           *
+    221           * @retval kStatus_USB_Success              Get a device handle successfully.
+    222           * @retval kStatus_USB_InvalidHandle        The device handle is invalided.
+    223           * @retval kStatus_USB_ControllerNotFound   The controller interface is not found.
+    224           * @retval kStatus_USB_Error                The device is doing reset.
+    225           */
+
+   \                                 In section .text, align 2, keep-with-next
+    226          static usb_status_t USB_DeviceTransfer(usb_device_handle handle,
+    227                                                 uint8_t endpointAddress,
+    228                                                 uint8_t *buffer,
+    229                                                 uint32_t length)
+    230          {
+   \                     USB_DeviceTransfer: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+    231              usb_device_struct_t *deviceHandle = (usb_device_struct_t *)handle;
+    232              usb_status_t error = kStatus_USB_Error;
+    233          
+    234              if (NULL == deviceHandle)
+   \   00000002   0xB908             CBNZ.N   R0,??USB_DeviceTransfer_0
+    235              {
+    236                  return kStatus_USB_InvalidHandle;
+   \   00000004   0x2003             MOVS     R0,#+3
+   \   00000006   0xBD32             POP      {R1,R4,R5,PC}
+    237              }
+    238          
+    239              if (NULL != deviceHandle->controllerInterface)
+   \                     ??USB_DeviceTransfer_0: (+1)
+   \   00000008   0x6844             LDR      R4,[R0, #+4]
+   \   0000000A   0xB144             CBZ.N    R4,??USB_DeviceTransfer_1
+    240              {
+    241                  if (endpointAddress & USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_MASK)
+   \   0000000C   0x6800             LDR      R0,[R0, #+0]
+   \   0000000E   0x060D             LSLS     R5,R1,#+24
+   \   00000010   0xD502             BPL.N    ??USB_DeviceTransfer_2
+    242                  {
+    243          #if (defined(USB_DEVICE_CONFIG_BUFFER_PROPERTY_CACHEABLE) && (USB_DEVICE_CONFIG_BUFFER_PROPERTY_CACHEABLE > 0U))
+    244                      if (length)
+    245                      {
+    246                          USB_CacheFlushLines((void *)buffer, length);
+    247                      }
+    248          #endif
+    249                      /* Call the controller send interface. */
+    250                      error = deviceHandle->controllerInterface->deviceSend(deviceHandle->controllerHandle, endpointAddress,
+    251                                                                            buffer, length);
+   \   00000012   0x68A4             LDR      R4,[R4, #+8]
+   \   00000014   0x47A0             BLX      R4
+   \   00000016   0xBD32             POP      {R1,R4,R5,PC}
+    252                  }
+    253                  else
+    254                  {
+    255          #if (defined(USB_DEVICE_CONFIG_BUFFER_PROPERTY_CACHEABLE) && (USB_DEVICE_CONFIG_BUFFER_PROPERTY_CACHEABLE > 0U))
+    256                      if (length)
+    257                      {
+    258                          USB_CacheInvalidateLines((void *)buffer, length);
+    259                      }
+    260          #endif
+    261                      /* Call the controller receive interface. */
+    262                      error = deviceHandle->controllerInterface->deviceRecv(deviceHandle->controllerHandle, endpointAddress,
+    263                                                                            buffer, length);
+   \                     ??USB_DeviceTransfer_2: (+1)
+   \   00000018   0x68E4             LDR      R4,[R4, #+12]
+   \   0000001A   0x47A0             BLX      R4
+   \   0000001C   0xBD32             POP      {R1,R4,R5,PC}
+    264                  }
+    265              }
+    266              else
+    267              {
+    268                  error = kStatus_USB_ControllerNotFound;
+   \                     ??USB_DeviceTransfer_1: (+1)
+   \   0000001E   0x2006             MOVS     R0,#+6
+    269              }
+    270              return error;
+   \   00000020   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    271          }
+    272          
+    273          /*!
+    274           * @brief Control the status of the selected item.
+    275           *
+    276           * This function is used to control the status of the selected item..
+    277           *
+    278           * @param handle                 The device handle. It equals the value returned from USB_DeviceInit.
+    279           * @param type                   The control type, please refer to the enumeration usb_device_control_type_t.
+    280           * @param param                  The param type is determined by the selected item.
+    281           *
+    282           * @retval kStatus_USB_Success              Get a device handle successfully.
+    283           * @retval kStatus_USB_InvalidHandle        The device handle is invalided.
+    284           * @retval kStatus_USB_ControllerNotFound   The controller interface is not found.
+    285           * @retval kStatus_USB_Error                Unsupport type.
+    286           *                                          Or, the param is NULL pointer.
+    287           */
+
+   \                                 In section .text, align 2, keep-with-next
+    288          static usb_status_t USB_DeviceControl(usb_device_handle handle, usb_device_control_type_t type, void *param)
+    289          {
+    290              usb_device_struct_t *deviceHandle = (usb_device_struct_t *)handle;
+    291              usb_status_t error = kStatus_USB_Error;
+    292          
+    293              if (NULL == deviceHandle)
+   \                     USB_DeviceControl: (+1)
+   \   00000000   0xB908             CBNZ.N   R0,??USB_DeviceControl_0
+    294              {
+    295                  return kStatus_USB_InvalidHandle;
+   \   00000002   0x2003             MOVS     R0,#+3
+   \   00000004   0x4770             BX       LR
+    296              }
+    297          
+    298              if (NULL != deviceHandle->controllerInterface)
+   \                     ??USB_DeviceControl_0: (+1)
+   \   00000006   0x6843             LDR      R3,[R0, #+4]
+   \   00000008   0xB113             CBZ.N    R3,??USB_DeviceControl_1
+    299              {
+    300                  /* Call the controller control interface. */
+    301                  error = deviceHandle->controllerInterface->deviceControl(deviceHandle->controllerHandle, type, param);
+   \   0000000A   0x6800             LDR      R0,[R0, #+0]
+   \   0000000C   0x695B             LDR      R3,[R3, #+20]
+   \   0000000E   0x4718             BX       R3
+    302              }
+    303              else
+    304              {
+    305                  error = kStatus_USB_ControllerNotFound;
+   \                     ??USB_DeviceControl_1: (+1)
+   \   00000010   0x2006             MOVS     R0,#+6
+    306              }
+    307              return error;
+   \   00000012   0x4770             BX       LR               ;; return
+    308          }
+    309          
+    310          /*!
+    311           * @brief Handle the reset notification.
+    312           *
+    313           * This function is used to handle the reset notification.
+    314           *
+    315           * @param handle                 The device handle. It equals the value returned from USB_DeviceInit.
+    316           * @param message                The device callback message handle.
+    317           *
+    318           * @retval kStatus_USB_Success              Get a device handle successfully.
+    319           */
+    320          static usb_status_t USB_DeviceResetNotification(usb_device_struct_t *handle,
+    321                                                          usb_device_callback_message_struct_t *message)
+    322          {
+    323              /* Set the controller to default status. */
+    324              USB_DeviceControl(handle, kUSB_DeviceControlSetDefaultStatus, NULL);
+    325          
+    326              handle->state = kUSB_DeviceStateDefault;
+    327              handle->deviceAddress = 0U;
+    328          
+    329              for (uint32_t count = 0U; count < (USB_DEVICE_CONFIG_ENDPOINTS * 2U); count++)
+    330              {
+    331                  handle->endpointCallback[count].callbackFn = (usb_device_endpoint_callback_t)NULL;
+    332                  handle->endpointCallback[count].callbackParam = NULL;
+    333              }
+    334          
+    335              /* Call device callback to notify the application that the USB bus reset signal detected. */
+    336              handle->deviceCallback(handle, kUSB_DeviceEventBusReset, NULL);
+    337          
+    338              return kStatus_USB_Success;
+    339          }
+    340          
+    341          #if ((defined(USB_DEVICE_CONFIG_LOW_POWER_MODE) && (USB_DEVICE_CONFIG_LOW_POWER_MODE > 0U)) || \
+    342               (defined(USB_DEVICE_CONFIG_REMOTE_WAKEUP) && (USB_DEVICE_CONFIG_REMOTE_WAKEUP > 0U)))
+    343          /*!
+    344           * @brief Handle the suspend notification.
+    345           *
+    346           * This function is used to handle the suspend notification.
+    347           *
+    348           * @param handle                 The device handle. It equals the value returned from USB_DeviceInit.
+    349           * @param message                The device callback message handle.
+    350           *
+    351           * @return A USB error code or kStatus_USB_Success.
+    352           */
+    353          static usb_status_t USB_DeviceSuspendNotification(usb_device_struct_t *handle,
+    354                                                            usb_device_callback_message_struct_t *message)
+    355          {
+    356              /* Call device callback to notify the application that the USB bus suspend signal detected. */
+    357              return handle->deviceCallback(handle, kUSB_DeviceEventSuspend, NULL);
+    358          }
+    359          
+    360          /*!
+    361           * @brief Handle the resume notification.
+    362           *
+    363           * This function is used to handle the resume notification.
+    364           *
+    365           * @param handle                 The device handle. It equals the value returned from USB_DeviceInit.
+    366           * @param message                The device callback message handle.
+    367           *
+    368           * @return A USB error code or kStatus_USB_Success.
+    369           */
+    370          static usb_status_t USB_DeviceResumeNotification(usb_device_struct_t *handle,
+    371                                                           usb_device_callback_message_struct_t *message)
+    372          {
+    373              /* Call device callback to notify the application that the USB bus resume signal detected. */
+    374              return handle->deviceCallback(handle, kUSB_DeviceEventResume, NULL);
+    375          }
+    376          
+    377          #endif
+    378          
+    379          #if (defined(USB_DEVICE_CONFIG_KHCI_ERROR_HANDLING) && USB_DEVICE_CONFIG_KHCI_ERROR_HANDLING) || \
+    380              (defined(USB_DEVICE_CONFIG_EHCI_ERROR_HANDLING) && USB_DEVICE_CONFIG_EHCI_ERROR_HANDLING)
+    381          usb_status_t USB_DeviceErrorNotification(usb_device_struct_t *handle, usb_device_callback_message_struct_t *message)
+    382          {
+    383              /* Call device callback to notify the application that the USB bus error signal detected. */
+    384              return handle->deviceCallback(handle, kUSB_DeviceEventError, NULL);
+    385          }
+    386          #endif
+    387          
+    388          #if (defined(USB_DEVICE_CONFIG_DETACH_ENABLE) && (USB_DEVICE_CONFIG_DETACH_ENABLE > 0U))
+    389          /*!
+    390           * @brief Handle the detach notification.
+    391           *
+    392           * This function is used to handle the detach notification.
+    393           *
+    394           * @param handle                 The device handle. It equals the value returned from USB_DeviceInit.
+    395           * @param message                The device callback message handle.
+    396           *
+    397           * @return A USB error code or kStatus_USB_Success.
+    398           */
+    399          static usb_status_t USB_DeviceDetachNotification(usb_device_struct_t *handle,
+    400                                                           usb_device_callback_message_struct_t *message)
+    401          {
+    402              /* Call device callback to notify the application that the device is disconnected from a host. */
+    403              return handle->deviceCallback(handle, kUSB_DeviceEventDetach, NULL);
+    404          }
+    405          
+    406          /*!
+    407           * @brief Handle the attach notification.
+    408           *
+    409           * This function is used to handle the attach notification.
+    410           *
+    411           * @param handle                 The device handle. It equals the value returned from USB_DeviceInit.
+    412           * @param message                The device callback message handle.
+    413           *
+    414           * @return A USB error code or kStatus_USB_Success.
+    415           */
+    416          static usb_status_t USB_DeviceAttachNotification(usb_device_struct_t *handle,
+    417                                                           usb_device_callback_message_struct_t *message)
+    418          {
+    419              /* Call device callback to notify the application that the device is connected to a host. */
+    420              return handle->deviceCallback(handle, kUSB_DeviceEventAttach, NULL);
+    421          }
+    422          #endif
+    423          
+    424          /*!
+    425           * @brief Handle the attach notification.
+    426           *
+    427           * This function is used to handle the attach notification.
+    428           *
+    429           * @param handle                 The device handle. It equals the value returned from USB_DeviceInit.
+    430           * @param message                The device callback message handle.
+    431           *
+    432           * @return A USB error code or kStatus_USB_Success.
+    433           */
+
+   \                                 In section .text, align 2, keep-with-next
+    434          static usb_status_t USB_DeviceNotification(usb_device_struct_t *handle, usb_device_callback_message_struct_t *message)
+    435          {
+   \                     USB_DeviceNotification: (+1)
+   \   00000000   0xB53E             PUSH     {R1-R5,LR}
+   \   00000002   0x4604             MOV      R4,R0
+    436              uint8_t endpoint = message->code & USB_ENDPOINT_NUMBER_MASK;
+   \   00000004   0x7A0A             LDRB     R2,[R1, #+8]
+    437              uint8_t direction = (message->code & USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_MASK) >>
+    438                                  USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_SHIFT;
+   \   00000006   0x09D5             LSRS     R5,R2,#+7
+    439              usb_status_t error = kStatus_USB_Error;
+   \   00000008   0x2001             MOVS     R0,#+1
+    440          
+    441              switch (message->code)
+   \   0000000A   0x2A10             CMP      R2,#+16
+   \   0000000C   0xF002 0x030F      AND      R3,R2,#0xF
+   \   00000010   0xD119             BNE.N    ??USB_DeviceNotification_0
+    442              {
+    443                  case kUSB_DeviceNotifyBusReset:
+    444                      error = USB_DeviceResetNotification(handle, message);
+   \   00000012   0x2200             MOVS     R2,#+0
+   \   00000014   0x210B             MOVS     R1,#+11
+   \   00000016   0x4620             MOV      R0,R4
+   \   00000018   0x.... 0x....      BL       USB_DeviceControl
+   \   0000001C   0xF104 0x008C      ADD      R0,R4,#+140
+   \   00000020   0x2102             MOVS     R1,#+2
+   \   00000022   0x7081             STRB     R1,[R0, #+2]
+   \   00000024   0x2200             MOVS     R2,#+0
+   \   00000026   0x2100             MOVS     R1,#+0
+   \   00000028   0x7001             STRB     R1,[R0, #+0]
+   \   0000002A   0x2000             MOVS     R0,#+0
+   \                     ??USB_DeviceNotification_1: (+1)
+   \   0000002C   0xEB04 0x01C0      ADD      R1,R4,R0, LSL #+3
+   \   00000030   0x1C40             ADDS     R0,R0,#+1
+   \   00000032   0x2810             CMP      R0,#+16
+   \   00000034   0x60CA             STR      R2,[R1, #+12]
+   \   00000036   0x610A             STR      R2,[R1, #+16]
+   \   00000038   0xD3F8             BCC.N    ??USB_DeviceNotification_1
+   \   0000003A   0x68A3             LDR      R3,[R4, #+8]
+   \   0000003C   0x2101             MOVS     R1,#+1
+   \   0000003E   0x4620             MOV      R0,R4
+   \   00000040   0x4798             BLX      R3
+   \   00000042   0x2000             MOVS     R0,#+0
+    445                      break;
+   \   00000044   0xBD3E             POP      {R1-R5,PC}
+    446          #if ((USB_DEVICE_CONFIG_LOW_POWER_MODE) || (USB_DEVICE_CONFIG_REMOTE_WAKEUP))
+    447                  case kUSB_DeviceNotifySuspend:
+    448                      error = USB_DeviceSuspendNotification(handle, message);
+    449                      break;
+    450                  case kUSB_DeviceNotifyResume:
+    451                      error = USB_DeviceResumeNotification(handle, message);
+    452                      break;
+    453          #endif
+    454          
+    455          #if (defined(USB_DEVICE_CONFIG_KHCI_ERROR_HANDLING) && USB_DEVICE_CONFIG_KHCI_ERROR_HANDLING) || \
+    456              (defined(USB_DEVICE_CONFIG_EHCI_ERROR_HANDLING) && USB_DEVICE_CONFIG_EHCI_ERROR_HANDLING)
+    457                  case kUSB_DeviceNotifyError:
+    458                      error = USB_DeviceErrorNotification(handle, message);
+    459                      break;
+    460          #endif
+    461          
+    462          #if USB_DEVICE_CONFIG_DETACH_ENABLE
+    463                  case kUSB_DeviceNotifyDetach:
+    464                      error = USB_DeviceDetachNotification(handle, message);
+    465                      break;
+    466                  case kUSB_DeviceNotifyAttach:
+    467                      error = USB_DeviceAttachNotification(handle, message);
+    468                      break;
+    469          #endif
+    470                  default:
+    471                      if (endpoint < USB_DEVICE_CONFIG_ENDPOINTS)
+   \                     ??USB_DeviceNotification_0: (+1)
+   \   00000046   0x2B08             CMP      R3,#+8
+   \   00000048   0xD211             BCS.N    ??USB_DeviceNotification_2
+   \   0000004A   0xEA45 0x0243      ORR      R2,R5,R3, LSL #+1
+   \   0000004E   0xEB04 0x03C2      ADD      R3,R4,R2, LSL #+3
+   \   00000052   0x68DA             LDR      R2,[R3, #+12]
+   \   00000054   0xB15A             CBZ.N    R2,??USB_DeviceNotification_2
+    472                      {
+    473                          if (handle->endpointCallback[(uint8_t)((uint32_t)endpoint << 1U) | direction].callbackFn)
+    474                          {
+    475                              usb_device_endpoint_callback_message_struct_t endpointCallbackMessage;
+    476                              endpointCallbackMessage.buffer = message->buffer;
+   \   00000056   0x6808             LDR      R0,[R1, #+0]
+   \   00000058   0x9000             STR      R0,[SP, #+0]
+    477                              endpointCallbackMessage.length = message->length;
+   \   0000005A   0x6848             LDR      R0,[R1, #+4]
+   \   0000005C   0x9001             STR      R0,[SP, #+4]
+    478                              endpointCallbackMessage.isSetup = message->isSetup;
+   \   0000005E   0x7A48             LDRB     R0,[R1, #+9]
+   \   00000060   0xF88D 0x0008      STRB     R0,[SP, #+8]
+    479                              /* Call endpoint callback */
+    480                              error = handle->endpointCallback[(uint8_t)((uint32_t)endpoint << 1U) | direction].callbackFn(
+    481                                  handle, &endpointCallbackMessage,
+    482                                  handle->endpointCallback[(uint8_t)((uint32_t)endpoint << 1U) | direction].callbackParam);
+   \   00000064   0x4669             MOV      R1,SP
+   \   00000066   0x691A             LDR      R2,[R3, #+16]
+   \   00000068   0x68DB             LDR      R3,[R3, #+12]
+   \   0000006A   0x4620             MOV      R0,R4
+   \   0000006C   0x4798             BLX      R3
+    483                          }
+    484                      }
+    485                      break;
+    486              }
+    487              return error;
+   \                     ??USB_DeviceNotification_2: (+1)
+   \   0000006E   0xBD3E             POP      {R1-R5,PC}       ;; return
+    488          }
+    489          
+    490          /*!
+    491           * @brief Notify the device that the controller status changed.
+    492           *
+    493           * This function is used to notify the device that the controller status changed.
+    494           *
+    495           * @param handle                 The device handle. It equals the value returned from USB_DeviceInit.
+    496           * @param message                The device callback message handle.
+    497           *
+    498           * @return A USB error code or kStatus_USB_Success.
+    499           */
+
+   \                                 In section .text, align 2, keep-with-next
+    500          usb_status_t USB_DeviceNotificationTrigger(void *handle, void *msg)
+    501          {
+    502              usb_device_struct_t *deviceHandle = (usb_device_struct_t *)handle;
+    503              usb_device_callback_message_struct_t *message = (usb_device_callback_message_struct_t *)msg;
+    504          
+    505              if ((NULL == msg) || (NULL == handle))
+   \                     USB_DeviceNotificationTrigger: (+1)
+   \   00000000   0x2900             CMP      R1,#+0
+   \   00000002   0xBF18             IT       NE 
+   \   00000004   0x2800             CMPNE    R0,#+0
+   \   00000006   0xD101             BNE.N    ??USB_DeviceNotificationTrigger_0
+    506              {
+    507                  return kStatus_USB_InvalidHandle;
+   \   00000008   0x2003             MOVS     R0,#+3
+   \   0000000A   0x4770             BX       LR
+    508              }
+    509          
+    510              /* The device callback is invalid or not. */
+    511              if (!deviceHandle->deviceCallback)
+   \                     ??USB_DeviceNotificationTrigger_0: (+1)
+   \   0000000C   0x6882             LDR      R2,[R0, #+8]
+   \   0000000E   0x2A00             CMP      R2,#+0
+   \   00000010   0xBF18             IT       NE 
+    512              {
+    513                  return kStatus_USB_Error;
+    514              }
+    515          
+    516          #if USB_DEVICE_CONFIG_USE_TASK
+    517              /* Add the message to message queue when the device task is enabled. */
+    518              if (kStatus_USB_OSA_Success != USB_OsaMsgqSend(deviceHandle->notificationQueue, (void *)message))
+    519              {
+    520                  return kStatus_USB_Busy;
+    521              }
+    522              return kStatus_USB_Success;
+    523          #else
+    524              /* Handle the notification by calling USB_DeviceNotification. */
+    525              return USB_DeviceNotification(deviceHandle, message);
+   \   00000012   0x.... 0x....      BNE.W    USB_DeviceNotification
+   \   00000016   0x2001             MOVS     R0,#+1
+   \   00000018   0x4770             BX       LR
+    526          #endif
+    527          }
+    528          
+    529          /*!
+    530           * @brief Initialize the USB device stack.
+    531           *
+    532           * This function initializes the USB device module specified by the controllerId.
+    533           *
+    534           * @param controllerId   The controller id of the USB IP. Please refer to the enumeration usb_controller_index_t.
+    535           * @param deviceCallback Function pointer of the device callback.
+    536           * @param handle          It is out parameter, is used to return pointer of the device handle to the caller.
+    537           *
+    538           * @retval kStatus_USB_Success              The device is initialized successfully.
+    539           * @retval kStatus_USB_InvalidHandle        The handle is a NULL pointer.
+    540           * @retval kStatus_USB_Busy                 Cannot allocate a device handle.
+    541           * @retval kStatus_USB_ControllerNotFound   Cannot find the controller according to the controller id.
+    542           * @retval kStatus_USB_InvalidControllerInterface  The controller driver interfaces is invaild, There is an empty
+    543           * interface entity.
+    544           * @retval kStatus_USB_Error                The macro USB_DEVICE_CONFIG_ENDPOINTS is more than IP's endpoint number.
+    545           *                                          Or, the device has been initialized.
+    546           *                                          Or, the message queue is created failed.
+    547           */
+
+   \                                 In section .text, align 2, keep-with-next
+    548          usb_status_t USB_DeviceInit(uint8_t controllerId, usb_device_callback_t deviceCallback, usb_device_handle *handle)
+    549          {
+   \                     USB_DeviceInit: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x4607             MOV      R7,R0
+   \   00000006   0x0014             MOVS     R4,R2
+   \   00000008   0x4688             MOV      R8,R1
+    550              usb_device_struct_t *deviceHandle = NULL;
+    551              usb_status_t error;
+    552              uint32_t count;
+    553          
+    554              if (NULL == handle)
+   \   0000000A   0xBF08             IT       EQ 
+   \   0000000C   0x2003             MOVEQ    R0,#+3
+    555              {
+    556                  return kStatus_USB_InvalidHandle;
+   \   0000000E   0xD053             BEQ.N    ??USB_DeviceInit_0
+    557              }
+    558          
+    559              /* Allocate a device handle by using the controller id. */
+    560              error = USB_DeviceAllocateHandle(controllerId, &deviceHandle);
+   \   00000010   0x.... 0x....      BL       USB_BmEnterCritical
+   \   00000014   0x....             LDR.N    R5,??DataTable1
+   \   00000016   0x6828             LDR      R0,[R5, #+0]
+   \   00000018   0xF105 0x068C      ADD      R6,R5,#+140
+   \   0000001C   0xB130             CBZ.N    R0,??USB_DeviceInit_1
+   \   0000001E   0x7872             LDRB     R2,[R6, #+1]
+   \   00000020   0x4297             CMP      R7,R2
+   \   00000022   0xD103             BNE.N    ??USB_DeviceInit_1
+   \   00000024   0x.... 0x....      BL       USB_BmExitCritical
+   \   00000028   0x2701             MOVS     R7,#+1
+    561          
+    562              if (kStatus_USB_Success != error)
+    563              {
+    564                  return error;
+   \   0000002A   0xE03F             B.N      ??USB_DeviceInit_2
+    565              }
+   \                     ??USB_DeviceInit_1: (+1)
+   \   0000002C   0xB118             CBZ.N    R0,??USB_DeviceInit_3
+   \   0000002E   0x.... 0x....      BL       USB_BmExitCritical
+   \   00000032   0x2702             MOVS     R7,#+2
+   \   00000034   0xE03A             B.N      ??USB_DeviceInit_2
+   \                     ??USB_DeviceInit_3: (+1)
+   \   00000036   0x7077             STRB     R7,[R6, #+1]
+   \   00000038   0x.... 0x....      BL       USB_BmExitCritical
+    566          
+    567              /* Save the device callback */
+    568              deviceHandle->deviceCallback = deviceCallback;
+    569              /* Save the controller id */
+    570              deviceHandle->controllerId = controllerId;
+    571              /* Clear the device address */
+    572              deviceHandle->deviceAddress = 0U;
+   \   0000003C   0x2000             MOVS     R0,#+0
+   \   0000003E   0xF8C5 0x8008      STR      R8,[R5, #+8]
+   \   00000042   0x7077             STRB     R7,[R6, #+1]
+   \   00000044   0x7030             STRB     R0,[R6, #+0]
+    573          
+    574              /* Initialize the enpoints */
+    575              for (count = 0U; count < (USB_DEVICE_CONFIG_ENDPOINTS * 2U); count++)
+   \   00000046   0x2200             MOVS     R2,#+0
+    576              {
+    577                  deviceHandle->endpointCallback[count].callbackFn = (usb_device_endpoint_callback_t)NULL;
+   \                     ??USB_DeviceInit_4: (+1)
+   \   00000048   0xEB05 0x01C0      ADD      R1,R5,R0, LSL #+3
+    578                  deviceHandle->endpointCallback[count].callbackParam = NULL;
+    579              }
+   \   0000004C   0x1C40             ADDS     R0,R0,#+1
+   \   0000004E   0x2810             CMP      R0,#+16
+   \   00000050   0x60CA             STR      R2,[R1, #+12]
+   \   00000052   0x610A             STR      R2,[R1, #+16]
+   \   00000054   0xD3F8             BCC.N    ??USB_DeviceInit_4
+    580          
+    581              /* Get the controller interface according to the controller id */
+    582              error = USB_DeviceGetControllerInterface(controllerId, &deviceHandle->controllerInterface);
+   \   00000056   0x2F01             CMP      R7,#+1
+   \   00000058   0xD819             BHI.N    ??USB_DeviceInit_5
+   \   0000005A   0x.... 0x....      ADR.W    R0,s_UsbDeviceKhciInterface
+   \   0000005E   0x6068             STR      R0,[R5, #+4]
+    583              if (kStatus_USB_Success != error)
+    584              {
+    585                  USB_DeviceFreeHandle(deviceHandle);
+    586                  return error;
+    587              }
+    588              if (NULL == deviceHandle->controllerInterface)
+    589              {
+    590                  USB_DeviceFreeHandle(deviceHandle);
+    591                  return kStatus_USB_ControllerNotFound;
+    592              }
+    593              if (((usb_device_controller_init_t)NULL == deviceHandle->controllerInterface->deviceInit) ||
+    594                  ((usb_device_controller_deinit_t)NULL == deviceHandle->controllerInterface->deviceDeinit) ||
+    595                  ((usb_device_controller_send_t)NULL == deviceHandle->controllerInterface->deviceSend) ||
+    596                  ((usb_device_controller_recv_t)NULL == deviceHandle->controllerInterface->deviceRecv) ||
+    597                  ((usb_device_controller_cancel_t)NULL == deviceHandle->controllerInterface->deviceCancel) ||
+    598                  ((usb_device_controller_control_t)NULL == deviceHandle->controllerInterface->deviceControl))
+   \   00000060   0x....             LDR.N    R0,??DataTable1_1
+   \   00000062   0x2800             CMP      R0,#+0
+   \   00000064   0xBF1C             ITT      NE 
+   \   00000066   0x....             LDRNE.N  R0,??DataTable1_2
+   \   00000068   0x2800             CMPNE    R0,#+0
+   \   0000006A   0xD00B             BEQ.N    ??USB_DeviceInit_6
+   \   0000006C   0x....             LDR.N    R0,??DataTable1_3
+   \   0000006E   0x2800             CMP      R0,#+0
+   \   00000070   0xBF1C             ITT      NE 
+   \   00000072   0x....             LDRNE.N  R0,??DataTable1_4
+   \   00000074   0x2800             CMPNE    R0,#+0
+   \   00000076   0xD005             BEQ.N    ??USB_DeviceInit_6
+   \   00000078   0x....             LDR.N    R0,??DataTable1_5
+   \   0000007A   0x2800             CMP      R0,#+0
+   \   0000007C   0xBF1C             ITT      NE 
+   \   0000007E   0x....             LDRNE.N  R0,??DataTable1_6
+   \   00000080   0x2800             CMPNE    R0,#+0
+   \   00000082   0xD109             BNE.N    ??USB_DeviceInit_7
+    599              {
+    600                  USB_DeviceFreeHandle(deviceHandle);
+   \                     ??USB_DeviceInit_6: (+1)
+   \   00000084   0x4628             MOV      R0,R5
+   \   00000086   0x.... 0x....      BL       USB_DeviceFreeHandle
+    601                  return kStatus_USB_InvalidControllerInterface;
+   \   0000008A   0x2007             MOVS     R0,#+7
+   \   0000008C   0xE014             B.N      ??USB_DeviceInit_0
+    602              }
+   \                     ??USB_DeviceInit_5: (+1)
+   \   0000008E   0x4628             MOV      R0,R5
+   \   00000090   0x.... 0x....      BL       USB_DeviceFreeHandle
+   \   00000094   0x2006             MOVS     R0,#+6
+   \   00000096   0xE00F             B.N      ??USB_DeviceInit_0
+    603          
+    604          #if USB_DEVICE_CONFIG_USE_TASK
+    605              /* Create a message queue when the device handle is enabled. */
+    606              if (kStatus_USB_OSA_Success !=
+    607                  USB_OsaMsgqCreate(&deviceHandle->notificationQueue, USB_DEVICE_CONFIG_MAX_MESSAGES,
+    608                                    (1U + (sizeof(usb_device_callback_message_struct_t) - 1U) / sizeof(uint32_t))))
+    609              {
+    610                  USB_DeviceDeinit(deviceHandle);
+    611                  return kStatus_USB_Error;
+    612              }
+    613          #endif
+    614              /* Initialize the controller */
+    615              error = deviceHandle->controllerInterface->deviceInit(controllerId, deviceHandle, &deviceHandle->controllerHandle);
+   \                     ??USB_DeviceInit_7: (+1)
+   \   00000098   0x462A             MOV      R2,R5
+   \   0000009A   0x4629             MOV      R1,R5
+   \   0000009C   0x4638             MOV      R0,R7
+   \   0000009E   0x.... 0x....      BL       USB_DeviceKhciInit
+   \   000000A2   0x0007             MOVS     R7,R0
+    616              if (kStatus_USB_Success != error)
+   \   000000A4   0xD004             BEQ.N    ??USB_DeviceInit_8
+    617              {
+    618                  USB_DeviceDeinit(deviceHandle);
+   \   000000A6   0x4628             MOV      R0,R5
+   \   000000A8   0x.... 0x....      BL       USB_DeviceDeinit
+    619                  return error;
+   \                     ??USB_DeviceInit_2: (+1)
+   \   000000AC   0x4638             MOV      R0,R7
+   \   000000AE   0xE003             B.N      ??USB_DeviceInit_0
+    620              }
+    621              /* Set the device to deafult state */
+    622              deviceHandle->state = kUSB_DeviceStateDefault;
+   \                     ??USB_DeviceInit_8: (+1)
+   \   000000B0   0x2002             MOVS     R0,#+2
+   \   000000B2   0x70B0             STRB     R0,[R6, #+2]
+    623              *handle = deviceHandle;
+   \   000000B4   0x6025             STR      R5,[R4, #+0]
+    624          
+    625              return error;
+   \   000000B6   0x2000             MOVS     R0,#+0
+   \                     ??USB_DeviceInit_0: (+1)
+   \   000000B8   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    626          }
+    627          
+    628          /*!
+    629           * @brief Enable the device functionality.
+    630           *
+    631           * The function enables the device functionality, so that the device can be recognized by the host when the device
+    632           * detects that it has been connected to a host.
+    633           *
+    634           * @param handle The device handle got from USB_DeviceInit.
+    635           *
+    636           * @retval kStatus_USB_Success              The device is run successfully.
+    637           * @retval kStatus_USB_ControllerNotFound   Cannot find the controller.
+    638           * @retval kStatus_USB_InvalidHandle        The device handle is a NULL pointer. Or the controller handle is invalid.
+    639           *
+    640           */
+
+   \                                 In section .text, align 2, keep-with-next
+    641          usb_status_t USB_DeviceRun(usb_device_handle handle)
+    642          {
+    643              return USB_DeviceControl(handle, kUSB_DeviceControlRun, NULL);
+   \                     USB_DeviceRun: (+1)
+   \   00000000   0x2200             MOVS     R2,#+0
+   \   00000002   0x2100             MOVS     R1,#+0
+   \   00000004   0x....             B.N      USB_DeviceControl
+    644          }
+    645          /*!
+    646           * @brief Disable the device functionality.
+    647           *
+    648           * The function disables the device functionality, after this function called, even the device is detached to the host,
+    649           * and the device can't work.
+    650           *
+    651           * @param handle The device handle got from USB_DeviceInit.
+    652           *
+    653           * @retval kStatus_USB_Success              The device is stopped successfully.
+    654           * @retval kStatus_USB_ControllerNotFound   Cannot find the controller.
+    655           * @retval kStatus_USB_InvalidHandle        The device handle is a NULL pointer. Or the controller handle is invalid.
+    656           */
+
+   \                                 In section .text, align 2, keep-with-next
+    657          usb_status_t USB_DeviceStop(usb_device_handle handle)
+    658          {
+    659              return USB_DeviceControl(handle, kUSB_DeviceControlStop, NULL);
+   \                     USB_DeviceStop: (+1)
+   \   00000000   0x2200             MOVS     R2,#+0
+   \   00000002   0x2101             MOVS     R1,#+1
+   \   00000004   0x....             B.N      USB_DeviceControl
+    660          }
+    661          /*!
+    662           * @brief De-initialize the device controller.
+    663           *
+    664           * The function de-initializes the device controller specified by the handle.
+    665           *
+    666           * @param handle The device handle got from USB_DeviceInit.
+    667           *
+    668           * @retval kStatus_USB_Success              The device is stopped successfully.
+    669           * @retval kStatus_USB_InvalidHandle        The device handle is a NULL pointer. Or the controller handle is invalid.
+    670           */
+
+   \                                 In section .text, align 2, keep-with-next
+    671          usb_status_t USB_DeviceDeinit(usb_device_handle handle)
+    672          {
+   \                     USB_DeviceDeinit: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    673              usb_device_struct_t *deviceHandle = (usb_device_struct_t *)handle;
+    674          
+    675              if (NULL == deviceHandle)
+   \   00000004   0xD101             BNE.N    ??USB_DeviceDeinit_0
+    676              {
+    677                  return kStatus_USB_InvalidHandle;
+   \   00000006   0x2003             MOVS     R0,#+3
+   \   00000008   0xBD10             POP      {R4,PC}
+    678              }
+    679              /* De-initialize the controller */
+    680              if (NULL != deviceHandle->controllerInterface)
+   \                     ??USB_DeviceDeinit_0: (+1)
+   \   0000000A   0x6861             LDR      R1,[R4, #+4]
+   \   0000000C   0xB121             CBZ.N    R1,??USB_DeviceDeinit_1
+    681              {
+    682                  deviceHandle->controllerInterface->deviceDeinit(deviceHandle->controllerHandle);
+   \   0000000E   0x6820             LDR      R0,[R4, #+0]
+   \   00000010   0x6849             LDR      R1,[R1, #+4]
+   \   00000012   0x4788             BLX      R1
+    683                  deviceHandle->controllerInterface = (usb_device_controller_interface_struct_t *)NULL;
+   \   00000014   0x2000             MOVS     R0,#+0
+   \   00000016   0x6060             STR      R0,[R4, #+4]
+    684              }
+    685          
+    686          #if USB_DEVICE_CONFIG_USE_TASK
+    687              /* Destroy the message queue. */
+    688              if (NULL != deviceHandle->notificationQueue)
+    689              {
+    690                  USB_OsaMsgqDestroy(deviceHandle->notificationQueue);
+    691                  deviceHandle->notificationQueue = NULL;
+    692              }
+    693          #endif
+    694          
+    695              /* Free the device handle. */
+    696              USB_DeviceFreeHandle(deviceHandle);
+   \                     ??USB_DeviceDeinit_1: (+1)
+   \   00000018   0x4620             MOV      R0,R4
+   \   0000001A   0x.... 0x....      BL       USB_DeviceFreeHandle
+    697              return kStatus_USB_Success;
+   \   0000001E   0x2000             MOVS     R0,#+0
+   \   00000020   0xBD10             POP      {R4,PC}          ;; return
+    698          }
+    699          
+    700          /*!
+    701           * @brief Send data through a specified endpoint.
+    702           *
+    703           * The function is used to send data through a specified endpoint.
+    704           *
+    705           * @param handle The device handle got from USB_DeviceInit.
+    706           * @param endpointAddress Endpoint index.
+    707           * @param buffer The memory address to hold the data need to be sent.
+    708           * @param length The data length need to be sent.
+    709           *
+    710           * @retval kStatus_USB_Success              The send request is sent successfully.
+    711           * @retval kStatus_USB_InvalidHandle        The handle is a NULL pointer. Or the controller handle is invalid.
+    712           * @retval kStatus_USB_Busy                 Cannot allocate dtds for current tansfer in EHCI driver.
+    713           * @retval kStatus_USB_ControllerNotFound   Cannot find the controller.
+    714           * @retval kStatus_USB_Error                The device is doing reset.
+    715           *
+    716           * @note The return value just means if the sending request is successful or not; the transfer done is notified by the
+    717           * corresponding callback function.
+    718           * Currently, only one transfer request can be supported for one specific endpoint.
+    719           * If there is a specific requirement to support multiple transfer requests for one specific endpoint, the application
+    720           * should implement a queue in the application level.
+    721           * The subsequent transfer could begin only when the previous transfer is done (get notification through the endpoint
+    722           * callback).
+    723           */
+
+   \                                 In section .text, align 2, keep-with-next
+    724          usb_status_t USB_DeviceSendRequest(usb_device_handle handle, uint8_t endpointAddress, uint8_t *buffer, uint32_t length)
+    725          {
+    726              return USB_DeviceTransfer(handle, (endpointAddress & USB_ENDPOINT_NUMBER_MASK) |
+    727                                                    (USB_IN << USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_SHIFT),
+    728                                        buffer, length);
+   \                     USB_DeviceSendRequest: (+1)
+   \   00000000   0xF001 0x010F      AND      R1,R1,#0xF
+   \   00000004   0xF041 0x0180      ORR      R1,R1,#0x80
+   \   00000008   0x....             B.N      USB_DeviceTransfer
+    729          }
+    730          
+    731          /*!
+    732           * @brief Receive data through a specified endpoint.
+    733           *
+    734           * The function is used to receive data through a specified endpoint.
+    735           *
+    736           * @param handle The device handle got from USB_DeviceInit.
+    737           * @param endpointAddress Endpoint index.
+    738           * @param buffer The memory address to save the received data.
+    739           * @param length The data length want to be received.
+    740           *
+    741           * @retval kStatus_USB_Success              The receive request is sent successfully.
+    742           * @retval kStatus_USB_InvalidHandle        The handle is a NULL pointer. Or the controller handle is invalid.
+    743           * @retval kStatus_USB_Busy                 Cannot allocate dtds for current tansfer in EHCI driver.
+    744           * @retval kStatus_USB_ControllerNotFound   Cannot find the controller.
+    745           * @retval kStatus_USB_Error                The device is doing reset.
+    746           *
+    747           * @note The return value just means if the receiving request is successful or not; the transfer done is notified by the
+    748           * corresponding callback function.
+    749           * Currently, only one transfer request can be supported for one specific endpoint.
+    750           * If there is a specific requirement to support multiple transfer requests for one specific endpoint, the application
+    751           * should implement a queue in the application level.
+    752           * The subsequent transfer could begin only when the previous transfer is done (get notification through the endpoint
+    753           * callback).
+    754           */
+
+   \                                 In section .text, align 2, keep-with-next
+    755          usb_status_t USB_DeviceRecvRequest(usb_device_handle handle, uint8_t endpointAddress, uint8_t *buffer, uint32_t length)
+    756          {
+    757              return USB_DeviceTransfer(handle, (endpointAddress & USB_ENDPOINT_NUMBER_MASK) |
+    758                                                    (USB_OUT << USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_SHIFT),
+    759                                        buffer, length);
+   \                     USB_DeviceRecvRequest: (+1)
+   \   00000000   0xF001 0x010F      AND      R1,R1,#0xF
+   \   00000004   0x....             B.N      USB_DeviceTransfer
+    760          }
+    761          
+    762          /*!
+    763           * @brief Cancel the pending transfer in a specified endpoint.
+    764           *
+    765           * The function is used to cancel the pending transfer in a specified endpoint.
+    766           *
+    767           * @param handle The device handle got from USB_DeviceInit.
+    768           * @param endpointAddress Endpoint address, bit7 is the direction of endpoint, 1U - IN, abd 0U - OUT.
+    769           *
+    770           * @retval kStatus_USB_Success              The transfer is cancelled.
+    771           * @retval kStatus_USB_InvalidHandle        The handle is a NULL pointer. Or the controller handle is invalid.
+    772           * @retval kStatus_USB_ControllerNotFound   Cannot find the controller.
+    773           */
+
+   \                                 In section .text, align 2, keep-with-next
+    774          usb_status_t USB_DeviceCancel(usb_device_handle handle, uint8_t endpointAddress)
+    775          {
+    776              usb_device_struct_t *deviceHandle = (usb_device_struct_t *)handle;
+    777              usb_status_t error = kStatus_USB_Error;
+    778          
+    779              if (NULL == deviceHandle)
+   \                     USB_DeviceCancel: (+1)
+   \   00000000   0xB908             CBNZ.N   R0,??USB_DeviceCancel_0
+    780              {
+    781                  return kStatus_USB_InvalidHandle;
+   \   00000002   0x2003             MOVS     R0,#+3
+   \   00000004   0x4770             BX       LR
+    782              }
+    783          
+    784              if (NULL != deviceHandle->controllerInterface)
+   \                     ??USB_DeviceCancel_0: (+1)
+   \   00000006   0x6842             LDR      R2,[R0, #+4]
+   \   00000008   0xB112             CBZ.N    R2,??USB_DeviceCancel_1
+    785              {
+    786                  error = deviceHandle->controllerInterface->deviceCancel(deviceHandle->controllerHandle, endpointAddress);
+   \   0000000A   0x6800             LDR      R0,[R0, #+0]
+   \   0000000C   0x6912             LDR      R2,[R2, #+16]
+   \   0000000E   0x4710             BX       R2
+    787              }
+    788              else
+    789              {
+    790                  error = kStatus_USB_ControllerNotFound;
+   \                     ??USB_DeviceCancel_1: (+1)
+   \   00000010   0x2006             MOVS     R0,#+6
+    791              }
+    792              return error;
+   \   00000012   0x4770             BX       LR               ;; return
+    793          }
+    794          
+    795          /*!
+    796           * @brief Initialize a specified endpoint.
+    797           *
+    798           * The function is used to initialize a specified endpoint and the corresponding endpoint callback is also initialized.
+    799           *
+    800           * @param handle The device handle got from USB_DeviceInit.
+    801           * @param epInit Endpoint initizlization structure. Please refer to the structure usb_device_endpoint_init_struct_t.
+    802           * @param endpointCallback Endpoint callback structure. Please refer to the structure
+    803           * usb_device_endpoint_callback_struct_t.
+    804           *
+    805           * @retval kStatus_USB_Success              The endpoint is initialized successfully.
+    806           * @retval kStatus_USB_InvalidHandle        The handle is a NULL pointer. Or the controller handle is invalid.
+    807           * @retval kStatus_USB_InvalidParameter     The epInit or endpointCallback is NULL pointer. Or the endpoint number is
+    808           * more than USB_DEVICE_CONFIG_ENDPOINTS.
+    809           * @retval kStatus_USB_Busy                 The endpoint is busy in EHCI driver.
+    810           * @retval kStatus_USB_ControllerNotFound   Cannot find the controller.
+    811           */
+
+   \                                 In section .text, align 2, keep-with-next
+    812          usb_status_t USB_DeviceInitEndpoint(usb_device_handle handle,
+    813                                              usb_device_endpoint_init_struct_t *epInit,
+    814                                              usb_device_endpoint_callback_struct_t *endpointCallback)
+    815          {
+   \                     USB_DeviceInitEndpoint: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    816              usb_device_struct_t *deviceHandle = (usb_device_struct_t *)handle;
+    817              uint8_t endpoint;
+    818              uint8_t direction;
+    819          
+    820              if (!deviceHandle)
+   \   00000002   0xB908             CBNZ.N   R0,??USB_DeviceInitEndpoint_0
+    821              {
+    822                  return kStatus_USB_InvalidHandle;
+   \   00000004   0x2003             MOVS     R0,#+3
+   \   00000006   0xBD10             POP      {R4,PC}
+    823              }
+    824          
+    825              if ((!epInit) || (!endpointCallback))
+   \                     ??USB_DeviceInitEndpoint_0: (+1)
+   \   00000008   0x2900             CMP      R1,#+0
+   \   0000000A   0xBF18             IT       NE 
+   \   0000000C   0x2A00             CMPNE    R2,#+0
+   \   0000000E   0xD012             BEQ.N    ??USB_DeviceInitEndpoint_1
+    826              {
+    827                  return kStatus_USB_InvalidParameter;
+    828              }
+    829          
+    830              endpoint = epInit->endpointAddress & USB_ENDPOINT_NUMBER_MASK;
+   \   00000010   0x788B             LDRB     R3,[R1, #+2]
+   \   00000012   0xF003 0x040F      AND      R4,R3,#0xF
+    831              direction = (epInit->endpointAddress & USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_MASK) >>
+    832                          USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_SHIFT;
+    833          
+    834              if (endpoint < USB_DEVICE_CONFIG_ENDPOINTS)
+   \   00000016   0x2C08             CMP      R4,#+8
+   \   00000018   0xD20D             BCS.N    ??USB_DeviceInitEndpoint_1
+   \   0000001A   0x0064             LSLS     R4,R4,#+1
+   \   0000001C   0xEA44 0x13D3      ORR      R3,R4,R3, LSR #+7
+   \   00000020   0xEB00 0x03C3      ADD      R3,R0,R3, LSL #+3
+   \   00000024   0x6814             LDR      R4,[R2, #+0]
+   \   00000026   0x60DC             STR      R4,[R3, #+12]
+    835              {
+    836                  deviceHandle->endpointCallback[(uint8_t)((uint32_t)endpoint << 1U) | direction].callbackFn =
+    837                      endpointCallback->callbackFn;
+    838                  deviceHandle->endpointCallback[(uint8_t)((uint32_t)endpoint << 1U) | direction].callbackParam =
+    839                      endpointCallback->callbackParam;
+   \   00000028   0x6852             LDR      R2,[R2, #+4]
+   \   0000002A   0x611A             STR      R2,[R3, #+16]
+    840              }
+    841              else
+    842              {
+    843                  return kStatus_USB_InvalidParameter;
+    844              }
+    845              return USB_DeviceControl(handle, kUSB_DeviceControlEndpointInit, epInit);
+   \   0000002C   0x460A             MOV      R2,R1
+   \   0000002E   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000032   0x2102             MOVS     R1,#+2
+   \   00000034   0x....             B.N      USB_DeviceControl
+   \                     ??USB_DeviceInitEndpoint_1: (+1)
+   \   00000036   0x2004             MOVS     R0,#+4
+   \   00000038   0xBD10             POP      {R4,PC}          ;; return
+    846          }
+    847          
+    848          /*!
+    849           * @brief De-initizlize a specified endpoint.
+    850           *
+    851           * The function is used to de-initizlize a specified endpoint.
+    852           *
+    853           * @param handle The device handle got from USB_DeviceInit.
+    854           * @param endpointAddress Endpoint address, bit7 is the direction of endpoint, 1U - IN, abd 0U - OUT.
+    855           *
+    856           * @retval kStatus_USB_Success              The endpoint is de-initialized successfully.
+    857           * @retval kStatus_USB_InvalidHandle        The handle is a NULL pointer. Or the controller handle is invalid.
+    858           * @retval kStatus_USB_InvalidParameter     The endpoint number is more than USB_DEVICE_CONFIG_ENDPOINTS.
+    859           * @retval kStatus_USB_Busy                 The endpoint is busy in EHCI driver.
+    860           * @retval kStatus_USB_ControllerNotFound   Cannot find the controller.
+    861           */
+
+   \                                 In section .text, align 2, keep-with-next
+    862          usb_status_t USB_DeviceDeinitEndpoint(usb_device_handle handle, uint8_t endpointAddress)
+    863          {
+   \                     USB_DeviceDeinitEndpoint: (+1)
+   \   00000000   0xB573             PUSH     {R0,R1,R4-R6,LR}
+   \   00000002   0x4604             MOV      R4,R0
+    864              usb_device_struct_t *deviceHandle = (usb_device_struct_t *)handle;
+    865              uint8_t endpoint = endpointAddress & USB_ENDPOINT_NUMBER_MASK;
+   \   00000004   0xF001 0x050F      AND      R5,R1,#0xF
+    866              uint8_t direction = (endpointAddress & USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_MASK) >>
+    867                                  USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_SHIFT;
+   \   00000008   0x09CE             LSRS     R6,R1,#+7
+    868              usb_status_t error = kStatus_USB_Error;
+    869          
+    870              if (!deviceHandle)
+   \   0000000A   0xB90C             CBNZ.N   R4,??USB_DeviceDeinitEndpoint_0
+    871              {
+    872                  return kStatus_USB_InvalidHandle;
+   \   0000000C   0x2003             MOVS     R0,#+3
+   \   0000000E   0xBD76             POP      {R1,R2,R4-R6,PC}
+    873              }
+    874              error = USB_DeviceControl(handle, kUSB_DeviceControlEndpointDeinit, &endpointAddress);
+   \                     ??USB_DeviceDeinitEndpoint_0: (+1)
+   \   00000010   0xAA01             ADD      R2,SP,#+4
+   \   00000012   0x2103             MOVS     R1,#+3
+   \   00000014   0x.... 0x....      BL       USB_DeviceControl
+    875              if (endpoint < USB_DEVICE_CONFIG_ENDPOINTS)
+   \   00000018   0x2D08             CMP      R5,#+8
+   \   0000001A   0xD207             BCS.N    ??USB_DeviceDeinitEndpoint_1
+   \   0000001C   0xEA46 0x0145      ORR      R1,R6,R5, LSL #+1
+   \   00000020   0xEB04 0x01C1      ADD      R1,R4,R1, LSL #+3
+   \   00000024   0x2200             MOVS     R2,#+0
+   \   00000026   0x60CA             STR      R2,[R1, #+12]
+    876              {
+    877                  deviceHandle->endpointCallback[(uint8_t)((uint32_t)endpoint << 1U) | direction].callbackFn =
+    878                      (usb_device_endpoint_callback_t)NULL;
+    879                  deviceHandle->endpointCallback[(uint8_t)((uint32_t)endpoint << 1U) | direction].callbackParam = NULL;
+   \   00000028   0x610A             STR      R2,[R1, #+16]
+    880              }
+    881              else
+    882              {
+    883                  return kStatus_USB_InvalidParameter;
+    884              }
+    885              return error;
+   \   0000002A   0xBD76             POP      {R1,R2,R4-R6,PC}
+   \                     ??USB_DeviceDeinitEndpoint_1: (+1)
+   \   0000002C   0x2004             MOVS     R0,#+4
+   \   0000002E   0xBD76             POP      {R1,R2,R4-R6,PC}  ;; return
+    886          }
+    887          
+    888          /*!
+    889           * @brief Stall a specified endpoint.
+    890           *
+    891           * The function is used to stall a specified endpoint.
+    892           *
+    893           * @param handle The device handle got from USB_DeviceInit.
+    894           * @param endpointAddress Endpoint address, bit7 is the direction of endpoint, 1U - IN, abd 0U - OUT.
+    895           *
+    896           * @retval kStatus_USB_Success              The endpoint is stalled successfully.
+    897           * @retval kStatus_USB_InvalidHandle        The handle is a NULL pointer. Or the controller handle is invalid.
+    898           * @retval kStatus_USB_InvalidParameter     The endpoint number is more than USB_DEVICE_CONFIG_ENDPOINTS.
+    899           * @retval kStatus_USB_ControllerNotFound   Cannot find the controller.
+    900           */
+
+   \                                 In section .text, align 2, keep-with-next
+    901          usb_status_t USB_DeviceStallEndpoint(usb_device_handle handle, uint8_t endpointAddress)
+    902          {
+   \                     USB_DeviceStallEndpoint: (+1)
+   \   00000000   0xB502             PUSH     {R1,LR}
+    903              if ((endpointAddress & USB_ENDPOINT_NUMBER_MASK) < USB_DEVICE_CONFIG_ENDPOINTS)
+   \   00000002   0xF001 0x010F      AND      R1,R1,#0xF
+   \   00000006   0x2908             CMP      R1,#+8
+   \   00000008   0xD202             BCS.N    ??USB_DeviceStallEndpoint_0
+    904              {
+    905                  return USB_DeviceControl(handle, kUSB_DeviceControlEndpointStall, &endpointAddress);
+   \   0000000A   0x466A             MOV      R2,SP
+   \   0000000C   0x2104             MOVS     R1,#+4
+   \   0000000E   0x....             B.N      ?Subroutine0
+    906              }
+    907              else
+    908              {
+    909                  return kStatus_USB_InvalidParameter;
+   \                     ??USB_DeviceStallEndpoint_0: (+1)
+   \   00000010   0x2004             MOVS     R0,#+4
+   \   00000012   0xBD02             POP      {R1,PC}          ;; return
+    910              }
+    911          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \   00000000   0x.... 0x....      BL       USB_DeviceControl
+   \   00000004   0xBD02             POP      {R1,PC}
+    912          
+    913          /*!
+    914           * @brief Un-stall a specified endpoint.
+    915           *
+    916           * The function is used to un-stall a specified endpoint.
+    917           *
+    918           * @param handle The device handle got from USB_DeviceInit.
+    919           * @param endpointAddress Endpoint address, bit7 is the direction of endpoint, 1U - IN, abd 0U - OUT.
+    920           *
+    921           * @retval kStatus_USB_Success              The endpoint is un-stalled successfully.
+    922           * @retval kStatus_USB_InvalidHandle        The handle is a NULL pointer. Or the controller handle is invalid.
+    923           * @retval kStatus_USB_InvalidParameter     The endpoint number is more than USB_DEVICE_CONFIG_ENDPOINTS.
+    924           * @retval kStatus_USB_ControllerNotFound   Cannot find the controller.
+    925           */
+
+   \                                 In section .text, align 2, keep-with-next
+    926          usb_status_t USB_DeviceUnstallEndpoint(usb_device_handle handle, uint8_t endpointAddress)
+    927          {
+   \                     USB_DeviceUnstallEndpoint: (+1)
+   \   00000000   0xB502             PUSH     {R1,LR}
+    928              if ((endpointAddress & USB_ENDPOINT_NUMBER_MASK) < USB_DEVICE_CONFIG_ENDPOINTS)
+   \   00000002   0xF001 0x010F      AND      R1,R1,#0xF
+   \   00000006   0x2908             CMP      R1,#+8
+   \   00000008   0xD202             BCS.N    ??USB_DeviceUnstallEndpoint_0
+    929              {
+    930                  return USB_DeviceControl(handle, kUSB_DeviceControlEndpointUnstall, &endpointAddress);
+   \   0000000A   0x466A             MOV      R2,SP
+   \   0000000C   0x2105             MOVS     R1,#+5
+   \   0000000E   0x....             B.N      ?Subroutine0
+    931              }
+    932              else
+    933              {
+    934                  return kStatus_USB_InvalidParameter;
+   \                     ??USB_DeviceUnstallEndpoint_0: (+1)
+   \   00000010   0x2004             MOVS     R0,#+4
+   \   00000012   0xBD02             POP      {R1,PC}          ;; return
+    935              }
+    936          }
+    937          
+    938          /*!
+    939           * @brief Get the status of the selected item.
+    940           *
+    941           * The function is used to get the status of the selected item.
+    942           *
+    943           * @param handle The device handle got from USB_DeviceInit.
+    944           * @param type   The selected item. Please refer to the structure usb_device_status_t.
+    945           * @param param  The param type is determined by the selected item.
+    946           *
+    947           * @retval kStatus_USB_Success              Get status successfully.
+    948           * @retval kStatus_USB_InvalidHandle        The handle is a NULL pointer. Or the controller handle is invalid.
+    949           * @retval kStatus_USB_InvalidParameter     The param is NULL pointer.
+    950           * @retval kStatus_USB_ControllerNotFound   Cannot find the controller.
+    951           * @retval kStatus_USB_Error                Unsupported type.
+    952           */
+
+   \                                 In section .text, align 4, keep-with-next
+    953          usb_status_t USB_DeviceGetStatus(usb_device_handle handle, usb_device_status_t type, void *param)
+    954          {
+   \                     USB_DeviceGetStatus: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    955              uint8_t *temp8;
+    956              usb_status_t error = kStatus_USB_Error;
+   \   00000002   0x2301             MOVS     R3,#+1
+    957          
+    958              if (NULL == param)
+   \   00000004   0xB90A             CBNZ.N   R2,??USB_DeviceGetStatus_1
+    959              {
+    960                  return kStatus_USB_InvalidParameter;
+   \   00000006   0x2004             MOVS     R0,#+4
+   \   00000008   0xBD10             POP      {R4,PC}
+    961              }
+    962              switch (type)
+   \                     ??USB_DeviceGetStatus_1: (+1)
+   \   0000000A   0x1E89             SUBS     R1,R1,#+2
+   \   0000000C   0x2906             CMP      R1,#+6
+   \   0000000E   0xF100 0x048C      ADD      R4,R0,#+140
+   \   00000012   0xD817             BHI.N    ??USB_DeviceGetStatus_2
+   \   00000014   0xE8DF 0xF001      TBB      [PC, R1]
+   \                     ??USB_DeviceGetStatus_0:
+   \   00000018   0x04 0x06          DC8      0x4,0x6,0xE,0x10
+   \              0x0E 0x10    
+   \   0000001C   0x08 0x0A          DC8      0x8,0xA,0x12,0x0
+   \              0x12 0x00    
+    963              {
+    964                  case kUSB_DeviceStatusSpeed:
+    965                      error = USB_DeviceControl(handle, kUSB_DeviceControlGetSpeed, param);
+   \                     ??USB_DeviceGetStatus_3: (+1)
+   \   00000020   0x210C             MOVS     R1,#+12
+   \   00000022   0xE00C             B.N      ??USB_DeviceGetStatus_4
+    966                      break;
+    967                  case kUSB_DeviceStatusOtg:
+    968                      error = USB_DeviceControl(handle, kUSB_DeviceControlGetOtgStatus, param);
+   \                     ??USB_DeviceGetStatus_5: (+1)
+   \   00000024   0x210D             MOVS     R1,#+13
+   \   00000026   0xE00A             B.N      ??USB_DeviceGetStatus_4
+    969                      break;
+    970                  case kUSB_DeviceStatusDeviceState:
+    971                      temp8 = (uint8_t *)param;
+    972                      error = kStatus_USB_Success;
+    973                      *temp8 = ((usb_device_struct_t *)handle)->state;
+   \                     ??USB_DeviceGetStatus_6: (+1)
+   \   00000028   0x78A0             LDRB     R0,[R4, #+2]
+   \   0000002A   0xE000             B.N      ??USB_DeviceGetStatus_7
+    974                      break;
+    975                  case kUSB_DeviceStatusAddress:
+    976                      temp8 = (uint8_t *)param;
+    977                      error = kStatus_USB_Success;
+    978                      *temp8 = ((usb_device_struct_t *)handle)->deviceAddress;
+   \                     ??USB_DeviceGetStatus_8: (+1)
+   \   0000002C   0x7820             LDRB     R0,[R4, #+0]
+   \                     ??USB_DeviceGetStatus_7: (+1)
+   \   0000002E   0x2300             MOVS     R3,#+0
+   \   00000030   0x7010             STRB     R0,[R2, #+0]
+    979                      break;
+   \   00000032   0xE007             B.N      ??USB_DeviceGetStatus_2
+    980                  case kUSB_DeviceStatusDevice:
+    981                      error = USB_DeviceControl(handle, kUSB_DeviceControlGetDeviceStatus, param);
+   \                     ??USB_DeviceGetStatus_9: (+1)
+   \   00000034   0x2106             MOVS     R1,#+6
+   \   00000036   0xE002             B.N      ??USB_DeviceGetStatus_4
+    982                      break;
+    983                  case kUSB_DeviceStatusEndpoint:
+    984                      error = USB_DeviceControl(handle, kUSB_DeviceControlGetEndpointStatus, param);
+   \                     ??USB_DeviceGetStatus_10: (+1)
+   \   00000038   0x2107             MOVS     R1,#+7
+   \   0000003A   0xE000             B.N      ??USB_DeviceGetStatus_4
+    985                      break;
+    986                  case kUSB_DeviceStatusSynchFrame:
+    987                      error = USB_DeviceControl(handle, kUSB_DeviceControlGetSynchFrame, param);
+   \                     ??USB_DeviceGetStatus_11: (+1)
+   \   0000003C   0x2109             MOVS     R1,#+9
+   \                     ??USB_DeviceGetStatus_4: (+1)
+   \   0000003E   0x.... 0x....      BL       USB_DeviceControl
+   \   00000042   0x4603             MOV      R3,R0
+    988                      break;
+    989                  default:
+    990                      break;
+    991              }
+    992              return error;
+   \                     ??USB_DeviceGetStatus_2: (+1)
+   \   00000044   0x4618             MOV      R0,R3
+   \   00000046   0xBD10             POP      {R4,PC}          ;; return
+    993          }
+    994          
+    995          /*!
+    996           * @brief Set the status of the selected item.
+    997           *
+    998           * The function is used to set the status of the selected item.
+    999           *
+   1000           * @param handle The device handle got from USB_DeviceInit.
+   1001           * @param type The selected item. Please refer to the structure usb_device_status_t.
+   1002           * @param param The param type is determined by the selected item.
+   1003           *
+   1004           * @retval kStatus_USB_Success              Set status successfully.
+   1005           * @retval kStatus_USB_InvalidHandle        The handle is a NULL pointer. Or the controller handle is invalid.
+   1006           * @retval kStatus_USB_ControllerNotFound   Cannot find the controller.
+   1007           * @retval kStatus_USB_Error                Unsupported type, or the param is NULL pointer.
+   1008           */
+
+   \                                 In section .text, align 2, keep-with-next
+   1009          usb_status_t USB_DeviceSetStatus(usb_device_handle handle, usb_device_status_t type, void *param)
+   1010          {
+   \                     USB_DeviceSetStatus: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   1011              usb_status_t error = kStatus_USB_Error;
+   \   00000002   0x2301             MOVS     R3,#+1
+   1012              switch (type)
+   \   00000004   0x2903             CMP      R1,#+3
+   \   00000006   0xF100 0x048C      ADD      R4,R0,#+140
+   \   0000000A   0xD006             BEQ.N    ??USB_DeviceSetStatus_0
+   \   0000000C   0x2906             CMP      R1,#+6
+   \   0000000E   0xD006             BEQ.N    ??USB_DeviceSetStatus_1
+   \   00000010   0x2907             CMP      R1,#+7
+   \   00000012   0xD008             BEQ.N    ??USB_DeviceSetStatus_2
+   \   00000014   0x2909             CMP      R1,#+9
+   \   00000016   0xD013             BEQ.N    ??USB_DeviceSetStatus_3
+   \   00000018   0xE016             B.N      ??USB_DeviceSetStatus_4
+   1013              {
+   1014          #if (defined(USB_DEVICE_CONFIG_EHCI) && (USB_DEVICE_CONFIG_EHCI > 0U)) && \
+   1015              (defined(USB_DEVICE_CONFIG_EHCI_TEST_MODE) && (USB_DEVICE_CONFIG_EHCI_TEST_MODE > 0U))
+   1016                  case kUSB_DeviceStatusTestMode:
+   1017                      error = USB_DeviceControl(handle, kUSB_DeviceControlSetTestMode, param);
+   1018                      break;
+   1019          #endif
+   1020                  case kUSB_DeviceStatusOtg:
+   1021                      error = USB_DeviceControl(handle, kUSB_DeviceControlSetOtgStatus, param);
+   \                     ??USB_DeviceSetStatus_0: (+1)
+   \   0000001A   0x210E             MOVS     R1,#+14
+   \   0000001C   0xE011             B.N      ??USB_DeviceSetStatus_5
+   1022                      break;
+   1023                  case kUSB_DeviceStatusDeviceState:
+   1024                      if (NULL != param)
+   \                     ??USB_DeviceSetStatus_1: (+1)
+   \   0000001E   0xB19A             CBZ.N    R2,??USB_DeviceSetStatus_4
+   1025                      {
+   1026                          error = kStatus_USB_Success;
+   1027                          ((usb_device_struct_t *)handle)->state = (uint8_t)(*(uint8_t *)param);
+   \   00000020   0x7810             LDRB     R0,[R2, #+0]
+   \   00000022   0x2300             MOVS     R3,#+0
+   \   00000024   0xE007             B.N      ??USB_DeviceSetStatus_6
+   1028                      }
+   1029                      break;
+   1030                  case kUSB_DeviceStatusAddress:
+   1031                      if (kUSB_DeviceStateAddressing != ((usb_device_struct_t *)handle)->state)
+   \                     ??USB_DeviceSetStatus_2: (+1)
+   \   00000026   0x78A1             LDRB     R1,[R4, #+2]
+   \   00000028   0x2903             CMP      R1,#+3
+   \   0000002A   0xD006             BEQ.N    ??USB_DeviceSetStatus_7
+   1032                      {
+   1033                          if (NULL != param)
+   \   0000002C   0xB162             CBZ.N    R2,??USB_DeviceSetStatus_4
+   1034                          {
+   1035                              error = kStatus_USB_Success;
+   1036                              ((usb_device_struct_t *)handle)->deviceAddress = (uint8_t)(*(uint8_t *)param);
+   \   0000002E   0x7810             LDRB     R0,[R2, #+0]
+   \   00000030   0x7020             STRB     R0,[R4, #+0]
+   \   00000032   0x2300             MOVS     R3,#+0
+   1037                              ((usb_device_struct_t *)handle)->state = kUSB_DeviceStateAddressing;
+   \   00000034   0x2003             MOVS     R0,#+3
+   \                     ??USB_DeviceSetStatus_6: (+1)
+   \   00000036   0x70A0             STRB     R0,[R4, #+2]
+   \   00000038   0xE006             B.N      ??USB_DeviceSetStatus_4
+   1038                          }
+   1039                      }
+   1040                      else
+   1041                      {
+   1042                          error = USB_DeviceControl(handle, kUSB_DeviceControlSetDeviceAddress,
+   1043                                                    &((usb_device_struct_t *)handle)->deviceAddress);
+   \                     ??USB_DeviceSetStatus_7: (+1)
+   \   0000003A   0x4622             MOV      R2,R4
+   \   0000003C   0x2108             MOVS     R1,#+8
+   \   0000003E   0xE000             B.N      ??USB_DeviceSetStatus_5
+   1044                      }
+   1045                      break;
+   1046                  case kUSB_DeviceStatusBus:
+   1047                      error = USB_DeviceControl(handle, kUSB_DeviceControlResume, param);
+   \                     ??USB_DeviceSetStatus_3: (+1)
+   \   00000040   0x210A             MOVS     R1,#+10
+   \                     ??USB_DeviceSetStatus_5: (+1)
+   \   00000042   0x.... 0x....      BL       USB_DeviceControl
+   \   00000046   0x4603             MOV      R3,R0
+   1048                      break;
+   1049                  default:
+   1050                      break;
+   1051              }
+   1052              return error;
+   \                     ??USB_DeviceSetStatus_4: (+1)
+   \   00000048   0x4618             MOV      R0,R3
+   \   0000004A   0xBD10             POP      {R4,PC}          ;; return
+   1053          }
+   1054          
+   1055          #if USB_DEVICE_CONFIG_USE_TASK
+   1056          /*!
+   1057           * @brief Device task function.
+   1058           *
+   1059           * The function is used to handle controller message.
+   1060           * This function should not be called in applicartion directly.
+   1061           *
+   1062           * @param handle The device handle got from USB_DeviceInit.
+   1063           */
+   1064          void USB_DeviceTaskFunction(void *deviceHandle)
+   1065          {
+   1066              usb_device_struct_t *handle = (usb_device_struct_t *)deviceHandle;
+   1067              static usb_device_callback_message_struct_t message;
+   1068          
+   1069              if (deviceHandle)
+   1070              {
+   1071                  /* Get the message from the queue */
+   1072                  if (kStatus_USB_OSA_Success == USB_OsaMsgqRecv(handle->notificationQueue, (uint32_t *)&message, 0U))
+   1073                  {
+   1074                      /* Handle the message */
+   1075                      USB_DeviceNotification(handle, &message);
+   1076                  }
+   1077              }
+   1078          }
+   1079          #endif
+   1080          
+   1081          /*!
+   1082           * @brief Get dvice stack version function.
+   1083           *
+   1084           * The function is used to get dvice stack version.
+   1085           *
+   1086           * @param[out] version The version structure pointer to keep the device stack version.
+   1087           *
+   1088           */
+
+   \                                 In section .text, align 2, keep-with-next
+   1089          void USB_DeviceGetVersion(uint32_t *version)
+   1090          {
+   1091              if (version)
+   \                     USB_DeviceGetVersion: (+1)
+   \   00000000   0xB110             CBZ.N    R0,??USB_DeviceGetVersion_0
+   1092              {
+   1093                  *version =
+   1094                      (uint32_t)USB_MAKE_VERSION(USB_STACK_VERSION_MAJOR, USB_STACK_VERSION_MINOR, USB_STACK_VERSION_BUGFIX);
+   \   00000002   0xF44F 0x3180      MOV      R1,#+65536
+   \   00000006   0x6001             STR      R1,[R0, #+0]
+   1095              }
+   1096          }
+   \                     ??USB_DeviceGetVersion_0: (+1)
+   \   00000008   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \   00000000   0x........         DC32     s_UsbDevice
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \   00000000   0x........         DC32     USB_DeviceKhciInit
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \   00000000   0x........         DC32     USB_DeviceKhciDeinit
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_3:
+   \   00000000   0x........         DC32     USB_DeviceKhciSend
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_4:
+   \   00000000   0x........         DC32     USB_DeviceKhciRecv
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_5:
+   \   00000000   0x........         DC32     USB_DeviceKhciCancel
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_6:
+   \   00000000   0x........         DC32     USB_DeviceKhciControl
+   1097          #endif /* USB_DEVICE_CONFIG_NUM */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   USB_DeviceCancel
+         0   -- Indirect call
+       0   USB_DeviceControl
+         0   -- Indirect call
+       8   USB_DeviceDeinit
+         8   -- Indirect call
+         8   -> USB_DeviceFreeHandle
+      24   USB_DeviceDeinitEndpoint
+        24   -> USB_DeviceControl
+       8   USB_DeviceFreeHandle
+         8   -> USB_BmEnterCritical
+         8   -> USB_BmExitCritical
+       8   USB_DeviceGetStatus
+         8   -> USB_DeviceControl
+       0   USB_DeviceGetVersion
+      24   USB_DeviceInit
+        24   -> USB_BmEnterCritical
+        24   -> USB_BmExitCritical
+        24   -> USB_DeviceDeinit
+        24   -> USB_DeviceFreeHandle
+        24   -> USB_DeviceKhciInit
+       8   USB_DeviceInitEndpoint
+         0   -> USB_DeviceControl
+      24   USB_DeviceNotification
+        24   -- Indirect call
+        24   -> USB_DeviceControl
+       0   USB_DeviceNotificationTrigger
+         0   -> USB_DeviceNotification
+       0   USB_DeviceRecvRequest
+         0   -> USB_DeviceTransfer
+       0   USB_DeviceRun
+         0   -> USB_DeviceControl
+       0   USB_DeviceSendRequest
+         0   -> USB_DeviceTransfer
+       8   USB_DeviceSetStatus
+         8   -> USB_DeviceControl
+       8   USB_DeviceStallEndpoint
+         8   -> USB_DeviceControl
+       0   USB_DeviceStop
+         0   -> USB_DeviceControl
+      16   USB_DeviceTransfer
+        16   -- Indirect call
+       8   USB_DeviceUnstallEndpoint
+         8   -> USB_DeviceControl
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+       4  ??DataTable1_3
+       4  ??DataTable1_4
+       4  ??DataTable1_5
+       4  ??DataTable1_6
+       6  ?Subroutine0
+      20  USB_DeviceCancel
+      20  USB_DeviceControl
+      34  USB_DeviceDeinit
+      48  USB_DeviceDeinitEndpoint
+      24  USB_DeviceFreeHandle
+      72  USB_DeviceGetStatus
+      10  USB_DeviceGetVersion
+     188  USB_DeviceInit
+      58  USB_DeviceInitEndpoint
+     112  USB_DeviceNotification
+      26  USB_DeviceNotificationTrigger
+       6  USB_DeviceRecvRequest
+       6  USB_DeviceRun
+      10  USB_DeviceSendRequest
+      76  USB_DeviceSetStatus
+      20  USB_DeviceStallEndpoint
+       6  USB_DeviceStop
+      34  USB_DeviceTransfer
+      20  USB_DeviceUnstallEndpoint
+     144  s_UsbDevice
+      24  s_UsbDeviceKhciInterface
+
+ 
+ 848 bytes in section .text
+ 144 bytes in section m_usb_global
+ 
+ 848 bytes of CODE memory
+ 144 bytes of DATA memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,11 @@
+Sources/main.c
+Includes/MK22F25612.h
+Project_Settings/Startup_Code/system_MK22F25612.c
+Includes/system_MK22F25612.h
+Project_Settings/Startup_Code/startup_MK22F25612.S
+Project_Settings/Linker_Files/MK22FN256xxx12_flash.ld
+Includes/core_cm0plus.h
+Includes/core_cm4.h
+Includes/core_cm4_simd.h
+Includes/core_cmFunc.h
+Includes/core_cmInstr.h

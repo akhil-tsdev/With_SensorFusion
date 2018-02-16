@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\..\..\..\..\..\..\..\..\..\Freescale\Freescale_MQX_4_1\mqx\build\iar\bsp_twrk21f120m\bsp_twrk21f120m.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\hub_on_board_diag.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\..\..\..\..\..\..\..\..\Freescale\Freescale_MQX_4_1\mfs\build\iar\mfs_twrk21f120m\mfs_twrk21f120m.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\..\..\..\..\..\..\..\..\Freescale\Freescale_MQX_4_1\mqx\build\iar\psp_twrk21f120m\psp_twrk21f120m.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\..\..\..\..\..\..\..\..\Freescale\Freescale_MQX_4_1\rtcs\build\iar\rtcs_twrk21f120m\rtcs_twrk21f120m.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\..\..\..\..\..\..\..\..\Freescale\Freescale_MQX_4_1\shell\build\iar\shell_twrk21f120m\shell_twrk21f120m.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\..\..\..\..\..\..\..\..\Freescale\Freescale_MQX_4_1\usb\device\build\iar\usbd_twrk21f120m\usbd_twrk21f120m.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>
+
+

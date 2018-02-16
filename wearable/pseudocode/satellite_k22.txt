@@ -1,0 +1,30 @@
+on spi (from nordic) received:
+	if START:
+		set active
+		set can_send
+	elif CALIBRATE
+		set go_calibrate (do all communication with the invensense on the main loop)
+	elif STOP:
+		clear active
+	elif SHUT UP:
+		clear can_send
+	elif SET RTC
+		set the RTC
+		set a flag?
+	if can_send:
+		pop X entries from the circular buffer and set them as the next SPI response
+		
+main loop:
+	if not active:
+		turn off invensense
+		while not active:
+			wait for events
+		turn on invensense
+	if go_calibrate:
+		calibrate invensense
+		clear go_calibrate
+	if the circular buffer isn't full:
+		get readings from invensense
+		for each reading:
+			process with sensor fusion
+		add result to circular buffer

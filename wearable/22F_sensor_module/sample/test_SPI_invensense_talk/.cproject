@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.629462082">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.629462082" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<macros>
+					<stringMacro name="PROJECT_KSDK_PATH" type="VALUE_TEXT" value="${KSDK_PATH}"/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.managedbuilder.core.ManagedBuildManager" point="org.eclipse.cdt.core.ScannerInfoProvider"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="test_SPI_invensense_talk" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="${cross_rm} -rf" description="" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.629462082" name="Debug" parent="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug">
+					<folderInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.629462082." name="/" resourcePath="">
+						<toolChain id="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug.522386718" name="Cross ARM GCC" superClass="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug">
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.1955101499" name="Optimization Level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.none" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength.1287544952" name="Message length (-fmessage-length=0)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar.1596178972" name="'char' is signed (-fsigned-char)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections.779482743" name="Function sections (-ffunction-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections.213605555" name="Data sections (-fdata-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.1686029505" name="Debug level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level" value="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.max" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format.985286115" name="Debug format" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family.22292208" name="ARM family" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.mcpu.cortex-m4" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.1806936664" name="Float ABI" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.hard" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.487772181" name="FPU Type" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name.655390203" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name" value="Custom" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix.1449460388" name="Prefix" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix" value="arm-none-eabi-" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.c.234831857" name="C compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.c" value="gcc" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp.1840928384" name="C++ compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp" value="g++" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy.168468047" name="Hex/Bin converter" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy" value="objcopy" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump.1624676094" name="Listing generator" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump" value="objdump" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.size.1439893216" name="Size command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.size" value="size" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.make.240119277" name="Build command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.make" value="make" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm.188528771" name="Remove command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm" value="rm" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar.658902432" name="Archiver" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar" value="ar" valueType="string"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform.62402928" isAbstract="false" osList="all" superClass="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/test_SPI}/Debug" id="ilg.gnuarmeclipse.managedbuild.cross.builder.197815061" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="ilg.gnuarmeclipse.managedbuild.cross.builder"/>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.1284374057" name="Cross ARM GNU Assembler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor.1832850292" name="Use preprocessor" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths.1319451351" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/utilities"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/osa"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/CMSIS/Include/device"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/adc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/can"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/dac"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/dmamux"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/dspi"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/edma"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/enet"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/flextimer"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/gpio"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/i2c"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/lptmr"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/lpuart"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/mcg"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/osc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/pdb"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/pit"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/pmc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/port"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/rtc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/sai"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/sdhc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/sim"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/smc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/spi"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/uart"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/wdog"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/adc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/adc/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/can"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/can/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/edma"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/edma/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/dac"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/dac/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/dspi/dspi_master"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/dspi/dspi_slave"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/dspi/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/enet"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/enet/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/enet/src"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/flash"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/flextimer"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/flextimer/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/gpio"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/gpio/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/i2c/i2c_master"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/i2c/i2c_slave"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/i2c/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/lptmr"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/lptmr/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/lpuart"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/lpuart/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/mmcau"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/pdb"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/pdb/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/pit"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/pit/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/rtc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/rtc/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/sai"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/sai/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/sdhc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/sdhc/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/soundcard"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/spi"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/spi/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/uart"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/uart/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/wdog"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/wdog/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/system/clock"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/system/hwtimer"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/system/interrupt"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/system/power"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/boards/frdmk22f120m"/>
+								</option>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input.234260164" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.1238231656" name="Cross ARM C Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.1046942818" name="Language standard" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.c99" valueType="enumerated"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.329211191" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="&quot;CPU_MK22FN128VDC10&quot;"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths.1080118442" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MPU9250_SPI/Sources}&quot;"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/CMSIS/Include/device/MK22F12810"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/utilities"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/osa"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/CMSIS/Include/device"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/startup/MK22F12810"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/adc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/can"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/dac"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/dmamux"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/dspi"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/edma"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/enet"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/flextimer"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/gpio"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/i2c"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/lptmr"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/lpuart"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/mcg"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/osc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/pdb"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/pit"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/pmc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/port"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/rtc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/sai"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/sdhc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/sim"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/smc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/spi"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/uart"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/wdog"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/adc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/adc/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/can"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/can/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/edma"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/edma/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/dac"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/dac/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/dspi/dspi_master"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/dspi/dspi_slave"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/dspi/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/enet"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/enet/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/enet/src"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/flash"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/flextimer"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/flextimer/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/gpio"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/gpio/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/i2c/i2c_master"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/i2c/i2c_slave"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/i2c/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/lptmr"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/lptmr/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/lpuart"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/lpuart/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/mmcau"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/pdb"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/pdb/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/pit"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/pit/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/rtc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/rtc/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/sai"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/sai/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/sdhc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/sdhc/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/soundcard"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/spi"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/spi/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/uart"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/uart/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/wdog"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/wdog/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/system/clock"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/system/hwtimer"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/system/interrupt"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/system/power"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/boards/frdmk22f120m"/>
+									<listOptionValue builtIn="false" value="&quot;../Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0\platform\osa&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0\platform\drivers\uart\common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/board}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0\platform\drivers\gpio\common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Includes&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Includes/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Project_Settings/Startup_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/CMSIS/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/utilities&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/system/clock&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/adc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/can&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/dac&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/dspi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/edma&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/enet&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/flash&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/flextimer&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/gpio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/i2c&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/lptmr&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/lpuart&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/mmcau&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/mpu&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/pdb&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/pit&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/rtc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/sai&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/sdcard&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/sdhc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/soundcard&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/uart&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/drivers/wdog&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/adc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/can&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/dac&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/dmamux&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/dspi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/edma&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/enet&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/flextimer&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/gpio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/i2c&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/llwu&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/lptmr&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/lpuart&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/mcg&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/mpu&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/osc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/pdb&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/pit&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/pmc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/port&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/rcm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/rtc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/sai&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/sdhc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/sim&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/smc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/uart&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/platform/hal/wdog&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0/rtos&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0\platform\drivers\dspi\dspi_master&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0\platform\drivers\dspi\dspi_slave&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0\platform\drivers\dspi\common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Freescale\KSDK_1.0.0\platform\hal\edma&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/CMSIS/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/utilities&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/system/clock&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/adc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/can&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/dac&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/dspi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/edma&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/enet&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/flash&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/flextimer&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/gpio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/i2c&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/lptmr&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/lpuart&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/mmcau&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/mpu&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/pdb&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/pit&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/rtc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/sai&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/sdcard&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/sdhc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/soundcard&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/uart&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/drivers/wdog&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/adc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/can&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/dac&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/dmamux&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/dspi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/edma&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/enet&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/flextimer&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/gpio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/i2c&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/llwu&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/lptmr&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/lpuart&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/mcg&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/mpu&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/osc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/pdb&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/pit&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/pmc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/port&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/rcm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/rtc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/sai&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/sdhc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/sim&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/smc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/uart&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/platform/hal/wdog&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH}/rtos&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PROJECT_KSDK_PATH}/platform/utilities&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PROJECT_KSDK_PATH}/platform/utilities/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PROJECT_KSDK_PATH}/platform/drivers/dspi/dspi_slave/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PROJECT_KSDK_PATH}/platform/drivers/dspi/dspi_slave&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PROJECT_KSDK_PATH}/platform/drivers/dspi/dspi_master/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PROJECT_KSDK_PATH}/platform/drivers/dspi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PROJECT_KSDK_PATH}/platform/drivers/dspi/dspi_master&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PROJECT_KSDK_PATH}/platform/drivers/dspi/common&quot;"/>
+								</option>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1441080543" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.2085257544" name="Cross ARM C++ Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.include.paths.1394898424" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/utilities"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/osa"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/CMSIS/Include/device"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/adc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/can"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/dac"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/dmamux"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/dspi"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/edma"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/enet"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/flextimer"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/gpio"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/i2c"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/lptmr"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/lpuart"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/mcg"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/osc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/pdb"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/pit"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/pmc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/port"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/rtc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/sai"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/sdhc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/sim"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/smc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/spi"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/uart"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/hal/wdog"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/adc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/adc/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/can"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/can/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/edma"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/edma/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/dac"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/dac/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/dspi/dspi_master"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/dspi/dspi_slave"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/dspi/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/enet"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/enet/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/enet/src"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/flash"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/flextimer"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/flextimer/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/gpio"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/gpio/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/i2c/i2c_master"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/i2c/i2c_slave"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/i2c/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/lptmr"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/lptmr/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/lpuart"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/lpuart/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/mmcau"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/pdb"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/pdb/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/pit"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/pit/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/rtc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/rtc/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/sai"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/sai/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/sdhc"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/sdhc/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/soundcard"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/spi"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/spi/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/uart"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/uart/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/wdog"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/drivers/wdog/common"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/system/clock"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/system/hwtimer"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/system/interrupt"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/platform/system/power"/>
+									<listOptionValue builtIn="false" value="C:/Freescale/KSDK_1.0.0/boards/frdmk22f120m"/>
+								</option>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input.1274112655" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker.22970383" name="Cross ARM C Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections.2108723518" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections" value="true" valueType="boolean"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.611066587" name="Cross ARM C++ Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections.907698995" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.paths.1987977833" name="Library search path (-L)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Project_Settings/Linker_Files&quot;"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.other.1231480653" name="Other linker flags" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.other" value="-nanolibc" valueType="string"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.scriptfile.1500038887" name="Script files (-T)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.scriptfile" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;K22FN128xxx10_flash.ld&quot;"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.otherobjs.182077108" name="Other objects" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.otherobjs" valueType="userObjs">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ksdk_platform_lib_K22F12810/Debug/ksdk_platform_lib_k22f12810.a}&quot;"/>
+								</option>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.input.1621441470" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.archiver.914343949" name="Cross ARM GNU Archiver" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.archiver"/>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash.1209558328" name="Cross ARM GNU Create Flash Image" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash"/>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.createlisting.1238615297" name="Cross ARM GNU Create Listing" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.createlisting">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source.859542679" name="Display source (--source|-S)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.allheaders.536279299" name="Display all headers (--all-headers|-x)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.allheaders" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.demangle.2031534912" name="Demangle names (--demangle|-C)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.demangle" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers.1741064294" name="Display line numbers (--line-numbers|-l)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide.1016937682" name="Wide lines (--wide|-w)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide" value="true" valueType="boolean"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize.1493935022" name="Cross ARM GNU Print Size" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format.1877816014" name="Size format" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="utilities|board" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="board"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="utilities"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="test_SPI.ilg.gnuarmeclipse.managedbuild.cross.target.elf.842035919" name="Executable" projectType="ilg.gnuarmeclipse.managedbuild.cross.target.elf"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.629462082;ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.629462082.;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.1238231656;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1441080543">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.629462082;ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.629462082.;ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.2085257544;ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input.1274112655">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/test_SPI_scratchRegister"/>
+		</configuration>
+	</storageModule>
+</cproject>

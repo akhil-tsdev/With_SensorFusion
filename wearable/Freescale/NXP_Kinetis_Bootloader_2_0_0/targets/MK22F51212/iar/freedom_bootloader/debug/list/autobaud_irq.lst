@@ -1,0 +1,408 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       16/Aug/2016  15:48:48
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\autobaud\src\autobaud_irq.c
+#    Command line =  
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\autobaud\src\autobaud_irq.c"
+#        -D DEBUG -D NDEBUG -D USB_STACK_BM -D CPU_MK22FN512VDC12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D FREEDOM -D BL_TARGET_FLASH -lC
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\obj"
+#        --no_unroll --debug --endian=little --cpu=Cortex-M4 -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform/devices/MK22F51212\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/autobaud\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/osa\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/device\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/device/class\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/bm_usb\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform/devices\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform/CMSIS/Include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/drivers\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/drivers/common\"
+#        -Ohz --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\list\autobaud_irq.lst
+#    Object file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\obj\autobaud_irq.o
+#
+###############################################################################
+
+C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\autobaud\src\autobaud_irq.c
+      1          /*
+      2           * Copyright (c) 2013, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          
+     31          #include "fsl_device_registers.h"
+     32          #include "autobaud/autobaud.h"
+     33          #include "microseconds/microseconds.h"
+     34          #include "bootloader_common.h"
+     35          
+     36          ////////////////////////////////////////////////////////////////////////////////
+     37          // Definitions
+     38          ////////////////////////////////////////////////////////////////////////////////
+     39          
+     40          enum _autobaud_counts
+     41          {
+     42              //! the number of falling edge transitions being counted
+     43              //! for 0x5A
+     44              kFirstByteRequiredFallingEdges = 4,
+     45              //! the number of falling edge transitions being counted
+     46              //! for 0xA6
+     47              kSecondByteRequiredFallingEdges = 3,
+     48              //! the number of bits being measured for the baud rate
+     49              //! for 0x5A we have the start bit + 7 bits to the last falling edge = 8 bits
+     50              kNumberOfBitsForFirstByteMeasured = 8,
+     51              //! for 0xA6 we have the start bit + 6 bits to the last falling edge = 7 bits
+     52              kNumberOfBitsForSecondByteMeasured = 7,
+     53              //! Time in microseconds that we will wait in between toggles before restarting detection
+     54              //! Make this value 8 bits at 100 baud worth of time = 80000 microseconds
+     55              kMaximumTimeBetweenFallingEdges = 80000,
+     56              //! Autobaud baud step size that our calculation will be rounded to, this is to ensure
+     57              //! that we can use a valid multiplier in the UART configuration which runs into problems
+     58              //! at higher baud rates with slightly off baud rates (e.g. if we measure 115458 vs 115200)
+     59              //! a calculation of UartClock at 48MHz gives an SBR calculation of 48000000/ (16 * 115458) = 25
+     60              //! giving a baud rate calculation of 48000000/(16 * 25) = 120000 baud
+     61              //! which is out of spec and fails
+     62              kAutobaudStepSize = 1200
+     63          };
+     64          
+     65          ////////////////////////////////////////////////////////////////////////////////
+     66          // Prototypes
+     67          ////////////////////////////////////////////////////////////////////////////////
+     68          void instance_transition_callback(uint32_t instance);
+     69          
+     70          ////////////////////////////////////////////////////////////////////////////////
+     71          // Variables
+     72          ////////////////////////////////////////////////////////////////////////////////
+     73          
+
+   \                                 In section .bss, align 8
+     74          static uint32_t s_transitionCount;
+     75          static uint64_t s_firstByteTotalTicks;
+   \                     s_firstByteTotalTicks:
+   \   00000000                      DS8 8
+   \   00000008                      DS8 8
+   \   00000010                      DS8 8
+   \   00000018                      DS8 8
+   \   00000020                      DS8 4
+   \   00000024                      DS8 4
+     76          static uint64_t s_secondByteTotalTicks;
+     77          static uint64_t s_lastToggleTicks;
+     78          static uint64_t s_ticksBetweenFailure;
+     79          static uint32_t s_instanceMeasured;
+     80          
+     81          ////////////////////////////////////////////////////////////////////////////////
+     82          // Code
+     83          ////////////////////////////////////////////////////////////////////////////////
+     84          
+
+   \                                 In section .text, align 2, keep-with-next
+     85          void autobaud_init(uint32_t instance)
+     86          {
+   \                     autobaud_init: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x4604             MOV      R4,R0
+     87              s_transitionCount = 0;
+   \   00000004   0x....             LDR.N    R5,??DataTable2
+   \   00000006   0x2000             MOVS     R0,#+0
+     88              s_firstByteTotalTicks = 0;
+   \   00000008   0xE9C5 0x0000      STRD     R0,R0,[R5, #+0]
+     89              s_secondByteTotalTicks = 0;
+   \   0000000C   0xE9C5 0x0002      STRD     R0,R0,[R5, #+8]
+     90              s_lastToggleTicks = 0;
+   \   00000010   0xE9C5 0x0004      STRD     R0,R0,[R5, #+16]
+   \   00000014   0x6228             STR      R0,[R5, #+32]
+     91              s_instanceMeasured = 0;
+   \   00000016   0x6268             STR      R0,[R5, #+36]
+     92              s_ticksBetweenFailure = microseconds_convert_to_ticks(kMaximumTimeBetweenFallingEdges);
+   \   00000018   0x....             LDR.N    R0,??DataTable2_1  ;; 0x13880
+   \   0000001A   0x.... 0x....      BL       microseconds_convert_to_ticks
+   \   0000001E   0xE9C5 0x0106      STRD     R0,R1,[R5, #+24]
+     93              enable_autobaud_pin_irq(instance, instance_transition_callback);
+   \   00000022   0x4620             MOV      R0,R4
+   \   00000024   0xE8BD 0x4034      POP      {R2,R4,R5,LR}
+   \   00000028   0x.... 0x....      ADR.W    R1,instance_transition_callback
+   \   0000002C   0x.... 0x....      B.W      enable_autobaud_pin_irq
+     94          }
+     95          
+
+   \                                 In section .text, align 2, keep-with-next
+     96          void autobaud_deinit(uint32_t instance)
+     97          {
+     98              disable_autobaud_pin_irq(instance);
+   \                     autobaud_deinit: (+1)
+   \   00000000   0x.... 0x....      B.W      disable_autobaud_pin_irq
+     99          }
+    100          
+
+   \                                 In section .text, align 2, keep-with-next
+    101          status_t autobaud_get_rate(uint32_t instance, uint32_t *rate)
+    102          {
+   \                     autobaud_get_rate: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+    103              if ((s_transitionCount == (kFirstByteRequiredFallingEdges + kSecondByteRequiredFallingEdges)) &&
+    104                  (instance == s_instanceMeasured))
+   \   00000002   0x....             LDR.N    R5,??DataTable2
+   \   00000004   0x460C             MOV      R4,R1
+   \   00000006   0x6A29             LDR      R1,[R5, #+32]
+   \   00000008   0x2907             CMP      R1,#+7
+   \   0000000A   0xBF04             ITT      EQ 
+   \   0000000C   0x6A69             LDREQ    R1,[R5, #+36]
+   \   0000000E   0x4288             CMPEQ    R0,R1
+   \   00000010   0xD11A             BNE.N    ??autobaud_get_rate_0
+    105              {
+    106                  uint32_t calculatedBaud =
+    107                      (microseconds_get_clock() * (kNumberOfBitsForFirstByteMeasured + kNumberOfBitsForSecondByteMeasured)) /
+    108                      (uint32_t)(s_firstByteTotalTicks + s_secondByteTotalTicks);
+   \   00000012   0x.... 0x....      BL       microseconds_get_clock
+    109          
+    110                  // Round the rate to the nearest step size
+    111                  // rounded = stepSize * (value/stepSize + .5)
+    112                  // multiplying by 10 since we can't work with floats
+    113                  *rate = ((((calculatedBaud * 10) / kAutobaudStepSize) + 5) / 10) * kAutobaudStepSize;
+   \   00000016   0xEBC0 0x1600      RSB      R6,R0,R0, LSL #+4
+   \   0000001A   0xE9D5 0x0100      LDRD     R0,R1,[R5, #+0]
+   \   0000001E   0xE9D5 0x2302      LDRD     R2,R3,[R5, #+8]
+   \   00000022   0x1810             ADDS     R0,R2,R0
+   \   00000024   0xFBB6 0xF0F0      UDIV     R0,R6,R0
+   \   00000028   0x210A             MOVS     R1,#+10
+   \   0000002A   0x4348             MULS     R0,R1,R0
+   \   0000002C   0xF44F 0x6196      MOV      R1,#+1200
+   \   00000030   0xFBB0 0xF0F1      UDIV     R0,R0,R1
+   \   00000034   0x1D40             ADDS     R0,R0,#+5
+   \   00000036   0x210A             MOVS     R1,#+10
+   \   00000038   0xFBB0 0xF0F1      UDIV     R0,R0,R1
+   \   0000003C   0xF44F 0x6196      MOV      R1,#+1200
+   \   00000040   0x4348             MULS     R0,R1,R0
+   \   00000042   0x6020             STR      R0,[R4, #+0]
+    114          
+    115                  return kStatus_Success;
+   \   00000044   0x2000             MOVS     R0,#+0
+   \   00000046   0xBD70             POP      {R4-R6,PC}
+    116              }
+    117              else
+    118              {
+    119                  // no baud rate yet/inactive
+    120                  return kStatus_Fail;
+   \                     ??autobaud_get_rate_0: (+1)
+   \   00000048   0x2001             MOVS     R0,#+1
+   \   0000004A   0xBD70             POP      {R4-R6,PC}       ;; return
+    121              }
+    122          }
+    123          
+
+   \                                 In section .text, align 4, keep-with-next
+    124          void instance_transition_callback(uint32_t instance)
+    125          {
+   \                     instance_transition_callback: (+1)
+   \   00000000   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \   00000004   0x4606             MOV      R6,R0
+    126              uint64_t ticks = microseconds_get_ticks();
+   \   00000006   0x.... 0x....      BL       microseconds_get_ticks
+    127              s_transitionCount++;
+   \   0000000A   0x....             LDR.N    R7,??DataTable2
+   \   0000000C   0x4604             MOV      R4,R0
+   \   0000000E   0x6A38             LDR      R0,[R7, #+32]
+    128          
+    129              uint64_t delta = ticks - s_lastToggleTicks;
+    130          
+    131              // The last toggle was longer than we allow so treat this as the first one
+    132              if (delta > s_ticksBetweenFailure)
+   \   00000010   0xE9D7 0x5904      LDRD     R5,R9,[R7, #+16]
+   \   00000014   0x4688             MOV      R8,R1
+   \   00000016   0x1C42             ADDS     R2,R0,#+1
+   \   00000018   0xE9D7 0x0106      LDRD     R0,R1,[R7, #+24]
+   \   0000001C   0x1B65             SUBS     R5,R4,R5
+   \   0000001E   0xEB68 0x0909      SBC      R9,R8,R9
+   \   00000022   0x4549             CMP      R1,R9
+   \   00000024   0xD802             BHI.N    ??instance_transition_callback_0
+   \   00000026   0xBF2C             ITE      CS 
+   \   00000028   0x42A8             CMPCS    R0,R5
+   \   0000002A   0x2201             MOVCC    R2,#+1
+    133              {
+    134                  s_transitionCount = 1;
+    135              }
+    136          
+    137              switch (s_transitionCount)
+   \                     ??instance_transition_callback_0: (+1)
+   \   0000002C   0x2A01             CMP      R2,#+1
+   \   0000002E   0x623A             STR      R2,[R7, #+32]
+   \   00000030   0xD006             BEQ.N    ??instance_transition_callback_1
+   \   00000032   0x2A04             CMP      R2,#+4
+   \   00000034   0xD008             BEQ.N    ??instance_transition_callback_2
+   \   00000036   0x2A05             CMP      R2,#+5
+   \   00000038   0xD00E             BEQ.N    ??instance_transition_callback_3
+   \   0000003A   0x2A07             CMP      R2,#+7
+   \   0000003C   0xD00F             BEQ.N    ??instance_transition_callback_4
+   \   0000003E   0xE018             B.N      ??instance_transition_callback_5
+    138              {
+    139                  case 1:
+    140                      // This is our first falling edge, store the initial ticks temporarily in firstByteTicks
+    141                      // and save the instance that we are measuring
+    142                      s_firstByteTotalTicks = ticks;
+   \                     ??instance_transition_callback_1: (+1)
+   \   00000040   0xE9C7 0x4800      STRD     R4,R8,[R7, #+0]
+    143                      s_instanceMeasured = instance;
+   \   00000044   0x627E             STR      R6,[R7, #+36]
+    144                      break;
+   \   00000046   0xE014             B.N      ??instance_transition_callback_5
+    145          
+    146                  case kFirstByteRequiredFallingEdges:
+    147                      // We reached the end of our measurable first byte, subtract the current ticks from the initial
+    148                      // first byte ticks
+    149                      s_firstByteTotalTicks = ticks - s_firstByteTotalTicks;
+   \                     ??instance_transition_callback_2: (+1)
+   \   00000048   0xE9D7 0x0100      LDRD     R0,R1,[R7, #+0]
+   \   0000004C   0x1A20             SUBS     R0,R4,R0
+   \   0000004E   0xEB68 0x0101      SBC      R1,R8,R1
+   \   00000052   0xE9C7 0x0100      STRD     R0,R1,[R7, #+0]
+    150                      break;
+   \   00000056   0xE00C             B.N      ??instance_transition_callback_5
+    151          
+    152                  case (kFirstByteRequiredFallingEdges + 1):
+    153                      // We hit our first falling edge of the second byte, store the initial ticks temporarily in secondByteTicks
+    154                      s_secondByteTotalTicks = ticks;
+   \                     ??instance_transition_callback_3: (+1)
+   \   00000058   0xE9C7 0x4802      STRD     R4,R8,[R7, #+8]
+    155                      break;
+   \   0000005C   0xE009             B.N      ??instance_transition_callback_5
+    156          
+    157                  case (kFirstByteRequiredFallingEdges + kSecondByteRequiredFallingEdges):
+    158                      // We reached the end of our measurable second byte, subtract the current ticks from the initial
+    159                      // second byte ticks
+    160                      s_secondByteTotalTicks = ticks - s_secondByteTotalTicks;
+   \                     ??instance_transition_callback_4: (+1)
+   \   0000005E   0xE9D7 0x0102      LDRD     R0,R1,[R7, #+8]
+   \   00000062   0x1A20             SUBS     R0,R4,R0
+   \   00000064   0xEB68 0x0101      SBC      R1,R8,R1
+   \   00000068   0xE9C7 0x0102      STRD     R0,R1,[R7, #+8]
+    161                      disable_autobaud_pin_irq(instance);
+   \   0000006C   0x4630             MOV      R0,R6
+   \   0000006E   0x.... 0x....      BL       disable_autobaud_pin_irq
+    162                      break;
+    163              }
+    164          
+    165              s_lastToggleTicks = ticks;
+   \                     ??instance_transition_callback_5: (+1)
+   \   00000072   0xE9C7 0x4804      STRD     R4,R8,[R7, #+16]
+    166          }
+   \   00000076   0xE8BD 0x83F1      POP      {R0,R4-R9,PC}    ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \   00000000   0x........         DC32     s_firstByteTotalTicks
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \   00000000   0x00013880         DC32     0x13880
+    167          
+    168          ////////////////////////////////////////////////////////////////////////////////
+    169          // EOF
+    170          ////////////////////////////////////////////////////////////////////////////////
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   autobaud_deinit
+         0   -> disable_autobaud_pin_irq
+      16   autobaud_get_rate
+        16   -> microseconds_get_clock
+      16   autobaud_init
+         0   -> enable_autobaud_pin_irq
+        16   -> microseconds_convert_to_ticks
+      32   instance_transition_callback
+        32   -> disable_autobaud_pin_irq
+        32   -> microseconds_get_ticks
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  autobaud_deinit
+      76  autobaud_get_rate
+      48  autobaud_init
+     122  instance_transition_callback
+      40  s_firstByteTotalTicks
+          s_secondByteTotalTicks
+          s_lastToggleTicks
+          s_ticksBetweenFailure
+          s_transitionCount
+          s_instanceMeasured
+
+ 
+  40 bytes in section .bss
+ 258 bytes in section .text
+ 
+ 258 bytes of CODE memory
+  40 bytes of DATA memory
+
+Errors: none
+Warnings: none

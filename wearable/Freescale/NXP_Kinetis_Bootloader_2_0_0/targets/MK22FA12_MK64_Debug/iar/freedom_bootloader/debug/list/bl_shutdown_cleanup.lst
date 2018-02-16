@@ -1,0 +1,281 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       16/Sep/2016  13:23:56
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\bootloader\src\bl_shutdown_cleanup.c
+#    Command line =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\bootloader\src\bl_shutdown_cleanup.c
+#        -D NDEBUG -D USB_STACK_BM -D CPU_MK22FN1M0AVMC12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D FREEDOM -D BL_TARGET_FLASH -D
+#        TURINGSENSE=1 -lC
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\list
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\..\..\..\..\src\platform\devices\MK22FA12_MK64\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/autobaud\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/osa\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/device\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/device/class\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/bm_usb\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform/devices\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform/CMSIS/Include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/drivers\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/drivers/common\
+#        -On --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\list\bl_shutdown_cleanup.lst
+#    Object file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\obj\bl_shutdown_cleanup.o
+#
+###############################################################################
+
+C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\bootloader\src\bl_shutdown_cleanup.c
+      1          /*
+      2           * Copyright (c) 2013, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          #if !defined(BOOTLOADER_HOST)
+     31          #include "fsl_device_registers.h"
+     32          #include "utilities/fsl_rtos_abstraction.h"
+     33          #include "utilities/vector_table_info.h"
+     34          #include "flash/fsl_flash.h"
+     35          #include "microseconds/microseconds.h"
+     36          #include "bootloader_common.h"
+     37          
+     38          #endif // BOOTLOADER_HOST
+     39          
+     40          #include "bootloader/bl_shutdown_cleanup.h"
+     41          #include "bootloader/bl_context.h"
+     42          
+     43          ////////////////////////////////////////////////////////////////////////////////
+     44          // Definitions
+     45          ////////////////////////////////////////////////////////////////////////////////
+     46          extern void init_interrupts(void);
+     47          void flash_cache_clear(flash_config_t *config);
+     48          
+     49          ////////////////////////////////////////////////////////////////////////////////
+     50          // Code
+     51          ////////////////////////////////////////////////////////////////////////////////
+     52          
+     53          // See bl_shutdown_cleanup.h for documentation of this function.
+
+   \                                 In section .text, align 4, keep-with-next
+     54          void shutdown_cleanup(shutdown_type_t shutdown)
+     55          {
+   \                     shutdown_cleanup: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+     56          #if !defined(BOOTLOADER_HOST)
+     57              if (shutdown != kShutdownType_Reset)
+   \   00000004   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000006   0x2C02             CMP      R4,#+2
+   \   00000008   0xD002             BEQ.N    ??shutdown_cleanup_0
+     58              {
+     59                  // Clear (flush) the flash cache.
+     60                  flash_cache_clear(NULL);
+   \   0000000A   0x2000             MOVS     R0,#+0
+   \   0000000C   0x.... 0x....      BL       flash_cache_clear
+     61              }
+     62          
+     63              if (shutdown != kShutdownType_Cleanup)
+   \                     ??shutdown_cleanup_0: (+1)
+   \   00000010   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000012   0x2C01             CMP      R4,#+1
+   \   00000014   0xD020             BEQ.N    ??shutdown_cleanup_1
+     64              {
+     65                  // Shutdown all peripherals because they could be active
+     66                  uint32_t i;
+     67                  for (i = 0; g_peripherals[i].typeMask != 0; i++)
+   \   00000016   0x2000             MOVS     R0,#+0
+   \   00000018   0x0005             MOVS     R5,R0
+   \                     ??shutdown_cleanup_2: (+1)
+   \   0000001A   0x481B             LDR.N    R0,??shutdown_cleanup_3
+   \   0000001C   0x2118             MOVS     R1,#+24
+   \   0000001E   0xFB01 0xF105      MUL      R1,R1,R5
+   \   00000022   0x5840             LDR      R0,[R0, R1]
+   \   00000024   0x2800             CMP      R0,#+0
+   \   00000026   0xD017             BEQ.N    ??shutdown_cleanup_1
+     68                  {
+     69                      if (g_peripherals[i].controlInterface->shutdown)
+   \   00000028   0x4817             LDR.N    R0,??shutdown_cleanup_3
+   \   0000002A   0x2118             MOVS     R1,#+24
+   \   0000002C   0xFB01 0xF105      MUL      R1,R1,R5
+   \   00000030   0x4408             ADD      R0,R0,R1
+   \   00000032   0x68C0             LDR      R0,[R0, #+12]
+   \   00000034   0x6880             LDR      R0,[R0, #+8]
+   \   00000036   0x2800             CMP      R0,#+0
+   \   00000038   0xD00C             BEQ.N    ??shutdown_cleanup_4
+     70                      {
+     71                          g_peripherals[i].controlInterface->shutdown(&g_peripherals[i]);
+   \   0000003A   0x4813             LDR.N    R0,??shutdown_cleanup_3
+   \   0000003C   0x2118             MOVS     R1,#+24
+   \   0000003E   0xFB01 0xF105      MUL      R1,R1,R5
+   \   00000042   0x4408             ADD      R0,R0,R1
+   \   00000044   0x4910             LDR.N    R1,??shutdown_cleanup_3
+   \   00000046   0x2218             MOVS     R2,#+24
+   \   00000048   0xFB02 0xF205      MUL      R2,R2,R5
+   \   0000004C   0x4411             ADD      R1,R1,R2
+   \   0000004E   0x68C9             LDR      R1,[R1, #+12]
+   \   00000050   0x6889             LDR      R1,[R1, #+8]
+   \   00000052   0x4788             BLX      R1
+     72                      }
+     73                  }
+   \                     ??shutdown_cleanup_4: (+1)
+   \   00000054   0x1C6D             ADDS     R5,R5,#+1
+   \   00000056   0xE7E0             B.N      ??shutdown_cleanup_2
+     74              }
+     75          
+     76              // If we are permanently exiting the bootloader, there are a few extra things to do.
+     77              if (shutdown == kShutdownType_Shutdown)
+   \                     ??shutdown_cleanup_1: (+1)
+   \   00000058   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   0000005A   0x2C00             CMP      R4,#+0
+   \   0000005C   0xD10E             BNE.N    ??shutdown_cleanup_5
+     78              {
+     79                  // Turn off global interrupt
+     80                  lock_acquire();
+   \   0000005E   0x.... 0x....      BL       lock_acquire
+     81          
+     82                  // Shutdown microseconds driver.
+     83                  microseconds_shutdown();
+   \   00000062   0x.... 0x....      BL       microseconds_shutdown
+     84          
+     85          #if defined(RCM_FM)
+     86                  // Disable force ROM.
+     87                  RCM_BWR_FM_FORCEROM(RCM, 0);
+     88          
+     89                  // Clear status register (bits are w1c).
+     90                  RCM_BWR_MR_BOOTROM(RCM, 3);
+     91          #endif // defined(RCM_FM)
+     92          
+     93                  init_interrupts();
+   \   00000066   0x.... 0x....      BL       init_interrupts
+     94          
+     95                  // Set the VTOR to default.
+     96                  SCB->VTOR = kDefaultVectorTableAddress;
+   \   0000006A   0x2000             MOVS     R0,#+0
+   \   0000006C   0x4907             LDR.N    R1,??shutdown_cleanup_3+0x4  ;; 0xe000ed08
+   \   0000006E   0x6008             STR      R0,[R1, #+0]
+     97          
+     98                  // Restore clock to default before leaving bootloader.
+     99                  configure_clocks(kClockOption_ExitBootloader);
+   \   00000070   0x2001             MOVS     R0,#+1
+   \   00000072   0x.... 0x....      BL       configure_clocks
+    100          
+    101                  // De-initialize hardware such as disabling port clock gate
+    102                  deinit_hardware();
+   \   00000076   0x.... 0x....      BL       deinit_hardware
+    103          
+    104                  // Restore global interrupt.
+    105                  __enable_irq();
+   \   0000007A   0xB662             CPSIE    I
+    106          
+    107          #if BL_FEATURE_BYPASS_WATCHDOG
+    108                  // De-initialize watchdog
+    109                  bootloader_watchdog_deinit();
+    110          #endif // BL_FEATURE_BYPASS_WATCHDOG
+    111              }
+    112          
+    113              // Memory barriers for good measure.
+    114              __ISB();
+   \                     ??shutdown_cleanup_5: (+1)
+   \   0000007C   0xF3BF 0x8F6F      ISB      
+    115              __DSB();
+   \   00000080   0xF3BF 0x8F4F      DSB      
+    116          #endif
+    117          }
+   \   00000084   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+   \   00000086   0xBF00             Nop      
+   \                     ??shutdown_cleanup_3:
+   \   00000088   0x........         DC32     g_peripherals
+   \   0000008C   0xE000ED08         DC32     0xe000ed08
+    118          
+    119          ////////////////////////////////////////////////////////////////////////////////
+    120          // EOF
+    121          ////////////////////////////////////////////////////////////////////////////////
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   shutdown_cleanup
+        16   -- Indirect call
+        16   -> configure_clocks
+        16   -> deinit_hardware
+        16   -> flash_cache_clear
+        16   -> init_interrupts
+        16   -> lock_acquire
+        16   -> microseconds_shutdown
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+     144  shutdown_cleanup
+
+ 
+ 144 bytes in section .text
+ 
+ 144 bytes of CODE memory
+
+Errors: none
+Warnings: none

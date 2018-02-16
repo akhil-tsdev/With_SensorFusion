@@ -1,0 +1,435 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       02/Sep/2016  11:55:10
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\src\hardware_init_MK64F12.c
+#    Command line =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\src\hardware_init_MK64F12.c
+#        -D DEBUG -D NDEBUG -D USB_STACK_BM -D CPU_MK64FN1M0VMD12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D FREEDOM -D BL_TARGET_FLASH -lC
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader\debug\list
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader\debug\obj
+#        --no_unroll --debug --endian=little --cpu=Cortex-M4 -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/platform/devices/MK64F12\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/autobaud\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/usb/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/usb/osa\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/usb/device\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/usb/device/class\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/bm_usb\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/platform\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/platform/devices\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/platform/CMSIS/Include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/drivers\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/drivers/common\
+#        -Ohz --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader\debug\list\hardware_init_MK64F12.lst
+#    Object file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader\debug\obj\hardware_init_MK64F12.o
+#
+###############################################################################
+
+C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\src\hardware_init_MK64F12.c
+      1          /*
+      2           * Copyright (c) 2013-2015, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          
+     31          #include "bootloader_common.h"
+     32          #include "bootloader/bl_context.h"
+     33          #include "fsl_device_registers.h"
+     34          #include "uart/fsl_uart.h"
+     35          #include "smc/smc.h"
+     36          
+     37          ////////////////////////////////////////////////////////////////////////////////
+     38          // Definitions
+     39          ////////////////////////////////////////////////////////////////////////////////
+     40          
+     41          #define BOOT_PIN_NUMBER 6
+     42          #define BOOT_PIN_PORT PORTC
+     43          #define BOOT_PIN_GPIO GPIOC
+     44          #define BOOT_PIN_ALT_MODE 1
+     45          #define BOOT_PIN_DEBOUNCE_READ_COUNT 500
+     46          
+     47          ////////////////////////////////////////////////////////////////////////////////
+     48          // Variables
+     49          ////////////////////////////////////////////////////////////////////////////////
+     50          
+     51          ////////////////////////////////////////////////////////////////////////////////
+     52          // Code
+     53          ////////////////////////////////////////////////////////////////////////////////
+     54          
+
+   \                                 In section .text, align 2, keep-with-next
+     55          void init_hardware(void)
+     56          {
+   \                     init_hardware: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     57              exit_vlpr();
+   \   00000002   0x.... 0x....      BL       exit_vlpr
+     58          
+     59              // Disable the MPU otherwise USB cannot access the bus
+     60              MPU->CESR = 0;
+   \   00000006   0x....             LDR.N    R1,??DataTable5  ;; 0x4000d000
+   \   00000008   0x2000             MOVS     R0,#+0
+   \   0000000A   0x6008             STR      R0,[R1, #+0]
+     61          
+     62              // Enable all the ports
+     63              SIM->SCGC5 |= (SIM_SCGC5_PORTA_MASK | SIM_SCGC5_PORTB_MASK | SIM_SCGC5_PORTC_MASK | SIM_SCGC5_PORTD_MASK |
+     64                             SIM_SCGC5_PORTE_MASK);
+   \   0000000C   0x....             LDR.N    R0,??DataTable5_1  ;; 0x40048038
+   \   0000000E   0x6801             LDR      R1,[R0, #+0]
+   \   00000010   0xF441 0x5178      ORR      R1,R1,#0x3E00
+   \   00000014   0x6001             STR      R1,[R0, #+0]
+     65          }
+   \   00000016   0xBD01             POP      {R0,PC}          ;; return
+     66          
+
+   \                                 In section .text, align 2, keep-with-next
+     67          void deinit_hardware(void)
+     68          {
+     69              SIM->SCGC5 &= (uint32_t) ~(SIM_SCGC5_PORTA_MASK | SIM_SCGC5_PORTB_MASK | SIM_SCGC5_PORTC_MASK |
+     70                                         SIM_SCGC5_PORTD_MASK | SIM_SCGC5_PORTE_MASK);
+   \                     deinit_hardware: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable5_2  ;; 0x40048004
+   \   00000002   0x6B41             LDR      R1,[R0, #+52]
+   \   00000004   0xF421 0x5178      BIC      R1,R1,#0x3E00
+   \   00000008   0x6341             STR      R1,[R0, #+52]
+     71          
+     72              // Restore SIM_SOPTx related bits being changed
+     73              SIM->SOPT1 &= (uint32_t)~SIM_SOPT1_USBREGEN_MASK;
+   \   0000000A   0x....             LDR.N    R1,??DataTable5_3  ;; 0x40047000
+   \   0000000C   0x680A             LDR      R2,[R1, #+0]
+   \   0000000E   0xF022 0x4200      BIC      R2,R2,#0x80000000
+   \   00000012   0x600A             STR      R2,[R1, #+0]
+     74              SIM->SOPT2 &= (uint32_t) ~(SIM_SOPT2_USBSRC_MASK | SIM_SOPT2_PLLFLLSEL_MASK);
+   \   00000014   0x6801             LDR      R1,[R0, #+0]
+   \   00000016   0xF421 0x21E0      BIC      R1,R1,#0x70000
+   \   0000001A   0x6001             STR      R1,[R0, #+0]
+     75          }
+   \   0000001C   0x4770             BX       LR               ;; return
+     76          
+
+   \                                 In section .text, align 2, keep-with-next
+     77          bool usb_clock_init(void)
+     78          {
+     79              SIM->SCGC4 &= ~SIM_SCGC4_USBOTG_MASK;
+   \                     usb_clock_init: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable5_2  ;; 0x40048004
+   \   00000002   0x6B01             LDR      R1,[R0, #+48]
+   \   00000004   0xF421 0x2180      BIC      R1,R1,#0x40000
+   \   00000008   0x6301             STR      R1,[R0, #+48]
+     80          
+     81              SIM->CLKDIV2 = (uint32_t)0x00L;
+   \   0000000A   0x2100             MOVS     R1,#+0
+   \   0000000C   0x6441             STR      R1,[R0, #+68]
+     82              SIM->SOPT2 |= SIM_SOPT2_USBSRC_MASK | SIM_SOPT2_PLLFLLSEL(0x03);
+   \   0000000E   0x6801             LDR      R1,[R0, #+0]
+   \   00000010   0xF441 0x21E0      ORR      R1,R1,#0x70000
+   \   00000014   0x6001             STR      R1,[R0, #+0]
+     83          
+     84              SIM->SCGC4 |= SIM_SCGC4_USBOTG_MASK;
+   \   00000016   0x6B01             LDR      R1,[R0, #+48]
+   \   00000018   0xF441 0x2180      ORR      R1,R1,#0x40000
+   \   0000001C   0x6301             STR      R1,[R0, #+48]
+     85          
+     86              USB0->CLK_RECOVER_IRC_EN = 0x03;
+   \   0000001E   0x2103             MOVS     R1,#+3
+   \   00000020   0x....             LDR.N    R0,??DataTable5_4  ;; 0x40072140
+   \   00000022   0x7101             STRB     R1,[R0, #+4]
+     87              USB0->CLK_RECOVER_CTRL |= USB_CLK_RECOVER_CTRL_CLOCK_RECOVER_EN_MASK;
+   \   00000024   0x7801             LDRB     R1,[R0, #+0]
+   \   00000026   0xF041 0x0180      ORR      R1,R1,#0x80
+   \   0000002A   0x7001             STRB     R1,[R0, #+0]
+     88          
+     89              USB0->CLK_RECOVER_CTRL |= 0x20;
+   \   0000002C   0x7801             LDRB     R1,[R0, #+0]
+   \   0000002E   0xF041 0x0120      ORR      R1,R1,#0x20
+   \   00000032   0x7001             STRB     R1,[R0, #+0]
+     90          
+     91              return true;
+   \   00000034   0x2001             MOVS     R0,#+1
+   \   00000036   0x4770             BX       LR               ;; return
+     92          }
+     93          
+
+   \                                 In section .text, align 2, keep-with-next
+     94          uint32_t get_bus_clock(void)
+     95          {
+     96              uint32_t busClockDivider = ((SIM->CLKDIV1 & SIM_CLKDIV1_OUTDIV2_MASK) >> SIM_CLKDIV1_OUTDIV2_SHIFT) + 1;
+   \                     get_bus_clock: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable5_5  ;; 0x40048044
+     97              return (SystemCoreClock / busClockDivider);
+   \   00000002   0x....             LDR.N    R1,??DataTable5_6
+   \   00000004   0x6800             LDR      R0,[R0, #+0]
+   \   00000006   0x6809             LDR      R1,[R1, #+0]
+   \   00000008   0xF3C0 0x6003      UBFX     R0,R0,#+24,#+4
+   \   0000000C   0x1C40             ADDS     R0,R0,#+1
+   \   0000000E   0xFBB1 0xF0F0      UDIV     R0,R1,R0
+   \   00000012   0x4770             BX       LR               ;; return
+     98          }
+     99          
+
+   \                                 In section .text, align 2, keep-with-next
+    100          uint32_t get_uart_clock(uint32_t instance)
+    101          {
+    102              switch (instance)
+   \                     get_uart_clock: (+1)
+   \   00000000   0x2801             CMP      R0,#+1
+   \   00000002   0xD903             BLS.N    ??get_uart_clock_0
+   \   00000004   0x1E80             SUBS     R0,R0,#+2
+   \   00000006   0x2803             CMP      R0,#+3
+   \   00000008   0xD903             BLS.N    ??get_uart_clock_1
+   \   0000000A   0xE003             B.N      ??get_uart_clock_2
+    103              {
+    104                  case 0:
+    105                  case 1:
+    106                      // UART0 and UART1 always use the system clock
+    107                      return SystemCoreClock;
+   \                     ??get_uart_clock_0: (+1)
+   \   0000000C   0x....             LDR.N    R0,??DataTable5_6
+   \   0000000E   0x6800             LDR      R0,[R0, #+0]
+   \   00000010   0x4770             BX       LR
+    108                  case 2:
+    109                  case 3:
+    110                  case 4:
+    111                  case 5:
+    112                      // UART2, UART3, UART4, and UART5 always use the bus clock
+    113                      return get_bus_clock();
+   \                     ??get_uart_clock_1: (+1)
+   \   00000012   0x....             B.N      get_bus_clock
+    114                  default:
+    115                      return 0;
+   \                     ??get_uart_clock_2: (+1)
+   \   00000014   0x2000             MOVS     R0,#+0
+   \   00000016   0x4770             BX       LR               ;; return
+    116              }
+    117          }
+    118          
+
+   \                                 In section .text, align 2, keep-with-next
+    119          bool is_boot_pin_asserted(void)
+    120          {
+    121          #ifdef BL_TARGET_FLASH
+    122              // Initialize boot pin for GPIO
+    123              BOOT_PIN_PORT->PCR[BOOT_PIN_NUMBER] |= PORT_PCR_MUX(BOOT_PIN_ALT_MODE);
+   \                     is_boot_pin_asserted: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable5_7  ;; 0x4004b018
+   \   00000002   0x6801             LDR      R1,[R0, #+0]
+   \   00000004   0xF441 0x7180      ORR      R1,R1,#0x100
+   \   00000008   0x6001             STR      R1,[R0, #+0]
+    124          
+    125              // Set boot pin as an input
+    126              BOOT_PIN_GPIO->PDDR &= (uint32_t) ~(1 << BOOT_PIN_NUMBER);
+   \   0000000A   0xF06F 0x0340      MVN      R3,#+64
+   \   0000000E   0x....             LDR.N    R1,??DataTable5_8  ;; 0x400ff090
+   \   00000010   0x684A             LDR      R2,[R1, #+4]
+   \   00000012   0x401A             ANDS     R2,R3,R2
+   \   00000014   0x604A             STR      R2,[R1, #+4]
+    127              // Set boot pin pullup enabled, pullup select, filter enable
+    128              BOOT_PIN_PORT->PCR[BOOT_PIN_NUMBER] |= (PORT_PCR_PE_MASK | PORT_PCR_PS_MASK | PORT_PCR_PFE_MASK);
+   \   00000016   0x6802             LDR      R2,[R0, #+0]
+   \   00000018   0xF042 0x0213      ORR      R2,R2,#0x13
+   \   0000001C   0x6002             STR      R2,[R0, #+0]
+    129          
+    130              uint32_t readCount = 0;
+   \   0000001E   0x2000             MOVS     R0,#+0
+    131          
+    132              // Sample the pin a number of times
+    133              for (uint32_t i = 0; i < BOOT_PIN_DEBOUNCE_READ_COUNT; i++)
+   \   00000020   0xF44F 0x72FA      MOV      R2,#+500
+    134              {
+    135                  readCount += ((BOOT_PIN_GPIO->PDIR) >> BOOT_PIN_NUMBER) & 1;
+   \                     ??is_boot_pin_asserted_0: (+1)
+   \   00000024   0x680B             LDR      R3,[R1, #+0]
+   \   00000026   0xF3C3 0x1380      UBFX     R3,R3,#+6,#+1
+   \   0000002A   0x1818             ADDS     R0,R3,R0
+    136              }
+   \   0000002C   0x1E52             SUBS     R2,R2,#+1
+   \   0000002E   0xD1F9             BNE.N    ??is_boot_pin_asserted_0
+    137          
+    138              // boot pin is pulled high so we are measuring lows, make sure most of our measurements
+    139              // registered as low
+    140              return (readCount < (BOOT_PIN_DEBOUNCE_READ_COUNT / 2));
+   \   00000030   0x28FA             CMP      R0,#+250
+   \   00000032   0x4180             SBCS     R0,R0,R0
+   \   00000034   0x0FC0             LSRS     R0,R0,#+31
+   \   00000036   0x4770             BX       LR               ;; return
+    141          #else
+    142              // Boot pin for Flash only target
+    143              return false;
+    144          #endif
+    145          }
+    146          
+
+   \                                 In section .text, align 2, keep-with-next
+    147          void debug_init(void)
+    148          {
+    149          }
+   \                     debug_init: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    150          
+    151          #if __ICCARM__
+    152          
+
+   \                                 In section .text, align 2, keep-with-next
+    153          size_t __write(int handle, const unsigned char *buf, size_t size)
+    154          {
+    155              return size;
+   \                     __write: (+1)
+   \   00000000   0x4610             MOV      R0,R2
+   \   00000002   0x4770             BX       LR               ;; return
+    156          }
+    157          
+    158          #endif // __ICCARM__
+    159          
+
+   \                                 In section .text, align 2, keep-with-next
+    160          void update_available_peripherals()
+    161          {
+    162          }
+   \                     update_available_peripherals: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
+   \   00000000   0x4000D000         DC32     0x4000d000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_1:
+   \   00000000   0x40048038         DC32     0x40048038
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_2:
+   \   00000000   0x40048004         DC32     0x40048004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_3:
+   \   00000000   0x40047000         DC32     0x40047000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_4:
+   \   00000000   0x40072140         DC32     0x40072140
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_5:
+   \   00000000   0x40048044         DC32     0x40048044
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_6:
+   \   00000000   0x........         DC32     SystemCoreClock
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_7:
+   \   00000000   0x4004B018         DC32     0x4004b018
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_8:
+   \   00000000   0x400FF090         DC32     0x400ff090
+    163          
+    164          ////////////////////////////////////////////////////////////////////////////////
+    165          // EOF
+    166          ////////////////////////////////////////////////////////////////////////////////
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   __write
+       0   debug_init
+       0   deinit_hardware
+       0   get_bus_clock
+       0   get_uart_clock
+         0   -> get_bus_clock
+       8   init_hardware
+         8   -> exit_vlpr
+       0   is_boot_pin_asserted
+       0   update_available_peripherals
+       0   usb_clock_init
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable5_4
+       4  ??DataTable5_5
+       4  ??DataTable5_6
+       4  ??DataTable5_7
+       4  ??DataTable5_8
+       4  __write
+       2  debug_init
+      30  deinit_hardware
+      20  get_bus_clock
+      24  get_uart_clock
+      24  init_hardware
+      56  is_boot_pin_asserted
+       2  update_available_peripherals
+      56  usb_clock_init
+
+ 
+ 254 bytes in section .text
+ 
+ 254 bytes of CODE memory
+
+Errors: none
+Warnings: none

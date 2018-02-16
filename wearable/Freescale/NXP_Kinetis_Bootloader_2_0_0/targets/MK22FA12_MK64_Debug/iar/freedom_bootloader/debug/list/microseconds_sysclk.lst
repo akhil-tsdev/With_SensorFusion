@@ -1,0 +1,444 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       16/Sep/2016  13:24:06
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\drivers\microseconds\src\microseconds_sysclk.c
+#    Command line =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\drivers\microseconds\src\microseconds_sysclk.c
+#        -D NDEBUG -D USB_STACK_BM -D CPU_MK22FN1M0AVMC12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D FREEDOM -D BL_TARGET_FLASH -D
+#        TURINGSENSE=1 -lC
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\list
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\..\..\..\..\src\platform\devices\MK22FA12_MK64\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/autobaud\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/osa\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/device\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/device/class\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/bm_usb\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform/devices\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform/CMSIS/Include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/drivers\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/drivers/common\
+#        -On --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\list\microseconds_sysclk.lst
+#    Object file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\obj\microseconds_sysclk.o
+#
+###############################################################################
+
+C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\drivers\microseconds\src\microseconds_sysclk.c
+      1          /*
+      2           * Copyright (c) 2013, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          /*
+     31           * @file microseconds_sysclk.c
+     32           * @brief Microseconds sysclk timer driver source file
+     33           *
+     34           * Notes: The driver configure sysclk as lifetime timer
+     35           */
+     36          #include "bootloader_common.h"
+     37          #include "microseconds/microseconds.h"
+     38          #include "fsl_device_registers.h"
+     39          #include <stdarg.h>
+     40          
+     41          ////////////////////////////////////////////////////////////////////////////////
+     42          // Definitions
+     43          ////////////////////////////////////////////////////////////////////////////////
+     44          
+     45          enum
+     46          {
+     47              kFrequency_1MHz = 1000000UL
+     48          };
+     49          
+     50          ////////////////////////////////////////////////////////////////////////////////
+     51          // Variables
+     52          ////////////////////////////////////////////////////////////////////////////////
+     53          //! @brief Tracks number of timer rollovers for extended time keeping
+     54          //!        with 32 bits here + the 24 bits of the counter for lower resolution
+     55          //!        it will be years worth of time
+
+   \                                 In section .bss, align 4
+     56          volatile uint32_t s_highCounter;
+   \                     s_highCounter:
+   \   00000000                      DS8 4
+
+   \                                 In section .bss, align 4
+     57          uint32_t s_tickPerMicrosecondMul8; //!< This value equal to 8 times ticks per microseconds
+   \                     s_tickPerMicrosecondMul8:
+   \   00000000                      DS8 4
+     58          
+     59          ////////////////////////////////////////////////////////////////////////////////
+     60          // Code
+     61          ////////////////////////////////////////////////////////////////////////////////
+     62          
+     63          //! @brief Initialize and start the timer facilities using the SysTick.
+
+   \                                 In section .text, align 2, keep-with-next
+     64          void microseconds_init(void)
+     65          {
+     66              s_highCounter = 0;
+   \                     microseconds_init: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x....             LDR.N    R1,??DataTable7
+   \   00000004   0x6008             STR      R0,[R1, #+0]
+     67              SysTick->LOAD = SysTick_LOAD_RELOAD_Msk; // Set reload register to max value
+   \   00000006   0xF07F 0x407F      MVNS     R0,#-16777216
+   \   0000000A   0x....             LDR.N    R1,??DataTable7_1  ;; 0xe000e014
+   \   0000000C   0x6008             STR      R0,[R1, #+0]
+     68              SysTick->VAL = 0;                        // As per ARM reference initialization, set initial value to 0
+   \   0000000E   0x2000             MOVS     R0,#+0
+   \   00000010   0x....             LDR.N    R1,??DataTable7_2  ;; 0xe000e018
+   \   00000012   0x6008             STR      R0,[R1, #+0]
+     69                                                       //  interrupts are only triggered when going from 1 to 0
+     70          
+     71              SysTick->CTRL = SysTick_CTRL_CLKSOURCE_Msk | // Set timer to core clock frequency
+     72                              SysTick_CTRL_TICKINT_Msk |   // Enable interrupts on timeout
+     73                              SysTick_CTRL_ENABLE_Msk;     // Enable SysTick IRQ and SysTick Timer
+   \   00000014   0x2007             MOVS     R0,#+7
+   \   00000016   0x....             LDR.N    R1,??DataTable7_3  ;; 0xe000e010
+   \   00000018   0x6008             STR      R0,[R1, #+0]
+     74          
+     75              /* Calculate this value early
+     76               * The reason why use this solution is that lowest clock frequency supported by L0PB and L4KS
+     77               * is 0.25MHz, this solution will make sure ticks per microscond is greater than 0.
+     78               */
+     79              s_tickPerMicrosecondMul8 = (SystemCoreClock * 8) / kFrequency_1MHz;
+   \   0000001A   0x....             LDR.N    R0,??DataTable7_4
+   \   0000001C   0x6800             LDR      R0,[R0, #+0]
+   \   0000001E   0x00C0             LSLS     R0,R0,#+3
+   \   00000020   0x....             LDR.N    R1,??DataTable7_5  ;; 0xf4240
+   \   00000022   0xFBB0 0xF0F1      UDIV     R0,R0,R1
+   \   00000026   0x....             LDR.N    R1,??DataTable7_6
+   \   00000028   0x6008             STR      R0,[R1, #+0]
+     80          
+     81              // Make sure this value is greater than 0
+     82              if (!s_tickPerMicrosecondMul8)
+   \   0000002A   0x....             LDR.N    R0,??DataTable7_6
+   \   0000002C   0x6800             LDR      R0,[R0, #+0]
+   \   0000002E   0x2800             CMP      R0,#+0
+   \   00000030   0xD102             BNE.N    ??microseconds_init_0
+     83              {
+     84                  s_tickPerMicrosecondMul8 = 1;
+   \   00000032   0x2001             MOVS     R0,#+1
+   \   00000034   0x....             LDR.N    R1,??DataTable7_6
+   \   00000036   0x6008             STR      R0,[R1, #+0]
+     85              }
+     86          }
+   \                     ??microseconds_init_0: (+1)
+   \   00000038   0x4770             BX       LR               ;; return
+     87          
+     88          //! @brief Shutdown the microsecond timer
+
+   \                                 In section .text, align 2, keep-with-next
+     89          void microseconds_shutdown(void)
+     90          {
+     91              // Disable the timer and interrupts from it
+     92              SysTick->CTRL = SysTick->CTRL & ~(SysTick_CTRL_CLKSOURCE_Msk | SysTick_CTRL_TICKINT_Msk | SysTick_CTRL_ENABLE_Msk);
+   \                     microseconds_shutdown: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable7_3  ;; 0xe000e010
+   \   00000002   0x6800             LDR      R0,[R0, #+0]
+   \   00000004   0x08C0             LSRS     R0,R0,#+3
+   \   00000006   0x00C0             LSLS     R0,R0,#+3
+   \   00000008   0x....             LDR.N    R1,??DataTable7_3  ;; 0xe000e010
+   \   0000000A   0x6008             STR      R0,[R1, #+0]
+     93              
+     94              // Clear the current value register
+     95              SysTick->VAL = 0;
+   \   0000000C   0x2000             MOVS     R0,#+0
+   \   0000000E   0x....             LDR.N    R1,??DataTable7_2  ;; 0xe000e018
+   \   00000010   0x6008             STR      R0,[R1, #+0]
+     96          }
+   \   00000012   0x4770             BX       LR               ;; return
+     97          
+     98          //! @brief Read back the running tick count
+
+   \                                 In section .text, align 2, keep-with-next
+     99          uint64_t microseconds_get_ticks(void)
+    100          {
+   \                     microseconds_get_ticks: (+1)
+   \   00000000   0xB4F0             PUSH     {R4-R7}
+    101              uint64_t retVal;
+    102          
+    103              //! The rollover counter keeps track of increments higher than the 24 bit SysTick counter
+    104              //! to combine them shift rollover up 24 bits and add the current ticks
+    105              uint32_t high;
+    106              uint32_t low;
+    107          
+    108              // Check for an overflow condition between the two reads above
+    109              do
+    110              {
+    111                  high = s_highCounter;
+   \                     ??microseconds_get_ticks_0: (+1)
+   \   00000002   0x....             LDR.N    R3,??DataTable7
+   \   00000004   0x681B             LDR      R3,[R3, #+0]
+   \   00000006   0x001A             MOVS     R2,R3
+    112                  low = ~SysTick->VAL & SysTick_LOAD_RELOAD_Msk;
+   \   00000008   0x....             LDR.N    R3,??DataTable7_2  ;; 0xe000e018
+   \   0000000A   0x681B             LDR      R3,[R3, #+0]
+   \   0000000C   0x43DB             MVNS     R3,R3
+   \   0000000E   0xF023 0x437F      BIC      R3,R3,#0xFF000000
+   \   00000012   0x001C             MOVS     R4,R3
+    113              } while (high != s_highCounter);
+   \   00000014   0x....             LDR.N    R3,??DataTable7
+   \   00000016   0x681B             LDR      R3,[R3, #+0]
+   \   00000018   0x429A             CMP      R2,R3
+   \   0000001A   0xD1F2             BNE.N    ??microseconds_get_ticks_0
+    114          
+    115              retVal = ((uint64_t)high << 24) + low;
+   \   0000001C   0x0016             MOVS     R6,R2
+   \   0000001E   0x2700             MOVS     R7,#+0
+   \   00000020   0x063F             LSLS     R7,R7,#+24
+   \   00000022   0xEA47 0x2716      ORR      R7,R7,R6, LSR #+8
+   \   00000026   0x0636             LSLS     R6,R6,#+24
+   \   00000028   0x2500             MOVS     R5,#+0
+   \   0000002A   0x1936             ADDS     R6,R6,R4
+   \   0000002C   0x416F             ADCS     R7,R7,R5
+   \   0000002E   0x0030             MOVS     R0,R6
+   \   00000030   0x0039             MOVS     R1,R7
+    116          
+    117              return retVal;
+   \   00000032   0xBCF0             POP      {R4-R7}
+   \   00000034   0x4770             BX       LR               ;; return
+    118          }
+    119          
+    120          //! @brief Returns the conversion of ticks to actual microseconds
+    121          //!        This is used to seperate any calculations from getting a timer
+    122          //         value for timing sensitive scenarios
+
+   \                                 In section .text, align 2, keep-with-next
+    123          uint32_t microseconds_convert_to_microseconds(uint32_t ticks)
+    124          {
+    125              // return the total ticks divided by the number of Mhz the system clock is at to give microseconds
+    126              return (8 * ticks / s_tickPerMicrosecondMul8); //!< Assumes system clock will never be < 0.125 Mhz
+   \                     microseconds_convert_to_microseconds: (+1)
+   \   00000000   0x00C0             LSLS     R0,R0,#+3
+   \   00000002   0x....             LDR.N    R1,??DataTable7_6
+   \   00000004   0x6809             LDR      R1,[R1, #+0]
+   \   00000006   0xFBB0 0xF0F1      UDIV     R0,R0,R1
+   \   0000000A   0x4770             BX       LR               ;; return
+    127          }
+    128          
+    129          //! @brief Returns the conversion of microseconds to ticks
+
+   \                                 In section .text, align 2, keep-with-next
+    130          uint64_t microseconds_convert_to_ticks(uint32_t microseconds)
+    131          {
+    132              return ((uint64_t)microseconds * s_tickPerMicrosecondMul8 / 8);
+   \                     microseconds_convert_to_ticks: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable7_6
+   \   00000002   0x6809             LDR      R1,[R1, #+0]
+   \   00000004   0xFBA1 0x0100      UMULL    R0,R1,R1,R0
+   \   00000008   0x08C0             LSRS     R0,R0,#+3
+   \   0000000A   0xEA40 0x7041      ORR      R0,R0,R1, LSL #+29
+   \   0000000E   0x08C9             LSRS     R1,R1,#+3
+   \   00000010   0x4770             BX       LR               ;; return
+    133          }
+    134          
+    135          //! @brief Delay specified time
+    136          //!
+    137          //! @param us Delay time in microseconds unit
+
+   \                                 In section .text, align 2, keep-with-next
+    138          void microseconds_delay(uint32_t us)
+    139          {
+   \                     microseconds_delay: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x4680             MOV      R8,R0
+    140              uint64_t currentTicks = microseconds_get_ticks();
+   \   00000006   0x.... 0x....      BL       microseconds_get_ticks
+   \   0000000A   0x0006             MOVS     R6,R0
+   \   0000000C   0x000F             MOVS     R7,R1
+    141          
+    142              //! The clock value in Mhz = ticks/microsecond
+    143              uint64_t ticksNeeded = ((uint64_t)us * s_tickPerMicrosecondMul8 / 8) + currentTicks;
+   \   0000000E   0x....             LDR.N    R0,??DataTable7_6
+   \   00000010   0x6800             LDR      R0,[R0, #+0]
+   \   00000012   0xFBA0 0x0108      UMULL    R0,R1,R0,R8
+   \   00000016   0x08C0             LSRS     R0,R0,#+3
+   \   00000018   0xEA40 0x7041      ORR      R0,R0,R1, LSL #+29
+   \   0000001C   0x08C9             LSRS     R1,R1,#+3
+   \   0000001E   0x1984             ADDS     R4,R0,R6
+   \   00000020   0xEB51 0x0507      ADCS     R5,R1,R7
+    144              while (microseconds_get_ticks() < ticksNeeded)
+   \                     ??microseconds_delay_0: (+1)
+   \   00000024   0x.... 0x....      BL       microseconds_get_ticks
+   \   00000028   0x42A9             CMP      R1,R5
+   \   0000002A   0xD3FB             BCC.N    ??microseconds_delay_0
+   \   0000002C   0xD801             BHI.N    ??microseconds_delay_1
+   \   0000002E   0x42A0             CMP      R0,R4
+   \   00000030   0xD3F8             BCC.N    ??microseconds_delay_0
+    145              {
+    146                  ;
+    147              }
+    148          }
+   \                     ??microseconds_delay_1: (+1)
+   \   00000032   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    149          
+    150          //! @brief Gets the clock value used for microseconds driver
+
+   \                                 In section .text, align 2, keep-with-next
+    151          uint32_t microseconds_get_clock(void)
+    152          {
+    153              return SystemCoreClock;
+   \                     microseconds_get_clock: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable7_4
+   \   00000002   0x6800             LDR      R0,[R0, #+0]
+   \   00000004   0x4770             BX       LR               ;; return
+    154          }
+    155          
+    156          //! @brief Interrupt handler for the SysTick timer, this will just increment
+    157          //         the rollover counter for extended time keeping
+
+   \                                 In section .text, align 2, keep-with-next
+    158          void SysTick_Handler(void)
+    159          {
+    160              s_highCounter++;
+   \                     SysTick_Handler: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable7
+   \   00000002   0x6800             LDR      R0,[R0, #+0]
+   \   00000004   0x1C40             ADDS     R0,R0,#+1
+   \   00000006   0x....             LDR.N    R1,??DataTable7
+   \   00000008   0x6008             STR      R0,[R1, #+0]
+    161          }
+   \   0000000A   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \   00000000   0x........         DC32     s_highCounter
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_1:
+   \   00000000   0xE000E014         DC32     0xe000e014
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_2:
+   \   00000000   0xE000E018         DC32     0xe000e018
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_3:
+   \   00000000   0xE000E010         DC32     0xe000e010
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_4:
+   \   00000000   0x........         DC32     SystemCoreClock
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_5:
+   \   00000000   0x000F4240         DC32     0xf4240
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_6:
+   \   00000000   0x........         DC32     s_tickPerMicrosecondMul8
+    162          
+    163          ////////////////////////////////////////////////////////////////////////////////
+    164          // EOF
+    165          ////////////////////////////////////////////////////////////////////////////////
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   SysTick_Handler
+       0   microseconds_convert_to_microseconds
+       0   microseconds_convert_to_ticks
+      24   microseconds_delay
+        24   -> microseconds_get_ticks
+       0   microseconds_get_clock
+      16   microseconds_get_ticks
+       0   microseconds_init
+       0   microseconds_shutdown
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_2
+       4  ??DataTable7_3
+       4  ??DataTable7_4
+       4  ??DataTable7_5
+       4  ??DataTable7_6
+      12  SysTick_Handler
+      12  microseconds_convert_to_microseconds
+      18  microseconds_convert_to_ticks
+      54  microseconds_delay
+       6  microseconds_get_clock
+      54  microseconds_get_ticks
+      58  microseconds_init
+      20  microseconds_shutdown
+       4  s_highCounter
+       4  s_tickPerMicrosecondMul8
+
+ 
+   8 bytes in section .bss
+ 262 bytes in section .text
+ 
+ 262 bytes of CODE memory
+   8 bytes of DATA memory
+
+Errors: none
+Warnings: none

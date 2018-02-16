@@ -1,0 +1,16 @@
+Sources/main.c
+Project_Settings/Startup_Code/startup_MK22F12810.S
+Project_Settings/Startup_Code/system_MK22F12810.c
+Project_Settings/Startup_Code/system_MK22F12810.h
+Project_Settings/Startup_Code/startup.c
+Project_Settings/Startup_Code/startup.h
+Project_Settings/Linker_Files/K22FN128xxx10_flash.ld
+Includes/device/fsl_device_registers.h
+Includes/arm_common_tables.h
+Includes/arm_const_structs.h
+Includes/arm_math.h
+Includes/core_cm0plus.h
+Includes/core_cm4.h
+Includes/core_cm4_simd.h
+Includes/core_cmFunc.h
+Includes/core_cmInstr.h

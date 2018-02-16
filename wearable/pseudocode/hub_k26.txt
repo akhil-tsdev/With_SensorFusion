@@ -1,0 +1,59 @@
+03/14/15: 65F has to be master when communicating with atheros wifi.
+
+communicate with nordic:
+
+	CALIBRATE = ?
+	RTC = ?
+	SHUT UP = ?
+
+	if any of (CALIBRATE,RTC,SHUT UP) set, send them
+
+	call SPI to communicate, forwarding the most recent wifi command
+	or if the queue is empty, send ACTIVE/SLEEP
+	for datum in response:
+		add it to the circular buffer for its satellite ID
+	if the buffer is getting full:
+		set SHUT UP for forwarding
+
+communicate with wifi:
+    ask status
+	if START:
+		set current_status->active
+		set can_send
+	elif CALIBRATE
+		set should_calibrate (do all communication with the invensense on the main loop)
+		set the CALIBRATE for communication with nordic
+	elif STOP:
+		set current_status->not_active
+	elif SHUT UP:
+		clear can_send
+	elif SET RTC
+		set the RTC for communication with nordic
+	elif SET SATELLITE LIST
+		create a circular buffer for any new satellites on the list
+		queue for forwarding
+	if can_send:
+		reply with the top X timestamps, each filled from the circular buffers that have it
+
+Global:
+initialize current_status->active
+initialize last_status->active
+
+main loop:
+	communicate with wifi
+	if (current_status != last_status)
+		if current_status->not active:
+			turn off invensense
+			set last_status not_active
+		else if current_status is active
+			turn on invensense
+			set last_status active
+	if go_calibrate:
+		calibrate invensense
+		clear go_calibrate
+	if the circular buffer isn't full:
+		get readings from invensense
+		for each reading:
+			process with sensor fusion
+		add result to circular buffer
+	communicate with nordic

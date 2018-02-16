@@ -1,0 +1,275 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       16/Aug/2016  13:15:52
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\crc\src\crc16.c
+#    Command line =  
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\crc\src\crc16.c"
+#        -D DEBUG -D NDEBUG -D USB_STACK_BM -D CPU_MK22FN256VDC12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D BL_TARGET_RAM -lC
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\obj"
+#        --no_unroll --debug --endian=little --cpu=Cortex-M4 -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform/devices/MK22F25612\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/autobaud\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/osa\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/device\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/device/class\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/bm_usb\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform/devices\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform/CMSIS/Include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/drivers\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/drivers/common\"
+#        -Ohz --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\list\crc16.lst
+#    Object file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\obj\crc16.o
+#
+###############################################################################
+
+C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\crc\src\crc16.c
+      1          /*
+      2           * Copyright (c) 2013 - 2014, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          #include "bootloader_common.h"
+     31          #include "crc/crc16.h"
+     32          #include "utilities/fsl_assert.h"
+     33          #include "utilities/fsl_rtos_abstraction.h"
+     34          
+     35          #if !defined(BOOTLOADER_HOST)
+     36          #include "fsl_device_registers.h"
+     37          #include "utilities/fsl_rtos_abstraction.h"
+     38          #endif // !BOOTLOADER_HOST
+     39          
+     40          #if !defined(BOOTLOADER_HOST) && FSL_FEATURE_SOC_CRC_COUNT && !defined(BL_TARGET_RAM)
+     41          #include "crc/fsl_crc.h"
+     42          
+     43          /* Table of base addresses for crc instances. */
+     44          static CRC_Type *const g_crcBase[1] = CRC_BASE_PTRS;
+     45          
+     46          void crc16_init(crc16_data_t *crc16Config)
+     47          {
+     48              assert(crc16Config);
+     49          
+     50              crc16Config->currentCrc = 0x0000U;
+     51          }
+     52          
+     53          void crc16_update(crc16_data_t *crc16Config, const uint8_t *src, uint32_t lengthInBytes)
+     54          {
+     55              assert(crc16Config);
+     56              assert(src);
+     57          
+     58              crc_config_t crcUserConfigPtr;
+     59          
+     60              CRC_GetDefaultConfig(&crcUserConfigPtr);
+     61          
+     62              crcUserConfigPtr.crcBits = kCrcBits16;
+     63              crcUserConfigPtr.seed = crc16Config->currentCrc;
+     64              crcUserConfigPtr.polynomial = 0x1021U;
+     65              crcUserConfigPtr.complementChecksum = false;
+     66              crcUserConfigPtr.reflectIn = false;
+     67              crcUserConfigPtr.reflectOut = false;
+     68          
+     69              // Init CRC module and then run it
+     70              //! Note: We must init CRC module here, As we may seperate one crc calculation into several times
+     71              //! Note: It is better to use lock to ensure the integrity of current updating operation of crc calculation
+     72              //        in case crc module is shared by multiple crc updating requests at the same time
+     73              if (lengthInBytes)
+     74              {
+     75                  lock_acquire();
+     76                  CRC_Init(g_crcBase[0], &crcUserConfigPtr);
+     77                  CRC_WriteData(g_crcBase[0], src, lengthInBytes);
+     78                  crcUserConfigPtr.seed = CRC_Get16bitResult(g_crcBase[0]);
+     79                  lock_release();
+     80              }
+     81          
+     82              crc16Config->currentCrc = crcUserConfigPtr.seed;
+     83          }
+     84          
+     85          void crc16_finalize(crc16_data_t *crc16Config, uint16_t *hash)
+     86          {
+     87              assert(crc16Config);
+     88              assert(hash);
+     89          
+     90              *hash = crc16Config->currentCrc;
+     91          
+     92              // De-init CRC module when we complete a full crc calculation
+     93              CRC_Deinit(g_crcBase[0]);
+     94          }
+     95          #else
+     96          ////////////////////////////////////////////////////////////////////////////////
+     97          // Code
+     98          ////////////////////////////////////////////////////////////////////////////////
+
+   \                                 In section .text, align 2, keep-with-next
+     99          void crc16_init(crc16_data_t *crc16Config)
+    100          {
+    101              assert(crc16Config);
+    102          
+    103              // initialize running crc and byte count
+    104              crc16Config->currentCrc = 0;
+   \                     crc16_init: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+   \   00000002   0x8001             STRH     R1,[R0, #+0]
+    105          }
+   \   00000004   0x4770             BX       LR               ;; return
+    106          
+
+   \                                 In section .text, align 2, keep-with-next
+    107          void crc16_update(crc16_data_t *crc16Config, const uint8_t *src, uint32_t lengthInBytes)
+    108          {
+   \                     crc16_update: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+    109              assert(crc16Config);
+    110              assert(src);
+    111          
+    112              uint32_t crc = crc16Config->currentCrc;
+   \   00000002   0x8803             LDRH     R3,[R0, #+0]
+    113          
+    114              uint32_t j;
+    115              for (j = 0; j < lengthInBytes; ++j)
+   \   00000004   0x2400             MOVS     R4,#+0
+   \   00000006   0xE00E             B.N      ??crc16_update_0
+    116              {
+    117                  uint32_t i;
+    118                  uint32_t byte = src[j];
+    119                  crc ^= byte << 8;
+   \                     ??crc16_update_1: (+1)
+   \   00000008   0x5D0D             LDRB     R5,[R1, R4]
+   \   0000000A   0xEA83 0x2305      EOR      R3,R3,R5, LSL #+8
+    120                  for (i = 0; i < 8; ++i)
+   \   0000000E   0x2508             MOVS     R5,#+8
+    121                  {
+    122                      uint32_t temp = crc << 1;
+   \                     ??crc16_update_2: (+1)
+   \   00000010   0x005E             LSLS     R6,R3,#+1
+    123                      if (crc & 0x8000)
+   \   00000012   0x041B             LSLS     R3,R3,#+16
+   \   00000014   0xBF44             ITT      MI 
+   \   00000016   0xF486 0x5680      EORMI    R6,R6,#0x1000
+   \   0000001A   0xF086 0x0621      EORMI    R6,R6,#0x21
+    124                      {
+    125                          temp ^= 0x1021;
+    126                      }
+    127                      crc = temp;
+    128                  }
+   \   0000001E   0x1E6D             SUBS     R5,R5,#+1
+   \   00000020   0x4633             MOV      R3,R6
+   \   00000022   0xD1F5             BNE.N    ??crc16_update_2
+    129              }
+   \   00000024   0x1C64             ADDS     R4,R4,#+1
+   \                     ??crc16_update_0: (+1)
+   \   00000026   0x4294             CMP      R4,R2
+   \   00000028   0xD3EE             BCC.N    ??crc16_update_1
+    130          
+    131              crc16Config->currentCrc = crc;
+   \   0000002A   0x8003             STRH     R3,[R0, #+0]
+    132          }
+   \   0000002C   0xBD70             POP      {R4-R6,PC}       ;; return
+    133          
+
+   \                                 In section .text, align 2, keep-with-next
+    134          void crc16_finalize(crc16_data_t *crc16Config, uint16_t *hash)
+    135          {
+    136              assert(crc16Config);
+    137              assert(hash);
+    138          
+    139              *hash = crc16Config->currentCrc;
+   \                     crc16_finalize: (+1)
+   \   00000000   0x8800             LDRH     R0,[R0, #+0]
+   \   00000002   0x8008             STRH     R0,[R1, #+0]
+    140          }
+   \   00000004   0x4770             BX       LR               ;; return
+    141          #endif
+    142          ////////////////////////////////////////////////////////////////////////////////
+    143          // EOF
+    144          ////////////////////////////////////////////////////////////////////////////////
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   crc16_finalize
+       0   crc16_init
+      16   crc16_update
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       6  crc16_finalize
+       6  crc16_init
+      46  crc16_update
+
+ 
+ 58 bytes in section .text
+ 
+ 58 bytes of CODE memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,66 @@
+/*
+ * Copyright (c) 2017 TuringSense
+ * All rights reserved.
+ *
+ * pivot_3_0_poc.c
+ *
+ * File specific to PIVOT 3.0 POC
+ */
+
+#ifndef __PIVOT_3_0_POC_H__
+#define __PIVOT_3_0_POC_H__
+
+#include "pivot_3_0_poc.h"
+uint8_t get_sensor_num_of_sat_idx(uint8_t sat_idx) {
+	uint8_t sensor_num;
+	
+	switch (sat_idx) {
+		case 0: 
+			sensor_num = 1;
+		break;
+		case 1:
+			sensor_num = 4;
+		break;
+		case 2:
+			sensor_num = 4;
+		break;
+		case 3:
+			sensor_num = 5;
+		break;
+		case 4:
+			sensor_num = 1;
+		break;
+		case 5:
+			sensor_num = 1;
+		break;
+	}
+	return sensor_num;
+}
+
+uint8_t get_starting_sensor_idx_of_sat_idx(uint8_t sat_idx) {
+	uint8_t starting_sensor_idx;
+	
+	switch (sat_idx) {
+		case 0: 
+			starting_sensor_idx = 0;
+		break;
+		case 1:
+			starting_sensor_idx = 1;
+		break;
+		case 2:
+			starting_sensor_idx = 5;
+		break;
+		case 3:
+			starting_sensor_idx = 9;
+		break;
+		case 4:
+			starting_sensor_idx = 14;
+		break;
+		case 5:
+			starting_sensor_idx = 15;
+		break;
+	}
+	return starting_sensor_idx;
+}
+
+#endif /* __PIVOT_3_0_POC_H__ */

@@ -1,0 +1,394 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       16/Aug/2016  15:48:48
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\bootloader\src\bl_app_crc_check.c
+#    Command line =  
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\bootloader\src\bl_app_crc_check.c"
+#        -D DEBUG -D NDEBUG -D USB_STACK_BM -D CPU_MK22FN512VDC12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D FREEDOM -D BL_TARGET_FLASH -lC
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\obj"
+#        --no_unroll --debug --endian=little --cpu=Cortex-M4 -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform/devices/MK22F51212\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/autobaud\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/osa\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/device\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/device/class\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/bm_usb\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform/devices\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform/CMSIS/Include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/drivers\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/drivers/common\"
+#        -Ohz --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\list\bl_app_crc_check.lst
+#    Object file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\obj\bl_app_crc_check.o
+#
+###############################################################################
+
+C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\bootloader\src\bl_app_crc_check.c
+      1          /*
+      2           * Copyright (c) 2014 - 2015, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          
+     31          #include "utilities/fsl_assert.h"
+     32          #include <string.h>
+     33          #include "bootloader_common.h"
+     34          #include "property/property.h"
+     35          #include "memory/memory.h"
+     36          #include "bootloader/bl_context.h"
+     37          #include "crc/crc32.h"
+     38          #include "bootloader/bl_app_crc_check.h"
+     39          #include "utilities/vector_table_info.h"
+     40          #include "target_config.h"
+     41          
+     42          ////////////////////////////////////////////////////////////////////////////////
+     43          // Declarations
+     44          ////////////////////////////////////////////////////////////////////////////////
+     45          
+     46          ////////////////////////////////////////////////////////////////////////////////
+     47          // Code
+     48          ////////////////////////////////////////////////////////////////////////////////
+     49          #if BL_FEATURE_CRC_ASSERT
+     50          //! @brief Toggle a pin to the inverse of default logic state to indicate crc check failure.
+     51          static void assert_pin_to_indicate_crc_check_failure(void)
+     52          {
+     53              // Initialize pin for GPIO
+     54              PORT_BWR_PCR_MUX(CRC_CHECK_FAILURE_PIN_PORT, CRC_CHECK_FAILURE_PIN_NUMBER, CRC_CHECK_FAILURE_PIN_GPIO_MODE);
+     55              // Set pin as output
+     56              GPIO_SET_PDDR(CRC_CHECK_FAILURE_PIN_GPIO, 1 << CRC_CHECK_FAILURE_PIN_NUMBER);
+     57              // Toggle pin (the inverse of default logic state) for crc check failure
+     58              GPIO_WR_PTOR(CRC_CHECK_FAILURE_PIN_GPIO, 1 << CRC_CHECK_FAILURE_PIN_NUMBER);
+     59          }
+     60          
+     61          // See bl_app_crc_check.h for documentation on this function.
+     62          void restore_crc_check_failure_pin(void)
+     63          {
+     64              // Restore crc check failure pin to default state
+     65              if (PORT_BRD_PCR_MUX(CRC_CHECK_FAILURE_PIN_PORT, CRC_CHECK_FAILURE_PIN_NUMBER) == CRC_CHECK_FAILURE_PIN_GPIO_MODE)
+     66              {
+     67                  // Restore pin as input
+     68                  GPIO_CLR_PDDR(CRC_CHECK_FAILURE_PIN_GPIO, 1 << CRC_CHECK_FAILURE_PIN_NUMBER);
+     69                  // Restore pin as default muxing slot mode
+     70                  PORT_BWR_PCR_MUX(CRC_CHECK_FAILURE_PIN_PORT, CRC_CHECK_FAILURE_PIN_NUMBER, CRC_CHECK_FAILURE_PIN_DEFAULT_MODE);
+     71              }
+     72          }
+     73          #endif
+     74          // See bl_app_crc_check.h for documentation on this function.
+
+   \                                 In section .text, align 2, keep-with-next
+     75          void init_crc_check_status(property_store_t *propertyStore)
+     76          {
+     77              // Crc check is available if BCA exists and crc parameters are set (not all 0xff bytes)
+     78              if (!((propertyStore->configurationData.crcStartAddress == 0xffffffff) &&
+     79                    (propertyStore->configurationData.crcByteCount == 0xffffffff) &&
+     80                    (propertyStore->configurationData.crcExpectedValue == 0xffffffff)))
+   \                     init_crc_check_status: (+1)
+   \   00000000   0x6EC1             LDR      R1,[R0, #+108]
+   \   00000002   0xF111 0x0F01      CMN      R1,#+1
+   \   00000006   0xBF01             ITTTT    EQ 
+   \   00000008   0x6F01             LDREQ    R1,[R0, #+112]
+   \   0000000A   0xF111 0x0F01      CMNEQ    R1,#+1
+   \   0000000E   0x6F41             LDREQ    R1,[R0, #+116]
+   \   00000010   0xF111 0x0F01      CMNEQ    R1,#+1
+   \   00000014   0xD002             BEQ.N    ??init_crc_check_status_0
+     81              {
+     82                  propertyStore->crcCheckStatus = kStatus_AppCrcCheckInactive;
+   \   00000016   0xF642 0x01A2      MOVW     R1,#+10402
+   \   0000001A   0xE001             B.N      ??init_crc_check_status_1
+     83              }
+     84              else
+     85              {
+     86                  propertyStore->crcCheckStatus = kStatus_AppCrcCheckInvalid;
+   \                     ??init_crc_check_status_0: (+1)
+   \   0000001C   0xF642 0x01A3      MOVW     R1,#+10403
+   \                     ??init_crc_check_status_1: (+1)
+   \   00000020   0x62C1             STR      R1,[R0, #+44]
+     87              }
+     88          }
+   \   00000022   0x4770             BX       LR               ;; return
+     89          
+     90          //! @brief Calculate crc on a range of flash, specified in the bootloader configuration area.
+
+   \                                 In section .text, align 2, keep-with-next
+     91          uint32_t calculate_application_crc32(crc_checksum_header_t *header, uint32_t crcHeaderStart)
+     92          {
+   \                     calculate_application_crc32: (+1)
+   \   00000000   0xB53E             PUSH     {R1-R5,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+     93              uint32_t crc32;
+     94          
+     95              // Initialize the CRC32 information
+     96              crc32_data_t crcInfo;
+     97              crc32_init(&crcInfo);
+   \   00000006   0x4668             MOV      R0,SP
+   \   00000008   0x.... 0x....      BL       crc32_init
+     98          
+     99              // Run CRC, Considering skip crcExpectedValue address
+    100              uint32_t bypassStartAddress = crcHeaderStart + ((uint32_t)&header->crcExpectedValue - (uint32_t)&header->tag);
+   \   0000000C   0xF104 0x000C      ADD      R0,R4,#+12
+   \   00000010   0x1940             ADDS     R0,R0,R5
+   \   00000012   0x1B00             SUBS     R0,R0,R4
+    101              uint32_t bypassEndAddress = bypassStartAddress + sizeof(header->crcExpectedValue);
+    102          
+    103              if ((header->crcStartAddress >= bypassEndAddress) ||
+    104                  (header->crcStartAddress + header->crcByteCount <= bypassStartAddress))
+   \   00000014   0x6861             LDR      R1,[R4, #+4]
+   \   00000016   0x68A2             LDR      R2,[R4, #+8]
+   \   00000018   0x1D05             ADDS     R5,R0,#+4
+   \   0000001A   0x42A9             CMP      R1,R5
+   \   0000001C   0xBF3C             ITT      CC 
+   \   0000001E   0x1853             ADDCC    R3,R2,R1
+   \   00000020   0x4298             CMPCC    R0,R3
+   \   00000022   0xD208             BCS.N    ??calculate_application_crc32_0
+    105              {
+    106                  crc32_update(&crcInfo, (uint8_t *)header->crcStartAddress, header->crcByteCount);
+    107              }
+    108              else
+    109              {
+    110                  // Assume that crcExpectedValue address (4 byte) resides in crc addresses completely
+    111                  crc32_update(&crcInfo, (uint8_t *)header->crcStartAddress, bypassStartAddress - header->crcStartAddress);
+   \   00000024   0x1A42             SUBS     R2,R0,R1
+   \   00000026   0x4668             MOV      R0,SP
+   \   00000028   0x.... 0x....      BL       crc32_update
+    112                  crc32_update(&crcInfo, (uint8_t *)bypassEndAddress,
+    113                               header->crcStartAddress + header->crcByteCount - bypassEndAddress);
+   \   0000002C   0x6860             LDR      R0,[R4, #+4]
+   \   0000002E   0x68A1             LDR      R1,[R4, #+8]
+   \   00000030   0x1808             ADDS     R0,R1,R0
+   \   00000032   0x1B42             SUBS     R2,R0,R5
+   \   00000034   0x4629             MOV      R1,R5
+   \                     ??calculate_application_crc32_0: (+1)
+   \   00000036   0x4668             MOV      R0,SP
+   \   00000038   0x.... 0x....      BL       crc32_update
+    114              }
+    115          
+    116              // Finalize the CRC calculations
+    117              crc32_finalize(&crcInfo, &crc32);
+   \   0000003C   0xA902             ADD      R1,SP,#+8
+   \   0000003E   0x4668             MOV      R0,SP
+   \   00000040   0x.... 0x....      BL       crc32_finalize
+    118          
+    119              return crc32;
+   \   00000044   0x9802             LDR      R0,[SP, #+8]
+   \   00000046   0xBD3E             POP      {R1-R5,PC}       ;; return
+    120          }
+    121          
+    122          //! @brief Check if crc check addresses reside in the range of valid memory space (Pflash or QSPIflash)
+    123          static bool is_crc_check_address_valid(bootloader_configuration_data_t *config)
+    124          {
+    125              bool isAddressValid;
+    126          
+    127              // Check if crc byte count is not equal to zero and crc end address does't exceed 4G address space
+    128              isAddressValid = (config->crcByteCount != 0) && (config->crcStartAddress <= 0xffffffff - config->crcByteCount + 1);
+    129          
+    130              // Check if addresses reside in internal flash
+    131              const memory_map_entry_t *map = (const memory_map_entry_t *)&g_bootloaderContext.memoryMap[kIndexFlashArray];
+    132              if (isAddressValid)
+    133              {
+    134                  isAddressValid = ((config->crcStartAddress >= map->startAddress) &&
+    135                                    (config->crcStartAddress + config->crcByteCount - 1 <= map->endAddress));
+    136          #if BL_FEATURE_QSPI_MODULE
+    137                  // Check if addresses reside in external QSPI flash
+    138                  if ((!isAddressValid) && is_qspi_present())
+    139                  {
+    140                      map = (const memory_map_entry_t *)&g_bootloaderContext.memoryMap[kIndexQspiMemory];
+    141          
+    142                      isAddressValid = ((config->crcStartAddress >= map->startAddress) &&
+    143                                        (config->crcStartAddress + config->crcByteCount - 1 <= map->endAddress));
+    144                  }
+    145          #endif // BL_FEATURE_QSPI_MODULE
+    146              }
+    147          
+    148              return isAddressValid;
+    149          }
+    150          
+    151          // See bl_app_crc_check.h for documentation on this function.
+
+   \                                 In section .text, align 2, keep-with-next
+    152          bool is_application_crc_check_pass(void)
+    153          {
+    154              bool isCrcCheckPassed = true;
+    155          
+    156              property_store_t *propertyStore = g_bootloaderContext.propertyInterface->store;
+   \                     is_application_crc_check_pass: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable0
+   \   00000002   0xB538             PUSH     {R3-R5,LR}
+   \   00000004   0x6881             LDR      R1,[R0, #+8]
+   \   00000006   0x690D             LDR      R5,[R1, #+16]
+    157              if (kStatus_AppCrcCheckInvalid != propertyStore->crcCheckStatus)
+   \   00000008   0x6AE9             LDR      R1,[R5, #+44]
+   \   0000000A   0x2401             MOVS     R4,#+1
+   \   0000000C   0xF642 0x02A3      MOVW     R2,#+10403
+   \   00000010   0x4291             CMP      R1,R2
+   \   00000012   0xD021             BEQ.N    ??is_application_crc_check_pass_0
+    158              {
+    159                  isCrcCheckPassed = false;
+    160          
+    161                  // Check if crc check addresses reside in the range of valid memory space (Pflash or QSPIflash)
+    162                  if (is_crc_check_address_valid(&propertyStore->configurationData))
+   \   00000014   0x6F29             LDR      R1,[R5, #+112]
+   \   00000016   0x2400             MOVS     R4,#+0
+   \   00000018   0xB1D9             CBZ.N    R1,??is_application_crc_check_pass_1
+   \   0000001A   0x6EEA             LDR      R2,[R5, #+108]
+   \   0000001C   0x424B             RSBS     R3,R1,#+0
+   \   0000001E   0x4293             CMP      R3,R2
+   \   00000020   0xBF22             ITTT     CS 
+   \   00000022   0x6840             LDRCS    R0,[R0, #+4]
+   \   00000024   0x6803             LDRCS    R3,[R0, #+0]
+   \   00000026   0x429A             CMPCS    R2,R3
+   \   00000028   0xBF21             ITTTT    CS 
+   \   0000002A   0x6840             LDRCS    R0,[R0, #+4]
+   \   0000002C   0x1889             ADDCS    R1,R1,R2
+   \   0000002E   0x1E49             SUBCS    R1,R1,#+1
+   \   00000030   0x4288             CMPCS    R0,R1
+   \   00000032   0xD30E             BCC.N    ??is_application_crc_check_pass_1
+    163                  {
+    164                      uint32_t calculated_crc = calculate_application_crc32(
+    165                          (crc_checksum_header_t *)&propertyStore->configurationData, kBootloaderConfigAreaAddress);
+   \   00000034   0xF24A 0x31C0      MOVW     R1,#+41920
+   \   00000038   0xF105 0x0068      ADD      R0,R5,#+104
+   \   0000003C   0x.... 0x....      BL       calculate_application_crc32
+    166          
+    167                      if (calculated_crc != propertyStore->configurationData.crcExpectedValue)
+   \   00000040   0x6F69             LDR      R1,[R5, #+116]
+   \   00000042   0x4288             CMP      R0,R1
+   \   00000044   0xBF06             ITTE     EQ 
+   \   00000046   0x2401             MOVEQ    R4,#+1
+   \   00000048   0xF642 0x00A0      MOVWEQ   R0,#+10400
+   \   0000004C   0xF642 0x00A1      MOVWNE   R0,#+10401
+    168                      {
+    169                          propertyStore->crcCheckStatus = kStatus_AppCrcCheckFailed;
+    170                      }
+    171                      else
+    172                      {
+    173                          isCrcCheckPassed = true;
+    174                          propertyStore->crcCheckStatus = kStatus_AppCrcCheckPassed;
+   \   00000050   0xE001             B.N      ??is_application_crc_check_pass_2
+    175                      }
+    176                  }
+    177                  else
+    178                  {
+    179                      propertyStore->crcCheckStatus = kStatus_AppCrcCheckOutOfRange;
+   \                     ??is_application_crc_check_pass_1: (+1)
+   \   00000052   0xF642 0x00A4      MOVW     R0,#+10404
+   \                     ??is_application_crc_check_pass_2: (+1)
+   \   00000056   0x62E8             STR      R0,[R5, #+44]
+    180                  }
+    181          #if BL_FEATURE_CRC_ASSERT
+    182                  if (!isCrcCheckPassed)
+    183                  {
+    184                      assert_pin_to_indicate_crc_check_failure();
+    185                  }
+    186          #endif
+    187              }
+    188          
+    189              return isCrcCheckPassed;
+   \                     ??is_application_crc_check_pass_0: (+1)
+   \   00000058   0x4620             MOV      R0,R4
+   \   0000005A   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    190          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0:
+   \   00000000   0x........         DC32     g_bootloaderContext
+    191          
+    192          ////////////////////////////////////////////////////////////////////////////////
+    193          // EOF
+    194          ////////////////////////////////////////////////////////////////////////////////
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   calculate_application_crc32
+        24   -> crc32_finalize
+        24   -> crc32_init
+        24   -> crc32_update
+       0   init_crc_check_status
+      16   is_application_crc_check_pass
+        16   -> calculate_application_crc32
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+      72  calculate_application_crc32
+      36  init_crc_check_status
+      92  is_application_crc_check_pass
+
+ 
+ 204 bytes in section .text
+ 
+ 204 bytes of CODE memory
+
+Errors: none
+Warnings: none

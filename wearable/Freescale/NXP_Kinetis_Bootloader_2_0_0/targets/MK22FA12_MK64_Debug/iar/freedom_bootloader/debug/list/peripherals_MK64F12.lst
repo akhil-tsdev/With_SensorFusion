@@ -1,0 +1,216 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       02/Sep/2016  11:55:12
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\src\peripherals_MK64F12.c
+#    Command line =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\src\peripherals_MK64F12.c
+#        -D DEBUG -D NDEBUG -D USB_STACK_BM -D CPU_MK64FN1M0VMD12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D FREEDOM -D BL_TARGET_FLASH -lC
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader\debug\list
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader\debug\obj
+#        --no_unroll --debug --endian=little --cpu=Cortex-M4 -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/platform/devices/MK64F12\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/autobaud\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/usb/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/usb/osa\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/usb/device\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/usb/device/class\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/bm_usb\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/platform\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/platform/devices\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/platform/CMSIS/Include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/drivers\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader/../../../../src/drivers/common\
+#        -Ohz --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader\debug\list\peripherals_MK64F12.lst
+#    Object file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\iar\freedom_bootloader\debug\obj\peripherals_MK64F12.o
+#
+###############################################################################
+
+C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK64F12\src\peripherals_MK64F12.c
+      1          /*
+      2           * Copyright (c) 2013-2015, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          
+     31          #include "bootloader/bl_context.h"
+     32          #include "bootloader/bl_peripheral_interface.h"
+     33          #include "packet/serial_packet.h"
+     34          
+     35          extern void uart_pinmux_config(uint32_t instance, pinmux_type_t pinmux);
+     36          extern void i2c_pinmux_config(uint32_t instance, pinmux_type_t pinmux);
+     37          extern void spi_pinmux_config(uint32_t instance, pinmux_type_t pinmux);
+     38          
+     39          ////////////////////////////////////////////////////////////////////////////////
+     40          // Variables
+     41          ////////////////////////////////////////////////////////////////////////////////
+     42          
+     43          #if !BL_CONFIG_SCUART && !BL_CONFIG_I2C && !BL_CONFIG_DSPI && !BL_CONFIG_USB_HID
+     44          #error At least one peripheral must be enabled!
+     45          #endif
+     46          
+     47          //! @brief Peripheral array for K64F12.
+
+   \                                 In section .rodata, align 4, keep-with-next
+     48          const peripheral_descriptor_t g_peripherals[] = {
+   \                     g_peripherals:
+   \   00000000   0x00000001         DC32 1, 0, uart_pinmux_config, g_scuartControlInterface
+   \              0x00000000   
+   \              0x........   
+   \              0x........   
+   \   00000010   0x........         DC32 g_scuartByteInterface, g_framingPacketInterface, 2, 1
+   \              0x........   
+   \              0x00000002   
+   \              0x00000001   
+   \   00000020   0x........         DC32 i2c_pinmux_config, g_i2cControlInterface, g_i2cByteInterface
+   \              0x........   
+   \              0x........   
+   \   0000002C   0x........         DC32 g_framingPacketInterface, 4, 0, spi_pinmux_config
+   \              0x00000004   
+   \              0x00000000   
+   \              0x........   
+   \   0000003C   0x........         DC32 g_dspiControlInterface, g_dspiByteInterface
+   \              0x........   
+   \   00000044   0x........         DC32 g_framingPacketInterface, 16, 0, 0H, g_usbHidControlInterface, 0H
+   \              0x00000010   
+   \              0x00000000   
+   \              0x00000000   
+   \              0x........   
+   \              0x00000000   
+   \   0000005C   0x........         DC32 g_usbHidPacketInterface, 0
+   \              0x00000000   
+   \   00000064   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+     49          #if BL_CONFIG_SCUART
+     50          #if !defined(TOWER)
+     51              // UART0
+     52              {.typeMask = kPeripheralType_UART,
+     53               .instance = 0,
+     54               .pinmuxConfig = uart_pinmux_config,
+     55               .controlInterface = &g_scuartControlInterface,
+     56               .byteInterface = &g_scuartByteInterface,
+     57               .packetInterface = &g_framingPacketInterface },
+     58          #else
+     59              // UART1
+     60              {.typeMask = kPeripheralType_UART,
+     61               .instance = 1,
+     62               .pinmuxConfig = uart_pinmux_config,
+     63               .controlInterface = &g_scuartControlInterface,
+     64               .byteInterface = &g_scuartByteInterface,
+     65               .packetInterface = &g_framingPacketInterface },
+     66          #endif //#if !defined(TOWER)
+     67          #endif // BL_CONFIG_SCUART
+     68          #if BL_CONFIG_I2C
+     69              // I2C1
+     70              {.typeMask = kPeripheralType_I2CSlave,
+     71               .instance = 1,
+     72               .pinmuxConfig = i2c_pinmux_config,
+     73               .controlInterface = &g_i2cControlInterface,
+     74               .byteInterface = &g_i2cByteInterface,
+     75               .packetInterface = &g_framingPacketInterface },
+     76          #endif // BL_CONFIG_I2C
+     77          #if BL_CONFIG_DSPI
+     78              // SPI0
+     79              {.typeMask = kPeripheralType_SPISlave,
+     80               .instance = 0,
+     81               .pinmuxConfig = spi_pinmux_config,
+     82               .controlInterface = &g_dspiControlInterface,
+     83               .byteInterface = &g_dspiByteInterface,
+     84               .packetInterface = &g_framingPacketInterface },
+     85          #endif // BL_CONFIG_DSPI
+     86          #if (BL_CONFIG_USB_HID || BL_CONFIG_USB_MSC)
+     87              // USB HID
+     88              {.typeMask = kPeripheralType_USB_HID,
+     89               .instance = 0,
+     90               .pinmuxConfig = NULL,
+     91               .controlInterface = &g_usbHidControlInterface,
+     92               .byteInterface = NULL,
+     93               .packetInterface = &g_usbHidPacketInterface },
+     94          #endif // BL_CONFIG_USB_HID
+     95          
+     96              { 0 } // Terminator
+     97          };
+     98          
+     99          ////////////////////////////////////////////////////////////////////////////////
+    100          // EOF
+    101          ////////////////////////////////////////////////////////////////////////////////
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+     120  g_peripherals
+
+ 
+ 120 bytes in section .rodata
+ 
+ 120 bytes of CONST memory
+
+Errors: none
+Warnings: none

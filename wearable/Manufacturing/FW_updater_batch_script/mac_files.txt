@@ -1,0 +1,14 @@
+GITHUB="/Users/user/cwati/github"
+
+# Script
+PYTHON_SCRIPT="$GITHUB/trunk/wearable/Manufacturing/Binaries/common nordic bootloader/2_6/nordic_download_2_6.py"
+
+# Files (1 line for each file!)
+HUB_TUNNELING_BIN="$GITHUB/trunk/wearable/Manufacturing/Binaries/common nordic bootloader/2_6/22f_hub_nordic_bl_bootloader_2_6.bin"
+HUB_NORDIC_BIN="$GITHUB/trunk/wearable/Manufacturing/Binaries/SYS-DIAG/hub/nordic/SYS_NRD_HUB_0.16_1.3.3.1.hex"
+HUB_KINETIS_BIN="$GITHUB/trunk/wearable/Manufacturing/Binaries/SYS-DIAG/hub/22F/SYS_22F_HUB_0.16_1.3.3.1_ch10.bin"
+
+SAT_TUNNELING_BIN="$GITHUB/trunk/wearable/Manufacturing/Binaries/common nordic bootloader/2_6/22f_sat_nordic_bl_2_6.bin"
+SAT_NORDIC_BIN="$GITHUB/trunk/wearable/Manufacturing/Binaries/SYS-DIAG/sat/nordic/SYS_NRD_SAT_0.16_1.3.3.1.hex"
+SAT_KINETIS_BIN="$GITHUB/trunk/wearable/Manufacturing/Binaries/SYS-DIAG/sat/22F/SYS_22F_SAT_0.16_1.3.3.1.bin"
+

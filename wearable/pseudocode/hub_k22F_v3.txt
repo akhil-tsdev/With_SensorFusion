@@ -1,0 +1,135 @@
+05/13/2015
+
+After discussion:
+Upon receiving STOP from loud - forward the command to nordic 
+but keep sending 
+and keep receiving from nordic, until I see the first 0-count record.
+
+In terms of connection with macbook:
+The hub should be the one waiting to accept connection.
+The idea is if the user hits "Connect" on the iphone then iphone will search
+for ports ready to receive on port XxXxX.
+
+
+
+satellite ID to sensor IDX, kept in array
+sat ID 0	----> 0   (sensor IDX 0 always belongs to local sensor)
+sat ID 1	----> 1
+...
+sat ID N	----> MAX_SENSORS (num of sensors including self sensor)
+
+record keeping, using cbuf
+ * cbuf0: 	[timestamp0]
+ * 		bitmap0, --> bit 'n' is set if sensor IDX 'n' has valid data
+ * 		data[0]
+		   |----sensor_record
+		data[1]
+		data[2] 
+		... 
+		data [MAX SENSORS]
+
+ * cbuf1: 	[timestamp1],
+ * 		bitmap1,
+ * 		data[0], ... data[N]
+ * ...
+ * cbufN: 	[timestampN],
+ *  		bitmapN,
+ *  		data[0], ... data[N]
+ *
+ *  up to MAX_RECORDS_PER_TIMESTAMP
+
+/***** FILLING UP CBUF *******/
+Add it to the circular buffer for its satellite ID
+adding_data_to_cbuf_based_on_sat_ID():
+	map sat ID to sensor IDx
+
+	for each incoming records
+		find if timestamp entry is already in cbuf /* this function
+		will create a new entry if timestamp not found */
+		if found
+			for that cbuf entry, set the bit for this sensor idx
+				cbufN.bitmap0 |= (1 << sensor IDX)
+		 	fill in data[sensor IDX] with sat ID and record
+		if not found
+			set cbuf FULL	
+
+/***** TALK TO NORDIC *******/
+communicate with nordic:
+	forward command from Wifi (START, STOP, CALIB, SET RTC, SET SAT)
+	the only thing that might differ is WAIT
+
+	if cbuf is nearly full
+	 	set command "WAIT"
+	else 
+		clear command "WAIT"
+
+	call SPI to communicate, forwarding the most recent wifi command
+
+	for datum in response:
+		adding_data_to_cbuf_based_on_sat_ID()
+
+/***** TALK TO WIFI *******/
+communicate with wifi():
+    recv_from_wifi();
+
+    /* RTC takes precedence */
+    if SET RTC
+    	ask sensor to set RTC
+    	ask nordic to set RTC
+    if CALIBRATE
+    	ask sensor to calibrate
+	(Nordic set calibrate will be set later when communicating with
+Nordic)
+    if START:
+    	set status as ACTIVE
+    	set can_send
+    if STOP:
+    	set status->STOP
+    if WAIT:
+    	clear can_send
+    if SET SATELLITE LIST
+	update satellite list    	
+
+    if can_send:
+    	send() reply with the top X timestamps, 
+	each filled from the circular buffers that have it
+    ask status, store as 'latest_wifi_command'
+
+/***** TALK TO SENSOR *******/
+get_readings_from_invensense():
+	send command to sensor
+	for each record received back
+	   adding_data_to_cbuf_based_on_sat_ID(SAT_ID = 0)
+		
+
+/***** MAIN *******/
+Global:
+initialize status->ACTIVE
+
+main loop:
+	communicate with wifi ()
+
+	if status->STOP
+		tell invensense to STOP
+		communicate with nordic (to forward the STOP)
+
+		while (status == STOP) {
+		    /* Low power mode */
+		    STOP for a while
+		    communicate with wifi to get latest status
+		}
+
+		turn on invensense
+		communicate with nordic (to forward the ACTIVE)
+
+	if the circular buffer isn't full:
+		get_readings_from_invensense()
+		for each reading:
+			process with sensor fusion
+		add result to circular buffer
+
+		communicate with nordic
+		for each payload received add result to circular buffer
+
+
+

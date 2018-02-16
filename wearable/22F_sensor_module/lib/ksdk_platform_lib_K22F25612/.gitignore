@@ -1,0 +1,7 @@
+#Ignore the resulting build
+/Debug/
+/Release/
+
+#include the binaries of the build
+!/Debug/ksdk_platform_lib_k22f25612.a
+!/Release/ksdk_platform_lib_k22f25612.a

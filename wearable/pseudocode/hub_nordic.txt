@@ -1,0 +1,41 @@
+the hub nordic is 100% reactive - it initiates no communication on its own
+
+there's a global list of connected satellites. each entry has:
+	the satellite's ID
+	pending one-time messages to those satellites
+there's also a list of satellite IDs that *should* connect to this hub
+
+on spi received:
+	if START:
+		set active and can_send
+	else if CALIBRATE:
+		queue a CALIBRATE message for all satellites
+	else if STOP:
+		clear active
+	else if SHUT UP:
+		clear can_send
+	else if SET RTC:
+		set the rtc
+		queue a SET RTC message for all satellites
+	else if SET SATELLITE LIST
+		update your list of OK satellite IDs, and remove any invalid connections
+	if can_send:
+		pop the top X sensor data from the circular buffer and queue it as the next SPI response
+
+on esb received:
+	if satellite id isn't in the whitelist, send NOT YOU and return
+	if this is a connection request:
+		add the satellite to the connected list
+	else a data packet:
+		add it to the back of the circular buffer, with the satellite id
+	
+	if our buffer is getting full
+		reply with a SHUT UP
+	else if this satellite has a pending message
+		pop the pending message and reply with it
+	else if not active
+		reply with a STOP
+	else reply with START
+
+main loop:
+	wait for events

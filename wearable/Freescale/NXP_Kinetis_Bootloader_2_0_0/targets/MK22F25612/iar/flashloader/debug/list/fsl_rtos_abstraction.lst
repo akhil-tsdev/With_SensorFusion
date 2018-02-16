@@ -1,0 +1,580 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       16/Aug/2016  13:15:55
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\utilities\src\fsl_rtos_abstraction.c
+#    Command line =  
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\utilities\src\fsl_rtos_abstraction.c"
+#        -D DEBUG -D NDEBUG -D USB_STACK_BM -D CPU_MK22FN256VDC12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D BL_TARGET_RAM -lC
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\obj"
+#        --no_unroll --debug --endian=little --cpu=Cortex-M4 -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform/devices/MK22F25612\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/autobaud\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/osa\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/device\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/usb/device/class\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/bm_usb\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform/devices\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/platform/CMSIS/Include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/drivers\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader/../../../../src/drivers/common\"
+#        -Ohz --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\list\fsl_rtos_abstraction.lst
+#    Object file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F25612\iar\flashloader\debug\obj\fsl_rtos_abstraction.o
+#
+###############################################################################
+
+C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\utilities\src\fsl_rtos_abstraction.c
+      1          /*
+      2           * Copyright (c) 2013, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          
+     31          #include "utilities/fsl_assert.h"
+     32          #include "bootloader/bl_peripheral_interface.h"
+     33          #include "utilities/fsl_rtos_abstraction.h"
+     34          #include "fsl_device_registers.h"
+     35          #include "microseconds/microseconds.h"
+     36          
+     37          ////////////////////////////////////////////////////////////////////////////////
+     38          // Definitions
+     39          ////////////////////////////////////////////////////////////////////////////////
+     40          
+     41          enum _sync_constants
+     42          {
+     43              kSyncUnlocked = 0,
+     44              kSyncLocked = 1
+     45          };
+     46          
+
+   \                                 In section .bss, align 4
+     47          static lock_object_t lockObject;
+   \                     lockObject:
+   \   00000000                      DS8 4
+     48          
+
+   \                                 In section .bss, align 8
+     49          static uint64_t s_ticksPerMs = 0;
+   \                     s_ticksPerMs:
+   \   00000000                      DS8 8
+     50          
+     51          ////////////////////////////////////////////////////////////////////////////////
+     52          // Code
+     53          ////////////////////////////////////////////////////////////////////////////////
+     54          
+     55          /*FUNCTION**********************************************************************
+     56           *
+     57           * Function Name : time_diff
+     58           * Description   : This function gets the difference between two time stamp,
+     59           * time overflow is considered.
+     60           *
+     61           *END**************************************************************************/
+     62          static uint32_t ms_diff(uint64_t tickStart, uint64_t tickStop)
+     63          {
+     64              return ((tickStop - tickStart) / s_ticksPerMs);
+     65          }
+     66          
+     67          /*FUNCTION**********************************************************************
+     68           *
+     69           * Function Name : OSA_SemaCreate
+     70           * Description   : This function is used to create a semaphore. Return
+     71           * kStatus_OSA_Success if create successfully, otherwise return kStatus_OSA_Error.
+     72           *
+     73           *END**************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     74          osa_status_t OSA_SemaCreate(semaphore_t *pSem, uint8_t initValue)
+     75          {
+   \                     OSA_SemaCreate: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+     76              assert(pSem);
+     77          
+     78              if (!s_ticksPerMs)
+   \   00000002   0x....             LDR.N    R6,??DataTable4
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0x460D             MOV      R5,R1
+   \   00000008   0xE9D6 0x0100      LDRD     R0,R1,[R6, #+0]
+   \   0000000C   0x2200             MOVS     R2,#+0
+   \   0000000E   0x4291             CMP      R1,R2
+   \   00000010   0xBF08             IT       EQ 
+   \   00000012   0x4290             CMPEQ    R0,R2
+   \   00000014   0xD105             BNE.N    ??OSA_SemaCreate_0
+     79              {
+     80                  s_ticksPerMs = microseconds_convert_to_ticks(1000);
+   \   00000016   0xF44F 0x707A      MOV      R0,#+1000
+   \   0000001A   0x.... 0x....      BL       microseconds_convert_to_ticks
+   \   0000001E   0xE9C6 0x0100      STRD     R0,R1,[R6, #+0]
+     81              }
+     82          
+     83              pSem->semCount = initValue;
+   \                     ??OSA_SemaCreate_0: (+1)
+   \   00000022   0x7065             STRB     R5,[R4, #+1]
+     84              pSem->isWaiting = false;
+   \   00000024   0x2000             MOVS     R0,#+0
+   \   00000026   0x7020             STRB     R0,[R4, #+0]
+     85              pSem->tickStart = 0u;
+   \   00000028   0xE9C4 0x0002      STRD     R0,R0,[R4, #+8]
+     86              pSem->timeout = 0u;
+   \   0000002C   0x6120             STR      R0,[R4, #+16]
+     87          
+     88              return kStatus_OSA_Success;
+   \   0000002E   0xBD70             POP      {R4-R6,PC}       ;; return
+     89          }
+     90          
+     91          /*FUNCTION**********************************************************************
+     92           *
+     93           * Function Name : OSA_SemaWait
+     94           * Description   : This function checks the semaphore's counting value, if it is
+     95           * positive, decreases it and returns kStatus_OSA_Success, otherwise, timeout
+     96           * will be used for wait. The parameter timeout indicates how long should wait
+     97           * in milliseconds. Pass kSyncWaitForever to wait indefinitely, pass 0 will
+     98           * return kStatus_OSA_Timeout immediately if semaphore is not positive.
+     99           * This function returns kStatus_OSA_Success if the semaphore is received, returns
+    100           * kStatus_OSA_Timeout if the semaphore is not received within the specified
+    101           * 'timeout', returns kStatus_OSA_Error if any errors occur during waiting,
+    102           * returns kStatus_OSA_Idle if the semaphore is not available and 'timeout' is
+    103           * not exhausted, because wait functions should not block with bare metal.
+    104           *
+    105           *END**************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    106          osa_status_t OSA_SemaWait(semaphore_t *pSem, uint32_t timeout)
+    107          {
+   \                     OSA_SemaWait: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+    108              uint64_t currentTicks;
+    109          
+    110              assert(pSem);
+    111          
+    112              /* Check the sem count first. Deal with timeout only if not already set */
+    113              if (pSem->semCount)
+   \   00000006   0x7860             LDRB     R0,[R4, #+1]
+   \   00000008   0xB138             CBZ.N    R0,??OSA_SemaWait_0
+    114              {
+    115                  __disable_irq();
+   \   0000000A   0xB672             CPSID    I
+    116                  pSem->semCount--;
+   \   0000000C   0x7860             LDRB     R0,[R4, #+1]
+   \   0000000E   0x1E40             SUBS     R0,R0,#+1
+   \   00000010   0x7060             STRB     R0,[R4, #+1]
+    117                  pSem->isWaiting = false;
+   \   00000012   0x2000             MOVS     R0,#+0
+   \   00000014   0x7020             STRB     R0,[R4, #+0]
+    118                  __enable_irq();
+   \   00000016   0xB662             CPSIE    I
+    119                  return kStatus_OSA_Success;
+   \   00000018   0xBD32             POP      {R1,R4,R5,PC}
+    120              }
+    121              else
+    122              {
+    123                  if (timeout == 0)
+   \                     ??OSA_SemaWait_0: (+1)
+   \   0000001A   0xB19D             CBZ.N    R5,??OSA_SemaWait_1
+    124                  {
+    125                      /* If timeout is 0 and semaphore is not available, return kStatus_OSA_Timeout. */
+    126                      return kStatus_OSA_Timeout;
+    127                  }
+    128                  else if (pSem->isWaiting)
+   \   0000001C   0x7820             LDRB     R0,[R4, #+0]
+   \   0000001E   0xB198             CBZ.N    R0,??OSA_SemaWait_2
+    129                  {
+    130                      /* Check for timeout */
+    131                      currentTicks = microseconds_get_ticks();
+   \   00000020   0x.... 0x....      BL       microseconds_get_ticks
+    132                      if (pSem->timeout < ms_diff(pSem->tickStart, currentTicks))
+   \   00000024   0xE9D4 0x2302      LDRD     R2,R3,[R4, #+8]
+   \   00000028   0x1A80             SUBS     R0,R0,R2
+   \   0000002A   0x....             LDR.N    R5,??DataTable4
+   \   0000002C   0x4199             SBCS     R1,R1,R3
+   \   0000002E   0xE9D5 0x2300      LDRD     R2,R3,[R5, #+0]
+   \   00000032   0x.... 0x....      BL       __aeabi_uldivmod
+   \   00000036   0x6921             LDR      R1,[R4, #+16]
+   \   00000038   0x4281             CMP      R1,R0
+   \   0000003A   0xD211             BCS.N    ??OSA_SemaWait_3
+    133                      {
+    134                          __disable_irq();
+   \   0000003C   0xB672             CPSID    I
+    135                          pSem->isWaiting = false;
+   \   0000003E   0x2000             MOVS     R0,#+0
+   \   00000040   0x7020             STRB     R0,[R4, #+0]
+    136                          __enable_irq();
+   \   00000042   0xB662             CPSIE    I
+    137                          return kStatus_OSA_Timeout;
+   \                     ??OSA_SemaWait_1: (+1)
+   \   00000044   0x2002             MOVS     R0,#+2
+   \   00000046   0xBD32             POP      {R1,R4,R5,PC}
+    138                      }
+    139                  }
+    140                  else if (timeout != kSyncWaitForever) /* If don't wait forever, start the timer */
+   \                     ??OSA_SemaWait_2: (+1)
+   \   00000048   0xF115 0x0F01      CMN      R5,#+1
+   \   0000004C   0xD008             BEQ.N    ??OSA_SemaWait_3
+    141                  {
+    142                      /* Start the timeout counter */
+    143                      __disable_irq();
+   \   0000004E   0xB672             CPSID    I
+    144                      pSem->isWaiting = true;
+   \   00000050   0x2001             MOVS     R0,#+1
+   \   00000052   0x7020             STRB     R0,[R4, #+0]
+    145                      __enable_irq();
+   \   00000054   0xB662             CPSIE    I
+    146                      pSem->tickStart = microseconds_get_ticks();
+   \   00000056   0x.... 0x....      BL       microseconds_get_ticks
+   \   0000005A   0xE9C4 0x0102      STRD     R0,R1,[R4, #+8]
+    147                      pSem->timeout = timeout;
+   \   0000005E   0x6125             STR      R5,[R4, #+16]
+    148                  }
+    149              }
+    150          
+    151              return kStatus_OSA_Idle;
+   \                     ??OSA_SemaWait_3: (+1)
+   \   00000060   0x2003             MOVS     R0,#+3
+   \   00000062   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    152          }
+    153          
+    154          /*FUNCTION**********************************************************************
+    155           *
+    156           * Function Name : OSA_SemaPost
+    157           * Description   : This function is used to wake up one task that wating on the
+    158           * semaphore. If no task is waiting, increase the semaphore. The function returns
+    159           * kStatus_OSA_Success if the semaphre is post successfully, otherwise returns
+    160           * kStatus_OSA_Error.
+    161           *
+    162           *END**************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    163          osa_status_t OSA_SemaPost(semaphore_t *pSem)
+    164          {
+    165              assert(pSem);
+    166              /* The max value is 0xFF */
+    167              if (pSem->semCount == 0xFF)
+   \                     OSA_SemaPost: (+1)
+   \   00000000   0x7841             LDRB     R1,[R0, #+1]
+   \   00000002   0x29FF             CMP      R1,#+255
+   \   00000004   0xD101             BNE.N    ??OSA_SemaPost_0
+    168              {
+    169                  return kStatus_OSA_Error;
+   \   00000006   0x2001             MOVS     R0,#+1
+   \   00000008   0x4770             BX       LR
+    170              }
+    171              __disable_irq();
+   \                     ??OSA_SemaPost_0: (+1)
+   \   0000000A   0xB672             CPSID    I
+    172              ++pSem->semCount;
+   \   0000000C   0x7841             LDRB     R1,[R0, #+1]
+   \   0000000E   0x1C49             ADDS     R1,R1,#+1
+   \   00000010   0x7041             STRB     R1,[R0, #+1]
+    173              __enable_irq();
+   \   00000012   0xB662             CPSIE    I
+    174          
+    175              return kStatus_OSA_Success;
+   \   00000014   0x2000             MOVS     R0,#+0
+   \   00000016   0x4770             BX       LR               ;; return
+    176          }
+    177          
+    178          /*FUNCTION**********************************************************************
+    179           *
+    180           * Function Name : OSA_SemaDestroy
+    181           * Description   : This function is used to destroy a semaphore.
+    182           * Return kStatus_OSA_Success if the semaphore is destroyed successfully, otherwise
+    183           * return kStatus_OSA_Error.
+    184           *
+    185           *END**************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    186          osa_status_t OSA_SemaDestroy(semaphore_t *pSem)
+    187          {
+    188              assert(pSem);
+    189          
+    190              return kStatus_OSA_Success;
+   \                     OSA_SemaDestroy: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+    191          }
+    192          
+    193          /*FUNCTION**********************************************************************
+    194           *
+    195           * Function Name : OSA_TimeDelay
+    196           * Description   : This function is used to delay for a number of milliseconds.
+    197           *
+    198           *END**************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    199          void OSA_TimeDelay(uint32_t delay)
+    200          {
+    201              microseconds_delay(delay * 1000);
+   \                     OSA_TimeDelay: (+1)
+   \   00000000   0xF44F 0x717A      MOV      R1,#+1000
+   \   00000004   0x4348             MULS     R0,R1,R0
+   \   00000006   0x.... 0x....      B.W      microseconds_delay
+    202          }
+    203          
+
+   \                                 In section .text, align 2, keep-with-next
+    204          void sync_init(sync_object_t *obj, bool state)
+    205          {
+    206              *obj = state ? kSyncLocked : kSyncUnlocked;
+   \                     sync_init: (+1)
+   \   00000000   0x6001             STR      R1,[R0, #+0]
+    207          }
+   \   00000002   0x4770             BX       LR               ;; return
+    208          
+
+   \                                 In section .text, align 2, keep-with-next
+    209          bool sync_wait(sync_object_t *obj, uint32_t timeout)
+    210          {
+    211              // Increment the object so we can tell if it changes. Because the increment is not
+    212              // atomic (load, add, store), we must disabled interrupts during it.
+    213              __disable_irq();
+   \                     sync_wait: (+1)
+   \   00000000   0xB672             CPSID    I
+    214              ++(*obj);
+   \   00000002   0x6801             LDR      R1,[R0, #+0]
+   \   00000004   0x1C49             ADDS     R1,R1,#+1
+   \   00000006   0x6001             STR      R1,[R0, #+0]
+    215              __enable_irq();
+   \   00000008   0xB662             CPSIE    I
+    216          
+    217              // Wait for the object to be unlocked.
+    218              while (*obj != 0)
+   \                     ??sync_wait_0: (+1)
+   \   0000000A   0x6801             LDR      R1,[R0, #+0]
+   \   0000000C   0x2900             CMP      R1,#+0
+   \   0000000E   0xD1FC             BNE.N    ??sync_wait_0
+    219              {
+    220                  // Spin.
+    221              }
+    222          
+    223              return true;
+   \   00000010   0x2001             MOVS     R0,#+1
+   \   00000012   0x4770             BX       LR               ;; return
+    224          }
+    225          
+
+   \                                 In section .text, align 2, keep-with-next
+    226          void sync_signal(sync_object_t *obj)
+    227          {
+    228              // Atomically unlock the object.
+    229              __disable_irq();
+   \                     sync_signal: (+1)
+   \   00000000   0xB672             CPSID    I
+    230              --(*obj);
+   \   00000002   0x6801             LDR      R1,[R0, #+0]
+   \   00000004   0x1E49             SUBS     R1,R1,#+1
+   \   00000006   0x....             B.N      ??Subroutine0_0
+    231              __enable_irq();
+    232          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+   \                     ??Subroutine0_0: (+1)
+   \   00000002   0x6001             STR      R1,[R0, #+0]
+   \   00000004   0xB662             CPSIE    I
+   \   00000006   0x4770             BX       LR               ;; return
+    233          
+
+   \                                 In section .text, align 2, keep-with-next
+    234          void sync_reset(sync_object_t *obj)
+    235          {
+    236              __disable_irq();
+   \                     sync_reset: (+1)
+   \   00000000   0xB672             CPSID    I
+    237              (*obj) = 0;
+   \   00000002                      REQUIRE ?Subroutine0
+   \   00000002                      ;; // Fall through to label ?Subroutine0
+    238              __enable_irq();
+    239          }
+    240          
+
+   \                                 In section .text, align 2, keep-with-next
+    241          void lock_init(void)
+    242          {
+    243              __disable_irq();
+   \                     lock_init: (+1)
+   \   00000000   0xB672             CPSID    I
+    244              lockObject = 0;
+   \   00000002   0x....             LDR.N    R1,??DataTable4_1
+   \   00000004   0x2000             MOVS     R0,#+0
+   \   00000006   0x6008             STR      R0,[R1, #+0]
+    245              __enable_irq();
+   \   00000008   0xB662             CPSIE    I
+    246          }
+   \   0000000A   0x4770             BX       LR               ;; return
+    247          
+
+   \                                 In section .text, align 2, keep-with-next
+    248          void lock_acquire(void)
+    249          {
+    250              // Disable global IRQ until lock_release() is called.
+    251              __disable_irq();
+   \                     lock_acquire: (+1)
+   \   00000000   0xB672             CPSID    I
+    252              ++lockObject;
+   \   00000002   0x....             LDR.N    R0,??DataTable4_1
+   \   00000004   0x6801             LDR      R1,[R0, #+0]
+   \   00000006   0x1C49             ADDS     R1,R1,#+1
+   \   00000008   0x6001             STR      R1,[R0, #+0]
+    253          }
+   \   0000000A   0x4770             BX       LR               ;; return
+    254          
+
+   \                                 In section .text, align 2, keep-with-next
+    255          void lock_release(void)
+    256          {
+    257              // Restore previous state, enable global IRQ if all locks released.
+    258              if (lockObject <= 1)
+   \                     lock_release: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable4_1
+   \   00000002   0x6801             LDR      R1,[R0, #+0]
+   \   00000004   0x2902             CMP      R1,#+2
+   \   00000006   0xD200             BCS.N    ??lock_release_0
+    259              {
+    260                  lockObject = 0;
+   \   00000008   0x....             B.N      ?Subroutine0
+    261                  __enable_irq();
+    262              }
+    263              else
+    264              {
+    265                  --lockObject;
+   \                     ??lock_release_0: (+1)
+   \   0000000A   0x6801             LDR      R1,[R0, #+0]
+   \   0000000C   0x1E49             SUBS     R1,R1,#+1
+   \   0000000E   0x6001             STR      R1,[R0, #+0]
+    266              }
+    267          }
+   \   00000010   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \   00000000   0x........         DC32     s_ticksPerMs
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \   00000000   0x........         DC32     lockObject
+    268          
+    269          ////////////////////////////////////////////////////////////////////////////////
+    270          // EOF
+    271          ////////////////////////////////////////////////////////////////////////////////
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   OSA_SemaCreate
+        16   -> microseconds_convert_to_ticks
+       0   OSA_SemaDestroy
+       0   OSA_SemaPost
+      16   OSA_SemaWait
+        16   -> microseconds_get_ticks
+        16 __aeabi_uldivmod
+       0   OSA_TimeDelay
+         0   -> microseconds_delay
+       0   lock_acquire
+       0   lock_init
+       0   lock_release
+       0   sync_init
+       0   sync_reset
+       0   sync_signal
+       0   sync_wait
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+       8  ?Subroutine0
+      48  OSA_SemaCreate
+       4  OSA_SemaDestroy
+      24  OSA_SemaPost
+     100  OSA_SemaWait
+      10  OSA_TimeDelay
+       4  lockObject
+      12  lock_acquire
+      12  lock_init
+      18  lock_release
+       8  s_ticksPerMs
+       4  sync_init
+       2  sync_reset
+       8  sync_signal
+      20  sync_wait
+
+ 
+  12 bytes in section .bss
+ 278 bytes in section .text
+ 
+ 278 bytes of CODE memory
+  12 bytes of DATA memory
+
+Errors: none
+Warnings: none

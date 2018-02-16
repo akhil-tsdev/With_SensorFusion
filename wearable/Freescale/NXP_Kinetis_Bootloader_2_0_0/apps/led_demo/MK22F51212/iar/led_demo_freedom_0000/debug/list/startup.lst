@@ -1,0 +1,389 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       17/Aug/2016  13:01:01
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\startup\startup.c
+#    Command line =  
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\startup\startup.c"
+#        -D NDEBUG -D DEBUG -D CPU_MK22FN512VDC12 -D CPU_IS_ARM_CORTEX_M4=1 -D
+#        IAR -D FREEDOM -lC "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000\debug\list"
+#        --diag_suppress Pa050 -o "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000\debug\obj"
+#        --no_unroll --debug --endian=little --cpu=Cortex-M4 -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../targets/MK22F51212/src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../targets/MK22F51212/src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../src/platform/devices/MK22F51212\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../src/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../src/platform\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../src/platform/devices\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../src/platform/CMSIS/Include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../src/drivers\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../src/drivers/uart\"
+#        -Ohz --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000\debug\list\startup.lst
+#    Object file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000\debug\obj\startup.o
+#
+###############################################################################
+
+C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\startup\startup.c
+      1          /*
+      2           * Copyright (c) 2013, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          
+     31          #include <stdint.h>
+     32          #include "fsl_device_registers.h"
+     33          #include "bootloader_core.h"
+     34          
+     35          #if (defined(__ICCARM__))
+     36          #pragma section = ".intvec"
+     37          #pragma section = ".data"
+     38          #pragma section = ".data_init"
+     39          #pragma section = ".bss"
+     40          #pragma section = "CodeRelocate"
+     41          #pragma section = "CodeRelocateRam"
+     42          #pragma section = "USBGlobal"
+     43          #endif
+     44          
+     45          ////////////////////////////////////////////////////////////////////////////////
+     46          // Code
+     47          ////////////////////////////////////////////////////////////////////////////////
+     48          
+     49          /*FUNCTION**********************************************************************
+     50           *
+     51           * Function Name : init_data_bss
+     52           * Description   : Make necessary initializations for RAM.
+     53           * - Copy initialized data from ROM to RAM.
+     54           * - Clear the zero-initialized data section.
+     55           * - Copy the vector table from ROM to RAM. This could be an option.
+     56           *
+     57           * Tool Chians:
+     58           *   __GNUC__   : GCC
+     59           *   __CC_ARM   : KEIL
+     60           *   __ICCARM__ : IAR
+     61           *
+     62           *END**************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     63          void init_data_bss(void)
+     64          {
+   \                     init_data_bss: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     65          /* Addresses for VECTOR_TABLE and VECTOR_RAM come from the linker file */
+     66          #if defined(__CC_ARM)
+     67              extern uint32_t Image$$VECTOR_ROM$$Base[];
+     68              extern uint32_t Image$$VECTOR_RAM$$Base[];
+     69              extern uint32_t Image$$RW_m_data$$Base[];
+     70          
+     71          #define __VECTOR_TABLE Image$$VECTOR_ROM$$Base
+     72          #define __VECTOR_RAM Image$$VECTOR_RAM$$Base
+     73          #define __RAM_VECTOR_TABLE_SIZE (((uint32_t)Image$$RW_m_data$$Base - (uint32_t)Image$$VECTOR_RAM$$Base))
+     74          #elif defined(__ICCARM__)
+     75              extern uint32_t __RAM_VECTOR_TABLE_SIZE[];
+     76              extern uint32_t __VECTOR_TABLE[];
+     77              extern uint32_t __VECTOR_RAM[];
+     78          #elif defined(__GNUC__)
+     79              extern uint32_t __VECTOR_TABLE[];
+     80          #endif
+     81          
+     82          #if (defined(__ICCARM__))
+     83              SCB->VTOR = (uint32_t)__section_begin(".intvec");
+   \   00000002   0x....             LDR.N    R1,??DataTable1  ;; 0xe000ed08
+   \   00000004   0x....             LDR.N    R0,??DataTable1_1
+   \   00000006   0x6008             STR      R0,[R1, #+0]
+     84          #else
+     85              SCB->VTOR = (uint32_t)__VECTOR_TABLE;
+     86          #endif
+     87          
+     88          #if !defined(__CC_ARM)
+     89          
+     90              /* Declare pointers for various data sections. These pointers
+     91               * are initialized using values pulled in from the linker file */
+     92              uint8_t *data_ram, *data_rom, *data_rom_end;
+     93              uint8_t *bss_start, *bss_end;
+     94              uint32_t n;
+     95          
+     96          // Get the addresses for the .data section (initialized data section)
+     97          #if defined(__GNUC__)
+     98              extern uint32_t __DATA_ROM[];
+     99              extern uint32_t __DATA_RAM[];
+    100              extern char __DATA_END[];
+    101              data_ram = (uint8_t *)__DATA_RAM;
+    102              data_rom = (uint8_t *)__DATA_ROM;
+    103              data_rom_end = (uint8_t *)__DATA_END; // This is actually a RAM address in CodeWarrior
+    104              n = data_rom_end - data_rom;
+    105          #elif(defined(__ICCARM__))
+    106              data_ram = __section_begin(".data");
+    107              data_rom = __section_begin(".data_init");
+    108              data_rom_end = __section_end(".data_init");
+    109              n = data_rom_end - data_rom;
+   \   00000008   0x....             LDR.N    R1,??DataTable1_2
+   \   0000000A   0x....             LDR.N    R0,??DataTable1_3
+   \   0000000C   0x1A42             SUBS     R2,R0,R1
+    110          #endif
+    111          
+    112              if (data_ram != data_rom)
+   \   0000000E   0x....             LDR.N    R0,??DataTable1_4
+   \   00000010   0x4288             CMP      R0,R1
+   \   00000012   0xBF1C             ITT      NE 
+    113              {
+    114                  // Copy initialized data from ROM to RAM
+    115                  while (n)
+   \   00000014   0x2A00             CMPNE    R2,#+0
+    116                  {
+    117                      *data_ram++ = *data_rom++;
+   \   00000016   0x.... 0x....      BLNE     __aeabi_memcpy
+    118                      n--;
+    119                  }
+    120              }
+    121          
+    122          // Get the addresses for the .bss section (zero-initialized data)
+    123          #if defined(__GNUC__)
+    124              extern char __START_BSS[];
+    125              extern char __END_BSS[];
+    126              bss_start = (uint8_t *)__START_BSS;
+    127              bss_end = (uint8_t *)__END_BSS;
+    128          #elif(defined(__ICCARM__))
+    129              bss_start = __section_begin(".bss");
+    130              bss_end = __section_end(".bss");
+    131          #endif
+    132          
+    133              // Clear the zero-initialized data section
+    134              n = bss_end - bss_start;
+   \   0000001A   0x....             LDR.N    R0,??DataTable1_5
+   \   0000001C   0x....             LDR.N    R1,??DataTable1_6
+   \   0000001E   0x1A09             SUBS     R1,R1,R0
+    135              while (n)
+   \   00000020   0xBF18             IT       NE 
+    136              {
+    137                  *bss_start++ = 0;
+   \   00000022   0x.... 0x....      BLNE     __aeabi_memclr
+    138                  n--;
+    139              }
+    140          
+    141          #if defined(USB_STACK_BM)
+    142          // Get the addresses for the USBGlobal section (zero-initialized data)
+    143          #if (defined(__ICCARM__))
+    144              uint8_t *usbGlobal_start = __section_begin("USBGlobal");
+    145              uint8_t *usbGlobal_end = __section_end("USBGlobal");
+    146          #elif(defined(__GNUC__))
+    147              extern uint8_t __START_USBGLOBAL[];
+    148              extern uint8_t __END_USBGLOBAL[];
+    149              uint8_t *usbGlobal_start = (uint8_t *)__START_USBGLOBAL;
+    150              uint8_t *usbGlobal_end = (uint8_t *)__END_USBGLOBAL;
+    151          #endif
+    152          
+    153              // Clear the zero-initialized data section
+    154              n = usbGlobal_end - usbGlobal_start;
+    155              while (n)
+    156              {
+    157                  *usbGlobal_start++ = 0;
+    158                  n--;
+    159              }
+    160          #endif // #if defined(USB_STACK_BM)
+    161          
+    162          /* Get addresses for any code sections that need to be copied from ROM to RAM.
+    163           * The IAR tools have a predefined keyword that can be used to mark individual
+    164           * functions for execution from RAM. Add "__ramfunc" before the return type in
+    165           * the function prototype for any routines you need to execute from RAM instead
+    166           * of ROM. ex: __ramfunc void foo(void);
+    167           */
+    168          #if (defined(__ICCARM__))
+    169              uint8_t *code_relocate_ram = __section_begin("CodeRelocateRam");
+    170              uint8_t *code_relocate = __section_begin("CodeRelocate");
+    171              uint8_t *code_relocate_end = __section_end("CodeRelocate");
+    172          
+    173              // Copy functions from ROM to RAM
+    174              n = code_relocate_end - code_relocate;
+   \   00000026   0x....             LDR.N    R1,??DataTable1_7
+   \   00000028   0x....             LDR.N    R0,??DataTable1_8
+   \   0000002A   0x1A42             SUBS     R2,R0,R1
+    175              while (n)
+   \   0000002C   0xD004             BEQ.N    ??init_data_bss_0
+    176              {
+    177                  *code_relocate_ram++ = *code_relocate++;
+   \   0000002E   0xE8BD 0x4008      POP      {R3,LR}
+   \   00000032   0x....             LDR.N    R0,??DataTable1_9
+   \   00000034   0x.... 0x....      B.W      __aeabi_memcpy
+    178                  n--;
+    179              }
+    180          #endif
+    181          #endif /* !__CC_ARM && !__ICCARM__*/
+    182          }
+   \                     ??init_data_bss_0: (+1)
+   \   00000038   0xBD01             POP      {R0,PC}          ;; return
+    183          
+
+   \                                 In section .text, align 2, keep-with-next
+    184          void init_interrupts(void)
+    185          {
+    186              // Clear any IRQs that may be enabled, we only want the IRQs we enable to be active
+    187              NVIC_ClearEnabledIRQs();
+   \                     init_interrupts: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable1_10  ;; 0xe000e180
+   \   00000002   0xF04F 0x31FF      MOV      R1,#-1
+   \   00000006   0x6001             STR      R1,[R0, #+0]
+   \   00000008   0x6041             STR      R1,[R0, #+4]
+   \   0000000A   0x6081             STR      R1,[R0, #+8]
+   \   0000000C   0x60C1             STR      R1,[R0, #+12]
+   \   0000000E   0x6101             STR      R1,[R0, #+16]
+   \   00000010   0x6141             STR      R1,[R0, #+20]
+   \   00000012   0x6181             STR      R1,[R0, #+24]
+   \   00000014   0x61C1             STR      R1,[R0, #+28]
+    188          
+    189              // Clear any pending IRQs that may have been set
+    190              NVIC_ClearAllPendingIRQs();
+   \   00000016   0x....             LDR.N    R0,??DataTable1_11  ;; 0xe000e280
+   \   00000018   0x6001             STR      R1,[R0, #+0]
+   \   0000001A   0x6041             STR      R1,[R0, #+4]
+   \   0000001C   0x6081             STR      R1,[R0, #+8]
+   \   0000001E   0x60C1             STR      R1,[R0, #+12]
+   \   00000020   0x6101             STR      R1,[R0, #+16]
+   \   00000022   0x6141             STR      R1,[R0, #+20]
+   \   00000024   0x6181             STR      R1,[R0, #+24]
+   \   00000026   0x61C1             STR      R1,[R0, #+28]
+    191          }
+   \   00000028   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \   00000000   0xE000ED08         DC32     0xe000ed08
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \   00000000   0x........         DC32     SFB(`.intvec`)
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \   00000000   0x........         DC32     SFB(`.data_init`)
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_3:
+   \   00000000   0x........         DC32     SFE(`.data_init`)
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_4:
+   \   00000000   0x........         DC32     SFB(`.data`)
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_5:
+   \   00000000   0x........         DC32     SFB(`.bss`)
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_6:
+   \   00000000   0x........         DC32     SFE(`.bss`)
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_7:
+   \   00000000   0x........         DC32     SFB(CodeRelocate)
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_8:
+   \   00000000   0x........         DC32     SFE(CodeRelocate)
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_9:
+   \   00000000   0x........         DC32     SFB(CodeRelocateRam)
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_10:
+   \   00000000   0xE000E180         DC32     0xe000e180
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_11:
+   \   00000000   0xE000E280         DC32     0xe000e280
+    192          
+    193          ////////////////////////////////////////////////////////////////////////////////
+    194          // EOF
+    195          ////////////////////////////////////////////////////////////////////////////////
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   init_data_bss
+         8   -> __aeabi_memclr
+         0   -> __aeabi_memcpy
+         8   -> __aeabi_memcpy
+       0   init_interrupts
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_10
+       4  ??DataTable1_11
+       4  ??DataTable1_2
+       4  ??DataTable1_3
+       4  ??DataTable1_4
+       4  ??DataTable1_5
+       4  ??DataTable1_6
+       4  ??DataTable1_7
+       4  ??DataTable1_8
+       4  ??DataTable1_9
+      58  init_data_bss
+      42  init_interrupts
+
+ 
+ 148 bytes in section .text
+ 
+ 148 bytes of CODE memory
+
+Errors: none
+Warnings: none

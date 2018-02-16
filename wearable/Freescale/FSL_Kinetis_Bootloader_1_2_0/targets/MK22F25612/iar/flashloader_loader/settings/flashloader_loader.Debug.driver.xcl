@@ -1,0 +1,27 @@
+"--endian=little" 
+
+"--cpu=Cortex-M4F" 
+
+"--fpu=VFPv4" 
+
+"-p" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\CONFIG\debugger\Freescale\MK22FN256xxx12.ddf" 
+
+"--semihosting=none" 
+
+"--device=MK22FN256xxx12" 
+
+"--pemicro_interface_type=OpenSDA" 
+
+"--pemicro_reset_delay=" 
+
+"--drv_interface_speed=5000" 
+
+"--drv_communication=USB1" 
+
+"--drv_interface=SWD" 
+
+
+
+

@@ -1,0 +1,14 @@
+JLinkLog.txt
+*.build_log.htm
+**/_build/*.d
+**/_build/*.lst
+**/_build/*.o
+**/_build/*.dep
+**/_build/*.axf
+**/_build/*.crf
+**/_build/*.hex
+**/_build/*.htm
+**/_build/*.lnp
+**/_build/*.map
+**/_build/*.crf
+*.uvguix.*

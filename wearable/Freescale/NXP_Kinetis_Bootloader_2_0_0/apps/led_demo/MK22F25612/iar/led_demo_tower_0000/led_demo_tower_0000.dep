@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>192632512</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\debug\obj\milliseconds_delay.o</file>
+      <file>$PROJ_DIR$\debug\obj\startup.o</file>
+      <file>$PROJ_DIR$\debug\obj\system_MK22F25612.o</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\targets\MK22F25612\src\startup\system_MK22F25612.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\startup\crt0.s</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\targets\MK22F25612\src\startup\iar\startup_MK22F25612.s</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\startup\startup.c</file>
+      <file>$PROJ_DIR$\..\..\src\main.c</file>
+      <file>$PROJ_DIR$\..\..\..\src\milliseconds_delay.c</file>
+      <file>$PROJ_DIR$\debug\obj\main.o</file>
+      <file>$PROJ_DIR$\output\Debug\led_demo_tower_0000.elf</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\platform\CMSIS\Include\core_cm4.h</file>
+      <file>$PROJ_DIR$\debug\obj\led_demo_tower_0000.pbd</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\platform\devices\MK22F25612\MK22F25612.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\platform\devices\MK22F25612\fsl_device_registers.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\platform\devices\MK22F25612\MK22F25612_features.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\debug\obj\main.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\startup_MK22F25612.o</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\platform\CMSIS\Include\core_cmFunc.h</file>
+      <file>$PROJ_DIR$\debug\obj\milliseconds_delay.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\..\..\..\src\milliseconds_delay.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\platform\devices\MK22F25612\system_MK22F25612.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\platform\CMSIS\Include\core_cmSimd.h</file>
+      <file>$PROJ_DIR$\debug\obj\system_MK22F25612.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\platform\CMSIS\Include\core_cmInstr.h</file>
+      <file>$PROJ_DIR$\debug\obj\crt0.o</file>
+      <file>$PROJ_DIR$\debug\obj\startup.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\targets\MK22F25612\src\startup\system_MK22F25612.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\targets\MK22F25612\src\target_config.h</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 10</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\targets\MK22F25612\src\startup\system_MK22F25612.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 2</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21 27 35 15 13 26 28 14 36 31 25 37 38 18 23 17 11 32 29 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\src\startup\crt0.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 33</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\targets\MK22F25612\src\startup\iar\startup_MK22F25612.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 20</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\src\startup\startup.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 34</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 1</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 13 26 21 27 25 23 18 24 17 11 32 29 16 14 36 35 15 31 28</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\src\milliseconds_delay.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 0</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27 26 17 11 21 23 18 24 13 25 32 29 16 14 36 35 15 31 28</file>
+        </tool>
+      </inputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

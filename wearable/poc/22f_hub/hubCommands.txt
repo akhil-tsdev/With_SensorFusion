@@ -1,0 +1,32 @@
+The following is for testing hub module.
+Setting the password and WPA2 keys for connecting.
+
+
+
+wmiconfig --p Kinetis22F
+
+
+wmiconfig --wpa 2 CCMP CCMP
+
+
+
+wmiconfig --connect TS
+
+
+wmiconfig --settxpower 32
+
+
+
+
+wmiconfig --ipdhcp
+
+
+wmiconfig --ipconfig
+
+
+
+
+//starttx <port> will start listening to connection
+starttx
+
+

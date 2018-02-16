@@ -1,0 +1,564 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       16/Aug/2016  15:48:51
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\src\clock_config_K22F512.c
+#    Command line =  
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\src\clock_config_K22F512.c"
+#        -D DEBUG -D NDEBUG -D USB_STACK_BM -D CPU_MK22FN512VDC12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D FREEDOM -D BL_TARGET_FLASH -lC
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\obj"
+#        --no_unroll --debug --endian=little --cpu=Cortex-M4 -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform/devices/MK22F51212\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/autobaud\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/osa\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/device\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/device/class\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/bm_usb\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform/devices\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform/CMSIS/Include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/drivers\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/drivers/common\"
+#        -Ohz --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\list\clock_config_K22F512.lst
+#    Object file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\obj\clock_config_K22F512.o
+#
+###############################################################################
+
+C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\src\clock_config_K22F512.c
+      1          /*
+      2           * Copyright (c) 2014-2015, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          
+     31          #include "bootloader_common.h"
+     32          #include "bootloader/bl_context.h"
+     33          #include "property/property.h"
+     34          #include "fsl_device_registers.h"
+     35          #include "utilities/fsl_assert.h"
+     36          
+     37          ////////////////////////////////////////////////////////////////////////////////
+     38          // Definitions
+     39          ////////////////////////////////////////////////////////////////////////////////
+     40          
+     41          // Clock mode types
+     42          typedef enum _target_clock_mode
+     43          {
+     44              kClockMode_FEI = 0,
+     45              kClockMode_FEE = 1,
+     46              kClockMode_Default = kClockMode_FEI,
+     47          } target_clock_mode_t;
+     48          
+     49          ////////////////////////////////////////////////////////////////////////////////
+     50          // Prototypes
+     51          ////////////////////////////////////////////////////////////////////////////////
+     52          
+     53          // This function implements clock mode switch between FEI and PEE mode used in this bootloader
+     54          void clock_mode_switch(const target_clock_mode_t currentMode, const target_clock_mode_t expectedMode);
+     55          
+     56          ////////////////////////////////////////////////////////////////////////////////
+     57          // Code
+     58          ////////////////////////////////////////////////////////////////////////////////
+     59          
+     60          // See bootloader_common.h for documentation on this function.
+
+   \                                 In section .text, align 2, keep-with-next
+     61          void configure_clocks(bootloader_clock_option_t option)
+     62          {
+   \                     configure_clocks: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+     63          #if BL_TARGET_FLASH
+     64          
+     65              static target_clock_mode_t s_currentClockMode = kClockMode_FEI;
+     66              static uint32_t s_defaultClockDivider;
+     67          
+     68              if (option == kClockOption_EnterBootloader)
+   \   00000004   0x....             LDR.N    R4,??DataTable1
+   \   00000006   0x....             LDR.N    R5,??DataTable1_1  ;; 0x40048044
+   \   00000008   0x4601             MOV      R1,R0
+   \   0000000A   0x7820             LDRB     R0,[R4, #+0]
+   \   0000000C   0x000A             MOVS     R2,R1
+   \   0000000E   0xD16F             BNE.N    ??configure_clocks_0
+     69              {
+     70                  s_defaultClockDivider = SIM->CLKDIV1;
+   \   00000010   0x6829             LDR      R1,[R5, #+0]
+   \   00000012   0x6061             STR      R1,[R4, #+4]
+     71          
+     72                  // General procedure to be implemented:
+     73                  // 1. Read clock flags and divider from bootloader config in property store
+     74                  bootloader_configuration_data_t *config = &g_bootloaderContext.propertyInterface->store->configurationData;
+   \   00000014   0x....             LDR.N    R1,??DataTable1_2
+   \   00000016   0x6889             LDR      R1,[R1, #+8]
+   \   00000018   0x6909             LDR      R1,[R1, #+16]
+   \   0000001A   0xF101 0x0268      ADD      R2,R1,#+104
+     75                  uint8_t options = config->clockFlags;
+     76          
+     77                  // Check if the USB HID peripheral is enabled. If it is enabled, we always
+     78                  // use the 48MHz IRC.
+     79                  bool isUsbEnabled = config->enabledPeripherals & kPeripheralType_USB_HID;
+   \   0000001E   0x7C11             LDRB     R1,[R2, #+16]
+     80          
+     81                  // 2. If NOT High Speed and USB isn't enabled, do nothing (use reset clock config)
+     82                  if ((options & kClockFlag_HighSpeed) && (!isUsbEnabled))
+   \   00000020   0x7F16             LDRB     R6,[R2, #+28]
+   \   00000022   0x0909             LSRS     R1,R1,#+4
+   \   00000024   0xF006 0x0601      AND      R6,R6,#0x1
+   \   00000028   0xF001 0x0301      AND      R3,R1,#0x1
+   \   0000002C   0xF083 0x0701      EOR      R7,R3,#0x1
+   \   00000030   0x423E             TST      R6,R7
+   \   00000032   0x....             LDR.N    R1,??DataTable1_3
+   \   00000034   0xD008             BEQ.N    ??configure_clocks_1
+     83                  {
+     84                      // Get actual Core clock.
+     85                      SystemCoreClock =
+     86                          kDefaultClock / (((SIM->CLKDIV1 & SIM_CLKDIV1_OUTDIV1_MASK) >> SIM_CLKDIV1_OUTDIV1_SHIFT) + 1);
+   \   00000036   0x682A             LDR      R2,[R5, #+0]
+   \   00000038   0x0F12             LSRS     R2,R2,#+28
+   \   0000003A   0xF04F 0x70A0      MOV      R0,#+20971520
+   \   0000003E   0x1C52             ADDS     R2,R2,#+1
+   \   00000040   0xFBB0 0xF0F2      UDIV     R0,R0,R2
+   \   00000044   0x6008             STR      R0,[R1, #+0]
+     87          
+     88                      // High speed flag is set (meaning disabled), so just use default clocks.
+     89                      return;
+   \   00000046   0xE05A             B.N      ??configure_clocks_2
+     90                  }
+     91          
+     92                  // 3. Set OUTDIV1 based on divider in config. OUTDIV4 starts out at /1.
+     93                  // The divider values are masked by the maximum bits per divider.
+     94                  uint32_t div1 = ((~config->clockDivider) & (SIM_CLKDIV1_OUTDIV1_MASK >> SIM_CLKDIV1_OUTDIV1_SHIFT)) + 1;
+   \                     ??configure_clocks_1: (+1)
+   \   00000048   0x7F52             LDRB     R2,[R2, #+29]
+   \   0000004A   0x43D2             MVNS     R2,R2
+   \   0000004C   0xF002 0x020F      AND      R2,R2,#0xF
+   \   00000050   0x1C52             ADDS     R2,R2,#+1
+     95          
+     96                  // 4. Get MCGOUTCLK
+     97                  uint32_t McgOutClk = kHIRC;
+     98          
+     99                  // 5. Keep core clock up kMinCoreClockWithUsbSupport if usb is supported.
+    100                  uint32_t freq = McgOutClk;
+    101                  // If USB is enabled, the CPU clock must not be allowed to go below 20 MHz
+    102                  if (isUsbEnabled)
+   \   00000052   0xB90B             CBNZ.N   R3,??configure_clocks_3
+   \   00000054   0xE006             B.N      ??configure_clocks_4
+    103                  {
+    104                      while ((freq / div1) < kMinCoreClockWithUsbSupport)
+    105                      {
+    106                          --div1;
+   \                     ??configure_clocks_5: (+1)
+   \   00000056   0x1E52             SUBS     R2,R2,#+1
+    107                      }
+   \                     ??configure_clocks_3: (+1)
+   \   00000058   0x....             LDR.N    R3,??DataTable1_4  ;; 0x2dc6c00
+   \   0000005A   0x....             LDR.N    R6,??DataTable1_5  ;; 0x1312d00
+   \   0000005C   0xFBB3 0xF3F2      UDIV     R3,R3,R2
+   \   00000060   0x42B3             CMP      R3,R6
+   \   00000062   0xD3F8             BCC.N    ??configure_clocks_5
+    108                  }
+    109          
+    110                  // 6. Keep core clock below kMaxCoreClock
+    111                  while ((freq / div1) > kMaxCoreClock)
+   \                     ??configure_clocks_4: (+1)
+   \   00000064   0x....             LDR.N    R3,??DataTable1_4  ;; 0x2dc6c00
+   \   00000066   0x....             LDR.N    R6,??DataTable1_6  ;; 0x7270e01
+   \   00000068   0xFBB3 0xF3F2      UDIV     R3,R3,R2
+   \   0000006C   0x42B3             CMP      R3,R6
+   \   0000006E   0xBF28             IT       CS 
+   \   00000070   0x1C52             ADDCS    R2,R2,#+1
+    112                  {
+    113                      ++div1;
+   \   00000072   0xD2F7             BCS.N    ??configure_clocks_4
+    114                  }
+    115          
+    116                  assert((div1 >= kDivider_Min) && (div1 <= kDivider_Max));
+    117          
+    118                  uint32_t div2 = div1;
+   \   00000074   0x4694             MOV      R12,R2
+    119                  uint32_t div3 = div1;
+   \   00000076   0x4616             MOV      R6,R2
+    120                  uint32_t div4 = div1;
+   \   00000078   0x4617             MOV      R7,R2
+    121          
+    122                  // 7. Keep bus freq below max.
+    123                  //
+    124                  // The bus clock is divided by OUTDIV2:
+    125                  //      MCGOUTCLK -> OUTDIV2 -> bus_clk
+    126                  freq = McgOutClk;
+   \   0000007A   0x.... 0x....      LDR.W    R8,??DataTable1_7  ;; 0x3938701
+   \   0000007E   0xE001             B.N      ??configure_clocks_6
+    127                  while ((freq / div2) > kMaxBusClock)
+    128                  {
+    129                      // Increase bus clock divider.
+    130                      ++div2;
+   \                     ??configure_clocks_7: (+1)
+   \   00000080   0xF10C 0x0C01      ADD      R12,R12,#+1
+    131                  }
+   \                     ??configure_clocks_6: (+1)
+   \   00000084   0x.... 0x....      LDR.W    LR,??DataTable1_4  ;; 0x2dc6c00
+   \   00000088   0xFBBE 0xFEFC      UDIV     LR,LR,R12
+   \   0000008C   0x45C6             CMP      LR,R8
+   \   0000008E   0xD2F7             BCS.N    ??configure_clocks_7
+    132                  assert((div2 >= kDivider_Min) && (div2 <= kDivider_Max));
+    133          
+    134                  // 8. Keep FlexBus freq below max.
+    135                  //
+    136                  // The FlexBus clock is divided by OUTDIV3:
+    137                  // MCGOUTCLK -> OUTDIV3 -> flexbus_clk
+    138                  freq = McgOutClk;
+    139                  while ((freq / div3) > kMaxFlexBusClock)
+   \                     ??configure_clocks_8: (+1)
+   \   00000090   0x.... 0x....      LDR.W    LR,??DataTable1_4  ;; 0x2dc6c00
+   \   00000094   0x.... 0x....      LDR.W    R8,??DataTable1_8  ;; 0x2faf081
+   \   00000098   0xFBBE 0xFEF6      UDIV     LR,LR,R6
+   \   0000009C   0x45C6             CMP      LR,R8
+   \   0000009E   0xBF28             IT       CS 
+   \   000000A0   0x1C76             ADDCS    R6,R6,#+1
+    140                  {
+    141                      // Increase flexbus clock divider.
+    142                      ++div3;
+   \   000000A2   0xD2F5             BCS.N    ??configure_clocks_8
+   \   000000A4   0xE000             B.N      ??configure_clocks_9
+    143                  }
+    144                  assert((div3 >= kDivider_Min) && (div3 <= kDivider_Max));
+    145          
+    146                  // 9. Keep flash freq below max.
+    147                  //
+    148                  // The flash clock is diveded by OUTDIV4:
+    149                  //      MCGOUTCLK -> OUTDIV4 ->flash_clk
+    150                  freq = McgOutClk;
+    151                  while ((freq / div4) > kMaxFlashClock)
+    152                  {
+    153                      // Increase bus/flash clock divider.
+    154                      ++div4;
+   \                     ??configure_clocks_10: (+1)
+   \   000000A6   0x1C7F             ADDS     R7,R7,#+1
+    155                  }
+   \                     ??configure_clocks_9: (+1)
+   \   000000A8   0x.... 0x....      LDR.W    LR,??DataTable1_4  ;; 0x2dc6c00
+   \   000000AC   0x.... 0x....      LDR.W    R8,??DataTable1_9  ;; 0x17d7841
+   \   000000B0   0xFBBE 0xFEF7      UDIV     LR,LR,R7
+   \   000000B4   0x45C6             CMP      LR,R8
+   \   000000B6   0xD2F6             BCS.N    ??configure_clocks_10
+    156                  assert((div4 >= kDivider_Min) && (div4 <= kDivider_Max));
+    157          
+    158                  if ((div1 == 1) && ((div2 > 8) || (div3 > 8) || (div4 > 8)))
+   \   000000B8   0x2A01             CMP      R2,#+1
+   \   000000BA   0xD105             BNE.N    ??configure_clocks_11
+   \   000000BC   0xF1BC 0x0F09      CMP      R12,#+9
+   \   000000C0   0xBF3C             ITT      CC 
+   \   000000C2   0x2E09             CMPCC    R6,#+9
+   \   000000C4   0x2F09             CMPCC    R7,#+9
+   \   000000C6   0xD21A             BCS.N    ??configure_clocks_2
+    159                  {
+    160                      return;
+    161                  }
+    162          
+    163                  // 9. Now set the dividers
+    164                  SIM->CLKDIV1 = SIM_CLKDIV1_OUTDIV1(div1 - 1) | SIM_CLKDIV1_OUTDIV1(div1 - 1) | SIM_CLKDIV1_OUTDIV2(div3 - 1) |
+    165                                 SIM_CLKDIV1_OUTDIV4(div4 - 1); /* Update system prescalers */
+   \                     ??configure_clocks_11: (+1)
+   \   000000C8   0x1E76             SUBS     R6,R6,#+1
+   \   000000CA   0x0636             LSLS     R6,R6,#+24
+   \   000000CC   0x1E52             SUBS     R2,R2,#+1
+   \   000000CE   0xF006 0x6670      AND      R6,R6,#0xF000000
+   \   000000D2   0xEA46 0x7202      ORR      R2,R6,R2, LSL #+28
+   \   000000D6   0x1E7E             SUBS     R6,R7,#+1
+   \   000000D8   0x0436             LSLS     R6,R6,#+16
+   \   000000DA   0xF406 0x2670      AND      R6,R6,#0xF0000
+   \   000000DE   0x4332             ORRS     R2,R6,R2
+   \   000000E0   0x602A             STR      R2,[R5, #+0]
+    166          
+    167                  // 10. Update SystemCoreClock global.
+    168                  SystemCoreClock = McgOutClk / div1;
+   \   000000E2   0x600B             STR      R3,[R1, #+0]
+    169          
+    170                  clock_mode_switch(s_currentClockMode, kClockMode_FEE);
+   \   000000E4   0x2101             MOVS     R1,#+1
+   \   000000E6   0x.... 0x....      BL       clock_mode_switch
+    171                  s_currentClockMode = kClockMode_FEE;
+   \   000000EA   0x2001             MOVS     R0,#+1
+   \   000000EC   0x7020             STRB     R0,[R4, #+0]
+   \   000000EE   0xE006             B.N      ??configure_clocks_2
+    172              }
+    173              else if (option == kClockOption_ExitBootloader)
+   \                     ??configure_clocks_0: (+1)
+   \   000000F0   0x2901             CMP      R1,#+1
+   \   000000F2   0xD104             BNE.N    ??configure_clocks_2
+    174              {
+    175                  // Restore from FEE mode to FEI mode
+    176                  clock_mode_switch(s_currentClockMode, kClockMode_FEI);
+   \   000000F4   0x2100             MOVS     R1,#+0
+   \   000000F6   0x.... 0x....      BL       clock_mode_switch
+    177          
+    178                  // Restore clock divider
+    179                  SIM->CLKDIV1 = s_defaultClockDivider;
+   \   000000FA   0x6860             LDR      R0,[R4, #+4]
+   \   000000FC   0x6028             STR      R0,[R5, #+0]
+    180              }
+    181          
+    182          #endif // BL_TARGET_FLASH
+    183          }
+   \                     ??configure_clocks_2: (+1)
+   \   000000FE   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+
+   \                                 In section .bss, align 4
+   \                     `configure_clocks::s_currentClockMode`:
+   \   00000000                      DS8 1
+   \   00000001                      DS8 3
+   \   00000004                      DS8 4
+    184          
+
+   \                                 In section .text, align 2, keep-with-next
+    185          void clock_mode_switch(const target_clock_mode_t currentMode, const target_clock_mode_t expectedMode)
+    186          {
+    187              // Note: here only implements clock switch between FEI and FEE,
+    188              // The other modes are not supported.
+    189              assert(currentMode == kClockMode_FEE || currentMode == kClockMode_FEI);
+    190              assert(expectedMode == kClockMode_FEE || expectedMode == kClockMode_FEI);
+    191          
+    192              if (currentMode == expectedMode)
+   \                     clock_mode_switch: (+1)
+   \   00000000   0x4288             CMP      R0,R1
+   \   00000002   0xD030             BEQ.N    ??clock_mode_switch_0
+    193              {
+    194                  return;
+    195              }
+    196          
+    197              if (expectedMode == kClockMode_FEE)
+   \   00000004   0x2901             CMP      R1,#+1
+   \   00000006   0x....             LDR.N    R0,??DataTable1_10  ;; 0x40064000
+   \   00000008   0xD11B             BNE.N    ??clock_mode_switch_1
+    198              {
+    199                  uint8_t tmp;
+    200                  /* Switch to FEE mode */
+    201                  tmp = MCG->C2;
+   \   0000000A   0x7841             LDRB     R1,[R0, #+1]
+    202                  tmp &= (uint8_t)~MCG_C2_RANGE_MASK;
+    203                  tmp |= MCG_C2_RANGE(2);
+    204                  MCG->C2 = tmp; /* MCG_C2: RANGE = 2 */
+   \   0000000C   0xF001 0x01CF      AND      R1,R1,#0xCF
+   \   00000010   0xF041 0x0120      ORR      R1,R1,#0x20
+   \   00000014   0x7041             STRB     R1,[R0, #+1]
+    205          
+    206                  tmp = MCG->C1;
+   \   00000016   0x7801             LDRB     R1,[R0, #+0]
+    207                  tmp &= (uint8_t) ~(MCG_C1_FRDIV_MASK | MCG_C1_IREFS_MASK);
+    208                  tmp |= MCG_C1_FRDIV(6);
+    209                  MCG->C1 = tmp; // FRDIV=6, RANGE=2, divide IRC48M with 1280, switch to external reference clock.
+   \   00000018   0xF001 0x01C3      AND      R1,R1,#0xC3
+   \   0000001C   0xF041 0x0130      ORR      R1,R1,#0x30
+   \   00000020   0x7001             STRB     R1,[R0, #+0]
+    210          
+    211                  tmp = MCG->C4;
+   \   00000022   0x78C1             LDRB     R1,[R0, #+3]
+    212                  tmp &= (uint8_t)~MCG_C4_DRST_DRS_MASK;
+    213                  tmp |= MCG_C4_DRST_DRS(1);
+    214                  MCG->C4 = tmp; // Multiply with 1280, MCGOUTCLK is 48Mhz
+   \   00000024   0xF001 0x019F      AND      R1,R1,#0x9F
+   \   00000028   0xF041 0x0120      ORR      R1,R1,#0x20
+   \   0000002C   0x70C1             STRB     R1,[R0, #+3]
+    215          
+    216                  tmp = MCG->C7;
+   \   0000002E   0x7B01             LDRB     R1,[R0, #+12]
+    217                  tmp &= (uint8_t)~MCG_C7_OSCSEL_MASK;
+    218                  tmp |= MCG_C7_OSCSEL(2);
+    219                  MCG->C7 = tmp; // Select IRC48M as Oscillator.
+   \   00000030   0xF001 0x01FC      AND      R1,R1,#0xFC
+   \   00000034   0xF041 0x0102      ORR      R1,R1,#0x2
+   \   00000038   0x7301             STRB     R1,[R0, #+12]
+    220          
+    221                  while (MCG->S & MCG_S_IREFST_MASK)
+   \                     ??clock_mode_switch_2: (+1)
+   \   0000003A   0x7981             LDRB     R1,[R0, #+6]
+   \   0000003C   0x06C9             LSLS     R1,R1,#+27
+   \   0000003E   0xD4FC             BMI.N    ??clock_mode_switch_2
+   \   00000040   0x4770             BX       LR
+    222                      ; // Wait until external reference clock is ready.
+    223              }
+    224              else if (expectedMode == kClockMode_FEI)
+   \                     ??clock_mode_switch_1: (+1)
+   \   00000042   0xB981             CBNZ.N   R1,??clock_mode_switch_0
+    225              {
+    226                  MCG->C1 |= MCG_C1_IREFS_MASK; // Switch to internal reference clock.
+   \   00000044   0x7801             LDRB     R1,[R0, #+0]
+   \   00000046   0xF041 0x0104      ORR      R1,R1,#0x4
+   \   0000004A   0x7001             STRB     R1,[R0, #+0]
+    227                  while (!(MCG->S & MCG_S_IREFST_MASK))
+   \                     ??clock_mode_switch_3: (+1)
+   \   0000004C   0x7981             LDRB     R1,[R0, #+6]
+   \   0000004E   0x06C9             LSLS     R1,R1,#+27
+   \   00000050   0xD5FC             BPL.N    ??clock_mode_switch_3
+    228                      ; // Wait until internal reference clock is ready.
+    229          
+    230                  // Restore registers to default value out of reset.
+    231                  MCG->C1 = 0x04U;
+   \   00000052   0x2104             MOVS     R1,#+4
+   \   00000054   0x7001             STRB     R1,[R0, #+0]
+    232                  MCG->C2 = 0x80U;
+   \   00000056   0x2180             MOVS     R1,#+128
+   \   00000058   0x7041             STRB     R1,[R0, #+1]
+    233          
+    234                  MCG->C4 &= (uint8_t)MCG_C4_DRST_DRS_MASK;
+   \   0000005A   0x78C1             LDRB     R1,[R0, #+3]
+   \   0000005C   0xF001 0x0160      AND      R1,R1,#0x60
+   \   00000060   0x70C1             STRB     R1,[R0, #+3]
+    235                  MCG->C7 = 0;
+   \   00000062   0x2100             MOVS     R1,#+0
+   \   00000064   0x7301             STRB     R1,[R0, #+12]
+    236              }
+    237          }
+   \                     ??clock_mode_switch_0: (+1)
+   \   00000066   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \   00000000   0x........         DC32     `configure_clocks::s_currentClockMode`
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \   00000000   0x40048044         DC32     0x40048044
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \   00000000   0x........         DC32     g_bootloaderContext
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_3:
+   \   00000000   0x........         DC32     SystemCoreClock
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_4:
+   \   00000000   0x02DC6C00         DC32     0x2dc6c00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_5:
+   \   00000000   0x01312D00         DC32     0x1312d00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_6:
+   \   00000000   0x07270E01         DC32     0x7270e01
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_7:
+   \   00000000   0x03938701         DC32     0x3938701
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_8:
+   \   00000000   0x02FAF081         DC32     0x2faf081
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_9:
+   \   00000000   0x017D7841         DC32     0x17d7841
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_10:
+   \   00000000   0x40064000         DC32     0x40064000
+    238          
+    239          ////////////////////////////////////////////////////////////////////////////////
+    240          // EOF
+    241          ////////////////////////////////////////////////////////////////////////////////
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   clock_mode_switch
+      24   configure_clocks
+        24   -> clock_mode_switch
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_10
+       4  ??DataTable1_2
+       4  ??DataTable1_3
+       4  ??DataTable1_4
+       4  ??DataTable1_5
+       4  ??DataTable1_6
+       4  ??DataTable1_7
+       4  ??DataTable1_8
+       4  ??DataTable1_9
+     104  clock_mode_switch
+     258  configure_clocks
+       8  s_currentClockMode
+          s_defaultClockDivider
+
+ 
+   8 bytes in section .bss
+ 406 bytes in section .text
+ 
+ 406 bytes of CODE memory
+   8 bytes of DATA memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,868 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       16/Aug/2016  15:48:55
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\bootloader\src\i2c_peripheral_interface.c
+#    Command line =  
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\bootloader\src\i2c_peripheral_interface.c"
+#        -D DEBUG -D NDEBUG -D USB_STACK_BM -D CPU_MK22FN512VDC12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D FREEDOM -D BL_TARGET_FLASH -lC
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\obj"
+#        --no_unroll --debug --endian=little --cpu=Cortex-M4 -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform/devices/MK22F51212\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/autobaud\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/osa\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/device\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/usb/device/class\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/bm_usb\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform/devices\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/platform/CMSIS/Include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/drivers\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader/../../../../src/drivers/common\"
+#        -Ohz --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\list\i2c_peripheral_interface.lst
+#    Object file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22F51212\iar\freedom_bootloader\debug\obj\i2c_peripheral_interface.o
+#
+###############################################################################
+
+C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\bootloader\src\i2c_peripheral_interface.c
+      1          /*
+      2           * Copyright (c) 2013, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          
+     31          #include "utilities/fsl_assert.h"
+     32          #include "bootloader/bl_context.h"
+     33          #include "bootloader/bl_irq_common.h"
+     34          #include "bootloader_common.h"
+     35          #include "packet/command_packet.h"
+     36          #include "i2c/fsl_i2c.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void I2C_Enable(I2C_Type *, bool)
+   \                     I2C_Enable: (+1)
+   \   00000000   0x2900             CMP      R1,#+0
+   \   00000002   0x7881             LDRB     R1,[R0, #+2]
+   \   00000004   0xBF14             ITE      NE 
+   \   00000006   0xF041 0x0180      ORRNE    R1,R1,#0x80
+   \   0000000A   0xF001 0x017F      ANDEQ    R1,R1,#0x7F
+   \   0000000E   0x7081             STRB     R1,[R0, #+2]
+   \   00000010   0x4770             BX       LR               ;; return
+     37          #include "fsl_device_registers.h"
+     38          #include "packet/serial_packet.h"
+     39          
+     40          #if BL_CONFIG_I2C
+     41          //! @addtogroup i2c_peripheral
+     42          //! @{
+     43          
+     44          ////////////////////////////////////////////////////////////////////////////////
+     45          // Definitions
+     46          ////////////////////////////////////////////////////////////////////////////////
+     47          
+     48          // Allow the default to be overridden via the bootloader_config.h file.
+     49          #if !defined(BL_DEFAULT_I2C_SLAVE_ADDRESS)
+     50          //! @brief Default I2C slave address in 7-bit format.
+     51          #define BL_DEFAULT_I2C_SLAVE_ADDRESS (0x10)
+     52          //! @brief Secondary I2C slave address in 7-bit format.
+     53          #define BL_SECONDARY_I2C_SLAVE_ADDRESS (0x12)
+     54          #endif // BL_DEFAULT_I2C_SLAVE_ADDRESS
+     55          
+     56          //! @brief Default width of glitches to filter in nanoseconds.
+     57          enum
+     58          {
+     59              //! Width of glitches to filter in nanoseconds.
+     60              kI2CGlitchFilterWidth_ns = 50
+     61          };
+     62          
+     63          //! @brief Synchronization state between I2C ISR and read/write functions.
+     64          typedef struct _i2c_transfer_info
+     65          {
+     66              const uint8_t *writeData;                                //!< The applications data to write
+     67              volatile uint32_t bytesToTransfer;                       //!< The total number of bytes to be transmitted
+     68              void (*data_source)(uint8_t *source_byte);               // !< Callback used to get byte to transmit.
+     69              void (*data_sink)(uint8_t sink_byte, uint32_t instance); // !< Callback used to put received byte.
+     70          } i2c_transfer_info_t;
+     71          
+     72          #define I2C_EMPTY_CHAR (0x00) //!< Empty character.
+     73          
+     74          enum
+     75          {
+     76              //! Max cycles supported to set glitch filter
+     77              kI2CGlitchFilterMaxCycles = 31,
+     78          };
+     79          
+     80          ////////////////////////////////////////////////////////////////////////////////
+     81          // Prototypes
+     82          ////////////////////////////////////////////////////////////////////////////////
+     83          
+     84          //! @brief I2C slave poll for activity function
+     85          static bool i2c_poll_for_activity(const peripheral_descriptor_t *self);
+     86          //! @brief I2C slave init function
+     87          static status_t i2c_full_init(const peripheral_descriptor_t *self, serial_byte_receive_func_t function);
+     88          //! @brief I2C slave shutdown function
+     89          static void i2c_full_shutdown(const peripheral_descriptor_t *self);
+     90          //! @brief I2C slave internal init function
+     91          static void i2c_peripheral_init(uint32_t instance);
+     92          //! @brief I2C slave writing data function
+     93          status_t i2c_write(const peripheral_descriptor_t *self, const uint8_t *buffer, uint32_t byteCount);
+     94          
+     95          static void i2c_initial_data_sink(uint8_t sink_byte, uint32_t instance);
+     96          static void i2c_data_sink(uint8_t sink_byte, uint32_t instance);
+     97          static void i2c_data_source(uint8_t *source_byte);
+     98          static void i2c_set_glitch_filter_width(I2C_Type *base, uint32_t busClock_Hz, uint32_t glitchWidth_ns);
+     99          static void i2c_SlaveIRQHandler(uint32_t instance);
+    100          
+    101          ////////////////////////////////////////////////////////////////////////////////
+    102          // Variables
+    103          ////////////////////////////////////////////////////////////////////////////////
+    104          
+    105          /*!
+    106           * @brief I2C slave control interface information
+    107           */
+
+   \                                 In section .rodata, align 4, keep-with-next
+    108          const peripheral_control_interface_t g_i2cControlInterface = {
+   \                     g_i2cControlInterface:
+   \   00000000   0x........         DC32 i2c_poll_for_activity, i2c_full_init, i2c_full_shutdown, 0H
+   \              0x........   
+   \              0x........   
+   \              0x00000000   
+    109              .pollForActivity = i2c_poll_for_activity, .init = i2c_full_init, .shutdown = i2c_full_shutdown, .pump = 0
+    110          };
+    111          
+    112          /*!
+    113           * @brief I2C slave byte interface information
+    114           */
+
+   \                                 In section .rodata, align 4, keep-with-next
+    115          const peripheral_byte_inteface_t g_i2cByteInterface = {.init = NULL, .write = i2c_write };
+   \                     g_i2cByteInterface:
+   \   00000000   0x00000000         DC32 0H, i2c_write
+   \              0x........   
+    116          
+    117          //! @brief Global state for the I2C slave peripheral interface.
+    118          static i2c_transfer_info_t s_i2cInfo = {
+    119              .writeData = 0, .bytesToTransfer = 0, .data_source = i2c_data_source, .data_sink = i2c_initial_data_sink
+    120          };
+    121          
+    122          //! @brief Global state for the I2C slave peripheral interface.
+    123          static bool s_i2cActivity[FSL_FEATURE_SOC_I2C_COUNT] = { false };
+
+   \                                 In section .text, align 4, keep-with-next
+    124          const static uint32_t g_i2cBaseAddr[] = I2C_BASE_ADDRS;
+   \                     g_i2cBaseAddr:
+   \   00000000   0x40066000         DC32 1074159616, 1074163712
+   \              0x40067000   
+
+   \                                 In section .data, align 4
+   \                     s_i2cActivity:
+   \   00000000   0x00 0x00          DC8 0, 0
+   \   00000002   0x00 0x00          DC8 0, 0
+   \   00000004   0x00000000         DC32 0H, 0, i2c_data_source, i2c_initial_data_sink
+   \              0x00000000   
+   \              0x........   
+   \              0x........   
+   \   00000014   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+    125          static bool s_i2cIntialized[FSL_FEATURE_SOC_I2C_COUNT] = { false };
+    126          
+    127          /*!
+    128           * @brief I2C slave receiving data call back function
+    129           */
+    130          static serial_byte_receive_func_t s_i2c_app_data_sink_callback;
+    131          
+    132          ////////////////////////////////////////////////////////////////////////////////
+    133          // Code
+    134          ////////////////////////////////////////////////////////////////////////////////
+    135          
+    136          #if !defined(BL_FEATURE_I2C_OPTIMIZE) || USE_ONLY_I2C(0)
+    137          //! @brief Implementation of I2C0 handler named in startup code.
+    138          //!
+    139          //! Passes instance to generic I2C IRQ handler.
+
+   \                                 In section .text, align 2, keep-with-next
+    140          void I2C0_IRQHandler(void)
+    141          {
+    142              i2c_SlaveIRQHandler(0);
+   \                     I2C0_IRQHandler: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x....             B.N      i2c_SlaveIRQHandler
+    143          }
+    144          #endif // !defined(BL_FEATURE_I2C_OPTIMIZE) || USE_ONLY_I2C(0)
+    145          
+    146          #if (!defined(BL_FEATURE_I2C_OPTIMIZE) || USE_ONLY_I2C(1)) && (FSL_FEATURE_SOC_I2C_COUNT > 1)
+    147          //! @brief Implementation of I2C1 handler named in startup code.
+    148          //!
+    149          //! Passes instance to generic I2C IRQ handler.
+
+   \                                 In section .text, align 2, keep-with-next
+    150          void I2C1_IRQHandler(void)
+    151          {
+    152              i2c_SlaveIRQHandler(1);
+   \                     I2C1_IRQHandler: (+1)
+   \   00000000   0x2001             MOVS     R0,#+1
+   \   00000002   0x....             B.N      i2c_SlaveIRQHandler
+    153          }
+    154          #endif // (!defined(BL_FEATURE_I2C_OPTIMIZE) || USE_ONLY_I2C(1)) && (FSL_FEATURE_SOC_I2C_COUNT > 1)
+    155          
+    156          /*FUNCTION**********************************************************************
+    157           *
+    158           * Function Name : i2c_poll_for_activity
+    159           * Description   : Polling for I2C slave activities
+    160           *
+    161           *END**************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    162          bool i2c_poll_for_activity(const peripheral_descriptor_t *self)
+    163          {
+    164              return s_i2cActivity[self->instance];
+   \                     i2c_poll_for_activity: (+1)
+   \   00000000   0x6840             LDR      R0,[R0, #+4]
+   \   00000002   0x....             LDR.N    R1,??DataTable10
+   \   00000004   0x5C08             LDRB     R0,[R1, R0]
+   \   00000006   0x4770             BX       LR               ;; return
+    165          }
+    166          
+    167          /*FUNCTION**********************************************************************
+    168           *
+    169           * Function Name : i2c_data_source
+    170           * Description   : I2C slave sending data function
+    171           *
+    172           *END**************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    173          static void i2c_data_source(uint8_t *source_byte)
+    174          {
+    175              assert(source_byte);
+    176          
+    177              if (s_i2cInfo.bytesToTransfer)
+   \                     i2c_data_source: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable10
+   \   00000002   0x688A             LDR      R2,[R1, #+8]
+   \   00000004   0xB142             CBZ.N    R2,??i2c_data_source_0
+    178              {
+    179                  *source_byte = *s_i2cInfo.writeData++;
+   \   00000006   0x684A             LDR      R2,[R1, #+4]
+   \   00000008   0x7813             LDRB     R3,[R2, #+0]
+   \   0000000A   0x7003             STRB     R3,[R0, #+0]
+   \   0000000C   0x1C50             ADDS     R0,R2,#+1
+   \   0000000E   0x6048             STR      R0,[R1, #+4]
+    180                  s_i2cInfo.bytesToTransfer--;
+   \   00000010   0x6888             LDR      R0,[R1, #+8]
+   \   00000012   0x1E40             SUBS     R0,R0,#+1
+   \   00000014   0x6088             STR      R0,[R1, #+8]
+   \   00000016   0x4770             BX       LR
+    181              }
+    182              else
+    183              {
+    184                  *source_byte = 0;
+   \                     ??i2c_data_source_0: (+1)
+   \   00000018   0x2100             MOVS     R1,#+0
+   \   0000001A   0x7001             STRB     R1,[R0, #+0]
+    185              }
+    186          }
+   \   0000001C   0x4770             BX       LR               ;; return
+    187          
+    188          /*FUNCTION**********************************************************************
+    189           *
+    190           * Function Name : i2c_data_sink
+    191           * Description   : I2C slave receiving data function
+    192           *
+    193           *END**************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    194          static void i2c_data_sink(uint8_t sink_byte, uint32_t instance)
+    195          {
+    196              s_i2c_app_data_sink_callback(sink_byte);
+   \                     i2c_data_sink: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable10
+   \   00000002   0x6949             LDR      R1,[R1, #+20]
+   \   00000004   0x4708             BX       R1
+    197          }
+    198          
+    199          /*FUNCTION**********************************************************************
+    200           *
+    201           * Function Name : i2c_initial_data_sink
+    202           * Description   : I2C slave receiving first byte data function
+    203           *
+    204           *END**************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    205          static void i2c_initial_data_sink(uint8_t sink_byte, uint32_t instance)
+    206          {
+    207              if (sink_byte == kFramingPacketStartByte)
+   \                     i2c_initial_data_sink: (+1)
+   \   00000000   0x285A             CMP      R0,#+90
+   \   00000002   0xD106             BNE.N    ??i2c_initial_data_sink_0
+    208              {
+    209                  s_i2cActivity[instance] = true;
+   \   00000004   0x....             LDR.N    R2,??DataTable10
+   \   00000006   0x2301             MOVS     R3,#+1
+   \   00000008   0x5453             STRB     R3,[R2, R1]
+    210                  s_i2cInfo.data_sink = i2c_data_sink;
+   \   0000000A   0x....             LDR.N    R1,??DataTable10_1
+   \   0000000C   0x6111             STR      R1,[R2, #+16]
+    211                  s_i2c_app_data_sink_callback(sink_byte);
+   \   0000000E   0x6951             LDR      R1,[R2, #+20]
+   \   00000010   0x4708             BX       R1
+    212              }
+    213          }
+   \                     ??i2c_initial_data_sink_0: (+1)
+   \   00000012   0x4770             BX       LR               ;; return
+    214          
+    215          /*FUNCTION**********************************************************************
+    216           *
+    217           * Function Name : i2c_peripheral_init
+    218           * Description   : I2C slave Internal init function
+    219           *
+    220           *END**************************************************************************/
+    221          void i2c_peripheral_init(uint32_t instance)
+    222          {
+    223              uint32_t baseAddr = g_i2cBaseAddr[instance];
+    224              i2c_slave_config_t i2cSlaveConfig;
+    225          
+    226              I2C_SlaveGetDefaultConfig(&i2cSlaveConfig);
+    227              i2cSlaveConfig.slaveAddress = BL_DEFAULT_I2C_SLAVE_ADDRESS;
+    228          
+    229              // Read the address from the configuration field. If it is not set, i.e. 0xff,
+    230              // use the default address.
+    231              uint8_t slaveAddress = g_bootloaderContext.propertyInterface->store->configurationData.i2cSlaveAddress;
+    232              if (slaveAddress != 0xff)
+    233              {
+    234                  i2cSlaveConfig.slaveAddress = slaveAddress;
+    235              }
+    236          #if BL_FEATURE_SECONDARY_I2C_SLAVE_ADDRESS
+    237              else if (is_secondary_i2c_slave_address_enabled())
+    238              {
+    239                  i2cSlaveConfig.slaveAddr = BL_SECONDARY_I2C_SLAVE_ADDRESS;
+    240              }
+    241          #endif // BL_FEATURE_SECONDARY_I2C_SLAVE_ADDRESS
+    242          
+    243              I2C_SlaveInit((I2C_Type *)baseAddr, &i2cSlaveConfig);
+    244              I2C_Enable((I2C_Type *)baseAddr, true);
+    245              I2C_EnableInterrupts((I2C_Type *)baseAddr, kI2C_GlobalInterruptEnable);
+    246              i2c_set_glitch_filter_width((I2C_Type *)baseAddr, get_bus_clock(), kI2CGlitchFilterWidth_ns);
+    247          
+    248              I2C_SetSystemIRQ(instance, kPeripheralEnableIRQ);
+    249          
+    250              s_i2cInfo.data_sink = i2c_initial_data_sink;
+    251          }
+    252          
+    253          /*FUNCTION**********************************************************************
+    254           *
+    255           * Function Name : i2c_full_init
+    256           * Description   : I2C slave full init function
+    257           *
+    258           *END**************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    259          status_t i2c_full_init(const peripheral_descriptor_t *self, serial_byte_receive_func_t function)
+    260          {
+   \                     i2c_full_init: (+1)
+   \   00000000   0xB5FE             PUSH     {R1-R7,LR}
+    261              s_i2c_app_data_sink_callback = function;
+   \   00000002   0x....             LDR.N    R5,??DataTable10
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0x6169             STR      R1,[R5, #+20]
+    262          
+    263              // Configure selected pin as i2c peripheral interface
+    264              self->pinmuxConfig(self->instance, kPinmuxType_Peripheral);
+   \   00000008   0x6860             LDR      R0,[R4, #+4]
+   \   0000000A   0x68A2             LDR      R2,[R4, #+8]
+   \   0000000C   0x2102             MOVS     R1,#+2
+   \   0000000E   0x4790             BLX      R2
+    265          
+    266              i2c_peripheral_init(self->instance);
+   \   00000010   0x6866             LDR      R6,[R4, #+4]
+   \   00000012   0x.... 0x....      ADR.W    R0,g_i2cBaseAddr
+   \   00000016   0xF850 0x7026      LDR      R7,[R0, R6, LSL #+2]
+   \   0000001A   0x4668             MOV      R0,SP
+   \   0000001C   0x.... 0x....      BL       I2C_SlaveGetDefaultConfig
+   \   00000020   0x2010             MOVS     R0,#+16
+   \   00000022   0xF8AD 0x0006      STRH     R0,[SP, #+6]
+   \   00000026   0x4669             MOV      R1,SP
+   \   00000028   0x....             LDR.N    R0,??DataTable10_2
+   \   0000002A   0x6880             LDR      R0,[R0, #+8]
+   \   0000002C   0x6900             LDR      R0,[R0, #+16]
+   \   0000002E   0xF890 0x0079      LDRB     R0,[R0, #+121]
+   \   00000032   0x28FF             CMP      R0,#+255
+   \   00000034   0xBF18             IT       NE 
+   \   00000036   0xF8AD 0x0006      STRHNE   R0,[SP, #+6]
+   \   0000003A   0x4638             MOV      R0,R7
+   \   0000003C   0x.... 0x....      BL       I2C_SlaveInit
+   \   00000040   0x2101             MOVS     R1,#+1
+   \   00000042   0x4638             MOV      R0,R7
+   \   00000044   0x.... 0x....      BL       I2C_Enable
+   \   00000048   0x2140             MOVS     R1,#+64
+   \   0000004A   0x4638             MOV      R0,R7
+   \   0000004C   0x.... 0x....      BL       I2C_EnableInterrupts
+   \   00000050   0x.... 0x....      BL       get_bus_clock
+   \   00000054   0xF44F 0x717A      MOV      R1,#+1000
+   \   00000058   0xFBB0 0xF0F1      UDIV     R0,R0,R1
+   \   0000005C   0x....             LDR.N    R1,??DataTable10_3  ;; 0xf4240
+   \   0000005E   0xFBB1 0xF0F0      UDIV     R0,R1,R0
+   \   00000062   0x2100             MOVS     R1,#+0
+   \   00000064   0xE000             B.N      ??i2c_full_init_0
+   \                     ??i2c_full_init_1: (+1)
+   \   00000066   0x4611             MOV      R1,R2
+   \                     ??i2c_full_init_0: (+1)
+   \   00000068   0x1C4A             ADDS     R2,R1,#+1
+   \   0000006A   0xFB00 0xF302      MUL      R3,R0,R2
+   \   0000006E   0x2B32             CMP      R3,#+50
+   \   00000070   0xD3F9             BCC.N    ??i2c_full_init_1
+   \   00000072   0xB921             CBNZ.N   R1,??i2c_full_init_2
+   \   00000074   0xF5B0 0x7FFA      CMP      R0,#+500
+   \   00000078   0xD804             BHI.N    ??i2c_full_init_3
+   \   0000007A   0x2101             MOVS     R1,#+1
+   \   0000007C   0xE002             B.N      ??i2c_full_init_3
+   \                     ??i2c_full_init_2: (+1)
+   \   0000007E   0x2920             CMP      R1,#+32
+   \   00000080   0xBF28             IT       CS 
+   \   00000082   0x211F             MOVCS    R1,#+31
+   \                     ??i2c_full_init_3: (+1)
+   \   00000084   0x79B8             LDRB     R0,[R7, #+6]
+   \   00000086   0xF000 0x00F0      AND      R0,R0,#0xF0
+   \   0000008A   0x4308             ORRS     R0,R1,R0
+   \   0000008C   0x71B8             STRB     R0,[R7, #+6]
+   \   0000008E   0x2101             MOVS     R1,#+1
+   \   00000090   0x4630             MOV      R0,R6
+   \   00000092   0x.... 0x....      BL       I2C_SetSystemIRQ
+   \   00000096   0x....             LDR.N    R0,??DataTable10_4
+   \   00000098   0x6128             STR      R0,[R5, #+16]
+    267          
+    268              s_i2cIntialized[self->instance] = true;
+   \   0000009A   0x2001             MOVS     R0,#+1
+   \   0000009C   0x6861             LDR      R1,[R4, #+4]
+   \   0000009E   0x4429             ADD      R1,R5,R1
+   \   000000A0   0x7088             STRB     R0,[R1, #+2]
+    269          
+    270              return kStatus_Success;
+   \   000000A2   0x2000             MOVS     R0,#+0
+   \   000000A4   0xBDFE             POP      {R1-R7,PC}       ;; return
+    271          }
+    272          
+    273          /*FUNCTION**********************************************************************
+    274           *
+    275           * Function Name : i2c_full_shutdown
+    276           * Description   : I2C slave full shutdown function
+    277           *
+    278           *END**************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    279          void i2c_full_shutdown(const peripheral_descriptor_t *self)
+    280          {
+   \                     i2c_full_shutdown: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x4605             MOV      R5,R0
+    281              if (s_i2cIntialized[self->instance])
+   \   00000004   0x....             LDR.N    R4,??DataTable10
+   \   00000006   0x6868             LDR      R0,[R5, #+4]
+   \   00000008   0x1821             ADDS     R1,R4,R0
+   \   0000000A   0x7889             LDRB     R1,[R1, #+2]
+   \   0000000C   0xB1A9             CBZ.N    R1,??i2c_full_shutdown_0
+    282              {
+    283                  uint32_t baseAddr = g_i2cBaseAddr[self->instance];
+   \   0000000E   0x.... 0x....      ADR.W    R1,g_i2cBaseAddr
+   \   00000012   0xF851 0x6020      LDR      R6,[R1, R0, LSL #+2]
+    284                  I2C_SetSystemIRQ(self->instance, kPeripheralDisableIRQ);
+   \   00000016   0x2100             MOVS     R1,#+0
+   \   00000018   0x.... 0x....      BL       I2C_SetSystemIRQ
+    285                  I2C_Enable((I2C_Type *)baseAddr, false);
+   \   0000001C   0x2100             MOVS     R1,#+0
+   \   0000001E   0x4630             MOV      R0,R6
+   \   00000020   0x.... 0x....      BL       I2C_Enable
+    286                  I2C_SlaveDeinit((I2C_Type *)baseAddr);
+   \   00000024   0x4630             MOV      R0,R6
+   \   00000026   0x.... 0x....      BL       I2C_SlaveDeinit
+    287          
+    288                  // Restore selected pin to default state to reduce IDD.
+    289                  self->pinmuxConfig(self->instance, kPinmuxType_Default);
+   \   0000002A   0x6868             LDR      R0,[R5, #+4]
+   \   0000002C   0x68AA             LDR      R2,[R5, #+8]
+   \   0000002E   0x2100             MOVS     R1,#+0
+   \   00000030   0x4790             BLX      R2
+    290          
+    291                  s_i2cIntialized[self->instance] = false;
+   \   00000032   0x6869             LDR      R1,[R5, #+4]
+   \   00000034   0x4421             ADD      R1,R4,R1
+   \   00000036   0x2000             MOVS     R0,#+0
+   \   00000038   0x7088             STRB     R0,[R1, #+2]
+    292              }
+    293          }
+   \                     ??i2c_full_shutdown_0: (+1)
+   \   0000003A   0xBD70             POP      {R4-R6,PC}       ;; return
+    294          
+    295          /*FUNCTION**********************************************************************
+    296           *
+    297           * Function Name : i2c_write
+    298           * Description   : I2C slave writing data function
+    299           *
+    300           *END**************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    301          status_t i2c_write(const peripheral_descriptor_t *self, const uint8_t *buffer, uint32_t byteCount)
+    302          {
+    303              s_i2cInfo.writeData = buffer;
+   \                     i2c_write: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable10
+   \   00000002   0x6041             STR      R1,[R0, #+4]
+    304              s_i2cInfo.bytesToTransfer = byteCount;
+   \   00000004   0x6082             STR      R2,[R0, #+8]
+    305          
+    306              while (s_i2cInfo.bytesToTransfer)
+   \                     ??i2c_write_0: (+1)
+   \   00000006   0x6881             LDR      R1,[R0, #+8]
+   \   00000008   0x2900             CMP      R1,#+0
+   \   0000000A   0xD1FC             BNE.N    ??i2c_write_0
+    307                  ;
+    308          
+    309              return kStatus_Success;
+   \   0000000C   0x2000             MOVS     R0,#+0
+   \   0000000E   0x4770             BX       LR               ;; return
+    310          }
+    311          
+    312          /*FUNCTION**********************************************************************
+    313           *
+    314           * Function Name : i2c_DummyRead
+    315           * Description   : I2C dummy read
+    316           *
+    317           *END**************************************************************************/
+    318          static uint8_t i2c_DummyRead(volatile I2C_Type *base)
+    319          {
+    320              return base->D;
+    321          }
+    322          
+    323          /*FUNCTION**********************************************************************
+    324           *
+    325           * Function Name : i2c_SlaveIRQHandler
+    326           * Description   : I2C slave bootloader interrupt handler
+    327           *
+    328           *END**************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    329          static void i2c_SlaveIRQHandler(uint32_t instance)
+    330          {
+   \                     i2c_SlaveIRQHandler: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x4605             MOV      R5,R0
+    331              uint16_t status;
+    332              I2C_Type *base = (I2C_Type *)g_i2cBaseAddr[instance];
+   \   00000004   0x.... 0x....      ADR.W    R0,g_i2cBaseAddr
+   \   00000008   0xF850 0x4025      LDR      R4,[R0, R5, LSL #+2]
+    333          
+    334              status = I2C_SlaveGetStatusFlags(base);
+   \   0000000C   0x4620             MOV      R0,R4
+   \   0000000E   0x.... 0x....      BL       I2C_MasterGetStatusFlags
+    335          
+    336              bool doTransmit = false;
+    337          
+    338              /* Clear the interrupt flag*/
+    339              base->S = (kI2C_IntPendingFlag | kI2C_ArbitrationLostFlag) & status;
+   \   00000012   0xF000 0x0112      AND      R1,R0,#0x12
+   \   00000016   0x70E1             STRB     R1,[R4, #+3]
+    340          
+    341              if ((status & I2C_S_ARBL_MASK) && (!(status & I2C_S_IAAS_MASK)))
+   \   00000018   0xF000 0x0150      AND      R1,R0,#0x50
+   \   0000001C   0x2910             CMP      R1,#+16
+   \   0000001E   0xD011             BEQ.N    ??i2c_SlaveIRQHandler_0
+    342              {
+    343                  // ArbitrationLost and not AddressedAsSlave
+    344              }
+    345              else if (status & I2C_S_IAAS_MASK) // AddressedAsSlave
+   \   00000020   0x0641             LSLS     R1,R0,#+25
+   \   00000022   0x....             LDR.N    R2,??DataTable10
+   \   00000024   0xD514             BPL.N    ??i2c_SlaveIRQHandler_1
+    346              {
+    347                  if (status & I2C_S_SRW_MASK) // Master read from Slave. Slave transmit.
+   \   00000026   0x0740             LSLS     R0,R0,#+29
+   \   00000028   0x78A0             LDRB     R0,[R4, #+2]
+   \   0000002A   0xD50C             BPL.N    ??i2c_SlaveIRQHandler_2
+    348                  {
+    349                      // Switch to TX mode
+    350                      base->C1 |= I2C_C1_TX_MASK;
+   \   0000002C   0xF040 0x0010      ORR      R0,R0,#0x10
+   \   00000030   0x70A0             STRB     R0,[R4, #+2]
+    351          
+    352                      doTransmit = true;
+    353                  }
+    354                  else // Master write to Slave. Slave receive.
+    355                  {
+    356                      // Switch to RX mode.
+    357                      base->C1 &= ~I2C_C1_TX_MASK;
+    358          
+    359                      // Dummy read character.
+    360                      i2c_DummyRead(base);
+    361                  }
+    362              }
+    363              else // not AddressedAsSlave
+    364              {
+    365                  if (base->C1 & I2C_C1_TX_MASK) // Transmit.
+    366                  {
+    367                      if (status & I2C_S_RXAK_MASK) // No ACK from receiver.
+    368                      {
+    369                          // Switch to RX mode.
+    370                          base->C1 &= ~I2C_C1_TX_MASK;
+    371          
+    372                          // Dummy read character.
+    373                          i2c_DummyRead(base);
+    374                      }
+    375                      else // ACK from receiver.
+    376                      {
+    377                          // DO TRANSMIT
+    378                          doTransmit = true;
+    379                      }
+    380                  }
+    381                  else // Receive.
+    382                  {
+    383                      // Get byte from data register.
+    384                      uint8_t sink_byte = base->D;
+    385          
+    386                      s_i2cInfo.data_sink(sink_byte, instance);
+    387                  }
+    388              }
+    389          
+    390              if (doTransmit)
+    391              {
+    392                  uint8_t source_byte = I2C_EMPTY_CHAR;
+   \                     ??i2c_SlaveIRQHandler_3: (+1)
+   \   00000032   0x2000             MOVS     R0,#+0
+   \   00000034   0xF88D 0x0000      STRB     R0,[SP, #+0]
+    393          
+    394                  s_i2cInfo.data_source(&source_byte);
+   \   00000038   0x4668             MOV      R0,SP
+   \   0000003A   0x68D1             LDR      R1,[R2, #+12]
+   \   0000003C   0x4788             BLX      R1
+    395          
+    396                  // Store char to transmit register.
+    397                  base->D = source_byte;
+   \   0000003E   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \   00000042   0x7120             STRB     R0,[R4, #+4]
+    398              }
+    399          }
+   \                     ??i2c_SlaveIRQHandler_0: (+1)
+   \   00000044   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+   \                     ??i2c_SlaveIRQHandler_2: (+1)
+   \   00000046   0xF000 0x00EF      AND      R0,R0,#0xEF
+   \   0000004A   0x70A0             STRB     R0,[R4, #+2]
+   \   0000004C   0x7920             LDRB     R0,[R4, #+4]
+   \   0000004E   0xBD31             POP      {R0,R4,R5,PC}
+   \                     ??i2c_SlaveIRQHandler_1: (+1)
+   \   00000050   0x78A1             LDRB     R1,[R4, #+2]
+   \   00000052   0x06C9             LSLS     R1,R1,#+27
+   \   00000054   0xD503             BPL.N    ??i2c_SlaveIRQHandler_4
+   \   00000056   0x07C0             LSLS     R0,R0,#+31
+   \   00000058   0xD5EB             BPL.N    ??i2c_SlaveIRQHandler_3
+   \   0000005A   0x78A0             LDRB     R0,[R4, #+2]
+   \   0000005C   0xE7F3             B.N      ??i2c_SlaveIRQHandler_2
+   \                     ??i2c_SlaveIRQHandler_4: (+1)
+   \   0000005E   0x7920             LDRB     R0,[R4, #+4]
+   \   00000060   0x6912             LDR      R2,[R2, #+16]
+   \   00000062   0x4629             MOV      R1,R5
+   \   00000064   0x4790             BLX      R2
+   \   00000066   0xBD31             POP      {R0,R4,R5,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10:
+   \   00000000   0x........         DC32     s_i2cActivity
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_1:
+   \   00000000   0x........         DC32     i2c_data_sink
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_2:
+   \   00000000   0x........         DC32     g_bootloaderContext
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_3:
+   \   00000000   0x000F4240         DC32     0xf4240
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_4:
+   \   00000000   0x........         DC32     i2c_initial_data_sink
+    400          
+    401          /*FUNCTION**********************************************************************
+    402           *
+    403           * Function Name : i2c_set_glitch_filter_width
+    404           * Description   : I2C slave set glitch filter width
+    405           *
+    406           *END**************************************************************************/
+    407          void i2c_set_glitch_filter_width(I2C_Type *base, uint32_t busClock_Hz, uint32_t glitchWidth_ns)
+    408          {
+    409          #if USE_ONLY_I2C(0)
+    410              instance = 0;
+    411          #elif USE_ONLY_I2C(1)
+    412              instance = 1;
+    413          #endif // USE_ONLY_I2C(0)
+    414          
+    415              uint32_t busCycle_ns = 1000000 / (busClock_Hz / 1000);
+    416          
+    417              // Search for the cycle count just below the desired glitch width.
+    418              uint32_t cycles = 0;
+    419              while (((cycles + 1) * busCycle_ns) < glitchWidth_ns)
+    420              {
+    421                  ++cycles;
+    422              }
+    423          
+    424              // If we end up with zero cycles, then set the filter to a single cycle unless the
+    425              // bus clock is greater than 10x the desired glitch width.
+    426              if ((cycles == 0) && (busCycle_ns <= (glitchWidth_ns * 10)))
+    427              {
+    428                  cycles = 1;
+    429              }
+    430              // If the cycles is greater the max cycles supported to set glitch filter,
+    431              // then cycles should be equal to max cycles
+    432              else if (cycles > kI2CGlitchFilterMaxCycles)
+    433              {
+    434                  cycles = kI2CGlitchFilterMaxCycles;
+    435              }
+    436          
+    437              uint8_t temp = base->FLT;
+    438              base->FLT = (~I2C_FLT_FLT_MASK & temp) | cycles;
+    439          }
+    440          
+    441          //! @}
+    442          
+    443          #endif // BL_CONFIG_I2C
+    444          ////////////////////////////////////////////////////////////////////////////////
+    445          // EOF
+    446          ////////////////////////////////////////////////////////////////////////////////
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   I2C0_IRQHandler
+         0   -> i2c_SlaveIRQHandler
+       0   I2C1_IRQHandler
+         0   -> i2c_SlaveIRQHandler
+       0   I2C_Enable
+      16   i2c_SlaveIRQHandler
+        16   -- Indirect call
+        16   -> I2C_MasterGetStatusFlags
+       0   i2c_data_sink
+         0   -- Indirect call
+       0   i2c_data_source
+      32   i2c_full_init
+        32   -- Indirect call
+        32   -> I2C_Enable
+        32   -> I2C_EnableInterrupts
+        32   -> I2C_SetSystemIRQ
+        32   -> I2C_SlaveGetDefaultConfig
+        32   -> I2C_SlaveInit
+        32   -> get_bus_clock
+      16   i2c_full_shutdown
+        16   -- Indirect call
+        16   -> I2C_Enable
+        16   -> I2C_SetSystemIRQ
+        16   -> I2C_SlaveDeinit
+       0   i2c_initial_data_sink
+         0   -- Indirect call
+       0   i2c_poll_for_activity
+       0   i2c_write
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_2
+       4  ??DataTable10_3
+       4  ??DataTable10_4
+       4  I2C0_IRQHandler
+       4  I2C1_IRQHandler
+      18  I2C_Enable
+       8  g_i2cBaseAddr
+       8  g_i2cByteInterface
+      16  g_i2cControlInterface
+     104  i2c_SlaveIRQHandler
+       6  i2c_data_sink
+      30  i2c_data_source
+     166  i2c_full_init
+      60  i2c_full_shutdown
+      20  i2c_initial_data_sink
+       8  i2c_poll_for_activity
+      16  i2c_write
+      24  s_i2cActivity
+          s_i2cIntialized
+          s_i2cInfo
+          s_i2c_app_data_sink_callback
+
+ 
+  24 bytes in section .data
+  24 bytes in section .rodata
+ 464 bytes in section .text
+ 
+ 464 bytes of CODE  memory
+  24 bytes of CONST memory
+  24 bytes of DATA  memory
+
+Errors: none
+Warnings: none

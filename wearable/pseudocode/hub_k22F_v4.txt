@@ -1,0 +1,111 @@
+6/10/15
+
+CBUF:
+cbuf[sensor 0] - timestamp0, data
+			   - timestamp1, data 
+
+
+cbuf[sensor 1] - timestamp0, data
+			   - timestamp1, data
+
+
+.
+.
+.
+cbuf[MAX_SENSORS - 1] - timestamp, data
+
+/***** FILLING UP CBUF *******/
+Find the satellite idx for this satellite ID
+	cbuf[satIdx].push(timestamp, data)
+
+/***** POPPING OUT FROM CBUF *******/
+create new hub_to_cloud_t new_entry
+	scan through the cbuf's head to get the lowest_timestamp
+	new_entry.timestamp = lowest_timestamp
+	go through sensor idx
+		if peek(cbuf[sensor_idx].timestamp == lowest_timestamp)
+			pop(cbuf[sensor_idx] and put to new_entry
+			set the bitmap for this sensor idx
+
+
+
+/***** TALK TO NORDIC *******/
+communicate with nordic:
+	forward command from Wifi (START, STOP, CALIB, SET RTC, SET SAT)
+	the only thing that might differ is WAIT
+
+	if cbuf is nearly full
+	 	set command "WAIT"
+	else 
+		clear command "WAIT"
+
+	call SPI to communicate, forwarding the most recent wifi command
+
+	for datum in response:
+		adding_data_to_cbuf_based_on_sat_ID()
+
+/***** TALK TO WIFI *******/
+communicate with wifi():
+    recv_from_wifi();
+
+    /* RTC takes precedence */
+    if SET RTC
+    	ask sensor to set RTC
+    	ask nordic to set RTC
+    if CALIBRATE
+    	ask sensor to calibrate
+	(Nordic set calibrate will be set later when communicating with
+Nordic)
+    if START:
+    	set status as ACTIVE
+    	set can_send
+    if STOP:
+    	set status->STOP
+    if WAIT:
+    	clear can_send
+    if SET SATELLITE LIST
+	update satellite list    	
+
+    if can_send:
+    	send() reply with the top X timestamps, 
+	each filled from the circular buffers that have it
+    ask status, store as 'latest_wifi_command'
+
+/***** TALK TO SENSOR *******/
+get_readings_from_invensense():
+	send command to sensor
+	for each record received back
+	   adding_data_to_cbuf_based_on_sat_ID(SAT_ID = 0)
+		
+
+/***** MAIN *******/
+Global:
+initialize status->ACTIVE
+
+main loop:
+	communicate with wifi ()
+
+	if status->STOP
+		tell invensense to STOP
+		communicate with nordic (to forward the STOP)
+
+		while (status == STOP) {
+		    /* Low power mode */
+		    STOP for a while
+		    communicate with wifi to get latest status
+		}
+
+		turn on invensense
+		communicate with nordic (to forward the ACTIVE)
+
+	if the circular buffer isn't full:
+		get_readings_from_invensense()
+		for each reading:
+			process with sensor fusion
+		add result to circular buffer
+
+		communicate with nordic
+		for each payload received add result to circular buffer
+
+
+

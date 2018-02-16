@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>3661941681</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\..\..\src\include\bootloader_common.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\bootloader\flashloader_image.h</file>
+      <file>$PROJ_DIR$\..\..\src\system_MK22F25612.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\startup\startup.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\startup\crt0.s</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\bootloader\src\bl_flashloader.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\startup\MK22F25612\iar\startup_MK22F25612.s</file>
+      <file>$PROJ_DIR$\debug\obj\crt0.o</file>
+      <file>$PROJ_DIR$\debug\obj\startup_MK22F25612.o</file>
+      <file>$PROJ_DIR$\debug\obj\startup.o</file>
+      <file>$PROJ_DIR$\output\Debug\flashloader_loader.elf</file>
+      <file>$PROJ_DIR$\debug\obj\bl_flashloader.o</file>
+      <file>$PROJ_DIR$\debug\obj\bl_flashloader.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\startup.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\system_MK22F25612.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\system_MK22F25612.o</file>
+      <file>$PROJ_DIR$\debug\obj\flashloader_loader.pbd</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\include\device\MK22F25612\MK22F25612_features.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\include\device\core_cm4_simd.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\include\device\MK22F25612\MK22F25612.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\include\device\MK22F25612\MK22F25612_extension.h</file>
+      <file>$PROJ_DIR$\..\..\src\target_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\include\device\MK22F25612\system_MK22F25612.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\include\device\core_cmFunc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\include\device\core_cm4.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\include\device\MK22F25612\fsl_bitaccess.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\utilities\vector_table_info.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\include\device\core_cmInstr.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\include\device\fsl_device_registers.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\include\fsl_platform_common.h</file>
+      <file>$PROJ_DIR$\..\..\src\bootloader_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\include\fsl_platform_status.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\include\fsl_platform_types.h</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 10</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\system_MK22F25612.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27 31 23 38 36 43 29 42 28 45 17 34 44 18 25 32 24 20 33 39 21 26 19</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\startup\startup.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 13</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38 45 40 23 24 49 20 21 30 22 36 43 18 17 33 39 19 44 48 25 32 27 29 31 42 34 46 26</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\startup\crt0.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 7</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\bootloader\src\bl_flashloader.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 12</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 11</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17 22 25 18 47 23 24 26 1 19 49 20 21 36 44 37 32 38 30 48 33 39 0 35 45 43 46 28 40 27 29 31 42 34 41</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\startup\MK22F25612\iar\startup_MK22F25612.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 8</file>
+        </tool>
+      </outputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

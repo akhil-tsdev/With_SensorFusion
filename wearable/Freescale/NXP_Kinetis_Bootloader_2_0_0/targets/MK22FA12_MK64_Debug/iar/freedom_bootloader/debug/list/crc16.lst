@@ -1,0 +1,345 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       16/Sep/2016  13:23:58
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\crc\src\crc16.c
+#    Command line =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\crc\src\crc16.c
+#        -D NDEBUG -D USB_STACK_BM -D CPU_MK22FN1M0AVMC12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D FREEDOM -D BL_TARGET_FLASH -D
+#        TURINGSENSE=1 -lC
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\list
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\..\..\..\..\src\platform\devices\MK22FA12_MK64\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/autobaud\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/osa\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/device\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/device/class\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/bm_usb\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform/devices\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform/CMSIS/Include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/drivers\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/drivers/common\
+#        -On --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\list\crc16.lst
+#    Object file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\obj\crc16.o
+#
+###############################################################################
+
+C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\crc\src\crc16.c
+      1          /*
+      2           * Copyright (c) 2013 - 2014, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          #include "bootloader_common.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void CLOCK_DisableClock(clock_ip_name_t)
+   \                     CLOCK_DisableClock: (+1)
+   \   00000000   0x0C01             LSRS     R1,R0,#+16
+   \   00000002   0xF101 0x4180      ADD      R1,R1,#+1073741824
+   \   00000006   0xF511 0x218E      ADDS     R1,R1,#+290816
+   \   0000000A   0x680A             LDR      R2,[R1, #+0]
+   \   0000000C   0x2301             MOVS     R3,#+1
+   \   0000000E   0x4083             LSLS     R3,R3,R0
+   \   00000010   0x439A             BICS     R2,R2,R3
+   \   00000012   0x600A             STR      R2,[R1, #+0]
+   \   00000014   0x4770             BX       LR               ;; return
+     31          #include "crc/crc16.h"
+     32          #include "utilities/fsl_assert.h"
+     33          #include "utilities/fsl_rtos_abstraction.h"
+     34          
+     35          #if !defined(BOOTLOADER_HOST)
+     36          #include "fsl_device_registers.h"
+     37          #include "utilities/fsl_rtos_abstraction.h"
+     38          #endif // !BOOTLOADER_HOST
+     39          
+     40          #if !defined(BOOTLOADER_HOST) && FSL_FEATURE_SOC_CRC_COUNT && !defined(BL_TARGET_RAM)
+     41          #include "crc/fsl_crc.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void CRC_Deinit(CRC_Type *)
+   \                     CRC_Deinit: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x....             LDR.N    R0,??DataTable2  ;; 0x103c0012
+   \   00000006   0x.... 0x....      BL       CLOCK_DisableClock
+   \   0000000A   0xBD10             POP      {R4,PC}          ;; return
+     42          
+     43          /* Table of base addresses for crc instances. */
+
+   \                                 In section .rodata, align 4
+     44          static CRC_Type *const g_crcBase[1] = CRC_BASE_PTRS;
+   \                     g_crcBase:
+   \   00000000   0x40032000         DC32 40032000H
+     45          
+
+   \                                 In section .text, align 2, keep-with-next
+     46          void crc16_init(crc16_data_t *crc16Config)
+     47          {
+     48              assert(crc16Config);
+     49          
+     50              crc16Config->currentCrc = 0x0000U;
+   \                     crc16_init: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+   \   00000002   0x8001             STRH     R1,[R0, #+0]
+     51          }
+   \   00000004   0x4770             BX       LR               ;; return
+     52          
+
+   \                                 In section .text, align 2, keep-with-next
+     53          void crc16_update(crc16_data_t *crc16Config, const uint8_t *src, uint32_t lengthInBytes)
+     54          {
+   \                     crc16_update: (+1)
+   \   00000000   0xB57F             PUSH     {R0-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+   \   00000006   0x0016             MOVS     R6,R2
+     55              assert(crc16Config);
+     56              assert(src);
+     57          
+     58              crc_config_t crcUserConfigPtr;
+     59          
+     60              CRC_GetDefaultConfig(&crcUserConfigPtr);
+   \   00000008   0x4668             MOV      R0,SP
+   \   0000000A   0x.... 0x....      BL       CRC_GetDefaultConfig
+     61          
+     62              crcUserConfigPtr.crcBits = kCrcBits16;
+   \   0000000E   0x2000             MOVS     R0,#+0
+   \   00000010   0xF88D 0x000B      STRB     R0,[SP, #+11]
+     63              crcUserConfigPtr.seed = crc16Config->currentCrc;
+   \   00000014   0x8820             LDRH     R0,[R4, #+0]
+   \   00000016   0x9001             STR      R0,[SP, #+4]
+     64              crcUserConfigPtr.polynomial = 0x1021U;
+   \   00000018   0xF241 0x0021      MOVW     R0,#+4129
+   \   0000001C   0x9000             STR      R0,[SP, #+0]
+     65              crcUserConfigPtr.complementChecksum = false;
+   \   0000001E   0x2000             MOVS     R0,#+0
+   \   00000020   0xF88D 0x000A      STRB     R0,[SP, #+10]
+     66              crcUserConfigPtr.reflectIn = false;
+   \   00000024   0x2000             MOVS     R0,#+0
+   \   00000026   0xF88D 0x0008      STRB     R0,[SP, #+8]
+     67              crcUserConfigPtr.reflectOut = false;
+   \   0000002A   0x2000             MOVS     R0,#+0
+   \   0000002C   0xF88D 0x0009      STRB     R0,[SP, #+9]
+     68          
+     69              // Init CRC module and then run it
+     70              //! Note: We must init CRC module here, As we may seperate one crc calculation into several times
+     71              //! Note: It is better to use lock to ensure the integrity of current updating operation of crc calculation
+     72              //        in case crc module is shared by multiple crc updating requests at the same time
+     73              if (lengthInBytes)
+   \   00000030   0x2E00             CMP      R6,#+0
+   \   00000032   0xD013             BEQ.N    ??crc16_update_0
+     74              {
+     75                  lock_acquire();
+   \   00000034   0x.... 0x....      BL       lock_acquire
+     76                  CRC_Init(g_crcBase[0], &crcUserConfigPtr);
+   \   00000038   0x4669             MOV      R1,SP
+   \   0000003A   0x....             LDR.N    R0,??DataTable2_1
+   \   0000003C   0x6800             LDR      R0,[R0, #+0]
+   \   0000003E   0x.... 0x....      BL       CRC_Init
+     77                  CRC_WriteData(g_crcBase[0], src, lengthInBytes);
+   \   00000042   0x0032             MOVS     R2,R6
+   \   00000044   0x0029             MOVS     R1,R5
+   \   00000046   0x....             LDR.N    R0,??DataTable2_1
+   \   00000048   0x6800             LDR      R0,[R0, #+0]
+   \   0000004A   0x.... 0x....      BL       CRC_WriteData
+     78                  crcUserConfigPtr.seed = CRC_Get16bitResult(g_crcBase[0]);
+   \   0000004E   0x....             LDR.N    R0,??DataTable2_1
+   \   00000050   0x6800             LDR      R0,[R0, #+0]
+   \   00000052   0x.... 0x....      BL       CRC_Get16bitResult
+   \   00000056   0x9001             STR      R0,[SP, #+4]
+     79                  lock_release();
+   \   00000058   0x.... 0x....      BL       lock_release
+     80              }
+     81          
+     82              crc16Config->currentCrc = crcUserConfigPtr.seed;
+   \                     ??crc16_update_0: (+1)
+   \   0000005C   0x9801             LDR      R0,[SP, #+4]
+   \   0000005E   0x8020             STRH     R0,[R4, #+0]
+     83          }
+   \   00000060   0xBD7F             POP      {R0-R6,PC}       ;; return
+     84          
+
+   \                                 In section .text, align 2, keep-with-next
+     85          void crc16_finalize(crc16_data_t *crc16Config, uint16_t *hash)
+     86          {
+   \                     crc16_finalize: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+     87              assert(crc16Config);
+     88              assert(hash);
+     89          
+     90              *hash = crc16Config->currentCrc;
+   \   00000006   0x8820             LDRH     R0,[R4, #+0]
+   \   00000008   0x8028             STRH     R0,[R5, #+0]
+     91          
+     92              // De-init CRC module when we complete a full crc calculation
+     93              CRC_Deinit(g_crcBase[0]);
+   \   0000000A   0x....             LDR.N    R0,??DataTable2_1
+   \   0000000C   0x6800             LDR      R0,[R0, #+0]
+   \   0000000E   0x.... 0x....      BL       CRC_Deinit
+     94          }
+   \   00000012   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \   00000000   0x103C0012         DC32     0x103c0012
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \   00000000   0x........         DC32     g_crcBase
+     95          #else
+     96          ////////////////////////////////////////////////////////////////////////////////
+     97          // Code
+     98          ////////////////////////////////////////////////////////////////////////////////
+     99          void crc16_init(crc16_data_t *crc16Config)
+    100          {
+    101              assert(crc16Config);
+    102          
+    103              // initialize running crc and byte count
+    104              crc16Config->currentCrc = 0;
+    105          }
+    106          
+    107          void crc16_update(crc16_data_t *crc16Config, const uint8_t *src, uint32_t lengthInBytes)
+    108          {
+    109              assert(crc16Config);
+    110              assert(src);
+    111          
+    112              uint32_t crc = crc16Config->currentCrc;
+    113          
+    114              uint32_t j;
+    115              for (j = 0; j < lengthInBytes; ++j)
+    116              {
+    117                  uint32_t i;
+    118                  uint32_t byte = src[j];
+    119                  crc ^= byte << 8;
+    120                  for (i = 0; i < 8; ++i)
+    121                  {
+    122                      uint32_t temp = crc << 1;
+    123                      if (crc & 0x8000)
+    124                      {
+    125                          temp ^= 0x1021;
+    126                      }
+    127                      crc = temp;
+    128                  }
+    129              }
+    130          
+    131              crc16Config->currentCrc = crc;
+    132          }
+    133          
+    134          void crc16_finalize(crc16_data_t *crc16Config, uint16_t *hash)
+    135          {
+    136              assert(crc16Config);
+    137              assert(hash);
+    138          
+    139              *hash = crc16Config->currentCrc;
+    140          }
+    141          #endif
+    142          ////////////////////////////////////////////////////////////////////////////////
+    143          // EOF
+    144          ////////////////////////////////////////////////////////////////////////////////
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   CLOCK_DisableClock
+       8   CRC_Deinit
+         8   -> CLOCK_DisableClock
+      16   crc16_finalize
+        16   -> CRC_Deinit
+       0   crc16_init
+      32   crc16_update
+        32   -> CRC_Get16bitResult
+        32   -> CRC_GetDefaultConfig
+        32   -> CRC_Init
+        32   -> CRC_WriteData
+        32   -> lock_acquire
+        32   -> lock_release
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+      22  CLOCK_DisableClock
+      12  CRC_Deinit
+      20  crc16_finalize
+       6  crc16_init
+      98  crc16_update
+       4  g_crcBase
+
+ 
+   4 bytes in section .rodata
+ 166 bytes in section .text
+ 
+ 166 bytes of CODE  memory
+   4 bytes of CONST memory
+
+Errors: none
+Warnings: none

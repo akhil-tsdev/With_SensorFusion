@@ -1,0 +1,27 @@
+The Invensense library being used was provided by Sinan Karahan in
+email on March 13, 2015 at TuringSense' request, to use the
+"-mfpu=fpv4-sp-d16" compiler option for compatibility with the
+Freescale toolchain. (That is the correct compiler option for the ARM
+Cortex-M4F, and not "-mfpu=vfpv4".)
+
+-O0 -Wall -Wa,-adhlns="$@.lst" -c -fmessage-length=0 -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -gdwarf-2
+
+Note that this was provided with optimization disabled ("-O0"). It would
+likely be advantageous to ask Karahan for a library compiled with either
+space ("-Os") optimization or execution ("-O3") optimization.
+
+-----------------------------------------------------------------------------
+
+The following is the original README for the version of the library downloaded
+from the Invensense web site in March 2015:
+
+ARM MPL Libaries -
+
+1. All libaries compiled using GCC NONE-ARM-EABI 4.7.2 compiler
+2. M3 Compilers Options -
+
+ -Os -ffunction-sections -fdata-sections -Wall -Wa,-adhlns="$@.lst" -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -g3 -gdwarf-2
+
+3. M4 Compiler Options -
+
+-Os -ffunction-sections -fdata-sections -Wall -Wa,-adhlns="$@.lst" -c -fmessage-length=0 -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=vfpv4 -g3 -gdwarf-2

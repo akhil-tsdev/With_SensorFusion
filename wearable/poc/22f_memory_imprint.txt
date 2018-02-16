@@ -1,0 +1,43 @@
+04/20/2015     Modifying linker file 	K22FN128xxx10_flash_moreBSS.ld
+
+Trying to estimate the memory we need.  Use K22FN512xxx*ld file so that it
+finishes building.  We get the following
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley -x --totals "22f_satellite_ossf.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 0xdb30	   0x7c	 0x53a8	  77652	  12f54	22f_satellite_ossf.elf
+ 0xdb30	   0x7c	 0x53a8	  77652	  12f54	(TOTALS)
+'Finished building: 22f_satellite_ossf.siz'
+
+
+This is the original K22FN128xxx10_flash.ld assigment:
+MEMORY {
+  m_interrupts          (RX)  : ORIGIN = 0x00000000, LENGTH = 0x00000400
+  m_text                (RX)  : ORIGIN = 0x00000410, LENGTH = 0x0001FBF0
+  m_interrupts_ram      (RW)  : ORIGIN = 0x1FFFE000, LENGTH = 0x00000400
+  m_data_1FFFE400       (RW)  : ORIGIN = 0x1FFFE400, LENGTH = 0x00001C00   
+  m_data                (RW)  : ORIGIN = 0x20000000, LENGTH = 0x00004000
+  m_flash_config        (RX)  : ORIGIN = 0x00000400, LENGTH = 0x00000010
+}
+
+m_text: 0x1_FBF0
+only need (text 0xDB30 + data 0x7C = DBAC)
+
+We only have RAM this much for K22FN128xxx10:
+0x1FFF_E000-0x2000_3FFF  = 5FFF => 24K RAM, 24576
+
+Interrupts: 0x400	0x400
+Data      : 0x53a8  	0x5400
+TOtal	  : 0x57a8	0x5800	
+m_data	  : 0x5
+
+
+Modified
+MEMORY {
+  m_interrupts          (RX)  : ORIGIN = 0x00000000, LENGTH = 0x00000400
+  m_text                (RX)  : ORIGIN = 0x00000410, LENGTH = 0x0001FBF0
+  m_interrupts_ram      (RW)  : ORIGIN = 0x1FFFE000, LENGTH = 0x00000400
+  m_data_1FFFE400       (RW)  : ORIGIN = 0x1FFFE400, LENGTH = 0x00004600  /* Need a lot of bss space for cbuf */ 
+  m_data                (RW)  : ORIGIN = 0x20002A00, LENGTH = 0x00001600  /* Reduced */
+  m_flash_config        (RX)  : ORIGIN = 0x00000400, LENGTH = 0x00000010
+}

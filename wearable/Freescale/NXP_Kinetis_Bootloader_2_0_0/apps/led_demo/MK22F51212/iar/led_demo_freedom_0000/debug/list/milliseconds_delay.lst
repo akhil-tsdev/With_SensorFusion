@@ -1,0 +1,226 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       17/Aug/2016  13:01:00
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\src\milliseconds_delay.c
+#    Command line =  
+#        "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\src\milliseconds_delay.c"
+#        -D NDEBUG -D DEBUG -D CPU_MK22FN512VDC12 -D CPU_IS_ARM_CORTEX_M4=1 -D
+#        IAR -D FREEDOM -lC "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000\debug\list"
+#        --diag_suppress Pa050 -o "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000\debug\obj"
+#        --no_unroll --debug --endian=little --cpu=Cortex-M4 -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../targets/MK22F51212/src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../targets/MK22F51212/src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../src/platform/devices/MK22F51212\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../src/include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../src/platform\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../src/platform/devices\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../src/platform/CMSIS/Include\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../src\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../src/drivers\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../src/startup\"
+#        -I "C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000/../../../../../src/drivers/uart\"
+#        -Ohz --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000\debug\list\milliseconds_delay.lst
+#    Object file  =  
+#        C:\Users\cwati\Documents\My
+#        Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\MK22F51212\iar\led_demo_freedom_0000\debug\obj\milliseconds_delay.o
+#
+###############################################################################
+
+C:\Users\cwati\Documents\My Work\Freescale\Bootloader\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\apps\led_demo\src\milliseconds_delay.c
+      1          /*
+      2           * Copyright (c) 2013, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          
+     31          #include "fsl_device_registers.h"
+     32          #include "milliseconds_delay.h"
+     33          
+     34          ////////////////////////////////////////////////////////////////////////////////
+     35          // Code
+     36          ////////////////////////////////////////////////////////////////////////////////
+     37          
+
+   \                                 In section .bss, align 4
+     38          static volatile uint32_t s_milliseconds_left = 0;
+   \                     s_milliseconds_left:
+   \   00000000                      DS8 4
+     39          
+     40          static inline uint32_t milliseconds_left_get(void)
+     41          {
+     42              return s_milliseconds_left;
+     43          }
+     44          
+     45          static inline void milliseconds_left_set(uint32_t ms)
+     46          {
+     47              s_milliseconds_left = ms;
+     48          }
+     49          
+     50          static inline void milliseconds_left_decrement(void)
+     51          {
+     52              --s_milliseconds_left;
+     53          }
+     54          
+
+   \                                 In section .text, align 2, keep-with-next
+     55          void milliseconds_delay_init(void)
+     56          {
+     57              SysTick_Config(SystemCoreClock >> 10);
+   \                     milliseconds_delay_init: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable2
+   \   00000002   0x6800             LDR      R0,[R0, #+0]
+   \   00000004   0x0A80             LSRS     R0,R0,#+10
+   \   00000006   0x1E40             SUBS     R0,R0,#+1
+   \   00000008   0xF1B0 0x7F80      CMP      R0,#+16777216
+   \   0000000C   0xD208             BCS.N    ??milliseconds_delay_init_0
+   \   0000000E   0x....             LDR.N    R1,??DataTable2_1  ;; 0xe000e010
+   \   00000010   0x....             LDR.N    R2,??DataTable2_2  ;; 0xe000ed23
+   \   00000012   0x6048             STR      R0,[R1, #+4]
+   \   00000014   0x20F0             MOVS     R0,#+240
+   \   00000016   0x7010             STRB     R0,[R2, #+0]
+   \   00000018   0x2000             MOVS     R0,#+0
+   \   0000001A   0x6088             STR      R0,[R1, #+8]
+   \   0000001C   0x2007             MOVS     R0,#+7
+   \   0000001E   0x6008             STR      R0,[R1, #+0]
+     58          }
+   \                     ??milliseconds_delay_init_0: (+1)
+   \   00000020   0x4770             BX       LR               ;; return
+     59          
+
+   \                                 In section .text, align 2, keep-with-next
+     60          void milliseconds_delay(uint32_t ms)
+     61          {
+     62              milliseconds_left_set(ms);
+   \                     milliseconds_delay: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable2_3
+   \   00000002   0x6008             STR      R0,[R1, #+0]
+     63              while (milliseconds_left_get())
+   \                     ??milliseconds_delay_0: (+1)
+   \   00000004   0x6808             LDR      R0,[R1, #+0]
+   \   00000006   0x2800             CMP      R0,#+0
+   \   00000008   0xD1FC             BNE.N    ??milliseconds_delay_0
+     64                  ;
+     65          }
+   \   0000000A   0x4770             BX       LR               ;; return
+     66          
+
+   \                                 In section .text, align 2, keep-with-next
+     67          void SysTick_Handler(void)
+     68          {
+     69              if (milliseconds_left_get())
+   \                     SysTick_Handler: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable2_3
+   \   00000002   0x6801             LDR      R1,[R0, #+0]
+   \   00000004   0xB111             CBZ.N    R1,??SysTick_Handler_0
+     70              {
+     71                  milliseconds_left_decrement();
+   \   00000006   0x6801             LDR      R1,[R0, #+0]
+   \   00000008   0x1E49             SUBS     R1,R1,#+1
+   \   0000000A   0x6001             STR      R1,[R0, #+0]
+     72              }
+     73          }
+   \                     ??SysTick_Handler_0: (+1)
+   \   0000000C   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \   00000000   0x........         DC32     SystemCoreClock
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \   00000000   0xE000E010         DC32     0xe000e010
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \   00000000   0xE000ED23         DC32     0xe000ed23
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_3:
+   \   00000000   0x........         DC32     s_milliseconds_left
+     74          
+     75          ////////////////////////////////////////////////////////////////////////////////
+     76          // EOF
+     77          ////////////////////////////////////////////////////////////////////////////////
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   SysTick_Handler
+       0   milliseconds_delay
+       0   milliseconds_delay_init
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+      14  SysTick_Handler
+      12  milliseconds_delay
+      34  milliseconds_delay_init
+       4  s_milliseconds_left
+
+ 
+  4 bytes in section .bss
+ 76 bytes in section .text
+ 
+ 76 bytes of CODE memory
+  4 bytes of DATA memory
+
+Errors: none
+Warnings: none

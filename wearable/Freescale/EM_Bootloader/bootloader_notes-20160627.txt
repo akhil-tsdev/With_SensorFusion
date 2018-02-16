@@ -1,0 +1,87 @@
+TuringSense bootloader notes
+2016-06-27
+
+Note: for debugging firmware, it is best to build and program the firmware WITHOUT the bootloader environment, i.e., beginning at flash 0x00000000.
+
+##### Manifest:
+bootloader_notes-20160627.txt          this file
+FSL_Kinetis_Bootloader_1_2_0.zip       bootloader firmware, modified for TuringSense
+blinkg-20160627.zip                    demo, flashes LED green
+blinkr-20160627.zip                    demo, flashes LED red
+pyKBoot.zip                            Python interface to Kinetis bootloader, modified for TuringSense
+support-20160627.zip                   supporting Python programs and batch files
+
+
+##### Significant changes from previous release:
+* LED blink demos included
+* Many fixes and stability improvements to both the bootloader
+  firmware and the supporting Python scripts
+* elfcrc.py can now output a binary file, so objcopy is no
+  longer needed
+
+
+##### building bootloader
+
+The workspace is FSL_Kinetis_Bootloader_1_2_0, and the project to use is targets/MK22F25612/kds/turingsense_bootloader.  Build and download as with any normal Kinetis firmware.
+
+
+##### set up Python environment needed for downloader:
+
+# install python 2.7 in C:\python27
+
+# From Windows command prompt:
+C:\python27\python -m pip install -U pip
+# if that command fails with an error about not having a pip
+# module, run get-pip.py using instructions on this page:
+#     https://pip.pypa.io/en/stable/installing/
+
+C:\python27\python -m pip install -U flufl.enum
+C:\python27\python -m pip install -U pywinusb
+
+# Unzip the provided pykboot.zip
+# (modified from github version which was originally obtained by
+#   git clone https://github.com/molejar/pyKBoot.git
+# to add TuringSense-specific properties)
+
+# From Windows command prompt:
+cd c:\pykboot\pyKBoot
+c:\python27\python setup.py install
+
+
+
+
+##### To use bootloader:
+
+# Build firmware image with a base address of 0xa000
+# Run the elfcrc.py program to take the ELF output from KDS,
+# insert the CRC, and generate a binary file:
+#    C:\python27\python.bin elfcrc.py -p 0xa000 -b blinkg.bin blinkg.elf
+
+# make sure boothloader is running on TuringSense board
+
+# verify that download.py can find TuringSense board
+c:\python27\python download.py --info
+# will show the flash image area sizes and base addresses
+
+
+# download firmware to TuringSense board, defaulting to image 2 (gets copied to image 1 at reset):
+c:\python27\python download.py firmware.bin
+
+
+# firmware can be downloaded directly to image 1 area:
+# (this can also be used if firmware is too large for image 2 area, which is 110592 bytes):
+c:\python27\python download.py --image 1 firmware.bin -r
+
+# The "-r" in the download.py invocation causes a reset when
+# the download is finished. At that point the bootloader will
+# copy flash image 2 to image 1, but the bootloader will still
+# be running. To get image 1 to run, power-cycle or reset the
+# board.  Reset can be done with:
+c:\python27\python download.py -r
+
+
+##### Demo program:
+The blinkg and blinkr demos are identical, other than than one
+line in main.c controlling whether the red or green LED will blink.  When the demo runs, it will flash the blue LED twice, then the red or green LED 20 times, then will jump back into the bootloader. The automatic jump back into the bootloader is required as otherwise there would be no way to get back to the bootloader to load another program; in your actual application this will be triggered by sending a command over the CDC connection.
+
+The demo code is useful for the linker script, and as an example of how the jump back to the bootloader is performed.

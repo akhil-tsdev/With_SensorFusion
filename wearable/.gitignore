@@ -1,0 +1,14 @@
+# ignore objects and library files
+.*~
+*.o
+*.a
+*.a
+*.d
+*.swp
+*.map
+*.crf
+subdir.mk
+sources.mk
+objects.mk
+language.settings.xml
+**/Debug/makefile

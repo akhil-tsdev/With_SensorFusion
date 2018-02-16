@@ -1,0 +1,9 @@
+#ignore these
+debug/*
+release/*
+
+#don't ignore these
+!/release/tower_bootloader.elf
+!/release/tower_bootloader.map
+/release/
+/debug/

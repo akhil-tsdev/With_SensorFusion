@@ -1,0 +1,20 @@
+:: Script
+PYTHON_SCRIPT="C:\turing\Github\trunk\wearable\Manufacturing\Binaries\common nordic bootloader\2_8\nordic_download_2_8.py"
+blhost=C:\turing\Github\trunk\wearable\Freescale\NXP_Kinetis_Bootloader_2_0_0\bin\Tools\blhost\win\blhost.exe
+HUB_TUNNELING_BIN="C:\turing\Github\trunk\wearable\Manufacturing\Binaries\common nordic bootloader\2_8\22f_hub_nordic_bl_bootloader_2_8.bin"
+SAT_TUNNELING_BIN="C:\turing\Github\trunk\wearable\Manufacturing\Binaries\common nordic bootloader\2_8\22f_sat_nordic_bl_2_8.bin"
+
+:::: Files (1 line for each file!)
+::HUB_NORDIC_BIN="C:\turing\Github\trunk\wearable\Manufacturing\Binaries\SYS-DIAG\hub\nordic\SYS_NRD_HUB_0.16_5.6.9.6.hex"
+::HUB_KINETIS_BIN="C:\turing\Github\trunk\wearable\Manufacturing\Binaries\SYS-DIAG\hub\22F\SYS_22F_HUB_0.16_5.6.12.6_ch10.bin"
+::
+::SAT_NORDIC_BIN="C:\turing\Github\trunk\wearable\Manufacturing\Binaries\SYS-DIAG\sat\nordic\SYS_NRD_SAT_0.16_5.6.9.6.hex"
+::SAT_KINETIS_BIN="C:\turing\Github\trunk\wearable\Manufacturing\Binaries\SYS-DIAG\sat\22F\SYS_22F_SAT_0.16_5.6.9.6.bin"
+
+:: Files (1 line for each file!)
+HUB_NORDIC_BIN="C:\turing\github\trunk\wearable\nordic_module\hub\_build\SYS_NRD_HUB.hex"
+HUB_KINETIS_BIN="C:\turing\github\trunk\wearable\Freescale\Freescale_MQX_4_1\demo\hub_prod_2_tasks\iar\twr21f120m\Int Flash Debug\Exe\SYS_22F_HUB.bin"
+
+SAT_NORDIC_BIN="C:\turing\github\trunk\wearable\nordic_module\satellite\_build\SYS_NRD_SAT.hex"
+SAT_KINETIS_BIN="C:\turing\github\trunk\wearable\22F_sensor_module\production\22f_sat_production2\Bootloader\SYS_22F_SAT.bin"
+

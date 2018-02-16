@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.540702345">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.540702345" moduleId="org.eclipse.cdt.core.settings" name="Int Flash Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.iar.cdt.errorParser.com.iar.cdt.errorParser.ErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="com.iar.cdt.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=com.iar.cdt.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.540702345" name="Int Flash Debug" parent="iar.arm.toolchain.project.exe.configuration.debug.v5.4.0">
+					<folderInfo id="iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.540702345." name="/" resourcePath="">
+						<toolChain id="iar.arm.toolchain.project.exe.configuration.debug.toolchain.v5.4.0.985868732" name="IAR Toolchain for ARM - (7.x)" superClass="iar.arm.toolchain.project.exe.configuration.debug.toolchain.v5.4.0">
+							<option id="iar.arm.toolchain.option.cpuCore.v5.4.0.1062908631" superClass="iar.arm.toolchain.option.cpuCore.v5.4.0" value="iar.arm.toolchain.option.cpuCore.Cortex-M4F.v5.5.0" valueType="enumerated"/>
+							<option id="iar.arm.toolchain.option.endianMode.v5.4.0.1336771530" superClass="iar.arm.toolchain.option.endianMode.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.bigEndianFormat.v5.4.0.1767075801" superClass="iar.arm.toolchain.option.bigEndianFormat.v5.4.0" value="iar.arm.toolchain.option.bigEndianFormat.BE8.v5.4.0" valueType="enumerated"/>
+							<option id="iar.arm.toolchain.option.printfFormatter.v5.4.0.1209652783" superClass="iar.arm.toolchain.option.printfFormatter.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.scanfFormatter.v5.4.0.420563766" superClass="iar.arm.toolchain.option.scanfFormatter.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.bufferedOutput.v6.1.0.1566097944" superClass="iar.arm.toolchain.option.bufferedOutput.v6.1.0"/>
+							<option id="iar.arm.toolchain.option.mfc.v5.5.2.890244120" superClass="iar.arm.toolchain.option.mfc.v5.5.2"/>
+							<option id="iar.arm.toolchain.option.fpu.v5.4.0.1419278294" superClass="iar.arm.toolchain.option.fpu.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.libraryConfig.v5.4.0.1745438913" superClass="iar.arm.toolchain.option.libraryConfig.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.misra-c.enable.973769235" superClass="iar.arm.toolchain.option.misra-c.enable"/>
+							<option id="iar.arm.toolchain.option.AgatonSax::rtcEnable.v6.8.0.1668777983" superClass="iar.arm.toolchain.option.AgatonSax::rtcEnable.v6.8.0"/>
+							<option id="iar.arm.toolchain.option.AgatonSax::rtcEnableBounds.v6.8.0.1959575426" superClass="iar.arm.toolchain.option.AgatonSax::rtcEnableBounds.v6.8.0"/>
+							<option id="iar.arm.toolchain.option.AgatonSax::rtcTrackPtrBounds.v6.8.0.1377882961" superClass="iar.arm.toolchain.option.AgatonSax::rtcTrackPtrBounds.v6.8.0"/>
+							<option id="iar.arm.toolchain.option.AgatonSax::rtcCheckAccesses.v6.8.0.1317680674" superClass="iar.arm.toolchain.option.AgatonSax::rtcCheckAccesses.v6.8.0"/>
+							<option id="iar.arm.toolchain.option.AgatonSax::rtcGenerateEntries.v6.8.0.1762566206" superClass="iar.arm.toolchain.option.AgatonSax::rtcGenerateEntries.v6.8.0"/>
+							<option id="iar.arm.toolchain.option.AgatonSax::rtcCheckNonInstrumentedPointers_icc.v6.8.0.1171650807" superClass="iar.arm.toolchain.option.AgatonSax::rtcCheckNonInstrumentedPointers_icc.v6.8.0"/>
+							<option id="iar.arm.toolchain.option.AgatonSax::rtcIntOverflow.v6.8.0.1857097381" superClass="iar.arm.toolchain.option.AgatonSax::rtcIntOverflow.v6.8.0"/>
+							<option id="iar.arm.toolchain.option.AgatonSax::rtcInclUnsigned.v6.8.0.347926892" superClass="iar.arm.toolchain.option.AgatonSax::rtcInclUnsigned.v6.8.0"/>
+							<option id="iar.arm.toolchain.option.AgatonSax::rtcIntConversion.v6.8.0.1538786042" superClass="iar.arm.toolchain.option.AgatonSax::rtcIntConversion.v6.8.0"/>
+							<option id="iar.arm.toolchain.option.AgatonSax::rtcInclExplicit.v6.8.0.1234952822" superClass="iar.arm.toolchain.option.AgatonSax::rtcInclExplicit.v6.8.0"/>
+							<option id="iar.arm.toolchain.option.AgatonSax::rtcIntShiftOverflow.v6.8.0.1870033842" superClass="iar.arm.toolchain.option.AgatonSax::rtcIntShiftOverflow.v6.8.0"/>
+							<option id="iar.arm.toolchain.option.AgatonSax::rtcInclUnsignedShiftOverflow.v6.8.0.1950196020" superClass="iar.arm.toolchain.option.AgatonSax::rtcInclUnsignedShiftOverflow.v6.8.0"/>
+							<option id="iar.arm.toolchain.option.AgatonSax::rtcUnhandledCase.v6.8.0.577763446" superClass="iar.arm.toolchain.option.AgatonSax::rtcUnhandledCase.v6.8.0"/>
+							<option id="iar.arm.toolchain.option.AgatonSax::rtcDivByZero.v6.8.0.455270697" superClass="iar.arm.toolchain.option.AgatonSax::rtcDivByZero.v6.8.0"/>
+							<option id="iar.arm.toolchain.option.deviceInfo.v5.4.3.1480570378" superClass="iar.arm.toolchain.option.deviceInfo.v5.4.3" value="config/devices/Freescale/K2x/MK22FN512xxx12.menu" valueType="string"/>
+							<option id="iar.arm.toolchain.option.deviceName.v5.5.0.1149662962" superClass="iar.arm.toolchain.option.deviceName.v5.5.0" value="Freescale MK22FN512xxx12" valueType="string"/>
+							<option id="iar.arm.toolchain.option.deviceTag.v6.3.1.988821614" superClass="iar.arm.toolchain.option.deviceTag.v6.3.1" value="MK22FN512xxx12" valueType="string"/>
+							<option id="iar.arm.toolchain.option.lowLevelInterfaceCortex.v5.4.0.1649545118" superClass="iar.arm.toolchain.option.lowLevelInterfaceCortex.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.lowLevelInterface.v5.4.0.1015538765" superClass="iar.arm.toolchain.option.lowLevelInterface.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.semihosted.v5.4.0.785941636" superClass="iar.arm.toolchain.option.semihosted.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.libraryConfigFile.v5.4.0.556888495" superClass="iar.arm.toolchain.option.libraryConfigFile.v5.4.0" value="$TOOLKIT_DIR$\INC\c\DLib_Config_Normal.h" valueType="string"/>
+							<option id="iar.arm.toolchain.option.useDSPLibrary.v6.2.2.112806281" superClass="iar.arm.toolchain.option.useDSPLibrary.v6.2.2"/>
+							<option id="iar.arm.toolchain.option.useCMSIS.v6.2.2.645282302" superClass="iar.arm.toolchain.option.useCMSIS.v6.2.2"/>
+							<option id="iar.arm.toolchain.option.threaded_lib.v6.60.0.98465375" superClass="iar.arm.toolchain.option.threaded_lib.v6.60.0"/>
+							<option id="iar.arm.toolchain.option.misra-c.enable98.34111983" superClass="iar.arm.toolchain.option.misra-c.enable98"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul1:.346452615" superClass="iar.arm.toolchain.option.misra-c:1998.rul1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul2:.1464629594" superClass="iar.arm.toolchain.option.misra-c:1998.rul2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul3:.2071080262" superClass="iar.arm.toolchain.option.misra-c:1998.rul3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul4:.488473525" superClass="iar.arm.toolchain.option.misra-c:1998.rul4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul5:.1985307549" superClass="iar.arm.toolchain.option.misra-c:1998.rul5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul6:.1625586593" superClass="iar.arm.toolchain.option.misra-c:1998.rul6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul7:.426699830" superClass="iar.arm.toolchain.option.misra-c:1998.rul7:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul8:.2137385063" superClass="iar.arm.toolchain.option.misra-c:1998.rul8:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul9:.1838644085" superClass="iar.arm.toolchain.option.misra-c:1998.rul9:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul10:.405985090" superClass="iar.arm.toolchain.option.misra-c:1998.rul10:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul11:.144587331" superClass="iar.arm.toolchain.option.misra-c:1998.rul11:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul12:.2005198954" superClass="iar.arm.toolchain.option.misra-c:1998.rul12:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul13:.1660165062" superClass="iar.arm.toolchain.option.misra-c:1998.rul13:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul14:.1821029665" superClass="iar.arm.toolchain.option.misra-c:1998.rul14:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul15:.1768209259" superClass="iar.arm.toolchain.option.misra-c:1998.rul15:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul16:.2025658004" superClass="iar.arm.toolchain.option.misra-c:1998.rul16:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul17:.410063717" superClass="iar.arm.toolchain.option.misra-c:1998.rul17:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul18:.1997931194" superClass="iar.arm.toolchain.option.misra-c:1998.rul18:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul19:.2013688014" superClass="iar.arm.toolchain.option.misra-c:1998.rul19:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul20:.951515358" superClass="iar.arm.toolchain.option.misra-c:1998.rul20:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul21:.1387097028" superClass="iar.arm.toolchain.option.misra-c:1998.rul21:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul22:.617608072" superClass="iar.arm.toolchain.option.misra-c:1998.rul22:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul23:.1100969507" superClass="iar.arm.toolchain.option.misra-c:1998.rul23:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul24:.302358102" superClass="iar.arm.toolchain.option.misra-c:1998.rul24:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul25:.82388922" superClass="iar.arm.toolchain.option.misra-c:1998.rul25:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul26:.557919888" superClass="iar.arm.toolchain.option.misra-c:1998.rul26:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul27:.494282833" superClass="iar.arm.toolchain.option.misra-c:1998.rul27:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul28:.724603350" superClass="iar.arm.toolchain.option.misra-c:1998.rul28:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul29:.1505432774" superClass="iar.arm.toolchain.option.misra-c:1998.rul29:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul30:.1583751345" superClass="iar.arm.toolchain.option.misra-c:1998.rul30:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul31:.2090346218" superClass="iar.arm.toolchain.option.misra-c:1998.rul31:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul32:.1731915652" superClass="iar.arm.toolchain.option.misra-c:1998.rul32:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul33:.1033061644" superClass="iar.arm.toolchain.option.misra-c:1998.rul33:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul34:.1288988498" superClass="iar.arm.toolchain.option.misra-c:1998.rul34:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul35:.1069059605" superClass="iar.arm.toolchain.option.misra-c:1998.rul35:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul36:.1281696345" superClass="iar.arm.toolchain.option.misra-c:1998.rul36:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul37:.1401957478" superClass="iar.arm.toolchain.option.misra-c:1998.rul37:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul38:.2132466308" superClass="iar.arm.toolchain.option.misra-c:1998.rul38:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul39:.749328733" superClass="iar.arm.toolchain.option.misra-c:1998.rul39:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul40:.2107375538" superClass="iar.arm.toolchain.option.misra-c:1998.rul40:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul41:.602576582" superClass="iar.arm.toolchain.option.misra-c:1998.rul41:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul42:.490089048" superClass="iar.arm.toolchain.option.misra-c:1998.rul42:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul43:.1190332995" superClass="iar.arm.toolchain.option.misra-c:1998.rul43:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul44:.1011156560" superClass="iar.arm.toolchain.option.misra-c:1998.rul44:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul45:.1475248785" superClass="iar.arm.toolchain.option.misra-c:1998.rul45:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul46:.854581432" superClass="iar.arm.toolchain.option.misra-c:1998.rul46:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul47:.1136060565" superClass="iar.arm.toolchain.option.misra-c:1998.rul47:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul48:.176722949" superClass="iar.arm.toolchain.option.misra-c:1998.rul48:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul49:.961315844" superClass="iar.arm.toolchain.option.misra-c:1998.rul49:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul50:.1676276493" superClass="iar.arm.toolchain.option.misra-c:1998.rul50:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul51:.648539827" superClass="iar.arm.toolchain.option.misra-c:1998.rul51:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul52:.1856031709" superClass="iar.arm.toolchain.option.misra-c:1998.rul52:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul53:.1261830363" superClass="iar.arm.toolchain.option.misra-c:1998.rul53:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul54:.1664429649" superClass="iar.arm.toolchain.option.misra-c:1998.rul54:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul55:.1832032769" superClass="iar.arm.toolchain.option.misra-c:1998.rul55:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul56:.118861874" superClass="iar.arm.toolchain.option.misra-c:1998.rul56:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul57:.921162135" superClass="iar.arm.toolchain.option.misra-c:1998.rul57:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul58:.620966386" superClass="iar.arm.toolchain.option.misra-c:1998.rul58:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul59:.1560779765" superClass="iar.arm.toolchain.option.misra-c:1998.rul59:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul60:.1959462948" superClass="iar.arm.toolchain.option.misra-c:1998.rul60:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul61:.604919318" superClass="iar.arm.toolchain.option.misra-c:1998.rul61:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul62:.297366167" superClass="iar.arm.toolchain.option.misra-c:1998.rul62:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul63:.1964976255" superClass="iar.arm.toolchain.option.misra-c:1998.rul63:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul64:.1712581588" superClass="iar.arm.toolchain.option.misra-c:1998.rul64:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul65:.1451903602" superClass="iar.arm.toolchain.option.misra-c:1998.rul65:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul66:.742901530" superClass="iar.arm.toolchain.option.misra-c:1998.rul66:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul67:.1036887810" superClass="iar.arm.toolchain.option.misra-c:1998.rul67:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul68:.4823543" superClass="iar.arm.toolchain.option.misra-c:1998.rul68:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul69:.2126261774" superClass="iar.arm.toolchain.option.misra-c:1998.rul69:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul70:.1512953325" superClass="iar.arm.toolchain.option.misra-c:1998.rul70:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul71:.1575908430" superClass="iar.arm.toolchain.option.misra-c:1998.rul71:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul72:.42643558" superClass="iar.arm.toolchain.option.misra-c:1998.rul72:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul73:.1397984665" superClass="iar.arm.toolchain.option.misra-c:1998.rul73:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul74:.1784930276" superClass="iar.arm.toolchain.option.misra-c:1998.rul74:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul75:.1763196290" superClass="iar.arm.toolchain.option.misra-c:1998.rul75:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul76:.49412581" superClass="iar.arm.toolchain.option.misra-c:1998.rul76:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul77:.944523041" superClass="iar.arm.toolchain.option.misra-c:1998.rul77:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul78:.1999704910" superClass="iar.arm.toolchain.option.misra-c:1998.rul78:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul79:.2074137676" superClass="iar.arm.toolchain.option.misra-c:1998.rul79:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul80:.1980070826" superClass="iar.arm.toolchain.option.misra-c:1998.rul80:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul81:.1817882513" superClass="iar.arm.toolchain.option.misra-c:1998.rul81:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul82:.590501403" superClass="iar.arm.toolchain.option.misra-c:1998.rul82:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul83:.1227012510" superClass="iar.arm.toolchain.option.misra-c:1998.rul83:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul84:.443746167" superClass="iar.arm.toolchain.option.misra-c:1998.rul84:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul85:.1327390397" superClass="iar.arm.toolchain.option.misra-c:1998.rul85:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul86:.650153580" superClass="iar.arm.toolchain.option.misra-c:1998.rul86:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul87:.1508113491" superClass="iar.arm.toolchain.option.misra-c:1998.rul87:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul88:.1159137041" superClass="iar.arm.toolchain.option.misra-c:1998.rul88:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul89:.1984837138" superClass="iar.arm.toolchain.option.misra-c:1998.rul89:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul90:.1536432333" superClass="iar.arm.toolchain.option.misra-c:1998.rul90:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul91:.639143764" superClass="iar.arm.toolchain.option.misra-c:1998.rul91:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul92:.1267813698" superClass="iar.arm.toolchain.option.misra-c:1998.rul92:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul93:.703103169" superClass="iar.arm.toolchain.option.misra-c:1998.rul93:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul94:.105563178" superClass="iar.arm.toolchain.option.misra-c:1998.rul94:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul95:.862753606" superClass="iar.arm.toolchain.option.misra-c:1998.rul95:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul96:.539392808" superClass="iar.arm.toolchain.option.misra-c:1998.rul96:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul97:.46541745" superClass="iar.arm.toolchain.option.misra-c:1998.rul97:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul98:.314714341" superClass="iar.arm.toolchain.option.misra-c:1998.rul98:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul99:.2078007351" superClass="iar.arm.toolchain.option.misra-c:1998.rul99:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul100:.83326002" superClass="iar.arm.toolchain.option.misra-c:1998.rul100:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul101:.613174414" superClass="iar.arm.toolchain.option.misra-c:1998.rul101:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul102:.1791939901" superClass="iar.arm.toolchain.option.misra-c:1998.rul102:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul103:.111213100" superClass="iar.arm.toolchain.option.misra-c:1998.rul103:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul104:.1616932233" superClass="iar.arm.toolchain.option.misra-c:1998.rul104:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul105:.242782198" superClass="iar.arm.toolchain.option.misra-c:1998.rul105:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul106:.2005773187" superClass="iar.arm.toolchain.option.misra-c:1998.rul106:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul107:.829579181" superClass="iar.arm.toolchain.option.misra-c:1998.rul107:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul108:.286787580" superClass="iar.arm.toolchain.option.misra-c:1998.rul108:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul109:.169827993" superClass="iar.arm.toolchain.option.misra-c:1998.rul109:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul110:.408224540" superClass="iar.arm.toolchain.option.misra-c:1998.rul110:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul111:.580875408" superClass="iar.arm.toolchain.option.misra-c:1998.rul111:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul112:.108626566" superClass="iar.arm.toolchain.option.misra-c:1998.rul112:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul113:.153262153" superClass="iar.arm.toolchain.option.misra-c:1998.rul113:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul114:.885313449" superClass="iar.arm.toolchain.option.misra-c:1998.rul114:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul115:.384455571" superClass="iar.arm.toolchain.option.misra-c:1998.rul115:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul116:.1004959484" superClass="iar.arm.toolchain.option.misra-c:1998.rul116:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul117:.956053237" superClass="iar.arm.toolchain.option.misra-c:1998.rul117:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul118:.1349811145" superClass="iar.arm.toolchain.option.misra-c:1998.rul118:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul119:.477226920" superClass="iar.arm.toolchain.option.misra-c:1998.rul119:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul120:.1399710282" superClass="iar.arm.toolchain.option.misra-c:1998.rul120:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul121:.1079573677" superClass="iar.arm.toolchain.option.misra-c:1998.rul121:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul122:.1158823578" superClass="iar.arm.toolchain.option.misra-c:1998.rul122:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul123:.596331650" superClass="iar.arm.toolchain.option.misra-c:1998.rul123:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul124:.1495044490" superClass="iar.arm.toolchain.option.misra-c:1998.rul124:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul125:.16071229" superClass="iar.arm.toolchain.option.misra-c:1998.rul125:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul126:.925738622" superClass="iar.arm.toolchain.option.misra-c:1998.rul126:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul127:.1867021868" superClass="iar.arm.toolchain.option.misra-c:1998.rul127:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul1.1:.667457641" superClass="iar.arm.toolchain.option.misra-c:2004.rul1.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul1.2:.899771840" superClass="iar.arm.toolchain.option.misra-c:2004.rul1.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul1.3:.99276356" superClass="iar.arm.toolchain.option.misra-c:2004.rul1.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul1.4:.2087304882" superClass="iar.arm.toolchain.option.misra-c:2004.rul1.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul1.5:.1776020346" superClass="iar.arm.toolchain.option.misra-c:2004.rul1.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul2.1:.1517207490" superClass="iar.arm.toolchain.option.misra-c:2004.rul2.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul2.2:.626972178" superClass="iar.arm.toolchain.option.misra-c:2004.rul2.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul2.3:.243487961" superClass="iar.arm.toolchain.option.misra-c:2004.rul2.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul2.4:.1556019343" superClass="iar.arm.toolchain.option.misra-c:2004.rul2.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul3.1:.2118152676" superClass="iar.arm.toolchain.option.misra-c:2004.rul3.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul3.2:.1127878843" superClass="iar.arm.toolchain.option.misra-c:2004.rul3.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul3.3:.681417353" superClass="iar.arm.toolchain.option.misra-c:2004.rul3.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul3.4:.1016150591" superClass="iar.arm.toolchain.option.misra-c:2004.rul3.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul3.5:.1781635271" superClass="iar.arm.toolchain.option.misra-c:2004.rul3.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul3.6:.1437961063" superClass="iar.arm.toolchain.option.misra-c:2004.rul3.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul4.1:.1449838863" superClass="iar.arm.toolchain.option.misra-c:2004.rul4.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul4.2:.1576372927" superClass="iar.arm.toolchain.option.misra-c:2004.rul4.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul5.1:.1346276149" superClass="iar.arm.toolchain.option.misra-c:2004.rul5.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul5.2:.2112397119" superClass="iar.arm.toolchain.option.misra-c:2004.rul5.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul5.3:.1032007166" superClass="iar.arm.toolchain.option.misra-c:2004.rul5.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul5.4:.1322141219" superClass="iar.arm.toolchain.option.misra-c:2004.rul5.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul5.5:.1962631415" superClass="iar.arm.toolchain.option.misra-c:2004.rul5.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul5.6:.781467356" superClass="iar.arm.toolchain.option.misra-c:2004.rul5.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul5.7:.36607303" superClass="iar.arm.toolchain.option.misra-c:2004.rul5.7:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul6.1:.815433809" superClass="iar.arm.toolchain.option.misra-c:2004.rul6.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul6.2:.480994253" superClass="iar.arm.toolchain.option.misra-c:2004.rul6.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul6.3:.1358276208" superClass="iar.arm.toolchain.option.misra-c:2004.rul6.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul6.4:.1293276616" superClass="iar.arm.toolchain.option.misra-c:2004.rul6.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul6.5:.1021120852" superClass="iar.arm.toolchain.option.misra-c:2004.rul6.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul7.1:.111909981" superClass="iar.arm.toolchain.option.misra-c:2004.rul7.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.1:.1582013769" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.2:.1115065850" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.3:.1042689955" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.4:.1806987671" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.5:.366107291" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.6:.1532300805" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.7:.770819271" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.7:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.8:.1580249880" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.8:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.9:.1069762474" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.9:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.10:.864584322" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.10:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.11:.543776334" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.11:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.12:.487281812" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.12:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul9.1:.1573140168" superClass="iar.arm.toolchain.option.misra-c:2004.rul9.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul9.2:.1667831864" superClass="iar.arm.toolchain.option.misra-c:2004.rul9.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul9.3:.779776428" superClass="iar.arm.toolchain.option.misra-c:2004.rul9.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul10.1:.1997217225" superClass="iar.arm.toolchain.option.misra-c:2004.rul10.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul10.2:.945881517" superClass="iar.arm.toolchain.option.misra-c:2004.rul10.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul10.3:.2142541152" superClass="iar.arm.toolchain.option.misra-c:2004.rul10.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul10.4:.655871271" superClass="iar.arm.toolchain.option.misra-c:2004.rul10.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul10.5:.2111568221" superClass="iar.arm.toolchain.option.misra-c:2004.rul10.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul10.6:.1527491989" superClass="iar.arm.toolchain.option.misra-c:2004.rul10.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul11.1:.1298519717" superClass="iar.arm.toolchain.option.misra-c:2004.rul11.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul11.2:.952143705" superClass="iar.arm.toolchain.option.misra-c:2004.rul11.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul11.3:.1183715457" superClass="iar.arm.toolchain.option.misra-c:2004.rul11.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul11.4:.2067928898" superClass="iar.arm.toolchain.option.misra-c:2004.rul11.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul11.5:.1785836970" superClass="iar.arm.toolchain.option.misra-c:2004.rul11.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.1:.1910707201" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.2:.369724060" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.3:.610086267" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.4:.1040792367" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.5:.1620055286" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.6:.51281130" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.7:.1432812512" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.7:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.8:.860830842" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.8:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.9:.1217897102" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.9:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.10:.890014673" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.10:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.11:.517831554" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.11:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.12:.933798902" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.12:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.13:.1952751929" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.13:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul13.1:.1163530773" superClass="iar.arm.toolchain.option.misra-c:2004.rul13.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul13.2:.1612755228" superClass="iar.arm.toolchain.option.misra-c:2004.rul13.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul13.3:.1935446547" superClass="iar.arm.toolchain.option.misra-c:2004.rul13.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul13.4:.962463841" superClass="iar.arm.toolchain.option.misra-c:2004.rul13.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul13.5:.832350058" superClass="iar.arm.toolchain.option.misra-c:2004.rul13.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul13.6:.1675207030" superClass="iar.arm.toolchain.option.misra-c:2004.rul13.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul13.7:.1883473885" superClass="iar.arm.toolchain.option.misra-c:2004.rul13.7:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul14.1:.1267403292" superClass="iar.arm.toolchain.option.misra-c:2004.rul14.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul14.2:.790362889" superClass="iar.arm.toolchain.option.misra-c:2004.rul14.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul14.3:.964909120" superClass="iar.arm.toolchain.option.misra-c:2004.rul14.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul14.4:.1563653277" superClass="iar.arm.toolchain.option.misra-c:2004.rul14.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul14.5:.1444106776" superClass="iar.arm.toolchain.option.misra-c:2004.rul14.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul14.6:.1713207240" superClass="iar.arm.toolchain.option.misra-c:2004.rul14.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul14.7:.2006997646" superClass="iar.arm.toolchain.option.misra-c:2004.rul14.7:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul14.8:.1758603934" superClass="iar.arm.toolchain.option.misra-c:2004.rul14.8:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul14.9:.703105744" superClass="iar.arm.toolchain.option.misra-c:2004.rul14.9:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul14.10:.1399691034" superClass="iar.arm.toolchain.option.misra-c:2004.rul14.10:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul15.1:.36042374" superClass="iar.arm.toolchain.option.misra-c:2004.rul15.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul15.2:.2121659714" superClass="iar.arm.toolchain.option.misra-c:2004.rul15.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul15.3:.509561898" superClass="iar.arm.toolchain.option.misra-c:2004.rul15.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul15.4:.2092262945" superClass="iar.arm.toolchain.option.misra-c:2004.rul15.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul15.5:.536706107" superClass="iar.arm.toolchain.option.misra-c:2004.rul15.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul16.1:.781471261" superClass="iar.arm.toolchain.option.misra-c:2004.rul16.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul16.2:.1068888265" superClass="iar.arm.toolchain.option.misra-c:2004.rul16.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul16.3:.699275296" superClass="iar.arm.toolchain.option.misra-c:2004.rul16.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul16.4:.265825558" superClass="iar.arm.toolchain.option.misra-c:2004.rul16.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul16.5:.1813219187" superClass="iar.arm.toolchain.option.misra-c:2004.rul16.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul16.6:.168537901" superClass="iar.arm.toolchain.option.misra-c:2004.rul16.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul16.7:.1446211969" superClass="iar.arm.toolchain.option.misra-c:2004.rul16.7:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul16.8:.319051120" superClass="iar.arm.toolchain.option.misra-c:2004.rul16.8:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul16.9:.1179564809" superClass="iar.arm.toolchain.option.misra-c:2004.rul16.9:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul16.10:.254336381" superClass="iar.arm.toolchain.option.misra-c:2004.rul16.10:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul17.1:.457757628" superClass="iar.arm.toolchain.option.misra-c:2004.rul17.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul17.2:.447022465" superClass="iar.arm.toolchain.option.misra-c:2004.rul17.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul17.3:.809761309" superClass="iar.arm.toolchain.option.misra-c:2004.rul17.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul17.4:.356488869" superClass="iar.arm.toolchain.option.misra-c:2004.rul17.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul17.5:.385956201" superClass="iar.arm.toolchain.option.misra-c:2004.rul17.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul17.6:.89972042" superClass="iar.arm.toolchain.option.misra-c:2004.rul17.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul18.1:.643090350" superClass="iar.arm.toolchain.option.misra-c:2004.rul18.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul18.2:.1363236503" superClass="iar.arm.toolchain.option.misra-c:2004.rul18.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul18.3:.1038088490" superClass="iar.arm.toolchain.option.misra-c:2004.rul18.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul18.4:.11453893" superClass="iar.arm.toolchain.option.misra-c:2004.rul18.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.1:.1278515460" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.2:.1972225320" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.3:.360923266" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.4:.1203347437" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.5:.1407779381" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.6:.979388006" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.7:.1731258816" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.7:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.8:.918728370" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.8:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.9:.1816091209" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.9:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.10:.1278463060" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.10:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.11:.900532236" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.11:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.12:.2044393941" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.12:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.13:.1063457349" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.13:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.14:.1576532698" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.14:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.15:.1248452660" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.15:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.16:.86775184" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.16:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.17:.226422957" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.17:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.1:.1327491332" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.2:.45763200" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.3:.309134686" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.4:.583532214" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.5:.752170318" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.6:.1583002923" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.7:.1364352016" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.7:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.8:.1535034067" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.8:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.9:.1194875815" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.9:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.10:.67875309" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.10:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.11:.964460048" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.11:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.12:.1186148083" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.12:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul21.1:.684160492" superClass="iar.arm.toolchain.option.misra-c:2004.rul21.1:"/>
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="iar.arm.toolchain.targetPlatform.v5.4.0.434816245" isAbstract="false" name="IAR Target platform for ARM (ELF)" osList="win32,linux" superClass="iar.arm.toolchain.targetPlatform.v5.4.0"/>
+							<builder buildPath="${workspace_loc:/spi_SPI0_invensense}/Int Flash Debug" id="iar.arm.toolchain.builder.2.371277723" name="CDT Internal Builder.Int Flash Debug" superClass="iar.arm.toolchain.builder.2"/>
+							<tool id="iar.arm.toolchain.compiler.v5.4.1.1067530054" name="IAR C/C++ Compiler for ARM" superClass="iar.arm.toolchain.compiler.v5.4.1">
+								<option defaultValue="true" id="iar.arm.toolchain.compiler.option.debugInfo.v5.4.0.105769615" superClass="iar.arm.toolchain.compiler.option.debugInfo.v5.4.0" valueType="boolean"/>
+								<option defaultValue="iar.arm.toolchain.compiler.option.optLevel.none.v5.4.0" id="iar.arm.toolchain.compiler.option.optLevel.v5.4.0.660403654" superClass="iar.arm.toolchain.compiler.option.optLevel.v5.4.0" valueType="enumerated"/>
+								<option defaultValue="true" id="iar.arm.toolchain.compiler.option.optCSE.v5.4.0.1661608659" superClass="iar.arm.toolchain.compiler.option.optCSE.v5.4.0" valueType="boolean"/>
+								<option defaultValue="true" id="iar.arm.toolchain.compiler.option.optUnroll.v5.4.0.1070882941" superClass="iar.arm.toolchain.compiler.option.optUnroll.v5.4.0" valueType="boolean"/>
+								<option defaultValue="true" id="iar.arm.toolchain.compiler.option.optInline.v5.4.0.901503993" superClass="iar.arm.toolchain.compiler.option.optInline.v5.4.0" valueType="boolean"/>
+								<option defaultValue="true" id="iar.arm.toolchain.compiler.option.optCodeMotion.v5.4.0.1127207491" superClass="iar.arm.toolchain.compiler.option.optCodeMotion.v5.4.0" valueType="boolean"/>
+								<option defaultValue="true" id="iar.arm.toolchain.compiler.option.optAliasAnalysis.v5.4.0.646092071" superClass="iar.arm.toolchain.compiler.option.optAliasAnalysis.v5.4.0" valueType="boolean"/>
+								<option defaultValue="true" id="iar.arm.toolchain.compiler.option.optStaticClustering.v5.4.0.1270737445" superClass="iar.arm.toolchain.compiler.option.optStaticClustering.v5.4.0" valueType="boolean"/>
+								<option defaultValue="true" id="iar.arm.toolchain.compiler.option.optScheduling.v5.4.0.123353505" superClass="iar.arm.toolchain.compiler.option.optScheduling.v5.4.0" valueType="boolean"/>
+								<option id="iar.arm.toolchain.compiler.option.cpuMode.v5.4.0.1710887368" superClass="iar.arm.toolchain.compiler.option.cpuMode.v5.4.0" value="iar.arm.toolchain.compiler.option.cpuMode.thumb.v5.4.0" valueType="enumerated"/>
+								<option id="iar.arm.toolchain.compiler.option.noLiteralPool.v6.9.1.729396156" superClass="iar.arm.toolchain.compiler.option.noLiteralPool.v6.9.1"/>
+								<option id="iar.arm.toolchain.compiler.option.interwork.v5.4.0.2067450276" superClass="iar.arm.toolchain.compiler.option.interwork.v5.4.0" value="false" valueType="boolean"/>
+								<option id="iar.arm.toolchain.compiler.option.language.v6.1.0.1219379215" superClass="iar.arm.toolchain.compiler.option.language.v6.1.0" value="iar.arm.toolchain.compiler.option.language.auto.v6.2.2" valueType="enumerated"/>
+								<option id="iar.arm.toolchain.compiler.option.incPaths.v5.4.0.666835335" superClass="iar.arm.toolchain.compiler.option.incPaths.v5.4.0" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/mqx/examples/spi_SPI0_invensense&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/debug/bsp/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/debug/bsp/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/debug&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/debug/bsp&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/debug/psp&quot;"/>
+								</option>
+								<option id="iar.arm.toolchain.compiler.option.enableRemarks.v5.4.0.103034580" superClass="iar.arm.toolchain.compiler.option.enableRemarks.v5.4.0"/>
+								<option id="iar.arm.toolchain.compiler.option.treatAsRemarks.v5.4.0.810942188" superClass="iar.arm.toolchain.compiler.option.treatAsRemarks.v5.4.0" valueType="stringList"/>
+								<option id="iar.arm.toolchain.compiler.option.suppress.v5.4.0.875061441" superClass="iar.arm.toolchain.compiler.option.suppress.v5.4.0" valueType="stringList">
+									<listOptionValue builtIn="false" value="Pa082"/>
+									<listOptionValue builtIn="false" value="Pe186"/>
+									<listOptionValue builtIn="false" value="Pe177"/>
+									<listOptionValue builtIn="false" value="Pe550"/>
+									<listOptionValue builtIn="false" value="Pe174"/>
+								</option>
+								<option id="iar.arm.toolchain.compiler.option.treatAsWarnings.v5.4.0.1223605860" superClass="iar.arm.toolchain.compiler.option.treatAsWarnings.v5.4.0" valueType="stringList"/>
+								<option id="iar.arm.toolchain.compiler.option.treatAllWarningsAsErrors.v5.4.0.1255760502" superClass="iar.arm.toolchain.compiler.option.treatAllWarningsAsErrors.v5.4.0"/>
+								<option id="iar.arm.toolchain.compiler.option.wrapDiagnostics.9825272" superClass="iar.arm.toolchain.compiler.option.wrapDiagnostics"/>
+								<option id="iar.arm.toolchain.compiler.option.cppInlineSemantics.v6.1.0.844725744" superClass="iar.arm.toolchain.compiler.option.cppInlineSemantics.v6.1.0" value="true" valueType="boolean"/>
+								<option id="iar.arm.toolchain.compiler.option.additionalUserOptions.1935557881" superClass="iar.arm.toolchain.compiler.option.additionalUserOptions"/>
+								<option id="iar.arm.toolchain.compiler.option.defines.v5.4.0.1719118461" superClass="iar.arm.toolchain.compiler.option.defines.v5.4.0" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_DEBUG=1"/>
+								</option>
+								<inputType id="iar.arm.toolchain.compiler.inputType.v5.4.1.900745710" name="IAR C/C++ Compiler Input Type" superClass="iar.arm.toolchain.compiler.inputType.v5.4.1"/>
+							</tool>
+							<tool id="iar.arm.toolchain.assembler.v5.4.0.1307224312" name="IAR Assembler for ARM" superClass="iar.arm.toolchain.assembler.v5.4.0">
+								<option defaultValue="true" id="iar.arm.toolchain.assembler.option.debugInfo.v5.4.0.436920091" superClass="iar.arm.toolchain.assembler.option.debugInfo.v5.4.0" valueType="boolean"/>
+								<option id="iar.arm.toolchain.assembler.option.enableMultibyte.v5.4.0.305840862" superClass="iar.arm.toolchain.assembler.option.enableMultibyte.v5.4.0"/>
+								<option id="iar.arm.toolchain.assembler.option.alternativeRegisterNames.v5.4.0.1005825549" superClass="iar.arm.toolchain.assembler.option.alternativeRegisterNames.v5.4.0" value="true" valueType="boolean"/>
+								<option id="iar.arm.toolchain.assembler.option.noLiteralPool.v6.9.1.654168629" superClass="iar.arm.toolchain.assembler.option.noLiteralPool.v6.9.1"/>
+								<option id="iar.arm.toolchain.assembler.option.quoteCharacters.v5.4.0.316915726" superClass="iar.arm.toolchain.assembler.option.quoteCharacters.v5.4.0"/>
+								<option id="iar.arm.toolchain.assembler.option.caseSensitiveSymbols.v5.4.0.50943429" superClass="iar.arm.toolchain.assembler.option.caseSensitiveSymbols.v5.4.0"/>
+								<option id="iar.arm.toolchain.assembler.option.includePaths.v5.4.0.1562085028" superClass="iar.arm.toolchain.assembler.option.includePaths.v5.4.0" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/mqx/examples/spi_SPI0_invensense&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/debug/bsp/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/debug/bsp/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/debug&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/debug/bsp&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/debug/psp&quot;"/>
+								</option>
+								<option id="iar.arm.toolchain.assembler.option.extraOptions.v5.4.0.773503529" superClass="iar.arm.toolchain.assembler.option.extraOptions.v5.4.0"/>
+								<option id="iar.arm.toolchain.assembler.option.definedSymbols.v5.4.0.2065643242" superClass="iar.arm.toolchain.assembler.option.definedSymbols.v5.4.0" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_DEBUG=1"/>
+								</option>
+								<inputType id="iar.arm.toolchain.assembler.inputType.asmFile.v5.4.0.866688395" name="IAR Assembler input type for ARM (asm, s)" superClass="iar.arm.toolchain.assembler.inputType.asmFile.v5.4.0"/>
+							</tool>
+							<tool id="iar.arm.toolchain.linker.v5.4.0.1720241726" name="IAR Linker for ARM" superClass="iar.arm.toolchain.linker.v5.4.0">
+								<option id="iar.arm.toolchain.linker.option.icfFile.v5.4.0.1278741519" superClass="iar.arm.toolchain.linker.option.icfFile.v5.4.0" value="C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/debug/bsp/intflash.icf" valueType="string"/>
+								<option id="iar.arm.toolchain.linker.option.devicePostProcess.v5.5.2.979575391" superClass="iar.arm.toolchain.linker.option.devicePostProcess.v5.5.2"/>
+								<option id="iar.arm.toolchain.linker.option.extraOptions.v5.4.0.995568891" superClass="iar.arm.toolchain.linker.option.extraOptions.v5.4.0" value="--redirect __iar_dlmalloc=malloc --redirect __iar_dlcalloc=calloc --redirect __iar_dlfree=free " valueType="string"/>
+								<option id="iar.arm.toolchain.linker.option.additionalLibraries.v5.5.0.1828822071" superClass="iar.arm.toolchain.linker.option.additionalLibraries.v5.5.0" valueType="libs">
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/debug/bsp/bsp.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/debug/psp/psp.a&quot;"/>
+								</option>
+								<option id="iar.arm.toolchain.linker.option.suppressThese.v5.4.0.1170637435" superClass="iar.arm.toolchain.linker.option.suppressThese.v5.4.0" valueType="stringList"/>
+								<option id="iar.arm.toolchain.linker.option.treatAsWarnings.v5.4.0.297998153" superClass="iar.arm.toolchain.linker.option.treatAsWarnings.v5.4.0" valueType="stringList"/>
+								<option id="iar.arm.toolchain.linker.option.treatAsErrors.v5.4.0.315350800" superClass="iar.arm.toolchain.linker.option.treatAsErrors.v5.4.0" valueType="stringList"/>
+								<option id="iar.arm.toolchain.linker.option.enableRemarks.v5.4.0.936596088" superClass="iar.arm.toolchain.linker.option.enableRemarks.v5.4.0"/>
+								<option id="iar.arm.toolchain.linker.option.treatAsRemarks.v5.4.0.295373452" superClass="iar.arm.toolchain.linker.option.treatAsRemarks.v5.4.0" valueType="stringList"/>
+								<option id="iar.arm.toolchain.linker.option.warningsAreErrors.v5.4.0.673797554" superClass="iar.arm.toolchain.linker.option.warningsAreErrors.v5.4.0"/>
+								<option id="iar.arm.toolchain.linker.option.programEntry.v5.4.0.882526961" superClass="iar.arm.toolchain.linker.option.programEntry.v5.4.0"/>
+								<option id="iar.arm.toolchain.linker.option.entryOverride.v6.2.3.1674561386" superClass="iar.arm.toolchain.linker.option.entryOverride.v6.2.3"/>
+								<option id="iar.arm.toolchain.linker.option.entryDefinedByApplication.v5.4.0.1034465749" superClass="iar.arm.toolchain.linker.option.entryDefinedByApplication.v5.4.0"/>
+								<inputType id="iar.arm.toolchain.linker.inputType.object.v5.4.0.988013870" name="IAR Linker Input Type for ARM (o)" superClass="iar.arm.toolchain.linker.inputType.object.v5.4.0">
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+								</inputType>
+							</tool>
+							<tool id="iar.arm.toolchain.archive.v5.4.0.1629072121" name="IAR Library Builder for ARM" superClass="iar.arm.toolchain.archive.v5.4.0"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.1131204405">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.1131204405" moduleId="org.eclipse.cdt.core.settings" name="Int Flash Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.iar.cdt.errorParser.com.iar.cdt.errorParser.ErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="com.iar.cdt.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=com.iar.cdt.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.1131204405" name="Int Flash Release" parent="iar.arm.toolchain.project.exe.configuration.debug.v5.4.0">
+					<folderInfo id="iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.1131204405." name="/" resourcePath="">
+						<toolChain id="iar.arm.toolchain.project.exe.configuration.debug.toolchain.v5.4.0.1868562262" name="IAR Toolchain for ARM - (7.x)" superClass="iar.arm.toolchain.project.exe.configuration.debug.toolchain.v5.4.0">
+							<option id="iar.arm.toolchain.option.cpuCore.v5.4.0.1828564575" superClass="iar.arm.toolchain.option.cpuCore.v5.4.0" value="iar.arm.toolchain.option.cpuCore.Cortex-M4F.v5.5.0" valueType="enumerated"/>
+							<option id="iar.arm.toolchain.option.endianMode.v5.4.0.1232402966" superClass="iar.arm.toolchain.option.endianMode.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.bigEndianFormat.v5.4.0.832967370" superClass="iar.arm.toolchain.option.bigEndianFormat.v5.4.0" value="iar.arm.toolchain.option.bigEndianFormat.BE8.v5.4.0" valueType="enumerated"/>
+							<option id="iar.arm.toolchain.option.printfFormatter.v5.4.0.979683670" superClass="iar.arm.toolchain.option.printfFormatter.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.scanfFormatter.v5.4.0.1417120985" superClass="iar.arm.toolchain.option.scanfFormatter.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.bufferedOutput.v6.1.0.856213089" superClass="iar.arm.toolchain.option.bufferedOutput.v6.1.0"/>
+							<option id="iar.arm.toolchain.option.mfc.v5.5.2.184184741" superClass="iar.arm.toolchain.option.mfc.v5.5.2"/>
+							<option id="iar.arm.toolchain.option.deviceInfo.v5.4.3.233192002" superClass="iar.arm.toolchain.option.deviceInfo.v5.4.3" value="config/devices/Freescale/K2x/MK22FN512xxx12.menu" valueType="string"/>
+							<option id="iar.arm.toolchain.option.fpu.v5.4.0.935654766" superClass="iar.arm.toolchain.option.fpu.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.deviceName.v5.5.0.850053675" superClass="iar.arm.toolchain.option.deviceName.v5.5.0" value="Freescale MK22FN512xxx12" valueType="string"/>
+							<option id="iar.arm.toolchain.option.deviceTag.v6.3.1.1923725" superClass="iar.arm.toolchain.option.deviceTag.v6.3.1" value="MK22FN512xxx12" valueType="string"/>
+							<option id="iar.arm.toolchain.option.lowLevelInterfaceCortex.v5.4.0.2048547060" superClass="iar.arm.toolchain.option.lowLevelInterfaceCortex.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.libraryConfig.v5.4.0.1109286405" superClass="iar.arm.toolchain.option.libraryConfig.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.lowLevelInterface.v5.4.0.343716045" superClass="iar.arm.toolchain.option.lowLevelInterface.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.semihosted.v5.4.0.1835791354" superClass="iar.arm.toolchain.option.semihosted.v5.4.0" value="false" valueType="boolean"/>
+							<option id="iar.arm.toolchain.option.libraryConfigFile.v5.4.0.584975775" superClass="iar.arm.toolchain.option.libraryConfigFile.v5.4.0" value="$TOOLKIT_DIR$\INC\c\DLib_Config_Normal.h" valueType="string"/>
+							<option id="iar.arm.toolchain.option.useDSPLibrary.v6.2.2.1419501917" superClass="iar.arm.toolchain.option.useDSPLibrary.v6.2.2"/>
+							<option id="iar.arm.toolchain.option.useCMSIS.v6.2.2.413843438" superClass="iar.arm.toolchain.option.useCMSIS.v6.2.2"/>
+							<option id="iar.arm.toolchain.option.threaded_lib.v6.60.0.217063703" superClass="iar.arm.toolchain.option.threaded_lib.v6.60.0"/>
+							<option id="iar.arm.toolchain.option.misra-c.enable.1879599909" superClass="iar.arm.toolchain.option.misra-c.enable"/>
+							<option id="iar.arm.toolchain.option.misra-c.enable98.1828941145" superClass="iar.arm.toolchain.option.misra-c.enable98"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul1:.844396020" superClass="iar.arm.toolchain.option.misra-c:1998.rul1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul2:.604616965" superClass="iar.arm.toolchain.option.misra-c:1998.rul2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul3:.1914893685" superClass="iar.arm.toolchain.option.misra-c:1998.rul3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul4:.723826318" superClass="iar.arm.toolchain.option.misra-c:1998.rul4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul5:.293671065" superClass="iar.arm.toolchain.option.misra-c:1998.rul5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul6:.795250509" superClass="iar.arm.toolchain.option.misra-c:1998.rul6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul7:.598276601" superClass="iar.arm.toolchain.option.misra-c:1998.rul7:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul8:.567552702" superClass="iar.arm.toolchain.option.misra-c:1998.rul8:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul9:.1955747663" superClass="iar.arm.toolchain.option.misra-c:1998.rul9:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul10:.2103678759" superClass="iar.arm.toolchain.option.misra-c:1998.rul10:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul11:.830950021" superClass="iar.arm.toolchain.option.misra-c:1998.rul11:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul12:.1273811413" superClass="iar.arm.toolchain.option.misra-c:1998.rul12:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul13:.724755468" superClass="iar.arm.toolchain.option.misra-c:1998.rul13:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul14:.14492921" superClass="iar.arm.toolchain.option.misra-c:1998.rul14:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul15:.1338600432" superClass="iar.arm.toolchain.option.misra-c:1998.rul15:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul16:.749257227" superClass="iar.arm.toolchain.option.misra-c:1998.rul16:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul17:.1455154087" superClass="iar.arm.toolchain.option.misra-c:1998.rul17:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul18:.1032910620" superClass="iar.arm.toolchain.option.misra-c:1998.rul18:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul19:.1057861769" superClass="iar.arm.toolchain.option.misra-c:1998.rul19:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul20:.338928823" superClass="iar.arm.toolchain.option.misra-c:1998.rul20:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul21:.251601915" superClass="iar.arm.toolchain.option.misra-c:1998.rul21:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul22:.1710938753" superClass="iar.arm.toolchain.option.misra-c:1998.rul22:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul23:.1561342812" superClass="iar.arm.toolchain.option.misra-c:1998.rul23:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul24:.1153223256" superClass="iar.arm.toolchain.option.misra-c:1998.rul24:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul25:.1177591435" superClass="iar.arm.toolchain.option.misra-c:1998.rul25:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul26:.1704817207" superClass="iar.arm.toolchain.option.misra-c:1998.rul26:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul27:.1945241945" superClass="iar.arm.toolchain.option.misra-c:1998.rul27:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul28:.272308946" superClass="iar.arm.toolchain.option.misra-c:1998.rul28:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul29:.1669092164" superClass="iar.arm.toolchain.option.misra-c:1998.rul29:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul30:.1779202076" superClass="iar.arm.toolchain.option.misra-c:1998.rul30:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul31:.2142565148" superClass="iar.arm.toolchain.option.misra-c:1998.rul31:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul32:.273135897" superClass="iar.arm.toolchain.option.misra-c:1998.rul32:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul33:.1801242700" superClass="iar.arm.toolchain.option.misra-c:1998.rul33:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul34:.1076277170" superClass="iar.arm.toolchain.option.misra-c:1998.rul34:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul35:.360076400" superClass="iar.arm.toolchain.option.misra-c:1998.rul35:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul36:.586617772" superClass="iar.arm.toolchain.option.misra-c:1998.rul36:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul37:.1982683190" superClass="iar.arm.toolchain.option.misra-c:1998.rul37:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul38:.1541872234" superClass="iar.arm.toolchain.option.misra-c:1998.rul38:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul39:.1996742981" superClass="iar.arm.toolchain.option.misra-c:1998.rul39:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul40:.420427901" superClass="iar.arm.toolchain.option.misra-c:1998.rul40:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul41:.1116977553" superClass="iar.arm.toolchain.option.misra-c:1998.rul41:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul42:.342534452" superClass="iar.arm.toolchain.option.misra-c:1998.rul42:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul43:.13035856" superClass="iar.arm.toolchain.option.misra-c:1998.rul43:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul44:.458740236" superClass="iar.arm.toolchain.option.misra-c:1998.rul44:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul45:.1943860850" superClass="iar.arm.toolchain.option.misra-c:1998.rul45:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul46:.1138210378" superClass="iar.arm.toolchain.option.misra-c:1998.rul46:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul47:.2058427938" superClass="iar.arm.toolchain.option.misra-c:1998.rul47:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul48:.1787604975" superClass="iar.arm.toolchain.option.misra-c:1998.rul48:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul49:.1042880079" superClass="iar.arm.toolchain.option.misra-c:1998.rul49:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul50:.1134618680" superClass="iar.arm.toolchain.option.misra-c:1998.rul50:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul51:.1576385978" superClass="iar.arm.toolchain.option.misra-c:1998.rul51:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul52:.1728060396" superClass="iar.arm.toolchain.option.misra-c:1998.rul52:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul53:.793718846" superClass="iar.arm.toolchain.option.misra-c:1998.rul53:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul54:.135751262" superClass="iar.arm.toolchain.option.misra-c:1998.rul54:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul55:.1560913122" superClass="iar.arm.toolchain.option.misra-c:1998.rul55:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul56:.760329133" superClass="iar.arm.toolchain.option.misra-c:1998.rul56:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul57:.2133280707" superClass="iar.arm.toolchain.option.misra-c:1998.rul57:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul58:.182796196" superClass="iar.arm.toolchain.option.misra-c:1998.rul58:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul59:.698984463" superClass="iar.arm.toolchain.option.misra-c:1998.rul59:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul60:.1548636191" superClass="iar.arm.toolchain.option.misra-c:1998.rul60:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul61:.1555212298" superClass="iar.arm.toolchain.option.misra-c:1998.rul61:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul62:.134116722" superClass="iar.arm.toolchain.option.misra-c:1998.rul62:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul63:.685590827" superClass="iar.arm.toolchain.option.misra-c:1998.rul63:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul64:.1229260355" superClass="iar.arm.toolchain.option.misra-c:1998.rul64:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul65:.2017284310" superClass="iar.arm.toolchain.option.misra-c:1998.rul65:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul66:.252310464" superClass="iar.arm.toolchain.option.misra-c:1998.rul66:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul67:.770139618" superClass="iar.arm.toolchain.option.misra-c:1998.rul67:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul68:.1892350009" superClass="iar.arm.toolchain.option.misra-c:1998.rul68:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul69:.1925970418" superClass="iar.arm.toolchain.option.misra-c:1998.rul69:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul70:.2016783492" superClass="iar.arm.toolchain.option.misra-c:1998.rul70:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul71:.874678435" superClass="iar.arm.toolchain.option.misra-c:1998.rul71:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul72:.1976639844" superClass="iar.arm.toolchain.option.misra-c:1998.rul72:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul73:.720227335" superClass="iar.arm.toolchain.option.misra-c:1998.rul73:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul74:.2111514830" superClass="iar.arm.toolchain.option.misra-c:1998.rul74:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul75:.1752342982" superClass="iar.arm.toolchain.option.misra-c:1998.rul75:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul76:.2082323855" superClass="iar.arm.toolchain.option.misra-c:1998.rul76:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul77:.228771135" superClass="iar.arm.toolchain.option.misra-c:1998.rul77:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul78:.966691793" superClass="iar.arm.toolchain.option.misra-c:1998.rul78:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul79:.624365289" superClass="iar.arm.toolchain.option.misra-c:1998.rul79:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul80:.2113876803" superClass="iar.arm.toolchain.option.misra-c:1998.rul80:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul81:.1099614694" superClass="iar.arm.toolchain.option.misra-c:1998.rul81:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul82:.1027526258" superClass="iar.arm.toolchain.option.misra-c:1998.rul82:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul83:.628256861" superClass="iar.arm.toolchain.option.misra-c:1998.rul83:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul84:.406055532" superClass="iar.arm.toolchain.option.misra-c:1998.rul84:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul85:.13212188" superClass="iar.arm.toolchain.option.misra-c:1998.rul85:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul86:.2074389572" superClass="iar.arm.toolchain.option.misra-c:1998.rul86:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul87:.1302839413" superClass="iar.arm.toolchain.option.misra-c:1998.rul87:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul88:.1815274900" superClass="iar.arm.toolchain.option.misra-c:1998.rul88:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul89:.2141257830" superClass="iar.arm.toolchain.option.misra-c:1998.rul89:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul90:.1302968250" superClass="iar.arm.toolchain.option.misra-c:1998.rul90:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul91:.1276876086" superClass="iar.arm.toolchain.option.misra-c:1998.rul91:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul92:.1980685723" superClass="iar.arm.toolchain.option.misra-c:1998.rul92:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul93:.92298754" superClass="iar.arm.toolchain.option.misra-c:1998.rul93:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul94:.1597942088" superClass="iar.arm.toolchain.option.misra-c:1998.rul94:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul95:.2134847240" superClass="iar.arm.toolchain.option.misra-c:1998.rul95:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul96:.1986726322" superClass="iar.arm.toolchain.option.misra-c:1998.rul96:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul97:.677266780" superClass="iar.arm.toolchain.option.misra-c:1998.rul97:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul98:.190946039" superClass="iar.arm.toolchain.option.misra-c:1998.rul98:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul99:.803554136" superClass="iar.arm.toolchain.option.misra-c:1998.rul99:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul100:.35577025" superClass="iar.arm.toolchain.option.misra-c:1998.rul100:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul101:.2143973222" superClass="iar.arm.toolchain.option.misra-c:1998.rul101:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul102:.1685466809" superClass="iar.arm.toolchain.option.misra-c:1998.rul102:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul103:.284414773" superClass="iar.arm.toolchain.option.misra-c:1998.rul103:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul104:.646528491" superClass="iar.arm.toolchain.option.misra-c:1998.rul104:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul105:.385311994" superClass="iar.arm.toolchain.option.misra-c:1998.rul105:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul106:.1809125165" superClass="iar.arm.toolchain.option.misra-c:1998.rul106:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul107:.425636937" superClass="iar.arm.toolchain.option.misra-c:1998.rul107:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul108:.1452963075" superClass="iar.arm.toolchain.option.misra-c:1998.rul108:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul109:.2015257865" superClass="iar.arm.toolchain.option.misra-c:1998.rul109:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul110:.113309199" superClass="iar.arm.toolchain.option.misra-c:1998.rul110:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul111:.1130078365" superClass="iar.arm.toolchain.option.misra-c:1998.rul111:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul112:.670443398" superClass="iar.arm.toolchain.option.misra-c:1998.rul112:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul113:.2015283115" superClass="iar.arm.toolchain.option.misra-c:1998.rul113:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul114:.1509079895" superClass="iar.arm.toolchain.option.misra-c:1998.rul114:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul115:.595962340" superClass="iar.arm.toolchain.option.misra-c:1998.rul115:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul116:.517594440" superClass="iar.arm.toolchain.option.misra-c:1998.rul116:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul117:.397046643" superClass="iar.arm.toolchain.option.misra-c:1998.rul117:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul118:.500220791" superClass="iar.arm.toolchain.option.misra-c:1998.rul118:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul119:.1094460566" superClass="iar.arm.toolchain.option.misra-c:1998.rul119:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul120:.146984489" superClass="iar.arm.toolchain.option.misra-c:1998.rul120:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul121:.1593645027" superClass="iar.arm.toolchain.option.misra-c:1998.rul121:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul122:.1789161040" superClass="iar.arm.toolchain.option.misra-c:1998.rul122:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul123:.336428535" superClass="iar.arm.toolchain.option.misra-c:1998.rul123:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul124:.1890974199" superClass="iar.arm.toolchain.option.misra-c:1998.rul124:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul125:.1292754884" superClass="iar.arm.toolchain.option.misra-c:1998.rul125:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul126:.741468642" superClass="iar.arm.toolchain.option.misra-c:1998.rul126:"/>
+							<option id="iar.arm.toolchain.option.misra-c:1998.rul127:.44163628" superClass="iar.arm.toolchain.option.misra-c:1998.rul127:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul1.1:.1012352691" superClass="iar.arm.toolchain.option.misra-c:2004.rul1.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul1.2:.911697618" superClass="iar.arm.toolchain.option.misra-c:2004.rul1.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul1.3:.1698545888" superClass="iar.arm.toolchain.option.misra-c:2004.rul1.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul1.4:.105637430" superClass="iar.arm.toolchain.option.misra-c:2004.rul1.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul1.5:.1926334525" superClass="iar.arm.toolchain.option.misra-c:2004.rul1.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul2.1:.1535827498" superClass="iar.arm.toolchain.option.misra-c:2004.rul2.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul2.2:.271775485" superClass="iar.arm.toolchain.option.misra-c:2004.rul2.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul2.3:.1022922141" superClass="iar.arm.toolchain.option.misra-c:2004.rul2.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul2.4:.1688960376" superClass="iar.arm.toolchain.option.misra-c:2004.rul2.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul3.1:.669475502" superClass="iar.arm.toolchain.option.misra-c:2004.rul3.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul3.2:.147149194" superClass="iar.arm.toolchain.option.misra-c:2004.rul3.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul3.3:.262643706" superClass="iar.arm.toolchain.option.misra-c:2004.rul3.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul3.4:.1993969753" superClass="iar.arm.toolchain.option.misra-c:2004.rul3.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul3.5:.172496488" superClass="iar.arm.toolchain.option.misra-c:2004.rul3.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul3.6:.1855219414" superClass="iar.arm.toolchain.option.misra-c:2004.rul3.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul4.1:.1282883990" superClass="iar.arm.toolchain.option.misra-c:2004.rul4.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul4.2:.734172188" superClass="iar.arm.toolchain.option.misra-c:2004.rul4.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul5.1:.1754771331" superClass="iar.arm.toolchain.option.misra-c:2004.rul5.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul5.2:.1722214859" superClass="iar.arm.toolchain.option.misra-c:2004.rul5.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul5.3:.11406589" superClass="iar.arm.toolchain.option.misra-c:2004.rul5.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul5.4:.1667106720" superClass="iar.arm.toolchain.option.misra-c:2004.rul5.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul5.5:.247685074" superClass="iar.arm.toolchain.option.misra-c:2004.rul5.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul5.6:.1682127937" superClass="iar.arm.toolchain.option.misra-c:2004.rul5.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul5.7:.1710958822" superClass="iar.arm.toolchain.option.misra-c:2004.rul5.7:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul6.1:.1175689966" superClass="iar.arm.toolchain.option.misra-c:2004.rul6.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul6.2:.1606529925" superClass="iar.arm.toolchain.option.misra-c:2004.rul6.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul6.3:.1628471104" superClass="iar.arm.toolchain.option.misra-c:2004.rul6.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul6.4:.1823130490" superClass="iar.arm.toolchain.option.misra-c:2004.rul6.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul6.5:.939833069" superClass="iar.arm.toolchain.option.misra-c:2004.rul6.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul7.1:.2110047208" superClass="iar.arm.toolchain.option.misra-c:2004.rul7.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.1:.1777440085" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.2:.1336948625" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.3:.277884695" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.4:.1307122638" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.5:.1221001727" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.6:.1721535249" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.7:.63046448" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.7:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.8:.1579816918" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.8:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.9:.1702711276" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.9:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.10:.216894956" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.10:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.11:.1728348234" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.11:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul8.12:.880812536" superClass="iar.arm.toolchain.option.misra-c:2004.rul8.12:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul9.1:.1838407963" superClass="iar.arm.toolchain.option.misra-c:2004.rul9.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul9.2:.794844313" superClass="iar.arm.toolchain.option.misra-c:2004.rul9.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul9.3:.1051922536" superClass="iar.arm.toolchain.option.misra-c:2004.rul9.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul10.1:.1191426570" superClass="iar.arm.toolchain.option.misra-c:2004.rul10.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul10.2:.287916505" superClass="iar.arm.toolchain.option.misra-c:2004.rul10.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul10.3:.466588627" superClass="iar.arm.toolchain.option.misra-c:2004.rul10.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul10.4:.540819120" superClass="iar.arm.toolchain.option.misra-c:2004.rul10.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul10.5:.2103537320" superClass="iar.arm.toolchain.option.misra-c:2004.rul10.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul10.6:.760373982" superClass="iar.arm.toolchain.option.misra-c:2004.rul10.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul11.1:.608338913" superClass="iar.arm.toolchain.option.misra-c:2004.rul11.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul11.2:.1606783085" superClass="iar.arm.toolchain.option.misra-c:2004.rul11.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul11.3:.72632138" superClass="iar.arm.toolchain.option.misra-c:2004.rul11.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul11.4:.307849961" superClass="iar.arm.toolchain.option.misra-c:2004.rul11.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul11.5:.1265295138" superClass="iar.arm.toolchain.option.misra-c:2004.rul11.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.1:.1461960528" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.2:.1962899096" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.3:.628345824" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.4:.1133610265" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.5:.1672553078" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.6:.1319777019" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.7:.1724444247" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.7:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.8:.1068548969" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.8:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.9:.205223320" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.9:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.10:.2056639058" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.10:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.11:.908232348" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.11:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.12:.405469949" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.12:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul12.13:.1659708053" superClass="iar.arm.toolchain.option.misra-c:2004.rul12.13:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul13.1:.675650050" superClass="iar.arm.toolchain.option.misra-c:2004.rul13.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul13.2:.560190046" superClass="iar.arm.toolchain.option.misra-c:2004.rul13.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul13.3:.2125248645" superClass="iar.arm.toolchain.option.misra-c:2004.rul13.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul13.4:.1659920874" superClass="iar.arm.toolchain.option.misra-c:2004.rul13.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul13.5:.771935277" superClass="iar.arm.toolchain.option.misra-c:2004.rul13.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul13.6:.959337703" superClass="iar.arm.toolchain.option.misra-c:2004.rul13.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul13.7:.1744918825" superClass="iar.arm.toolchain.option.misra-c:2004.rul13.7:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul14.1:.264300855" superClass="iar.arm.toolchain.option.misra-c:2004.rul14.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul14.2:.1736340407" superClass="iar.arm.toolchain.option.misra-c:2004.rul14.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul14.3:.289503443" superClass="iar.arm.toolchain.option.misra-c:2004.rul14.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul14.4:.913417913" superClass="iar.arm.toolchain.option.misra-c:2004.rul14.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul14.5:.617125055" superClass="iar.arm.toolchain.option.misra-c:2004.rul14.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul14.6:.1753568189" superClass="iar.arm.toolchain.option.misra-c:2004.rul14.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul14.7:.1898131860" superClass="iar.arm.toolchain.option.misra-c:2004.rul14.7:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul14.8:.1597388633" superClass="iar.arm.toolchain.option.misra-c:2004.rul14.8:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul14.9:.1152615770" superClass="iar.arm.toolchain.option.misra-c:2004.rul14.9:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul14.10:.1260366193" superClass="iar.arm.toolchain.option.misra-c:2004.rul14.10:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul15.1:.1151834186" superClass="iar.arm.toolchain.option.misra-c:2004.rul15.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul15.2:.1943581197" superClass="iar.arm.toolchain.option.misra-c:2004.rul15.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul15.3:.1428412789" superClass="iar.arm.toolchain.option.misra-c:2004.rul15.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul15.4:.33219701" superClass="iar.arm.toolchain.option.misra-c:2004.rul15.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul15.5:.943216394" superClass="iar.arm.toolchain.option.misra-c:2004.rul15.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul16.1:.1796042085" superClass="iar.arm.toolchain.option.misra-c:2004.rul16.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul16.2:.1042785929" superClass="iar.arm.toolchain.option.misra-c:2004.rul16.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul16.3:.1078007372" superClass="iar.arm.toolchain.option.misra-c:2004.rul16.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul16.4:.1125961266" superClass="iar.arm.toolchain.option.misra-c:2004.rul16.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul16.5:.716437822" superClass="iar.arm.toolchain.option.misra-c:2004.rul16.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul16.6:.193231703" superClass="iar.arm.toolchain.option.misra-c:2004.rul16.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul16.7:.442621067" superClass="iar.arm.toolchain.option.misra-c:2004.rul16.7:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul16.8:.912512783" superClass="iar.arm.toolchain.option.misra-c:2004.rul16.8:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul16.9:.346570374" superClass="iar.arm.toolchain.option.misra-c:2004.rul16.9:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul16.10:.688547999" superClass="iar.arm.toolchain.option.misra-c:2004.rul16.10:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul17.1:.750882373" superClass="iar.arm.toolchain.option.misra-c:2004.rul17.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul17.2:.859977882" superClass="iar.arm.toolchain.option.misra-c:2004.rul17.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul17.3:.475969952" superClass="iar.arm.toolchain.option.misra-c:2004.rul17.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul17.4:.1135808098" superClass="iar.arm.toolchain.option.misra-c:2004.rul17.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul17.5:.1780897845" superClass="iar.arm.toolchain.option.misra-c:2004.rul17.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul17.6:.1461282629" superClass="iar.arm.toolchain.option.misra-c:2004.rul17.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul18.1:.2127870176" superClass="iar.arm.toolchain.option.misra-c:2004.rul18.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul18.2:.1089809908" superClass="iar.arm.toolchain.option.misra-c:2004.rul18.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul18.3:.1727091207" superClass="iar.arm.toolchain.option.misra-c:2004.rul18.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul18.4:.432440018" superClass="iar.arm.toolchain.option.misra-c:2004.rul18.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.1:.2040560750" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.2:.1908787504" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.3:.1637122201" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.4:.1784577881" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.5:.1577804158" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.6:.620518076" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.7:.309768905" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.7:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.8:.1168051954" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.8:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.9:.86183935" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.9:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.10:.745488426" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.10:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.11:.154772371" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.11:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.12:.477589324" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.12:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.13:.1537206242" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.13:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.14:.1964439265" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.14:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.15:.693187724" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.15:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.16:.710955564" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.16:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul19.17:.875316703" superClass="iar.arm.toolchain.option.misra-c:2004.rul19.17:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.1:.87616804" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.1:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.2:.449751940" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.2:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.3:.397328588" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.3:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.4:.1706608205" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.4:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.5:.859958926" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.5:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.6:.1785804233" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.6:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.7:.1484324632" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.7:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.8:.1932488629" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.8:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.9:.1070633802" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.9:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.10:.105650487" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.10:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.11:.322932539" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.11:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul20.12:.51604764" superClass="iar.arm.toolchain.option.misra-c:2004.rul20.12:"/>
+							<option id="iar.arm.toolchain.option.misra-c:2004.rul21.1:.1506869536" superClass="iar.arm.toolchain.option.misra-c:2004.rul21.1:"/>
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="iar.arm.toolchain.targetPlatform.v5.4.0.1062587007" isAbstract="false" name="IAR Target platform for ARM (ELF)" osList="win32,linux" superClass="iar.arm.toolchain.targetPlatform.v5.4.0"/>
+							<builder buildPath="${workspace_loc:/spi_SPI0_invensense}/Int Flash Release" id="iar.arm.toolchain.builder.2.1500297661" name="CDT Internal Builder.Int Flash Release" superClass="iar.arm.toolchain.builder.2"/>
+							<tool id="iar.arm.toolchain.compiler.v5.4.1.1588494867" name="IAR C/C++ Compiler for ARM" superClass="iar.arm.toolchain.compiler.v5.4.1">
+								<option defaultValue="true" id="iar.arm.toolchain.compiler.option.debugInfo.v5.4.0.2023878179" superClass="iar.arm.toolchain.compiler.option.debugInfo.v5.4.0" valueType="boolean"/>
+								<option defaultValue="iar.arm.toolchain.compiler.option.optLevel.none.v5.4.0" id="iar.arm.toolchain.compiler.option.optLevel.v5.4.0.1006572111" superClass="iar.arm.toolchain.compiler.option.optLevel.v5.4.0" valueType="enumerated"/>
+								<option defaultValue="true" id="iar.arm.toolchain.compiler.option.optCSE.v5.4.0.1999921605" superClass="iar.arm.toolchain.compiler.option.optCSE.v5.4.0" valueType="boolean"/>
+								<option defaultValue="true" id="iar.arm.toolchain.compiler.option.optUnroll.v5.4.0.1957177244" superClass="iar.arm.toolchain.compiler.option.optUnroll.v5.4.0" valueType="boolean"/>
+								<option defaultValue="true" id="iar.arm.toolchain.compiler.option.optInline.v5.4.0.1947204651" superClass="iar.arm.toolchain.compiler.option.optInline.v5.4.0" valueType="boolean"/>
+								<option defaultValue="true" id="iar.arm.toolchain.compiler.option.optCodeMotion.v5.4.0.929190937" superClass="iar.arm.toolchain.compiler.option.optCodeMotion.v5.4.0" valueType="boolean"/>
+								<option defaultValue="true" id="iar.arm.toolchain.compiler.option.optAliasAnalysis.v5.4.0.409954279" superClass="iar.arm.toolchain.compiler.option.optAliasAnalysis.v5.4.0" valueType="boolean"/>
+								<option defaultValue="true" id="iar.arm.toolchain.compiler.option.optStaticClustering.v5.4.0.531763106" superClass="iar.arm.toolchain.compiler.option.optStaticClustering.v5.4.0" valueType="boolean"/>
+								<option defaultValue="true" id="iar.arm.toolchain.compiler.option.optScheduling.v5.4.0.1863578051" superClass="iar.arm.toolchain.compiler.option.optScheduling.v5.4.0" valueType="boolean"/>
+								<option id="iar.arm.toolchain.compiler.option.cpuMode.v5.4.0.660618158" superClass="iar.arm.toolchain.compiler.option.cpuMode.v5.4.0" value="iar.arm.toolchain.compiler.option.cpuMode.thumb.v5.4.0" valueType="enumerated"/>
+								<option id="iar.arm.toolchain.compiler.option.noLiteralPool.v6.9.1.961523256" superClass="iar.arm.toolchain.compiler.option.noLiteralPool.v6.9.1"/>
+								<option id="iar.arm.toolchain.compiler.option.interwork.v5.4.0.1541678198" superClass="iar.arm.toolchain.compiler.option.interwork.v5.4.0" value="false" valueType="boolean"/>
+								<option id="iar.arm.toolchain.compiler.option.language.v6.1.0.28271712" superClass="iar.arm.toolchain.compiler.option.language.v6.1.0" value="iar.arm.toolchain.compiler.option.language.auto.v6.2.2" valueType="enumerated"/>
+								<option id="iar.arm.toolchain.compiler.option.incPaths.v5.4.0.1469232116" superClass="iar.arm.toolchain.compiler.option.incPaths.v5.4.0" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/mqx/examples/spi_SPI0_invensense&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/release/bsp/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/release/bsp/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/release&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/release/bsp&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/release/psp&quot;"/>
+								</option>
+								<option id="iar.arm.toolchain.compiler.option.enableRemarks.v5.4.0.1206335914" superClass="iar.arm.toolchain.compiler.option.enableRemarks.v5.4.0"/>
+								<option id="iar.arm.toolchain.compiler.option.treatAsRemarks.v5.4.0.1850573912" superClass="iar.arm.toolchain.compiler.option.treatAsRemarks.v5.4.0" valueType="stringList"/>
+								<option id="iar.arm.toolchain.compiler.option.suppress.v5.4.0.666063816" superClass="iar.arm.toolchain.compiler.option.suppress.v5.4.0" valueType="stringList">
+									<listOptionValue builtIn="false" value="Pa082"/>
+									<listOptionValue builtIn="false" value="Pe186"/>
+									<listOptionValue builtIn="false" value="Pe177"/>
+									<listOptionValue builtIn="false" value="Pe550"/>
+									<listOptionValue builtIn="false" value="Pe174"/>
+								</option>
+								<option id="iar.arm.toolchain.compiler.option.treatAsWarnings.v5.4.0.739742673" superClass="iar.arm.toolchain.compiler.option.treatAsWarnings.v5.4.0" valueType="stringList"/>
+								<option id="iar.arm.toolchain.compiler.option.treatAllWarningsAsErrors.v5.4.0.2075587623" superClass="iar.arm.toolchain.compiler.option.treatAllWarningsAsErrors.v5.4.0"/>
+								<option id="iar.arm.toolchain.compiler.option.wrapDiagnostics.343483505" superClass="iar.arm.toolchain.compiler.option.wrapDiagnostics"/>
+								<option id="iar.arm.toolchain.compiler.option.cppInlineSemantics.v6.1.0.145684783" superClass="iar.arm.toolchain.compiler.option.cppInlineSemantics.v6.1.0" value="true" valueType="boolean"/>
+								<option id="iar.arm.toolchain.compiler.option.additionalUserOptions.1487073968" superClass="iar.arm.toolchain.compiler.option.additionalUserOptions"/>
+								<option id="iar.arm.toolchain.compiler.option.defines.v5.4.0.1386126238" superClass="iar.arm.toolchain.compiler.option.defines.v5.4.0" valueType="definedSymbols"/>
+								<inputType id="iar.arm.toolchain.compiler.inputType.v5.4.1.1896415653" name="IAR C/C++ Compiler Input Type" superClass="iar.arm.toolchain.compiler.inputType.v5.4.1"/>
+							</tool>
+							<tool id="iar.arm.toolchain.assembler.v5.4.0.1004122627" name="IAR Assembler for ARM" superClass="iar.arm.toolchain.assembler.v5.4.0">
+								<option defaultValue="true" id="iar.arm.toolchain.assembler.option.debugInfo.v5.4.0.1356161733" superClass="iar.arm.toolchain.assembler.option.debugInfo.v5.4.0" valueType="boolean"/>
+								<option id="iar.arm.toolchain.assembler.option.enableMultibyte.v5.4.0.1406729159" superClass="iar.arm.toolchain.assembler.option.enableMultibyte.v5.4.0"/>
+								<option id="iar.arm.toolchain.assembler.option.alternativeRegisterNames.v5.4.0.1065042670" superClass="iar.arm.toolchain.assembler.option.alternativeRegisterNames.v5.4.0" value="true" valueType="boolean"/>
+								<option id="iar.arm.toolchain.assembler.option.noLiteralPool.v6.9.1.419013256" superClass="iar.arm.toolchain.assembler.option.noLiteralPool.v6.9.1"/>
+								<option id="iar.arm.toolchain.assembler.option.quoteCharacters.v5.4.0.1753243376" superClass="iar.arm.toolchain.assembler.option.quoteCharacters.v5.4.0"/>
+								<option id="iar.arm.toolchain.assembler.option.caseSensitiveSymbols.v5.4.0.574772761" superClass="iar.arm.toolchain.assembler.option.caseSensitiveSymbols.v5.4.0"/>
+								<option id="iar.arm.toolchain.assembler.option.includePaths.v5.4.0.573301994" superClass="iar.arm.toolchain.assembler.option.includePaths.v5.4.0" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/mqx/examples/spi_SPI0_invensense&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/release/bsp/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/release/bsp/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/release&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/release/bsp&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/release/psp&quot;"/>
+								</option>
+								<option id="iar.arm.toolchain.assembler.option.extraOptions.v5.4.0.1215933850" superClass="iar.arm.toolchain.assembler.option.extraOptions.v5.4.0"/>
+								<option id="iar.arm.toolchain.assembler.option.definedSymbols.v5.4.0.17046188" superClass="iar.arm.toolchain.assembler.option.definedSymbols.v5.4.0" valueType="definedSymbols"/>
+								<inputType id="iar.arm.toolchain.assembler.inputType.asmFile.v5.4.0.188268581" name="IAR Assembler input type for ARM (asm, s)" superClass="iar.arm.toolchain.assembler.inputType.asmFile.v5.4.0"/>
+							</tool>
+							<tool id="iar.arm.toolchain.linker.v5.4.0.1465885451" name="IAR Linker for ARM" superClass="iar.arm.toolchain.linker.v5.4.0">
+								<option id="iar.arm.toolchain.linker.option.icfFile.v5.4.0.1324177282" superClass="iar.arm.toolchain.linker.option.icfFile.v5.4.0" value="C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/release/bsp/intflash.icf" valueType="string"/>
+								<option id="iar.arm.toolchain.linker.option.devicePostProcess.v5.5.2.16508273" superClass="iar.arm.toolchain.linker.option.devicePostProcess.v5.5.2"/>
+								<option id="iar.arm.toolchain.linker.option.extraOptions.v5.4.0.286454276" superClass="iar.arm.toolchain.linker.option.extraOptions.v5.4.0" value="--redirect __iar_dlmalloc=malloc --redirect __iar_dlcalloc=calloc --redirect __iar_dlfree=free " valueType="string"/>
+								<option id="iar.arm.toolchain.linker.option.additionalLibraries.v5.5.0.583560133" superClass="iar.arm.toolchain.linker.option.additionalLibraries.v5.5.0" valueType="libs">
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/release/bsp/bsp.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/Freescale/Freescale_MQX_4_1/lib/frdmk22f120m.iar/release/psp/psp.a&quot;"/>
+								</option>
+								<option id="iar.arm.toolchain.linker.option.suppressThese.v5.4.0.140287860" superClass="iar.arm.toolchain.linker.option.suppressThese.v5.4.0" valueType="stringList"/>
+								<option id="iar.arm.toolchain.linker.option.treatAsWarnings.v5.4.0.1884201232" superClass="iar.arm.toolchain.linker.option.treatAsWarnings.v5.4.0" valueType="stringList"/>
+								<option id="iar.arm.toolchain.linker.option.treatAsErrors.v5.4.0.2099685740" superClass="iar.arm.toolchain.linker.option.treatAsErrors.v5.4.0" valueType="stringList"/>
+								<option id="iar.arm.toolchain.linker.option.enableRemarks.v5.4.0.1075333676" superClass="iar.arm.toolchain.linker.option.enableRemarks.v5.4.0"/>
+								<option id="iar.arm.toolchain.linker.option.treatAsRemarks.v5.4.0.920574633" superClass="iar.arm.toolchain.linker.option.treatAsRemarks.v5.4.0" valueType="stringList"/>
+								<option id="iar.arm.toolchain.linker.option.warningsAreErrors.v5.4.0.1954947724" superClass="iar.arm.toolchain.linker.option.warningsAreErrors.v5.4.0"/>
+								<option id="iar.arm.toolchain.linker.option.programEntry.v5.4.0.426691390" superClass="iar.arm.toolchain.linker.option.programEntry.v5.4.0" value="" valueType="string"/>
+								<option id="iar.arm.toolchain.linker.option.entryOverride.v6.2.3.16738598" superClass="iar.arm.toolchain.linker.option.entryOverride.v6.2.3"/>
+								<option id="iar.arm.toolchain.linker.option.entryDefinedByApplication.v5.4.0.287833884" superClass="iar.arm.toolchain.linker.option.entryDefinedByApplication.v5.4.0"/>
+								<inputType id="iar.arm.toolchain.linker.inputType.object.v5.4.0.338514019" name="IAR Linker Input Type for ARM (o)" superClass="iar.arm.toolchain.linker.inputType.object.v5.4.0">
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+								</inputType>
+							</tool>
+							<tool id="iar.arm.toolchain.archive.v5.4.0.346121929" name="IAR Library Builder for ARM" superClass="iar.arm.toolchain.archive.v5.4.0"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="spi_SPI0_invensense.iar.arm.toolchain.project.exe.v5.4.0.1349480756" name="Executable (IAR)" projectType="iar.arm.toolchain.project.exe.v5.4.0"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.core.language.mapping">
+		<project-mappings>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.asmSource" language="com.iar.cdt.arm.language.asm"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cHeader" language="com.iar.cdt.arm.language.IARc"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cSource" language="com.iar.cdt.arm.language.IARc"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cxxHeader" language="com.iar.cdt.arm.language.IARcpp"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cxxSource" language="com.iar.cdt.arm.language.IARcpp"/>
+		</project-mappings>
+	</storageModule>
+</cproject>

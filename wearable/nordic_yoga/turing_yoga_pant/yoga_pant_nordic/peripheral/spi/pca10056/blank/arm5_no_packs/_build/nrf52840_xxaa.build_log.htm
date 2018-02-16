@@ -1,0 +1,89 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Chitrang pt, Turingsense, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.24.1
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         
+Dialog DLL:      
+Target DLL:      Segger\JL2CM3.dll V2.99.26.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+D:\Akhil\From_Github\Copy of Made_It_Work\trunk\wearable\nordic_yoga\turing_yoga_pant\yoga_pant_nordic\peripheral\spi\pca10056\blank\arm5_no_packs\spi_pca10056.uvprojx
+Project File Date:  01/29/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'nrf52840_xxaa'
+compiling main.c...
+..\..\..\..\..\..\components\libraries\timer\app_timer.h(163): warning:  #223-D: function "app_sched_event_put" declared implicitly
+      return app_sched_event_put(&timer_event, sizeof(timer_event), app_timer_evt_get);
+..\..\..\..\..\..\components\libraries\timer\app_timer.h(285): warning:  #1295-D: Deprecated declaration app_timer_cnt_get - give arg types
+  uint32_t app_timer_cnt_get();
+..\..\..\main.c(581): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	Fusion_Init1(&accGyrKF,&accGyrKFpar,&UVRH,
+TDG,STDA,CA,CB,PO,XDIM,YDIM);
+..\..\..\main.c(586): warning:  #223-D: function "setKFStaticToZero" declared implicitly
+  		setKFStaticToZero(&accGyrKF_static[sensor_num]);
+..\..\..\main.c(587): warning:  #223-D: function "setRefFrameStaticToZero" declared implicitly
+  		setRefFrameStaticToZero(&UVRH_static[sensor_num]);
+..\..\..\main.c(116): warning:  #550-D: variable "m_tx_buf"  was set but never used
+  static uint8_t       m_tx_buf[] = { 0x8F };           /**< TX buffer. */   // chitrang -- WHO_AM_I register | 0x80 (for reading)   0xF5 -- MPU and 0x8F for LSM
+..\..\..\main.c(121): warning:  #177-D: function "get_raw_data_sample"  was declared but never referenced
+  static bool get_raw_data_sample(uint8_t sensor_num, sensor_data_t *raw_data, sat_sensor_record_t *sensor_record);
+..\..\..\main.c(122): warning:  #177-D: function "get_raw_data_sample_basic"  was declared but never referenced
+  static bool get_raw_data_sample_basic(uint8_t sn, sensor_data_t *raw_data);
+..\..\..\main.c(123): warning:  #550-D: variable "counterDataSample"  was set but never used
+  static int counterDataSample[MAX_SENSORS_IN_CS] = {0};
+..\..\..\main.c(231): warning:  #177-D: function "spi_send_recv"  was declared but never referenced
+  static void spi_send_recv(uint8_t * const p_tx_data,
+..\..\..\main.c: 10 warnings, 0 errors
+linking...
+.\_build\nrf52840_xxaa.axf: error: L6050U: The code size of this image (35780 bytes) exceeds the maximum allowed for this version of the linker.
+Finished: 0 information, 0 warning, 0 error and 1 fatal error messages.
+".\_build\nrf52840_xxaa.axf" - 1 Error(s), 10 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM.CMSIS.4.5.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.15.0.pack
+                NordicSemiconductor.nRF_DeviceFamilyPack.8.15.0
+                Nordic Semiconductor nRF ARM devices Device Family Pack.
+   * Component: Startup Version: 8.15.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_nrf52840_xxaa
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.15.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: NordicSemiconductor::Device:Startup:8.15.0
+      Source file:   Device\Source\system_nrf52840.c
+      Include file:  Device\Include\system_nrf52840.h
+      Source file:   Device\Source\arm\arm_startup_nrf52840.s
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Target not created.
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>

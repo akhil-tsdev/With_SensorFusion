@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>2878967526</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\debug\obj\startup.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\startup.o</file>
+      <file>$PROJ_DIR$\debug\obj\bl_flashloader.o</file>
+      <file>$PROJ_DIR$\debug\obj\flashloader_loader.pbd</file>
+      <file>$PROJ_DIR$\debug\obj\startup_MK22F51212.o</file>
+      <file>$PROJ_DIR$\debug\obj\system_MK22F51212.o</file>
+      <file>$PROJ_DIR$\debug\obj\crt0.o</file>
+      <file>$PROJ_DIR$\debug\obj\bl_flashloader.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\system_MK22F51212.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\platform\CMSIS\Include\core_cmSimd.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\startup\crt0.s</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\bootloader\src\bl_flashloader.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\bootloader\flashloader_image.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\include\bootloader_common.h</file>
+      <file>$PROJ_DIR$\..\..\src\startup\iar\startup_MK22F51212.s</file>
+      <file>$PROJ_DIR$\..\..\src\startup\system_MK22F51212.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\startup\startup.c</file>
+      <file>$PROJ_DIR$\..\..\src\bootloader_config.h</file>
+      <file>$PROJ_DIR$\output\Debug\flashloader_loader.elf</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\platform\CMSIS\Include\core_cm4.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\platform\devices\MK22F51212\MK22F51212_features.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\platform\devices\MK22F51212\MK22F51212.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\platform\devices\MK22F51212\system_MK22F51212.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\drivers\common\fsl_common.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\..\..\src\target_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\platform\CMSIS\Include\core_cmFunc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\platform\devices\MK22F51212\fsl_clock.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\utilities\vector_table_info.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\platform\devices\MK22F51212\fsl_device_registers.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\platform\CMSIS\Include\core_cmInstr.h</file>
+      <file>$PROJ_DIR$\debug\list\system_MK22F51212.lst</file>
+      <file>$PROJ_DIR$\debug\list\startup.lst</file>
+      <file>$PROJ_DIR$\..\..\src\startup\system_MK22F51212.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\include\bootloader_core.h</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 19</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\startup\crt0.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 6</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\bootloader\src\bl_flashloader.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 7</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26 20 37 38 13 23 36 21 40 27 43 39 22 41 30 25 18 14 42 44 31 24 28 29 45 46 32 33 35 34 47 10 9</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 32 27 26 31 28 29 24 23 21 44 14 45 46 38 20 36 22 43 33 25 47 34 9 40 10 35 30 41 18 39 42 13</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\startup\iar\startup_MK22F51212.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 4</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\startup\system_MK22F51212.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 8</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 48 5</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40 27 24 28 33 38 43 31 29 35 50 39 26 23 30 25 47 10 34 9</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 38 27 26 31 28 29 24 23 50 43 33 25 47 34 9 40 10 35 30 39</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\startup\startup.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 0</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 49 1</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29 30 25 31 27 10 51 24 28 47 38 43 26 23 33 35 40 34 9</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 38 27 26 31 28 29 24 23 43 33 25 47 34 9 40 10 35 30 51</file>
+        </tool>
+      </inputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

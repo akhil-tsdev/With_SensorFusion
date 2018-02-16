@@ -1,0 +1,12 @@
+
+#IAR projects
+**/*.pbi
+**/*.xcl
+**/*.cout
+**/*.bat
+**/*.xcl
+**/*.dni
+**/*.wsdt
+**/*.wspos
+**/*.pbd
+/iar/twr21f120m/Int Flash Debug/Obj/

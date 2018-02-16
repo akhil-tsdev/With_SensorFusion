@@ -1,0 +1,308 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       16/Sep/2016  13:24:07
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\memory\src\normal_memory.c
+#    Command line =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\memory\src\normal_memory.c
+#        -D NDEBUG -D USB_STACK_BM -D CPU_MK22FN1M0AVMC12 -D
+#        CPU_IS_ARM_CORTEX_M4=1 -D IAR -D FREEDOM -D BL_TARGET_FLASH -D
+#        TURINGSENSE=1 -lC
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\list
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Normal.h" -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\..\..\..\..\src\platform\devices\MK22FA12_MK64\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/autobaud\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/osa\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/device\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/usb/device/class\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/bm_usb\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform/devices\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/platform/CMSIS/Include\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/drivers\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/startup\
+#        -I
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader/../../../../src/drivers/common\
+#        -On --use_c++_inline
+#    Locale       =  C
+#    List file    =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\list\normal_memory.lst
+#    Object file  =  
+#        C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\targets\MK22FA12_MK64\iar\freedom_bootloader\debug\obj\normal_memory.o
+#
+###############################################################################
+
+C:\Freescale\NXP_Kinetis_Bootloader_2_0_0\NXP_Kinetis_Bootloader_2_0_0\src\memory\src\normal_memory.c
+      1          /*
+      2           * Copyright (c) 2013, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          
+     31          #include <string.h>
+     32          #include "normal_memory.h"
+     33          #include "pattern_fill.h"
+     34          #include "sram_init.h"
+     35          #if !defined(BOOTLOADER_HOST)
+     36          #include "fsl_device_registers.h"
+     37          #endif // BOOTLOADER_HOST
+     38          
+     39          ////////////////////////////////////////////////////////////////////////////////
+     40          // Variables
+     41          ////////////////////////////////////////////////////////////////////////////////
+     42          
+     43          //! @brief Interface to simulator memory operations.
+
+   \                                 In section .rodata, align 4
+     44          const memory_region_interface_t g_normalMemoryInterface = {.init = &normal_mem_init,
+   \                     g_normalMemoryInterface:
+   \   00000000   0x........         DC32 normal_mem_init, normal_mem_read, normal_mem_write
+   \              0x........   
+   \              0x........   
+   \   0000000C   0x........         DC32 normal_mem_fill, 0H, 0H
+   \              0x00000000   
+   \              0x00000000   
+     45                                                                     .read = &normal_mem_read,
+     46                                                                     .write = &normal_mem_write,
+     47          #if !BL_FEATURE_MIN_PROFILE || BL_FEATURE_FILL_MEMORY
+     48                                                                     .fill = &normal_mem_fill,
+     49          #endif // !BL_FEATURE_MIN_PROFILE
+     50                                                                     .flush = NULL,
+     51                                                                     .erase = NULL };
+     52          
+     53          #if CPU_IS_ARM_CORTEX_M7
+     54          //! @brief Interface to simulator memory operations.
+     55          const memory_region_interface_t g_normalDTCMInterface = {.init = &normal_mem_init,
+     56                                                                   .read = &normal_mem_read,
+     57                                                                   .write = &normal_mem_write,
+     58          #if !BL_FEATURE_MIN_PROFILE || BL_FEATURE_FILL_MEMORY
+     59                                                                   .fill = &normal_mem_fill,
+     60          #endif // !BL_FEATURE_MIN_PROFILE
+     61                                                                   .flush = NULL,
+     62                                                                   .erase = NULL };
+     63          
+     64          //! @brief Interface to simulator memory operations.
+     65          const memory_region_interface_t g_normalOCRAMInterface = {.init = &normal_mem_init,
+     66                                                                    .read = &normal_mem_read,
+     67                                                                    .write = &normal_mem_write,
+     68          #if !BL_FEATURE_MIN_PROFILE || BL_FEATURE_FILL_MEMORY
+     69                                                                    .fill = &normal_mem_fill,
+     70          #endif // !BL_FEATURE_MIN_PROFILE
+     71                                                                    .flush = NULL,
+     72                                                                    .erase = NULL };
+     73          #endif
+     74          
+     75          enum
+     76          {
+     77              kSRAM_Boundary = 0x20000000u //!< SRAM boundary address
+     78          };
+     79          
+     80          ////////////////////////////////////////////////////////////////////////////////
+     81          // Code
+     82          ////////////////////////////////////////////////////////////////////////////////
+     83          
+     84          //! See normal_memory.h for documentation on this function.
+
+   \                                 In section .text, align 2, keep-with-next
+     85          status_t normal_mem_init(void)
+     86          {
+   \                     normal_mem_init: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     87              return sram_init();
+   \   00000002   0x.... 0x....      BL       sram_init
+   \   00000006   0xBD02             POP      {R1,PC}          ;; return
+     88          }
+     89          
+
+   \                                 In section .text, align 2, keep-with-next
+     90          status_t normal_mem_read(uint32_t address, uint32_t length, uint8_t *buffer)
+     91          {
+   \                     normal_mem_read: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+   \   00000006   0x0016             MOVS     R6,R2
+     92              memcpy((void *)buffer, (void *)address, length);
+   \   00000008   0x002A             MOVS     R2,R5
+   \   0000000A   0x0021             MOVS     R1,R4
+   \   0000000C   0x0030             MOVS     R0,R6
+   \   0000000E   0x.... 0x....      BL       __aeabi_memcpy
+     93              return kStatus_Success;
+   \   00000012   0x2000             MOVS     R0,#+0
+   \   00000014   0xBD70             POP      {R4-R6,PC}       ;; return
+     94          }
+     95          
+
+   \                                 In section .text, align 2, keep-with-next
+     96          status_t normal_mem_write(uint32_t address, uint32_t length, const uint8_t *buffer)
+     97          {
+   \                     normal_mem_write: (+1)
+   \   00000000   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \   00000004   0x0005             MOVS     R5,R0
+   \   00000006   0x000E             MOVS     R6,R1
+   \   00000008   0x0014             MOVS     R4,R2
+     98          #if defined(__CORE_CM4_H_GENERIC)
+     99              // If address is non-longword aligned and the area to be written is across RAM_L and RAM_U,
+    100              // need to write the RAM_L first and then write RAM_U to avoid unaligned access across RAM boundary
+    101              if ((address & 0x03) && ((address < kSRAM_Boundary) && ((address + length - 1) >= kSRAM_Boundary)))
+   \   0000000A   0xF015 0x0F03      TST      R5,#0x3
+   \   0000000E   0xD01A             BEQ.N    ??normal_mem_write_0
+   \   00000010   0xF1B5 0x5F00      CMP      R5,#+536870912
+   \   00000014   0xD217             BCS.N    ??normal_mem_write_0
+   \   00000016   0x1970             ADDS     R0,R6,R5
+   \   00000018   0x1E40             SUBS     R0,R0,#+1
+   \   0000001A   0xF1B0 0x5F00      CMP      R0,#+536870912
+   \   0000001E   0xD312             BCC.N    ??normal_mem_write_0
+    102              {
+    103                  uint32_t firstCopyCount = kSRAM_Boundary - address;
+   \   00000020   0xF1D5 0x5700      RSBS     R7,R5,#+536870912
+    104                  uint32_t secondCopyCount = length - firstCopyCount;
+   \   00000024   0xEBB6 0x0A07      SUBS     R10,R6,R7
+    105          
+    106                  memcpy((void *)address, (void *)buffer, firstCopyCount);
+   \   00000028   0x003A             MOVS     R2,R7
+   \   0000002A   0x0021             MOVS     R1,R4
+   \   0000002C   0x0028             MOVS     R0,R5
+   \   0000002E   0x.... 0x....      BL       __aeabi_memcpy
+    107                  memcpy((void *)kSRAM_Boundary, (void *)(buffer + firstCopyCount), secondCopyCount);
+   \   00000032   0xEB04 0x0807      ADD      R8,R4,R7
+   \   00000036   0xF05F 0x5900      MOVS     R9,#+536870912
+   \   0000003A   0x4652             MOV      R2,R10
+   \   0000003C   0x4641             MOV      R1,R8
+   \   0000003E   0x4648             MOV      R0,R9
+   \   00000040   0x.... 0x....      BL       __aeabi_memcpy
+    108              }
+   \   00000044   0xE004             B.N      ??normal_mem_write_1
+    109              else
+    110          #endif // #if defined (__CORE_CM4_H_GENERIC)
+    111              {
+    112                  memcpy((void *)address, (void *)buffer, length);
+   \                     ??normal_mem_write_0: (+1)
+   \   00000046   0x0032             MOVS     R2,R6
+   \   00000048   0x0021             MOVS     R1,R4
+   \   0000004A   0x0028             MOVS     R0,R5
+   \   0000004C   0x.... 0x....      BL       __aeabi_memcpy
+    113              }
+    114              return kStatus_Success;
+   \                     ??normal_mem_write_1: (+1)
+   \   00000050   0x2000             MOVS     R0,#+0
+   \   00000052   0xE8BD 0x87F0      POP      {R4-R10,PC}      ;; return
+    115          }
+    116          
+
+   \                                 In section .text, align 2, keep-with-next
+    117          status_t normal_mem_fill(uint32_t address, uint32_t length, uint32_t pattern)
+    118          {
+   \                     normal_mem_fill: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+   \   00000006   0x0016             MOVS     R6,R2
+    119              status_t status = kStatus_Success;
+   \   00000008   0x2700             MOVS     R7,#+0
+    120          // Allow multiword stores in the pattern fill.
+    121          #if !BL_FEATURE_MIN_PROFILE || BL_FEATURE_FILL_MEMORY
+    122              status = pattern_fill(address, pattern, length, true);
+   \   0000000A   0x2301             MOVS     R3,#+1
+   \   0000000C   0x002A             MOVS     R2,R5
+   \   0000000E   0x0031             MOVS     R1,R6
+   \   00000010   0x0020             MOVS     R0,R4
+   \   00000012   0x.... 0x....      BL       pattern_fill
+   \   00000016   0x0007             MOVS     R7,R0
+    123          #endif // !BL_FEATURE_MIN_PROFILE
+    124              return status;
+   \   00000018   0x0038             MOVS     R0,R7
+   \   0000001A   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    125          }
+    126          
+    127          ////////////////////////////////////////////////////////////////////////////////
+    128          // EOF
+    129          ////////////////////////////////////////////////////////////////////////////////
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   normal_mem_fill
+        24   -> pattern_fill
+       8   normal_mem_init
+         8   -> sram_init
+      16   normal_mem_read
+        16   -> __aeabi_memcpy
+      32   normal_mem_write
+        32   -> __aeabi_memcpy
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      24  g_normalMemoryInterface
+      28  normal_mem_fill
+       8  normal_mem_init
+      22  normal_mem_read
+      86  normal_mem_write
+
+ 
+  24 bytes in section .rodata
+ 144 bytes in section .text
+ 
+ 144 bytes of CODE  memory
+  24 bytes of CONST memory
+
+Errors: none
+Warnings: none

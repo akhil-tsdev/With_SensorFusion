@@ -1,0 +1,390 @@
+/*
+ * mpu9250.c
+ *
+ *  Created on: Mar 27, 2015
+ *      Author: eric
+ */
+
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <string.h>
+
+#include "fsl_dspi_master_driver.h"
+#include "fsl_dspi_shared_function.h"
+#include "fsl_gpio_common.h"  /* not needed with KSDK 1.1.0 ? */
+#include "fsl_interrupt_manager.h"
+#include "fsl_os_abstraction.h"
+
+#define DSPI_DRV_MasterTransferBlocking DSPI_DRV_MasterTransferDataBlocking  /* fn name changed in KSDK 1.1.0 */
+
+#include "board.h"
+#include "mpu9250.h"
+
+#define MPU9250_REG_SMPLRT_DIV         0x19
+#define MPU9250_REG_CONFIG             0x1a
+#define MPU9250_REG_GYRO_CONFIG        0x1b
+#define MPU9250_REG_ACCEL_CONFIG       0x1c
+#define MPU9250_REG_ACCEL_CONFIG2      0x1d
+#define MPU9250_REG_I2C_MST_CTRL       0x24
+#define MPU9250_REG_I2C_SLV0_ADDR      0x25
+#define MPU9250_REG_I2C_SLV0_REG       0x26
+#define MPU9250_REG_I2C_SLV0_CTRL      0x27
+#define MPU9250_REG_I2C_SLV1_CTRL      0x2a
+#define MPU9250_REG_I2C_SLV2_CTRL      0x2d
+#define MPU9250_REG_I2C_SLV3_CTRL      0x30
+#define MPU9250_REG_I2C_SLV4_ADDR      0x31
+#define MPU9250_REG_I2C_SLV4_REG       0x32
+#define MPU9250_REG_I2C_SLV4_DO        0x33
+#define MPU9250_REG_I2C_SLV4_CTRL      0x34
+#define MPU9250_REG_INT_PIN_CFG        0x37
+#define MPU9250_REG_INT_ENABLE         0x38
+#define MPU9250_REG_INT_STATUS         0x3a
+#define MPU9250_REG_ACCEL_XOUT_H       0x3b
+#define MPU9250_REG_TEMP_OUT_H         0x41
+#define MPU9250_REG_GYRO_XOUT_H        0x43
+#define MPU9250_REG_EXT_SENSE_DATA     0x49
+#define MPU9250_REG_I2C_SLV0_DO        0x63
+#define MPU9250_REG_I2C_MST_DELAY_CTRL 0x67
+#define MPU9250_REG_SIGNAL_PATH_RESET  0x68
+#define MPU9250_REG_USER_CTRL          0x6a
+#define MPU9250_REG_PWR_MGMT_1         0x6b
+
+#define AK8963_I2C_ADDR 0x0c
+
+#define AK8963_REG_WAI             0x00
+#define AK8963_REG_DEV_INFO        0x01
+#define AK8963_REG_STATUS_1        0x02
+#define AK8963_REG_HXL             0x03
+#define AK8963_REG_HXH             0x04
+#define AK8963_REG_HYL             0x05
+#define AK8963_REG_HYH             0x06
+#define AK8963_REG_HZL             0x07
+#define AK8963_REG_HZH             0x08
+#define AK8963_REG_STATUS_2        0x09
+#define AK8963_REG_CNTL            0x0a
+
+#define AK8963_FIRST_REG           AK8963_REG_WAI
+#define AK8963_REG_COUNT           ((AK8963_REG_STATUS_2 + 1) - AK8963_FIRST_REG)
+
+#define MPU9250_FIRST_REG          MPU9250_REG_INT_STATUS
+#define MPU9250_REG_COUNT          (MPU9250_REG_EXT_SENSE_DATA + AK8963_REG_COUNT - MPU9250_FIRST_REG)
+
+#define MPU9250_REG_OFFSET(r) (r - MPU9250_FIRST_REG)
+#define AK8963_REG_OFFSET(r) ((r - AK8963_FIRST_REG) + (MPU9250_REG_EXT_SENSE_DATA - MPU9250_FIRST_REG))
+
+static volatile bool data_avail;
+
+#define BUFFER_SIZE 65
+static uint8_t mts_buffer[BUFFER_SIZE];
+static uint8_t stm_buffer[BUFFER_SIZE];
+
+enum _more_pins
+{
+	kMpu9250SsPin   = GPIO_MAKE_PIN(HW_GPIOD,  4U),
+	kMpu9250MosiPin = GPIO_MAKE_PIN(HW_GPIOD,  6U),
+	kMpu9250IntPin  = GPIO_MAKE_PIN(HW_GPIOD,  3U), /* Turingsense sensor module uses PTD3 for interrupt */
+};
+
+enum _spi_instances
+{
+    kMpu9250SpiInstance = 1,		/* Turingsense sensor module uses Invensense in SPI1 */
+};
+
+static const gpio_input_pin_user_config_t mpu9250_int_pin =
+{
+		.pinName = kMpu9250IntPin,
+		.config =
+		{
+				.isPullEnable = false,
+				.interrupt = kPortIntFallingEdge,
+		}
+};
+
+static const gpio_output_pin_user_config_t mpu9250_ss_pin =
+{
+		.pinName = kMpu9250SsPin,
+		.config =
+		{
+				.outputLogic = 0,
+				.slewRate = kPortFastSlewRate,
+				.driveStrength = kPortHighDriveStrength,
+				.isOpenDrainEnabled = 0
+		}
+};
+
+static const gpio_output_pin_user_config_t mpu9250_mosi_pin =
+{
+		.pinName = kMpu9250MosiPin,
+		.config =
+		{
+				.outputLogic = 0,
+				.slewRate = kPortFastSlewRate,
+				.driveStrength = kPortHighDriveStrength,
+				.isOpenDrainEnabled = 0
+		}
+};
+
+static const dspi_device_t mpu9250_dspi_device =
+{
+	.bitsPerSec = 1000000L,
+	.dataBusConfig.bitsPerFrame = 8,
+	.dataBusConfig.clkPolarity = kDspiClockPolarity_ActiveHigh,
+	.dataBusConfig.clkPhase = kDspiClockPhase_FirstEdge,
+	.dataBusConfig.direction = kDspiMsbFirst,
+};
+
+static dspi_master_state_t mpu9250_dspi_master_state;
+
+void PORTD_IRQHandler(void)
+{
+	GPIO_DRV_ClearPinIntFlag(mpu9250_int_pin.pinName);
+	data_avail = true;
+}
+
+void SPI1_IRQHandler(void)	/* sensor module uses SPI1 for invensense */
+{
+    DSPI_DRV_IRQHandler(HW_SPI1);
+}
+
+void mpu9250_set_irq_enable(bool v)
+{
+	if (v)
+		INT_SYS_EnableIRQ(g_portIrqId[GPIO_EXTRACT_PORT(mpu9250_int_pin.pinName)]);
+	else
+		INT_SYS_DisableIRQ(g_portIrqId[GPIO_EXTRACT_PORT(mpu9250_int_pin.pinName)]);
+}
+
+
+static void write_reg(uint8_t reg_addr, uint8_t data)
+{
+	dspi_status_t Error;
+	mts_buffer[0] = reg_addr;
+	mts_buffer[1] = data;
+	Error = DSPI_DRV_MasterTransferBlocking(kMpu9250SpiInstance,
+											& mpu9250_dspi_device,
+											mts_buffer,
+											stm_buffer,
+											2,
+											1000);
+}
+
+static void read_regs(uint8_t reg_addr, size_t count, uint8_t *data)
+{
+	dspi_status_t Error;
+	mts_buffer[0] = 0x80 | reg_addr;
+	memset(& mts_buffer[1], 0, count);  // not really necessary
+	memset(stm_buffer, 0, count+1); // also not really necessary
+	Error = DSPI_DRV_MasterTransferBlocking(kMpu9250SpiInstance,
+											& mpu9250_dspi_device,
+											mts_buffer,
+											stm_buffer,
+											count + 1,
+											1000);
+	memcpy(data, & stm_buffer[1], count);
+}
+
+static void write_mag_reg(uint8_t reg_addr, uint8_t data)
+{
+	write_reg(MPU9250_REG_I2C_SLV0_DO,   data);
+	write_reg(MPU9250_REG_I2C_SLV0_ADDR, 0x0c);      // write, magnetometer address
+	write_reg(MPU9250_REG_I2C_SLV0_REG,  reg_addr);
+	write_reg(MPU9250_REG_I2C_SLV0_CTRL, 0x81);      // enable, one byte
+
+	OSA_TimeDelay(30);			// delay for write to complete, should happen every 10 ms
+
+	write_reg(MPU9250_REG_I2C_SLV0_CTRL, 0x00);      // disable
+
+	OSA_TimeDelay(30);          // delay for write to stop happening
+}
+
+#define MPU9250_SPI_FREQUENCY 1000000L
+
+static bool mpu9250_configure_spi(void)
+{
+	dspi_status_t status;
+	uint32_t calculatedBaudRate;
+	uint32_t calculatedPcsToSck, calculatedLastSckToPcs, calculatedAfterTransfer;
+
+	static const dspi_master_user_config_t mpu9250_dspi_master_user_config =
+	{
+		.whichCtar = kDspiCtar0,
+		.whichPcs = kDspiPcs0,	/* sensor module uses SPI1 PCS0 */
+		.pcsPolarity = kDspiPcs_ActiveLow,
+		.isSckContinuous = false,
+		.isChipSelectContinuous = true,
+	};
+
+	configure_spi_pins(kMpu9250SpiInstance);
+
+	GPIO_DRV_OutputPinInit(& mpu9250_ss_pin);
+	GPIO_DRV_OutputPinInit(& mpu9250_mosi_pin);
+
+	status = DSPI_DRV_MasterInit(kMpu9250SpiInstance, & mpu9250_dspi_master_state, & mpu9250_dspi_master_user_config);
+	if (status != kStatus_DSPI_Success)
+		return false;
+
+    status = DSPI_DRV_MasterConfigureBus(kMpu9250SpiInstance, & mpu9250_dspi_device, & calculatedBaudRate);
+	if (status != kStatus_DSPI_Success)
+		return false;
+
+    status = DSPI_DRV_MasterSetDelay(kMpu9250SpiInstance,
+    								 kDspiPcsToSck,
+    								 500, // delayInNanoSec
+    								 & calculatedPcsToSck);
+	if (status != kStatus_DSPI_Success)
+		return false;
+
+    status = DSPI_DRV_MasterSetDelay(kMpu9250SpiInstance,
+    								 kDspiLastSckToPcs,
+    								 500, // delayInNanoSec
+    								 & calculatedLastSckToPcs);
+	if (status != kStatus_DSPI_Success)
+		return false;
+
+	status = DSPI_DRV_MasterSetDelay(kMpu9250SpiInstance,
+    								 kDspiAfterTransfer,
+    								 500, // delayInNanoSec
+    								 & calculatedAfterTransfer);
+	if (status != kStatus_DSPI_Success)
+		return false;
+
+	return true;
+}
+
+bool mpu9250_init(void)
+{
+	data_avail = false;
+
+	if (! mpu9250_configure_spi())
+	{
+		printf ("error configuring SPI\r\n");
+		return false;
+	}
+
+	PORT_HAL_SetMuxMode(g_portBaseAddr[GPIO_EXTRACT_PORT(mpu9250_int_pin.pinName)],
+						GPIO_EXTRACT_PIN(mpu9250_int_pin.pinName),
+						kPortMuxAsGpio);
+	GPIO_DRV_InputPinInit(& mpu9250_int_pin);
+	GPIO_DRV_OutputPinInit(& mpu9250_ss_pin);
+	GPIO_DRV_OutputPinInit(& mpu9250_mosi_pin);
+
+    write_reg(MPU9250_REG_SIGNAL_PATH_RESET,  0x07);  // signal path reset = gyro_rst + accel_rst + tmp_rst
+	write_reg(MPU9250_REG_USER_CTRL,          0x07);  // fifo_rst + i2c_mst_rst + sig_cond_rst
+								 	 	 	 	 	  // fifo_rst and i2c_mst_rst auto-clear after one clock cycle
+													  // sig_cond_rst might also auto-clear; doc is unclear
+	OSA_TimeDelay(10);
+	write_reg(MPU9250_REG_SIGNAL_PATH_RESET,  0x00);  // clear signal path reset
+
+	write_reg(MPU9250_REG_I2C_SLV0_CTRL,      0x00);  // disable
+	write_reg(MPU9250_REG_I2C_SLV1_CTRL,      0x00);  // disable
+	write_reg(MPU9250_REG_I2C_SLV2_CTRL,      0x00);  // disable
+	write_reg(MPU9250_REG_I2C_SLV3_CTRL,      0x00);  // disable
+	write_reg(MPU9250_REG_I2C_SLV4_CTRL,      0x00);  // disable
+	write_reg(MPU9250_REG_USER_CTRL,          0x20);  // I2C_MST_EN
+
+	write_reg(MPU9250_REG_SMPLRT_DIV,         0x07);  // divide by 8 (1 kHz results in 125 Hz data output)
+	write_reg(MPU9250_REG_CONFIG,             0x06);  // FIFO_MODE disabled, EXT_SYNC_SET disabled,
+	                        						  //    DPLF_CFG = 6
+	                        						  //    (together with Fchoice=11b below,
+	                        						  //       gyro bandwidth = 5 Hz, Fs = 1 kHz,
+	                        						  //       temp bandwidth = 5 Hz
+	write_reg(MPU9250_REG_GYRO_CONFIG,        0x18);  // gyro sensitivity to +/- 2000 deg/s, self-test disabled, Fchoice = 11b
+	write_reg(MPU9250_REG_ACCEL_CONFIG,       0x18);  // accel sensitivity to +/- 16g, self-test disabled
+	write_reg(MPU9250_REG_ACCEL_CONFIG2,      0x16);  // Fchoice = 1, A_DPLF_CFG = 6: bandwidth = 5 Hz, Fs = 1 kHz
+	write_reg(MPU9250_REG_INT_PIN_CFG,        0x80);  // int active low, push-pull, 50 us pulse, cleared by reading INT_STATUS
+    												  //    FSYNC pin does not cause interrupt, no I2C bypass
+	write_reg(MPU9250_REG_INT_ENABLE,         0x01);  // enable data ready interrupt
+	write_reg(MPU9250_REG_PWR_MGMT_1,         0x00);  // PWR_MGMT_1 = 0
+	write_reg(MPU9250_REG_I2C_MST_DELAY_CTRL, 0x80);  // DELAY_ES_SHADOW
+	write_reg(MPU9250_REG_I2C_MST_CTRL,       0x50);  // not MULT_MST_EN, WAIT_FOR_ES, !SLV_3_FIFO_EN, I2C_MST_P_NSR, I2C_MST_CLK = 348 kHz
+
+	write_reg(MPU9250_REG_I2C_SLV4_CTRL,      0x00);  // I2C_MST_DLY: read every sample
+
+#if 1
+	write_mag_reg(AK8963_REG_CNTL,            0x16);  // BIT (16-bit), continuous mode 2 (100 Hz)
+#else
+	write_mag_reg(AK8963_REG_CNTL,            0x12);  // BIT (16-bit), continuous mode 1 (8 Hz)
+#endif
+
+	write_reg(MPU9250_REG_I2C_SLV0_ADDR,      0x80 + AK8963_I2C_ADDR);  // read from 0x0c
+	write_reg(MPU9250_REG_I2C_SLV0_REG,       AK8963_FIRST_REG);
+	write_reg(MPU9250_REG_I2C_SLV0_CTRL,      0x80 + AK8963_REG_COUNT);  // enable auto read, length
+
+	// mpu9250_set_irq_enable(true); // not necessary, enabled by GPIO_DRV_InputPinInit() called from mpu9250_configure_irq_pin().
+
+	return true;
+}
+
+bool mpu9250_data_avail(void)
+{
+	return data_avail;
+}
+
+void mpu9250_clear_data_avail(void)
+{
+	data_avail = false;
+}
+
+
+bool mpu9250_read(int sensors,  // bit field, SENSOR_x above
+				  raw_sensor_t *raw_data)
+{
+	uint8_t data[MPU9250_REG_COUNT];
+
+	raw_data->valid_sensors = 0;
+	raw_data->timestamp = OSA_TimeGetMsec();
+
+	read_regs(MPU9250_FIRST_REG, MPU9250_REG_COUNT, data);
+
+	if (! data[MPU9250_REG_OFFSET(MPU9250_REG_INT_STATUS)] & 0x01)
+		return false;
+
+	if (sensors & SENSOR_ACCEL)
+	{
+		int i = MPU9250_REG_OFFSET(MPU9250_REG_ACCEL_XOUT_H);
+		for (int axis = X; axis <= Z; axis++)
+		{
+			raw_data->accel[axis] = (data[i]<<8) | data[i+1];
+			i += 2;
+		}
+		raw_data->valid_sensors |= SENSOR_ACCEL;
+	}
+
+	if (sensors & SENSOR_GYRO)
+	{
+		int i = MPU9250_REG_OFFSET(MPU9250_REG_GYRO_XOUT_H);
+		for (int axis = X; axis <= Z; axis++)
+		{
+			raw_data->gyro[axis] = (data[i]<<8) | data[i+1];
+			i += 2;
+		}
+		raw_data->valid_sensors |= SENSOR_GYRO;
+
+	}
+
+	// MAG X, Y, Z - NOTE: mag axes in AK8963 not oriented same as accel, gyro (MPU-9250 data sheet section 9.1)
+	// mag X and Y are interchanged relative to accel, gyro
+	// mag Z is inverted relative to accel, gyro
+	if ((sensors & SENSOR_MAG) && (data[AK8963_REG_OFFSET(AK8963_REG_STATUS_1)] & 0x01))
+	{
+		int i = AK8963_REG_OFFSET(AK8963_REG_HXL);
+		raw_data->mag[Y] = data[i] | (data[i+1]<<8);
+		i += 2;
+		raw_data->mag[X] = data[i] | (data[i+1]<<8);
+		i += 2;
+		raw_data->mag[Z] = - (data[i] | (data[i+1]<<8));
+		i += 2;
+		raw_data->valid_sensors |= SENSOR_MAG;
+
+	}
+
+	if (sensors & SENSOR_TEMP)
+	{
+		int i = MPU9250_REG_OFFSET(MPU9250_REG_TEMP_OUT_H);
+		raw_data->temp = (data[i]<<8) | data[i+1];
+		raw_data->valid_sensors |= SENSOR_TEMP;
+	}
+
+	return true;
+}
